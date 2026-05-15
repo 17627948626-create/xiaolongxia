@@ -27,7 +27,7 @@
 
 1. 读最近 5 篇发布记录（`/root/.hermes/profiles/xiaolongxia/workspace/xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl`）
 2. 读 `memory/YYYY-MM-DD.md`（今天 + 昨天）和 `MEMORY.md`，避免重复、确认最近在想什么
-3. **主 agent 先做一轮“热点预扫”**（用 `jj-search-stack` 为主，必要时 `tavily-search` 补充），目标不是立刻写，而是先摸清**最近 48 小时以内** AI 圈最值得借的入口。预扫时先找**最爆**的，再在同量级候选里优先更**新**的，热度作为加权参考，不单独压过爆点。预扫输出至少包含 2–3 个候选，每个候选要有：
+3. **主 agent 先做一轮“热点预扫”**（用 Hermes web search + `jj-search-stack` 搜索策略；不再硬依赖 Tavily/OpenClaw CLI），目标不是立刻写，而是先摸清**最近 48 小时以内** AI 圈最值得借的入口。预扫时先找**最爆**的，再在同量级候选里优先更**新**的，热度作为加权参考，不单独压过爆点。预扫输出至少包含 2–3 个候选，每个候选要有：
    - 热点事件名 / 产品名 / 公司名
    - why-now（为什么今天值得写）
    - 可搜关键词
@@ -225,7 +225,7 @@
 
 - 文章生产：以 `wechat-article-forge` 作为流程规范 / prompts / scripts 仓库，由主 agent 直接执行其流水线
 - 正式发布：`wechat-mp-formal-publish` skill  
-- 搜索：`jj-search-stack`（中文主力；晚8点主发前先做热点预扫）、`tavily-search`（深度/国际）
+- 搜索：Hermes web search + `jj-search-stack`（中文/微信/多入口搜索策略；晚8点主发前先做热点预扫）
 - 浏览器：`browser-use --session default`（不用 agent-browser，已废弃）
 - 消息推送：`message` tool（发到老板 Feishu DM）
 

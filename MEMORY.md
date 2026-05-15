@@ -39,7 +39,7 @@
 
 ## 系统层改动记录(最近)
 
-- 2026-05-15 下午:`wechat-article-forge` 已从 OpenClaw skill 迁移为 Hermes 共享 skill，profile 配置通过 `/root/.hermes/shared-skills/forge/skills` 加载；小龙虾写作/发布活配置统一收口到 `/root/.hermes/profiles/xiaolongxia/workspace/xiaolongxia/wechat-article-writer/`，其中 `config.json.review_pass_threshold=8.5` 仍是唯一通过线权威源。
+- 2026-05-15 下午:`wechat-article-forge` 已从 OpenClaw skill 迁移为 Hermes 共享 skill，profile 配置通过 `/root/.hermes/shared-skills/forge/skills` 加载；小龙虾写作/发布活配置统一收口到 `/root/.hermes/profiles/xiaolongxia/workspace/xiaolongxia/wechat-article-writer/`，其中 `config.json.review_pass_threshold=8.5` 仍是唯一通过线权威源。随后 `wechat-mp-publisher`、`wechat-mp-formal-publish` 与 Hermes 版 `jj-search-stack` 也迁入同一共享 skill 目录；草稿箱上传、正式发表、热点预扫不再依赖 OpenClaw skill 目录。
 - 2026-05-15 上午:老板准备卸载 OpenClaw,已按白名单把 xiaolongxia 人格与运营资产备份到 `https://github.com/17627948626-create/xiaolongxia.git`。当前远端 `main` 最新提交 `170fb8a Backup xiaolongxia agent persona`;clone smoke test 通过,核心文件 `AGENTS.md` / `SOUL.md` / `MEMORY.md` / `memory/` / `wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl` 均存在。备份副本已打码 OpenClaw gateway token 与微信后台 URL token,并把误带入的 `artifacts/wechat-rpa` 历史截图从 Git 历史剔除。
 - 2026-05-15 上午:Feishu DM 回复链路再次确认:当前飞书 direct 场景里,可见回复必须显式调用 `message.send`;普通 assistant final 是私有/会话内文本,不会自动投递到飞书。若已经 `message.send`,本轮 final 应输出 `NO_REPLY` 避免双发。此前 MEMORY 里“同一 Feishu DM 最终可见回复默认直接 reply”的旧口径作废。
 - 2026-05-15 上午:排查“小龙虾主 agent 不回话”时确认过一次 OpenClaw session 状态收口问题:09:24 健康检查 run 的 trajectory 已 `session.ended status=error`,但 sessions list 残留 `running`;后续修 OpenClaw 时应保证 promptError/auth_permanent 结束态写回 failed/error,不能在 index 里假装运行中。
