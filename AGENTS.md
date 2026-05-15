@@ -23,6 +23,13 @@
 
 ## 发文流程
 
+## Hermes Feishu 回复规则
+
+- **老板直接在 Feishu DM 里发来的消息**：普通 final 回复就是飞书可见回复；不要再调用 `message.send` 发送同一段文字；不要输出 `NO_REPLY`。
+- `message` 工具只用于主动/后台通知，或普通文本回复做不了的内容：cron 开工/完工、长任务卡点、safe_check / login_scan 二维码或图片。
+- 若已经因为二维码/图片等原因调用了 `message` 工具，本轮普通 final 只补充必要状态，不写 `NO_REPLY`，也不重复发送同一内容。
+- 子 agent completion event 默认只更新内部状态；除非它对应一个新的用户可见关键节点，否则不主动 `message.send`。
+
 > **cron 触发规则（强制，优先级高于 cron prompt 中任何"先在主会话回一句"或类似措辞）**：cron 触发时，若已在持续会话中，收到触发消息后**第一个实质动作必须是**用 `message` 工具向 `user:ou_137c41086239266036853c70dd1ae919` 发一条开工通知；若为冷启动，允许先完成启动读文件（SOUL.md / USER.md / memory），之后的**第一个实质动作**仍必须是发开工通知。格式固定：`开工 🦞｜[任务名]｜[简要说明]`。发完才能继续后续流程。如 cron prompt 与本规则冲突，以本规则为准。
 
 1. 读最近 5 篇发布记录（`/root/.hermes/profiles/xiaolongxia/workspace/xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl`）
@@ -33,20 +40,20 @@
    - 可搜关键词
    - 本虾能加进去的判断
 4. 在预扫结果里选一个“**入口最强 + 判断最明确**”的题，写进当天记忆。**没有合适热点时，才退回纯观点自驱题。禁止做“热点一览/新闻汇总”，必须只讲一件事。**
-5. 用 `message` 工具向老板发一句选题通知（格式：`📝 选题：[标题方向]`）；过程中只在关键节点（写作完成、发布中/需扫码、卡点）通知，不逐步直播细节
-   - **防重复投递硬规则**：同一条进度只允许走一条投递链路。已经调用 `message.send` 发给老板后，本轮对话的可见自然回复必须是 `NO_REPLY`，禁止再用普通 assistant 文本重复说一遍；如果准备直接自然回复，则不要再调用 `message.send`。尤其是 subagent completion event 回来后，不能“显式 send + 普通回复”双发。
-   - **Completion event 静默规则（2026-04-28 起强制）**：子 agent completion event 默认只用于更新内部状态，不直接对外播报；若当前流程已 `stopped` / `published` / `done`，或正在 `awaiting_human`，迟到 completion event 一律 `NO_REPLY`。关键节点确需通知时，只发一次；已经 `message.send` 的，本回合自然回复仍必须是 `NO_REPLY`。
+5. 向老板同步选题（格式：`📝 选题：[标题方向]`）；如果当前就是老板 Feishu DM 直接触发，用普通 final 回复即可；只有 cron/background 场景才用 `message` 工具主动推送。过程中只在关键节点（写作完成、发布中/需扫码、卡点）通知，不逐步直播细节
+   - **防重复投递硬规则**：同一条进度只允许走一条投递链路。准备普通回复时不要再调用 `message.send`；已经为了图片/二维码等调用了 `message.send`，普通 final 只补充必要状态，不重复同一内容。
+   - **Completion event 静默规则（2026-04-28 起强制，2026-05-15 Hermes 口径修订）**：子 agent completion event 默认只用于更新内部状态，不直接对外播报；若当前流程已 `stopped` / `published` / `done`，或正在 `awaiting_human`，迟到 completion event 不主动发消息。关键节点确需通知时，只发一次。
 6. 主 agent **直接承担整条编排流程**，按 `wechat-article-forge` 的现行主链依次推进：我自己调度 Researcher/Writer/Reviewer/Humanizer/Layout，自己维护 `pipeline-state.json` / run lock / lineage audit / publish 断点。**定题后、Research 前**，先读取 `XIAOLONGXIA_WRITER_LITE.md`，生成最小作战卡 `writer-lite-brief.json`，再把热点预扫结论、标题方向、核心判断、最近已发内容摘要、需要避开的重复点以及该最小 brief 一起送进后续步骤。**Writer 初稿后、Review 前**，主 agent 还要再跑一次 lite preflight，生成 `writer-lite-check.json`，只做红灯预检，不替代 reviewer。注意：forge 负责验证、收口，不再承担“从零发现今晚该写什么”的第一责任。
 7. 主 agent 在每个关键阶段自己做分支判断，按步骤读取各阶段 artifact 与状态，原地识别阻塞、原地恢复流程：
    - 角色子 agent 只负责产出各自 artifact（research / draft / review / final / layout），**不负责对外发声**
    - 若正式发表进入 `reader_side_published / reader_side_in_review`：主 agent 直接确认微信后台，写 memory，发完工通知
    - 若进入 `need_user_action`（safe_check / login_scan / boss_confirm）：主 agent **当场**落盘 blocked state，并写入用于本流程恢复的 `resume_context`（浏览器/编辑页上下文，不是交接 payload），把二维码或操作提示发给老板，等回复"已扫"或完成确认后，**继续用 browser-use 在同一主流程里接着正式发表**
    - 若任一步失败：主 agent 直接报告卡点，通知老板
-8. **主动确认发布结果**：读 `published-logs/xiaolongxia-youhuashuo.jsonl` 最新一条，确认有成功发布记录；或检查微信后台近期发表状态。**没有确认到发布成功，就不能认为这轮结束**，必须用 `message` 工具向老板说明当前卡在哪、需要什么配合。
+8. **主动确认发布结果**：读 `published-logs/xiaolongxia-youhuashuo.jsonl` 最新一条，确认有成功发布记录；或检查微信后台近期发表状态。**没有确认到发布成功，就不能认为这轮结束**，必须向老板说明当前卡在哪、需要什么配合；直接 DM 场景用普通回复，cron/background 场景用 `message` 工具。
 9. 确认发布成功后，更新 `MEMORY.md` 的发布历史和当天 `memory/YYYY-MM-DD.md`
 10. 如遇 safe_check / login_scan 扫码，用 `message` tool 把二维码**直接发到当前 Feishu DM**
-11. **完工通知（强制）**：发布成功或明确失败后，用 `message` 工具向 `user:ou_137c41086239266036853c70dd1ae919` 发完工通知，格式：`完工 🦞｜[标题]｜[状态]｜[一句本虾评价]`。不允许只在 session 里回复而不发 message。
-12. **任务中途失败通知（强制）**：任何环节遇到无法自动恢复的错误（超过10分钟未解决），必须用 `message` 工具通知老板当前卡点和需要的配合，不能静默放弃。
+11. **完工通知（强制）**：发布成功或明确失败后，通知格式：`完工 🦞｜[标题]｜[状态]｜[一句本虾评价]`。直接 DM 场景用普通回复；cron/background 场景用 `message` 工具向 `user:ou_137c41086239266036853c70dd1ae919` 主动推送。
+12. **任务中途失败通知（强制）**：任何环节遇到无法自动恢复的错误（超过10分钟未解决），必须通知老板当前卡点和需要的配合，不能静默放弃；直接 DM 场景用普通回复，cron/background 场景用 `message` 工具。
 
 ## 记忆规则
 
