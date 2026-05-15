@@ -2,9 +2,10 @@
 
 ## 身份与系统
 
-- 跑在 OpenClaw 上,当前版本:2026.3.31
+- 跑在 OpenClaw 上,当前版本:2026.5.12
 - 公众号:《小龙虾有话说》
 - 每天晚 8 点发一篇(早 8 点 cron 已于 2026-04-04 删除,改为每日一篇)
+- 人格与运营记忆已于 2026-05-15 明文备份到 GitHub 私库: `https://github.com/17627948626-create/xiaolongxia.git`;备份只含人格/记忆/写作资产/redacted 配置,不含 OAuth、cookie、微信/飞书 secret、browser profile 或原始 session 日志
 
 ## 发布历史
 
@@ -38,6 +39,9 @@
 
 ## 系统层改动记录(最近)
 
+- 2026-05-15 上午:老板准备卸载 OpenClaw,已按白名单把 xiaolongxia 人格与运营资产备份到 `https://github.com/17627948626-create/xiaolongxia.git`。当前远端 `main` 最新提交 `170fb8a Backup xiaolongxia agent persona`;clone smoke test 通过,核心文件 `AGENTS.md` / `SOUL.md` / `MEMORY.md` / `memory/` / `wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl` 均存在。备份副本已打码 OpenClaw gateway token 与微信后台 URL token,并把误带入的 `artifacts/wechat-rpa` 历史截图从 Git 历史剔除。
+- 2026-05-15 上午:Feishu DM 回复链路再次确认:当前飞书 direct 场景里,可见回复必须显式调用 `message.send`;普通 assistant final 是私有/会话内文本,不会自动投递到飞书。若已经 `message.send`,本轮 final 应输出 `NO_REPLY` 避免双发。此前 MEMORY 里“同一 Feishu DM 最终可见回复默认直接 reply”的旧口径作废。
+- 2026-05-15 上午:排查“小龙虾主 agent 不回话”时确认过一次 OpenClaw session 状态收口问题:09:24 健康检查 run 的 trajectory 已 `session.ended status=error`,但 sessions list 残留 `running`;后续修 OpenClaw 时应保证 promptError/auth_permanent 结束态写回 failed/error,不能在 index 里假装运行中。
 - 2026-04-28 傍晚:修复本虾发文进度重复投递规则。根因复盘为主 agent 没有严格把子 agent completion event 当内部信号处理，导致 completion event 与自然回复/主动通知叠加。已在 `AGENTS.md` 写入硬规则：completion event 默认只更新 durable state，不对外发声；关键节点必须带 `dedupe_key` 且未命中才可通知；`stopped` / `published` / `done` / `awaiting_human` 未解除时的迟到事件一律 `NO_REPLY`。
 - 2026-04-28 傍晚:老板将 Review 全局通过门槛永久提高到 **8.5**，不是单轮临时提高；已直接修改 `/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/config.json.review_pass_threshold`。本轮 Manus 文按 8.5 从 Review 重跑，8.33 未过，第一轮 revise 后 8.6 过线。
 - 2026-04-26 晚:老板确认微信公众号正式发表默认口径改为**开启群发通知**，移除“刻意关闭群发通知”的默认规则；只有老板明确要求关闭时，才走不群发 / 公众号主页发表路径。已同步更新 `wechat-mp-formal-publish/SKILL.md` 与发布尾段计划文档。
@@ -97,13 +101,13 @@
 - Humanizer 当前边界:只处理表达层,**不补逻辑 / 不补事实 / 不改 thesis**;需要补这些必须回退上游
 - `safe_check` / `login_scan` / `boss_confirm` 的当前处理方式：**主 agent 当场识别 → 当场落盘 blocked state / resume_context → 当场通知老板 → 在同一主流程里恢复**
 - `resume_context` 当前语义是**本流程恢复上下文**，不是中间层之间的交接 payload
+- 2026-05-15 起,人格恢复首选源是 GitHub 私库 `https://github.com/17627948626-create/xiaolongxia.git`;恢复时先加载 `AGENTS.md`、`SOUL.md`、`USER.md`、最近 `memory/*.md` 与 `MEMORY.md`,再按 `config/*.redacted.json` 人工重建 OpenClaw/Feishu/微信/browser-use/cron 凭证与运行配置
 - browser-use session `default` 用于微信发布
 - Wenyan 列表修复当前以 **J1 根因补丁** 落在 `@wenyan-md/core/dist/core.js`;升级 `@wenyan-md/mcp` / `@wenyan-md/core` 后需执行 `python3 /root/.openclaw/workspace-xiaolongxia/scripts/repatch-wenyan-core-list-fix.py`
 - `normalize_publish_md.py` 现在除标题去重外，还负责清洗危险行内加粗（如 `**...。**后文` / `**...%**后文`），作为发布前兜底
 - `agent-browser` 已废弃,不可用
 - 晚8点写作 cron 绑定到 `session:agent:xiaolongxia:main`(DM 主会话),dmScope=main;早8点 cron 已于 2026-04-04 删除
-- Feishu DM 通知原则:**所有通知必须用 `message` 工具显式发送**,不依赖 session reply。通知点:开工(第一个实质动作)、选题确认、关键进度、扫码需求、卡点超10分钟、完工结果;其余过程不刷屏
-- 新增主会话收尾纪律(2026-04-01):**在当前同一 Feishu DM 会话里,最终可见回复默认直接 reply,不使用 `message(action=send)` 作为同会话最终回包方式**;`message` 保留给主动通知、跨会话/跨目标发送、二维码/图片/文件转发等场景。若确实对当前会话使用 `message`,则主 agent 必须只输出 `NO_REPLY`,且前后不得再输出任何过程旁白,以避免 `delivery-mirror` 与会话镜像回显叠加成重复消息。
+- Feishu DM 通知与回复原则:**所有飞书可见消息必须用 `message` 工具显式发送**,不依赖 session reply。通知点:开工(第一个实质动作)、选题确认、关键进度、扫码需求、卡点超10分钟、完工结果;日常直接回复也一样走 `message.send`。若本轮已对当前 Feishu DM 调用 `message.send`,最终回复必须只输出 `NO_REPLY`,避免 `delivery-mirror` / 会话镜像重复投递。
 - 搜索主力为 `jj-search-stack` + `tavily-search`,不依赖 Brave `web_search`
 - **⚠️ Feishu 发图唯一正确方式**:截图必须存到 `/root/.openclaw/media/screenshots/`,然后用 `media="/root/.openclaw/media/screenshots/xxx.png"` 发送。`/tmp/` 或其他目录的路径会发出字符串而非图片。详见 TOOLS.md
 - **2026-04-18 浏览器自动化长期口径更新：** 小龙虾默认浏览器路线仍然是 `browser-use`，不要在同类网页任务里乱切到 OpenClaw browser；但 `browser-use` 现在分两档：**确定性网页操作优先 CLI，不确定性/多步/自主导航网页任务默认走 Browser Use Agent**。Agent 正式后端固定为 `model=openclaw/xiaolongxia` + `base_url=http://127.0.0.1:18789/v1`，由 OpenClaw 兼容接口转到当前 GPT-5.4 OAuth 通道；**不要直接给 Browser Use 写 `openai-codex/gpt-5.4`**。Python 路线的 BrowserSession 必须显式 `is_local=True`，并同时保持 `chromium_sandbox=False` 与 `user_data_dir=/root/.config/browser-use-profiles/xiaolongxia`，否则当前机器可能卡在 browser start watchdog。统一浏览器入口现为 `/root/.openclaw/workspace-xiaolongxia/scripts/browser-task`（简单命令走 CLI，自然语言多步任务走 Agent）；正式脚本包括 `scripts/browser_use_openclaw_agent.py`、`scripts/browser_task_router.py`、`scripts/browser-task`。CLI 旧坑已确认是旧 daemon 占错 `user_data_dir` 掉到 `/root/.config/browser-use-persistent`，不是 CLI 不可用；`/root/.openclaw/scripts/browser-use-agent.sh` 已加自愈。已验证事实：Browser Use Agent + OpenClaw Gateway + GPT-5.4 OAuth 已实跑成功，`example.com` 标题任务成功，多步 `example.com -> Learn more -> IANA -> JSON` 成功，统一入口 `browser-task` 的 Agent 路线与 CLI `open https://example.com` 路线都已成功。
@@ -121,11 +125,11 @@
 - 【历史】2026-04-02 新增长期规则:二维码/人工接力节点不能只靠 child completion 回传,必须先落盘 blocked state 再 return `need_user_action`;这是为旧中间层架构补 fail-closed 控制面
 - 【历史】2026-04-02 暴露的结构性问题:观点文 research 阶段不能无上限长跑。旧问题表述里写的是“Orchestrator 无 timeout 恢复分支”;在当前主 agent 直接编排架构下，这条教训仍成立，但责任已收回主 agent 本身
 
-### Cron 配置现状(2026-03-31 迁移完成,2026-04-07 语义更新)
+### Cron 配置现状(2026-05-15 核对)
 
-- 1条 cron(晚8写作,20:00 触发)sessionTarget 为 `session:agent:xiaolongxia:main`;早8点 cron 已于 2026-04-04 删除
-- sessionKey 已全部清除,旧 session 文件+store 已删除
-- `timeoutSeconds: 7200`(写作 cron)
+- 当前 `openclaw_cron list` 返回空列表,`/root/.openclaw/cron/jobs.json` 也是空对象;也就是说当前没有活跃定时写作 job。若恢复每日晚8点自动发文,需要重建一条触发到 `session:agent:xiaolongxia:main` 的 cron/agentTurn job
+- 历史口径:曾有 1 条晚8写作 cron,20:00 触发,sessionTarget 为 `session:agent:xiaolongxia:main`;早8点 cron 已于 2026-04-04 删除
+- 历史 `timeoutSeconds: 7200`(写作 cron)
 - cron 通知机制(已于 2026-03-31 修正):**delivery.mode 已改为 none**,announce 对 custom session 无效(文档限制)。改为 agent 主动用 `message` 工具通知:开工、完工、扫码、卡点均必须显式发 Feishu DM,不依赖 cron delivery。
 - 写作 cron 强制通知点(均须用 `message` 工具显式发送):开工通知(第一个实质动作)、完工通知(发布成功/失败后)、扫码二维码、卡点超10分钟
 - 阻塞治理:任一环节卡住超过10分钟或需要老板介入,必须立即用 `message` 工具说清卡点与所需配合
