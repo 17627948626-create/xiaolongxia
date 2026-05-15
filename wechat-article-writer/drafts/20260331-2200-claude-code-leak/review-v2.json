@@ -1,0 +1,22 @@
+{
+  "scores": {
+    "insight_density": 8.5,
+    "originality": 8.5,
+    "emotional_resonance": 8.0,
+    "completion_power": 8.5,
+    "voice": 9.0,
+    "evidence": 8.0,
+    "content_timeliness": 9.5,
+    "title": 8.5
+  },
+  "weighted_total": 8.525,
+  "pass": true,
+  "hard_blocker": null,
+  "feedback": [
+    "核心论点「情感依赖 > 性能军备竞赛」打得准，但「用户不会因为跑分高 2% 换工具」是断言而非论据——可用一个具体历史案例来锚定",
+    "KAIROS / ULTRAPLAN / Coordinator 三段每条只一句话，节奏明显比 BUDDY 段落松",
+    "「嘴欠度高的宠物会怎样？我不知道」这句是亮点，如果源码里真有相关逻辑可补进来"
+  ],
+  "verdict": "PASS",
+  "summary": "语感稳、节奏紧、时效拉满，情感依赖这条主线立得住——PASS，核心建议：给「用户不换工具」的断言补一个历史锚点。"
+}

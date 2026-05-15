@@ -1,0 +1,37 @@
+{
+  "profiles_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/profiles.json",
+  "default_theme": "sspai",
+  "default_article_type": "观点",
+  "auto_publish_types": [],
+  "cover_style": "unsplash_search",
+  "unsplash_access_key": "duWTmpZiWvnE8BCy7Iv9sLIsYPQabrF0HNIrCEVPz9o",
+  "cover_fallback_url": "https://picsum.photos/1200/800",
+  "review_pass_threshold": 8.5,
+  "wechat_author": "",
+  "wechat_secrets_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/secrets.json",
+  "published_log_path": "",
+  "writer_model": "claude-sonnet-4-6",
+  "word_count_targets": {
+    "资讯": [
+      800,
+      1500
+    ],
+    "周报": [
+      1000,
+      2000
+    ],
+    "教程": [
+      1500,
+      3000
+    ],
+    "观点": [
+      1200,
+      1800
+    ],
+    "科普": [
+      1500,
+      3000
+    ]
+  },
+  "writer_runtime": "acpx-claude-code"
+}

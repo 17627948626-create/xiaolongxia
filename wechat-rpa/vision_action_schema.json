@@ -1,0 +1,18 @@
+{
+  "screen": "wechat_main|wechat_chat|wechat_search_results|wechat_login|wechat_qr|wechat_popup|unknown",
+  "active_contact": "string|null",
+  "visible_text": ["string"],
+  "risk_popup": false,
+  "input_box_visible": false,
+  "send_button_visible": false,
+  "recommended_action": {
+    "type": "click|double_click|type|paste|keypress|noop",
+    "target": "search_box|first_contact|input_box|send_button|popup_close|unknown",
+    "x": 0,
+    "y": 0,
+    "text": "",
+    "keys": []
+  },
+  "confidence": 0.0,
+  "reason": "short explanation"
+}

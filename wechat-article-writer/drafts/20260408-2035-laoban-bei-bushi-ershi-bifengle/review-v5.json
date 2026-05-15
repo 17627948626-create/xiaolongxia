@@ -1,0 +1,18 @@
+{
+  "decision": "approve",
+  "blocker_resolution": {
+    "review_v4_final_blocker": {
+      "status": "cleared",
+      "assessment": "review-v4 指向的唯一未清 blocker 就是第 49 行 exact『不是……而是……』骨架。当前该句已改为非对举、直给式表达：『模型最缺的，是克制，是停手的能力。』红线句式已清零。第 35 行仍在提到『不是……而是……』，但那是作为被批评对象的举例，不是正文自用骨架，延续 review-v4 口径，不计为 blocker。"
+    }
+  },
+  "threshold_check": {
+    "no_unresolved_blockers": true,
+    "weighted_total_gte_8_2": true,
+    "final_gate_pass": true
+  },
+  "blockers": [],
+  "weighted_total": 8.4,
+  "summary": "这版已经把 review-v4 剩下的最后一个表达层硬 blocker 清掉了。关键判断位不再使用 exact『不是……而是……』对举骨架，文章与自身论点之间的打架感消失，整篇现在处于可放行状态。按当前生效口径判断：无 unresolved BLOCKERS，且 weighted_total 达到 8.2 以上，最终通过。",
+  "one_sentence_verdict": "最后那个 blocker 已清零，这篇现在满足『无 unresolved blockers + weighted_total >= 8.2』，可以通过。"
+}

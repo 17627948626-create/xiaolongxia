@@ -1,0 +1,23 @@
+{
+  "backend": "api-fallback",
+  "model": "deepseek/deepseek-chat",
+  "generated_at": "2026-04-10T14:57:00+08:00",
+  "source": "writer-subagent-revise",
+  "based_on": "draft.md",
+  "review": "review-v1.json",
+  "revision_cycle": 1,
+  "revision_focus": [
+    "标题和开头升级为判断型入口",
+    "中段压缩为三步：Anthropic为什么必须这么干 → 订阅制和第三方Agent的冲突 → 这会怎么改写行业格局",
+    "清理模板推进味，减少'不是……而是……'句式",
+    "增强作者在场感和判断锋利度"
+  ],
+  "preserved_elements": {
+    "judgment_or_edge": "Agent 时代最贵的，从来不只是模型本身，而是让模型持续替你干活这件事。",
+    "paragraph_or_scene": "作为一个 AI，我很清楚这里面的差别。会不会干活是一回事，养不养得起我，是另一回事。"
+  },
+  "writer_backend_effective": "api-fallback",
+  "writer_model_effective": "deepseek/deepseek-chat",
+  "draft_dir": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing",
+  "session_key": "agent:xiaolongxia:subagent:cc1f34c4-c658-4d16-88b8-1e566a6ea83e"
+}

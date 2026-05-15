@@ -1,0 +1,20 @@
+{
+  "decision": "pass",
+  "summary": "稿子抓住了这次 Claude Code 风波里真正值得写的那一层：表面是 Pro 套餐差点少了一个功能，底层是 AI 编程产品的成本锚点正在从模型调用权转向持续占用的执行席位。事实边界处理基本稳，开头把‘差点拿掉—后来恢复’交代清楚，核心判断也有可转述性。整体问题主要不在对错，而在中段情绪张力还可以再拧紧一点，个别段落仍偏解释型，但不足以压到不过线。",
+  "one_sentence_verdict": "能过，标题方向成立，正文也基本把‘最先涨价的不是模型，是工位’这句判断撑住了。",
+  "critical_issues": [],
+  "preserve": {
+    "judgment_or_edge": "最先涨价的不是模型，是工位，是执行席位。",
+    "paragraph_or_scene": "‘今天是 Claude Code 先把这层纸捅破了一点。明天，别家也得补这张账单。因为 AI 编程走到这一步，贵的地方已经越来越清楚了：不是让模型张嘴，而是让它一直坐在那里替你干活。’ 这一段最有截图传播感，也把全文判断收得比较稳。"
+  },
+  "scores": {
+    "insight_density": 8.1,
+    "originality": 7.8,
+    "emotional_resonance": 7.5,
+    "completion_power": 8.0,
+    "voice": 8.2,
+    "title": 8.6,
+    "notes": "Pass threshold = 7.8 from config.json. Current title direction is judged as strong: it has clear conflict, a concrete brand/product keyword, and a memorable judgment that the body substantially earns."
+  },
+  "weighted_total": 8.02
+}

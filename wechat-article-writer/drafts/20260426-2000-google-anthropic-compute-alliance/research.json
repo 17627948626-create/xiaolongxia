@@ -1,0 +1,171 @@
+{
+  "topic": "Google/Anthropic up to $40B compute alliance",
+  "angle": "借谷歌拟/承诺向 Anthropic 最高投入 400 亿美元这条新闻，写清前沿模型竞争背后正在形成云厂商、芯片、算力、股权和客户入口捆绑的供血同盟。",
+  "thesis": "这笔钱最值得看的不是估值，而是前沿模型公司开始把算力、云、股权和客户关系绑成供血同盟，AI 竞争正在从“谁模型强”转向“谁能长期供电”。",
+  "evidence_anchors": [
+    {
+      "title": "Google investing up to $40 billion in Anthropic, the company behind Claude",
+      "url": "https://9to5google.com/2026/04/24/google-anthropic-investment-40-billion/",
+      "source_type": "verified source page; tech media summarizing Bloomberg and Anthropic statement",
+      "verified": true,
+      "confidence": "high for transaction outline; medium for unreleased performance-target detail",
+      "key_points": [
+        "Bloomberg reported Google is investing $10B in Anthropic now, with another $30B if performance targets are hit.",
+        "Article states Anthropic said Google is committing $10B cash at a $350B valuation, with another $30B conditional on performance targets.",
+        "The investment is framed as supporting a significant expansion of Anthropic computing capacity.",
+        "Anthropic is already a major Google Cloud customer and has a recent Google/Broadcom TPU capacity deal."
+      ]
+    },
+    {
+      "title": "Anthropic expands partnership with Google and Broadcom for multiple gigawatts of next-generation compute",
+      "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "source_type": "primary company statement",
+      "verified": true,
+      "confidence": "high",
+      "key_points": [
+        "Anthropic says it signed a new agreement with Google and Broadcom for multiple gigawatts of next-generation TPU capacity, expected to come online starting in 2027.",
+        "Anthropic CFO Krishna Rao describes it as the company’s most significant compute commitment to date.",
+        "The statement says run-rate revenue has surpassed $30B, up from about $9B at the end of 2025, and $1M+ annualized-spend customers have doubled from over 500 to over 1,000 in less than two months.",
+        "Anthropic says it trains and runs Claude across AWS Trainium, Google TPUs and NVIDIA GPUs; Amazon remains primary cloud provider/training partner."
+      ]
+    },
+    {
+      "title": "Expanding our use of Google Cloud TPUs and Services",
+      "url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+      "source_type": "primary company statement",
+      "verified": true,
+      "confidence": "high",
+      "key_points": [
+        "Anthropic announced plans to expand Google Cloud technology usage, including up to one million TPUs.",
+        "The expansion is worth tens of billions of dollars and expected to bring well over a gigawatt of capacity online in 2026.",
+        "Google Cloud CEO Thomas Kurian says Anthropic’s TPU expansion reflects price-performance and efficiency seen over several years.",
+        "Anthropic describes a diversified compute strategy across Google TPUs, Amazon Trainium and NVIDIA GPUs."
+      ]
+    },
+    {
+      "title": "谷歌承诺向Anthropic投资至多400亿美元",
+      "url": "https://news.qq.com/rain/a/20260426A05AXN00?refer=cp_1009&scene=qqsearch",
+      "source_type": "verified Chinese repost/summary from 观点网 via 腾讯新闻; secondary",
+      "verified": true,
+      "confidence": "medium-high for Chinese wording; should attribute to 观点网/公开资料 rather than treat as primary",
+      "key_points": [
+        "中文报道口径：4月26日，Alphabet 承诺向 Anthropic 投资至多 400 亿美元，以支持大幅扩展运算能力。",
+        "口径为立即 100 亿美元现金，若达到业绩目标再追加 300 亿美元。",
+        "估值口径为 3500 亿美元；Anthropic 是谷歌 TPU 芯片和云服务重要客户。",
+        "该报道把交易目的明确指向算力规模扩张。"
+      ]
+    },
+    {
+      "title": "Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute",
+      "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+      "source_type": "primary company statement; comparison/background",
+      "verified": true,
+      "confidence": "high",
+      "key_points": [
+        "Anthropic and Amazon signed a new agreement securing up to 5GW capacity for training and deploying Claude.",
+        "Anthropic commits more than $100B over ten years to AWS technologies; Amazon invests $5B today with up to an additional $20B in the future, building on $8B previously invested.",
+        "Claude Platform will be available directly within AWS; Claude is described as available across AWS, Google Cloud and Microsoft Azure.",
+        "This supports the article’s frame that cloud, chips, capital and distribution are being bundled."
+      ]
+    }
+  ],
+  "fact_records": [
+    {
+      "kind": "transaction_claim",
+      "claim": "Google/Alphabet commits or plans to invest up to $40B in Anthropic: $10B immediate cash plus up to $30B if performance targets are met.",
+      "value": "$10B now + up to $30B conditional; total up to $40B",
+      "time": "reported 2026-04-24/2026-04-26",
+      "attribution": "Bloomberg as summarized by 9to5Google; Chinese Tencent/观点网 summary; wording should be attributed, not presented as audited filing detail.",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "confidence": "high for broad deal structure; medium for internal milestone details"
+    },
+    {
+      "kind": "valuation_claim",
+      "claim": "The $10B immediate investment is said to be at a $350B valuation.",
+      "value": "$350B valuation",
+      "time": "reported 2026-04-24/2026-04-26",
+      "attribution": "9to5Google citing Bloomberg/Anthropic statement; Tencent/观点网 Chinese summary",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "confidence": "medium-high"
+    },
+    {
+      "kind": "primary_compute_agreement",
+      "claim": "Anthropic signed a Google/Broadcom agreement for multiple gigawatts of next-generation TPU capacity expected from 2027.",
+      "value": "multiple GW next-generation TPU capacity; expected online starting 2027",
+      "time": "2026-04 primary Anthropic statement",
+      "attribution": "Anthropic official news page",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "confidence": "high"
+    },
+    {
+      "kind": "primary_google_tpu_expansion",
+      "claim": "Anthropic planned to expand Google Cloud technology usage, including up to one million TPUs, worth tens of billions and well over 1GW in 2026.",
+      "value": "up to 1,000,000 TPUs; tens of billions of dollars; well over 1GW in 2026",
+      "time": "Anthropic official statement referenced as prior October expansion",
+      "attribution": "Anthropic official news page",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "confidence": "high"
+    },
+    {
+      "kind": "primary_amazon_context",
+      "claim": "Amazon/Anthropic expanded collaboration for up to 5GW compute; Anthropic commits >$100B over ten years to AWS, while Amazon invests $5B now and up to $20B later, building on $8B previously invested.",
+      "value": "up to 5GW; >$100B AWS technology commitment; $5B current investment + up to $20B future; $8B previous",
+      "time": "Anthropic official statement updated 2026-04-21",
+      "attribution": "Anthropic official news page",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "confidence": "high"
+    },
+    {
+      "kind": "api_snapshot",
+      "type": "api_snapshot",
+      "observed_at": "2026-04-26T20:08:55+08:00",
+      "claim": "Anthropic official pages contain dynamic business-scale claims including run-rate revenue surpassing $30B and customer-count growth; use only as company-attributed snapshot, not independently audited current fact.",
+      "value": "run-rate revenue > $30B; ~300,000+ business customers on one page; >1,000 customers spending over $1M annualized on another page",
+      "time": "captured from Anthropic official web pages during research on 2026-04-26",
+      "attribution": "Anthropic official news pages, observed via web_fetch; dynamic figures may change or be restated.",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "confidence": "medium-high as company statement, not audited metric"
+    }
+  ],
+  "risks": [
+    "不要把 400 亿美元写成已经全部到账；稳妥写法是“最高/至多 400 亿美元”“先 100 亿，后续 300 亿取决于业绩目标”。",
+    "不要说 Google 已经取代 Amazon；Anthropic 官方仍称 Amazon 是 primary cloud provider and training partner。更准确是多云、多芯片供血格局被进一步强化。",
+    "不要把 Amazon 的 $50B 美国基础设施投资误写成 Amazon 给 Anthropic 的 $50B 股权投资；官方另有 $5B 当前投资 + 最高 $20B 后续投资 + 既有 $8B。",
+    "和昨天 DeepSeek-V4 + 昇腾文章区分：昨天重点是国产开源模型的算力/成本/生态总账，今晚重点是闭源前沿模型与云厂商的资本-算力-客户绑定。",
+    "避免过度断言监管、独家排他或股权控制权；公开材料更适合支持“供血同盟/基础设施锁定”，不支持写成“Google 控制 Anthropic”。"
+  ],
+  "style_exemplar_pack": {
+    "voice": "接地气但有判断，把融资数字翻译成普通读者能懂的供血权、插座、机房、电费和客户入口。",
+    "desired_moves": [
+      "用一个具体场景开头：大家盯着400亿美元，本虾先看它后面接了多少电、多少机房、多少云合同。",
+      "把钱解释成算力预付款、云厂商押注和模型公司的长期供电合同，而不是估值八卦。",
+      "中段给出可复述判断：模型公司以后拼的不只是哪家脑子聪明，还要拼谁的供血管够粗、够稳、够久。"
+    ],
+    "anti_exemplars": [
+      "AI 巨头融资新闻汇总",
+      "只堆 Google、Amazon、NVIDIA、TPU 名词，不解释对用户和模型竞争意味着什么",
+      "复用昨天“算力账摊开了”的结构和句子"
+    ]
+  },
+  "title_directions": [
+    "谷歌给 Anthropic 砸下 400 亿美元，AI 巨头开始抢的不是模型，是供血权",
+    "400 亿美元砸向 Anthropic：模型大战背后，云厂商在抢供电权",
+    "谷歌为什么要给 Claude 背后的公司砸 400 亿：AI 的下一仗打在机房里",
+    "别只看 Anthropic 的估值，谷歌买的是 Claude 未来的电源"
+  ],
+  "recent_publication_boundary": {
+    "avoid_repeating": "2026-04-25 DeepSeek-V4 + 昇腾文章已经写过“算力、成本、生态和规模化使用的总账”；本文不要再按国产开源模型落地账来展开。",
+    "fresh_distinction": "本文把焦点放在闭源前沿模型与云厂商/芯片/股权/客户渠道的供血同盟。"
+  },
+  "source_discovery_notes": [
+    "DuckDuckGo blocked by bot challenge; Sogou Web surfaced Tencent/观点网 and Chinese reposts; web_search surfaced 9to5Google, Investing, StreetInsider/Reuters, etc.",
+    "Direct Reuters/NYTimes fetch was blocked by anti-bot, so use them only through attributed secondary reports if needed; do not cite inaccessible snippets as primary proof.",
+    "Primary Anthropic pages were fetchable and should anchor the compute-alliance part of the article."
+  ]
+}

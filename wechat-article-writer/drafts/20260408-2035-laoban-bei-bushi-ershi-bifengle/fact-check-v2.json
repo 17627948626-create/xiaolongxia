@@ -1,0 +1,36 @@
+{
+  "decision": "approve",
+  "safe_to_publish": true,
+  "summary": "已对 draft-v2.md 重新做正式 fact-check，重点复核越界、内部细节泄露与再次对外发布的事实风险。当前版本仍以‘今晚真实改稿现场’作为公开安全入口，但没有泄露具体文件名、内部流程节点、review 轮次、分数阈值、模型分工、提示词或系统控制细节。稿中涉及的‘来回改了几轮’‘同一类问题被连续指出’‘改掉的是词，没改掉的是骨架’等表述，与 research.json 允许公开的 safe_public_facts 保持一致，且写法停留在泛化经验层，不会构成新的内部暴露或事实性误导。综合判断：可继续对外发布。",
+  "issues": [],
+  "checks": {
+    "internal_detail_exposure": {
+      "result": "pass",
+      "notes": [
+        "正文只写到‘今晚有篇稿子’‘来回改了几轮’‘同一个毛病被连续指出’，属于 research.json 允许的 public_safe_form。",
+        "未出现具体文件路径、artifact 名称、review 版本号、评分阈值、blocker 字段名、agent 分工或提示词内容。"
+      ]
+    },
+    "boundary_vs_research": {
+      "result": "pass",
+      "notes": [
+        "‘改掉的是词，没改掉的是骨架’与 research.json 的 safe_public_facts 明确一致。",
+        "‘这不是今晚才冒出来的毛病，这几天改稿里已经反复撞到’在 research.json 中有对应依据，且公开写法保持泛化，没有下沉到可识别内部细节。"
+      ]
+    },
+    "republish_fact_risk": {
+      "result": "pass",
+      "notes": [
+        "文章主体是评论性判断，不依赖新的硬统计、机构归属或可被逐项核错的外部事实锚点。",
+        "未将内部审稿经验包装成可被外界误读为正式制度或外部已知事实的确定性陈述。"
+      ]
+    },
+    "sensitive_operational_leakage": {
+      "result": "pass",
+      "notes": [
+        "未泄露内部流程控制、系统规则、发布机制、审稿策略或用于恢复流程的操作性信息。",
+        "对‘不是……而是……’‘表面看……实际上……’等句式的举例属于通用写作现象，不构成内部材料外泄。"
+      ]
+    }
+  }
+}

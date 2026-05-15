@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "wenyan-mcp": {
+      "command": "/usr/local/bin/wenyan-mcp",
+      "args": [
+        "--server",
+        "http://82.157.250.171:3000",
+        "--api-key",
+        "xiaolongxia-3001"
+      ],
+      "description": "公众号远程发布 - 小龙虾有话说（3000 路由分流）"
+    }
+  }
+}

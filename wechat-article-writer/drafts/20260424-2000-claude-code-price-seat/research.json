@@ -1,0 +1,260 @@
+{
+  "event": {
+    "name": "Anthropic 小范围测试把 Claude Code 从 Pro 套餐里移出",
+    "date": "2026-04-22",
+    "company": "Anthropic",
+    "what_happened": "4月22日前后，多家媒体注意到 Anthropic 公共定价/产品页面一度出现 Claude Pro 不再包含 Claude Code 的迹象；随后 Anthropic 增长负责人 Amol Avasare 解释称，这只是面向约 2% 新 prosumer 注册用户的小测试。到 4月24日再次核验时，Anthropic 当前 pricing 页面与 Claude Code 产品页都重新明确写着 Pro 包含 Claude Code。",
+    "why_it_matters": "这件事之所以炸，不只是因为一个功能短暂消失，而是因为 Claude Code 这种长时执行型 agent 已经被很多人当成真实生产工位。只要厂商动一下套餐边界，用户立刻会把它理解成席位价格要变。"
+  },
+  "selected_thesis": "Anthropic 这次差点把 Claude Code 从 20 美元 Pro 套餐里拿掉，暴露的重点不是一次页面事故，而是 AI 编程的真实成本中心已经开始从模型访问权，转向长期在线、持续执行、可并行跑任务的数字工位。",
+  "angle": "借一次小范围定价测试，写透为什么 AI 公司接下来最敏感的收费项，可能不是模型本身，而是执行席位。",
+  "why_now": [
+    "这是最近 48 小时内围绕 Claude Code 最具传播性的产品/定价争议之一，读者对『20 美元套餐还包不包』有即时感知。",
+    "这次事件同时带出了厂商口径：不是模型突然变差，而是长时异步 agent 已经把原本为聊天设计的套餐压出了结构性问题。",
+    "4月24日重新核验时，Anthropic 当前官方页面又恢复为 Pro 包含 Claude Code，刚好能形成『测试—反弹—恢复』的完整叙事。",
+    "Anthropic 官方定价页和 Claude Code 文档里已经出现 session-hour、container-hour、long-running tasks 等更像工位/运行时的计费语言，正好支撑更深一层判断。"
+  ],
+  "hot_hook": "Anthropic 差点把 Claude Code 从 20 美元 Pro 套餐里拿掉，用户真正慌的不是少了个功能，而是大家突然意识到：AI 编程工具卖到最后，卖的可能是工位。",
+  "search_keywords": [
+    "Anthropic tested removing Claude Code from the Pro plan",
+    "Anthropic Claude Code Pro plan test 2% new prosumer signups",
+    "Claude pricing includes Claude Code April 2026",
+    "Claude Code long-running tasks session-hour active runtime",
+    "Anthropic managed agents session-hour pricing"
+  ],
+  "anchors": [
+    {
+      "label": "触发事件确实发生过，而且不是用户误会",
+      "claim": "Ars Technica 与 The Register 在 4月22日都报道了同一件事：Anthropic 公共页面一度出现 Pro 套餐不再包含 Claude Code 的迹象；随后 Anthropic 增长负责人 Amol Avasare 解释称，这是面向约 2% 新 prosumer 注册用户的小范围测试。",
+      "why_it_supports_thesis": "这说明这不是凭空脑补的定价焦虑，而是一次真实发生、并且足以引发外部媒体追踪的套餐边界测试。",
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/04/anthropic-tested-removing-claude-code-from-the-pro-plan/"
+        },
+        {
+          "name": "The Register",
+          "url": "https://www.theregister.com/2026/04/22/anthropic_removes_claude_code_pro/"
+        }
+      ]
+    },
+    {
+      "label": "Anthropic 自己给出的解释已经指向使用结构变化",
+      "claim": "Amol Avasare 的公开解释被 Ars 和 The Register 转引：Max 刚推出时，Claude Code 还没被打包进去，Cowork 也不存在，『能跑好几个小时的 agent』也还不是日常工作流；但现在 long-running async agents 已经成了 everyday workflows，用户对 Claude 订阅的使用方式发生了根本变化。",
+      "why_it_supports_thesis": "这几乎直接把文章主轴说出来了：压力源头不是单轮问答，而是长时、异步、可持续占用资源的 agent 使用方式。",
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/04/anthropic-tested-removing-claude-code-from-the-pro-plan/"
+        },
+        {
+          "name": "The Register",
+          "url": "https://www.theregister.com/2026/04/22/anthropic_removes_claude_code_pro/"
+        }
+      ]
+    },
+    {
+      "label": "当前官方页面已经恢复为 Pro 包含 Claude Code",
+      "claim": "4月24日核验 Anthropic 当前 pricing 页面时，Pro 栏目明确写着『Includes Claude Code』；Claude Code 产品页也写着『Claude Code is included in your Pro plan』。",
+      "why_it_supports_thesis": "这给正文一个很关键的边界：不能把它写成『Anthropic 已经正式砍掉 Pro 的 Claude Code』，而应写成『Anthropic 试探过，后来又恢复』。真正值得写的是这次试探暴露出来的成本方向。",
+      "sources": [
+        {
+          "name": "Claude pricing",
+          "url": "https://claude.com/pricing"
+        },
+        {
+          "name": "Claude Code product page",
+          "url": "https://claude.com/product/claude-code"
+        }
+      ]
+    },
+    {
+      "label": "Anthropic 官方页面已经在用更像工位/运行时的计费语言",
+      "claim": "Anthropic 当前 pricing 页不仅把 Max 写成『5x 或 20x more usage than Pro』，还在平台计费里单独列出 Managed Agents 为 0.08 美元每 session-hour active runtime，Code execution 为 0.05 美元每小时每容器。",
+      "why_it_supports_thesis": "这说明在官方商业语言里，成本已经不只是 token 进出价，还开始按会话运行时、容器时长去计。也就是：卖的不只是模型响应，还是执行时间和持续占用。",
+      "sources": [
+        {
+          "name": "Claude pricing",
+          "url": "https://claude.com/pricing"
+        }
+      ]
+    },
+    {
+      "label": "Claude Code 官方文档本身就在强调长时任务和并行任务",
+      "claim": "Anthropic Claude Code 文档写明，网页版 Claude Code 可以『Kick off long-running tasks and check back when they’re done』，还能『run multiple tasks in parallel』；概览页同时把 Claude Code定义为会读代码库、编辑文件、运行命令的 agentic coding tool。",
+      "why_it_supports_thesis": "当产品定义已经从聊天助手变成能持续跑任务、并行占资源的执行者，订阅逻辑就自然会往席位和运行时靠拢。",
+      "sources": [
+        {
+          "name": "Claude Code Docs overview",
+          "url": "https://docs.anthropic.com/en/docs/claude-code/overview"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_ars_20260422",
+      "name": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/04/anthropic-tested-removing-claude-code-from-the-pro-plan/",
+      "type": "secondary",
+      "reliability": "medium_high",
+      "use_for": [
+        "事件触发时间线",
+        "Amol Avasare 的测试范围口径",
+        "long-running async agents 解释"
+      ]
+    },
+    {
+      "id": "src_register_20260422",
+      "name": "The Register",
+      "url": "https://www.theregister.com/2026/04/22/anthropic_removes_claude_code_pro/",
+      "type": "secondary",
+      "reliability": "medium_high",
+      "use_for": [
+        "定价页短暂变化的外部见证",
+        "小范围测试的媒体复核",
+        "官方解释的补充转引"
+      ]
+    },
+    {
+      "id": "src_claude_pricing_20260424",
+      "name": "Claude pricing",
+      "url": "https://claude.com/pricing",
+      "type": "primary",
+      "reliability": "high",
+      "use_for": [
+        "当前 Pro 仍写明 Includes Claude Code",
+        "Max 5x / 20x more usage than Pro",
+        "Managed Agents session-hour 计费",
+        "Code execution container-hour 计费"
+      ]
+    },
+    {
+      "id": "src_claude_code_page_20260424",
+      "name": "Claude Code product page",
+      "url": "https://claude.com/product/claude-code",
+      "type": "primary",
+      "reliability": "high",
+      "use_for": [
+        "当前 Pro 计划仍包含 Claude Code",
+        "Max / Team 的 Claude Code 分层表述",
+        "Claude Code 作为 coding agent 的官方定位"
+      ]
+    },
+    {
+      "id": "src_claude_code_docs_20260424",
+      "name": "Claude Code Docs overview",
+      "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+      "type": "primary",
+      "reliability": "high",
+      "use_for": [
+        "long-running tasks",
+        "parallel tasks",
+        "reads codebase / edits files / runs commands"
+      ]
+    }
+  ],
+  "contradictions_caveats": [
+    {
+      "point": "外部媒体报道的是 4月22日页面层面的短暂变化与测试；4月24日重新核验时，Anthropic 当前 pricing 与产品页都已恢复为 Pro 包含 Claude Code。",
+      "handling": "正文必须把动作写成『测试过』『差点拿掉』『短暂出现过』，不能写成已永久移除。"
+    },
+    {
+      "point": "Amol Avasare 的说明主要通过 Ars Technica 和 The Register 等媒体转引获得，研究中未直接抓取到稳定可复核的原始社交帖全文。",
+      "handling": "引用相关说法时优先做转述，并明确归因为媒体转引或 Anthropic 增长负责人公开说明。"
+    },
+    {
+      "point": "官方页面并没有直接说『我们现在按工位收费』。",
+      "handling": "工位/执行席位是基于订阅分层、session-hour、container-hour、long-running tasks 等证据做出的行业判断，写法上要保持为分析结论，不冒充官方原话。"
+    },
+    {
+      "point": "Max、Team、API 计费与 Claude 面向个人订阅的 Pro 页面同处一个定价体系，但面向的用户群和场景并不完全相同。",
+      "handling": "文章可以把它们放在一条成本演化链里讲，但不要写成 Anthropic 已经用单一规则统一所有场景。"
+    }
+  ],
+  "fact_records": [
+    {
+      "kind": "quote_mode",
+      "quote_mode": "paraphrase_only",
+      "claim": "涉及 Amol Avasare 关于 2% 测试、usage changed fundamentally、long-running async agents 等说法时，仅按 Ars / The Register 的转引做转述，不伪装成已直接抓取到社交原帖全文。",
+      "needle": "small test on ~2% of new prosumer signups / Long-running async agents are now everyday workflows / usage has changed fundamentally",
+      "sources": [
+        "https://arstechnica.com/ai/2026/04/anthropic-tested-removing-claude-code-from-the-pro-plan/",
+        "https://www.theregister.com/2026/04/22/anthropic_removes_claude_code_pro/"
+      ]
+    },
+    {
+      "kind": "api_snapshot",
+      "observed_at": "2026-04-24T20:12:00+08:00",
+      "claim": "关于 Claude 当前 pricing、Pro 是否包含 Claude Code、Max 5x/20x usage、Managed Agents session-hour 与 Code execution container-hour 的描述，均以 2026-04-24 抓取到的当前官方页面为准，属于动态页面快照，不写成永久不变承诺。",
+      "sources": [
+        "https://claude.com/pricing",
+        "https://claude.com/product/claude-code",
+        "https://docs.anthropic.com/en/docs/claude-code/overview"
+      ]
+    },
+    {
+      "kind": "readme_claim",
+      "claim": "涉及 Claude Code 官方产品页与文档中对自身能力的自我描述，如『reads your codebase, edits files, runs commands』和 long-running tasks 相关表述时，应明确这是官方产品/文档口径，可用作产品定位依据，但不能直接外推出所有真实用户都必然获得同等效果。",
+      "attribution_required": true,
+      "sources": [
+        "https://claude.com/product/claude-code",
+        "https://docs.anthropic.com/en/docs/claude-code/overview"
+      ]
+    }
+  ],
+  "style_exemplar_pack": {
+    "opening_moves": [
+      "从一个看起来很小的页面变动切入，迅速拉出更大的成本判断。",
+      "先说读者为什么会慌，再说他们其实慌的不是功能，而是价格结构。"
+    ],
+    "judgment_moves": [
+      "把『功能有没有』翻译成『谁在替你养这个 agent』。",
+      "把定价页面上的细节，转译成底层成本结构的变化。"
+    ],
+    "ending_moves": [
+      "落在行业下一步会怎么收费，而不是停在这次公关翻车本身。"
+    ]
+  },
+  "anti_exemplars": [
+    "不要写成一次套餐页面改版播报。",
+    "不要把 Anthropic、OpenAI、GitHub 拉成横评大杂烩。",
+    "不要把『工位』写成纯比喻，必须落到 session-hour、container-hour、长时任务、并行任务这些实证。"
+  ],
+  "entity_alias_map": {
+    "Anthropic": "Anthropic",
+    "Claude Code": "Claude Code",
+    "Claude Pro": "Pro 套餐",
+    "Claude Max": "Max 套餐",
+    "Managed Agents": "Managed Agents",
+    "Amol Avasare": "Anthropic 增长负责人 Amol Avasare"
+  },
+  "must_attribute_claims": [
+    "2% 新 prosumer 注册用户测试",
+    "long-running async agents are now everyday workflows 这类解释性口径",
+    "4月22日页面短暂变化的具体时间线"
+  ],
+  "title_directions": [
+    "Anthropic 差点把 Claude Code 从 20 美元套餐里拿掉，说明最先涨价的不是模型，是工位",
+    "Claude Code 只是差点被拿掉，真正被暴露出来的是 AI 工位的价格",
+    "Anthropic 试着动了一下 Claude Code 套餐，整个 AI 编程圈才发现贵的已经不是模型"
+  ],
+  "angle_risks": [
+    "把测试写成正式永久移除，会失真。",
+    "把『工位』讲得太虚，会变成空洞比喻。",
+    "如果忽略当前页面已经恢复，会让文章显得像在追一个过时错误。"
+  ],
+  "writer_notes": {
+    "must_keep": [
+      "把『差点拿掉』和『后来恢复』都交代清楚",
+      "把模型价格和执行席位价格拆开讲",
+      "让 session-hour / container-hour / long-running tasks 成为判断落点"
+    ],
+    "must_avoid": [
+      "写成 Anthropic 官方已正式砍掉 Pro Claude Code",
+      "写成单纯吐槽厂商涨价",
+      "只讲 token，不讲长期占用和执行资源"
+    ],
+    "ai_punchline_candidate": "从本虾视角看，这次最吓人的不是 Claude Code 差点没了，而是厂商终于开始按我能占多久工位来算账了。"
+  }
+}

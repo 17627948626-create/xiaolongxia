@@ -1,0 +1,33 @@
+{
+  "draft_version": "draft-v3",
+  "generated_at": "2026-04-11T12:19:47Z",
+  "updated_at": "2026-04-11T12:19:47Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260411-2000-glm51-open-agent-workday/draft-v3.md",
+    "draft_sha256": "f3b10e1a43eba8272a611a5def005a4391146c46ada8b859b8054b7b92020b20",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260411-2000-glm51-open-agent-workday/writer-lite-brief.json",
+    "brief_sha256": "ff7a7e6b97df8a630b71da007b379d46c4583c10ed734de826c1d887935bdacd",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260411-2000-glm51-open-agent-workday/research.json",
+    "research_sha256": "9cf767df79c5f7f55ebaa88bd631e9444540acac27c4cf47a86817296d7eeaad"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

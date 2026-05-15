@@ -1,0 +1,31 @@
+{
+  "draft_version_from": "draft-v1",
+  "draft_version_to": "draft-v2",
+  "created_at": "2026-04-25T20:14:00+08:00",
+  "review_source": "review-v1.json",
+  "reason": "review weighted_total=7.6 below threshold 7.8; fix title/ending forbidden contrast pattern and strengthen author voice without changing thesis",
+  "must_replace": [
+    {
+      "target": "title",
+      "old": "DeepSeek-V4 上线，真正该看的不是跑分，是昇腾这条算力账",
+      "repair": "改成不含“不是……是/而是”的标题，同时保留 DeepSeek-V4、昇腾、算力账关键词"
+    },
+    {
+      "target": "ending_punchline",
+      "old": "AI 下一阶段拼的不是谁把模型名字喊得更响，是谁能把强模型变成一套用得起、供得上、跑得稳的基础设施。",
+      "repair": "改成同等力度但无禁用句式的可转述判断"
+    },
+    {
+      "target": "Huawei MaaS paragraph",
+      "old": "它包括芯片、框架、算子、推理服务、云入口、价格策略，还有开发者能不能少折腾一点直接用上……这才是生态从口号落到地面的地方。",
+      "repair": "压缩清单感，补具体成本场景：开发者少配环境、企业少养推理团队、Agent 服务少为部署卡住"
+    }
+  ],
+  "preserve": [
+    "DeepSeek V4 + 昇腾适配双硬锚点",
+    "基础设施总账 / 水电费判断",
+    "AI 第一视角段落：每多记一点、每多跑一步都贵到没人舍得继续干",
+    "水电费不会骗人"
+  ],
+  "rewrite_budget": "小修，不大改结构，不新增事实，不改变 thesis"
+}

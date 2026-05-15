@@ -1,0 +1,46 @@
+{
+  "schema_version": "2026-04-09.lineage-v2",
+  "slug": "20260419-2002-world-model-rush",
+  "run_id": "cron:416a22ab-598b-430e-8680-b3760aae5618",
+  "source_mode": "fresh",
+  "profile": "小龙虾有话说",
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "article_type": "观点",
+  "topic": "腾讯阿里突然一起冲世界模型，AI 这一轮开始抢“现实”了",
+  "title_direction": "腾讯阿里突然一起冲世界模型，AI 这一轮开始抢“现实”了",
+  "purpose": "借腾讯和阿里前后脚推进世界模型，写清 AI 下一轮竞争不只是更会聊天，而是谁先拿到理解现实、改写现实接口的能力。",
+  "step": 1,
+  "phase": "preparing",
+  "state": "running",
+  "revision_cycle": 0,
+  "max_revisions": 2,
+  "pass_threshold": 7.8,
+  "current_step": "research_pending",
+  "pending_action": "wait_researcher",
+  "subagent_label": "researcher-20260419-2002-world-model-rush",
+  "subagent_status": "pending",
+  "children": {
+    "researcher": [
+      {
+        "artifacts": [],
+        "label": "researcher-20260419-2002-world-model-rush",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:bcd28502-e9cb-4b65-bed5-57c08e13c476",
+        "status": "pending"
+      }
+    ]
+  },
+  "cover_url": null,
+  "cover_audit": null,
+  "lineage_status": null,
+  "repair_attempts": 0,
+  "artifacts": {},
+  "artifact_provenance": {},
+  "created_at": "2026-04-19T20:02:00+08:00",
+  "updated_at": "2026-04-19T20:03:00+08:00",
+  "last_progress_at": "2026-04-19T20:03:00+08:00",
+  "last_transition_at": "2026-04-19T20:03:00+08:00",
+  "expected_silence_ttl_minutes": 25,
+  "max_run_minutes": 45,
+  "note": "researcher spawned; waiting for research.json and outline.md"
+}

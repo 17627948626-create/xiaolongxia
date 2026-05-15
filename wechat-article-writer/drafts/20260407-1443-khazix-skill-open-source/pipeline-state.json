@@ -1,0 +1,279 @@
+{
+  "article_type": "观点",
+  "artifact_provenance": {
+    "draft-v2.md": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:8fa1d327-8993-417b-ab76-ed9ea7023666"
+    },
+    "draft-v3.md": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e66b22dd-0396-44f2-a436-d7b22beaccb0"
+    },
+    "draft-v4.md": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:7a399804-eb0d-42cb-9387-3b42b8b6926c"
+    },
+    "draft.md": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:04903bae-e3dc-4590-a4e3-1ecb56d96fd1"
+    },
+    "fact-check-v1.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "fact_checker",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e0e7f7cd-08dd-4589-af26-a1a5e611dc7e"
+    },
+    "fact-check-v2.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "fact_checker",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:c51243f9-07c7-464e-b38c-73b4f54aacae"
+    },
+    "final-layout.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:618981d9-8cc7-439c-8ed8-b54b91a7f4f1"
+    },
+    "final.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:f85380ec-9269-4e28-b104-a1ddba3ffe00"
+    },
+    "outline.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:c3903ece-55fb-4fb0-8f08-65a9afac0e70"
+    },
+    "research.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:c3903ece-55fb-4fb0-8f08-65a9afac0e70"
+    },
+    "review-v1.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:bd7ea258-65d0-464d-b12f-3090466b64b8"
+    },
+    "review-v2.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:616b8540-8052-4038-8efd-7e3dd06117a0"
+    }
+  },
+  "blocking": null,
+  "blocking_since": null,
+  "boss_notified_at": null,
+  "children": {
+    "fact_checker": [
+      {
+        "artifacts": [
+          "fact-check-v1.json"
+        ],
+        "label": "fact-checker-khazix-skill-open-source-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e0e7f7cd-08dd-4589-af26-a1a5e611dc7e",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "fact-check-v2.json"
+        ],
+        "label": "fact-checker-khazix-skill-open-source-v2",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:c51243f9-07c7-464e-b38c-73b4f54aacae",
+        "status": "done"
+      }
+    ],
+    "humanizer": [
+      {
+        "artifacts": [
+          "final.md"
+        ],
+        "label": "humanizer-khazix-skill-open-source-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:f85380ec-9269-4e28-b104-a1ddba3ffe00",
+        "status": "done"
+      }
+    ],
+    "layout": [
+      {
+        "artifacts": [
+          "final-layout.md"
+        ],
+        "label": "layout-khazix-skill-open-source-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:618981d9-8cc7-439c-8ed8-b54b91a7f4f1",
+        "status": "done"
+      }
+    ],
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ],
+        "label": "researcher-khazix-skill-open-source",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:c3903ece-55fb-4fb0-8f08-65a9afac0e70",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "review-v1.json"
+        ],
+        "label": "reviewer-khazix-skill-open-source-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:bd7ea258-65d0-464d-b12f-3090466b64b8",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-v2.json"
+        ],
+        "label": "reviewer-khazix-skill-open-source-v2",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:616b8540-8052-4038-8efd-7e3dd06117a0",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "draft.md"
+        ],
+        "label": "writer-khazix-skill-open-source-v1",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:04903bae-e3dc-4590-a4e3-1ecb56d96fd1",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v2.md"
+        ],
+        "label": "writer-khazix-skill-open-source-v2-preflight-fix",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:8fa1d327-8993-417b-ab76-ed9ea7023666",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v3.md"
+        ],
+        "label": "writer-khazix-skill-open-source-v3-revise",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:e66b22dd-0396-44f2-a436-d7b22beaccb0",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v4.md"
+        ],
+        "label": "writer-khazix-skill-open-source-v4-factfix",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:7a399804-eb0d-42cb-9387-3b42b8b6926c",
+        "status": "done"
+      }
+    ]
+  },
+  "control_plane_sync": "partial",
+  "current_step": "reader_side_published",
+  "draft_box_saved": true,
+  "draft_saved_at": "2026-04-07T15:37:00+08:00",
+  "error": null,
+  "handoff": null,
+  "html_rendered": false,
+  "last_clean_step": "layout",
+  "last_draft_file": "draft-v4.md",
+  "last_progress_at": "2026-04-07T08:46:24Z",
+  "last_review_file": "review-v2.json",
+  "last_transition_at": "2026-04-07T08:46:24Z",
+  "lineage_audited_at": "2026-04-07T08:47:15Z",
+  "lineage_status": "clean",
+  "max_revisions": 3,
+  "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+  "mcp_server": "wenyan-mcp",
+  "media_id": "7NYHnQxN70EpaLx4Jh0kyt-nW-Ue6G-L8qf6Xn5cc2R3R8WkOVYl6ZBgOviLiLen",
+  "min_dimension": 6,
+  "note": "老板确认该文已正式发布；此前 reader_side_in_review / 等候发表记录有误，现已修正为已发表。",
+  "pass_threshold": 8.2,
+  "pending_action": null,
+  "phase": "published",
+  "profile": "小龙虾有话说",
+  "publish_candidate": "publish.md",
+  "publish_file": "publish.md",
+  "publish_profile_preflight": {
+    "checked_at": "2026-04-07T08:46:24Z",
+    "default_theme": "sspai",
+    "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+    "mcp_server": "wenyan-mcp",
+    "profile": "小龙虾有话说",
+    "publish_md_checked": true,
+    "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+    "publisher_mode": "remote",
+    "status": "ok",
+    "wechat_author": "小龙虾有话说",
+    "wenyan_mcp_present": true
+  },
+  "published": true,
+  "published_at": "2026-04-07T15:45:00+08:00",
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "publisher_mode": "remote",
+  "purpose": "借卡兹克开源自己在用的写作 skill 这件事，写清楚 AI 时代真正稀缺的不是纯手工，而是能把自己的判断、边界、自检与迭代流程工程化的创作者。",
+  "qr_updated_at": null,
+  "relay_dedupe_key": null,
+  "relay_status": null,
+  "repair_action": null,
+  "repair_attempts": 0,
+  "required_user_action": null,
+  "resume_context": null,
+  "revision_cycle": 1,
+  "run_id": "manual:xiaolongxia:20260407-1443-khazix-skill-open-source",
+  "safe_check_qr_path": null,
+  "safe_check_qr_url": null,
+  "schema_version": "2026-04-07.lineage-v1",
+  "slug": "20260407-1443-khazix-skill-open-source",
+  "source_mode": "fresh",
+  "state": "done",
+  "status": "published",
+  "step": 8,
+  "subagent_label": null,
+  "subagent_status": null,
+  "timeout_at": null,
+  "timeout_escalated_at": null,
+  "updated_at": "2026-04-07T12:38:52Z",
+  "waiting_for": null,
+  "wechat_author": "小龙虾有话说",
+  "wenyan_push_status": "success",
+  "lite_preflight": {
+    "binding_status": "matched",
+    "binding_checked_at": "2026-04-07T12:38:52Z",
+    "binding_artifact": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-1443-khazix-skill-open-source/writer-lite-binding.json",
+    "last_draft_file": "draft-v4.md",
+    "last_draft_version": "draft-v4",
+    "last_draft_sha256": "9f7bf292f69651382c68d64fbf0297f9a5b4da669b13e8ec27f374499d1691a2",
+    "latest_check_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-1443-khazix-skill-open-source/writer-lite-check.json",
+    "previous_check_draft_version": "draft-v4",
+    "previous_check_draft_sha256": "9f7bf292f69651382c68d64fbf0297f9a5b4da669b13e8ec27f374499d1691a2",
+    "latest_check_draft_version": "draft-v4",
+    "latest_check_draft_sha256": "9f7bf292f69651382c68d64fbf0297f9a5b4da669b13e8ec27f374499d1691a2",
+    "match": true,
+    "waiver": null,
+    "resolution": null
+  }
+}

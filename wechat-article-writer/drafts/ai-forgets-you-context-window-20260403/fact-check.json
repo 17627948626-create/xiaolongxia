@@ -1,0 +1,101 @@
+{
+  "draft_version": "v2",
+  "checked_at": "2026-04-03T00:31:00+08:00",
+  "total_claims": 9,
+  "verified": 6,
+  "inaccurate": 2,
+  "unverifiable": 1,
+  "false": 0,
+  "pass": false,
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "ChatGPT 的 Memory 功能，根据 OpenAI 自己的说明，只保存少量高层偏好——比如你喜欢简洁回答、你是做设计的。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "OpenAI Memory FAQ: 'Memory is intended for high-level preferences and details, and should not be relied on to store exact templates or large blocks of verbatim text.'",
+      "source_url": "https://help.openai.com/en/articles/8590148-memory-faq"
+    },
+    {
+      "id": 2,
+      "original_text": "它明确写了：doesn't remember every detail from past chats。不记得每次对话的具体细节。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "OpenAI Memory FAQ: 'ChatGPT doesn't remember every detail from past chats, so use saved memories for anything you want it to always keep in mind.'",
+      "source_url": "https://help.openai.com/en/articles/8590148-memory-faq"
+    },
+    {
+      "id": 3,
+      "original_text": "年初 ChatGPT 刚把 Memory 功能开放给了所有用户",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "本文写于 2026-04-03，「年初」指 2026 年初。但根据可查资料，ChatGPT Memory 向所有免费用户开放是在 2025 年 6 月 3 日，而非 2026 年初。文中时间节点不准确。",
+        "此外，免费用户拿到的是「轻量版」memory 升级（short-term continuity），而非与付费用户完全相同的功能，说「开放给了所有用户」稍有简化。"
+      ],
+      "correction": "建议改为「去年（2025 年）ChatGPT 把 Memory 功能陆续向更多用户开放」或「2025 年中 ChatGPT 把 Memory 功能扩展到免费用户」，不要用「年初」。",
+      "source": "BleepingComputer: 'The ChatGPT Memory feature began rolling out to all logged-in free users starting June 3, 2025.'",
+      "source_url": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-rolls-out-memory-upgrade-for-free-users/"
+    },
+    {
+      "id": 4,
+      "original_text": "Gemini 2.0 也在主打「记忆增强」",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "Gemini 2.0 确实引入了记忆相关的改进（in-session 记忆最长 10 分钟、通过 Flash Thinking Experimental 提供 recall 功能等），但「记忆增强」并非 Gemini 2.0 的核心宣传点。Gemini 2.0 主打的是原生多模态、更强推理、工具调用能力。记忆/个性化是附加功能，主要在 Flash Thinking Experimental 变体中体现，且属于 Google One AI Premium 订阅权益。",
+        "用「主打」描述 Gemini 2.0 与记忆的关系有些夸大，容易误导读者。"
+      ],
+      "correction": "建议改为「Gemini 2.0 的 Flash Thinking 版本也加入了记忆增强功能」或「Gemini 也在探索记忆增强」，去掉「主打」二字。",
+      "source": "VentureBeat / Google Blog: Gemini 2.0 memory is a specific feature of Flash Thinking Experimental, not the primary pitch of Gemini 2.0.",
+      "source_url": "https://venturebeat.com/ai/gemini-2-0-flash-thinking-now-has-memory-and-google-apps-integration"
+    },
+    {
+      "id": 5,
+      "original_text": "现在有些模型的上下文窗口已经做到了 200 万 token。比如 Google 的 Gemini",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Google Blog: Gemini 1.5 Pro and experimental Gemini 2.0 Pro both feature 2 million token context windows. The 2M context was made available to all developers.",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-updates-february-2025/"
+    },
+    {
+      "id": 6,
+      "original_text": "IBM 对上下文窗口的解释很直白：它以 token（可以粗略理解为字词片段）计量，超出容量后，旧信息就会被截断或遗忘。",
+      "verdict": "❌ UNVERIFIABLE",
+      "issues": [
+        "该说法的技术内容（token 计量、超出后截断遗忘）准确无误，是业界共识。但「IBM 的说明」这一具体来源无法在本次核查中直接验证，未能确认 IBM 官方有此表述或相关发布。"
+      ],
+      "correction": "建议去掉「IBM」这一具体机构属名，改为「以 token 计量，超出容量后，旧信息就会被截断或遗忘」（不归因于特定机构），或换用可明确引证的来源（如 OpenAI、Anthropic 的官方文档）。",
+      "source": "IBM attribution not directly verifiable; technical content itself is accurate industry standard.",
+      "source_url": null
+    },
+    {
+      "id": 7,
+      "original_text": "开源社区已经有 Mem0……这样专门做 AI 持久记忆的项目在跑，思路是在模型外面建一套能自动提取、压缩、检索的记忆管理层，比「几条便签纸」精细得多。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "GitHub mem0ai/mem0: 'Mem0 provides a universal memory layer for AI agents, enabling AI applications to retain user preferences, adapt to individual needs, and continuously learn over time. Hybrid database approach: vector, key-value, and graph.'",
+      "source_url": "https://github.com/mem0ai/mem0"
+    },
+    {
+      "id": 8,
+      "original_text": "MemGPT（现在叫 Letta）",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Letta blog: MemGPT was officially rebranded to Letta on August 22, 2024. The company Letta was founded to continue MemGPT research and maintain the open-source repository.",
+      "source_url": "https://www.letta.com/blog/memgpt-and-letta"
+    },
+    {
+      "id": 9,
+      "original_text": "Claude 不是有 Projects 吗？你可以上传背景文档，让 AI 在项目范围内参考。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Claude Projects is a real Anthropic feature allowing users to upload reference documents, instructions, and context within a project scope for persistent use across conversations.",
+      "source_url": "https://www.anthropic.com/claude"
+    }
+  ]
+}

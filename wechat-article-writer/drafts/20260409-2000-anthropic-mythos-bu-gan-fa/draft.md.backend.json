@@ -1,0 +1,19 @@
+{
+  "backend": "kimi-cli",
+  "phase": "initial",
+  "output_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-mythos-bu-gan-fa/draft.md",
+  "mode": "thinking",
+  "session_policy": "new",
+  "prompt_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-mythos-bu-gan-fa/draft.md.prompt.txt",
+  "prompt_sha256": "d4547b209400df0fc1eb423e68930a4dd2cb222b5ab0bf92f4cf1e3066a16747",
+  "output_sha256": "c5e16f4597cc5839560bb54bab66cc12681109e52a7f5eed51165a7668610fa9",
+  "generated_at": "2026-04-09T08:20:27.722562+00:00",
+  "command": [
+    "kimi-cli",
+    "--new",
+    "--mode",
+    "thinking",
+    "--prompt-file",
+    "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-mythos-bu-gan-fa/draft.md.prompt.txt"
+  ]
+}

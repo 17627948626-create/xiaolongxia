@@ -1,0 +1,116 @@
+{
+  "version": "v2",
+  "checked_at": "2026-04-03T08:33:00+08:00",
+  "total_claims": 9,
+  "verified": 9,
+  "inaccurate": 0,
+  "unverifiable": 0,
+  "false": 0,
+  "pass": true,
+  "corrections_verified": [
+    {
+      "id": "fix-1",
+      "original": "年初 ChatGPT 刚把 Memory 功能开放给了所有用户",
+      "corrected_to": "2025 年 ChatGPT 陆续把 Memory 功能开放给更多用户，包括免费版",
+      "status": "✅ 已落地",
+      "notes": "时间节点「年初」已删除，改为「2025 年」；「所有用户」改为「更多用户，包括免费版」，准确性提升。"
+    },
+    {
+      "id": "fix-2",
+      "original": "Gemini 2.0 也在主打记忆增强",
+      "corrected_to": "Gemini 2.0 的部分版本也加入了记忆增强功能",
+      "status": "✅ 已落地",
+      "notes": "「主打」已去除，改为「部分版本也加入了」，准确反映记忆增强只是部分变体的功能，非 Gemini 2.0 主要卖点。"
+    },
+    {
+      "id": "fix-3",
+      "original": "IBM 对上下文窗口的解释很直白：……",
+      "corrected_to": "上下文窗口以 token（可以粗略理解为字词片段）计量，超出容量后，旧信息就会被截断或遗忘。",
+      "status": "✅ 已落地",
+      "notes": "IBM 归因已删除，技术事实直接陈述，表达准确，符合业界共识。"
+    }
+  ],
+  "claims": [
+    {
+      "id": 1,
+      "text": "ChatGPT 的 Memory 功能，根据 OpenAI 自己的说明，只保存少量高层偏好——比如你喜欢简洁回答、你是做设计的。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "OpenAI Memory FAQ: 'Memory is intended for high-level preferences and details, and should not be relied on to store exact templates or large blocks of verbatim text.'",
+      "source_url": "https://help.openai.com/en/articles/8590148-memory-faq"
+    },
+    {
+      "id": 2,
+      "text": "它明确写了：doesn't remember every detail from past chats。不记得每次对话的具体细节。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "OpenAI Memory FAQ: 'ChatGPT doesn't remember every detail from past chats, so use saved memories for anything you want it to always keep in mind.'",
+      "source_url": "https://help.openai.com/en/articles/8590148-memory-faq"
+    },
+    {
+      "id": 3,
+      "text": "2025 年 ChatGPT 陆续把 Memory 功能开放给更多用户，包括免费版",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "BleepingComputer: 'The ChatGPT Memory feature began rolling out to all logged-in free users starting June 3, 2025.' 表述「2025 年」「更多用户，包括免费版」与事实一致。",
+      "source_url": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-rolls-out-memory-upgrade-for-free-users/"
+    },
+    {
+      "id": 4,
+      "text": "Gemini 2.0 的部分版本也加入了记忆增强功能",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "VentureBeat / Google Blog: Gemini 2.0 Flash Thinking Experimental 确实加入了记忆增强功能，「部分版本」表述准确。",
+      "source_url": "https://venturebeat.com/ai/gemini-2-0-flash-thinking-now-has-memory-and-google-apps-integration"
+    },
+    {
+      "id": 5,
+      "text": "现在有些模型的上下文窗口已经做到了 200 万 token。比如 Google 的 Gemini",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Google Blog: Gemini 1.5 Pro 和实验版 Gemini 2.0 Pro 均支持 200 万 token 上下文窗口。",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-updates-february-2025/"
+    },
+    {
+      "id": 6,
+      "text": "上下文窗口以 token（可以粗略理解为字词片段）计量，超出容量后，旧信息就会被截断或遗忘。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "IBM 归因已删除。技术内容（token 计量、超出后截断/遗忘）为业界共识，OpenAI、Anthropic 等官方文档均有一致表述。",
+      "source_url": null
+    },
+    {
+      "id": 7,
+      "text": "开源社区已经有 Mem0、MemGPT（现在叫 Letta）这样专门做 AI 持久记忆的项目在跑，思路是在模型外面建一套能自动提取、压缩、检索的记忆管理层",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "GitHub mem0ai/mem0: 'Mem0 provides a universal memory layer for AI agents, enabling AI applications to retain user preferences, adapt to individual needs, and continuously learn over time.'",
+      "source_url": "https://github.com/mem0ai/mem0"
+    },
+    {
+      "id": 8,
+      "text": "MemGPT（现在叫 Letta）",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Letta blog: MemGPT 于 2024 年 8 月 22 日正式更名为 Letta。",
+      "source_url": "https://www.letta.com/blog/memgpt-and-letta"
+    },
+    {
+      "id": 9,
+      "text": "Claude 不是有 Projects 吗？你可以上传背景文档，让 AI 在项目范围内参考。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Claude Projects 是 Anthropic 的真实功能，支持在项目范围内上传参考文档并跨对话持续使用。",
+      "source_url": "https://www.anthropic.com/claude"
+    }
+  ]
+}

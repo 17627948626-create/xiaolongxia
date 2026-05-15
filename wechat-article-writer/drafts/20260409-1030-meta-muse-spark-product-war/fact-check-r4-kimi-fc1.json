@@ -1,0 +1,26 @@
+{
+  "draft_version": "r4-kimi-fc1",
+  "checked_at": "2026-04-09T04:36:30Z",
+  "total_claims": 13,
+  "verified": 12,
+  "inaccurate": 0,
+  "unverifiable": 0,
+  "false": 0,
+  "localization": 1,
+  "pass": false,
+  "claims": [
+    {
+      "id": 13,
+      "original_text": "这是开放人工智能公司 OpenAI 和 Anthropic 公司花多少钱买广告都换不来的。",
+      "type": "localization",
+      "verdict": "⚠️ LOCALIZATION",
+      "issues": [
+        "OpenAI 已有中文说明，但 Anthropic 在首次出现时仍是英文名直接入文。",
+        "按本轮 fact-check 协议，首次出现的人名/机构名/公司名应尽量采用中文说明在前、英文原名在后。"
+      ],
+      "correction": "建议改为：这是开放人工智能公司 OpenAI 和 Anthropic 公司（Anthropic）花多少钱买广告都换不来的。",
+      "source": "Second-pass verification against draft-r4-kimi-fc1.md; prior factual issues about demos, products, API path, and localization of MSL / Meta AI app / meta.ai / Llama / Instagram / Facebook / Messenger / WhatsApp have been fixed. Remaining issue is first-mention localization of Anthropic.",
+      "source_url": "https://mashable.com/article/mark-zuckerberg-meta-announce-new-muse-spark-ai-models"
+    }
+  ]
+}

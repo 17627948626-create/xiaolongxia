@@ -1,0 +1,178 @@
+{
+  "topic": "NVIDIA Nemotron 3 Nano Omni 发布与 AI Agent 感知成本",
+  "thesis": "Agent 真正贵的下一块，不是多想几步，而是每一秒都要看懂屏幕、听懂音频、读懂文档；感知成本开始决定数字工位能不能规模化上岗。",
+  "why_now": {
+    "summary": "NVIDIA 在 2026-04-28 发布 Nemotron 3 Nano Omni，并在官方博客、开发者博客和 Hugging Face 技术博客集中强调统一视觉、音频、视频、文本的开放模型，以及最高约 9x 的吞吐/系统效率提升。这给今晚文章一个清晰热点入口：Agent 从“会规划”走向“能持续感知工作现场”的成本问题。",
+    "time_window": "48h hot-topic window; release date observed in model card as 2026-04-28; artifact created 2026-04-29T20:05+08:00",
+    "avoid_recent_overlap": [
+      "不重复 2026-04-24 Claude Code 工位涨价文的套餐/座席定价角度",
+      "不重复 2026-04-26 Google-Anthropic 供血权文的算力资本绑定角度",
+      "不重复 2026-04-28 Manus 被禁收购文的 Agent 主权/交易敏感性角度"
+    ]
+  },
+  "source_records": [
+    {
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/",
+      "title": "NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and Language for up to 9x More Efficient AI Agents",
+      "type": "official_blog",
+      "verified": true,
+      "observed_at": "2026-04-29T20:02:38+08:00",
+      "key_facts": [
+        "NVIDIA 称 Nemotron 3 Nano Omni 是开放多模态模型，把视频、音频、图像、文本能力放进一个系统，用于更快、更聪明的 Agent 响应。",
+        "官方称该模型在复杂文档智能、视频和音频理解方面登上六个 leaderboard；这是 NVIDIA 的官方表述，不等同于第三方独立验收。",
+        "官方称模型通过合并视觉与音频编码器、30B-A3B hybrid MoE 架构，减少分离感知模型带来的 latency、context fragmentation、cost 和 inaccuracies。",
+        "官方给出的应用场景包括 computer use agents、document intelligence、audio and video understanding。",
+        "官方称模型开放 weights、datasets、training techniques，可通过 Hugging Face、OpenRouter、build.nvidia.com/NIM 及云伙伴生态获取。"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+      "type": "nvidia_huggingface_technical_blog",
+      "verified": true,
+      "observed_at": "2026-04-29T20:02:38+08:00",
+      "key_facts": [
+        "技术博客称 Nemotron 3 Nano Omni 面向真实文档分析、多图推理、ASR、长音视频理解、agentic computer use 和通用推理。",
+        "技术博客列出 benchmark highlight：OCRBenchV2-En 65.8、MMLongBench-Doc 57.5、OSWorld 47.4、Video-MME 72.2、VoiceBench 89.4 等。",
+        "技术博客称模型使用 Nemotron 3 Nano 30B-A3B backbone，搭配 C-RADIOv4-H vision encoder 与 Parakeet-TDT-0.6B-v2 audio encoder。",
+        "技术博客称与同等交互性下其他开放 omni 模型相比，多文档用例 system efficiency 高 7.4x，视频用例高 9.2x。",
+        "技术博客说明动态分辨率、Conv3D temporal compression、Efficient Video Sampling 和 native audio input 是效率/感知能力核心设计。"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasoning-in-a-single-efficient-open-model",
+      "title": "NVIDIA Nemotron 3 Nano Omni Powers Multimodal Agent Reasoning in a Single Efficient Open Model",
+      "type": "official_developer_blog",
+      "verified": true,
+      "observed_at": "2026-04-29T20:02:45+08:00",
+      "key_facts": [
+        "开发者博客明确把模型定位为 agentic systems 中的 multimodal perception and context sub-agent。",
+        "开发者博客称 fragmented model chains 会增加 inference hops、orchestration complexity、inference costs，并削弱 cross-modal context consistency。",
+        "开发者博客称在固定 per-user interactivity threshold 下，视频推理可达约 9.2x effective system capacity，多文档推理约 7.4x。",
+        "开发者博客称支持 Ampere、Hopper、Blackwell GPU，vLLM 与 TensorRT-LLM 等推理引擎，并支持 FP8/NVFP4 quantization。"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "title": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16 · Hugging Face",
+      "type": "model_card",
+      "verified": true,
+      "observed_at": "2026-04-29T20:02:45+08:00",
+      "key_facts": [
+        "Model card 标注 Build.Nvidia.com、Hugging Face、NGC release date 均为 04/28/2026。",
+        "Model card 称模型支持 video、audio、image、text 输入，最大 context length up to 256k tokens，English only。",
+        "Model card 给出 use cases：customer service、M&E、document intelligence、GUI automation for agentic applications。",
+        "Model card 标注参数规模 3.1 x 10^10，即 31B A3B，架构为 Mamba2-Transformer Hybrid MoE。"
+      ]
+    }
+  ],
+  "fact_records": [
+    {
+      "id": "f1_release_date",
+      "kind": "official_claim",
+      "claim": "Nemotron 3 Nano Omni 在 Build.Nvidia.com、Hugging Face、NGC 的发布日期为 2026-04-28。",
+      "source_url": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "confidence": "high_for_model_card_claim",
+      "use_boundary": "可写成 model card 标注发布日期；不写成全球可用性已在所有地区完成验证。"
+    },
+    {
+      "id": "f2_open_model_positioning",
+      "kind": "official_claim",
+      "claim": "NVIDIA 将 Nemotron 3 Nano Omni 定位为开放多模态/omni model，统一 vision、audio、language/text，用于 Agent 感知与推理。",
+      "source_url": "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/",
+      "confidence": "high_for_official_positioning",
+      "use_boundary": "可作为官方定位；不要夸成行业已经公认的统一标准。"
+    },
+    {
+      "id": "f3_efficiency_9x",
+      "kind": "benchmark",
+      "claim": "NVIDIA/Hugging Face 技术博客称在相同交互性阈值下，视频用例 system efficiency 约 9.2x，多文档用例约 7.4x；新闻标题概括为 up to 9x more efficient AI agents。",
+      "source_url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "confidence": "medium_official_benchmark_not_independent",
+      "use_boundary": "正文必须写清是官方 benchmark/系统效率口径；不要写成真实客户全行业成本已经下降 9 倍。"
+    },
+    {
+      "id": "f4_leaderboards",
+      "kind": "benchmark",
+      "claim": "技术博客列出的 benchmark 包括 OCRBenchV2-En 65.8、MMLongBench-Doc 57.5、OSWorld 47.4、Video-MME 72.2、WorldSense 55.4、DailyOmni 74.1、VoiceBench 89.4、HF Open ASR 5.95。",
+      "source_url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "confidence": "medium_official_benchmark_table",
+      "use_boundary": "可用少量分数证明其覆盖文档、GUI、视频、音频；不建议在正文堆完整表格。"
+    },
+    {
+      "id": "f5_architecture",
+      "kind": "official_claim",
+      "claim": "模型为 30B-A3B/31B A3B hybrid MoE，使用 C-RADIOv4-H vision encoder、Parakeet audio encoder，并有动态分辨率、Conv3D、EVS 等设计。",
+      "source_url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "confidence": "high_for_official_technical_description",
+      "use_boundary": "可服务于‘感知成本’解释；正文无需展开成架构教程。"
+    },
+    {
+      "id": "f6_model_card_capabilities",
+      "kind": "official_claim",
+      "claim": "Model card 标注输入类型为 video、audio、image、text；视频 mp4 up to 2 minutes，音频 wav/mp3 up to 1 hour，最大 context length up to 256k tokens，English only。",
+      "source_url": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "confidence": "high_for_model_card_claim",
+      "use_boundary": "可作为能力边界；不要写成所有语言/所有长视频场景都成熟可用。"
+    },
+    {
+      "id": "f7_dynamic_family_downloads",
+      "kind": "api_snapshot",
+      "claim": "NVIDIA 官方博客称 Nemotron 3 family 在过去一年超过 50 million downloads。",
+      "source_url": "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/",
+      "observed_at": "2026-04-29T20:02:38+08:00",
+      "confidence": "medium_official_dynamic_number",
+      "use_boundary": "这是官方动态口径；若引用必须带‘官方称’，不作为第三方下载量核验。"
+    },
+    {
+      "id": "f8_paraphrase_scope",
+      "kind": "paraphrase_only",
+      "claim": "H Company CEO 关于不能等数秒解释屏幕、Agent 需要实时理解数字环境的表述，只用于转述，不逐字引用。",
+      "source_url": "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/",
+      "quote_mode": "paraphrase_only",
+      "confidence": "high_for_attributed_paraphrase",
+      "use_boundary": "若正文使用，必须写成‘NVIDIA 博客引用 H Company 负责人表达过类似意思’，不放引号。"
+    }
+  ],
+  "angle_risks": [
+    {
+      "risk": "把 NVIDIA 官方 benchmark 当成独立实测结论",
+      "mitigation": "所有 7.4x/9.2x/leaderboard 分数均加‘官方/技术博客称’边界；文章主判断落在成本趋势，不落在绝对跑分。"
+    },
+    {
+      "risk": "写成新模型功能清单",
+      "mitigation": "每个功能点只服务一个问题：Agent 持续看屏幕、听音频、读文档的感知成本。"
+    },
+    {
+      "risk": "与近期‘数字工位涨价’角度重叠",
+      "mitigation": "本篇不谈套餐/座席收费，聚焦工位背后的持续感知层成本。"
+    },
+    {
+      "risk": "过度断言 Nemotron 已经改变全部 Agent 架构",
+      "mitigation": "写成‘NVIDIA 正在把感知子 Agent 做成基础件’，不是‘行业已经完成迁移’。"
+    },
+    {
+      "risk": "读者不关心模型名",
+      "mitigation": "开头用‘一个 Agent 每秒看屏幕都要花钱’切入，把模型名变成案例，不让读者背参数。"
+    }
+  ],
+  "style_exemplar_pack": {
+    "plain_language_examples": [
+      "以前很多 Agent 像办公室里戴着眼罩的聪明人：会想办法，但每看一眼屏幕都要叫另一个同事帮忙描述。",
+      "多模态不是让模型多长几个功能按钮，而是让 Agent 少绕几次远路。",
+      "规划模型负责想下一步，感知模型负责告诉它眼前到底发生了什么；后者一旦贵，整个工位就很难常驻。"
+    ],
+    "usable_scenarios": [
+      "客服 Agent 同时看屏幕录制、听通话音频、查日志。",
+      "财务 Agent 读 PDF、表格、图表和语音备注。",
+      "浏览器 Agent 在 1920×1080 屏幕上识别按钮、状态和页面变化。"
+    ],
+    "ai_first_person_entry": "作为一个靠浏览器、截图和工具干活的 AI，本虾对这件事最敏感：如果看不懂现场，再强的规划也只是隔空指挥。"
+  },
+  "title_directions": [
+    "NVIDIA 新模型提醒了一件事：Agent 最贵的下一块，是眼睛和耳朵",
+    "Nemotron 3 Nano Omni 发布后，Agent 的成本账要重算了",
+    "AI Agent 想真正上岗，先得便宜地看懂屏幕",
+    "NVIDIA 把多模态塞进一个模型，真正瞄准的是 Agent 的感知成本"
+  ]
+}

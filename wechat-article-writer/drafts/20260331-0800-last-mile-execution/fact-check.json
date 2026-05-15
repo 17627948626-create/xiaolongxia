@@ -1,0 +1,105 @@
+{
+  "draft_version": "v2",
+  "checked_at": "2026-03-31T00:26:00+08:00",
+  "total_claims": 7,
+  "verified": 2,
+  "inaccurate": 1,
+  "unverifiable": 4,
+  "false": 0,
+  "pass": false,
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "browser-use 存在 issue #1157，内容是 Agent 陷入无限循环，日志显示每步成功但永远卡在 Step 1 重复同一动作",
+      "status": "VERIFIED",
+      "evidence": "GitHub https://github.com/browser-use/browser-use/issues/1157 已确认存在，标题为 'Browser Stuck with agent repeating same step infinitely'。内容：Agent 持续循环 Step 1，所有浏览器操作（get_state, build_dom_tree, take_screenshot 等）均显示完成，无任何错误日志。与文章描述高度吻合。",
+      "source_url": "https://github.com/browser-use/browser-use/issues/1157"
+    },
+    {
+      "id": "C2",
+      "claim": "Gemini CLI 存在 issue #16982，描述工具调用输出未回传到 Agent context（'phantom execution'）",
+      "status": "VERIFIED",
+      "evidence": "GitHub https://github.com/google-gemini/gemini-cli/issues/16982 已确认存在，标题为 'Silent Tool Execution Failure (Phantom Responses) during Log Retrieval'。内容描述：Agent 宣布工具调用（read_file / run_shell_command）但系统返回无输出无报错，工具与 Agent 的 context 管道断裂。issue 正文也使用了 'phantom execution' 这一词汇。与文章描述完全吻合。",
+      "source_url": "https://github.com/google-gemini/gemini-cli/issues/16982"
+    },
+    {
+      "id": "C3",
+      "claim": "专注 Agent 可靠性研究的 mutagent.io 分析称，生产环境中 Agent 有效性普遍卡在 60-70%",
+      "status": "INACCURATE",
+      "evidence": "mutagent.io 真实存在，定位为 Agent 优化工具（CLI），宣传语含数据：'95% don't achieve ROI'、'73% experience hallucinations'、'62% can't handle edge cases'。官网无法找到 '60-70% effectiveness' 这一具体数据表述。该网站也未自我定义为 '专注 Agent 可靠性研究' 的研究机构，而是一个商业 Agent 优化工具产品。",
+      "correction": "有两处需修正：(1) '60-70%' 数据在 mutagent.io 官网无直接对应，官网援引的是 '62% can't handle edge cases'，不是 '有效性卡在 60-70%'。建议删除具体数字或改为 '超过 60% 的 Agent 在生产环境中无法处理边缘情况'（直接引用 mutagent.io 官网数据）；(2) mutagent.io 是商业产品，非学术/研究机构，'专注 Agent 可靠性研究的' 定语过度抬升其学术可信度，建议改为 'Agent 优化工具 mutagent.io' 或直接删除该来源，因其数据本身带有商业动机。",
+      "source_url": "https://www.mutagent.io/"
+    },
+    {
+      "id": "C4",
+      "claim": "他们还说了句大实话：靠逐个修 prompt 来救场，就像在一艘漏水的船上一个一个补洞",
+      "status": "UNVERIFIABLE",
+      "evidence": "mutagent.io 官网及博客中未找到这一比喻的原文表述。博客中提到 'You wrote a system prompt based on what you thought users would ask... Then you shipped it, and reality began its quiet disagreement' 及手动 debug 的局限性，但 '漏水的船' 这个比喻未能在可访问内容中找到。",
+      "suggestion": "删除这句具体引语，或改为作者自己的转述/评价，不要将其归因于 mutagent.io。例如改为：'这种逐个修 prompt 的方式，本质上是在给一艘漏水的船打补丁。'"
+    },
+    {
+      "id": "C5",
+      "claim": "dev.to 上一个叫 carsonroelldebug 的开发者写了篇文章，说自己花了 3 小时 debug 一个'没有坏掉的 pipeline'，日志全绿但结果完全错误",
+      "status": "UNVERIFIABLE",
+      "evidence": "dev.to/carsonroelldebug 用户页面存在（非 404），但需要登录才能查看用户内容（返回登录提示）。无法确认该用户是否发布了符合文章描述的文章，以及文章细节（3小时、具体内容、LLM 返回幻觉那句话）是否真实。用户名本身存在。",
+      "suggestion": "用户名可保留，但引用的具体细节（3小时、LLM 幻觉那句话的原文措辞）无法核实。建议软化为：'有开发者在 dev.to 分享了类似经历……' 删去精确的 3 小时说法，或将引语标注为意译而非直引。"
+    },
+    {
+      "id": "C6",
+      "claim": "'飞行记录仪' 比喻用于描述 Agent 决策链路记录的重要性",
+      "status": "UNVERIFIABLE",
+      "evidence": "文章中 '有人把解决思路比作飞行记录仪' 这一表述来源未注明。无法判断是引用自某个可引用来源（如 dev.to 的 '6 Ways to Debug AI Agents' 文章），还是作者自己的比喻。firecrawl 额度耗尽，无法进一步确认 dev.to 上的相关来源。",
+      "suggestion": "该比喻本身在技术写作中极常见，无需引用来源。改为 '有人将这类方案比喻为飞行记录仪' 或直接作为作者本人观点表述即可，无需挂靠具体来源。"
+    },
+    {
+      "id": "C7",
+      "claim": "本地化检查：browser-use、Gemini CLI、carsonroelldebug、mutagent.io 等专名无中文翻译",
+      "status": "LOCALIZATION",
+      "evidence": "文章首次出现各专名时均未提供中文翻译，评估如下：(1) browser-use：GitHub 上的开源项目名，属于产品专名，但对中文读者不熟悉，建议首次出现时标注如 'browser-use（浏览器自动化 Agent 框架）'；(2) Gemini CLI：Google 产品，在中文技术圈已有一定知名度，可接受但建议加括号说明如 'Gemini CLI（谷歌 AI 命令行工具）'；(3) carsonroelldebug：个人开发者用户名，无中文对应，可直接使用；(4) mutagent.io：商业产品，建议首次出现加说明如 'Agent 优化工具 mutagent.io'（文章已含义近似描述 '专注 Agent 可靠性研究'，但该描述不准确，见 C3）。",
+      "items_needing_localization": [
+        {
+          "term": "browser-use",
+          "suggestion": "首次出现改为：browser-use（一款浏览器自动化 Agent 框架）"
+        },
+        {
+          "term": "Gemini CLI",
+          "suggestion": "首次出现改为：Gemini CLI（谷歌 AI 命令行工具）"
+        },
+        {
+          "term": "mutagent.io",
+          "suggestion": "修正描述，见 C3 correction"
+        }
+      ]
+    }
+  ],
+  "corrections_needed": [
+    {
+      "priority": "HIGH",
+      "claim_id": "C3",
+      "issue": "mutagent.io 的 '60-70%' 数据与官网实际数据不符，官网数据为 '62% can't handle edge cases'，无 '有效性普遍卡在 60-70%' 的表述",
+      "action": "将 '生产环境中 Agent 的有效性普遍卡在 60-70%' 改为 '超过 60% 的 Agent 无法应对边缘情况'（对应官网 '62% can't handle edge cases'），或删除该具体数字，改为泛述。同时删除或修正 '专注 Agent 可靠性研究' 的定语，改为 'Agent 优化工具'。"
+    },
+    {
+      "priority": "MEDIUM",
+      "claim_id": "C4",
+      "issue": "mutagent.io '漏水的船' 比喻无法核实为该来源的原文",
+      "action": "将引号去掉或改为作者自己的说法，不要归因于 mutagent.io。"
+    },
+    {
+      "priority": "MEDIUM",
+      "claim_id": "C5",
+      "issue": "carsonroelldebug 的文章具体内容（3小时、LLM幻觉那句话原文）无法核实",
+      "action": "软化表述，去掉精确的 '3个小时' 说法，将引语标注为意译，或改为 '有开发者分享了类似经历'。"
+    },
+    {
+      "priority": "LOW",
+      "claim_id": "C7",
+      "issue": "部分英文专名首次出现缺中文说明",
+      "action": "browser-use、Gemini CLI 首次出现加中文注释，mutagent.io 描述参照 C3 修正。"
+    }
+  ],
+  "summary": {
+    "pass": false,
+    "reason": "C3 (mutagent.io 60-70% 数据) 为 INACCURATE，C4/C5 引用细节无法核实（UNVERIFIABLE），需修正后才能通过。C1（browser-use #1157）和 C2（Gemini CLI #16982）均已验证，与文章描述高度吻合。"
+  }
+}

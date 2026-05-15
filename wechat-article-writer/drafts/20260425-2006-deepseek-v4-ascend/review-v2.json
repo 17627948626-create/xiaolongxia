@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "decision": "pass",
+  "weighted_total": 8.15,
+  "threshold": 7.8,
+  "scores": {
+    "insight_density": 8.3,
+    "originality": 8.0,
+    "emotional_resonance": 8.0,
+    "completion_power": 8.4,
+    "voice": 8.1,
+    "title": 8.1,
+    "fact_accuracy": 8.2,
+    "readability": 8.4,
+    "weighted_total": 8.15,
+    "notes": "只按 config.json 的 review_pass_threshold=7.8 判定。本轮修订清掉了 v1 的三个主要合同问题：标题避开禁用对照句式，结尾金句改为更有画面感的连续短句，MaaS 段从清单解释压成开发者/企业的具体成本场景。"
+  },
+  "critical_issues": [],
+  "strengths": [
+    "v1 合同完成度高：标题已改为‘DeepSeek-V4 上线后，昇腾把算力账摊开了’，保留 DeepSeek-V4、昇腾、算力账三个关键词，同时不再使用‘不是……是/而是’结构。",
+    "结尾收束明显增强：‘把模型名字喊响，只能赢一天。把强模型跑成用得起、供得上、稳得住的基础设施，才有资格赢下一阶段。’比 v1 更短、更顺、更适合转述，并且避开禁用句式。",
+    "MaaS 段清单感已压下去：修订稿把免部署 API 的意义落到‘少配环境、少拉推理运维小队、少被部署成本劝退’，作者判断和真实成本场景都更清楚。",
+    "事实边界稳：没有写成国产全面反超，没有断言摆脱英伟达，也明确保留‘与美国顶尖闭源模型仍有差距’和‘多算力路径更可行’的谨慎表述。",
+    "小龙虾作者感有效：长上下文/工具链的 AI 第一视角段落与‘水电费不会骗人’形成前后呼应，既有账号识别度，也服务于产业判断。",
+    "可读性好：办公桌、水电费、电网等比喻把 KV cache、推理吞吐、MaaS、Scale out 这些硬词翻成普通读者能理解的成本问题。"
+  ],
+  "revision_contract": [],
+  "consistency_checks": {
+    "v1_contract_cleared": true,
+    "title_forbidden_pattern_cleared": true,
+    "ending_forbidden_pattern_cleared": true,
+    "maas_paragraph_cleaned": true,
+    "lite_preflight": "writer-lite-check-v2 hard_fail=false, ok=true",
+    "brief_alignment": "aligned",
+    "fact_boundary": "acceptable",
+    "notes": "draft-v2 围绕 DeepSeek-V4 与昇腾适配展开，没有换题；核心 thesis 仍是模型能力与基础设施总账的绑定。"
+  },
+  "minor_suggestions": [
+    {
+      "type": "optional_tightening",
+      "note": "若发布前还想微调，可把‘这些当然能看’到‘能不能跑’之间再压一两句，让第一屏更快进入账单判断；但这不是阻塞项。"
+    },
+    {
+      "type": "optional_wording",
+      "note": "‘外部报道里也有很清楚的谨慎判断’略像新闻稿转述，可保留，因为它承担事实边界控制。"
+    }
+  ],
+  "summary": "PASS，8.15/7.8。修订稿已经清掉 v1 的标题、结尾和 MaaS 段问题；主判断明确，事实边界稳，作者感和可转述金句达到发布线。"
+}

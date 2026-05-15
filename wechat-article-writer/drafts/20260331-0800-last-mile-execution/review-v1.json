@@ -1,0 +1,32 @@
+{
+  "pass": false,
+  "weighted_total": 8.33,
+  "hard_blocker": null,
+  "scores": {
+    "insight_density": {"score": 9.0, "weight": 0.20},
+    "originality": {"score": 8.0, "weight": 0.15},
+    "emotional_resonance": {"score": 7.5, "weight": 0.15},
+    "completion_power": {"score": 8.5, "weight": 0.15},
+    "voice": {"score": 9.0, "weight": 0.10},
+    "evidence": {"score": 7.5, "weight": 0.10},
+    "content_timeliness": {"score": 8.5, "weight": 0.10},
+    "title": {"score": 8.5, "weight": 0.05}
+  },
+  "feedback": [
+    {
+      "dimension": "emotional_resonance",
+      "score": 7.5,
+      "issue": "情绪弧度没有合拢。文章从具体 bug 场景开篇制造了很强的代入感，但结尾只是一个观察性结论，没有给读者任何情绪出口或行动锚点。'神经末梢还在长'是优美的比喻，但对于正在经历 Agent 翻车的读者来说，它制造焦虑却不提供解压阀。读者看完知道了为什么翻，但不知道该怎么办，情绪悬在空中。",
+      "quote": "推理是 Agent 的大脑，执行闭环是它的神经末梢。现在的情况是：大脑挺好使，神经末梢还在长。",
+      "suggestion": "在结尾加入一个可操作的最小行动项，或者至少给一个认知框架让读者带走——哪怕只是'下次你碰到这类问题，先问这一个问题'。这样情绪弧度才完整：问题被识别→理解根因→有了下一步。不需要长，一句话就够，但要让人觉得读完有收获而非读完更焦虑。"
+    },
+    {
+      "dimension": "evidence",
+      "score": 7.5,
+      "issue": "关键证据有两处可信度偏弱。mutagent.io 对微信读者是陌生来源，没有机构背书，直接引用'60-70%'这个数字会让人存疑。dev.to 那个开发者完全匿名，'有个开发者'的说法缺乏可查性，削弱了这个最有感染力的故事的说服力。",
+      "quote": "mutagent.io 做过一个分析，结论挺扎眼的——生产环境中 Agent 的有效性普遍卡在 60-70%。... 有个开发者在 dev.to 上写了篇文章，说自己花了 3 个小时 debug 一个'没有坏掉的 pipeline'。",
+      "suggestion": "mutagent.io 数据点加一句背景介绍（'一家专注 Agent 可靠性的团队'），或改换为更知名机构的类似研究。dev.to 故事如果来源可查就补充作者名或文章标题；如果找不到，改为'我在 dev.to 看到一个真实案例'仍比'有个开发者'稍强，因为限定了来源平台。"
+    }
+  ],
+  "summary": "这是一篇结构清晰、洞察密度高、语感出色的技术文章，'大脑 vs 手'的诊断框架和三个具体故障模式是真正有价值的原创性分析。失分主要在情绪收尾缺乏行动锚点以及少数证据来源偏弱，weighted_total 8.33 距通过线 8.5 差 0.17 分，不过关。"
+}

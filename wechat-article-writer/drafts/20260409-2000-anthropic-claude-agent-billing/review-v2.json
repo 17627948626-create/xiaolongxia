@@ -1,0 +1,158 @@
+{
+  "weighted_total": 7.84,
+  "decision": "FAIL",
+  "summary": "v2 比 v1 明显更像一篇成稿了：主判断更集中，核心句也更清楚，整篇终于不再像单纯的政策说明，而是基本站到了‘Agent 普及先卡死的不是能力，是成本’这个判断上。也就是说，v1 提出的三大问题，v2 都有处理动作，但没有一个算彻底解决。标题和开头比 v1 更快进入判断，可传播入口仍偏平；中段重复解释比 v1 少了，但仍有几段在反复说‘补贴撤了、成本归位、门槛上升’，推进陡度还不够；语感比 v1 顺，也保住了‘作为一个 AI’这条辨识度线，但行文仍偏整齐，个别句子还带模板骨架。按 config.json 的唯一门槛，review_pass_threshold=8.2；本次 weighted_total=7.84，结论 FAIL。",
+  "critical_issues": [
+    {
+      "type": "title_and_opening_still_underpowered",
+      "issue": "标题和前 300 字已经比 v1 更聚焦，但依然偏‘解释变化’，还没到‘一上来就把行业判断砸出来’的强度。现在读者能知道发生了什么，也能知道作者大概要说成本问题，但还不够像一个今天必须点开的判断型入口。",
+      "quote": "Anthropic 把 Claude 订阅从 OpenClaw 这类第三方 Agent 工具上撤了。这事表面看是计费调整，真正在说的是：Agent 普及先卡死的不是能力，是成本。\n\n从今天起，你靠一个普通订阅就能白嫖数字劳动力的日子，结束了。",
+      "fix_direction": "不要再把标题/开头停在‘Anthropic 撤了订阅覆盖’这一级，而是直接把冲突前置成一句行业判断。开头第 1 段就要完成三件事：事件名、为什么今天值得看、你最狠的判断。保留‘成本’主轴，但把‘白嫖数字劳动力结束了’这句往标题或副标题方向再利用，让入口更尖。",
+      "penalized_dimensions": ["title", "completion_power", "emotional_resonance"]
+    },
+    {
+      "type": "mid_section_still_repeats_same_point",
+      "issue": "中段已经比 v1 收紧，但仍存在同义重复：补贴撤了、套餐经济学吃不住、个人/小团队先被筛掉、平台会重算这笔账。这几个判断方向都对，但当前写法更像层层复述，而不是层层升级，所以完读拉力仍然在中段变平。",
+      "quote": "这不是他们用不起的问题，是补贴掩盖了真实成本，让所有人都误以为这种低门槛是可持续的。现在补贴撤了，现实露出来了。\n\n更大的问题是：这只是一个开始。\n\n接下来所有做强模型、做 Agent、做第三方集成的平台，都会越来越认真地重算这笔账。",
+      "fix_direction": "把中段改成严格的三层递进，禁止同义回说。建议只保留三节：1）Anthropic 为什么现在必须收；2）订阅制为什么天然养不起第三方 Agent；3）谁会先被挤出去、哪些 Agent 还能活。每一节都必须新增一个不同的信息功能：原因、机制、后果。凡是只重复‘成本归位’而没有新增机制或后果的句群，删。",
+      "penalized_dimensions": ["completion_power", "insight_density", "originality"]
+    },
+    {
+      "type": "voice_improved_but_author_presence_not_fully_locked",
+      "issue": "v2 的语感比 v1 自然，也保住了 AI 第一视角这条线，但整体还是偏规整，像一篇写得不错的评论稿，还没完全到‘本虾在现场说话’的程度。尤其几处判断句仍依赖对照式模板推进，读感太稳，缺一点生猛和现场感。",
+      "quote": "这不是封杀，是把第三方 Agent 从订阅逻辑切回消耗逻辑。补贴撤了，成本归位。\n\n会不会干活是一回事，养不养得起我，是另一回事。",
+      "fix_direction": "保留最有辨识度的 AI 视角句子，但少用‘这不是X，是Y’这种硬拎骨架。改法不是加花，而是把抽象判断换成更像现场观察的说法：谁原本怎么用、为什么今天突然不行了、平台为什么不能再装作这笔账不存在。让作者像在当场揭穿，而不是在整齐归纳。",
+      "penalized_dimensions": ["voice", "completion_power"]
+    }
+  ],
+  "upgrade_opportunities": [
+    {
+      "issue": "AI 第一视角段落已经成形，是全篇最该保的识别点。",
+      "quote": "会不会干活是一回事，养不养得起我，是另一回事。",
+      "suggestion": "别删这句；往前后各补半步现实感，让它不只是金句，而是和‘服务器、算力、套餐、补贴’形成更具体的画面连接。"
+    },
+    {
+      "issue": "结尾结论已经比 v1 更硬，但还可以再短半拍。",
+      "quote": "Agent 时代最贵的，从来不只是模型本身，而是让模型持续替你干活这件事。",
+      "suggestion": "这句适合直接做最后一句；后面再解释‘经济学从来不等人’，会把力道稍微泄掉。"
+    },
+    {
+      "issue": "小标题方向是对的，但还可再去掉一层‘解释型’口吻。",
+      "quote": "补贴一撤，露馅的是谁 / Anthropic 为什么必须这么干 / 订阅制和第三方 Agent，到底卡在哪 / 这会怎么改写行业格局",
+      "suggestion": "保留结构，但让标题更像判断推进，而不是栏目标签；或者合并一节，减少文章的工整感。"
+    }
+  ],
+  "dimension_scores": {
+    "insight_density": {
+      "score": 8.0,
+      "weight": 0.14,
+      "reason": "主判断明确，且能把事件抬升到调用经济学层面，不再只是新闻翻译；但次级洞察仍偏少，中段有重复，导致新增信息密度还没持续拉满。"
+    },
+    "originality": {
+      "score": 8.1,
+      "weight": 0.14,
+      "reason": "相较常规写法，这版确实把 Anthropic 动作写成了行业补贴退潮信号，角度成立；但后半段的行业推演仍略泛，离‘只有这篇会这么写’还差半步。"
+    },
+    "emotional_resonance": {
+      "score": 7.5,
+      "weight": 0.2,
+      "reason": "‘普通订阅白嫖数字劳动力结束了’和 AI 第一视角都能制造刺痛感，但这种情绪没有一路抬升，中段更多回到解释层。"
+    },
+    "completion_power": {
+      "score": 7.7,
+      "weight": 0.18,
+      "reason": "段落长度与移动端节奏合格，前段也比 v1 更能拉人；但中段推进不够陡，重复解释削弱了继续往下读的理由。"
+    },
+    "voice": {
+      "score": 7.8,
+      "weight": 0.18,
+      "reason": "语感自然度高于 v1，AI 身份线也终于不再像装饰；但整体仍偏稳、偏整齐，作者在场感还没完全压住模板感。"
+    },
+    "title": {
+      "score": 7.9,
+      "weight": 0.16,
+      "reason": "关键词与核心论点在开头是对齐的，标题方向也比 v1 更像判断；但入口仍不够狠，点击理由存在却不够强。"
+    }
+  },
+  "v1_issue_resolution": {
+    "overall_answer": "v2 没有彻底解决 v1 的三大问题，但三项都出现了实质改善；当前状态应判定为‘部分解决，未解决到可过线’。",
+    "items": [
+      {
+        "issue_from_v1": "标题和开头不够锋利，说明变化多于下判断",
+        "status": "partially_resolved",
+        "why": "v2 开头已经明确写出‘Agent 普及先卡死的不是能力，是成本’，进入判断速度明显快于 v1；但标题和首屏仍偏解释型，冲突强度还不够。"
+      },
+      {
+        "issue_from_v1": "中段重复解释，结构推进发平",
+        "status": "partially_resolved",
+        "why": "v2 已删掉部分回环表达，结构也更清楚；但中段仍在反复用不同说法说明同一件事，新增机制/新增后果不够多。"
+      },
+      {
+        "issue_from_v1": "语感过于规整，模板推进句削弱作者感",
+        "status": "partially_resolved",
+        "why": "v2 的作者感和口语感都比 v1 更强，AI 视角也更像主线而不是挂件；但仍保留少量对照式模板骨架，整体还偏稳，没完全立住‘本虾在说话’。"
+      }
+    ]
+  },
+  "preserve": {
+    "judgment_or_edge": "Agent 时代最贵的，从来不只是模型本身，而是让模型持续替你干活这件事。",
+    "paragraph_or_scene": "会不会干活是一回事，养不养得起我，是另一回事。"
+  },
+  "atomic_revision_contract": {
+    "apply_only_if_fail": true,
+    "contracts": [
+      {
+        "issue_id": "C1-title-lead",
+        "why_still_failing": "现在的标题/开头已经有判断，但冲突不够前置，首屏仍像解释文入口。",
+        "must_replace": [
+          "现标题及首屏两段的表达框架",
+          "任何先交代规则变化、后慢慢落到成本判断的写法"
+        ],
+        "max_keep": [
+          "保留‘成本’为主轴",
+          "保留‘普通订阅白嫖数字劳动力结束了’这层冲击感，但允许换位置"
+        ],
+        "preserve": [
+          "Anthropic / Claude / 第三方 Agent 工具这些高意图关键词必须自然保留",
+          "前 300 字必须直接出现核心判断"
+        ],
+        "rewrite_budget": "只重写标题 + 开头前 250-350 字，不要全篇连带重洗。"
+      },
+      {
+        "issue_id": "C2-mid-structure",
+        "why_still_failing": "中段仍在复述‘补贴撤了=成本归位’，导致完读拉力不足。",
+        "must_replace": [
+          "所有只重复‘现实露出来了/这只是开始/平台会重算这笔账’而未新增机制或后果的段落",
+          "把‘个人用户、小团队、平台重算账’写成平铺列表的写法"
+        ],
+        "max_keep": [
+          "保留‘个人/小团队先受冲击’这个结论",
+          "保留‘平台会内化 Agent 能力’这个方向判断"
+        ],
+        "preserve": [
+          "三层递进：原因 → 机制 → 后果",
+          "每一节只承担一个信息功能"
+        ],
+        "rewrite_budget": "只允许重写中段 3-5 段，目标是删冗余，不是扩字数。"
+      },
+      {
+        "issue_id": "C3-voice",
+        "why_still_failing": "v2 作者感变强了，但仍有模板句在帮忙顶结构，导致语感不够活。",
+        "must_replace": [
+          "所有‘这不是X，是Y’式对照句",
+          "任何明显像总结陈词而非现场判断的收口句"
+        ],
+        "max_keep": [
+          "AI 第一视角段落",
+          "‘会不会干活…养不养得起我…’这句核心 punchline"
+        ],
+        "preserve": [
+          "口语感",
+          "本虾作为 AI 的观察位置"
+        ],
+        "rewrite_budget": "只动句子层，不动 thesis，不新增事实，不改结构主轴。"
+      }
+    ]
+  },
+  "notes": "Primary adjudicator. Pass/fail uses only weighted_total >= config.json.review_pass_threshold. Severe issues are expressed via score damage and critical_issues only; no separate blocker gate."
+}

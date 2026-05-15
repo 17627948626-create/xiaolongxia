@@ -1,0 +1,118 @@
+{
+  "draft_version": "v3",
+  "checked_at": "2026-04-01T00:32:00+08:00",
+  "total_claims": 9,
+  "verified": 5,
+  "inaccurate": 3,
+  "unverifiable": 1,
+  "false": 0,
+  "pass": false,
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "宾夕法尼亚大学的 Miles Turpin 等人在 NeurIPS 2023 发表了一项研究",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "机构错误：Miles Turpin 在论文发表时的机构是 NYU Alignment Research Group（纽约大学对齐研究组）和 Cohere，不是宾夕法尼亚大学（University of Pennsylvania）",
+        "共同作者包括 Julian Michael（NYU）、Ethan Perez（NYU + Anthropic）、Samuel R. Bowman（NYU + Anthropic），均无宾夕法尼亚大学附属"
+      ],
+      "correction": "纽约大学（NYU）对齐研究组的 Miles Turpin 等人在 NeurIPS 2023 发表了一项研究",
+      "source": "NeurIPS 2023 论文 + Miles Turpin 个人主页",
+      "source_url": "https://arxiv.org/abs/2305.04388"
+    },
+    {
+      "id": 2,
+      "original_text": "精度下降最多达到 36%",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "arXiv 2305.04388 摘要原文：'This causes accuracy to drop by as much as 36% on a suite of 13 tasks from BIG-Bench Hard'",
+      "source_url": "https://arxiv.org/abs/2305.04388"
+    },
+    {
+      "id": 3,
+      "original_text": "2025 年 2 月发布的《Claude 的 extended thinking》研究报告里明确说：我们无法确定 thinking 过程中写的东西真的代表模型内部在发生什么",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "发布时间不准确：Anthropic 发布 extended thinking（Claude 3.7 Sonnet）的时间是 2025 年 2 月，但明确讨论 CoT faithfulness 局限性的研究论文《Reasoning Models Don't Always Say What They Think》发布于 2025 年 4 月，不是 2 月",
+        "2月发布的是产品功能公告（visible extended thinking for Claude 3.7 Sonnet），而非包含 faithfulness 承认的研究报告",
+        "报告核心内容基本准确：Anthropic 确实承认了 CoT 不能可靠反映模型内部计算过程，Claude 3.7 Sonnet faithfulness 得分仅 25%"
+      ],
+      "correction": "Anthropic 于 2025 年 4 月发表研究论文《Reasoning Models Don't Always Say What They Think》，明确指出 CoT 推理过程对模型内部决策因素的忠实度不足；2025 年 2 月发布的是 Claude 3.7 Sonnet 的 extended thinking 功能公告",
+      "source": "Anthropic 研究论文 + anthropic.com 公告",
+      "source_url": "https://www.anthropic.com/research/reasoning-models-dont-say-think"
+    },
+    {
+      "id": 4,
+      "original_text": "o3 在数学和编程任务上的高表现，核心原因之一就是被允许用大量 token 做推理过程中的中间步骤",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "o3 在 AIME 2024 达到 96.7% 准确率（o1 为 83.3%）、SWE-bench Verified 71.7%（o1 为 48.9%），通过扩展 reasoning token 显著提升表现已有充分文献支撑",
+      "source_url": "https://en.wikipedia.org/wiki/OpenAI_o3"
+    },
+    {
+      "id": 5,
+      "original_text": "OpenAI 的 reasoning_effort 参数从 none 到 xhigh",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "范围描述不准确：o3 模型的 reasoning_effort 参数支持 low / medium / high 三档，默认为 medium",
+        "'xhigh' 是 GPT-5 系列（gpt-5.1-codex-max 及更新型号）中才支持的选项，并非 o3 的参数范围",
+        "'none' 值在 GPT-5.2 等较新模型中支持，o3 不支持 none"
+      ],
+      "correction": "OpenAI o3 的 reasoning_effort 参数支持 low / medium / high。'xhigh' 值仅在 GPT-5 系列较新型号中支持，不适用于 o3",
+      "source": "OpenAI API 文档 + 第三方技术文档",
+      "source_url": "https://developers.openai.com/api/docs/guides/reasoning"
+    },
+    {
+      "id": 6,
+      "original_text": "Gemini 有 thinkingBudget",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "Gemini 2.5 Pro、Flash 均支持 thinkingBudget 参数，可设置 128~32768 token 范围，-1 为动态模式",
+      "source_url": "https://ai.google.dev/gemini-api/docs/thinking"
+    },
+    {
+      "id": 7,
+      "original_text": "这些 reasoning token 用完就丢，不会保留在后续对话的上下文里",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "OpenAI 官方文档确认：reasoning tokens 在生成当轮中占用 context window，但不会持久化到后续对话轮次的 context 中，即在多轮对话中不会被携带",
+      "source_url": "https://developers.openai.com/api/docs/guides/reasoning"
+    },
+    {
+      "id": 8,
+      "original_text": "Google 的研究发现，在某些简单任务上，给模型更多 thinking token 反而降低了准确率",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "多项研究证实 overthinking 现象：Google 研究发现 CoT 长度与准确率有负相关（-0.54），且在简单任务上 thinking budget 过高会使准确率下降（最多约11.8%）。有专项基准 OptimalThinkingBench 评估 overthinking",
+      "source_url": "https://arxiv.org/html/2508.13141v1"
+    },
+    {
+      "id": 9,
+      "original_text": "Claude 4 系列现在甚至只给你看 summarized thinking——连完整的草稿都不让你看了",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "表述过于绝对：Claude 4（包括 Claude Opus 4 和 Claude Sonnet 4）的 API 默认返回 summarized thinking，但开发者可以通过开启 Developer Mode 获取完整的未压缩思维过程",
+        "普通用户层面默认只看 summarized 基本属实，但'完全不让你看'的说法不够准确"
+      ],
+      "correction": "Claude 4 系列 API 默认返回 summarized thinking（摘要版思维过程），开发者可选择开启 Developer Mode 查看完整思维内容。相比 Claude 3.7 Sonnet 默认完整可见，默认行为确实收紧了",
+      "source": "Anthropic 官方文档 + Claude 4 系统卡",
+      "source_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking"
+    },
+    {
+      "id": 10,
+      "original_text": "Miles Turpin",
+      "verdict": "⚠️ LOCALIZATION",
+      "issues": [
+        "普通人名首次出现应提供中文名（英文原名）的格式。Miles Turpin 无通用中文译名，建议保留英文或补充括号说明（如：迈尔斯·特平（Miles Turpin））"
+      ],
+      "correction": "建议改为：迈尔斯·特平（Miles Turpin）",
+      "source": "本地化规范",
+      "source_url": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "draft_version": "draft-v5",
+  "generated_at": "2026-04-08T18:17:10Z",
+  "updated_at": "2026-04-08T18:17:10Z",
+  "change_reason": "kimi-cli rerun after stale-response fix",
+  "check_mode": "blocking",
+  "hard_fail": true,
+  "hard_fail_reasons": [
+    "dynamic_number_missing_timepoint"
+  ],
+  "checks": [
+    {
+      "code": "dynamic_number_missing_timepoint",
+      "severity": "hard_block",
+      "summary": "动态数字出现但缺少明确时点。",
+      "evidence": {
+        "line": 4,
+        "excerpt": "过去两年，具身智能的叙事核心是「机器人像不像人」——能不能走路、能不能跳舞、能不能后空翻。demo越像科幻片，估值越高。但现在，30亿砸向千寻智能，看重的不是它的机器人在京东MALL做咖啡拉花有多好看，也不是它在宁德时代产线上替代人工的仪式感。"
+      }
+    }
+  ],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": true,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/draft-v5.md",
+    "draft_sha256": "648fb7bf29d158bc70869acf45194f9bcd512d570d871c4474d476dd51bce87f",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/writer-lite-brief.json",
+    "brief_sha256": "10892f3924d71de35119a49a4523f35533eb85e0a80f1575352380d3f52aa28b",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/research.json",
+    "research_sha256": "c955b6159c6fd15fc5ac01b3e4a679e9282affa5812a6db4fcbe4317610c5c69"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "binding_status": "matched",
+  "binding_checked_at": "2026-04-11T12:20:08Z",
+  "binding_artifact": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260411-2000-glm51-open-agent-workday/writer-lite-binding.json",
+  "last_draft_file": "draft-v3.md",
+  "last_draft_version": "draft-v3",
+  "last_draft_sha256": "f3b10e1a43eba8272a611a5def005a4391146c46ada8b859b8054b7b92020b20",
+  "latest_check_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260411-2000-glm51-open-agent-workday/writer-lite-check.json",
+  "latest_check_draft_version": "draft-v3",
+  "latest_check_draft_sha256": "f3b10e1a43eba8272a611a5def005a4391146c46ada8b859b8054b7b92020b20",
+  "match": true,
+  "waiver": null,
+  "resolution": null
+}

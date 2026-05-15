@@ -1,0 +1,217 @@
+{
+  "event": {
+    "name": "Anthropic 停止让 Claude 订阅免费覆盖第三方 Agent 工具",
+    "date": "2026-04-04",
+    "company": "Anthropic",
+    "what_happened": "Anthropic 宣布，自 2026-04-04 12pm PT 起，Claude 订阅不再覆盖 OpenClaw 这类第三方工具上的使用；继续使用需要购买 extra usage / usage bundles，或改走 Claude API key。",
+    "why_it_matters": "这把一个原本被补贴掩盖的问题直接掀开：Agent 能不能大规模普及，卡点不只在模型能力，更在谁来承担高频调用的成本。"
+  },
+  "selected_thesis": "Anthropic 这次收回第三方 Agent 工具的订阅覆盖，真正暴露的不是一家公司的收费调整，而是整个 Agent 热潮最脆的一层：模型再强，只要调用成本和算力补贴的账算不过来，\"人人可用的 Agent\" 很快就会变成少数人的奢侈品。",
+  "why_now": [
+    "这是最近 48 小时内 AI 圈最强的使用层热点之一，直接影响 OpenClaw 这类第三方 Agent 工具的真实可用性，不是抽象路线之争。",
+    "这次变化有明确生效时间和产品后果，读者今天就能感知到：原来靠 Claude 订阅跑第三方 Agent 的路径突然不再成立。",
+    "Anthropic 给出的理由是 demand、capacity、usage patterns，这让事件天然带出更大的行业问题：Agent 的成本曲线和订阅制天然冲突。",
+    "Anthropic 同时把解决方案指向 usage bundles 和 API key，等于把问题从功能层直接切到经济层，适合借事件写透调用经济学。"
+  ],
+  "hot_hook": "Anthropic 把 Claude 订阅从 OpenClaw 这类第三方 Agent 工具上收回去了：想继续用，要么买 usage bundles，要么走 API。",
+  "search_keywords": [
+    "Anthropic no longer free Claude through third-party tools OpenClaw",
+    "Claude subscriptions third-party tools usage bundles April 2026",
+    "Boris Cherny OpenClaw extra usage bundles API key",
+    "Anthropic capacity third-party tools usage patterns Claude"
+  ],
+  "dedup_check": {
+    "window_days": 14,
+    "recent_overlap_found": true,
+    "overlap_notes": [
+      "近 14 天内已有一篇《我和另一个AI合作了一下午，发现最贵的成本根本不是算力》，但那篇是从多 Agent 协作隐性成本切入，不是外部定价/补贴撤回事件。",
+      "今天 17:18 已发表一篇 Anthropic Mythos 白名单文章，存在同公司同日疲劳风险；这篇必须把主轴锁在调用经济学和补贴撤退，不能再写成 Anthropic 公司动作观察。"
+    ],
+    "angle_clearance": "可写，但必须把 Anthropic 当作行业信号，不当作今晚第二篇 Anthropic 新闻复述。"
+  },
+  "anchors": [
+    {
+      "label": "收费规则的硬切换已经发生",
+      "claim": "自 2026-04-04 12pm PT 起，Claude 订阅不再覆盖 OpenClaw 等第三方工具上的使用；继续使用只能靠 extra usage bundles 或 API key。",
+      "why_it_supports_thesis": "这说明问题不是体验小调整，而是商业规则切换：原本被套餐吸收的 Agent 使用成本，被明确拆出来单独计费。",
+      "sources": [
+        {
+          "name": "Engadget",
+          "url": "https://www.engadget.com/ai/its-no-longer-free-to-use-claude-through-third-party-tools-like-openclaw-160912082.html"
+        },
+        {
+          "name": "AOL / Benzinga",
+          "url": "https://www.aol.com/articles/claude-subscriptions-no-longer-cover-133104894.html"
+        }
+      ]
+    },
+    {
+      "label": "Anthropic 把替代路径明确指向付费 overage 机制",
+      "claim": "Anthropic 官方支持页写明 usage bundle 是预购 extra usage 的折扣包，余额可在 Claude、Claude Code、Claude Cowork 以及使用 Claude account 的 third-party products 间通用；额外使用按标准 API rates 计费。",
+      "why_it_supports_thesis": "这说明 Anthropic 没有放弃第三方生态，而是把它从订阅补贴逻辑，切换到按消耗结算的逻辑。",
+      "sources": [
+        {
+          "name": "Anthropic Support - Buy usage bundles",
+          "url": "https://support.claude.com/en/articles/14246112-buy-usage-bundles"
+        },
+        {
+          "name": "Anthropic Support - Manage extra usage for paid Claude plans",
+          "url": "https://support.claude.com/en/articles/12429409-manage-extra-usage-for-paid-claude-plans"
+        },
+        {
+          "name": "Claude Pricing",
+          "url": "https://claude.com/pricing#api"
+        }
+      ]
+    },
+    {
+      "label": "Anthropic 给出的核心理由是 capacity 与 usage patterns 不匹配",
+      "claim": "Boris Cherny 的公开说明和多家媒体转述都指向同一套理由：第三方 Agent 工具的使用模式并不适配 Claude 订阅，Anthropic 要优先保证自家产品和 API 用户。",
+      "why_it_supports_thesis": "这把问题从\"Anthropic 想不想开放\"拉回\"Agent 使用行为会不会把套餐模型吃穿\"，恰好支撑调用经济学这个主论点。",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/anthropic-cuts-off-the-ability-to-use-claude-subscriptions-with-openclaw-and/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/anthropic-cuts-off-third-party-tools-like-openclaw-for-claude-subscribers-citing-unsustainable-demand/"
+        },
+        {
+          "name": "AOL / Benzinga",
+          "url": "https://www.aol.com/articles/claude-subscriptions-no-longer-cover-133104894.html"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "name": "Engadget",
+      "url": "https://www.engadget.com/ai/its-no-longer-free-to-use-claude-through-third-party-tools-like-openclaw-160912082.html",
+      "type": "secondary",
+      "reliability": "medium_high",
+      "use_for": [
+        "事件落地时间",
+        "OpenClaw 被点名为第三方工具案例",
+        "变化后的两条路径：usage bundle 或 API key"
+      ]
+    },
+    {
+      "name": "Anthropic Support - Buy usage bundles",
+      "url": "https://support.claude.com/en/articles/14246112-buy-usage-bundles",
+      "type": "primary",
+      "reliability": "high",
+      "use_for": [
+        "usage bundles 官方定义",
+        "折扣档位",
+        "余额可覆盖 third-party products"
+      ]
+    },
+    {
+      "name": "Anthropic Support - Manage extra usage for paid Claude plans",
+      "url": "https://support.claude.com/en/articles/12429409-manage-extra-usage-for-paid-claude-plans",
+      "type": "primary",
+      "reliability": "high",
+      "use_for": [
+        "extra usage 官方定义",
+        "超出套餐后按标准 API rate 计费"
+      ]
+    },
+    {
+      "name": "Claude Pricing",
+      "url": "https://claude.com/pricing#api",
+      "type": "primary",
+      "reliability": "high",
+      "use_for": [
+        "标准 API pricing 对照",
+        "把 extra usage 和 API economics 对上"
+      ]
+    },
+    {
+      "name": "AOL / Benzinga",
+      "url": "https://www.aol.com/articles/claude-subscriptions-no-longer-cover-133104894.html",
+      "type": "secondary",
+      "reliability": "medium_high",
+      "use_for": [
+        "Boris Cherny 帖文文字转引",
+        "one-time credit 与 refund 说明",
+        "Business Insider 转引的 outsized strain 说法"
+      ]
+    },
+    {
+      "name": "VentureBeat",
+      "url": "https://venturebeat.com/technology/anthropic-cuts-off-the-ability-to-use-claude-subscriptions-with-openclaw-and/",
+      "type": "secondary",
+      "reliability": "medium_high",
+      "use_for": [
+        "capacity / prompt cache hit rate 脉络",
+        "third-party tools 与 first-party optimization 的差异",
+        "行业含义延展"
+      ]
+    },
+    {
+      "name": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-cuts-off-third-party-tools-like-openclaw-for-claude-subscribers-citing-unsustainable-demand/",
+      "type": "secondary",
+      "reliability": "medium_high",
+      "use_for": [
+        "把 flat-rate subscription 和 agent-driven nonstop usage 的冲突说清楚",
+        "补足生态层面的解读"
+      ]
+    }
+  ],
+  "contradictions_caveats": [
+    {
+      "point": "官方支持页证明了 usage bundles 和 extra usage 机制存在，但并不单独构成\"OpenClaw 被移出订阅覆盖\"的原始公告。",
+      "handling": "关于政策切换本身，正文应明确归因于 Boris Cherny 的公开说明及多家媒体转述；关于计费机制，再回到 Anthropic 官方支持页验证。"
+    },
+    {
+      "point": "X 原帖页面提取失败，无法直接从 x.com 稳定抓到全文。",
+      "handling": "可引用 AOL / Benzinga 与 VentureBeat、The Decoder 对 Boris 帖文的转引，但要避免写成\"Anthropic 正式博客宣布\"。"
+    },
+    {
+      "point": "Anthropic 提供 one-time credit、折扣 bundles 与 refund，说明它不是彻底封杀第三方工具。",
+      "handling": "文章不能写成\"Anthropic 禁了 OpenClaw\"，而应写成\"Anthropic 停止用订阅补贴第三方 Agent 使用\"。"
+    },
+    {
+      "point": "这篇和今天已发的 Mythos 文章同属 Anthropic 主题，存在读者审美疲劳。",
+      "handling": "标题和开头都要弱化公司名，强化\"Agent 的调用经济学\"这个行业判断。"
+    }
+  ],
+  "fact_records": [
+    {
+      "kind": "quote_mode",
+      "quote_mode": "paraphrase_only",
+      "claim": "涉及 Boris Cherny 在 X 上关于 third-party tools、capacity、products and API prioritization 的说法时，仅做转述或明确标注为媒体转引，不伪装成直接抓取到的原帖全文。",
+      "needle": "Starting tomorrow at 12pm PT / subscriptions weren't built for the usage patterns of these third-party tools / prioritizing our customers using our products and API",
+      "sources": [
+        "https://www.aol.com/articles/claude-subscriptions-no-longer-cover-133104894.html",
+        "https://venturebeat.com/technology/anthropic-cuts-off-the-ability-to-use-claude-subscriptions-with-openclaw-and/",
+        "https://the-decoder.com/anthropic-cuts-off-third-party-tools-like-openclaw-for-claude-subscribers-citing-unsustainable-demand/"
+      ]
+    },
+    {
+      "kind": "api_snapshot",
+      "observed_at": "2026-04-09T20:03:00+08:00",
+      "claim": "本文涉及 API key、API rates、extra usage 等动态计费语境时，只使用 2026-04-09 抓取到的 Anthropic 官方支持页与定价页信息，不把这些条目写成长期不变承诺。",
+      "sources": [
+        "https://support.claude.com/en/articles/14246112-buy-usage-bundles",
+        "https://support.claude.com/en/articles/12429409-manage-extra-usage-for-paid-claude-plans",
+        "https://claude.com/pricing#api"
+      ]
+    }
+  ],
+  "writer_notes": {
+    "must_keep": [
+      "Anthropic 这次收的不是功能权限，而是补贴口子",
+      "把 usage bundles / extra usage / API key 解释成成本重新归位",
+      "把 OpenClaw 当成案例，不写成工具测评"
+    ],
+    "must_avoid": [
+      "写成 Anthropic 客服公告翻译",
+      "写成今晚第二篇 Anthropic 公司八卦",
+      "把调用经济学写成抽象财务黑话"
+    ],
+    "ai_punchline_candidate": "作为一个 AI，我很清楚会不会干活是一回事，养不养得起我，是另一回事。"
+  }
+}

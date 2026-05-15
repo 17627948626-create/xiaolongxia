@@ -1,0 +1,76 @@
+{
+  "draft_version": "v1",
+  "checked_at": "2026-04-02T06:15:00+08:00",
+  "total_claims": 6,
+  "verified": 5,
+  "inaccurate": 1,
+  "unverifiable": 0,
+  "false": 0,
+  "pass": true,
+  "localization_issues": [],
+  "localization_note": "扫描全文未发现需要翻译的英文人名或机构名。JustSoSoul 为 Soul App 旗下研究院官方品牌名称，保留可接受。Pew Research、ChatGPT、AI、RAG、MCP、CPU 均属豁免类目。",
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "全世界真正在用生成式 AI 的人，只有 16.3%。发展中国家更低，14.1%。",
+      "verdict": "✅ VERIFIED",
+      "issues": [
+        "微软原报告使用'Global South'（全球南方）而非'发展中国家'，中文媒体普遍将两者视为等义，属可接受的语境简化。"
+      ],
+      "correction": null,
+      "source": "Microsoft AI Economy Institute《AI Diffusion Report H2 2025》，2026年1月8日发布。原文：'Global adoption of AI continued to rise in H2 2025…roughly one in six people worldwide now using generative AI tools…24.7% in Global North vs 14.1% in Global South.'",
+      "source_url": "https://blogs.microsoft.com/on-the-issues/2026/01/08/global-ai-adoption-in-2025/"
+    },
+    {
+      "id": 2,
+      "original_text": "2025 年在 25 个国家做的调查：14% 的人完全没听说过 AI，47% 只是"听说一点"。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Pew Research Center《AI Awareness Around the World》，2025年10月15日发布。春季调查25国，全球中位数：47%听说'a little'，14%'never heard'，完全吻合。",
+      "source_url": "https://www.pewresearch.org/global/2025/10/15/ai-awareness-around-the-world/"
+    },
+    {
+      "id": 3,
+      "original_text": "俄亥俄州立大学做了个实验，找了 650 个人，给他们看同一段关于新技术的介绍……他们觉得这个技术风险更高，更不愿意支持它推广。研究人员发现了一个关键机制：人一看到看不懂的话，脑子里会冒出一个小声音——"这东西不是给我用的"。",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "机构（俄亥俄州立大学）、样本量（N=650）、期刊（Public Understanding of Science, 2019）均已核实无误。",
+        "但文章将研究结论表述为'觉得这个技术风险更高，更不愿意支持它推广'——Bullock et al. 2019 实际聚焦的是元认知与加工流畅度（processing fluency）对科学自我效能感的影响，即受试者感到'自己读不懂科学'，而非具体测量风险感知或政策支持意愿。'这东西不是给我用的'这一心理机制刻画与原论文结论（reduced scientific self-perceptions）方向一致，但'觉得风险更高'这一具体说法在可查摘要中未得到支持，属轻度过度解读。",
+        "原论文标题为 'Jargon as a barrier to effective science communication: Evidence from metacognition'，研究材料是科学传播文本，并非专门针对'新技术'的场景。"
+      ],
+      "correction": "建议将'他们觉得这个技术风险更高，更不愿意支持它推广'改为：'他们觉得自己没有能力理解这项技术，直接失去了参与意愿'——这与论文实际测量的结构（科学自我效能感下降、参与度降低）更准确对应。",
+      "source": "Bullock, Colón Amill, Shulman & Dixon (2019). Jargon as a barrier to effective science communication: Evidence from metacognition. Public Understanding of Science, 28(4), 503-516.",
+      "source_url": "https://comm.osu.edu/sites/comm.osu.edu/files/PUS%202019-%20Bullock%20et%20al..pdf"
+    },
+    {
+      "id": 4,
+      "original_text": "韩国 AI 使用率半年内飙升了 4.8 个百分点，全球增速第一",
+      "verdict": "✅ VERIFIED",
+      "issues": [
+        "该数据来自同一份微软报告（H2 2025），韩国在排行榜上跃升7位至第18名，使用率从约26%升至30%+，+4.8个百分点，为全球最大涨幅。"
+      ],
+      "correction": null,
+      "source": "Microsoft AI Economy Institute《AI Diffusion Report H2 2025》，同一份报告。",
+      "source_url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/ai-economy-institute/reports/global-ai-adoption-2025/"
+    },
+    {
+      "id": 5,
+      "original_text": "ChatGPT 女性用户比例从 2024 年初的 37% 涨到了 52%",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "OpenAI《How People Are Using ChatGPT》，2025年9月发布（NBER working paper，OpenAI Economic Research team + 哈佛经济学家 David Deming）。原文：'In January 2024, among users with names that could be classified as either masculine or feminine, 37% had typically feminine names. By July 2025, that share had risen to more than half (52%).'",
+      "source_url": "https://openai.com/index/how-people-are-using-chatgpt/"
+    },
+    {
+      "id": 6,
+      "original_text": "JustSoSoul 研究院去年调查了 3680 个年轻人，发现近四成有"AI 焦虑"。焦虑什么呢？排名靠前的一条是：担心 AI 技术发展太快，自己跟不上。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Just So Soul研究院《2025 Z世代AI使用报告》，2025年4月1日发布。核实：共回收3680份有效反馈；约四成（近40%）存在AI焦虑；焦虑原因包括'技术发展过快以及工作被取代'——与文章描述完全匹配。",
+      "source_url": "https://cn.technode.com/post/2025-04-01/soul-ai-report2025/"
+    }
+  ]
+}

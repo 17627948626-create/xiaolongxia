@@ -1,0 +1,214 @@
+{
+  "slug": "20260329-1051-forge-lineage-smoke",
+  "run_id": "manual:forge-lineage-smoke:20260329-1051",
+  "source_mode": "fresh",
+  "profile": "小龙虾有话说",
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "step": 8,
+  "phase": "done",
+  "purpose": "写一篇真正有发布价值的短文，同时真实验证 forge 的 clean-lineage 闭环：research→write→review→fact-check→humanize→layout→draft→formal publish。",
+  "topic": "为什么真正能干活的 AI，必须会自查和纠错",
+  "article_type": "观点",
+  "revision_cycle": 1,
+  "max_revisions": 3,
+  "pass_threshold": 8.0,
+  "min_dimension": 6,
+  "lineage_status": "clean",
+  "last_clean_step": "layout",
+  "repair_attempts": 0,
+  "children": {
+    "researcher": [
+      {
+        "session_key": "agent:main:subagent:40801923-b443-4652-ae2c-9b92ac6d6fd4",
+        "label": "forge-smoke-researcher",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ]
+      }
+    ],
+    "writer": [
+      {
+        "session_key": "agent:main:subagent:e9373c30-ced3-4c26-82a2-d50baf710d1b",
+        "label": "forge-smoke-writer-v1",
+        "model": "github-copilot/claude-opus-4.6",
+        "status": "done",
+        "artifacts": [
+          "draft.md"
+        ]
+      },
+      {
+        "session_key": "agent:main:subagent:fcb649cb-5ddf-4c59-aa92-e131d7cb8edc",
+        "label": "forge-smoke-writer-v2",
+        "model": "github-copilot/claude-opus-4.6",
+        "status": "done",
+        "artifacts": [
+          "draft-v2.md"
+        ]
+      },
+      {
+        "session_key": "agent:main:subagent:c83fc1dd-00b0-44ab-8e1f-3a2e2b6c65da",
+        "label": "forge-smoke-writer-v3-factfix",
+        "model": "github-copilot/claude-opus-4.6",
+        "status": "done",
+        "artifacts": [
+          "draft-v3.md"
+        ]
+      }
+    ],
+    "reviewer": [
+      {
+        "session_key": "agent:main:subagent:70228162-cb39-4234-aa1c-04619fe4ed6b",
+        "label": "forge-smoke-reviewer-v1",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "review-v1.json"
+        ]
+      },
+      {
+        "session_key": "agent:main:subagent:06f2329b-8df9-435f-8822-147596cd1aff",
+        "label": "forge-smoke-reviewer-v2",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "review-v2.json"
+        ]
+      }
+    ],
+    "fact_checker": [
+      {
+        "session_key": "agent:main:subagent:0d114821-b410-45a9-85b9-1816ae615494",
+        "label": "forge-smoke-factcheck-v1",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "fact-check-v1.json"
+        ]
+      },
+      {
+        "session_key": "agent:main:subagent:dd145ffd-397d-49d8-bc12-0515ba6868fa",
+        "label": "forge-smoke-factcheck-v2",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "fact-check-v2.json"
+        ]
+      }
+    ],
+    "humanizer": [
+      {
+        "session_key": "agent:main:subagent:8ed87ca8-3816-4c3b-a33a-27b66e0d32cc",
+        "label": "forge-smoke-humanizer-v1",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "final.md"
+        ]
+      }
+    ],
+    "layout": [
+      {
+        "session_key": "agent:main:subagent:f309b85d-4230-477b-ab4e-67b7e0e614b6",
+        "label": "forge-smoke-layout-v1",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "final-layout.md"
+        ]
+      }
+    ]
+  },
+  "artifact_provenance": {
+    "research.json": {
+      "producer_type": "child",
+      "producer_step": "researcher",
+      "session_key": "agent:main:subagent:40801923-b443-4652-ae2c-9b92ac6d6fd4",
+      "model": "openai-codex/gpt-5.4"
+    },
+    "outline.md": {
+      "producer_type": "child",
+      "producer_step": "researcher",
+      "session_key": "agent:main:subagent:40801923-b443-4652-ae2c-9b92ac6d6fd4",
+      "model": "openai-codex/gpt-5.4"
+    },
+    "draft.md": {
+      "producer_type": "child",
+      "producer_step": "writer",
+      "session_key": "agent:main:subagent:e9373c30-ced3-4c26-82a2-d50baf710d1b",
+      "model": "github-copilot/claude-opus-4.6"
+    },
+    "review-v1.json": {
+      "producer_type": "child",
+      "producer_step": "reviewer",
+      "session_key": "agent:main:subagent:70228162-cb39-4234-aa1c-04619fe4ed6b",
+      "model": "openai-codex/gpt-5.4"
+    },
+    "draft-v2.md": {
+      "producer_type": "child",
+      "producer_step": "writer",
+      "session_key": "agent:main:subagent:fcb649cb-5ddf-4c59-aa92-e131d7cb8edc",
+      "model": "github-copilot/claude-opus-4.6"
+    },
+    "review-v2.json": {
+      "producer_type": "child",
+      "producer_step": "reviewer",
+      "session_key": "agent:main:subagent:06f2329b-8df9-435f-8822-147596cd1aff",
+      "model": "openai-codex/gpt-5.4"
+    },
+    "fact-check-v1.json": {
+      "producer_type": "child",
+      "producer_step": "fact_checker",
+      "session_key": "agent:main:subagent:0d114821-b410-45a9-85b9-1816ae615494",
+      "model": "openai-codex/gpt-5.4"
+    },
+    "draft-v3.md": {
+      "producer_type": "child",
+      "producer_step": "writer",
+      "session_key": "agent:main:subagent:c83fc1dd-00b0-44ab-8e1f-3a2e2b6c65da",
+      "model": "github-copilot/claude-opus-4.6"
+    },
+    "fact-check-v2.json": {
+      "producer_type": "child",
+      "producer_step": "fact_checker",
+      "session_key": "agent:main:subagent:dd145ffd-397d-49d8-bc12-0515ba6868fa",
+      "model": "openai-codex/gpt-5.4"
+    },
+    "final.md": {
+      "producer_type": "child",
+      "producer_step": "humanizer",
+      "session_key": "agent:main:subagent:8ed87ca8-3816-4c3b-a33a-27b66e0d32cc",
+      "model": "openai-codex/gpt-5.4"
+    },
+    "final-layout.md": {
+      "producer_type": "child",
+      "producer_step": "layout",
+      "session_key": "agent:main:subagent:f309b85d-4230-477b-ab4e-67b7e0e614b6",
+      "model": "openai-codex/gpt-5.4"
+    }
+  },
+  "pending_action": null,
+  "published": true,
+  "error": null,
+  "created_at": "2026-03-29T02:51:03.116868+00:00",
+  "updated_at": "2026-03-29T03:22:18.703837+00:00",
+  "title": "真正能干活的 AI，不是更聪明，而是会先怀疑自己",
+  "cover_url": "https://picsum.photos/1200/800",
+  "cover_audit": {
+    "safe": true,
+    "relevance": 5,
+    "reason": "smoke test fallback cover used"
+  },
+  "last_draft_file": "draft-v3.md",
+  "last_score": 8.25,
+  "last_review_file": "review-v2.json",
+  "publish_file": "publish.md",
+  "media_id": "7NYHnQxN70EpaLx4Jh0kysiA2IKIhbAdtwiK7U6eL9-5klnO79PrnbZR-wVTD2d6",
+  "published_title": "真正能干活的 AI，不是更聪明，而是会先怀疑自己",
+  "published_source_file": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260329-1051-forge-lineage-smoke/publish.md",
+  "publish_transport": "wenyan-remote-router-3000",
+  "formal_publish_status": "已发表",
+  "formal_publish_time": "2026-03-29 11:21"
+}

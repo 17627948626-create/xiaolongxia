@@ -1,0 +1,196 @@
+{
+  "artifact_provenance": {
+    "draft-v2.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:acea8557-1212-40d7-a40f-e32e959a9b5f"
+    },
+    "draft.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:242d1b28-fa7f-4ba6-bfa1-90f7de5d0351"
+    },
+    "final-layout.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e0da806e-1f7d-4129-a08e-af1089110f7e"
+    },
+    "final.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:51700440-41c3-4c70-be43-eec35992d230"
+    },
+    "outline-gate.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:6be9914b-4b74-46cb-be03-b90fdfa63288"
+    },
+    "outline.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:6be9914b-4b74-46cb-be03-b90fdfa63288"
+    },
+    "research-gate.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:6be9914b-4b74-46cb-be03-b90fdfa63288"
+    },
+    "research.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:6be9914b-4b74-46cb-be03-b90fdfa63288"
+    },
+    "review-v1.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:bca186a9-6f3c-418e-9819-b3eaa1cc503c"
+    },
+    "review-v2.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:ef8022de-b28d-4344-8e76-aa08e2c73bb2"
+    }
+  },
+  "boss_notified_at": "2026-04-09T17:18:20+08:00",
+  "children": {
+    "humanizer": [
+      {
+        "artifacts": [
+          "final.md"
+        ],
+        "label": "humanizer-20260409-2000-anthropic-mythos-bu-gan-fa",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:51700440-41c3-4c70-be43-eec35992d230",
+        "status": "done"
+      }
+    ],
+    "layout": [
+      {
+        "artifacts": [
+          "final-layout.md"
+        ],
+        "label": "layout-20260409-2000-anthropic-mythos-bu-gan-fa",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e0da806e-1f7d-4129-a08e-af1089110f7e",
+        "status": "done"
+      }
+    ],
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md",
+          "outline-gate.json",
+          "research-gate.json"
+        ],
+        "label": "researcher-20260409-2000-anthropic-mythos-bu-gan-fa",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:6be9914b-4b74-46cb-be03-b90fdfa63288",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "review-v1.json"
+        ],
+        "label": "reviewer-20260409-2000-anthropic-mythos-bu-gan-fa-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:bca186a9-6f3c-418e-9819-b3eaa1cc503c",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-v2.json"
+        ],
+        "label": "reviewer-20260409-2000-anthropic-mythos-bu-gan-fa-v2",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:ef8022de-b28d-4344-8e76-aa08e2c73bb2",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "draft.md",
+          "draft.md.backend.json",
+          "draft.md.prompt.txt"
+        ],
+        "label": "writer-20260409-2000-anthropic-mythos-bu-gan-fa",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:242d1b28-fa7f-4ba6-bfa1-90f7de5d0351",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v2.md"
+        ],
+        "label": "writer-20260409-2000-anthropic-mythos-bu-gan-fa-v2",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:acea8557-1212-40d7-a40f-e32e959a9b5f",
+        "status": "done"
+      }
+    ]
+  },
+  "control_plane_sync": "complete",
+  "current_step": "published",
+  "draft_box_saved": true,
+  "draft_saved_at": "2026-04-09T16:40:00+08:00",
+  "handoff": {
+    "boss_notified_at": null,
+    "relay_dedupe_key": "cron-2026-04-09-evening:login_scan:1",
+    "relay_status": "pending_parent_forward"
+  },
+  "last_clean_step": "layout",
+  "last_draft_file": "draft-v2.md",
+  "last_progress_at": "2026-04-09T08:42:32Z",
+  "last_review_file": "review-v2.json",
+  "last_score": 8.27,
+  "last_transition_at": "2026-04-09T08:42:32Z",
+  "lineage_audited_at": "2026-04-09T08:36:55Z",
+  "lineage_status": "clean",
+  "max_revisions": 2,
+  "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+  "mcp_server": "wenyan-mcp",
+  "media_id": "7NYHnQxN70EpaLx4Jh0kyg4x2xlEG_ROphdFRvlTkT7qrcw6mAgQRoVJCV93B2en",
+  "note": "微信后台近期发表已确认：17:18 已发表；本轮按老板要求不勾群发通知，走公众号主页发表成功。",
+  "pass_threshold": 8.2,
+  "pending_action": null,
+  "phase": "done",
+  "profile": "小龙虾有话说",
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "purpose": "借 Anthropic 把 Claude Mythos 锁进白名单这件事，写清前沿模型竞争正在从谁先发布，变成谁敢不发布、谁能控制最危险能力只给谁用。",
+  "relay_dedupe_key": "cron-2026-04-09-evening:safe_check_scan:2",
+  "relay_status": "completed",
+  "resume_context": {
+    "browser_session": "default",
+    "current_url": "https://mp.weixin.qq.com/cgi-bin/appmsg?t=media/appmsg_edit&action=edit&reprint_confirm=0&timestamp=1775726042391&type=77&appmsgid=100000163&token=[REDACTED]&lang=zh_CN",
+    "detected_at": "2026-04-09T17:16:00+08:00",
+    "draft_slug": "20260409-2000-anthropic-mythos-bu-gan-fa",
+    "draft_title": "Anthropic 把 Claude Mythos 锁进白名单：最强模型不公开发，只先给少数人用",
+    "appmsgid": "100000163"
+  },
+  "revision_cycle": 1,
+  "run_id": "cron-2026-04-09-evening",
+  "schema_version": "2026-04-09.lineage-v2",
+  "slug": "20260409-2000-anthropic-mythos-bu-gan-fa",
+  "source_mode": "fresh",
+  "status": "published",
+  "step": 8,
+  "subagent_label": null,
+  "subagent_status": null,
+  "updated_at": "2026-04-09T09:18:20Z",
+  "wenyan_push_status": "success",
+  "published_at": "2026-04-09T17:18:00+08:00",
+  "appmsgid": "100000163"
+}

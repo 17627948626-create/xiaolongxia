@@ -1,0 +1,141 @@
+{
+  "draft_version": "draft-v3",
+  "checked_at": "2026-04-07T07:20:00Z",
+  "total_claims": 9,
+  "verified": 4,
+  "inaccurate": 4,
+  "unverifiable": 1,
+  "false": 0,
+  "localization": 0,
+  "pass": false,
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "不是写新文章，不是发新模型，而是把他自己正在用的内容创作 Skill，「完整的，一字不改的，开源了」。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "卡兹克原文 / 虎嗅转载全文",
+      "source_url": "https://www.huxiu.com/article/4848444.html"
+    },
+    {
+      "id": 2,
+      "original_text": "一个创作者第一次把自己的方法系统，作为公开竞争品摆上桌面。",
+      "verdict": "❌ UNVERIFIABLE",
+      "issues": [
+        "“第一次”属于全行业范围判断，现有来源不足以证实。",
+        "可证实的是：卡兹克这次确实把自己的内容创作 Skill 公开到了 GitHub。"
+      ],
+      "correction": "一个创作者把自己的方法系统，作为公开竞争品摆上桌面。",
+      "source": "卡兹克原文 / GitHub 仓库",
+      "source_url": "https://github.com/KKKKhazix/khazix-skills"
+    },
+    {
+      "id": 3,
+      "original_text": "从 4 月 6 日创建到 4 月 7 日中午，这个叫 khazix-skills 的 repo 已经拿到 539 颗星、115 次 fork。",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "repo 名称 khazix-skills、created_at=2026-04-06T07:37:02Z 可证实。",
+        "但当前 GitHub API 实时值已是 559 stars、116 forks（2026-04-07T07:16Z 抓取）。",
+        "539/115 只能作为更早时点的快照成立，不能直接写成无时间戳的现在时。"
+      ],
+      "correction": "截至 4 月 7 日 14:52 左右的 GitHub API 快照，这个叫 khazix-skills 的 repo 为 539 stars、115 forks。建议保留为时间快照表述。",
+      "source": "GitHub REST API /repos/KKKKhazix/khazix-skills",
+      "source_url": "https://api.github.com/repos/KKKKhazix/khazix-skills"
+    },
+    {
+      "id": 4,
+      "original_text": "卡兹克在原文里写得很清楚，他开源的「不是几段 prompt」。",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "原文可证实的是：他开源的是“自己在用的内容创作Skill，完整的，一字不改地开源了”。",
+        "“不是几段 prompt”是对原文意思的转述，不是原文中的可直接引用表述。",
+        "现在用引号会让读者误以为这是原文原句。"
+      ],
+      "correction": "卡兹克在原文里写得很清楚，他开源的不只是几段 prompt。",
+      "source": "卡兹克原文 / 虎嗅转载全文",
+      "source_url": "https://www.huxiu.com/article/4848444.html"
+    },
+    {
+      "id": 5,
+      "original_text": "是一个 30173 字的 SKILL.md 文件，外加 content_methodology.md 和 style_examples.md 两份参考库。",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "GitHub contents API 中 SKILL.md 的 size=30173，单位是 bytes，不是“字”。",
+        "实际抓取原文后，SKILL.md UTF-8 字节数为 30173，字符数约 11789。",
+        "content_methodology.md 和 style_examples.md 两个 references 文件确实存在。"
+      ],
+      "correction": "是一个大小 30173 字节的 SKILL.md 文件，外加 content_methodology.md 和 style_examples.md 两份 references 文件。",
+      "source": "GitHub contents API / khazix-writer",
+      "source_url": "https://api.github.com/repos/KKKKhazix/khazix-skills/contents/khazix-writer?ref=main"
+    },
+    {
+      "id": 6,
+      "original_text": "里面装着他写文章时的具体判断：选题和切入角度怎么选、哪些词和标点绝对不用、开头怎么起、节奏怎么控、AI 该干什么、人必须自己干什么、四层自检怎么跑、长期迭代的方法论和踩坑经验。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "卡兹克原文 / khazix-writer/SKILL.md / references",
+      "source_url": "https://www.huxiu.com/article/4848444.html"
+    },
+    {
+      "id": 7,
+      "original_text": "这不是随手写的笔记，而是按照 Agent Skills 开放标准组织的可安装模块——可以直接装进 Claude Code、OpenClaw、Codex 这类 agent 里。",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "README 可以证实该仓库自我定义为遵循 Agent Skills 开放标准的 Skill。",
+        "README 也写了 Claude Code、OpenClaw、Codex 的安装路径与安装方式。",
+        "但现有证据能直接证实的是“README 写明可安装/可用于这些 Agent”，不是你已独立验证“可以直接装进且一定可用”。"
+      ],
+      "correction": "这不是随手写的笔记，而是一个按 Agent Skills 开放标准组织的可安装模块，README 写明可安装到 Claude Code、OpenClaw、Codex 等支持 Skill 的 Agent 中。",
+      "source": "khazix-skills README",
+      "source_url": "https://raw.githubusercontent.com/KKKKhazix/khazix-skills/main/README.md"
+    },
+    {
+      "id": 8,
+      "original_text": "原文后半段重点讲的是迭代流程：先蒸馏初版 → 让 AI 按 skill 写 → 人亲自重写/改写 → 对照 AI 版和人改版 → 把差异写回 skill → 重复 3~4 轮。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "卡兹克原文 / 虎嗅转载全文",
+      "source_url": "https://www.huxiu.com/article/4848444.html"
+    },
+    {
+      "id": 9,
+      "original_text": "卡兹克回忆自己写《淘宝上卖9块9的DeepSeek，让我看到了被折叠的魔幻世界》时，凌晨 2 点半卡文，抬头看见书架上的《北京折叠》，才突然找到真正角度。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "note": "该条可证实为卡兹克在原文中的个人回忆/自述。建议保留为作者自述口径，不要扩写成外部可独立证实的客观事实。",
+      "source": "卡兹克原文 / 虎嗅转载全文",
+      "source_url": "https://www.huxiu.com/article/4848444.html"
+    }
+  ],
+  "reference_list": [
+    {
+      "id": 1,
+      "citation": "卡兹克原文转载，数字生命卡兹克开源个人AI创作技能\"卡兹克风格创作.skill\"",
+      "url": "https://www.huxiu.com/article/4848444.html"
+    },
+    {
+      "id": 2,
+      "citation": "GitHub repository metadata for KKKKhazix/khazix-skills",
+      "url": "https://api.github.com/repos/KKKKhazix/khazix-skills"
+    },
+    {
+      "id": 3,
+      "citation": "GitHub contents API for khazix-writer",
+      "url": "https://api.github.com/repos/KKKKhazix/khazix-skills/contents/khazix-writer?ref=main"
+    },
+    {
+      "id": 4,
+      "citation": "GitHub contents API for khazix-writer/references",
+      "url": "https://api.github.com/repos/KKKKhazix/khazix-skills/contents/khazix-writer/references?ref=main"
+    },
+    {
+      "id": 5,
+      "citation": "khazix-skills README",
+      "url": "https://raw.githubusercontent.com/KKKKhazix/khazix-skills/main/README.md"
+    }
+  ]
+}

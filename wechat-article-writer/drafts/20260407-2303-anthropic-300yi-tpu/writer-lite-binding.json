@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-04-07T16:01:34Z",
+  "status": "matched",
+  "match": true,
+  "draft_dir": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-2303-anthropic-300yi-tpu",
+  "last_draft_file": "draft-v5.md",
+  "last_draft_version": "draft-v5",
+  "last_draft_sha256": "7b5c44a3361828ff4e7a223e7fc0a62d1716dc6a6dd52c8ab5db54f83798048f",
+  "latest_check_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-2303-anthropic-300yi-tpu/writer-lite-check.json",
+  "latest_check_exists": true,
+  "previous_check_draft_version": "draft-v5",
+  "previous_check_draft_sha256": "7b5c44a3361828ff4e7a223e7fc0a62d1716dc6a6dd52c8ab5db54f83798048f",
+  "latest_check_draft_version": "draft-v5",
+  "latest_check_draft_sha256": "7b5c44a3361828ff4e7a223e7fc0a62d1716dc6a6dd52c8ab5db54f83798048f",
+  "resolution": null,
+  "waiver": null
+}

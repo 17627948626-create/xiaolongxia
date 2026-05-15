@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "decision": "pass",
+  "weighted_total": 8.02,
+  "threshold": 7.8,
+  "scores": {
+    "insight_density": 8.3,
+    "originality": 8.2,
+    "emotional_resonance": 7.4,
+    "completion_power": 8.0,
+    "voice": 8.4,
+    "title": 8.0,
+    "weighted_total": 8.02,
+    "notes": "按 config.json 的 review_pass_threshold=7.8 判定，通过。稿件核心判断清楚，事实边界总体守住，作者感明显。"
+  },
+  "source_and_preflight_check": {
+    "config_review_pass_threshold": 7.8,
+    "writer_lite_brief_consistency": "consistent: draft follows Manus hot hook, Agent as executable work system thesis, and keeps official facts separated from author inference.",
+    "writer_lite_preflight": "passed: ok=true, hard_fail=false, draft_version=draft-v1."
+  },
+  "critical_issues": [],
+  "strengths": [
+    "核心判断可转述：Agent 的敏感性不在于会聊天，而在于能把聊天变成行动。这句话能撑住全文，也符合小龙虾账号识别度。",
+    "事实归因总体克制：官方只说禁止投资和撤销交易，稿件没有替官方补具体理由；Manus 能力也明确写成产品自述。",
+    "作者感在线：‘从嘴长出了手’、‘会自己开门的手’、‘门锁开始变贵了’这些表达有本虾的判断和画面感，不像政策通稿。",
+    "没有滑向民族主义口号，落点在 Agent 的流程入口、数据路径、执行权限，方向正确。"
+  ],
+  "voice_observations": {
+    "opening_interchangeability": "low",
+    "author_presence": "high",
+    "transition_template_dependence": "low",
+    "ending_sloganism": "low",
+    "notes": "开头从官方短消息切入，第三段迅速给出本虾反应；正文推进主要靠能力边界递进，不靠模板连接词。结尾‘门锁开始变贵了’落得具体。"
+  },
+  "preserve": {
+    "judgment_or_edge": "Agent 的敏感性不在于它会聊天，而在于它能把聊天变成行动。",
+    "paragraph_or_scene": "所以模型像大脑，Agent 更像一双会自己开门的手。大脑可以讨论，可以争论，可以评测。手一旦开始拿钥匙、进系统、搬东西，所有权和控制权就会变得尖锐。"
+  },
+  "upgrade_suggestions": [
+    {
+      "issue": "标题里的‘第一次’略强，研究材料没有证明历史上绝对第一次，只证明本事件是强信号。",
+      "quote": "AI Agent 第一次被摆上不能随便卖的桌面",
+      "suggestion": "发布前可考虑改成‘AI Agent 正式被摆上不能随便卖的桌面’或‘AI Agent 被摆上不能随便卖的桌面’，降低事实争议，不影响点击。"
+    },
+    {
+      "issue": "中段有几处抽象名词连续出现，读者会短暂进入概念阅读。",
+      "quote": "它掌握了用户目标、流程路径、工具调用和执行权限，那它卖出去的就会超出产品壳子。",
+      "suggestion": "如要微调，可补一个更具体的企业场景例子，例如报表、审批、客服工单中的一条执行链；但当前不影响通过。"
+    }
+  ],
+  "revision_contract": [],
+  "summary": "PASS。稿件抓住了 Manus 被叫停收购的真正传播点：不是泛泛谈监管，而是把 Agent 解释成可迁移的执行能力。文章事实边界清楚，作者判断有辨识度，普通读者能理解‘从聊天到行动’这条关键变化。唯一建议是标题中‘第一次’可在发布前降一点绝对化风险。"
+}

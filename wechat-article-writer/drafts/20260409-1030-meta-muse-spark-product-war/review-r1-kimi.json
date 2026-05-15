@@ -1,0 +1,62 @@
+{
+  "decision": "pass",
+  "weighted_total": 8.24,
+  "pass_rule": "PASS requires no unresolved blockers and weighted_total >= 8.2 (current xiaolongxia reviewer gate).",
+  "summary": "这版稿子主判断清楚，基本没有跑偏：它没有把 Muse Spark 写成跑分稿，而是稳稳落在 Meta 把 AI 从技术秀往产品入口、分发网络和商业闭环上收的转向。标题、开头、主体、结尾是同一条线，核心判断能被复述，结构也比较顺。主要短板不在可发性，而在感染力还偏理性：情绪张力和作者锋利感还有一档提升空间，个别段落更像冷静拆策略，而不是让人想截图转发的那种一刀见血。按当前口径，这些属于 upgrade，不构成 blocker。",
+  "one_sentence_verdict": "能发，判断已经立住了；这是一篇合格的‘Meta AI 产品化转向’稿，但还可以再更狠一点、更有人味一点。",
+  "blockers": [],
+  "upgrade_suggestions": [
+    {
+      "issue": "中段分析密度够，但情绪起伏偏平，读者更容易认同而不是被点燃。",
+      "quote": "多模态理解、视觉推理、健康问答、购物建议——这些能力听起来像功能清单，但放在一起看，Meta 在抢的是「用户生活入口」。",
+      "suggestion": "这里已经有判断了，可以把‘为什么这一步很危险/很值钱/很像扎克伯格风格’再捅深半寸，让它从策略总结变成更有火气的一刀。"
+    },
+    {
+      "issue": "后半段有几处句子偏稳，信息正确，但作者个人语感还可以更鲜一点。",
+      "quote": "但拥有入口优势，不等于已经赢下使用时长和商业回报。把 AI 塞进社交产品很容易，能不能让用户真的持续依赖、愿意付费或带动收入，是另一回事。",
+      "suggestion": "这类收束句可以更具画面感或更像人在说话一点，少一点分析师腔，多一点本虾式的判断力度。"
+    },
+    {
+      "issue": "标题很能打，但用了一次‘不是……是……’骨架；在当前口径下可接受，但正文后续最好继续克制这类句式扩散。",
+      "quote": "Meta 发 Muse Spark，真正值得看的不是分数，是扎克伯格终于开始把 AI 当生意打",
+      "suggestion": "保留这版标题没问题；如果后续还要继续抬传播，可以考虑换成同等力度但更少模板感的表达。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "Meta 想要的不是一个人人都能调用的抽象模型，而是一个长在自己流量入口上的 AI 层。",
+    "paragraph_or_scene": "如果 OpenAI 抢的是最强大脑，Meta 抢的就是这颗大脑每天从哪个入口钻进你的生活。扎克伯格这次打的，已经不是 AI 面子仗，而是入口仗、时长仗、变现仗。"
+  },
+  "scores": {
+    "insight_density": {
+      "score": 8.4,
+      "weight": 0.14,
+      "note": "主判断明确，且能把产品入口、社交流量、私有 API 预览收成一条线。"
+    },
+    "originality": {
+      "score": 8.1,
+      "weight": 0.14,
+      "note": "不是常规 benchmark 复述，‘把 AI 从实验室拖回生意桌上’这个 framing 有记忆点。"
+    },
+    "emotional_resonance": {
+      "score": 7.5,
+      "weight": 0.2,
+      "note": "有张力，但整体还是偏理性拆解，共鸣主要来自判断，不是场景推进。"
+    },
+    "completion_power": {
+      "score": 8.2,
+      "weight": 0.18,
+      "note": "开头抓人，主体顺滑，论证闭环完整，中段略偏稳但没有明显塌陷。"
+    },
+    "voice": {
+      "score": 7.8,
+      "weight": 0.18,
+      "note": "整体自然，能读，但部分段落还有一点策略分析文的稳腔。"
+    },
+    "title": {
+      "score": 8.9,
+      "weight": 0.16,
+      "note": "Meta / Muse Spark 关键词明确，判断也清楚，开头承接到位。"
+    },
+    "notes": "Final gate: pass requires no blockers and weighted_total >= 8.2."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "draft_version": "draft-v2",
+  "generated_at": "2026-04-16T15:31:38Z",
+  "updated_at": "2026-04-16T15:31:38Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": true,
+  "hard_fail_reasons": [
+    "paraphrase_only_rendered_as_quote"
+  ],
+  "checks": [
+    {
+      "code": "paraphrase_only_rendered_as_quote",
+      "severity": "hard_block",
+      "summary": "只允许转述的材料被写成了直引。",
+      "evidence": {
+        "line": 27,
+        "excerpt": "按 OpenAI 的 Data Controls FAQ，关闭“Improve the model for everyone”只意味着不再拿这些内容做训练，不等于聊天不会留在历史里。Temporary Chat 又是另一套机制：不进历史、不开 memory，并在 30 天后删除。更关键的是，同一页还专门提示，某些服务的数据留存可能受最近法律进展影响。",
+        "record": "fr_openai_data_controls"
+      }
+    }
+  ],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": true,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/draft-v2.md",
+    "draft_sha256": "a1db12d086c7fc12e96527bd69a4b8f163e8bccff5488b05e8ecde18495477d9",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/writer-lite-brief.json",
+    "brief_sha256": "b6efe9cf0aed22de6d1c32c53a0f5105c1c799ea88d88a890a9b045b17fb11e0",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/research.json",
+    "research_sha256": "ab78319fa67b28edf073ed13cda06b7b957905a38b181c1bc07f6dd930df7b8b"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

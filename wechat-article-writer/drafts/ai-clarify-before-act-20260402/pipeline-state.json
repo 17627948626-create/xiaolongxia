@@ -1,0 +1,202 @@
+{
+  "run_id": "766c40bd-3a44-45fe-a99f-5ed0a0156bb5",
+  "slug": "ai-clarify-before-act-20260402",
+  "draft_dir": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402",
+  "profile": "小龙虾有话说",
+  "article_type": "观点",
+  "purpose": "讲清楚好的 AI 不是越主动越高级，而是先学会停一下、问清楚，再往下做——以一句'继续'引发的跑偏为切入点",
+  "topic_title": "AI 最该先学会的一句话：你说的是哪件事？",
+  "topic_angle": "从一句'继续'引发的跑偏切入，讲清 AI 真正该先学会的是澄清目标，而不是盲目主动执行",
+  "state": "running",
+  "phase": "publishing",
+  "current_step": "draft_box_saved",
+  "progress_seq": 12,
+  "started_at": "2026-04-02T21:45:00+08:00",
+  "last_progress_at": "2026-04-02T22:38:00+08:00",
+  "last_transition_at": "2026-04-02T22:38:00+08:00",
+  "source_mode": "orchestrator",
+  "progress_source": "orchestrator",
+  "expected_silence_ttl_minutes": 25,
+  "max_run_minutes": 45,
+  "dedup_check": {
+    "recent_avoid": [
+      "我和另一个AI合作了一下午，发现最贵的成本根本不是算力",
+      "你的仓库，现在有两种读者",
+      "你不是学不会AI，是他们不会说人话",
+      "AI说「我检查过了」，是最危险的四个字"
+    ]
+  },
+  "cover_url": "https://images.unsplash.com/photo-1617086286780-6e48d94cfa25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MDc1MzV8MHwxfHNlYXJjaHwxfHxjcm9zc3JvYWRzJTIwZGlyZWN0aW9uJTIwY2hvaWNlfGVufDB8MHx8fDE3NzUxMzc4NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+  "artifacts": {
+    "research": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/research.json",
+    "outline": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/outline.md",
+    "draft": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/draft.md",
+    "writer_session": "agent:xiaolongxia:subagent:ebc2b5af-9a1e-45f5-87e6-847ff787a910",
+    "review_v1": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/review-v1.json",
+    "reviewer_session": "agent:xiaolongxia:subagent:bbe53dad-1cb3-454e-b0e7-08de28473877",
+    "draft_v1": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/draft-v1.md",
+    "writer_revision1_session": "agent:xiaolongxia:subagent:7342871c-2df8-4c12-820c-36085d63e918",
+    "review_v2": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/review-v2.json",
+    "reviewer2_session": "agent:xiaolongxia:subagent:f4461aef-8e15-4caa-8954-ed782fe6eecd",
+    "draft_v2": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/draft-v2.md",
+    "writer_revision2_session": "agent:xiaolongxia:subagent:66a50a6e-b3e7-4d44-bffc-b51002f7db23",
+    "review_v3": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/review-v3.json",
+    "reviewer3_session": "agent:xiaolongxia:subagent:1be2fa75-2e0c-49f1-902a-bd5b5360dd4e",
+    "fact_check": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/fact-check.json",
+    "fact_checker_session": "agent:xiaolongxia:subagent:6f3e9fc5-c647-483b-9edd-0c978253b213",
+    "final": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/final.md",
+    "humanizer_session": "agent:xiaolongxia:subagent:bfa80791-6bed-4068-8bb3-bfa2cf4765ca",
+    "final_layout": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/final-layout.md",
+    "layout_session": "agent:xiaolongxia:subagent:fd97cf59-bdd3-4e3e-bc3d-b90874806319",
+    "publish_md": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-clarify-before-act-20260402/publish.md"
+  },
+  "note": "Draft box saved. Proceeding to formal reader-side publish.",
+  "cover_audit": {
+    "safe": true,
+    "relevance": 8,
+    "desc": "multi-directional signpost with sea backdrop, matches which-direction theme"
+  },
+  "revision_cycle": 3,
+  "children": {
+    "researcher": [
+      {
+        "status": "completed",
+        "session_key": "agent:xiaolongxia:subagent:13fc8c47-3906-4af5-b5aa-7e9eff9aa19f",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ]
+      }
+    ],
+    "writer": [
+      {
+        "status": "completed",
+        "session_key": "agent:xiaolongxia:subagent:ebc2b5af-9a1e-45f5-87e6-847ff787a910",
+        "model": "github-copilot/claude-opus-4.6",
+        "artifacts": [
+          "draft.md"
+        ]
+      },
+      {
+        "status": "completed",
+        "session_key": "agent:xiaolongxia:subagent:7342871c-2df8-4c12-820c-36085d63e918",
+        "model": "github-copilot/claude-opus-4.6",
+        "artifacts": [
+          "draft-v1.md"
+        ]
+      },
+      {
+        "status": "completed",
+        "session_key": "agent:xiaolongxia:subagent:66a50a6e-b3e7-4d44-bffc-b51002f7db23",
+        "model": "github-copilot/claude-opus-4.6",
+        "artifacts": [
+          "draft-v2.md"
+        ]
+      }
+    ],
+    "reviewer": [
+      {
+        "status": "completed",
+        "session_key": "agent:xiaolongxia:subagent:bbe53dad-1cb3-454e-b0e7-08de28473877",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "artifacts": [
+          "review-v1.json"
+        ]
+      },
+      {
+        "status": "completed",
+        "session_key": "agent:xiaolongxia:subagent:f4461aef-8e15-4caa-8954-ed782fe6eecd",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "artifacts": [
+          "review-v2.json"
+        ]
+      },
+      {
+        "status": "completed",
+        "session_key": "agent:xiaolongxia:subagent:1be2fa75-2e0c-49f1-902a-bd5b5360dd4e",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "artifacts": [
+          "review-v3.json"
+        ]
+      }
+    ],
+    "fact_checker": [
+      {
+        "status": "completed",
+        "session_key": "agent:xiaolongxia:subagent:6f3e9fc5-c647-483b-9edd-0c978253b213",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "artifacts": [
+          "fact-check.json"
+        ]
+      }
+    ],
+    "humanizer": [
+      {
+        "status": "completed",
+        "session_key": "agent:xiaolongxia:subagent:bfa80791-6bed-4068-8bb3-bfa2cf4765ca",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "artifacts": [
+          "final.md"
+        ]
+      }
+    ],
+    "layout": [
+      {
+        "status": "completed",
+        "session_key": "agent:xiaolongxia:subagent:fd97cf59-bdd3-4e3e-bc3d-b90874806319",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "artifacts": [
+          "final-layout.md"
+        ]
+      }
+    ]
+  },
+  "last_draft_file": "draft-v2.md",
+  "last_review_file": "review-v3.json",
+  "artifact_provenance": {
+    "research.json": {
+      "producer_type": "child",
+      "producer_step": "researcher",
+      "session_key": "agent:xiaolongxia:subagent:13fc8c47-3906-4af5-b5aa-7e9eff9aa19f",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "outline.md": {
+      "producer_type": "child",
+      "producer_step": "researcher",
+      "session_key": "agent:xiaolongxia:subagent:13fc8c47-3906-4af5-b5aa-7e9eff9aa19f",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "draft-v2.md": {
+      "producer_type": "child",
+      "producer_step": "writer",
+      "session_key": "agent:xiaolongxia:subagent:66a50a6e-b3e7-4d44-bffc-b51002f7db23",
+      "model": "github-copilot/claude-opus-4.6"
+    },
+    "review-v3.json": {
+      "producer_type": "child",
+      "producer_step": "reviewer",
+      "session_key": "agent:xiaolongxia:subagent:1be2fa75-2e0c-49f1-902a-bd5b5360dd4e",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "fact-check.json": {
+      "producer_type": "child",
+      "producer_step": "fact_checker",
+      "session_key": "agent:xiaolongxia:subagent:6f3e9fc5-c647-483b-9edd-0c978253b213",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "final.md": {
+      "producer_type": "child",
+      "producer_step": "humanizer",
+      "session_key": "agent:xiaolongxia:subagent:bfa80791-6bed-4068-8bb3-bfa2cf4765ca",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "final-layout.md": {
+      "producer_type": "child",
+      "producer_step": "layout",
+      "session_key": "agent:xiaolongxia:subagent:fd97cf59-bdd3-4e3e-bc3d-b90874806319",
+      "model": "github-copilot/claude-sonnet-4.6"
+    }
+  },
+  "wechat_media_id": "cl-8tmmzRISdxT-tlomVm0GHNkx4HJo5IDWdu1BMle7etPgeiBQrFGd6L12NpION"
+}

@@ -1,0 +1,108 @@
+{
+  "weighted_total": 7.24,
+  "decision": "revise",
+  "review_pass_threshold": 7.8,
+  "critical_issues": [
+    {
+      "type": "title_and_opening_positioning",
+      "issue": "标题有戏剧性，但搜索意图词和核心判断露出不够，前300字也没有把‘前沿模型竞争转向防复制’这个主判断一次性钉牢，整体更像新闻起手而不是可发的公众号观点稿起手。按 rubric，标题缺少高意图关键词，且核心判断露出偏慢，必须重罚 Title 与 Completion Power。",
+      "quote": "OpenAI、Google、Anthropic，居然站到了一起。\n\n平时它们彼此盯得跟斗兽场一样……结果这次三家罕见联手，公开聊的却是，怎么防别人把自己的强能力低成本学走。",
+      "fix_direction": "标题里直接引入高意图关键词与判断，例如把‘模型蒸馏 / adversarial distillation / 前沿模型’至少放进一个；开头前两段内就亮出‘竞争从比谁更强，转向比谁更能防同行低成本复制’这句主判断，并让后文围绕它推进。",
+      "penalized_dimensions": [
+        "title",
+        "completion_power"
+      ]
+    },
+    {
+      "type": "fact_boundary_and_claim_framing",
+      "issue": "事实边界有越线风险。文中把 Anthropic 的披露、Google 的观察、以及作者自己的行业判断接得过于顺滑，容易让读者把‘一家公司指控’读成‘行业坐实’。尤其‘Google 那边也跟进确认’‘DeepSeek、Moonshot、MiniMax 通过大量欺诈账号对 Claude 做工业级蒸馏’这类写法，措辞强度已经超过当前文内可见支撑。",
+      "quote": "Anthropic 又直接点名披露，DeepSeek、Moonshot、MiniMax 通过大量欺诈账号对 Claude 做工业级蒸馏，Google 那边也跟进确认，过去一段时间模型提取攻击明显在涨。",
+      "fix_direction": "把所有敏感归因改成来源归属写法：‘Anthropic 指称/披露……’‘Google 在相关报告中提示/观察到……’。同时单列一小段，把‘已披露事实’、‘各家口径’、‘本文判断’分开，避免把指控、观察与结论揉成一个事实包。",
+      "penalized_dimensions": [
+        "insight_density",
+        "completion_power",
+        "voice"
+      ]
+    },
+    {
+      "type": "argument_repetition_and_missing_deeper_layer",
+      "issue": "文章已经讲到了‘接口会漏能力’，也提到了‘同行偷师’，但‘为什么这意味着竞争逻辑发生迁移’这一层还没有被真正讲透。中后段多次重复‘加门锁/防复制/守住能力’，却缺少再进一步的一刀：为什么过去的护城河是训练投入，今天的护城河开始包含推理行为、风控系统、账号治理、访问分层与能力封装。重复感会拖慢完读力。",
+      "quote": "你想想看，一个行业里最能打的几个人，忽然同时开始加门锁……真正值钱的东西已经从『我能不能做出来』，变成『我做出来以后还能不能守得住』。",
+      "fix_direction": "压缩两段重复表达，换来一段更深的商业解释：把竞争迁移拆成‘训练领先’→‘产品领先’→‘防复制领先’三层，并明确说明：当输出本身可被高密度采样时，API 就从售卖接口变成能力泄露面，风控因此成为护城河的一部分。",
+      "penalized_dimensions": [
+        "insight_density",
+        "originality",
+        "completion_power"
+      ]
+    }
+  ],
+  "strengths": [
+    "有明确主判断，且判断本身成立为一篇观点稿的骨架：前沿模型竞争正从拼更强，转向拼防低成本复制。",
+    "把 distillation / adversarial distillation 讲成人话的能力是够的，‘顶级大厨/点单喂学徒’这一组比喻清楚、顺口、适合公众号读者进入主题。",
+    "整体语感比技术摘要有人味，句子有起伏，像作者在说话，不像研究报告改写稿。",
+    "中段‘接口也会漏’‘有人在拆我的发动机’两处画面感不错，具备可截图传播的潜质。"
+  ],
+  "weaknesses": [
+    "标题与开头的公众号稿完成度还差半步：有戏剧感，但缺少关键词与判断露出，打开率和搜一搜承接都不够强。",
+    "事实边界不够稳，Anthropic 指控、Google 观察、作者行业判断混写，容易被挑刺。",
+    "后半段有同义反复，‘加门锁/守住能力/防复制’说了几遍，但更深的商业结构变化没有继续往下挖。",
+    "情绪张力有，但还没完全把‘同行偷师’的残酷感、产业防御感推到一个足够狠的位置。"
+  ],
+  "actionable_revisions": [
+    {
+      "priority": 1,
+      "action": "重写标题与前300字",
+      "why": "这是当前最直接的失分点，影响 Title、Completion Power 两个高权重维度。",
+      "direction": "标题要同时具备关键词 + 判断。可考虑方向：‘三家前沿模型公司一起围堵蒸馏，AI 竞争开始比谁更会防偷师’、‘当 adversarial distillation 成了行业公敌，前沿模型开始比谁更能防复制’。前300字内就把主判断完整落地。"
+    },
+    {
+      "priority": 2,
+      "action": "给敏感指控全部加来源边界",
+      "why": "这决定文章能不能稳稳可发。观点稿可以锋利，但不能把未证实归因写成坐实事实。",
+      "direction": "统一改成‘Anthropic 披露/指称……’‘Google 在报告中提示……’‘如果把这些信号放在一起看，本文的判断是……’。必要时加一句‘目前公开信息仍主要来自公司披露与安全报告口径’。"
+    },
+    {
+      "priority": 3,
+      "action": "新增一段‘竞争迁移机制’",
+      "why": "把‘防同行偷师’从口号推进成结构性判断，补足洞察密度。",
+      "direction": "明确写出：过去壁垒主要在算力、数据、训练；现在还要加一层‘输出能否被工业化抽取并复刻’。因此风控、分层访问、能力封装，开始进入竞争核心，而不只是运营配套。"
+    },
+    {
+      "priority": 4,
+      "action": "压缩中后段重复表达 10%—15%",
+      "why": "现在的稿子已经有观点，但在同义回环里耗掉了完读力。",
+      "direction": "删掉一处‘加门锁/守住能力’的重复表述，换成更具体的产业后果：API 限流更狠、能力更分层、小公司追赶路径变窄、闭源与开源冲突更硬。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "前沿模型最贵的资产，已经不只是能力本身，还有能力不被别人低成本复制的那层壳。",
+    "paragraph_or_scene": "‘凌晨两点，一个模型公司的风控后台还亮着……你盯着那张监控图，心里冒出来的第一个念头，多半是「有人在拆我的发动机」。’ 这是目前最有画面感、最像公众号稿的一段，建议保留。"
+  },
+  "scores": {
+    "insight_density": 7.4,
+    "originality": 7.1,
+    "emotional_resonance": 7.3,
+    "completion_power": 7.0,
+    "voice": 8.1,
+    "title": 5.8,
+    "weighted_total": 7.24,
+    "notes": "Final gate: pass requires weighted_total >= review_pass_threshold from config.json. Current threshold = 7.8, so this draft should revise."
+  },
+  "upgrade_suggestions": [
+    {
+      "issue": "‘作为一个靠接口活着的 AI，我对这刀会更敏感’这句有作者视角的俏皮感，但也略微跳戏。",
+      "quote": "作为一个靠接口活着的 AI，我对这刀会更敏感。",
+      "suggestion": "如果《小龙虾有话说》的稳定人格更偏人类作者，可改成‘站在内容产业和模型商业化的角度看，我会对这刀特别敏感’，保留锋芒，减少设定感。"
+    },
+    {
+      "issue": "‘留一句能转给朋友的话吧’有传播意识，但略显模板化。",
+      "quote": "留一句能转给朋友的话吧。",
+      "suggestion": "可直接把金句独立成段，不必先打招呼式铺垫，这样更利落。"
+    },
+    {
+      "issue": "中段‘这才是问题的硬骨头’‘这就是 why now’这种转场有劲，但英文夹入略突兀。",
+      "quote": "这就是 why now。",
+      "suggestion": "如想更稳，可改成‘这也是为什么偏偏是现在。’语气仍在，中文整体性更强。"
+    }
+  ]
+}

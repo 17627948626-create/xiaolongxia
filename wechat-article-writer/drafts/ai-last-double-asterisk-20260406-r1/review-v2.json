@@ -1,0 +1,80 @@
+{
+  "review_version": "v2",
+  "title_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-last-double-asterisk-20260406-r1/title-v2.txt",
+  "draft_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-last-double-asterisk-20260406-r1/draft-v2.md",
+  "pass": false,
+  "weighted_total": 8.29,
+  "pass_rule": {
+    "weighted_total_min": 8.5,
+    "no_dimension_below": 6,
+    "originality_min": 7
+  },
+  "dimensions": {
+    "insight_density": {
+      "name": "Insight Density",
+      "weight": 0.11,
+      "score": 8.2,
+      "reason": "主洞察很清楚：AI 内容系统真正容易翻车的，不是生成本身，而是最后一跳的格式契约。这个判断有辨识度，也被多个段落反复压实。扣分点在于中后段有少量回环复述，次级洞察的扩展面还不算特别宽。"
+    },
+    "originality": {
+      "name": "Originality",
+      "weight": 0.14,
+      "score": 8.6,
+      "reason": "从一个裸露的 `**` 切入，延展到“格式兼容也是内容正确性的一部分”，这个角度是新鲜的，不是常见的 AI 写作泛论。核心判断可命名、可复述，且不是纯制造反差。"
+    },
+    "emotional_resonance": {
+      "name": "Emotional Resonance",
+      "weight": 0.18,
+      "score": 8.3,
+      "reason": "开头的尴尬感、出戏感和“辛苦写完却败在一个符号上”的羞耻感很容易让内容创作者代入，情绪建立真实。但后半程更多回到论证，情绪张力没有继续上抬到更强的一击。"
+    },
+    "completion_power": {
+      "name": "Completion Power",
+      "weight": 0.16,
+      "score": 8.6,
+      "reason": "开头抓人，段落短，手机端阅读友好；每节都在推进同一条主线，没有明显断档。个别句意重复略削弱推进速度，但整体仍有持续下滑阅读的动力。"
+    },
+    "voice": {
+      "name": "Voice",
+      "weight": 0.08,
+      "score": 8.9,
+      "reason": "口语化自然，有判断，不端着；像一个懂系统、也懂内容的人在说话。像“demo 拼的是才华，生产拼的是不让这些边角把你当众出卖”这类句子，有明确作者感。"
+    },
+    "evidence": {
+      "name": "Evidence",
+      "weight": 0.09,
+      "score": 7.5,
+      "reason": "文中已有 CommonMark 与 GitHub 两个外部锚点，也给了 John Gruber、GitHub 2020 blog 等具体信息，基础是够的。但对“最后一跳契约会怎样具体伤害内容可信度”这条核心判断，实证支撑仍偏少，更多是强论述而非多点钉牢。"
+    },
+    "content_timeliness": {
+      "name": "Content Timeliness",
+      "weight": 0.06,
+      "score": 8.7,
+      "reason": "虽然话题来自 AI 写作与 Markdown 渲染，但真正成立的是一种长期有效的生产原则：输出系统会死在边角契约，而不是只死在生成质量。这种判断不依赖某个短期新闻。"
+    },
+    "title": {
+      "name": "Title",
+      "weight": 0.18,
+      "score": 7.8,
+      "reason": "标题有冲突感，也很具体，前 300 字里自然出现了“AI”，并且迅速建立了“AI 写得再顺，也可能被最后一个符号毁掉”的核心判断，lead consistency 过关。扣分主要在搜索意图：高意图词仍偏泛，只有“AI”而没有把文中真正承接的“AI写作 / Markdown / 公众号排版”之类更可搜的词自然带进去。"
+    }
+  },
+  "feedback_items": [
+    {
+      "dimension": "Evidence",
+      "score": 7.5,
+      "issue": "核心判断有说服力，但外部锚点数量和落点还不够，导致文章更像强观点而不是被多处证据钉牢的观点。",
+      "quote": "CommonMark 官方在首页就写得很清楚：John Gruber 对 Markdown 的经典语法描述并没有把语法定义得无歧义。",
+      "suggestion": "保留现有 CommonMark / GitHub 两个锚点的前提下，再补一个更贴近内容生产事故的具体案例或工程处理细节，让“格式契约=内容正确性的一部分”不只靠作者判断成立。"
+    },
+    {
+      "dimension": "Title",
+      "score": 7.8,
+      "issue": "标题的冲突点很好，但高意图关键词不够强，搜索可见性仍偏弱。",
+      "quote": "AI写得再好，也可能毁在最后一个 `**` 上",
+      "suggestion": "保留“最后一个 `**`”这个具体钩子，但把泛泛的“AI”升级成更贴正文的可搜词，比如自然融入“AI写作”“Markdown”或“公众号排版”中的一个，让标题既有判断力也更能被搜到。"
+    }
+  ],
+  "hard_blockers": [],
+  "one_line_verdict": "这篇稿子已经有锋利的观点文骨架，但标题搜索意图偏弱、证据钉子还不够深，严格按线还未通过。"
+}

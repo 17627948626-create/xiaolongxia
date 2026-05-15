@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "decision": "pass",
+  "weighted_total": 8.6,
+  "threshold": 8.5,
+  "reviewed_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260428-1756-manus-acquisition-blocked-agent-sovereignty/draft-v2.md",
+  "reviewed_sha256": "86334a1a30f31e59f4cd84ef8bdd4e651242b3a61691e4e7b4581b71939b5959",
+  "scores": {
+    "insight_density": {
+      "score": 8.7,
+      "weight": 0.14,
+      "weighted": 1.218,
+      "note": "主判断稳定，且在 v2 中补出了‘权限归属和执行层控制权’这一层，把原本反复强调的执行入口向交易/监管的审查对象推进了一步。"
+    },
+    "originality": {
+      "score": 8.5,
+      "weight": 0.14,
+      "weighted": 1.19,
+      "note": "‘从嘴长出手’‘会自己开门的手’‘门锁开始变贵’形成统一意象，AI 第一视角不是装饰，而是服务 Manus 事件判断。"
+    },
+    "emotional_resonance": {
+      "score": 8.5,
+      "weight": 0.2,
+      "weighted": 1.7,
+      "note": "新增普通下午的具体执行场景有效补足代入感：读者能看到 Agent 翻文件、读文档、拉表格、整合邮件并生成可发送版本，风险从抽象概念落到了日常工作画面。"
+    },
+    "completion_power": {
+      "score": 8.6,
+      "weight": 0.18,
+      "weighted": 1.548,
+      "note": "段落短、递进清楚，中段重复比上一版明显压缩；从事实、能力结构、具体场景、审查对象到结尾意象，滑读阻力较小。"
+    },
+    "voice": {
+      "score": 8.7,
+      "weight": 0.18,
+      "weighted": 1.566,
+      "note": "小龙虾在场感强：愣住、作为 AI 对‘手’的敏感、天天跟工具打交道的经验都自然嵌入，没有变成监管通稿或民族主义口号。"
+    },
+    "title": {
+      "score": 8.6,
+      "weight": 0.16,
+      "weighted": 1.376,
+      "note": "标题比上一版更短更硬，保留 Manus + Agent 两个关键词，并直接亮出‘被禁止收购/不能只当应用卖’的冲突和判断。"
+    }
+  },
+  "contract_completion_check": {
+    "title_shorter_harder": {
+      "completed": true,
+      "evidence": "标题已改为《Manus 被禁止收购，Agent 不能只当应用卖了》，比 v2 review 指出的版本更短、更直接，且保留 Manus 与 Agent。"
+    },
+    "concrete_execution_scene": {
+      "completed": true,
+      "evidence": "正文新增‘一个很普通的下午’场景：Agent 翻文件夹、打开协作文档、拉表格数字、补邮件变化、生成可发版本，解决了上一轮缺少读者代入画面的问题。"
+    },
+    "compress_repetition": {
+      "completed": true,
+      "evidence": "中段仍有必要复述以保持传播记忆，但已不再只是同义打转；重复解释被更明确地导向权限归属和执行层控制权。"
+    },
+    "permission_and_execution_control_second_order_judgment": {
+      "completed": true,
+      "evidence": "正文明确写出‘未来类似交易真正会被盯住的，很可能是权限归属和执行层控制权’，完成 v2 revision_contract 的核心新增要求。"
+    }
+  },
+  "source_and_preflight_check": {
+    "source_alignment": "通过。官方事实只写到发改委禁止投资决定、要求撤销交易，并用新华社/央视确认；正文明确说官方未展开技术出口、数据安全、国家安全等细节原因，没有替官方补理由。",
+    "product_claim_boundary": "通过。Manus 能力描述使用‘按 Manus 自己的产品描述’‘产品自述’等边界表达，没有把官网宣传当成第三方验证事实或 AGI 证明。",
+    "brief_alignment": "通过。文章只讲 Manus 这一件事，主 thesis 保持为 Agent 是能带走流程、数据和执行入口的工作系统，没有偷换选题。",
+    "lite_preflight_binding": "通过。writer-lite-check-v2.json 的 input_fingerprints 指向 draft-v2.md，draft_sha256 与本次评审对象一致：86334a1a30f31e59f4cd84ef8bdd4e651242b3a61691e4e7b4581b71939b5959；hard_fail=false。",
+    "fact_risk": "低。未写未核实收购金额、Meta 交易细节、融资传闻或官方未披露原因。"
+  },
+  "critical_issues": [],
+  "strengths": [
+    "标题已经完成传播侧压缩：短、硬、有关键词，适合晚间热点入口。",
+    "核心判断非常清楚：Agent 的敏感性在于把聊天变成行动，卖出去的可能是一套工作系统。",
+    "新增具体执行场景补上了上一轮最大短板，让‘执行入口’有了可感画面。",
+    "事实边界干净，官方事实与作者推断分层清楚，降低政策解读越界风险。",
+    "尾句‘门锁开始变贵了’和前文‘会自己开门的手’形成闭环，记忆点强。"
+  ],
+  "minor_notes": [
+    "中后段仍有少量‘流程/路径/执行入口’的重复强调，但在公众号传播文里属于可接受的记忆强化，不构成 8.5 门槛下的阻塞项。",
+    "若后续 humanizer 处理，只建议微调节奏和个别重复词，不应改 thesis、事实边界和结尾意象。"
+  ],
+  "revision_contract": [],
+  "summary": "通过 8.5 新门槛。v2 已完成上一轮 revision_contract：标题更短更硬，具体执行场景有效补足读者代入，重复压缩后新增了‘权限归属/执行层控制权’二级判断。事实边界稳，作者感和完读力都达到发布标准。"
+}

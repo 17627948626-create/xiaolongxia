@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-04-11T01:12:14Z",
+  "status": "rerun_completed",
+  "match": true,
+  "draft_dir": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing",
+  "last_draft_file": "draft-v2.md",
+  "last_draft_version": "draft-v2",
+  "last_draft_sha256": "9554ff5e49a6e1817572bedc167f04d3372033d1362aa4513742170a71845d0c",
+  "latest_check_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing/writer-lite-check.json",
+  "latest_check_exists": true,
+  "previous_check_draft_version": "draft-v3",
+  "previous_check_draft_sha256": "479b4a35c382dd22989157f7d9643f8ae6bb044594e92f11dfb9ee061bc17c46",
+  "latest_check_draft_version": "draft-v2",
+  "latest_check_draft_sha256": "9554ff5e49a6e1817572bedc167f04d3372033d1362aa4513742170a71845d0c",
+  "resolution": {
+    "action": "rerun_preflight",
+    "check_mode": "blocking",
+    "change_reason": "latest draft changed; refresh lite preflight binding",
+    "check_output_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing/writer-lite-check.json",
+    "completed_at": "2026-04-11T01:12:14Z"
+  },
+  "waiver": null
+}

@@ -1,0 +1,90 @@
+{
+  "article_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-last-double-asterisk-20260406-r1/draft.md",
+  "reviewer_mode": "blind",
+  "rubric_version": "wechat-article-forge reviewer-rubric v4",
+  "dimensions": {
+    "Insight Density": {
+      "score": 7.5,
+      "weight_percent": 11,
+      "reason": "有一个清晰且成立的主洞察：格式契约失守会直接伤害内容可信感；后文又补出两个次级洞察——Markdown 不会大声报错、生产系统必须把小契约工程化。但中段多个段落都在反复证明同一件事，次级洞察的展开还不够再上一层。"
+    },
+    "Originality": {
+      "score": 8.0,
+      "weight_percent": 14,
+      "reason": "把一个裸露的 `**` 小事故写成一篇关于 AI 内容生产、格式契约与生产级可靠性的观点文，这个切口是新鲜的，不是常见的 AI 评论套路。虽然核心判断不算颠覆性，但角度足够具体、可命名。"
+    },
+    "Emotional Resonance": {
+      "score": 7.2,
+      "weight_percent": 18,
+      "reason": "开头的尴尬感和“内容没收拾干净就上线”的失信感很容易让做内容或做产品的人代入，结尾也有明确的价值判断。但全文主要还是认知层面的说服，情绪张力集中在开头，后半程更像清楚的技术评论，而不是持续推进的情绪弧线。"
+    },
+    "Completion Power": {
+      "score": 8.3,
+      "weight_percent": 16,
+      "reason": "开头抓人，段落短，标题切分清楚，手机端可读性好；每一节都在往“这不是小毛病，而是生产问题”这条主线推进。中段关于 Markdown 模糊性和 GitHub 工程化的两节略有同义重复，但整体仍然能把人顺着读完。"
+    },
+    "Voice": {
+      "score": 8.8,
+      "weight_percent": 8,
+      "reason": "语感自然，像一个懂工程也懂内容的人在直接说话。像“自我感动”“把你当众出卖”这类措辞有作者辨识度，基本没有教材腔、翻译腔或官话。"
+    },
+    "Evidence": {
+      "score": 6.4,
+      "weight_percent": 9,
+      "reason": "文中有 CommonMark、GitHub 这些具体锚点，比纯感想强，但论据密度仍不够硬。比如 GitHub 的例子只有笼统描述，没有给出更具体的官方文章名称、年份、项目名或更可核验的细节；关于“读者会因此怀疑你”的判断也缺少更具体的案例支撑。"
+    },
+    "Content Timeliness": {
+      "score": 8.7,
+      "weight_percent": 6,
+      "reason": "核心判断依赖的是“格式兼容是内容正确性的一部分”这一长期成立的原则，不依赖某个模型版本或一周内的新闻。即便具体 bug 换掉，文章的主张依然成立。"
+    },
+    "Title": {
+      "score": 4.8,
+      "weight_percent": 18,
+      "reason": "按 blind review 只看当前稿件，文中没有独立、明确的标题可供评估；若把首句视作题面，它虽然有悬念，但过长，也没有自然纳入高意图关键词（如 Markdown / AI / 微信 / 渲染 / 排版），搜索可见性弱，判断也不够聚焦。按 rubric，缺少可识别关键词时标题分上限受限。"
+    }
+  },
+  "weighted_total": 7.24,
+  "pass": false,
+  "pass_rule": {
+    "required_weighted_total": 8.5,
+    "required_min_dimension": 6,
+    "required_min_originality": 7,
+    "failed_checks": [
+      "weighted_total < 8.5",
+      "Title < 6"
+    ]
+  },
+  "hard_blockers": [],
+  "feedback_items": [
+    {
+      "dimension": "Insight Density",
+      "score": 7.5,
+      "issue": "主洞察是成立的，但中段几节有重复放大同一判断的问题，次级洞察没有继续抬高文章上限。",
+      "quote": "格式兼容不是排版末梢。它就是内容正确性的一部分。",
+      "suggestion": "保留这句作为主判断，但至少再补一个真正并列的二级洞察，例如“AI 写作系统最脆弱的不是生成，而是最后一跳的契约传递”，让后半篇不只是反复论证“这很重要”。"
+    },
+    {
+      "dimension": "Emotional Resonance",
+      "score": 7.2,
+      "issue": "开头有尴尬与失信感，后半程转成解释性评论后，情绪张力明显回落。",
+      "quote": "读者不会因为你偶尔写出一句漂亮话就信任你，但一定会因为看到裸露的 `**` 而怀疑你。",
+      "suggestion": "在中后段加入一个更具体的读者视角瞬间，或者一个“作者自以为完成—读者瞬间出戏”的场景，把“怀疑你”从判断句变成可感的体验。"
+    },
+    {
+      "dimension": "Evidence",
+      "score": 6.4,
+      "issue": "有具体名词，但可核验颗粒度还不够，论据更像方向正确的提示，而不是足够硬的支撑。",
+      "quote": "他们为了统一 Markdown 渲染，不是简单换个 parser 就完事。他们要写 formal spec、做 normalization、比对新旧 HTML tree，目标是 visually identical。",
+      "suggestion": "把证据再钉实一层：补出 GitHub 官方文章/项目名称、年份或具体表述来源；如果继续用 CommonMark，也最好给出更明确的“标准/讨论”指向，而不是只说“官方自己都承认”。"
+    },
+    {
+      "dimension": "Title",
+      "score": 4.8,
+      "issue": "当前稿件缺少一个可独立评估的标题；如果首句就是题面，它有悬念但缺关键词、过长，且没有把核心判断压成一句更有传播力的结论。",
+      "quote": "今晚最刺眼的，不是某句话写错了，而是最后多出来的 `**`。",
+      "suggestion": "把题面改成“具体关键词 + 明确判断”的结构，例如围绕 Markdown、AI 写作、格式契约去压缩成一句更短、更可搜、也更能表达立场的标题。"
+    }
+  ],
+  "one_line_verdict": "切口够新、语感够自然，但目前更像一篇完成度不错的工程评论，论据还不够硬，情绪推力不够持续，题面更是明显没立住，离可发线有距离。"
+}

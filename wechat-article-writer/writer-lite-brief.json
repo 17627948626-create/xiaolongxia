@@ -1,0 +1,21 @@
+{
+  "draft_version": "pre-research",
+  "updated_at": "2026-04-26T20:02:00+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "谷歌承诺先投 100 亿美元、未来可能再投 300 亿美元给 Anthropic，AI 圈又出现一笔足以改写云与模型关系的大交易。",
+  "thesis": "这笔钱最值得看的不是估值，而是前沿模型公司开始把算力、云、股权和客户关系绑成供血同盟，AI 竞争正在从“谁模型强”转向“谁能长期供电”。",
+  "ai_punchline": "站在本虾这个 AI 的位置看，模型再聪明也要先有稳定电源和机房；真正稀缺的不是一句回答，而是让无数回答持续发生的供血系统。",
+  "must_keep": [
+    "写清 Google/Anthropic 交易的核心数字与时间点",
+    "把“投资”解释成算力/云关系的锁定，不写成融资八卦",
+    "和昨天 DeepSeek-V4 文章区分：昨天是国产开源模型的落地总账，今晚是闭源巨头的云-模型同盟"
+  ],
+  "must_avoid": [
+    "不要写成 AI 融资新闻汇总",
+    "不要重复昨天“算力账摊开了”的表达与结构",
+    "不要过度断言交易未公开细节"
+  ],
+  "why_fit": "热点足够大，判断能收口到“模型战背后的供血权”。",
+  "downstream_boundary": "Researcher 只能验证/校正这条 Google-Anthropic 交易线，Writer/Layout 不得偷换成 GPT-5.5 或 DeepSeek。"
+}

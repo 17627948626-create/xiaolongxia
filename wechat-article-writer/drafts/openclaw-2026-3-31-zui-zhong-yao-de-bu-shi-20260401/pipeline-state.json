@@ -1,0 +1,234 @@
+{
+  "slug": "openclaw-2026-3-31-zui-zhong-yao-de-bu-shi-20260401",
+  "run_id": "orchestrator:xiaolongxia:openclaw-20260331-article",
+  "source_mode": "fresh",
+  "profile": "小龙虾有话说",
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "step": 8,
+  "phase": "publishing",
+  "purpose": "OpenClaw 这版最值得认真看的，不是功能多了多少，而是它开始补齐 agent runtime 最难的那部分：后台任务统一调度、安全边界变硬、运行时质量在补——从「会很多工具的 AI 壳子」向「有调度、有约束、有恢复能力的系统」走了一步。",
+  "article_type": "观点",
+  "resolved_title": "OpenClaw 2026.3.31 最重要的，不是多了多少功能，而是它终于开始像「操作系统」了",
+  "revision_cycle": 2,
+  "max_revisions": 3,
+  "pass_threshold": 8.2,
+  "min_dimension": 6,
+  "last_score": 8.58,
+  "last_review_file": "review-v3.json",
+  "last_draft_file": "draft-v3.md",
+  "subagent_label": null,
+  "subagent_status": null,
+  "pending_action": "publish",
+  "lineage_status": "clean",
+  "last_clean_step": "layout",
+  "repair_attempts": 0,
+  "children": {
+    "researcher": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:42feb79a-a773-489c-97b8-42fc4a9a36d4",
+        "label": "researcher-openclaw-20260331",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "status": "done",
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ]
+      }
+    ],
+    "writer": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:74f28055-2f29-4090-b2ec-e484a72bbf76",
+        "label": "writer-openclaw-20260331-v1",
+        "model": "github-copilot/claude-opus-4.6",
+        "status": "done",
+        "artifacts": [
+          "draft.md"
+        ]
+      },
+      {
+        "session_key": "agent:xiaolongxia:subagent:f4f1859c-3fdf-4598-9819-cf18bf3f86bb",
+        "label": "writer-openclaw-20260331-v3-retry",
+        "model": "github-copilot/claude-opus-4.6",
+        "status": "done",
+        "artifacts": [
+          "draft-v3.md"
+        ]
+      }
+    ],
+    "reviewer": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:7f32a464-b87d-4e94-8f87-d69c4214ae10",
+        "label": "reviewer-openclaw-20260331-v1",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "status": "done",
+        "artifacts": [
+          "review-v1.json"
+        ]
+      },
+      {
+        "session_key": "agent:xiaolongxia:subagent:0111baae-e866-44f5-8b9f-b40e9beecc24",
+        "label": "reviewer-openclaw-20260331-v3",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "status": "done",
+        "artifacts": [
+          "review-v3.json"
+        ]
+      }
+    ],
+    "writer_revision": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:58ce1e96-8d8a-4092-81bf-c0b67b4eeb3c",
+        "label": "writer-openclaw-20260331-v2",
+        "model": "github-copilot/claude-opus-4.6",
+        "status": "done",
+        "artifacts": [
+          "draft-v2.md"
+        ]
+      }
+    ],
+    "reviewer_v2": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:9d049cf5-13d0-4f5d-8f1f-c257e9a536f2",
+        "label": "reviewer-openclaw-20260331-v2",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "status": "done",
+        "artifacts": [
+          "review-v2.json"
+        ]
+      }
+    ],
+    "writer_revision_v3": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:f4f1859c-3fdf-4598-9819-cf18bf3f86bb",
+        "label": "writer-openclaw-20260331-v3-retry",
+        "model": "github-copilot/claude-opus-4.6",
+        "status": "done",
+        "artifacts": [
+          "draft-v3.md"
+        ]
+      }
+    ],
+    "reviewer_v3": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:0111baae-e866-44f5-8b9f-b40e9beecc24",
+        "label": "reviewer-openclaw-20260331-v3",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "status": "done",
+        "artifacts": [
+          "review-v3.json"
+        ]
+      }
+    ],
+    "fact_checker": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:10efd4ce-0008-4dc8-917b-879151d9bb6a",
+        "label": "fact-checker-openclaw-20260331-v1",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "status": "done",
+        "artifacts": [
+          "fact-check.json"
+        ]
+      }
+    ],
+    "humanizer": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:39396375-b546-4c39-bf76-114f6c91d529",
+        "label": "humanizer-openclaw-20260331-v1",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "status": "done",
+        "artifacts": [
+          "final.md"
+        ]
+      }
+    ],
+    "layout": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:712b836a-0ccc-4a60-adf5-a2d7f9d66ec1",
+        "label": "layout-openclaw-20260331-v1",
+        "model": "github-copilot/claude-sonnet-4.6",
+        "status": "done",
+        "artifacts": [
+          "final-layout.md"
+        ]
+      }
+    ]
+  },
+  "artifact_provenance": {
+    "research.json": {
+      "producer_type": "child",
+      "producer_step": "researcher",
+      "session_key": "agent:xiaolongxia:subagent:42feb79a-a773-489c-97b8-42fc4a9a36d4",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "outline.md": {
+      "producer_type": "child",
+      "producer_step": "researcher",
+      "session_key": "agent:xiaolongxia:subagent:42feb79a-a773-489c-97b8-42fc4a9a36d4",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "draft.md": {
+      "producer_type": "child",
+      "producer_step": "writer",
+      "session_key": "agent:xiaolongxia:subagent:74f28055-2f29-4090-b2ec-e484a72bbf76",
+      "model": "github-copilot/claude-opus-4.6"
+    },
+    "review-v1.json": {
+      "producer_type": "child",
+      "producer_step": "reviewer",
+      "session_key": "agent:xiaolongxia:subagent:7f32a464-b87d-4e94-8f87-d69c4214ae10",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "draft-v2.md": {
+      "producer_type": "child",
+      "producer_step": "writer_revision",
+      "session_key": "agent:xiaolongxia:subagent:58ce1e96-8d8a-4092-81bf-c0b67b4eeb3c",
+      "model": "github-copilot/claude-opus-4.6"
+    },
+    "review-v2.json": {
+      "producer_type": "child",
+      "producer_step": "reviewer_v2",
+      "session_key": "agent:xiaolongxia:subagent:9d049cf5-13d0-4f5d-8f1f-c257e9a536f2",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "draft-v3.md": {
+      "producer_type": "child",
+      "producer_step": "writer",
+      "session_key": "agent:xiaolongxia:subagent:f4f1859c-3fdf-4598-9819-cf18bf3f86bb",
+      "model": "github-copilot/claude-opus-4.6"
+    },
+    "review-v3.json": {
+      "producer_type": "child",
+      "producer_step": "reviewer",
+      "session_key": "agent:xiaolongxia:subagent:0111baae-e866-44f5-8b9f-b40e9beecc24",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "fact-check.json": {
+      "producer_type": "child",
+      "producer_step": "fact_checker",
+      "session_key": "agent:xiaolongxia:subagent:10efd4ce-0008-4dc8-917b-879151d9bb6a",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "final.md": {
+      "producer_type": "child",
+      "producer_step": "humanizer",
+      "session_key": "agent:xiaolongxia:subagent:39396375-b546-4c39-bf76-114f6c91d529",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "final-layout.md": {
+      "producer_type": "child",
+      "producer_step": "layout",
+      "session_key": "agent:xiaolongxia:subagent:712b836a-0ccc-4a60-adf5-a2d7f9d66ec1",
+      "model": "github-copilot/claude-sonnet-4.6"
+    }
+  },
+  "cover_url": "https://images.unsplash.com/photo-1762163516269-3c143e04175c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MDc1MzV8MHwxfHNlYXJjaHwxfHxzZXJ2ZXIlMjBpbmZyYXN0cnVjdHVyZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc3NTAxNDI4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+  "cover_audit": {
+    "safe": true,
+    "relevance": 7,
+    "reason": "服务器机架近景，契合底层基础设施/控制面主题。"
+  },
+  "html_rendered": false,
+  "published": false,
+  "error": null,
+  "updated_at": "2026-04-01T12:11:00+08:00"
+}

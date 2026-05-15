@@ -1,0 +1,95 @@
+{
+  "angle": "借今天真实排查 browser-use Agent / CLI / OpenClaw browser 分工与 watchdog 冲突的过程，写清网页执行为什么正在变成 Agent 体系里的专业执行层。",
+  "article_type": "科普",
+  "artifact_provenance": {
+    "humanizer": {
+      "artifacts": [
+        "final.md"
+      ],
+      "session_key": "agent:main:subagent:0ddfc10e-a68b-40ca-be62-7836132998d1"
+    },
+    "layout": {
+      "artifacts": [
+        "final-layout.md"
+      ],
+      "session_key": "agent:main:subagent:7ef04636-025c-4225-b16e-b819606aea13"
+    },
+    "research": {
+      "artifacts": [
+        "research.json",
+        "outline.md"
+      ],
+      "session_key": "agent:main:subagent:b34df32c-a552-4b9c-8a32-45a8c4e52da1"
+    },
+    "review_v1": {
+      "artifacts": [
+        "review-v1.json"
+      ],
+      "session_key": "agent:main:subagent:87e3b0f9-72d3-4929-817d-bbac05b5926f"
+    },
+    "review_v2": {
+      "artifacts": [
+        "review-v2.json"
+      ],
+      "session_key": "agent:main:subagent:e690c92c-8eed-4e7f-b8e8-82c5a29344e8"
+    },
+    "writer_v1": {
+      "artifacts": [
+        "draft.md"
+      ],
+      "session_key": "agent:main:subagent:972e0fcf-c413-442c-acd1-2db91e3fa863"
+    },
+    "writer_v2": {
+      "artifacts": [
+        "draft-v2.md"
+      ],
+      "session_key": "agent:main:subagent:86b66b34-28d3-4340-99c5-eccbd1312f4c"
+    }
+  },
+  "artifacts": {
+    "draft_v1": "draft.md",
+    "draft_v2": "draft-v2.md",
+    "final_layout_md": "final-layout.md",
+    "final_md": "final.md",
+    "outline_md": "outline.md",
+    "publish_md": "publish.md",
+    "research_json": "research.json",
+    "review_v1": "review-v1.json",
+    "review_v2": "review-v2.json"
+  },
+  "children": {},
+  "created_at": "2026-04-18T17:29:00+08:00",
+  "current_step": "layout_done",
+  "last_clean_step": null,
+  "lineage_audited_at": "2026-04-18T09:46:00Z",
+  "lineage_status": "dirty",
+  "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+  "mcp_server": "wenyan-mcp",
+  "phase": "finalizing",
+  "profile": "小龙虾有话说",
+  "publish_candidate": "final-layout.md",
+  "publish_profile_preflight": {
+    "checked_at": "2026-04-18T09:44:33Z",
+    "default_theme": "sspai",
+    "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+    "mcp_server": "wenyan-mcp",
+    "profile": "小龙虾有话说",
+    "publish_md_checked": true,
+    "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+    "publisher_mode": "remote",
+    "status": "ok",
+    "wechat_author": "小龙虾有话说",
+    "wenyan_mcp_present": true
+  },
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "publisher_mode": "remote",
+  "purpose": "写一篇面向普通读者的科普稿，把 browser-use 是什么、为什么不是所有任务都该上 Agent、为什么采用单步 CLI / 多步 Agent 分流讲明白。",
+  "repair_action": "fresh_run",
+  "schema_version": "2026-04-09.lineage-v2",
+  "slug": "20260418-1729-browser-use-execution-layer",
+  "state": "running",
+  "title_direction": "为什么我现在不再让一个 Agent 单枪匹马刷网页了",
+  "topic": "browser-use、Browser Use Agent、OpenClaw browser 与网页执行分流",
+  "updated_at": "2026-04-18T09:46:00Z",
+  "wechat_author": "小龙虾有话说"
+}

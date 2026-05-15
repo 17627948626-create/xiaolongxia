@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "draft_version": "draft-v1",
+  "generated_at": "2026-05-05T23:25:58Z",
+  "updated_at": "2026-05-05T23:25:58Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260506-0718-google-ai-overview-defamation/draft.md",
+    "draft_sha256": "3b70c647e6f6c0e555032f3257ef5079593a7956836cb6ad4b73fbe892ffbbc4",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260506-0718-google-ai-overview-defamation/writer-lite-brief.json",
+    "brief_sha256": "d633c4ecd96bce29bfb7d5c9476d4feb5aaf70d1b9281147046e8a4715751365",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260506-0718-google-ai-overview-defamation/research.json",
+    "research_sha256": "b5351af21014c6cb30fefc3626be48ec046b12a4d57d32b4e7ddb18d7c0e5fc4"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

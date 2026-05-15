@@ -1,0 +1,59 @@
+{
+  "decision": "revise",
+  "round_verdict": {
+    "pass_line_met": false,
+    "failure_mode": "score_only",
+    "reason": "这版已无 unresolved BLOCKERS，但 weighted_total 仍未达到 8.5 的放行线。",
+    "unresolved_blockers_count": 0
+  },
+  "blockers": [],
+  "upgrade_suggestions": [
+    {
+      "issue": "第四节的三层框架已经清楚，但写法仍略像分析稿提纲，稀释了前面刚建立起来的狠劲。",
+      "quote": "Anthropic 这次把竞争拉到了三个必须同时到位的层面——",
+      "suggestion": "保留“三层门槛”这个结构，但每层都再压短一点、判断再狠一点，少一点框架说明，多一点‘谁因此赢、谁因此被淘汰’的落刀感。"
+    },
+    {
+      "issue": "第五节已经比上一版更有后果感，但读者处境仍偏泛，情绪更多停留在认知层，而不是切身压力层。",
+      "quote": "如果你在 AI 这个行业里，或者你的公司在用大模型做业务，现在就该想清楚一件事：",
+      "suggestion": "把这里改成一个更具体的业务场景或公司处境：谁会先排不上算力、谁会被更差条件反噬、谁会因此丢单。让‘被甩开’从概念变成画面。"
+    },
+    {
+      "issue": "标题的信息量够，但偏长，第二拍主要在复述事实，还没把判断压到最锋利。",
+      "quote": "Anthropic 这次最吓人的不是收入冲到 300 亿美元，而是它敢把未来几年的算力一起锁下来",
+      "suggestion": "保留 Anthropic / 300 亿美元 / 算力锁仓 这三个关键词，但把标题再缩一刀，让它更像一句能直接把人拽进去的判断，而不是一整句说明。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "它把竞争单位从模型 API 收费，拉到了电力、机架、网络、芯片、长期合同这个级别。",
+    "paragraph_or_scene": "Broadcom 在 8‑K 里还写了一句很关键的话：\n\n> \"Anthropic 的消费取决于持续商业成功。\"\n\n这句话听起来像免责声明，但反而把这层关系讲透了：**收入和算力现在已经绑在一起。**\n\n没有持续商业化，吃不下这种级别的长期算力承诺。\n\n没有长期算力承诺，模型再能卖，也可能在需求真正爆发时被供给卡死。"
+  },
+  "scores": {
+    "insight_density": {
+      "score": 8.4,
+      "note": "主判断明确，且能把收入、算力、供应链三层关系串起来；但二级洞察仍主要服务同一主结论，层次感还差半步。"
+    },
+    "originality": {
+      "score": 8.4,
+      "note": "把增长新闻改写成供应链门槛新闻，这个角度是成立且有新鲜感的。"
+    },
+    "emotional_resonance": {
+      "score": 7.8,
+      "note": "危险感已经明显增强，但更多是‘想明白了’的刺激，还没完全变成‘我可能会被甩开’的身体感。"
+    },
+    "completion_power": {
+      "score": 8.6,
+      "note": "开头抓人，段落短，节奏顺，往下读的牵引基本成立；主要扣分在第四节略有回讲框架感。"
+    },
+    "voice": {
+      "score": 8.4,
+      "note": "整体已经是小龙虾自己的说话方式，够直接；但个别总领句还有一点分析稿腔。"
+    },
+    "title": {
+      "score": 8.3,
+      "note": "关键词齐全、判断明确、前 300 字也承接到了；但标题略长，锋利度还可以再提。"
+    },
+    "weighted_total": 8.3,
+    "notes": "final gate not met: pass requires no unresolved blockers and weighted_total >= 8.5; this draft is below the score line"
+  }
+}

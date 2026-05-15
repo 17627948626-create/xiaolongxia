@@ -1,0 +1,226 @@
+{
+  "event": {
+    "name": "Meta 发布 Muse Spark",
+    "date": "2026-04-08",
+    "company": "Meta",
+    "org": "Meta Superintelligence Labs (MSL)",
+    "what_happened": "Meta 发布 MSL 首个公开模型 Muse Spark，并同步升级 Meta AI app 与 meta.ai，开放 Instant / Thinking 两种模式，主打多模态理解、复杂推理、购物/健康/社交内容场景，以及未来接入 AI 眼镜、Instagram、Facebook、Messenger、WhatsApp。",
+    "why_it_matters": "这不是一次单纯的模型发版，而是 Meta 把 AI 从‘研究项目/开源姿态’往‘产品入口 + 平台分发 + 商业化预览’推进的标志性动作。"
+  },
+  "why_now": [
+    "时间点上，Muse Spark 是 Meta 过去约 9 个月重建 AI 技术栈后的第一份正式成绩单，等于把此前的人才挖角、组织重组、资本投入，第一次变成可用产品。",
+    "路径上，Meta 没把这次发布包装成单一 benchmark 冲榜，而是直接塞进 Meta AI app、meta.ai，以及即将扩散到其社交和硬件入口里，说明它现在更关心用户触点和产品闭环。",
+    "策略上，Meta 一边说未来仍希望开源后续版本，一边先把本次能力放在私有 API 预览与自家产品里，显示其 AI 战略从‘先开源占生态’转向‘先把产品和商业位置卡住’。",
+    "市场反馈上，Dow Jones / Morningstar 报道 Meta 股价在消息后上涨约 6.5%—6.6%，说明资本市场把这次看成 AI 战略落地，而不只是又一篇技术博客。"
+  ],
+  "thesis_seed": {
+    "core_thesis": "Meta 这次最值得看的，不是 Muse Spark 单点跑分有多强，而是它终于开始像做生意一样做 AI：先把模型嵌进自家最强的社交分发网络、购物和健康入口、以及 AI 眼镜这样的硬件触点，再用私有 API 预览去试商业化，开源退到‘以后再说’。",
+    "reader_value": "读者真正该关注的是：Meta 正在把 AI 从‘一个会聊天的模型’改造成‘一个能占住用户生活入口、平台流量和交易场景的产品系统’。",
+    "ai_punchline_candidates": [
+      "Muse Spark 对 Meta 的意义，不像一次模型更新，更像是扎克伯格终于把 AI 从实验室里拖回了生意桌上。",
+      "如果 OpenAI 抢的是智能本身，Meta 抢的是智能长在谁的流量入口上。",
+      "这次 Meta 发的不是一张 benchmark 成绩单，而是一张 AI 产品化路线图。"
+    ],
+    "angle_guardrails": [
+      "只讲 Meta 这一件事，不扩写成全行业模型大战综述。",
+      "主轴放在‘产品化/商业化转向’，benchmark 只作为辅助证据。",
+      "可以提开源姿态变化，但不要写成‘Meta 彻底抛弃开源’，因为官方仍保留未来开源表述。"
+    ]
+  },
+  "key_facts": [
+    {
+      "fact": "Muse Spark 是 Meta Superintelligence Labs 的首个公开模型。",
+      "why_it_supports_thesis": "这让它不只是新模型，而是 Meta 新 AI 组织路线的第一次对外交卷。",
+      "sources": [
+        "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/",
+        "https://www.morningstar.com/news/dow-jones/202604086600/meta-platforms-rises-on-release-of-new-ai-model"
+      ]
+    },
+    {
+      "fact": "Meta 表示过去九个月重建了 AI stack，并把 Muse Spark 定义为 Muse 系列的第一步、‘scaling ladder’ 的第一层。",
+      "why_it_supports_thesis": "这说明它在强调一次底层重建后的长期产品路线，而不是一次临时追热点式发布。",
+      "sources": [
+        "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/",
+        "https://mashable.com/article/mark-zuckerberg-meta-announce-new-muse-spark-ai-models"
+      ]
+    },
+    {
+      "fact": "Muse Spark 现已直接驱动 Meta AI assistant，入口是 Meta AI app 和 meta.ai，并将逐步扩到 Instagram、Facebook、Messenger、WhatsApp、AI glasses。",
+      "why_it_supports_thesis": "Meta 把模型第一时间嵌进自己已有的产品矩阵和流量入口，而非只做开发者 API 发布。",
+      "sources": [
+        "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/",
+        "https://mashable.com/article/mark-zuckerberg-meta-announce-new-muse-spark-ai-models"
+      ]
+    },
+    {
+      "fact": "官方重点展示的能力不是纯文本问答，而是多模态理解、图像健康问题、视觉 coding、购物建议、地点/趋势的社交内容上下文。",
+      "why_it_supports_thesis": "这些场景都贴着用户日常消费、内容分发和生活决策，明显是产品使用场景导向。",
+      "sources": [
+        "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+      ]
+    },
+    {
+      "fact": "Meta AI 提供 Instant / Thinking 两种模式，并提到可并行启动多个 subagents 处理复杂任务；Mashable 提到 Contemplating mode 将渐进上线。",
+      "why_it_supports_thesis": "Meta 在对外卖的已经不是单个模型，而是任务编排能力和 agent 式产品体验。",
+      "sources": [
+        "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/",
+        "https://mashable.com/article/mark-zuckerberg-meta-announce-new-muse-spark-ai-models"
+      ]
+    },
+    {
+      "fact": "Meta 表示底层技术将以私有 API 预览方式向部分合作伙伴开放，并称希望未来开源后续版本。Dow Jones 报道 Meta 暂无计划广泛开放 API。",
+      "why_it_supports_thesis": "这是最直接的战略信号：先保留能力、先服务产品与伙伴，再谈开放生态。",
+      "sources": [
+        "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/",
+        "https://www.morningstar.com/news/dow-jones/202604086600/meta-platforms-rises-on-release-of-new-ai-model"
+      ]
+    },
+    {
+      "fact": "Dow Jones / Morningstar 报道消息后 Meta 股价盘中上涨约 6.6%。",
+      "why_it_supports_thesis": "资本市场读到的是‘AI 战略兑现’与商业前景，而不只是技术自嗨。",
+      "sources": [
+        "https://www.morningstar.com/news/dow-jones/202604086600/meta-platforms-rises-on-release-of-new-ai-model"
+      ]
+    },
+    {
+      "fact": "Mashable 复盘了 Meta 过去的超级智能实验室组建、激进挖角、组织调整与高投入背景，认为 Muse Spark 是这些投入第一次变成具体产品。",
+      "why_it_supports_thesis": "这能帮助文章交代：为什么这次发布是‘翻身仗’，因为前戏已经烧了太多钱和人。",
+      "sources": [
+        "https://mashable.com/article/mark-zuckerberg-meta-announce-new-muse-spark-ai-models"
+      ]
+    },
+    {
+      "fact": "中文财经报道普遍把这次解读为 Meta 从开源理想主义转向更务实的产品和商业打法。",
+      "why_it_supports_thesis": "可以作为中文读者语境的辅助印证，但不应作为核心证据。",
+      "sources": [
+        "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhra2145843.shtml",
+        "https://www.nbd.com.cn/articles/2026-04-09/4330783.html"
+      ]
+    }
+  ],
+  "source_notes": [
+    {
+      "source": "Meta / about.fb 官方发布",
+      "url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/",
+      "type": "primary",
+      "reliability": "high",
+      "use_for": [
+        "事件定义",
+        "产品功能与入口",
+        "官方战略表述",
+        "API private preview / future open-source 表述"
+      ],
+      "notes": "最核心证据源。官方文案明显有营销包装，因此 benchmark 或安全能力不要只照抄，要和外媒表述交叉使用。"
+    },
+    {
+      "source": "Morningstar / Dow Jones Newswires",
+      "url": "https://www.morningstar.com/news/dow-jones/202604086600/meta-platforms-rises-on-release-of-new-ai-model",
+      "type": "secondary",
+      "reliability": "high",
+      "use_for": [
+        "资本市场反馈",
+        "私有 API 预览表述",
+        "Meta 战略转向的新闻化确认"
+      ],
+      "notes": "篇幅短，但对‘股价上涨’和‘无计划广泛开放 API’这两个商业化信号很关键。"
+    },
+    {
+      "source": "Mashable",
+      "url": "https://mashable.com/article/mark-zuckerberg-meta-announce-new-muse-spark-ai-models",
+      "type": "secondary",
+      "reliability": "medium_high",
+      "use_for": [
+        "背景脉络",
+        "MSL 组织背景",
+        "Contemplating mode",
+        "为什么这次是多年投入后的第一款真正产品"
+      ],
+      "notes": "适合补历史背景与叙事张力。文中 benchmark 为 Meta 自报，引用时必须标明‘Meta 称’或‘官方给出的测试结果’。"
+    },
+    {
+      "source": "新浪财经转载钛媒体",
+      "url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhra2145843.shtml",
+      "type": "secondary_chinese",
+      "reliability": "medium",
+      "use_for": [
+        "中文语境辅助",
+        "国内读者理解框架",
+        "开源到闭源/商业化转向的中文概括"
+      ],
+      "notes": "可辅助提炼中文表述，但其中部分评分、医生人数、资金数字等如果正文要写，最好先标成媒体引述，不要当成唯一证据。"
+    },
+    {
+      "source": "每日经济新闻早参",
+      "url": "https://www.nbd.com.cn/articles/2026-04-09/4330783.html",
+      "type": "secondary_chinese",
+      "reliability": "medium_low",
+      "use_for": [
+        "市场情绪参考",
+        "中文财经圈视角"
+      ],
+      "notes": "属于简报体，信息压缩严重，只适合做侧面印证，不适合承载正文关键事实。"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "把文章写成 benchmark 排行点评。",
+      "avoid": "只保留一句：Muse Spark 证明 Meta 重新回到牌桌；重点转到它如何把模型塞进社交、购物、健康和硬件入口。"
+    },
+    {
+      "risk": "把‘未来可能开源’误写成‘仍坚持开源路线’。",
+      "avoid": "准确表述为：这次先走私有 API 预览和自家产品集成，开源被放到了未来版本。"
+    },
+    {
+      "risk": "写成全行业 AI 军备竞赛综述，削弱 Meta 单点叙事。",
+      "avoid": "竞品只在开头或中段做一句对照：别人抢模型心智，Meta 抢产品入口。"
+    },
+    {
+      "risk": "对健康、购物、AI 眼镜场景写得像功能清单。",
+      "avoid": "把这些场景统一收束为同一个判断：Meta 在围绕‘离用户最近的生活入口’布点。"
+    },
+    {
+      "risk": "过度相信 Meta 自报测试或中文二次媒体里的数字。",
+      "avoid": "凡是 benchmark、行业排名、训练细节、投资规模等，除官方外尽量标明‘媒体称’‘Meta 称’。"
+    },
+    {
+      "risk": "把 Meta 的路线说得过于成熟，忽略隐私、闭源争议和实际效果未验证。",
+      "avoid": "结尾要留一刀：产品路线已经清楚，但能不能把社交流量真变成 AI 使用时长和收入，今天还没证明。"
+    }
+  ],
+  "title_directions": [
+    {
+      "title": "Meta 发 Muse Spark，真正值得看的不是分数，是扎克伯格终于开始把 AI 当生意打",
+      "why": "最直给，直接对齐既定 thesis。"
+    },
+    {
+      "title": "Muse Spark 只是个开头，Meta 真正想抢的是 AI 的生活入口",
+      "why": "更产品化，适合把购物、健康、社交、眼镜串起来。"
+    },
+    {
+      "title": "Meta 这次发的不是新模型，而是一张 AI 产品化路线图",
+      "why": "有判断感，但正文里要避免反复使用‘不是……而是……’句式。标题可保留一次，正文慎用。"
+    },
+    {
+      "title": "扎克伯格的 AI 翻身仗，终于打到了产品和商业这一层",
+      "why": "更像传播向标题，适合强调过去一年投入终于见到产品。"
+    },
+    {
+      "title": "当 Meta 不再急着开源，它的 AI 反而更值得警惕了",
+      "why": "更有冲突感，适合偏锋利写法，但正文必须稳住，别写成阴谋论。"
+    }
+  ],
+  "writer_notes": {
+    "must_include": [
+      "Muse Spark = MSL 首个公开模型",
+      "过去九个月重建 AI stack",
+      "直接接入 Meta AI app / meta.ai，并准备扩到社交和 AI 眼镜",
+      "私有 API 预览 + 未来才谈开源",
+      "股价反应作为商业化信号"
+    ],
+    "optional_details": [
+      "Instant / Thinking / Contemplating 等模式名可适度引用，但不要写成参数说明书。",
+      "购物、健康、社交内容、AI 眼镜四个场景至少抓两个展开，别全铺。"
+    ],
+    "tone": "像在拆一家巨头公司的策略转身，带判断，少术语，多产品感。"
+  }
+}

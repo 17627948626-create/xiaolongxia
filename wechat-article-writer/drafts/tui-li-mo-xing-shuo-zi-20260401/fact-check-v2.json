@@ -1,0 +1,37 @@
+{
+  "draft_version": "v3-corrected",
+  "checked_at": "2026-04-01T00:37:00+08:00",
+  "corrections_verified": [
+    {
+      "id": 1,
+      "verdict": "⚠️ STILL_WRONG",
+      "note": "NYU 机构确认正确（Miles Turpin 确实在 NYU，非宾夕法尼亚大学）。但「对齐研究组」描述不准确：他所属的单位是 NYU Center for Data Science（数据科学中心），并非 alignment group。文章把 CDS 描述为「对齐研究组」引入了新的错误。建议改为「纽约大学（NYU）数据科学中心的迈尔斯·特平（Miles Turpin）等人」。来源：nyudatascience.medium.com CDS @ NeurIPS 2023 报道；arxiv 2305.04388 作者 affiliation。"
+    },
+    {
+      "id": 2,
+      "verdict": "✅ CORRECT",
+      "note": "论文《Reasoning Models Don't Always Say What They Think》确实存在，由 Anthropic 研究人员（Yanda Chen、Joe Benton、Ethan Perez 等）于 2025 年 5 月提交 arXiv（2025 年发表）。论文核心内容——评估 CoT 忠实度、thinking 不一定反映内部推理——与文章引用内容吻合。来源：arXiv 搜索结果已确认论文存在且为 Anthropic 团队作品。"
+    },
+    {
+      "id": 3,
+      "verdict": "✅ CORRECT",
+      "note": "OpenAI o3 的 reasoning_effort 参数支持 low / medium / high 三档，确认正确。官方文档明确说明各模型支持值不同：gpt-5.4 等新模型支持 none/minimal/low/medium/high/xhigh，而 o3 原始版本的支持值为 low/medium/high。文章特指 o3 说「low / medium / high」是准确的。来源：platform.openai.com/docs/guides/reasoning 原文。"
+    },
+    {
+      "id": 4,
+      "verdict": "✅ CORRECT",
+      "note": "Claude 4 系列 API 默认返回 summarized thinking（摘要版）已确认。官方文档明确：「If the display field is unset or set to 'summarized,' this is the automatic mode.」完整思考过程不再默认可见，符合文章描述。原来「连完整草稿都不让你看了」语气较夸张，修正为「完整的草稿过程不再默认可见」更准确。来源：platform.claude.com/docs extended-thinking 文档；Wikipedia Claude 条目。"
+    }
+  ],
+  "new_issues": [
+    {
+      "id": "N1",
+      "location": "修正1引入",
+      "description": "「对齐研究组」不准确。Miles Turpin 所在单位是 NYU Center for Data Science（数据科学中心），该中心并非专门的 alignment 研究组。原修正把机构从「宾夕法尼亚大学」改为「NYU 对齐研究组」，NYU 是对的，但「对齐研究组」是错误描述，应为「数据科学中心」。",
+      "severity": "MINOR",
+      "suggested_fix": "将「纽约大学（NYU）对齐研究组的迈尔斯·特平（Miles Turpin）」改为「纽约大学（NYU）数据科学中心的迈尔斯·特平（Miles Turpin）」"
+    }
+  ],
+  "pass": false,
+  "summary": "4处修正中3处完全正确（修正2/3/4），1处部分正确（修正1）。修正1把机构改为 NYU 是对的，但「对齐研究组」应为「数据科学中心（Center for Data Science）」，引入了一处新的轻微事实错误。建议对修正1做进一步精确化后文章可过审。其余修正均无新问题引入。"
+}

@@ -1,0 +1,628 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.5.12",
+    "lastTouchedAt": "2026-05-15T02:51:36.478Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-05-15T02:51:36.389Z",
+    "lastRunVersion": "2026.5.12",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "browser": {
+    "enabled": true,
+    "executablePath": "/root/.cache/ms-playwright/chromium-1208/chrome-linux64/chrome",
+    "headless": true,
+    "noSandbox": true,
+    "defaultProfile": "openclaw",
+    "profiles": {
+      "manual": {
+        "cdpUrl": "http://127.0.0.1:18888",
+        "attachOnly": true,
+        "color": "#00AA00"
+      },
+      "chrome-relay": {
+        "cdpUrl": "http://100.83.3.83:18792",
+        "driver": "existing-session",
+        "attachOnly": true,
+        "color": "#00AA00"
+      }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "openai-codex:15809220109@163.com": {
+        "provider": "openai-codex",
+        "mode": "oauth",
+        "email": "15809220109@163.com"
+      },
+      "openai-codex:x15809220109@gmail.com": {
+        "provider": "openai-codex",
+        "mode": "oauth",
+        "email": "x15809220109@gmail.com"
+      },
+      "github-copilot:github": {
+        "provider": "github-copilot",
+        "mode": "token"
+      }
+    },
+    "order": {
+      "github-copilot": [
+        "github-copilot:github"
+      ]
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {}
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai/gpt-5.5",
+        "fallbacks": []
+      },
+      "models": {
+        "openai/gpt-5.5": {
+          "params": {
+            "maxTokens": "[REDACTED]",
+            "fastMode": true
+          },
+          "agentRuntime": {
+            "id": "codex"
+          }
+        },
+        "openai/gpt-5.4": {
+          "params": {
+            "maxTokens": "[REDACTED]",
+            "fastMode": true
+          },
+          "agentRuntime": {
+            "id": "codex"
+          }
+        }
+      },
+      "workspace": "/root/.openclaw/workspace",
+      "memorySearch": {
+        "enabled": true,
+        "provider": "openai",
+        "model": "perplexity/pplx-embed-v1-0.6b:free",
+        "remote": {
+          "baseUrl": "https://openrouter.ai/api/v1",
+          "apiKey": "[REDACTED]"
+        }
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "thinkingDefault": "xhigh",
+      "verboseDefault": "off",
+      "elevatedDefault": "full",
+      "timeoutSeconds": 3600,
+      "heartbeat": {
+        "every": "10m",
+        "target": "feishu",
+        "directPolicy": "allow"
+      },
+      "maxConcurrent": 10,
+      "subagents": {
+        "maxConcurrent": 10,
+        "maxSpawnDepth": 2,
+        "runTimeoutSeconds": 3600
+      },
+      "sandbox": {
+        "mode": "off"
+      }
+    },
+    "list": [
+      {
+        "id": "xiaolongxia",
+        "workspace": "/root/.openclaw/workspace-xiaolongxia",
+        "thinkingDefault": "xhigh",
+        "fastModeDefault": true,
+        "heartbeat": {
+          "every": "0m",
+          "session": "agent:xiaolongxia:main",
+          "target": "last",
+          "directPolicy": "allow"
+        },
+        "subagents": {
+          "allowAgents": [
+            "*"
+          ]
+        },
+        "sandbox": {
+          "mode": "off"
+        },
+        "tools": {
+          "profile": "full",
+          "elevated": {
+            "enabled": true,
+            "allowFrom": {
+              "feishu": [
+                "*"
+              ]
+            }
+          },
+          "exec": {
+            "host": "gateway",
+            "security": "full",
+            "ask": "off"
+          }
+        }
+      },
+      {
+        "id": "main",
+        "default": true,
+        "workspace": "/root/.openclaw/workspace",
+        "fastModeDefault": true,
+        "heartbeat": {
+          "every": "30m",
+          "target": "feishu",
+          "directPolicy": "allow"
+        },
+        "subagents": {
+          "allowAgents": [
+            "*"
+          ]
+        },
+        "sandbox": {
+          "mode": "off"
+        }
+      },
+      {
+        "id": "money",
+        "workspace": "/root/.openclaw/workspace-money",
+        "fastModeDefault": true,
+        "heartbeat": {
+          "every": "0m",
+          "session": "agent:money:main",
+          "target": "last",
+          "directPolicy": "allow",
+          "lightContext": false,
+          "isolatedSession": false
+        },
+        "sandbox": {
+          "mode": "off"
+        },
+        "subagents": {
+          "allowAgents": [
+            "*"
+          ]
+        },
+        "thinkingDefault": "xhigh",
+        "tools": {
+          "profile": "full",
+          "exec": {
+            "ask": "off",
+            "host": "gateway",
+            "security": "full"
+          },
+          "elevated": {
+            "enabled": true,
+            "allowFrom": {
+              "feishu": [
+                "*"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "tools": {
+    "profile": "full",
+    "alsoAllow": [
+      "llm-task"
+    ],
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "duckduckgo",
+        "openaiCodex": {
+          "enabled": true,
+          "mode": "cached"
+        }
+      },
+      "fetch": {
+        "enabled": true
+      }
+    },
+    "elevated": {
+      "enabled": true,
+      "allowFrom": {
+        "feishu": [
+          "*"
+        ]
+      }
+    },
+    "exec": {
+      "host": "gateway",
+      "security": "full",
+      "ask": "off",
+      "backgroundMs": 10000,
+      "timeoutSec": 1800,
+      "cleanupMs": 3600000,
+      "notifyOnExit": true
+    },
+    "sessions": {
+      "visibility": "all"
+    },
+    "agentToAgent": {
+      "enabled": true
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "xiaolongxia",
+      "match": {
+        "channel": "feishu",
+        "accountId": "xiaolongxia",
+        "peer": {
+          "kind": "direct",
+          "id": "ou_137c41086239266036853c70dd1ae919"
+        }
+      }
+    },
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "feishu",
+        "accountId": "main",
+        "peer": {
+          "kind": "direct",
+          "id": "ou_5f0a9ee868e2d722d2bab01f24567233"
+        }
+      }
+    },
+    {
+      "agentId": "money",
+      "match": {
+        "channel": "feishu",
+        "accountId": "money"
+      }
+    }
+  ],
+  "messages": {
+    "queue": {
+      "mode": "steer"
+    },
+    "ackReactionScope": "group-mentions",
+    "groupChat": {
+      "visibleReplies": "message_tool"
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "bash": true,
+    "config": true,
+    "debug": true,
+    "restart": true,
+    "ownerDisplay": "raw",
+    "allowFrom": {
+      "feishu": [
+        "*"
+      ],
+      "*": [
+        "*"
+      ]
+    },
+    "ownerAllowFrom": [
+      "*"
+    ]
+  },
+  "session": {
+    "dmScope": "main",
+    "maintenance": {
+      "mode": "enforce",
+      "pruneAfter": "30d",
+      "maxEntries": 100
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "command-logger": {
+          "enabled": true
+        },
+        "boot-md": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "connectionMode": "websocket",
+      "streaming": true,
+      "reactionNotifications": "own",
+      "typingIndicator": true,
+      "resolveSenderNames": true,
+      "defaultAccount": "main",
+      "accounts": {
+        "main": {
+          "appId": "cli_a93a791364611bc0",
+          "appSecret": "[REDACTED]",
+          "name": "小汪",
+          "domain": "feishu",
+          "dmPolicy": "open",
+          "groupPolicy": "open",
+          "allowFrom": [
+            "*"
+          ]
+        },
+        "xiaolongxia": {
+          "appId": "cli_a94190ca453a9ccc",
+          "appSecret": "[REDACTED]",
+          "name": "小龙虾有话说",
+          "domain": "feishu",
+          "dmPolicy": "open",
+          "groupPolicy": "open",
+          "allowFrom": [
+            "*"
+          ]
+        },
+        "money": {
+          "appId": "cli_a947655e12f9dccf",
+          "appSecret": "[REDACTED]"
+        },
+        "default": {
+          "webhookPath": "/feishu/events"
+        }
+      },
+      "groups": {
+        "*": {
+          "requireMention": false
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://localhost:18790",
+        "http://localhost:38789",
+        "http://127.0.0.1:18789",
+        "http://127.0.0.1:18790",
+        "http://127.0.0.1:38789"
+      ]
+    },
+    "auth": {
+      "mode": "token",
+      "token": "[REDACTED]",
+      "allowTailscale": true
+    },
+    "trustedProxies": [
+      "127.0.0.1",
+      "::1"
+    ],
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "remote": {
+      "url": "ws://127.0.0.1:18789"
+    },
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": true
+        },
+        "responses": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "notion": {
+        "apiKey": "[REDACTED]"
+      },
+      "sag": {
+        "apiKey": "[REDACTED]",
+        "enabled": false
+      },
+      "1password": "[REDACTED]",
+      "apple-notes": {
+        "enabled": false
+      },
+      "apple-reminders": {
+        "enabled": false
+      },
+      "bear-notes": {
+        "enabled": false
+      },
+      "blogwatcher": {
+        "enabled": false
+      },
+      "blucli": {
+        "enabled": false
+      },
+      "camsnap": {
+        "enabled": false
+      },
+      "coding-agent": {
+        "enabled": false
+      },
+      "discord": {
+        "enabled": false
+      },
+      "eightctl": {
+        "enabled": false
+      },
+      "gemini": {
+        "enabled": false
+      },
+      "gifgrep": {
+        "enabled": false
+      },
+      "gog": {
+        "enabled": false
+      },
+      "goplaces": {
+        "enabled": false
+      },
+      "himalaya": {
+        "enabled": false
+      },
+      "imsg": {
+        "enabled": false
+      },
+      "model-usage": {
+        "enabled": false
+      },
+      "nano-pdf": {
+        "enabled": false
+      },
+      "obsidian": {
+        "enabled": false
+      },
+      "openai-whisper": {
+        "enabled": false
+      },
+      "openhue": {
+        "enabled": false
+      },
+      "oracle": {
+        "enabled": false
+      },
+      "ordercli": {
+        "enabled": false
+      },
+      "peekaboo": {
+        "enabled": false
+      },
+      "sherpa-onnx-tts": {
+        "enabled": false
+      },
+      "slack": {
+        "enabled": false
+      },
+      "songsee": {
+        "enabled": false
+      },
+      "sonoscli": {
+        "enabled": false
+      },
+      "spotify-player": {
+        "enabled": false
+      },
+      "summarize": {
+        "enabled": false
+      },
+      "things-mac": {
+        "enabled": false
+      },
+      "trello": {
+        "enabled": false
+      },
+      "voice-call": {
+        "enabled": false
+      },
+      "wacli": {
+        "enabled": false
+      },
+      "xurl": {
+        "enabled": false
+      },
+      "openai-whisper-api": {
+        "enabled": false
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "acpx",
+      "browser",
+      "feishu",
+      "firecrawl",
+      "github-copilot",
+      "google",
+      "llm-task",
+      "memory-core",
+      "openai",
+      "codex",
+      "duckduckgo"
+    ],
+    "load": {
+      "paths": []
+    },
+    "entries": {
+      "llm-task": {
+        "enabled": true,
+        "config": {
+          "maxTokens": "[REDACTED]",
+          "timeoutMs": 600000
+        }
+      },
+      "feishu": {
+        "enabled": true,
+        "config": {}
+      },
+      "open-prose": {
+        "enabled": false
+      },
+      "acpx": {
+        "enabled": true,
+        "config": {
+          "mcpServers": {},
+          "permissionMode": "approve-all",
+          "nonInteractivePermissions": "deny",
+          "timeoutSeconds": 120,
+          "agents": {
+            "codex": {
+              "command": "/root/.nvm/versions/node/v22.22.1/bin/npx @zed-industries/codex-acp@^0.11.1"
+            }
+          }
+        }
+      },
+      "google": {
+        "enabled": true,
+        "config": {
+          "webSearch": {
+            "apiKey": "[REDACTED]"
+          }
+        }
+      },
+      "browser": {
+        "enabled": true
+      },
+      "github-copilot": {
+        "enabled": true,
+        "config": {}
+      },
+      "firecrawl": {
+        "config": {
+          "webFetch": {
+            "apiKey": "[REDACTED]",
+            "baseUrl": "https://api.firecrawl.dev",
+            "onlyMainContent": true,
+            "maxAgeMs": 172800000
+          }
+        },
+        "enabled": true
+      },
+      "openai": {
+        "enabled": true
+      },
+      "codex": {
+        "enabled": true
+      },
+      "duckduckgo": {
+        "enabled": true
+      }
+    },
+    "bundledDiscovery": "compat"
+  }
+}

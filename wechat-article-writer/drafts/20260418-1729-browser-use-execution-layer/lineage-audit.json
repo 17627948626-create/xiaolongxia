@@ -1,0 +1,12 @@
+{
+  "schema_version": "2026-04-09.lineage-v2",
+  "clean": false,
+  "publish_allowed": false,
+  "lineage_status": "dirty",
+  "last_clean_step": null,
+  "repair_action": "fresh_run",
+  "issues": [
+    "missing child-session evidence for step researcher: research.json, outline.md"
+  ],
+  "publish_candidate": "final-layout.md"
+}

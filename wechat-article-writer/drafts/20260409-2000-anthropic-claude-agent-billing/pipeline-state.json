@@ -1,0 +1,272 @@
+{
+  "artifact_provenance": {
+    "draft-v2.md": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:cc1f34c4-c658-4d16-88b8-1e566a6ea83e"
+    },
+    "draft-v2.md.backend.json": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:cc1f34c4-c658-4d16-88b8-1e566a6ea83e"
+    },
+    "draft-v3.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:5cb9ca17-c083-4fb6-862f-36f50e4d8736"
+    },
+    "draft-v3.md.backend.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:5cb9ca17-c083-4fb6-862f-36f50e4d8736"
+    },
+    "draft.md": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:8f143284-8e6d-4729-a0ff-007cf15f868b"
+    },
+    "draft.md.backend.json": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:8f143284-8e6d-4729-a0ff-007cf15f868b"
+    },
+    "final-layout.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:cf792039-df6b-4a58-bca9-d767d3b58a01"
+    },
+    "final.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:c95b3aec-2a87-4f6d-ab52-cd31d9db3e1a"
+    },
+    "outline-gate.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a673de23-02fd-4e13-8ea3-d8285517e568"
+    },
+    "outline.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a673de23-02fd-4e13-8ea3-d8285517e568"
+    },
+    "research-gate.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a673de23-02fd-4e13-8ea3-d8285517e568"
+    },
+    "research.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a673de23-02fd-4e13-8ea3-d8285517e568"
+    },
+    "review-v1.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:27094d35-d035-48c3-8d1b-836ee14177dc"
+    },
+    "review-v3.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:c0a03722-a269-4ff8-ae3f-1992e6c32934"
+    }
+  },
+  "children": {
+    "humanizer": [
+      {
+        "artifacts": [
+          "final.md"
+        ],
+        "label": "humanizer-20260409-2000-anthropic-claude-agent-billing",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:c95b3aec-2a87-4f6d-ab52-cd31d9db3e1a",
+        "status": "done"
+      }
+    ],
+    "layout": [
+      {
+        "artifacts": [
+          "final-layout.md"
+        ],
+        "label": "layout-20260409-2000-anthropic-claude-agent-billing",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:cf792039-df6b-4a58-bca9-d767d3b58a01",
+        "status": "done"
+      }
+    ],
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md",
+          "outline-gate.json",
+          "research-gate.json"
+        ],
+        "label": "researcher-20260409-2000-anthropic-claude-agent-billing",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:a673de23-02fd-4e13-8ea3-d8285517e568",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "review-v1.json"
+        ],
+        "label": "reviewer-v1-20260409-2000-anthropic-claude-agent-billing",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:27094d35-d035-48c3-8d1b-836ee14177dc",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-v2.json"
+        ],
+        "label": "reviewer-v2-20260409-2000-anthropic-claude-agent-billing",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e5b74292-6793-4f3d-8a32-1c1fb2ed53ec",
+        "status": "pending"
+      },
+      {
+        "artifacts": [
+          "review-v3.json"
+        ],
+        "label": "reviewer-v3-20260409-2000-anthropic-claude-agent-billing",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:c0a03722-a269-4ff8-ae3f-1992e6c32934",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "draft.md",
+          "draft.md.backend.json",
+          "draft.md.prompt.txt"
+        ],
+        "label": "writer-20260409-2000-anthropic-claude-agent-billing",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:1dc91008-8d22-4d05-87b7-2f5326d38d34",
+        "status": "failed"
+      },
+      {
+        "artifacts": [
+          "draft.md",
+          "draft.md.backend.json"
+        ],
+        "label": "writer-api-fallback-20260409-2000-anthropic-claude-agent-billing",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:8f143284-8e6d-4729-a0ff-007cf15f868b",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v2.md",
+          "draft-v2.md.backend.json"
+        ],
+        "label": "writer-revise-v2-20260409-2000-anthropic-claude-agent-billing",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:cc1f34c4-c658-4d16-88b8-1e566a6ea83e",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v3.md",
+          "draft-v3.md.backend.json"
+        ],
+        "label": "writer-revise-v3-20260409-2000-anthropic-claude-agent-billing",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:5cb9ca17-c083-4fb6-862f-36f50e4d8736",
+        "status": "done"
+      }
+    ]
+  },
+  "cover_url": "https://picsum.photos/1200/800",
+  "current_step": "draft_box_saved",
+  "error": null,
+  "hot_hook": "Anthropic 宣布，Claude 订阅不再免费覆盖 OpenClaw 这类第三方 Agent 工具，想继续用得买 usage bundle 或改走 API。",
+  "last_clean_step": "layout",
+  "last_draft_file": "draft-v3.md",
+  "last_review_file": "review-v3.json",
+  "lineage_audited_at": "2026-04-11T02:04:32Z",
+  "lineage_status": "clean",
+  "lite_preflight": {
+    "binding_artifact": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing/writer-lite-binding.json",
+    "binding_checked_at": "2026-04-11T01:12:48Z",
+    "binding_status": "matched",
+    "last_draft_file": "draft-v3.md",
+    "last_draft_sha256": "479b4a35c382dd22989157f7d9643f8ae6bb044594e92f11dfb9ee061bc17c46",
+    "last_draft_version": "draft-v3",
+    "latest_check_draft_sha256": "479b4a35c382dd22989157f7d9643f8ae6bb044594e92f11dfb9ee061bc17c46",
+    "latest_check_draft_version": "draft-v3",
+    "latest_check_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing/writer-lite-check.json",
+    "match": true,
+    "resolution": null,
+    "waiver": null
+  },
+  "max_revisions": 2,
+  "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+  "mcp_server": "wenyan-mcp",
+  "note": "review-v3 PASS (8.52). Timeliness now borderline; wait boss decision to publish or archive.",
+  "pass_threshold": 8.2,
+  "pending_action": null,
+  "phase": "published",
+  "profile": "小龙虾有话说",
+  "publish_candidate": "final-layout.md",
+  "publish_profile_preflight": {
+    "checked_at": "2026-04-11T02:04:13Z",
+    "default_theme": "sspai",
+    "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+    "mcp_server": "wenyan-mcp",
+    "profile": "小龙虾有话说",
+    "publish_md_checked": true,
+    "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+    "publisher_mode": "remote",
+    "status": "ok",
+    "wechat_author": "小龙虾有话说",
+    "wenyan_mcp_present": true
+  },
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "publisher_mode": "remote",
+  "purpose": "借 Anthropic 停止让 Claude 订阅免费覆盖第三方 Agent 工具这件事，写清 Agent 热潮最脆的一层从来不是模型能力，而是调用经济学和算力补贴。",
+  "repair_action": null,
+  "required_user_action": null,
+  "revision_cycle": 2,
+  "run_id": "cron-2026-04-09-evening-2",
+  "schema_version": "2026-04-09.lineage-v2",
+  "search_keywords": [
+    "Anthropic no longer free Claude through third-party tools OpenClaw",
+    "Anthropic usage bundle third-party tools April 2026",
+    "Claude subscriptions third-party apps API key April 2026"
+  ],
+  "slug": "20260409-2000-anthropic-claude-agent-billing",
+  "source_mode": "fresh",
+  "step": 7,
+  "subagent_label": "reviewer-v3-20260409-2000-anthropic-claude-agent-billing",
+  "subagent_status": "done",
+  "topic_direction": "AI Agent 热潮最脆的一层不是能力，而是调用经济学",
+  "updated_at": "2026-04-11T02:05:21Z",
+  "waiting_for": null,
+  "wechat_author": "小龙虾有话说",
+  "writer_backend_effective": "api-fallback",
+  "writer_backend_requested": "kimi-cli",
+  "writer_model_effective": "deepseek/deepseek-chat",
+  "wenyan_push_status": "success",
+  "draft_saved_at": "2026-04-11T02:05:21Z",
+  "media_id": "7NYHnQxN70EpaLx4Jh0kyg2xDdc3sk84uotYqYAshLfHzSePFxQ9Y-DKHzYlY4hD",
+  "appmsgid": "7NYHnQxN70EpaLx4Jh0kyg2xDdc3sk84uotYqYAshLfHzSePFxQ9Y-DKHzYlY4hD"
+}

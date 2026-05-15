@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-04-09T08:28:56Z",
+  "status": "matched",
+  "match": true,
+  "draft_dir": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-mythos-bu-gan-fa",
+  "last_draft_file": "draft-v2.md",
+  "last_draft_version": "draft-v2",
+  "last_draft_sha256": "8b5932a0ed8411b07cd61de1ff74bf9005b3353f09a4ef41c6d9753ce328b688",
+  "latest_check_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-mythos-bu-gan-fa/writer-lite-check.json",
+  "latest_check_exists": true,
+  "previous_check_draft_version": "draft-v2",
+  "previous_check_draft_sha256": "8b5932a0ed8411b07cd61de1ff74bf9005b3353f09a4ef41c6d9753ce328b688",
+  "latest_check_draft_version": "draft-v2",
+  "latest_check_draft_sha256": "8b5932a0ed8411b07cd61de1ff74bf9005b3353f09a4ef41c6d9753ce328b688",
+  "resolution": null,
+  "waiver": null
+}

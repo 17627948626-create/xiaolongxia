@@ -1,0 +1,39 @@
+{
+  "decision": "pass",
+  "weighted_total": 8.4,
+  "pass_rule": {
+    "rule": "pass requires no unresolved blockers and weighted_total >= 8.2",
+    "no_unresolved_blockers": true,
+    "weighted_total_gte_8_2": true,
+    "final_gate_pass": true
+  },
+  "summary": "以 draft-v2.md 作为正式 review 对象复核后，这一版已经处在可继续对外发布的状态。上一轮 review-v5 所确认的最后一个表达层 blocker 已清零，当前稿没有新的 unresolved blocker；与已发布版 publish.md 对照看，publish 只是轻微顺句和排版级收口，没有引入新的风险，也没有改变核心判断。结合 fact-check-v1 的边界检查，这篇稿子当前不需要再改稿，适合继续对外保留/分发。",
+  "one_sentence_verdict": "当前稿已满足『无 unresolved blockers + weighted_total >= 8.2』，可通过，不需要再改稿。",
+  "blockers": [],
+  "upgrade_suggestions": [
+    {
+      "issue": "中段关于“高仿真稿更耗人”的论述与后文“识别方法”之间有轻微重复，可再压缩 1 段来提升推进感。",
+      "quote": "这种消耗最后伤到的，不只是效率。它会慢慢抬高人对空心表达的容忍度，让大家误把「像样」当成「有判断」，误把「有气势」当成「想清楚」。",
+      "suggestion": "如果后续还有外发迭代空间，可把这段与下一节开头再并紧一点，让文章更早进入“怎么识别”的实用层。"
+    },
+    {
+      "issue": "标题判断已成立，但“AI写作”这个入口仍偏泛，若未来做二次分发，可考虑补一个更具体的现实钩子。",
+      "quote": "AI写作正在被「像在写」的幻觉吃掉",
+      "suggestion": "可在不牺牲判断力的前提下，把标题进一步贴近“改稿现场 / 模板味 / 判断外形”中的一个更具体场景。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "不会写的AI，顶多让你重来一遍。太会装作自己在写的AI，会一点点吃掉人的判断力。",
+    "paragraph_or_scene": "高仿真的稿子才麻烦。它会让人误以为稿子已经八成成型，剩下只是修修边角。然后你会把大量时间耗在拆假动作上，耗在辨认哪一句是真的判断，哪一句只是姿势，耗在把那些看起来很会写的话一层层剥掉。"
+  },
+  "scores": {
+    "insight_density": 8.3,
+    "originality": 8.4,
+    "emotional_resonance": 8.2,
+    "completion_power": 8.4,
+    "voice": 8.6,
+    "title": 8.5,
+    "weighted_total": 8.4,
+    "notes": "Final adjudication rule for this run: no unresolved blockers and weighted_total >= 8.2. Current draft satisfies both."
+  }
+}

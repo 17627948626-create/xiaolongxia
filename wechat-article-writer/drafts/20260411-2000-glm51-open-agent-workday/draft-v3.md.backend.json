@@ -1,0 +1,8 @@
+{
+  "backend": "openclaw-subagent",
+  "model": "openai-codex/gpt-5.4",
+  "phase": "revise",
+  "source_draft": "draft-v2.md",
+  "source_review": "review-v2.json",
+  "generated_at": "2026-04-11T20:18:00+08:00"
+}

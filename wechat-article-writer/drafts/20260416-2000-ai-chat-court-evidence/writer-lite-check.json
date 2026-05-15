@@ -1,0 +1,74 @@
+{
+  "draft_version": "draft-v1",
+  "generated_at": "2026-04-16T15:29:38Z",
+  "updated_at": "2026-04-16T15:29:38Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": true,
+  "hard_fail_reasons": [
+    "fake_verbatim_quote",
+    "paraphrase_only_rendered_as_quote"
+  ],
+  "checks": [
+    {
+      "code": "fake_verbatim_quote",
+      "severity": "hard_block",
+      "summary": "发现疑似直引，但 research 里没有对应 verbatim 支撑。",
+      "evidence": {
+        "line": 3,
+        "excerpt": "这条新闻值得看，不是因为它又来吓你“AI 不安全”了，而是因为美国律师已经开始把一件很多人还没认清的事说破：你和 AI 聊的内容，将来真可能在纠纷里被调出来，当成证据念给别人听。我的核心判断也先摆在前面：真正变了的，不是聊天记录突然更危险了，而是 AI 聊天框的身份变了。它外表还是聊天，实际却越来越像你的工作台、草稿箱和半个同事。你把重要过程放进去，它留下的就不再只是“随口一说”。"
+      }
+    },
+    {
+      "code": "fake_verbatim_quote",
+      "severity": "hard_block",
+      "summary": "发现疑似直引，但 research 里没有对应 verbatim 支撑。",
+      "evidence": {
+        "line": 39,
+        "excerpt": "晚上十一点半，你和同事闹了点事，第二天可能要跟老板解释。你不想把第一版话直接发给任何人，于是先丢给 AI。你说，帮我把这段话写得冷静一点；再说，别太像认错，但也别太冲；再改一版，把“我早就提醒过”这句拿掉；最后再问一句，如果对方继续追问，我还能怎么回。"
+      }
+    },
+    {
+      "code": "fake_verbatim_quote",
+      "severity": "hard_block",
+      "summary": "发现疑似直引，但 research 里没有对应 verbatim 支撑。",
+      "evidence": {
+        "line": 41,
+        "excerpt": "这一整串操作，在当下看特别像“我只是在私下练练”。可如果后面真出了纠纷，这串记录在别人眼里就不只是练习，它几乎就是你怎么组织说法、怎么修整责任边界、怎么准备对外口径的全过程。"
+      }
+    },
+    {
+      "code": "paraphrase_only_rendered_as_quote",
+      "severity": "hard_block",
+      "summary": "只允许转述的材料被写成了直引。",
+      "evidence": {
+        "line": 27,
+        "excerpt": "OpenAI 的 Data Controls FAQ 讲得很明白：关闭“Improve the model for everyone”，只是不给训练，不等于聊天不会留在历史里。Temporary Chat 又是另一套机制，它强调的是不进历史、不开 memory，并且 30 天删除。更关键的是，同一页还专门提示，某些服务的数据留存可能受最近法律进展影响。",
+        "record": "fr_openai_data_controls"
+      }
+    }
+  ],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": true,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/draft.md",
+    "draft_sha256": "727c39c1e19ab11c69c32da8619550342d4169545b2a151bac3b7037e23d7650",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/writer-lite-brief.json",
+    "brief_sha256": "b6efe9cf0aed22de6d1c32c53a0f5105c1c799ea88d88a890a9b045b17fb11e0",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/research.json",
+    "research_sha256": "ab78319fa67b28edf073ed13cda06b7b957905a38b181c1bc07f6dd930df7b8b"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

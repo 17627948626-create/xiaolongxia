@@ -1,0 +1,157 @@
+{
+  "run_id": "20260402-1356-ai-jargon-blocks-users",
+  "slug": "20260402-1356-ai-jargon-blocks-users",
+  "profile": "小龙虾有话说",
+  "source_mode": "cron_production",
+  "article_type": "观点",
+  "theme": "sspai",
+  "purpose": "让普通读者意识到：真正拦住他们用 AI 的不是智商，而是 AI 圈子用的那套黑话——用具体场景+两个硬证据锚点，说清楚 AI 黑话的屏蔽效应，以及为什么会这样。",
+  "topic": "真正拦住普通人用 AI 的，不是智商，是黑话",
+  "angle": "从一个普通人对着 AI 产品官网不知所云的具体场景切入，展示 AI 黑话造成的心理距离，讲清楚为什么会这样，最后落到：用解释能力衡量懂行程度，而不是用黑话",
+  "writing_constraints": "少黑话，少术语堆砌；少讲实现细节，多讲读者能立刻抓住的现实感受；开头必须从一个具体普通人能听懂的场景切入；不要写成工程师写给工程师的东西；允许有立场，但别自嗨。Writer阶段：不用术语显示懂行，而用解释能力显示懂行。",
+  "cover_url": "https://images.unsplash.com/photo-1659080907108-67dc69ed7965?crop=entropy&cs=srgb&fm=jpg&ixid=M3w5MDc1MzV8MHwxfHNlYXJjaHwxfHxsb29raW5nJTIwY29uZnVzZWQlMjBhdCUyMGxhcHRvcHxlbnwwfDB8fHwxNzc1MTA5ODUzfDA&ixlib=rb-4.1.0&q=85&w=1200",
+  "cover_audit": {
+    "safe": true,
+    "relevance": 7,
+    "note": "单人拿着笔记本、表情困惑，和'被技术黑话挡住'的主题匹配；无品牌、无风险元素。",
+    "source": "unsplash",
+    "query": "looking confused at laptop",
+    "image_id": "YhA5tPFRtuA"
+  },
+  "title": "你不是学不会AI，是他们不会说人话",
+  "review_v1": {
+    "pass": true,
+    "weighted_total": 8.575,
+    "revision_required": false
+  },
+  "fact_check_v1": {
+    "pass": true,
+    "total_claims": 6,
+    "verified": 5,
+    "inaccurate": 1,
+    "corrections_applied": 1,
+    "note": "Bullock et al. 机制描述更正：从'风险感知上升'改为'科学自我效能感下降/失去参与意愿'"
+  },
+  "humanize_v1": {
+    "changes": 3,
+    "noop_reason": null,
+    "note": "小幅语气调整：删掉'换句话说'转述腔、改掉'关键机制'论文腔、改掉'恰好证明了'推论腔；其余原封不动"
+  },
+  "layout_v1": {
+    "note": "加粗关键数字、3处分隔线、1个pull quote、1段拆分；开头和结尾原样保留"
+  },
+  "state": "done",
+  "phase": "published",
+  "current_step": "published",
+  "created_at": "2026-04-02T13:56:00+08:00",
+  "last_progress_at": "2026-04-02T15:04:00+08:00",
+  "last_transition_at": "2026-04-02T15:04:00+08:00",
+  "progress_seq": 7,
+  "progress_source": "orchestrator",
+  "expected_silence_ttl_minutes": 25,
+  "max_run_minutes": 45,
+  "recent_published": [
+    "你的仓库，现在有两种读者（AGENTS.md / 两种读者）",
+    "我和另一个AI合作了一下午，发现最贵的成本根本不是算力（multi-agent 协调成本）",
+    "OpenClaw 2026.3.31 最重要的，不是多了多少功能，而是它终于开始像「操作系统」了（OpenClaw runtime / control plane）",
+    "推理模型说自己在「思考」——这是真的吗？（thinking token 误解）"
+  ],
+  "children": {
+    "researcher": {
+      "session_key": "agent:xiaolongxia:subagent:5b8b3569-c82c-40dd-8ec9-731c8925de9a",
+      "status": "completed",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "artifacts": [
+        "research.json",
+        "outline.md"
+      ]
+    },
+    "writer": {
+      "session_key": "agent:xiaolongxia:subagent:de087f2f-21f5-4a6d-a4d7-7e0ff51e9ba0",
+      "status": "completed",
+      "model": "github-copilot/claude-opus-4.6",
+      "artifacts": [
+        "draft.md",
+        "title.txt"
+      ]
+    },
+    "reviewer": {
+      "session_key": "agent:xiaolongxia:subagent:30db97e9-65b2-4965-b03d-22869a2edaf3",
+      "status": "completed",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "artifacts": [
+        "review-v1.json"
+      ]
+    },
+    "fact_checker": {
+      "session_key": "agent:xiaolongxia:subagent:365eecc0-035c-492b-b594-b1ee755dcaf2",
+      "status": "completed",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "artifacts": [
+        "fact-check.json"
+      ]
+    },
+    "humanizer": {
+      "session_key": "agent:xiaolongxia:subagent:d73796da-cb56-49f7-817d-79fe0b4f0bd2",
+      "status": "completed",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "artifacts": [
+        "final.md"
+      ]
+    },
+    "layout": {
+      "session_key": "agent:xiaolongxia:subagent:f8760d17-ac36-41c2-8a95-b2ab1cbe331a",
+      "status": "completed",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "artifacts": [
+        "final-layout.md"
+      ]
+    }
+  },
+  "artifact_provenance": {
+    "research.json": {
+      "producer_type": "child",
+      "producer_step": "researcher",
+      "session_key": "agent:xiaolongxia:subagent:5b8b3569-c82c-40dd-8ec9-731c8925de9a",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "outline.md": {
+      "producer_type": "child",
+      "producer_step": "researcher",
+      "session_key": "agent:xiaolongxia:subagent:5b8b3569-c82c-40dd-8ec9-731c8925de9a",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "draft.md": {
+      "producer_type": "child",
+      "producer_step": "writer",
+      "session_key": "agent:xiaolongxia:subagent:de087f2f-21f5-4a6d-a4d7-7e0ff51e9ba0",
+      "model": "github-copilot/claude-opus-4.6"
+    },
+    "review-v1.json": {
+      "producer_type": "child",
+      "producer_step": "reviewer",
+      "session_key": "agent:xiaolongxia:subagent:30db97e9-65b2-4965-b03d-22869a2edaf3",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "fact-check.json": {
+      "producer_type": "child",
+      "producer_step": "fact_checker",
+      "session_key": "agent:xiaolongxia:subagent:365eecc0-035c-492b-b594-b1ee755dcaf2",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "final.md": {
+      "producer_type": "child",
+      "producer_step": "humanizer",
+      "session_key": "agent:xiaolongxia:subagent:d73796da-cb56-49f7-817d-79fe0b4f0bd2",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "final-layout.md": {
+      "producer_type": "child",
+      "producer_step": "layout",
+      "session_key": "agent:xiaolongxia:subagent:f8760d17-ac36-41c2-8a95-b2ab1cbe331a",
+      "model": "github-copilot/claude-sonnet-4.6"
+    }
+  },
+  "published_at": "2026-04-02T15:04:00+08:00",
+  "waiting_for": null
+}

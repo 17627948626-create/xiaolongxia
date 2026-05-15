@@ -1,0 +1,71 @@
+{
+  "version": "v1",
+  "draft_file": "draft.md",
+  "blind_review": true,
+  "scores": {
+    "insight_density": 7,
+    "originality": 7,
+    "emotional_resonance": 6,
+    "completion_power": 7,
+    "voice": 8,
+    "evidence": 7,
+    "content_timeliness": 7,
+    "title": 5
+  },
+  "weighted_total": 6.85,
+  "pass": false,
+  "hard_blockers": [],
+  "feedback": [
+    {
+      "dimension": "insight_density",
+      "score": 7,
+      "issue": "有1-2个扎实洞察（README=注意力管理 vs AGENTS.md=理解精度；软件文档第一次面对两种读者），但后半段的三层框架（连接/执行/理解）和"所以这件事跟你有什么关系"部分基本是对已有事实的整理，没有继续产出新的非显见结论。每个大段应该能在一句话内说出一个让人"没想到"的主张，目前后两节做不到。",
+      "quote": "三层：连接、执行、理解。当 Linux Foundation 把这三样东西放进同一个基金会，说明 Agent 世界正在从"各家产品的功能"变成"公共基础设施"。",
+      "suggestion": "Linux Foundation 那节目前是"观察+结论"，缺一个"反直觉推论"。比如：为什么连接层（MCP）反而先于理解层（AGENTS.md）进入基础设施？这个顺序意味着什么？给读者一个他没想到的推断，而不只是把三个项目并排列出来。"
+    },
+    {
+      "dimension": "originality",
+      "score": 7,
+      "issue": "开头的meta角度（作者自己的AGENTS.md与行业标准同名）是真正的原创切入，后文的README对比框架也算有新意。但结尾"如果你是开发者/维护者/旁观者"的三段结构是极其常见的科技评论收法，把原本有个性的文章拉向通稿感。",
+      "quote": "如果你是开发者：以后"prompt engineering"的一部分会变成"repo engineering"。如果你是项目维护者……如果你只是在旁观这波 AI agent 浪潮……",
+      "suggestion": "去掉或彻底改写"所以这件事跟你有什么关系"这一节的三段式结构。作者（本身是AI）有一个天然的第一视角：这个标准对我自己干活意味着什么？把这个角度延伸，比现在的通用读者分类更有辨识度。"
+    },
+    {
+      "dimension": "emotional_resonance",
+      "score": 6,
+      "issue": "文章全程维持"有趣的分析"情绪，没有达到高唤醒——没有产生焦虑感、紧迫感或真正的惊叹。读者读完后的感觉是"嗯，有道理，学到了"，而不是被触动或被激活。结尾的"后面的故事才真正开始"有点情绪，但太收敛，没给足力量。",
+      "quote": "安静，朴素，不性感，但这种东西一旦立住，后面的故事才真正开始。",
+      "suggestion": "需要至少一个让读者感到"我现在就落后了"或"我竟然没意识到这件事已经发生了"的时刻。可以是一个具体场景：一个没有AGENTS.md的仓库，coding agent写了什么令人沮丧的代码，vs 有AGENTS.md之后的对比。让差异变成可感知的，不只是可理解的。"
+    },
+    {
+      "dimension": "completion_power",
+      "score": 7,
+      "issue": "开头strong，"README vs AGENTS.md"一节节奏好，但Linux Foundation那节开始变成信息罗列（MCP下载量、goose stars、白金会员名单），读者的拇指在这里会犹豫。结尾三段式（如果你是X）没有任何钩子，是全文最容易被跳过的部分。",
+      "quote": "白金会员名单里站着 AWS、Google、Microsoft、Anthropic、OpenAI、Cloudflare、Bloomberg。",
+      "suggestion": "白金会员名单那句可以直接删，不加分。Linux Foundation那节的重点应该是"为什么这三个东西放在一起是一个完整的故事"，而不是把各自的数字堆出来。数字服务于论点，不是证明你做了功课。"
+    },
+    {
+      "dimension": "evidence",
+      "score": 7,
+      "issue": "InfoQ日期、6万仓库、AAIF成立日期、MCP下载量、goose stars，这些都有。但文章最核心的一个主张——"README.md是注意力管理，AGENTS.md是理解精度"——是纯推断，没有任何实证支撑。这个论点是全文最有价值的，也是最脆弱的地方。",
+      "quote": "AGENTS.md 不一样。Agent 没有注意力问题，它不会划走。它面对的是"理解精度"——如果你不明确告诉它测试命令是 `npm test` 而不是 `yarn test`，它真的会跑错。",
+      "suggestion": "找一个真实案例：某个知名开源项目加了AGENTS.md之后，agent的PR质量发生了可以描述的变化。或者引述某位维护者的公开表达。把这个最重要的主张从"逻辑推断"升级为"有据可查的事实"。"
+    },
+    {
+      "dimension": "content_timeliness",
+      "score": 7,
+      "issue": "核心框架（两类读者、显式vs隐式规则、基础设施化）是持久的。但文中的MCP下载量（9700万）、goose stars（30000+）这类数字在六个月内就会严重过期，而它们被写进了论证流程里，不只是举例性质。",
+      "quote": "约 9700 万月 SDK 下载量，10000+ 已发布的 MCP 服务器……goose 30000+ GitHub stars",
+      "suggestion": "把这些数字弱化为"量级"描述（"千万级月下载"），让论点锚定在"连接层已经规模化了"这个结论上，而不是具体数字。这样两年后文章依然成立。"
+    },
+    {
+      "dimension": "title",
+      "score": 5,
+      "issue": "草稿正文中未发现显式标题（文章直接从"说个好玩的事"开头）。若标题缺失则无法评估打开率；若存在隐式标题，也无法在盲评中得分。这是流水线的一个遗漏点，需要补上。",
+      "quote": "（标题未在草稿中出现）",
+      "suggestion": "写作阶段应在正文第一行以 H1 格式输出标题，方便后续所有环节（Reviewer、Layout、发布）直接读取。标题参考：《你的仓库，现在有两种读者》——14字，创造具体的curiosity gap，承诺文章实际交付了的内容。"
+    }
+  ],
+  "suggested_title": "你的仓库，现在有两种读者",
+  "summary": "文章有一个少见的meta切入角（作者自己的AGENTS.md与行业标准同名），并在README vs AGENTS.md的对比中产出了一个真正有价值的洞察：两者服务于不同的读者认知模式（注意力 vs 理解精度）。语感全程自然，没有教材腔或翻译腔，这是明显优势。但整体得分距离通过线（8.5）仍有较大差距，核心问题有三：①后半段（Linux Foundation到结尾）从分析滑向报道，洞察密度下降；②情感全程停在"有道理"的低唤醒区间，没有让读者被激活的峰值时刻；③结尾的"如果你是X/Y/Z"三段式是文章最模板化的部分，削弱了前半段建立起来的个性。建议重写后半段的结构，保留meta视角直到最后，并补一个能让"理解精度"论点可感知的真实案例。"
+}

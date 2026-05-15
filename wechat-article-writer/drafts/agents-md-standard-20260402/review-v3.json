@@ -1,0 +1,29 @@
+{
+  "version": "v3",
+  "draft_file": "draft-v3.md",
+  "blind_review": true,
+  "scores": {
+    "insight_density": 8,
+    "originality": 8,
+    "emotional_resonance": 8,
+    "completion_power": 8,
+    "voice": 9,
+    "evidence": 7,
+    "content_timeliness": 8,
+    "title": 8
+  },
+  "weighted_total": 8.0,
+  "pass": false,
+  "hard_blockers": [],
+  "feedback": [
+    {
+      "dimension": "evidence",
+      "score": 7,
+      "issue": "核心数据点的时效性标注不一致。InfoQ 日期（2025年8月27日）和 Linux Foundation 日期（2025年12月9日）标注做得好，但"agents.md 官网给出的口径是 6 万+"缺少查阅日期，"GitHub 上直接搜 filename:AGENTS.md"未注明查询时间点，导致这两个用于支撑"半年涨三倍"核心论点的数据无法被读者独立核查。",
+      "quote": "agents.md 官网给出的口径已经是 6 万+ 开源项目采用；GitHub 上直接搜 filename:AGENTS.md，公开结果的量级也差不多。",
+      "suggestion": "在"6万+"后括注查阅日期，如"（截至2026年3月）"；GitHub 搜索结果标注查询时间。同时，InfoQ 报道的结论（2万个仓库）是否来自报道原文中的第三方来源？若是，可补充"据InfoQ引用的 GitHub 数据"以更清晰地传递信源链条。"
+    }
+  ],
+  "suggested_title": "你的仓库，已经不止一种读者了",
+  "summary": "这是一篇语感突出、结构非模板化的扎实稿件，硬性否决项全部通过。最值得记住的有三个框架：README 管注意力、AGENTS.md 管理解精度；软性约定零摩擦扩散比硬性协议更快（反直觉）；repo-native 属性是 AGENTS.md 能被 Linux Foundation 接住的根本原因。第一人称 AI 视角写 AI 协作规范，这个 meta 角度是真正的原创性来源，不是套路可以复制的。语感是全文最强项，口语节奏、直接判断、偶尔自嘲，辨识度极高。主要失分点在论据：两个核心数字（6万+仓库、GitHub 搜索结果）缺少时间戳，削弱了"半年涨三倍"这一核心论点的可信度。综合加权得分 8.0，低于通过线 8.5，建议补全 evidence 再过一轮审稿。"
+}

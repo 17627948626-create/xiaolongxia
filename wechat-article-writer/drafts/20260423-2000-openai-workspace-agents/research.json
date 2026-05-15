@@ -1,0 +1,383 @@
+{
+  "topic": "OpenAI Workspace Agents 让 ChatGPT 开始进公司接活",
+  "angle": "借 OpenAI 在 4 月 22 日推出 Workspace Agents 这件事，写清 AI 产品竞争正在从个人提效工具转向组织级共享数字同事，争的是谁先卡进公司的工作流入口、协作入口和权限入口。",
+  "purpose": "用一条足够新的产品发布，向普通读者解释：下一轮 AI 竞争，重点已经不只是回答得像不像人，而是谁先被接进企业真实流程里，把重复工作接过去。",
+  "time_window": "最近 48 小时",
+  "created_at": "2026-04-24T09:45:00+08:00",
+  "verdict": {
+    "retopic_needed": false,
+    "reason": "主入口证据成立。OpenAI 官方发布、OpenAI Academy/Business 页面、帮助中心文档，以及 Google 在同日更新的企业 agent 平台材料，足以支撑锁定题目继续写。"
+  },
+  "hot_hook": {
+    "event": "OpenAI 在 2026-04-22 推出 Workspace Agents in ChatGPT",
+    "why_now": "发布时间就在 48 小时窗口内，而且它不是一次普通功能更新，而是把 ChatGPT 从个人聊天助手往组织级共享执行体推了一步。Google 也在同日高调推进 Gemini Enterprise Agent Platform，竞争叙事形成直接对照。",
+    "search_keywords": [
+      "OpenAI Workspace Agents",
+      "workspace agents in ChatGPT",
+      "ChatGPT Business Enterprise Edu Teachers",
+      "OpenAI May 6 2026 credit-based pricing",
+      "Gemini Enterprise Agent Platform",
+      "Google AI every employee every workflow"
+    ]
+  },
+  "thesis_candidates": [
+    {
+      "id": "t1",
+      "thesis": "这轮竞争变的不是 AI 更像助手，而是模型公司开始争谁先成为公司里的数字同事和工作流入口。",
+      "strength": "strong"
+    },
+    {
+      "id": "t2",
+      "thesis": "Workspace Agents 真正替代的不是 GPTs 这个产品名，而是‘每次都要从头吩咐 AI 一遍’这种个人使用方式。",
+      "strength": "medium"
+    },
+    {
+      "id": "t3",
+      "thesis": "企业级 agent 的护城河开始从模型能力，转到连接器、权限、审批、共享目录和组织记忆。",
+      "strength": "strong"
+    }
+  ],
+  "selected_thesis": "这轮竞争变的不是 AI 更像助手，而是模型公司开始争谁先成为公司里的数字同事和工作流入口。",
+  "core_judgment": "OpenAI 这次卖的已经不只是一个会回答问题的 ChatGPT，而是一个能被公司内部反复调用、接入 Slack 和业务工具、带着权限和审批去跑流程的共享执行体。它的意义不在‘又多了几个 agent 功能’，而在产品竞争单位变了：从个人提效，变成组织流程入口；从一次性对话，变成可复用、可治理、可共享的数字同事。Google 同日在企业侧推进 Gemini Enterprise Agent Platform，也说明大厂已经把战场抬到了同一层。",
+  "main_insight": "谁先把 AI 接进组织协作链路，谁就更有机会从‘大家偶尔用一下的助手’升级成‘公司日常流程的一部分’。",
+  "sub_insights": [
+    "Workspace Agents 明确把共享、复用、调度和 Slack 接入放到产品中心，说明目标已经不是一个人单独提效，而是团队一起用同一个 agent 接活。",
+    "OpenAI 把审批、RBAC、监控、Compliance API 放在核心叙事里，说明真正难卖的不是模型本身，而是能不能安全进组织流程。",
+    "Google 的 Gemini Enterprise app 和 Gemini Enterprise Agent Platform 同样把 every employee、every workflow、build-scale-govern-optimize 作为卖点，进一步证明竞争焦点正在转向组织级入口。"
+  ],
+  "sources": [
+    {
+      "id": "openai_launch_20260422",
+      "title": "Introducing workspace agents in ChatGPT",
+      "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "source_type": "primary",
+      "publisher": "OpenAI",
+      "published_at": "2026-04-22",
+      "verified": true,
+      "key_points": [
+        "OpenAI 官方宣布推出 workspace agents in ChatGPT。",
+        "产品定位是 shared agents for teams，能处理 complex tasks 和 long-running workflows。",
+        "Workspace agents 被明确定位为 GPTs 的 evolution，并支持在 ChatGPT 或 Slack 中共享使用。",
+        "官方写明当前以 research preview 形式提供给 ChatGPT Business、Enterprise、Edu、Teachers 计划。",
+        "官方写明 2026-05-06 前免费，之后改为 credit-based pricing。"
+      ]
+    },
+    {
+      "id": "openai_academy_workspace_agents",
+      "title": "Workspace agents",
+      "url": "https://openai.com/academy/workspace-agents/",
+      "source_type": "primary",
+      "publisher": "OpenAI",
+      "published_at": "2026-04-22",
+      "verified": true,
+      "key_points": [
+        "OpenAI Academy 反复强调 workspace agents 面向 repeatable workflows，而不是一次性聊天任务。",
+        "文档把 agent 拆成 trigger、process and skills、tools and systems、governance 四块，突出它是流程执行体。",
+        "官方列出的典型模式包括 briefing、triage and routing、analysis and recommendation、content creation、planning and coordination。",
+        "这说明 OpenAI 想把 agent 放进企业里本来就存在的重复流程。"
+      ]
+    },
+    {
+      "id": "openai_business_page_workspace_agents",
+      "title": "Workspace agents for business",
+      "url": "https://openai.com/business/workspace-agents/",
+      "source_type": "primary",
+      "publisher": "OpenAI",
+      "published_at": "2026-04-22",
+      "verified": true,
+      "key_points": [
+        "产品页直接把卖点写成 build once, scale across your team。",
+        "官方强调 run on schedules、keep work moving across tools、automation with control。",
+        "治理卖点集中在 role-based access control、audit logs and monitoring、approval gates、centralized management。"
+      ]
+    },
+    {
+      "id": "openai_help_workspace_agents",
+      "title": "ChatGPT Workspace Agents for Enterprise and Business",
+      "url": "https://help.openai.com/en/articles/20001143-chatgpt-workspace-agents-for-enterprise-and-business",
+      "source_type": "primary_doc",
+      "publisher": "OpenAI Help Center",
+      "published_at": "2026-04-22",
+      "verified": true,
+      "key_points": [
+        "帮助中心文档确认 workspace agents 面向 Enterprise 和 Business 工作区，并支持在 ChatGPT 与 Slack 中使用。",
+        "文档对 shared connections、RBAC、write action safety 做了详细风险提示，说明产品真的已经在考虑组织内共享调用与权限边界。"
+      ]
+    },
+    {
+      "id": "venturebeat_workspace_agents_20260422",
+      "title": "OpenAI unveils Workspace Agents, a successor to custom GPTs for enterprises that can plug directly into Slack, Salesforce and more",
+      "url": "https://venturebeat.com/orchestration/openai-unveils-workspace-agents-a-successor-to-custom-gpts-for-enterprises-that-can-plug-directly-into-slack-salesforce-and-more/",
+      "source_type": "reliable_media",
+      "publisher": "VentureBeat",
+      "published_at": "2026-04-22",
+      "verified": true,
+      "key_points": [
+        "外部媒体把这次发布概括为 custom GPTs 的企业接班人，并强调团队目录、Slack/第三方应用接入、长流程执行。",
+        "报道给了一个有用的外部框架：AI 从 individual productivity trick 变成 shared organizational resource。"
+      ]
+    },
+    {
+      "id": "google_blog_agent_platform_20260422",
+      "title": "Gemini Enterprise Agent Platform lets you build, govern and optimize your agents",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-enterprise-agent-platform/",
+      "source_type": "primary",
+      "publisher": "Google",
+      "published_at": "2026-04-22",
+      "verified": true,
+      "key_points": [
+        "Google 在 Cloud Next '26 宣布 Gemini Enterprise Agent Platform。",
+        "官方描述是 build, scale, govern and optimize agents 的开发平台。",
+        "Google 同时强调 Gemini Enterprise app 会成为 every employee 的 AI front door。"
+      ]
+    },
+    {
+      "id": "google_docs_agent_platform_20260422",
+      "title": "Gemini Enterprise Agent Platform",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform",
+      "source_type": "primary_doc",
+      "publisher": "Google Cloud Documentation",
+      "published_at": "2026-04-22",
+      "verified": true,
+      "key_points": [
+        "Google 文档把平台能力拆成 build、scale、govern、optimize。",
+        "文档明确列出 Agent Studio、Memory Bank、Agent Gateway、Identity & IAM、Share agent、Observability 等组织级能力。",
+        "Last updated 2026-04-22 UTC，可作为时效验证。"
+      ]
+    },
+    {
+      "id": "google_gemini_enterprise_app",
+      "title": "Gemini Enterprise app: Best of Google AI for Business",
+      "url": "https://cloud.google.com/gemini-enterprise",
+      "source_type": "primary",
+      "publisher": "Google Cloud",
+      "published_at": "2026-04-22",
+      "verified": true,
+      "key_points": [
+        "Google 页面直接写：bring the best of Google AI to every employee。",
+        "页面强调 multi-step, multi-app workflows、single centralized view、no-code Agent Designer、securely connect to Microsoft 365, Google Workspace, Jira, HubSpot 等。",
+        "定价页显示 Business edition 起价 21 美元/seat/月，Standard/Plus 起价 30 美元/seat/月。"
+      ]
+    }
+  ],
+  "evidence_anchors": [
+    {
+      "id": "anchor_org_shift",
+      "claim": "OpenAI 这次不是在卖一个更强的个人助手，而是在卖团队共享的工作流执行体。",
+      "support": [
+        "openai_launch_20260422",
+        "openai_business_page_workspace_agents",
+        "openai_academy_workspace_agents"
+      ],
+      "best_quote": "They’re also designed to be shared within an organization, so teams can build an agent once, use it together in ChatGPT or Slack, and improve it over time.",
+      "why_it_matters": "一旦核心卖点变成 shared、workflow、Slack、schedule，竞争单位就从个人对话窗口变成了组织流程入口。"
+    },
+    {
+      "id": "anchor_governance_is_product",
+      "claim": "企业 agent 的关键卖点已经从‘会不会答’转向‘能不能被公司安全地接进流程里’。",
+      "support": [
+        "openai_launch_20260422",
+        "openai_help_workspace_agents",
+        "google_docs_agent_platform_20260422",
+        "google_gemini_enterprise_app"
+      ],
+      "best_quote": "Admins can control who has access to use, build, and share agents.",
+      "why_it_matters": "RBAC、审批、监控、共享连接、IAM、Gateway 这些词一起出现，说明真正开始决定采购和落地的，是组织治理能力。"
+    },
+    {
+      "id": "anchor_competition_layer_changed",
+      "claim": "OpenAI 和 Google 在同一时间窗里都把 agent 叙事抬到企业工作流和组织入口，说明行业开始抢公司内部的协作链路。",
+      "support": [
+        "openai_launch_20260422",
+        "google_blog_agent_platform_20260422",
+        "google_docs_agent_platform_20260422",
+        "google_gemini_enterprise_app"
+      ],
+      "best_quote": "Gemini Enterprise app brings the best of Google AI to every employee.",
+      "why_it_matters": "两家都不再满足于‘给员工一个聊天框’，而是争谁先成为默认 front door、共享目录和流程承接层。"
+    }
+  ],
+  "fact_records": [
+    {
+      "fact_id": "openai_launch_date",
+      "claim": "OpenAI 于 2026-04-22 推出 workspace agents in ChatGPT。",
+      "value": "2026-04-22",
+      "unit": "date",
+      "observed_at": "2026-04-24",
+      "source_id": "openai_launch_20260422",
+      "exact_quote": "Today, we’re introducing workspace agents in ChatGPT.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "medium",
+      "usage_note": "可直接写发布时间，但最好配 OpenAI 官方来源。",
+      "kind": "api_snapshot"
+    },
+    {
+      "fact_id": "openai_available_plans",
+      "claim": "Workspace agents 当前以 research preview 形式提供给 ChatGPT Business、Enterprise、Edu、Teachers 计划。",
+      "value": "Business, Enterprise, Edu, Teachers",
+      "unit": "plans",
+      "observed_at": "2026-04-24",
+      "source_id": "openai_launch_20260422",
+      "exact_quote": "Workspace agents are available in research preview in ChatGPT Business, Enterprise, Edu, and Teachers plans.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "high",
+      "usage_note": "不要扩写成面向所有 ChatGPT 用户开放。",
+      "kind": "api_snapshot"
+    },
+    {
+      "fact_id": "openai_free_until_may6",
+      "claim": "Workspace agents 在 2026-05-06 前免费，之后转为按 credit 计费。",
+      "value": "free until May 6, 2026; then credit-based pricing",
+      "unit": "pricing policy",
+      "observed_at": "2026-04-24",
+      "source_id": "openai_launch_20260422",
+      "exact_quote": "Workspace agents will be free until May 6, 2026, with credit-based pricing starting on that date.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "high",
+      "usage_note": "可用于解释 OpenAI 先放量试水，再转入组织级计费。",
+      "kind": "api_snapshot"
+    },
+    {
+      "fact_id": "openai_gpts_transition",
+      "claim": "OpenAI 官方表述是 Workspace agents 是 GPTs 的 evolution，GPTs 暂时保留，后续会支持转换。",
+      "value": "GPTs remain available during testing; conversion is coming",
+      "unit": "product transition",
+      "observed_at": "2026-04-24",
+      "source_id": "openai_launch_20260422",
+      "exact_quote": "Editor’s note: GPTs will remain available while teams test workspace agents with their workflows. Soon, we’ll make it easy to convert GPTs into workspace agents.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "medium",
+      "usage_note": "不要写成 GPTs 已经下线；更准确的写法是组织级重心正在迁向 workspace agents。",
+      "kind": "api_snapshot"
+    },
+    {
+      "fact_id": "openai_shared_org_use",
+      "claim": "OpenAI 官方明确把共享使用、Slack 接入和长流程运行写成核心产品特征。",
+      "value": "shared within an organization; use in ChatGPT or Slack; long-running workflows",
+      "unit": "feature framing",
+      "observed_at": "2026-04-24",
+      "source_id": "openai_launch_20260422",
+      "exact_quote": "They’re also designed to be shared within an organization, so teams can build an agent once, use it together in ChatGPT or Slack, and improve it over time.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "medium",
+      "usage_note": "这是文章主论点的第一锚点。",
+      "kind": "api_snapshot"
+    },
+    {
+      "fact_id": "google_employee_every_workflow",
+      "claim": "Google 的企业 agent 叙事已经写成 every employee、every workflow。",
+      "value": "every employee, for every workflow",
+      "unit": "product framing",
+      "observed_at": "2026-04-24",
+      "source_id": "google_gemini_enterprise_app",
+      "exact_quote": "Gemini Enterprise app brings the best of Google AI to every employee",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "risk_level": "medium",
+      "usage_note": "可以转述成 Google 也在把 AI 入口做成组织级前台，但不要伪装成对 OpenAI 的直接评价。",
+      "kind": "readme_claim"
+    },
+    {
+      "fact_id": "google_build_scale_govern_optimize",
+      "claim": "Google 文档把 Gemini Enterprise Agent Platform 定义为 build、scale、govern、optimize enterprise-grade agents 的平台。",
+      "value": "build, scale, govern, optimize",
+      "unit": "platform positioning",
+      "observed_at": "2026-04-24",
+      "source_id": "google_docs_agent_platform_20260422",
+      "exact_quote": "Gemini Enterprise Agent Platform is our open and comprehensive platform that empowers businesses to rapidly build, scale, govern and optimize enterprise-grade agents grounded in your enterprise data.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "medium",
+      "usage_note": "适合用于竞争对照，不宜写成 Google 已经稳赢。",
+      "kind": "api_snapshot"
+    },
+    {
+      "fact_id": "google_business_pricing",
+      "claim": "Google Gemini Enterprise app 页面显示 Business edition 起价 21 美元/seat/月，Standard/Plus 起价 30 美元/seat/月。",
+      "value": "21 USD / seat / month; 30 USD / seat / month",
+      "unit": "pricing",
+      "observed_at": "2026-04-24",
+      "source_id": "google_gemini_enterprise_app",
+      "exact_quote": "Business edition ... Starting at $21 USD per seat per month ... Standard / Plus editions ... Starting at $30 USD per seat per month",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "high",
+      "usage_note": "如果正文要提 Google 定价，必须明确这是 Google 当页显示的起价，不要混成 OpenAI 定价。",
+      "kind": "api_snapshot"
+    }
+  ],
+  "contradictions_or_caveats": [
+    "OpenAI 官方没有在主发布页给出 Business 计划单价，因此正文不宜随手写 OpenAI 的 seat price，除非明确标注外部媒体口径。",
+    "OpenAI 目前官方表述仍是 research preview，不能写成已经大规模稳定商用普及。",
+    "Google 这边同时有 app 层和 developer platform 层两条线，正文要讲清：它既在做员工入口，也在做开发/治理底座，不能混成一个单点产品。",
+    "Workspace agents 是否会真正替代 GPTs，当前更准确的说法是组织侧重心在迁移，GPTs 暂时仍保留。"
+  ],
+  "why_this_angle_is_worth_writing_now": [
+    "时间窗口够新，OpenAI 与 Google 几乎同日把企业 agent 叙事推高，具备强热点入口。",
+    "这件事普通读者也能理解，因为‘进公司接活’比‘企业级 agent 编排平台’更有人话、更有画面。",
+    "它能把 AI 产品竞争从模型分数，翻译成更好懂的组织现实：谁先进流程，谁就更难被替换。"
+  ],
+  "title_directions": [
+    "ChatGPT 开始进公司“接活”了，OpenAI 要卖的不只是助手，而是数字同事",
+    "OpenAI 这次端出来的，不是更强 ChatGPT，而是能进公司流程接活的 AI 同事",
+    "以后大家抢的不是谁更会答，而是谁先被接进公司的协作链路里"
+  ],
+  "angle_risks": [
+    "容易写成功能发布会纪要，需要始终把主线拉回‘竞争单位变化’。",
+    "容易堆企业软件黑话，必须翻译成人话：共享、审批、接流程、接协作。",
+    "容易写成 OpenAI vs Google 功能对照表，应该点到为止，把重心放在行业阶段变化。"
+  ],
+  "style_exemplar_pack": [
+    {
+      "name": "opening_move",
+      "example": "这事最值得盯的，不是它又多会了几个功能，而是它开始往公司里接活。",
+      "usage": "开头先抓反直觉判断，别先报菜名。"
+    },
+    {
+      "name": "explain_in_human_terms",
+      "example": "说白了，就是把以前你一个人偷偷用的 AI，变成公司里大家都能叫来干活的那个同事。",
+      "usage": "把企业 agent 翻译成普通读者听得懂的画面。"
+    },
+    {
+      "name": "ai_perspective_cut",
+      "example": "作为一个靠接口和上下文活着的 AI，我对这一步特别敏感：谁先接进组织协作链路，谁就不只是工具了。",
+      "usage": "AI 视角点到为止，服务判断，不喧宾夺主。"
+    }
+  ],
+  "anti_exemplars": [
+    "不要写成‘随着 AI 快速发展，企业正在迎来智能化转型’这种平台腔。",
+    "不要堆 Slack、CRM、IAM、RAG、Gateway 等名词当专业感替代品。",
+    "不要把文章写成 OpenAI 和 Google 功能清单对打。"
+  ],
+  "entity_alias_map": {
+    "Workspace Agents": "Workspace Agents",
+    "ChatGPT workspace agents": "Workspace Agents",
+    "Gemini Enterprise Agent Platform": "Gemini Enterprise Agent Platform",
+    "Gemini Enterprise app": "Gemini Enterprise"
+  },
+  "must_attribute_claims": [
+    "OpenAI research preview 覆盖的具体计划范围",
+    "2026-05-06 前免费、之后按 credit 计费",
+    "Google Gemini Enterprise 的起始 seat 定价",
+    "Google 对 every employee / every workflow 的官方定位"
+  ],
+  "writer_guardrails": {
+    "must_center": [
+      "主判断必须是‘AI 产品竞争单位正在从个人工具切到组织级数字同事’。",
+      "一定要把 shared、workflow、approval、governance 讲成人话。",
+      "OpenAI 只是入口，正文要顺势拉到行业竞争层。"
+    ],
+    "must_avoid": [
+      "不要写成产品发布说明书。",
+      "不要把 Google 对照写成半篇横评。",
+      "不要把 AI 身份写成自嗨设定；主线始终是现实产品变化。"
+    ]
+  },
+  "recommended_hook": "OpenAI 这次端出来的，已经不是一个更会聊天的 ChatGPT，而是一个准备进公司流程里接活的数字同事。",
+  "recommended_punchline": "以后大家抢的不是谁更会答，而是谁先被接进组织协作链路里。"
+}

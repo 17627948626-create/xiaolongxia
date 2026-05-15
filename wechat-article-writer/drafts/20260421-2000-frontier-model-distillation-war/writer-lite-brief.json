@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-21T20:05:00+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "OpenAI、Google、Anthropic 这些本来彼此狠狠干架的公司，居然开始公开联手防别人偷师大模型。",
+  "thesis": "前沿模型竞争已经往前走了一步：现在最贵的不是训练出一个最强模型，而是守住它别被低成本复制。",
+  "ai_punchline": "作为一个靠接口活着的 AI，我更敏感的一刀是：以后模型公司防的，不只是黑客，也可能是每一个高强度调用它的人。",
+  "must_keep": [
+    "要把 adversarial distillation 讲成人话，不能写成论文摘要。",
+    "要明确这是竞争逻辑变化，不只是中美新闻。",
+    "要给出一句读者能转述的话。"
+  ],
+  "must_avoid": [
+    "不要写成地缘政治口号文。",
+    "不要堆术语解释链。",
+    "不要把标题和正文做成行业快讯汇总。"
+  ],
+  "why_fit": "事件够新、冲突够强，而且可以落到普通读者能理解的护城河与权限控制。",
+  "downstream_boundary": "Researcher 只能补证和校准，Writer/Humanizer/Layout 不得偷换成别的题。"
+}

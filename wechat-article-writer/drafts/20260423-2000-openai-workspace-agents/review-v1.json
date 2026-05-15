@@ -1,0 +1,61 @@
+{
+  "decision": "revise",
+  "summary": "稿子的主判断是对的，开头也够抓人：它成功把 Workspace Agents 讲成了‘进公司接活的数字同事’，这层翻译很值钱。但当前版本更像一篇有作者感的判断短评，还没完全撑起标题承诺的分量。中段多次围绕‘竞争单位变了’反复改写，同一判断推进多、新证据少，导致洞察密度和完读力在后半程往下掉；同时，OpenAI 与 Google 的对照被点到，却没有落出更具体的组织级差异或现实代价，所以‘不只是助手，而是数字同事’这个判断还差半步落地。",
+  "one_sentence_verdict": "方向对、开头强、语感在线，但论证支撑和中段推进还不够，暂时未过线。",
+  "critical_issues": [
+    {
+      "type": "evidence_chain_underpowered",
+      "issue": "标题和开头把判断抬到了‘OpenAI 要卖的不只是助手，而是数字同事’这个级别，但正文后续主要靠概念翻译和趋势判断推进，缺少足够具体的产品机制或组织场景来把这层判断压实，导致核心论证支撑不足。",
+      "quote": "比如销售线索来了，先分类；客户反馈进来，先分流；周会前，把几个人的更新揉成一版简报；一个流程每周都要跑三遍，agent 先把前半段做完，再把需要人拍板的地方交出来。",
+      "fix_direction": "保留这组人话场景，但往后至少补一刀更硬的落地解释：为什么 shared、Slack、schedule、审批、RBAC 这些设计意味着它已经在抢组织入口，而不只是多了自动化功能。最好把‘能接活’和‘能被治理、能被多人共用、能接到下一步’明确连起来。",
+      "penalized_dimensions": ["insight_density", "completion_power", "title"]
+    },
+    {
+      "type": "middle_section_repetition",
+      "issue": "中段多段都在重复‘竞争单位变了 / 从我变成我们 / 从个人助手变成组织入口’这一主判断，但新增信息和推进不足，读者会感觉作者在换说法重复同一件事，完读张力被稀释。",
+      "quote": "以前大家抢的是个人入口：谁回答更顺，谁写得更像人，谁更适合你一个人拿来提效。那时候 AI 更像私人助理，服务对象是‘我’。\n\n现在开始变成另一种问题：谁能先进公司流程，谁能被团队一起调用，谁能挂上权限、审批、监控这些现实世界的门卡。服务对象也从‘我’变成了‘我们’。",
+      "fix_direction": "压缩 1—2 段同义复述，把省出来的位置换成一个更具体的新层次：例如‘一旦接进 Slack/知识库/审批流，替换成本为什么不再只是换模型’，或者‘组织为什么愿意为治理能力掏钱’。让每一节都新增一刀，而不是重申主论点。",
+      "penalized_dimensions": ["insight_density", "completion_power"]
+    },
+    {
+      "type": "comparison_not_fully_cashed_out",
+      "issue": "文中提到 OpenAI 和 Google 同时在抢组织入口，这个对照是对的，但目前只是把两家并列提及，还没有真正榨出‘行业阶段变化’的力度，所以原创判断有了轮廓，还差一个更能被转述的落点。",
+      "quote": "更大的信号是，两家几乎在同一时间都把话说到了同一层：AI 要进组织，要进协作，要进工作流。Google 那边也在讲 every employee、every workflow，意思非常直接——它也想做公司内部那个默认 AI 入口。",
+      "fix_direction": "不要扩成横评，但建议补一句更具体的行业结论：当 OpenAI 和 Google 同时把共享、治理、协作入口抬成主卖点，说明模型公司现在争的已经不是‘员工会不会偶尔打开你’，而是‘公司会不会把流程默认接到你这里’。把这一刀说得更实、更不可替换。",
+      "penalized_dimensions": ["originality", "insight_density"]
+    }
+  ],
+  "upgrade_suggestions": [
+    {
+      "issue": "标题方向已经够强，但还可以更短更硬一点。",
+      "quote": "《ChatGPT 开始进公司“接活”了，OpenAI 要卖的不只是助手，而是数字同事》",
+      "suggestion": "保留‘进公司接活’这个入口，后半句可以再收紧，少一点解释腔，多一点判断感。比如把重点更集中到‘默认工作入口’或‘数字同事开始上岗’。当前标题可打及格偏上分，但还有优化空间。"
+    },
+    {
+      "issue": "结尾判断是对的，但最后两段可以再多一个现实后果，收得会更狠。",
+      "quote": "真正的大变化，常常不是模型又答对了一道题，而是它终于被允许进门接活了。",
+      "suggestion": "在结尾前补一个‘一旦进门，替换成本会从换模型变成换流程’之类的现实代价，再落最后一句，冲击力会更强。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "以后大家抢的不是谁更会答，而是谁先被接进组织协作链路里。",
+    "paragraph_or_scene": "‘比如销售线索来了，先分类；客户反馈进来，先分流；周会前，把几个人的更新揉成一版简报……这个时候，AI 就不是陪你聊天的，它是站在流程里的。’ 这一段最有画面，也最能把企业黑话翻成人话。"
+  },
+  "voice_observations": {
+    "opening_interchangeability": "low",
+    "author_presence": "high",
+    "transition_template_dependence": "medium",
+    "ending_sloganism": "medium",
+    "notes": "开头判断落得很快，作者在场感明显，没有明显平台腔；问题主要在中段推进时有几处依赖‘以前/现在’‘不是功能横评/真正变化是’这类结构性转场，导致节奏开始同构。结尾最后一句好记，但前一段再更具体一点，会更像作者的落点，而不是行业评论的收束句。"
+  },
+  "scores": {
+    "insight_density": 7.4,
+    "originality": 7.6,
+    "emotional_resonance": 7.2,
+    "completion_power": 7.3,
+    "voice": 8.1,
+    "title": 8.0,
+    "weighted_total": 7.59,
+    "notes": "pass requires weighted_total >= 7.8 from config.json; this draft is below the active threshold."
+  }
+}

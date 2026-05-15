@@ -1,0 +1,138 @@
+{
+  "draft_version": "v3",
+  "checked_at": "2026-04-03T19:47:00+08:00",
+  "total_claims": 12,
+  "verified": 7,
+  "inaccurate": 2,
+  "localization": 3,
+  "unverifiable": 0,
+  "false": 0,
+  "pass": false,
+  "summary": "3项需本地化处理，2项数字存在小偏差（属行业常用约数，可酌情保留或修正），核心论点（Rasa 案例、数学原理、Magic Words Problem）均有实证支撑。",
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "Rasa——做AI对话系统的公司，服务过德国电信、DHL这种级别的客户",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "Deutsche Telekom 确认是 Rasa 客户，有官方 case study 背书。",
+        "DHL 未找到 Rasa 官方 case study 支撑——DHL 的 AI 对话系统合作商为 Cognigy.AI、HappyRobot 等，并非 Rasa。Rasa 官方客户页面和搜索结果中未列出 DHL。",
+        "Rasa 博文原文提到的是 'Hans Joachim Belz，builds AI agents for Deutsche Telekom, E.ON, and DHL'——这是一位外部顾问/工程师为这三家公司构建 agent，并非 DHL 是 Rasa 直接客户。"
+      ],
+      "correction": "建议改为："Rasa——做AI对话系统的公司，服务过德国电信、E.ON等企业级客户"，或更保守表述为"服务过德国电信这种级别的客户"。DHL 不应被列为 Rasa 直接客户。",
+      "source": "Rasa 官方工程博客 + Rasa 客户页面 + DHL AI 合作商报道",
+      "source_url": "https://rasa.com/blog/ai-agent-demo-four-months-to-production"
+    },
+    {
+      "id": 2,
+      "original_text": "他们在官方工程博客里写过一篇很坦诚的复盘：搭一个令人印象深刻的AI agent demo，2小时够了；让它在真实用户面前可靠运行，花了4个月。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "Rasa 官方工程博客《Why Your AI Agent Demo Takes Four Months to Reach Production》",
+      "source_url": "https://rasa.com/blog/ai-agent-demo-four-months-to-production"
+    },
+    {
+      "id": 3,
+      "original_text": "是生产环境暴露了数百个没预想到的边界情况",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "Rasa 博文原文：'Production fails because you discover hundreds of places where subtle misalignment creates problems you never anticipated'",
+      "source_url": "https://rasa.com/blog/ai-agent-demo-four-months-to-production"
+    },
+    {
+      "id": 4,
+      "original_text": "软件测试里有个经典方法叫"边界值分析"——为什么要专门发明这种技术？因为几十年的工程经验告诉我们，错误最喜欢藏在边界上。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "边界值分析（BVA）是公认的软件测试经典技术，最早由 Glenford J. Myers 在 1979 年《The Art of Software Testing》中系统描述，核心前提正是"错误更容易出现在边界处"。",
+      "source_url": "https://en.wikipedia.org/wiki/Boundary-value_analysis"
+    },
+    {
+      "id": 5,
+      "original_text": "99%的可靠性，一年停机约87小时",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "365天×24小时×1%=87.6小时，文中用'约'修饰，属合理近似值。",
+      "source_url": "https://onlineornot.com/uptime-calculator"
+    },
+    {
+      "id": 6,
+      "original_text": "99.9%，一年只停8.7小时",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "精确值为 8.76小时（365×24×0.1%），四舍五入应为 8.8小时，非 8.7小时。",
+        "8.7 是截断取整（floor），不是四舍五入，轻微低估实际停机时间。"
+      ],
+      "correction": "建议改为"约8.8小时"（8.76小时四舍五入）。若希望保留约数风格，可写"不到9小时"。注：部分行业资料确实使用8.7这一近似，不算严重错误，但严格来说偏低。",
+      "source": "标准 SRE/SLA 计算：365×24×0.001=8.76h",
+      "source_url": "https://onlineornot.com/uptime-calculator/three-nines"
+    },
+    {
+      "id": 7,
+      "original_text": "99.99%，一年52分钟",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "365×24×60×0.0001=52.56分钟，约52分钟，与行业通用引用值（52.6分钟≈52分钟）一致，属正常近似。",
+      "source_url": "https://onlineornot.com/uptime-calculator"
+    },
+    {
+      "id": 8,
+      "original_text": "一个流程20个步骤，每步成功率95%……整体成功率？0.95的20次方，约等于36%。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "数学验证：0.95^20 = 0.3585 ≈ 35.85%，约等于36%，完全正确。",
+      "source_url": "数学计算"
+    },
+    {
+      "id": 9,
+      "original_text": "Rasa的工程师管这叫"Magic Words Problem"",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "Rasa 官方博客原文明确使用 'magic words problem' 术语，来源于 Hans Joachim Belz 的工程实践访谈。",
+      "source_url": "https://rasa.com/blog/ai-agent-demo-four-months-to-production"
+    },
+    {
+      "id": 10,
+      "original_text": "Rasa",
+      "verdict": "⚠️ LOCALIZATION",
+      "issues": [
+        "Rasa 是公司/产品名，在微信公众号正文中裸英文出现。按本地化规则，机构/产品名应本地化或首次出现时加注中文说明。",
+        "文中已有说明语境（'Rasa——做AI对话系统的公司'），算部分处理，但多处仅出现英文名而无中文对照。"
+      ],
+      "correction": "首次出现时写为"Rasa（一家专注AI对话系统的公司）"，后续可简称"Rasa"。或全文统一写为"Rasa对话AI"。注：Rasa 无通行中文译名，保留英文名+首次加注是标准做法。",
+      "source": "本地化规则",
+      "source_url": ""
+    },
+    {
+      "id": 11,
+      "original_text": "换了GPT-5还是Claude 4",
+      "verdict": "⚠️ LOCALIZATION",
+      "issues": [
+        "GPT-5 和 Claude 4 是产品名，按本地化规则属于"产品/品牌名"，中文语境中应加注或本地化说明。",
+        "GPT-5 为 OpenAI 产品，Claude 4 为 Anthropic 产品，两者作为举例用法，裸英文出现在微信公众号正文中不符合规则。"
+      ],
+      "correction": "建议改为："换了 GPT-5（OpenAI 最新大模型）还是 Claude 4（Anthropic 的旗舰模型）"；或在文章首次提及这两家公司时加注，后续直接使用英文名。若仅作技术术语列举，可在括号内加注品牌归属。",
+      "source": "本地化规则",
+      "source_url": ""
+    },
+    {
+      "id": 12,
+      "original_text": "从CDN到推荐算法到支付",
+      "verdict": "⚠️ LOCALIZATION",
+      "issues": [
+        "CDN（内容分发网络）是技术缩写，微信公众号面向大众读者，首次出现应加注中文全称或说明。",
+        "相比 GPT-5/Claude 4，CDN 属于技术术语（非专有机构/产品名），可适当放行，但加注对非技术读者更友好。"
+      ],
+      "correction": "建议改为"从CDN（内容分发网络）到推荐算法到支付"；或直接改为"从内容分发网络到推荐算法到支付"。注：CDN 相对普及，如目标读者为技术圈可豁免，但此文受众为大众，建议加注。",
+      "source": "本地化规则",
+      "source_url": ""
+    }
+  ]
+}

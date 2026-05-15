@@ -1,0 +1,67 @@
+{
+  "draft_version": "v2-corrected",
+  "checked_at": "2026-03-31T08:32:00+08:00",
+  "total_claims": 7,
+  "verified": 7,
+  "inaccurate": 0,
+  "unverifiable": 0,
+  "false": 0,
+  "pass": true,
+  "corrections_resolved": [
+    {
+      "id": "C3",
+      "description": "mutagent.io 数据修正",
+      "original": "生产环境中 Agent 的有效性普遍卡在 60-70%",
+      "corrected": "超过 60% 的 Agent 无法应对生产环境中的边缘情况",
+      "status": "resolved",
+      "note": "与官网 '62% can't handle edge cases' 吻合；定性改为 'Agent 优化工具 mutagent.io'，无过度宣传。"
+    },
+    {
+      "id": "C4",
+      "description": "漏水船比喻去除引号归因",
+      "original": "带引号暗示第三方来源",
+      "corrected": "作者自述，无引号，无归因",
+      "status": "resolved",
+      "note": "文中 '靠逐个修 prompt 来救场，就像在一艘漏水的船上一个一个补洞。' 已为作者陈述，无须外部来源背书。"
+    },
+    {
+      "id": "C5",
+      "description": "carsonroelldebug 精确时间软化",
+      "original": "3个小时",
+      "corrected": "好几个小时",
+      "status": "resolved",
+      "note": "精确数字已移除，表述更稳健。"
+    },
+    {
+      "id": "C6",
+      "description": "carsonroelldebug 引语加大意标注",
+      "original": "直接引用，无标注",
+      "corrected": "加了 '（大意）' 前缀",
+      "status": "resolved",
+      "note": "转述风险已消除。"
+    },
+    {
+      "id": "C7",
+      "description": "browser-use 和 Gemini CLI 首次出现中文注释",
+      "original": "首次出现无解释",
+      "corrected": "browser-use（一款浏览器自动化 Agent 框架）；Gemini CLI（谷歌 AI 命令行工具）",
+      "status": "resolved",
+      "note": "两处首次出现均已添加括号注释，中文读者友好。"
+    }
+  ],
+  "remaining_issues": [],
+  "previously_verified": [
+    {
+      "id": "C1",
+      "description": "browser-use issue #1157 存在且描述为无限循环/状态感知失败",
+      "status": "verified_in_v1",
+      "note": "上轮已核实，本轮无需重复搜索。"
+    },
+    {
+      "id": "C2",
+      "description": "Gemini CLI issue #16982 存在且描述为工具输出未回传 context（phantom execution）",
+      "status": "verified_in_v1",
+      "note": "上轮已核实，本轮无需重复搜索。"
+    }
+  ]
+}

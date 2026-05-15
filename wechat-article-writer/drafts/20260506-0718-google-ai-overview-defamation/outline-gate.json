@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "hard_fail": false,
+  "scope": "outline_shape_only",
+  "change_reason": "pre-writer outline gate; fail if outline still carries backstage cues",
+  "updated_at": "2026-05-05T23:22:40Z",
+  "issues": [],
+  "repair_direction": "move backstage cues into writer-lite-brief or delete them; keep outline.md prose-safe only"
+}

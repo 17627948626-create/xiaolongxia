@@ -1,0 +1,8 @@
+{
+  "backend": "openclaw-subagent",
+  "model": "openai-codex/gpt-5.4",
+  "phase": "revise",
+  "source_draft": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260411-2000-glm51-open-agent-workday/draft.md",
+  "source_review": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260411-2000-glm51-open-agent-workday/review-v1.json",
+  "generated_at": "2026-04-11T20:14:30+08:00"
+}

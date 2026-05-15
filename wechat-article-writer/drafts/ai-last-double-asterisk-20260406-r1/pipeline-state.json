@@ -1,0 +1,338 @@
+{
+  "angle": "从今晚真实发生的 `**` 泄漏事故切入，指出格式兼容不是排版小事，而是内容正确性的一部分；真正把 demo 变成生产系统的，是把这些容易丢脸的小契约提前写死。",
+  "appmsgid": 100000143,
+  "article_type": "观点",
+  "artifact_provenance": {
+    "draft-v2.md": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:f9125a62-801d-4767-9686-5a252e8e3711"
+    },
+    "draft-v3.md": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:861716a5-2a9d-4681-b3bd-af1f2f1b8b6a"
+    },
+    "draft-v4.md": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a2dc57ff-f847-4c55-859d-263910fb8738"
+    },
+    "draft.md": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:2c6671ac-9b65-4ed1-9894-ce9d07341d81"
+    },
+    "fact-check-v1.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "fact_checker",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:45071c75-920f-49f2-a9b0-0e13ce0118fb"
+    },
+    "fact-check-v2.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "fact_checker",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e611c119-f231-4d23-a256-b2ee7669ef13"
+    },
+    "final-layout.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:9541f139-80c7-4bea-a722-01d6ba8cc912"
+    },
+    "final.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e72ee480-8aa3-4cc0-9868-50c98110e39f"
+    },
+    "outline.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a0d4606a-983a-4efe-a952-5fb43d8817c4"
+    },
+    "research.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a0d4606a-983a-4efe-a952-5fb43d8817c4"
+    },
+    "review-spot.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e78eee3e-935e-4348-bcb0-d05f11bfa8af"
+    },
+    "review-v1.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:b9942e39-347f-4b76-b441-75874e33380b"
+    },
+    "review-v2.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:cc6437cf-e05d-4116-9d83-c7c77c060da0"
+    },
+    "review-v3.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:c751419d-6bd0-4940-940b-03c05f2599e3"
+    },
+    "title-final.txt": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e72ee480-8aa3-4cc0-9868-50c98110e39f"
+    },
+    "title-layout.txt": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:9541f139-80c7-4bea-a722-01d6ba8cc912"
+    },
+    "title-v2.txt": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:f9125a62-801d-4767-9686-5a252e8e3711"
+    },
+    "title-v3.txt": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:861716a5-2a9d-4681-b3bd-af1f2f1b8b6a"
+    },
+    "title-v4.txt": {
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a2dc57ff-f847-4c55-859d-263910fb8738"
+    }
+  },
+  "blocking": {
+    "blocking_since": "2026-04-06T20:54:45+08:00",
+    "current_step": "reader_side_in_review",
+    "note": "WeChat login scan required before formal publish",
+    "phase": "resolved",
+    "qr_updated_at": "2026-04-06T20:54:45+08:00",
+    "required_user_action": null,
+    "safe_check_qr_path": "/root/.openclaw/media/wechat-safe-check/evening-write-20260406-200924-r1/safe-check.png",
+    "step": 8,
+    "waiting_for": null
+  },
+  "blocking_since": "2026-04-06T20:54:45+08:00",
+  "boss_notified_at": "2026-04-06T21:06:42.003008+08:00",
+  "children": {
+    "fact_checker": [
+      {
+        "artifacts": [
+          "fact-check-v1.json"
+        ],
+        "label": "fact-checker-ai-last-double-asterisk-20260406-r1-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:45071c75-920f-49f2-a9b0-0e13ce0118fb",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "fact-check-v2.json"
+        ],
+        "label": "fact-checker-ai-last-double-asterisk-20260406-r1-v2",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e611c119-f231-4d23-a256-b2ee7669ef13",
+        "status": "done"
+      }
+    ],
+    "humanizer": [
+      {
+        "artifacts": [
+          "final.md",
+          "title-final.txt"
+        ],
+        "label": "humanizer-ai-last-double-asterisk-20260406-r1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e72ee480-8aa3-4cc0-9868-50c98110e39f",
+        "status": "done"
+      }
+    ],
+    "layout": [
+      {
+        "artifacts": [
+          "final-layout.md",
+          "title-layout.txt"
+        ],
+        "label": "layout-ai-last-double-asterisk-20260406-r1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:9541f139-80c7-4bea-a722-01d6ba8cc912",
+        "status": "done"
+      }
+    ],
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ],
+        "label": "researcher-ai-last-double-asterisk-20260406-r1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:a0d4606a-983a-4efe-a952-5fb43d8817c4",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "review-v1.json"
+        ],
+        "label": "reviewer-ai-last-double-asterisk-20260406-r1-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:b9942e39-347f-4b76-b441-75874e33380b",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-v2.json"
+        ],
+        "label": "reviewer-ai-last-double-asterisk-20260406-r1-v2",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:cc6437cf-e05d-4116-9d83-c7c77c060da0",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-v3.json"
+        ],
+        "label": "reviewer-ai-last-double-asterisk-20260406-r1-v3",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:c751419d-6bd0-4940-940b-03c05f2599e3",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-spot.json"
+        ],
+        "label": "reviewer-ai-last-double-asterisk-20260406-r1-spot",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e78eee3e-935e-4348-bcb0-d05f11bfa8af",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "draft.md"
+        ],
+        "label": "writer-ai-last-double-asterisk-20260406-r1-v1",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:2c6671ac-9b65-4ed1-9894-ce9d07341d81",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v2.md",
+          "title-v2.txt"
+        ],
+        "label": "writer-ai-last-double-asterisk-20260406-r1-v2",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:f9125a62-801d-4767-9686-5a252e8e3711",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v3.md",
+          "title-v3.txt"
+        ],
+        "label": "writer-ai-last-double-asterisk-20260406-r1-v3",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:861716a5-2a9d-4681-b3bd-af1f2f1b8b6a",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v4.md",
+          "title-v4.txt"
+        ],
+        "label": "writer-ai-last-double-asterisk-20260406-r1-factfix",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:a2dc57ff-f847-4c55-859d-263910fb8738",
+        "status": "done"
+      }
+    ]
+  },
+  "control_plane_sync": "complete",
+  "cover_audit": {
+    "mode": "fallback",
+    "reason": "time_tight_orchestrator_fast_path",
+    "relevance": 6,
+    "safe": true
+  },
+  "cover_style": "from_content",
+  "cover_url": "https://picsum.photos/1200/800",
+  "current_step": "reader_side_in_review",
+  "draft_saved_at": "2026-04-06T20:54:30+08:00",
+  "error": null,
+  "handoff": {
+    "boss_notified_at": "2026-04-06T21:06:42.003008+08:00",
+    "relay_dedupe_key": "evening-write-20260406-200924-r1:login_scan:1",
+    "relay_status": "completed_by_parent"
+  },
+  "html_rendered": false,
+  "last_clean_step": "fact_checker",
+  "last_draft_file": "draft-v4.md",
+  "last_progress_at": "2026-04-06T12:56:13Z",
+  "last_review_file": "review-spot.json",
+  "last_score": 8.54,
+  "last_transition_at": "2026-04-06T12:56:13Z",
+  "lineage_status": "clean",
+  "max_revisions": 3,
+  "media_id": "7NYHnQxN70EpaLx4Jh0kyhJu65_VfQrZa2F0hfZR0o2WUVKofDh6ajWA2qNSP5Xm",
+  "min_dimension": 6,
+  "note": "Parent verified home recent publish status = 等候发表",
+  "pass_threshold": 8.2,
+  "pending_action": null,
+  "phase": "published",
+  "profile": "小龙虾有话说",
+  "published": false,
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "purpose": "借一个具体的 `**` 泄漏事故，让普通读者看懂：AI 内容生产里，格式兼容本身就是内容可靠性，不是最后润色的小问题。",
+  "qr_updated_at": "2026-04-06T20:54:45+08:00",
+  "relay_dedupe_key": "evening-write-20260406-200924-r1:login_scan:1",
+  "relay_status": "completed_by_parent",
+  "repair_attempts": 0,
+  "required_user_action": null,
+  "revision_cycle": 2,
+  "run_id": "evening-write-20260406-200924-r1",
+  "run_lock_path": "/root/.openclaw/workspace-xiaolongxia/runtime/evening-run.lock.json",
+  "safe_check_qr_path": "/root/.openclaw/media/wechat-safe-check/evening-write-20260406-200924-r1/safe-check.png",
+  "selected_thesis": "今晚这次 `**` 泄漏说明，AI 内容生产里最容易丢脸的，往往不是模型不会写，而是输出经过 Markdown、渲染器和发布平台时，那些没人当回事的小格式契约没有被写死。格式兼容不是排版末梢，而是内容正确性本身。",
+  "slug": "ai-last-double-asterisk-20260406-r1",
+  "source_mode": "fresh",
+  "step": 8,
+  "subagent_label": "layout-ai-last-double-asterisk-20260406-r1",
+  "subagent_status": "done",
+  "title": "AI 写得再好，也可能毁在最后一个 `**` 上",
+  "topic": "AI 内容生产里的格式兼容事故与渲染契约",
+  "updated_at": "2026-04-06T21:06:42.003008+08:00",
+  "waiting_for": null,
+  "wenyan_push_status": "success",
+  "resume_context": {
+    "browser_session": "default",
+    "current_url": "https://mp.weixin.qq.com/",
+    "appmsgid": null,
+    "token": null,
+    "draft_title": "AI写作写得再好，也可能毁在最后一个 `**` 上",
+    "media_id": "7NYHnQxN70EpaLx4Jh0kyhJu65_VfQrZa2F0hfZR0o2WUVKofDh6ajWA2qNSP5Xm",
+    "detected_at": "2026-04-06T20:54:50+08:00"
+  },
+  "reader_side_status": "等候发表",
+  "finished_at": "2026-04-06T21:06:42.003008+08:00"
+}

@@ -1,0 +1,33 @@
+{
+  "draft_version": "draft-v1",
+  "generated_at": "2026-04-21T13:16:17Z",
+  "updated_at": "2026-04-21T13:16:17Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260421-2000-frontier-model-distillation-war/draft.md",
+    "draft_sha256": "7dfcebd26a6bebe958d63a5adc4e9a2bf55d66dcd9632bb2248e4804673c4352",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260421-2000-frontier-model-distillation-war/writer-lite-brief.json",
+    "brief_sha256": "cccca643520a07001eeda781d93f6e970e4ecde4b8d95dd7647d453dfafe7c81",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260421-2000-frontier-model-distillation-war/research.json",
+    "research_sha256": "820f29e95152995445241fd8da58d5c0ced9c6c020bf26cadb2051939a1cc389"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

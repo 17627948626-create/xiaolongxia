@@ -1,0 +1,117 @@
+{
+  "title_direction": "OpenAI、Google、Anthropic 罕见联手，前沿模型开始先防同行偷师了",
+  "topic": "OpenAI、Google、Anthropic 罕见联手围堵模型偷师",
+  "purpose": "借 OpenAI、Google、Anthropic 罕见联手围堵 adversarial distillation，写清前沿模型竞争正在从拼谁更强，转向拼谁能防自己的强能力被低成本复制。",
+  "why_now": "2026年4月上旬，OpenAI、Google、Anthropic 通过 Frontier Model Forum 平台公开联手，将 adversarial distillation（对抗性蒸馏）列为前沿模型安全与国家安全问题，不再只是商业纠纷。这是三家长期激烈竞争的 AI 巨头首次公开协作对抗模型能力被低成本复制，标志着 AI 竞争进入新阶段。",
+  "thesis_seed": "AI 竞争正在从『谁最强』转向『谁能防别人把你的强能力低成本抄走』；接口本身开始变成护城河与边界。",
+  "anchors": [
+    {
+      "url": "https://www.frontiermodelforum.org/issue-briefs/issue-brief-adversarial-distillation/",
+      "title": "Adversarial Distillation - Frontier Model Forum",
+      "date": "2026-04-06",
+      "type": "primary_source",
+      "relevance": "Frontier Model Forum（OpenAI、Google、Anthropic、Microsoft 共同成立）发布的技术简报，定义 adversarial distillation 为前沿模型安全威胁，详述攻击方法（Chain-of-Thought 提取、合成数据生成等）与目标能力（数学推理、代理编码、多模态处理）。",
+      "confidence": "high"
+    },
+    {
+      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "title": "Detecting and preventing distillation attacks - Anthropic",
+      "date": "2026-04-07",
+      "type": "primary_source",
+      "relevance": "Anthropic 披露三家中国 AI 实验室（DeepSeek、Moonshot、MiniMax）通过数万个欺诈账户对 Claude 进行工业级蒸馏攻击，提取代理推理、工具使用、编码等核心能力，涉及超过 1600 万次交换。",
+      "confidence": "high"
+    },
+    {
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/distillation-experimentation-integration-ai-adversarial-use",
+      "title": "GTIG AI Threat Tracker: Distillation, Experimentation, and (Continued) Integration of AI for Adversarial Use - Google",
+      "date": "2026-04-08",
+      "type": "primary_source",
+      "relevance": "Google 威胁情报组报告 2025 年第四季度 model extraction attacks（蒸馏攻击）增加，点名来自全球私营企业和研究者的攻击，并强调违反 Google 服务条款。",
+      "confidence": "high"
+    },
+    {
+      "url": "https://builtin.com/articles/openai-google-anthropic-ai-model-theft-china",
+      "title": "America's Biggest AI Players Are Teaming Up to Block Chinese Model Theft - Built In",
+      "date": "2026-04-09",
+      "type": "secondary_report",
+      "relevance": "报道 OpenAI、Anthropic、Google 通过 Frontier Model Forum 共享情报对抗中国竞争对手的 adversarial distillation，指出这可能导致更严格的模型发布限制和法规，国家安全考量优先于全球协作。",
+      "confidence": "medium"
+    },
+    {
+      "url": "https://www.technobezz.com/news/openai-anthropic-and-google-share-intelligence-to-counter-chinese-ai-copying",
+      "title": "OpenAI, Anthropic, and Google Share Intelligence to Counter Chinese AI Copying - Technobezz",
+      "date": "2026-04-07",
+      "type": "secondary_report",
+      "relevance": "确认三家巨头通过 Frontier Model Forum 共享情报检测中国竞争对手通过 adversarial distillation 提取专有 AI 能力。",
+      "confidence": "medium"
+    }
+  ],
+  "fact_records": [
+    {
+      "id": "fact-1",
+      "kind": "primary_statement",
+      "content": "Frontier Model Forum（由 OpenAI、Google、Anthropic、Microsoft 于 2023 年共同成立）于 2026 年 4 月 6 日发布 issue brief on adversarial distillation，将其列为前沿模型安全与国家安全风险。",
+      "source": "https://www.frontiermodelforum.org/issue-briefs/issue-brief-adversarial-distillation/",
+      "observed_at": "2026-04-06"
+    },
+    {
+      "id": "fact-2",
+      "kind": "primary_statement",
+      "content": "Anthropic 于 2026 年 4 月 7 日发布博客文章，披露 DeepSeek、Moonshot、MiniMax 三家中国 AI 实验室通过约 24,000 个欺诈账户对 Claude 进行工业级蒸馏攻击，生成超过 1600 万次交换，提取代理推理、工具使用、编码等核心能力。",
+      "source": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "observed_at": "2026-04-07"
+    },
+    {
+      "id": "fact-3",
+      "kind": "primary_statement",
+      "content": "Google Threat Intelligence Group 在 2026 年 4 月 8 日的报告中指出，2025 年第四季度 model extraction attacks（蒸馏攻击）增加，违反 Google 服务条款，并已采取检测、干扰和缓解措施。",
+      "source": "https://cloud.google.com/blog/topics/threat-intelligence/distillation-experimentation-integration-ai-adversarial-use",
+      "observed_at": "2026-04-08"
+    },
+    {
+      "id": "fact-4",
+      "kind": "event_timing",
+      "content": "多家媒体（Technobezz、Roborhythms、LetsDataScience、AFR、BuiltIn）在 2026 年 4 月 7-9 日报道 OpenAI、Google、Anthropic 通过 Frontier Model Forum 共享情报对抗中国竞争对手的 adversarial distillation。",
+      "source": "Search results from DuckDuckGo",
+      "observed_at": "2026-04-07"
+    },
+    {
+      "id": "fact-5",
+      "kind": "definition",
+      "content": "Adversarial distillation：攻击者仅通过模型输出（而非内部权重）训练学生模型以复制教师模型能力的技术。合法蒸馏常见于创建更小、更便宜的模型版本，但对抗性蒸馏用于未经授权的能力复制，可能绕过安全措施。",
+      "source": "Frontier Model Forum issue brief",
+      "observed_at": "2026-04-06"
+    }
+  ],
+  "timeline": [
+    "2023-07-26: OpenAI、Google、Anthropic、Microsoft 共同成立 Frontier Model Forum",
+    "2025-Q4: Google 观察到蒸馏攻击增加",
+    "2026-04-06: Frontier Model Forum 发布 adversarial distillation 技术简报",
+    "2026-04-07: Anthropic 披露中国 AI 实验室蒸馏攻击细节",
+    "2026-04-07-09: 多家媒体报道三家巨头联手对抗模型复制",
+    "2026-04-08: Google 发布威胁情报报告确认蒸馏攻击趋势"
+  ],
+  "key_entities": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Frontier Model Forum",
+    "DeepSeek",
+    "Moonshot AI (Kimi)",
+    "MiniMax",
+    "中国 AI 实验室"
+  ],
+  "key_concepts": [
+    "Adversarial distillation / 对抗性蒸馏",
+    "Model extraction attacks / 模型提取攻击",
+    "Chain-of-Thought exfiltration / 思维链提取",
+    "Synthetic data generation / 合成数据生成",
+    "Capability replication / 能力复制",
+    "National security vs. open collaboration / 国家安全 vs 开放协作"
+  ],
+  "reroute_suggestion": null,
+  "evidence_strength": "strong",
+  "timeliness": "excellent",
+  "notes": "主入口证据稳固：三家巨头通过 Frontier Model Forum 公开联手对抗 adversarial distillation 有多个独立源（FMF 技术简报、Anthropic 博客、Google 报告、多家媒体报道）。时间窗口为最近两周内，符合热点要求。不需要换题。"
+}

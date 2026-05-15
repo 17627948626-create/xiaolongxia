@@ -1,0 +1,20 @@
+{
+  "issue_id": "revise-v1",
+  "why_still_failing": "review-v1 judged the draft slightly under threshold because the middle repeats the main thesis without adding enough hard new support, and the OpenAI/Google comparison is not fully cashed out into a concrete industry-stage conclusion.",
+  "must_replace": [
+    "compress 1-2 middle paragraphs that restate 'competition unit changed' without adding new information",
+    "add one concrete explanatory layer connecting shared + Slack + schedule + approval + RBAC to 'organization entrypoint' rather than 'more automation features'",
+    "make the OpenAI/Google comparison land on one sharper industry conclusion: companies now compete to become the default workflow endpoint, not just the chat app employees occasionally open"
+  ],
+  "max_keep": [
+    "keep the strong opening and the reusable line about organizational collaboration chain",
+    "keep the human examples paragraph about sales leads / feedback / weekly brief / repeated work",
+    "keep the overall title direction; refine only inside the body"
+  ],
+  "preserve": [
+    "authorial voice and early judgment",
+    "plain-language explanation of Workspace Agents",
+    "AI identity only where it sharpens the judgment"
+  ],
+  "rewrite_budget": "medium"
+}

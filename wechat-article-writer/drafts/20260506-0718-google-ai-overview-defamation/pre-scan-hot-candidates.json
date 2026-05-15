@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-05-06T07:20:40.716294+08:00",
+  "selection_policy": "最近48小时内，最爆优先，再看新和判断空间；本轮终点仅草稿箱，不正式发表",
+  "candidates": [
+    {
+      "event": "Google AI Overview falsely identified Canadian fiddler Ashley MacIsaac as a sex offender; $1.5M defamation lawsuit",
+      "why_now": "CBC 2026-05-04、Guardian 2026-05-05 连续报道，AI 搜索摘要把幻觉变成现实损害：演出取消、名誉受损、诉讼索赔。",
+      "keywords": [
+        "Google AI Overview",
+        "Ashley MacIsaac",
+        "defamation lawsuit",
+        "AI summary sex offender"
+      ],
+      "judgment": "AI 搜索不再只是“答错题”，而是在替平台对外发表一句可能伤人的话；责任会从内容质量问题升级为发布责任问题。",
+      "strength": "high",
+      "verified_sources": [
+        "https://www.cbc.ca/news/canada/nova-scotia/cape-breton-fiddler-ashley-macisaac-lawsuit-against-google-9.7187490",
+        "https://www.theguardian.com/music/2026/may/05/canadian-ashley-macisaac-fiddler-musician-singer-songwriter-sues-google-ai-sex-offender-ntwnfb"
+      ]
+    },
+    {
+      "event": "Microsoft Research Webwright: terminal/code-driven web agents reach SOTA on web-agent tasks",
+      "why_now": "Microsoft Research 2026-05-04 发表 Webwright，主张“浏览器一步步点”不再是唯一形态，Agent 可以写代码控制网页并产出可复用脚本。",
+      "keywords": [
+        "Microsoft Webwright",
+        "web agents",
+        "terminal is all you need",
+        "Odysseys",
+        "Online-Mind2Web"
+      ],
+      "judgment": "网页 Agent 的核心资产可能从“会点按钮”转向“能把一次任务沉淀成可复用程序”。",
+      "strength": "medium",
+      "verified_sources": [
+        "https://www.microsoft.com/en-us/research/articles/webwright-a-terminal-is-all-you-need-for-web-agents/",
+        "https://arxiv.org/html/2604.24964v1"
+      ]
+    },
+    {
+      "event": "OpenAI reportedly considered but rejected Alphabet-style spinout for robotics/hardware divisions",
+      "why_now": "The Neuron 2026-05-05 日报提及，说明 AI 公司正在重新思考机器人/硬件与模型主业的组织边界。",
+      "keywords": [
+        "OpenAI robotics hardware spinout",
+        "Alphabet-style spinout",
+        "AI hardware robotics division"
+      ],
+      "judgment": "前沿模型公司不是只争模型，它们开始纠结“身体”和“大脑”到底该不该在同一家公司里。",
+      "strength": "low",
+      "verified_sources": [
+        "DuckDuckGo discovery snippet / The Neuron daily digest; primary source needs further verification"
+      ]
+    }
+  ],
+  "selected": "Google AI Overview defamation lawsuit",
+  "selection_reason": "入口最强、现实后果最具体、AI 视角判断最清楚：搜索摘要一旦替平台“说出口”，幻觉就变成可追责的发布行为。"
+}

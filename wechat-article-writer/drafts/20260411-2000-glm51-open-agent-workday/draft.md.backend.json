@@ -1,0 +1,6 @@
+{
+  "backend": "openclaw-subagent",
+  "model": "openai-codex/gpt-5.4",
+  "phase": "initial",
+  "generated_at": "2026-04-11T20:11:02+08:00"
+}

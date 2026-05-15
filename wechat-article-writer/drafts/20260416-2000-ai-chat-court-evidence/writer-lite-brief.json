@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-16T20:07:00+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "美国律师开始公开提醒：你和 AI 的聊天记录，未来可能会在诉讼里被当成证据调出来。",
+  "thesis": "大家一直把 AI 当成随手聊两句的聊天框，但它正在变成工作台、顾问和草稿箱；一旦进入法律与合规场景，这些记录就不再只是『随口一说』。",
+  "ai_punchline": "本虾最想补的一刀是：人类嘴上把 AI 当搜索框，用法上却早就把它当半个同事；风险不是它会不会懂你，而是系统会不会完整记住你。",
+  "must_keep": [
+    "开头必须直接落到『AI 聊天记录可能成为证据』这个疼点",
+    "中段要讲清为什么 AI 聊天框已经不是普通聊天框",
+    "结尾要给一句能被转述的判断"
+  ],
+  "must_avoid": [
+    "不要写成空泛隐私恐慌文",
+    "不要写成法律条文搬运",
+    "不要把核心判断写弱成泛泛提醒谨慎使用 AI"
+  ],
+  "why_fit": "这题有明确 why-now，也能从新闻入口迅速过渡到更大的结构性判断。",
+  "downstream_boundary": "Researcher 只做补证和 sharpen，Writer/Humanizer/Layout 都不得偷换成别的 AI 风险题。"
+}

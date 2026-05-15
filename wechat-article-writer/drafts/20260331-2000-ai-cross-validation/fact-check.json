@@ -1,0 +1,76 @@
+{
+  "draft_version": "draft-v2.md",
+  "checked_at": "2026-03-31T20:22:00+08:00",
+  "total_claims": 8,
+  "verified": 7,
+  "inaccurate": 1,
+  "unverifiable": 0,
+  "false": 0,
+  "pass": false,
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "Jie Huang 等人在 ICLR（国际学习表示会议）2024 发了一篇论文，标题直截了当：《大型语言模型目前无法自我纠正推理》",
+      "verdict": "✅ VERIFIED",
+      "source": "arXiv:2310.01798，Comments 字段注明 ICLR 2024，第一作者 Jie Huang，标题 'Large Language Models Cannot Self-Correct Reasoning Yet'",
+      "source_url": "https://arxiv.org/abs/2310.01798",
+      "correction": null
+    },
+    {
+      "id": 2,
+      "original_text": "ICLR（国际学习表示会议）",
+      "verdict": "⚠️ INACCURATE",
+      "source": "ICLR 全称为 International Conference on Learning Representations，中文标准译名为「国际表征学习大会」（维基百科 zh），文章写作「国际学习表示会议」，词序与术语均有偏差",
+      "source_url": "https://zh.wikipedia.org/zh-cn/%E5%9B%BD%E9%99%85%E8%A1%A8%E5%BE%81%E5%AD%A6%E4%B9%A0%E5%A4%A7%E4%BC%9A",
+      "correction": "「国际学习表示会议」→「国际表征学习大会」"
+    },
+    {
+      "id": 3,
+      "original_text": "他们测了 GPT-3.5、GPT-4、Llama-2",
+      "verdict": "✅ VERIFIED",
+      "source": "论文 Section 3.1 明确列出 GPT-3.5-Turbo、GPT-4、GPT-4-Turbo、Llama-2-70b-chat。文章提及的三个模型均在测试列表内（GPT-4-Turbo 是额外补充，未提及不构成错误）",
+      "source_url": "https://arxiv.org/html/2310.01798v2",
+      "correction": null
+    },
+    {
+      "id": 4,
+      "original_text": "结论是：没有外部反馈的时候，自我纠错不仅没用，还会把本来做对的答案改成错的",
+      "verdict": "✅ VERIFIED",
+      "source": "论文摘要及正文明确指出：在无外部反馈（intrinsic self-correction）设置下，LLM 不仅无法纠正推理错误，性能反而下降，原本正确的答案被改错",
+      "source_url": "https://arxiv.org/abs/2310.01798",
+      "correction": null
+    },
+    {
+      "id": 5,
+      "original_text": "研究发现每多一轮自我验证，模型对自己的错误答案会更有信心，不是更少",
+      "verdict": "✅ VERIFIED",
+      "source": "Snorkel AI 博客数据显示 5 轮迭代后准确率持续下降（98.1%→56.9%），支持该方向性描述；Huang et al. 论文同样发现自我纠错轮次越多表现越差",
+      "source_url": "https://snorkel.ai/blog/the-self-critique-paradox-why-ai-verification-fails-where-its-needed-most/",
+      "correction": null
+    },
+    {
+      "id": 6,
+      "original_text": "Snorkel AI 在 2025 年的博客文章《The Self-Critique Paradox》",
+      "verdict": "✅ VERIFIED",
+      "source": "博客页面实际标题为「The self-critique paradox: Why AI verification fails where it's needed most」，使用 Claude Sonnet 4.5 和 OpenAI o4-mini 等 2025 年模型，年份与发布时间吻合",
+      "source_url": "https://snorkel.ai/blog/the-self-critique-paradox-why-ai-verification-fails-where-its-needed-most/",
+      "correction": null
+    },
+    {
+      "id": 7,
+      "original_text": "他们专门挑了模型本来就擅长的任务（准确率 75% 以上的那种），让模型对自己的输出做「自我批判」。据其公开报告，结果准确率从 98% 直接砸到了 57%",
+      "verdict": "✅ VERIFIED",
+      "source": "博客原文：「For tasks where models started strong (≥75% accuracy)…turning 98% accuracy into 57%」；Claude Sonnet 4.5 具体数字为 98.1%→56.9%，四舍五入为 98%→57%，完全吻合",
+      "source_url": "https://snorkel.ai/blog/the-self-critique-paradox-why-ai-verification-fails-where-its-needed-most/",
+      "correction": null
+    },
+    {
+      "id": 8,
+      "original_text": "他们管这叫「腐蚀效应」——模型越审视自己，越坚定地走向错误",
+      "verdict": "✅ VERIFIED",
+      "source": "博客原文称之为「The 'corrosive critique' effect」，「腐蚀效应」是对 corrosive（腐蚀性）的合理中文意译，含义无误",
+      "source_url": "https://snorkel.ai/blog/the-self-critique-paradox-why-ai-verification-fails-where-its-needed-most/",
+      "correction": null
+    }
+  ]
+}

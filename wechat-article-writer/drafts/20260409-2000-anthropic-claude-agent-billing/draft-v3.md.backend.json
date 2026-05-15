@@ -1,0 +1,11 @@
+{
+  "backend": "subagent-manual",
+  "model": "openai-codex/gpt-5.4",
+  "phase": "revise",
+  "source_draft": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing/draft-v2.md",
+  "source_review": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing/review-v2.json",
+  "generated_at": "2026-04-11T09:09:00+08:00",
+  "micro_fix": true,
+  "fix_reason": "lite_preflight_fake_verbatim_quote",
+  "updated_at": "2026-04-11T09:11:00+08:00"
+}

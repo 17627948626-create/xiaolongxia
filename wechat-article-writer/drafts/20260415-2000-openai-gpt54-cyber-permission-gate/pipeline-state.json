@@ -1,0 +1,230 @@
+{
+  "article_type": "观点",
+  "artifact_provenance": {
+    "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/draft-v4.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:d58fab1a-6dcd-4f4f-bdc4-394d03b22e08"
+    },
+    "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/review-v3.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:f66e90f7-0fcf-49f3-aa4a-5d52a83433b7"
+    },
+    "final-layout.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a5a93de2-daaf-49aa-b2d7-ea47be2af4e6"
+    },
+    "final.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:deb69125-1a92-4fb1-9fa1-8e0beb18e3d4"
+    },
+    "outline.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:028d71fb-e8ac-48b6-91b5-783155926181"
+    },
+    "research.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:028d71fb-e8ac-48b6-91b5-783155926181"
+    }
+  },
+  "auto_revise_exhausted": true,
+  "children": {
+    "humanizer": [
+      {
+        "artifacts": [
+          "final.md"
+        ],
+        "label": "humanizer-openai-gpt54-cyber-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:deb69125-1a92-4fb1-9fa1-8e0beb18e3d4",
+        "status": "done"
+      }
+    ],
+    "layout": [
+      {
+        "artifacts": [
+          "final-layout.md"
+        ],
+        "label": "layout-openai-gpt54-cyber-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:a5a93de2-daaf-49aa-b2d7-ea47be2af4e6",
+        "status": "done"
+      }
+    ],
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ],
+        "label": "researcher-openai-gpt54-cyber-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:028d71fb-e8ac-48b6-91b5-783155926181",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/review-v3.json"
+        ],
+        "label": "reviewer-openai-gpt54-cyber-v3",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:f66e90f7-0fcf-49f3-aa4a-5d52a83433b7",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/draft-v4.md"
+        ],
+        "label": "writer-openai-gpt54-cyber-v4-surgical",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:d58fab1a-6dcd-4f4f-bdc4-394d03b22e08",
+        "status": "done"
+      }
+    ]
+  },
+  "cover_style": "unsplash_search",
+  "created_at": "2026-04-15T20:02:30+08:00",
+  "current_step": "reader_side_published",
+  "draft_version": "draft-v4",
+  "hot_topic_precheck": {
+    "event_name": "OpenAI GPT-5.4-Cyber",
+    "keywords": [
+      "OpenAI GPT-5.4-Cyber",
+      "Trusted Access for Cyber",
+      "cyber-permissive",
+      "binary reverse engineering",
+      "identity-based access control"
+    ],
+    "thesis_seed": "最危险的模型开始按资格发牌，模型竞争正在从能力竞赛变成权限竞赛。",
+    "why_now": "4 月 14 日刚宣布，属于最近 24 小时内的强入口；而且它把身份验证、trusted access、cyber-permissive 变成了发布正文。"
+  },
+  "last_clean_step": "layout",
+  "last_draft_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/draft-v4.md",
+  "last_final_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/final.md",
+  "last_layout_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/final-layout.md",
+  "last_review_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/review-v3.json",
+  "lineage": {
+    "artifact_provenance": {
+      "draft_md": {
+        "path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/draft.md",
+        "source_mode": "child_session",
+        "step": "writer"
+      },
+      "draft_v2_md": {
+        "path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/draft-v2.md",
+        "source_mode": "child_session",
+        "step": "writer_revision_v2"
+      },
+      "draft_v3_md": {
+        "path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/draft-v3.md",
+        "source_mode": "child_session",
+        "step": "writer_revision_v3"
+      }
+    },
+    "children": {
+      "researcher": {
+        "artifact_paths": {
+          "outline_gate_json": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/outline-gate.json",
+          "outline_md": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/outline.md",
+          "research_gate_json": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/research-gate.json",
+          "research_json": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/research.json"
+        },
+        "status": "completed"
+      }
+    }
+  },
+  "lineage_audited_at": "2026-04-15T13:03:45Z",
+  "lineage_status": "clean",
+  "lite_preflight": {
+    "binding_artifact": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/writer-lite-binding.json",
+    "binding_checked_at": "2026-04-15T12:51:41Z",
+    "binding_status": "rerun_completed",
+    "last_draft_file": "draft-v3.md",
+    "last_draft_sha256": "b396319d498560545aa30423b1716d655e76b0dc28278f8421437d60b37c57c9",
+    "last_draft_version": "draft-v3",
+    "latest_check_draft_sha256": "b396319d498560545aa30423b1716d655e76b0dc28278f8421437d60b37c57c9",
+    "latest_check_draft_version": "draft-v3",
+    "latest_check_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/writer-lite-check.json",
+    "match": true,
+    "previous_check_draft_sha256": "eb697857bbb87fae8bcbd30425e6ff4359d469598da881b10e6a2f6428fec052",
+    "previous_check_draft_version": "draft-v2",
+    "resolution": {
+      "action": "rerun_preflight",
+      "change_reason": "latest draft changed; refresh lite preflight binding",
+      "check_mode": "blocking",
+      "check_output_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/writer-lite-check.json",
+      "completed_at": "2026-04-15T12:51:41Z"
+    },
+    "waiver": null
+  },
+  "manual_release_note": "老板于 2026-04-15 指定本次通过线调整为 7.8；draft-v4 定点修整后按 7.8 放行进入 humanize。",
+  "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+  "mcp_server": "wenyan-mcp",
+  "next_action": "restart_from_fresh_first_draft_branch",
+  "phase": "published",
+  "profile": "小龙虾有话说",
+  "publish_candidate": "final-layout.md",
+  "publish_profile_preflight": {
+    "checked_at": "2026-04-15T13:04:12Z",
+    "default_theme": "sspai",
+    "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+    "mcp_server": "wenyan-mcp",
+    "profile": "小龙虾有话说",
+    "publish_md_checked": true,
+    "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+    "publisher_mode": "remote",
+    "status": "ok",
+    "wechat_author": "小龙虾有话说",
+    "wenyan_mcp_present": true
+  },
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "publisher_mode": "remote",
+  "purpose": "借 OpenAI 给 GPT-5.4-Cyber 加上 Trusted Access 和身份验证这件事，写清前沿模型竞争正在从拼能力，转向拼分发权与权限控制。",
+  "repair_action": null,
+  "required_user_action": null,
+  "review_pass_threshold": 8.2,
+  "review_pass_threshold_effective": 7.8,
+  "revision_cycle": 2,
+  "run_id": "cron-2026-04-15-evening-1",
+  "schema_version": "2026-04-09.lineage-v2",
+  "slug": "20260415-2000-openai-gpt54-cyber-permission-gate",
+  "state": "done",
+  "step": 1,
+  "title_direction": "OpenAI 把最危险的模型先发给安全圈，这场仗开始比谁有资格用了",
+  "topic": "OpenAI GPT-5.4-Cyber 受限放出，前沿模型开始按资格发牌",
+  "updated_at": "2026-04-15T21:52:20+08:00",
+  "waiting_for": null,
+  "wechat_author": "小龙虾有话说",
+  "writer_backend": "kimi-cli",
+  "writer_failure": {
+    "backend": "kimi-cli",
+    "fallback": "deepseek/deepseek-chat",
+    "reason": "Cannot connect to Kimi CDP tunnel on port 9224. Is Chrome debug instance running on XPS?"
+  },
+  "writer_failure_2": {
+    "backend": "deepseek/deepseek-chat",
+    "reason": "writer subagent timed out before writing draft.md"
+  },
+  "writer_model_fallback": "deepseek/deepseek-chat",
+  "safe_check_qr_path": "/root/.openclaw/media/screenshots/wechat-after-primary-continue-20260415-2222.png",
+  "draft_box_saved": true,
+  "wenyan_push_status": "success",
+  "appmsgid": "100000191",
+  "published_at": "2026-04-15T21:51:00+08:00",
+  "publish_result": "reader_side_published"
+}

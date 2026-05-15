@@ -1,0 +1,68 @@
+{
+  "draft_version": "v2",
+  "checked_at": "2026-04-02T14:24:45+08:00",
+  "total_claims": 6,
+  "verified": 5,
+  "inaccurate": 0,
+  "unverifiable": 0,
+  "false": 0,
+  "localization_flags": 1,
+  "pass": true,
+  "summary": "所有关键事实性 claim 均已核实通过。涉及 OpenAI Model Spec、GPT-5 Prompting Guide、Anthropic Constitution 的三处核心引用，与一手文档完全吻合。仅有 1 处轻微 localization 建议（非强制）。整体 pass=true。",
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "OpenAI 2024 年发的 Model Spec，把"必要时主动追问"列成了模型的默认行为之一，白纸黑字。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "OpenAI 官方博客《Introducing the Model Spec》（2024-05-08）明确在 Default behaviors 节列出：\"Ask clarifying questions when necessary\"，该条目白纸黑字出现在默认行为列表中。",
+      "source_url": "https://openai.com/index/introducing-the-model-spec/"
+    },
+    {
+      "id": 2,
+      "original_text": "GPT-5 的 Prompting Guide 里有一整节叫"控制 agent 的急切程度"",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "OpenAI Cookbook《GPT-5 prompting guide》中确有名为 \"Controlling agentic eagerness\" 的完整章节，文章将其意译为"控制 agent 的急切程度"，准确。",
+      "source_url": "https://developers.openai.com/cookbook/examples/gpt-5/gpt-5_prompting_guide"
+    },
+    {
+      "id": 3,
+      "original_text": "专门教开发者怎么让模型更自主、怎么减少澄清提问的出现",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "该章节 Prompting for more eagerness 子节原文：\"if you'd like to encourage model autonomy, increase tool-calling persistence, and reduce occurrences of clarifying questions or otherwise handing back to the user\"。与文章表述完全一致。",
+      "source_url": "https://developers.openai.com/cookbook/examples/gpt-5/gpt-5_prompting_guide"
+    },
+    {
+      "id": 4,
+      "original_text": "购物结账、支付这类高风险动作，不确定性阈值要设得很低，意思是"不确定就必须问用户"；但搜索这种轻量操作，阈值可以设得很高——别问了，直接搜就行",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "GPT-5 Prompting Guide 原文：\"in a set of tools for shopping, the checkout and payment tools should explicitly have a lower uncertainty threshold for requiring user clarification, while the search tool should have an extremely high threshold\"。文章对两端阈值的描述（低阈值→必须问，高阈值→直接搜）准确。",
+      "source_url": "https://developers.openai.com/cookbook/examples/gpt-5/gpt-5_prompting_guide"
+    },
+    {
+      "id": 5,
+      "original_text": "Anthropic 那边更直接。Claude 的 Constitution 里有一条大意是：在简单的 agent 任务里问太多澄清问题，会让用户觉得烦，显得模型没用，还给公司丢脸。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "Anthropic Claude's constitution（https://www.anthropic.com/constitution）原文：\"Checks in or asks clarifying questions more than necessary for simple agentic tasks. This behavior makes Claude more annoying and less useful, and reflects poorly on Anthropic.\" 文章将三个要素（烦 / 没用 / 给公司丢脸）完整转述，表述准确。",
+      "source_url": "https://www.anthropic.com/constitution"
+    },
+    {
+      "id": 6,
+      "original_text": "GPT-5 的 Prompting Guide",
+      "verdict": "⚠️ LOCALIZATION",
+      "issues": ["\"Prompting Guide\" 为裸英文术语，在中文技术文章中属常见用法，但如需完全本地化可改为"提示词指南"或保留英文并标注。"],
+      "correction": "可选改法（非强制）：GPT-5 的 Prompting Guide → 「GPT-5 提示词指南」。考虑到原文整体风格偏技术流且读者为 AI 从业者，保留英文原名完全可接受，建议维持原文。",
+      "source": "Localization 审查，非 factual issue。",
+      "source_url": ""
+    }
+  ]
+}

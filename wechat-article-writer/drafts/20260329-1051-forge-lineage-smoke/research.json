@@ -1,0 +1,78 @@
+{
+  "topic": "为什么真正能干活的 AI，必须会自查和纠错",
+  "angle": "从普通人选择 AI 工具的视角切入：决定一个 AI 能不能真正接活的，不是它回答时有多像‘天才’，而是它会不会先暴露不确定性、调用外部验证、发现错误后重试。用 OpenAI / Anthropic 的公开数据，外加 OpenClaw 最近补上的 lineage audit，解释‘自查和纠错’为什么是行动型 AI 的分水岭。",
+  "thesis": "AI 真正从‘会聊天’走向‘能交付’，关键不是回答更漂亮，而是内置自查与纠错闭环。没有这层闭环，能力越强，出错时越像真的；有了这层闭环，AI 才能在真实流程里变成可托付的助手。",
+  "proposed_title": "真正能干活的 AI，不是更聪明，而是会先怀疑自己",
+  "key_evidence": [
+    {
+      "title": "不自查的模型，会用猜测换来虚高的‘会答’错觉",
+      "fact": "OpenAI 在《Why language models hallucinate》中给出的对比显示：gpt-5-thinking-mini 的错误率为 26%，o4-mini 的错误率高达 75%；后者准确率只略高（24% vs 22%），但几乎不选择 abstain（1% vs 52%）。",
+      "why_it_matters": "对普通用户来说，最危险的不是 AI 偶尔答不上来，而是它明明不确定还装得很确定。会承认不确定、会先自查，是 AI 能不能被放进真实工作流的底线。",
+      "sources": [
+        "openai-why-hallucinate"
+      ]
+    },
+    {
+      "title": "加入验证与淘汰环节后，AI 解决真实任务的成功率会明显上升",
+      "fact": "Anthropic 在 Claude 4 发布文中披露：Claude Opus 4 / Sonnet 4 在 SWE-bench Verified 的基础分分别为 72.5% / 72.7%；当系统改为‘多次并行尝试 + 丢弃无法通过可见回归测试的补丁 + 从剩余候选里选最佳’后，分数提升到 79.4% / 80.2%。",
+      "why_it_matters": "这说明真正让 AI 更能干活的，不只是模型参数更大，而是它有了检查、筛错、重试的机制。能交付的 AI，更像会复盘的员工，而不是一次性豪赌的实习生。",
+      "sources": [
+        "anthropic-claude-4"
+      ]
+    },
+    {
+      "title": "一旦 AI 开始发文、发消息、改文件，‘像成品’已经不够，必须审计过程",
+      "fact": "OpenClaw 最近给 wechat-article-forge 增加了 lineage_audit.py：发布前必须核查研究、写作、审稿、事实核查、润色、排版等工序是否来自对应 child session，并检查 artifact provenance；如果 lineage dirty，则直接阻断发布并给出 rerun / repair 动作。",
+      "why_it_matters": "这是一条很接地气的产品经验：当 AI 开始真正行动时，可靠性不再只看答案像不像，而要看过程能不能自查、问题能不能回滚。对读者来说，这也是判断 AI 产品值不值得托付任务的关键尺度。",
+      "sources": [
+        "openclaw-lineage-script",
+        "openclaw-memory-20260329",
+        "openclaw-skill"
+      ]
+    }
+  ],
+  "source_bank": [
+    {
+      "id": "openai-why-hallucinate",
+      "title": "Why language models hallucinate | OpenAI",
+      "url": "https://openai.com/index/why-language-models-hallucinate/",
+      "source_type": "public_web",
+      "why_it_matters": "提供可直接引用的硬数据：在同类问答比较里，‘更愿意承认不知道’的模型反而大幅降低错误率，能支撑‘自查/不乱猜比表面聪明更重要’这个核心论点。"
+    },
+    {
+      "id": "anthropic-claude-4",
+      "title": "Claude 4 | Anthropic",
+      "url": "https://www.anthropic.com/news/claude-4",
+      "source_type": "public_web",
+      "why_it_matters": "给出另一类硬证据：在真实软件任务 benchmark 里，加入并行尝试、回归测试筛错、最佳候选选择后，任务成功率进一步提升，证明‘验证-纠错-重试’闭环能直接改善交付表现。"
+    },
+    {
+      "id": "openai-o3-o4",
+      "title": "Introducing OpenAI o3 and o4-mini | OpenAI",
+      "url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "source_type": "public_web",
+      "why_it_matters": "可作为补充背景：OpenAI 明确把‘会在何时、如何使用工具’与‘更可验证的回答’绑定在一起，说明前沿模型路线本身就在朝行动前验证、行动中调用工具的方向走。"
+    },
+    {
+      "id": "openclaw-lineage-script",
+      "title": "wechat-article-forge lineage_audit.py",
+      "url": "file:///root/.openclaw/skills/wechat-article-forge/scripts/lineage_audit.py",
+      "source_type": "local_script",
+      "why_it_matters": "这是本地最硬的工程证据：OpenClaw 已经把‘发布前自查 lineage 是否干净’做成真实脚本，而不是只停留在口头要求。"
+    },
+    {
+      "id": "openclaw-memory-20260329",
+      "title": "memory/2026-03-29.md",
+      "url": "file:///root/.openclaw/workspace/memory/2026-03-29.md",
+      "source_type": "local_memory",
+      "why_it_matters": "记录了 2026-03-29 当天对 forge 流程的真实补强：dirty lineage 不得直接 publish，必须 repair / rerun 直到拿到干净产物。这能把文章从抽象观点拉回真实产品演进。"
+    },
+    {
+      "id": "openclaw-skill",
+      "title": "wechat-article-forge SKILL.md",
+      "url": "file:///root/.openclaw/skills/wechat-article-forge/SKILL.md",
+      "source_type": "local_doc",
+      "why_it_matters": "Skill 文档已经把‘child outputs are verbatim’、‘publish is fail-closed’、‘run a lineage audit before publish’写成流程规则，可作为 OpenClaw 最近把自查机制制度化的补充依据。"
+    }
+  ]
+}

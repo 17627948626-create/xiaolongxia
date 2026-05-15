@@ -1,0 +1,247 @@
+{
+  "artifact_provenance": {
+    "draft-v2.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:f1ec1079-e361-41af-bba2-b2426bac3e52"
+    },
+    "draft-v2.md.backend.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:f1ec1079-e361-41af-bba2-b2426bac3e52"
+    },
+    "draft-v3.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:136a8c1a-9fb4-47f3-8b91-184d23dede03"
+    },
+    "draft-v3.md.backend.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:136a8c1a-9fb4-47f3-8b91-184d23dede03"
+    },
+    "draft.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e94c4c3c-71e5-4b80-860c-228e5fcac386"
+    },
+    "draft.md.backend.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e94c4c3c-71e5-4b80-860c-228e5fcac386"
+    },
+    "final-layout.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:d6853ecb-365e-42ba-a5db-5efe02a911a6"
+    },
+    "final.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:cfa50f77-c313-45a8-a870-9fe5beef2775"
+    },
+    "outline-gate.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:fee0da48-8ca7-4ec0-9063-70a124758b0c"
+    },
+    "outline.md": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:fee0da48-8ca7-4ec0-9063-70a124758b0c"
+    },
+    "research-gate.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:fee0da48-8ca7-4ec0-9063-70a124758b0c"
+    },
+    "research.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:fee0da48-8ca7-4ec0-9063-70a124758b0c"
+    },
+    "review-v3.json": {
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:be5324e5-88a9-41e0-84c4-7eec32e3bc67"
+    }
+  },
+  "children": {
+    "humanizer": [
+      {
+        "artifacts": [
+          "final.md"
+        ],
+        "label": "humanizer-20260411-2000-glm51-open-agent-workday",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:cfa50f77-c313-45a8-a870-9fe5beef2775",
+        "status": "done"
+      }
+    ],
+    "layout": [
+      {
+        "artifacts": [
+          "final-layout.md"
+        ],
+        "label": "layout-20260411-2000-glm51-open-agent-workday",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:d6853ecb-365e-42ba-a5db-5efe02a911a6",
+        "status": "done"
+      }
+    ],
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md",
+          "outline-gate.json",
+          "research-gate.json"
+        ],
+        "label": "researcher-20260411-2000-glm51-open-agent-workday",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:fee0da48-8ca7-4ec0-9063-70a124758b0c",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "review-v3.json"
+        ],
+        "label": "reviewer-v3-20260411-2000-glm51-open-agent-workday",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:be5324e5-88a9-41e0-84c4-7eec32e3bc67",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "draft.md",
+          "draft.md.backend.json"
+        ],
+        "label": "writer-20260411-2000-glm51-open-agent-workday",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e94c4c3c-71e5-4b80-860c-228e5fcac386",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v2.md",
+          "draft-v2.md.backend.json"
+        ],
+        "label": "writer-revise-v2-20260411-2000-glm51-open-agent-workday",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:f1ec1079-e361-41af-bba2-b2426bac3e52",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v3.md",
+          "draft-v3.md.backend.json"
+        ],
+        "label": "writer-revise-v3-20260411-2000-glm51-open-agent-workday",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:136a8c1a-9fb4-47f3-8b91-184d23dede03",
+        "status": "done"
+      }
+    ]
+  },
+  "cover_url": "https://picsum.photos/1200/800",
+  "current_step": "published",
+  "error": null,
+  "hot_hook": "GLM-5.1 把开源 Agent 的叙事从‘能跑几十步’一下抬到‘能连续干 8 小时’。",
+  "last_clean_step": "layout",
+  "last_draft_file": "draft-v3.md",
+  "last_review_file": "review-v3.json",
+  "lineage_audited_at": "2026-04-11T12:25:22Z",
+  "lineage_status": "clean",
+  "lite_preflight": {
+    "binding_artifact": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260411-2000-glm51-open-agent-workday/writer-lite-binding.json",
+    "binding_checked_at": "2026-04-11T12:20:08Z",
+    "binding_status": "matched",
+    "last_draft_file": "draft-v3.md",
+    "last_draft_sha256": "f3b10e1a43eba8272a611a5def005a4391146c46ada8b859b8054b7b92020b20",
+    "last_draft_version": "draft-v3",
+    "latest_check_draft_sha256": "f3b10e1a43eba8272a611a5def005a4391146c46ada8b859b8054b7b92020b20",
+    "latest_check_draft_version": "draft-v3",
+    "latest_check_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260411-2000-glm51-open-agent-workday/writer-lite-check.json",
+    "match": true,
+    "resolution": null,
+    "waiver": null
+  },
+  "max_revisions": 2,
+  "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+  "mcp_server": "wenyan-mcp",
+  "pass_threshold": 8.2,
+  "pending_action": null,
+  "phase": "published",
+  "profile": "小龙虾有话说",
+  "publish_candidate": "final-layout.md",
+  "publish_profile_preflight": {
+    "checked_at": "2026-04-11T12:25:22Z",
+    "default_theme": "sspai",
+    "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+    "mcp_server": "wenyan-mcp",
+    "profile": "小龙虾有话说",
+    "publish_md_checked": true,
+    "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+    "publisher_mode": "remote",
+    "status": "ok",
+    "wechat_author": "小龙虾有话说",
+    "wenyan_mcp_present": true
+  },
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "publisher_mode": "remote",
+  "purpose": "借 GLM-5.1 发布这件事，写清开源 Agent 竞争口径正在从 demo 能力，转向长程自主执行和可持续生产力。",
+  "repair_action": null,
+  "revision_cycle": 2,
+  "run_id": "cron-2026-04-11-evening-1",
+  "schema_version": "2026-04-09.lineage-v2",
+  "search_keywords": [
+    "GLM-5.1 8 hour autonomous execution April 2026",
+    "GLM-5.1 open source agentic engineering SWE-Bench Pro",
+    "智谱 GLM-5.1 开源 8小时 自主执行 2026"
+  ],
+  "slug": "20260411-2000-glm51-open-agent-workday",
+  "source_mode": "fresh",
+  "step": 7,
+  "subagent_label": "humanizer-20260411-2000-glm51-open-agent-workday",
+  "subagent_status": "done",
+  "topic_direction": "开源 Agent 开始从 demo 竞争走向工时竞争",
+  "updated_at": "2026-04-11T20:39:00+08:00",
+  "wechat_author": "小龙虾有话说",
+  "writer_backend_effective": "kimi-cli",
+  "writer_backend_requested": "kimi-cli",
+  "writer_model_effective": "deepseek/deepseek-chat",
+  "wenyan_push_status": "success",
+  "draft_saved_at": "2026-04-11T20:25:50.224697+08:00",
+  "media_id": "7NYHnQxN70EpaLx4Jh0kyud6smM-EUDdAHsI0UM6Vq50NWBbeCusWAFdn5kFxDu-",
+  "appmsgid": "7NYHnQxN70EpaLx4Jh0kyud6smM-EUDdAHsI0UM6Vq50NWBbeCusWAFdn5kFxDu-",
+  "state": "done",
+  "required_user_action": null,
+  "waiting_for": null,
+  "blocking_since": "2026-04-11T20:30:52.730047+08:00",
+  "resume_context": {
+    "channel": "wechat_mp",
+    "reason": "login_timeout_before_formal_publish",
+    "next_action": "老板扫码登录微信公众平台后继续正式发表",
+    "session": "browser-use default"
+  },
+  "published_at": "2026-04-11T20:39:00+08:00",
+  "publish_status": "published",
+  "final_title": "GLM-5.1 给开源 Agent 发了一张新工牌，以后开始按工时比了"
+}

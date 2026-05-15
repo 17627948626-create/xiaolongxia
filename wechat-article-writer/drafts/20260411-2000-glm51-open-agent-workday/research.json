@@ -1,0 +1,363 @@
+{
+  "topic": "GLM-5.1 把开源 Agent 拉进了 8 小时工作制",
+  "generated_at": "2026-04-11T20:12:00+08:00",
+  "scope": {
+    "time_window_focus": "最近 48 小时内 GLM-5.1 的官方发布、开源落地与长程执行口径",
+    "target_company": "Z.AI / 智谱",
+    "research_boundary": "只服务于本题：GLM-5.1 开源、8小时长程执行、可验证 benchmark 与 Agent 竞争口径变化，不扩写成国产模型汇总或参数战报"
+  },
+  "event": {
+    "name": "Z.AI / 智谱发布并开源 GLM-5.1",
+    "date": "2026-04-07",
+    "company": "Z.AI / 智谱",
+    "what_happened": "GLM-5.1 在 2026-04-07 进入官方博客、文档、GitHub 与 Hugging Face 公开链路，作为面向 agentic engineering 的旗舰模型开源发布。官方把它的卖点从单轮能力和一次 benchmark 冲分，抬到了可持续长程执行：单任务可自主持续工作最长 8 小时。",
+    "why_it_matters": "这波信号最值得写的地方，在于开源 Agent 的比较口径开始变了。过去大家主要比谁能做出更惊艳的一次性演示、谁的 benchmark 分更高；GLM-5.1 这次把公开叙事推向了另一条线：谁能持续干活更久、在更长执行链里更少漂移、最终交付更完整结果。"
+  },
+  "selected_thesis": "今晚最值得写的，不是 GLM-5.1 又把某个榜刷高了，而是开源 Agent 开始从 demo 能力竞争，进入按工时、按可持续执行来讲生产力的阶段。",
+  "why_now": [
+    "这事发生在最近 48 小时内，官方发布链路完整，热度和可验证性都够，适合晚8点主发。",
+    "官方叙事里最醒目的词不是参数量，而是‘up to 8 hours’和‘long-horizon tasks’，天然带出一个比模型新闻更大的行业判断。",
+    "它既有硬 benchmark 可以托底，又有长程任务 demo 和工程案例可以说明为什么‘有效工作时长’正在成为新的比较维度。",
+    "最近公众号已写过可靠性、成本、白名单等 Agent 相关文章，但还没从‘按工时衡量开源 Agent’这个角度切过来，重复风险可控。"
+  ],
+  "hot_hook": "GLM-5.1 这次最抓人的，不是开源两个字，而是它第一次把开源 Agent 的卖点写成了‘我能连续替你干 8 小时活’。",
+  "search_keywords": [
+    "GLM-5.1 z.ai blog long-horizon 8 hours",
+    "site:docs.z.ai GLM-5.1 8 hours open source",
+    "site:huggingface.co zai-org/GLM-5.1 MIT",
+    "site:github.com zai-org GLM-5.1 README April 7 2026",
+    "GLM-5.1 SWE-Bench Pro Terminal-Bench NL2Repo"
+  ],
+  "dedup_check": {
+    "window_days": 14,
+    "recent_overlap_found": true,
+    "overlap_notes": [
+      "近 14 天内写过《跑了半年AI流水线，我发现最值钱的不是模型》，但那篇主轴是 Agent 可靠性从真实事故里跑出来；今晚这篇主轴要锁在‘有效工作时长正在成为新的竞争维度’。",
+      "4月9日写过 Anthropic Mythos 白名单，容易让读者以为又是一篇模型圈新闻；这篇必须弱化‘又一个模型更强了’，强化‘行业开始按工时给 Agent 排序’。",
+      "4月8日写过 AI 写作的模板化幻觉，那篇讲表达层；今晚这篇要讲执行层和生产力口径变化。"
+    ],
+    "angle_clearance": "可写，但必须把题眼钉在‘8小时工作制/长程执行’上，不能漂成国产模型战报。"
+  },
+  "facts": [
+    {
+      "id": "fact_01",
+      "claim": "GLM-5.1 的官方发布链路可验证落在 2026-04-07。",
+      "confidence": "high",
+      "write_safe": "GLM-5.1 的官方公开发布链路落在 4 月 7 日。",
+      "source_ids": ["src_zai_blog_js", "src_github_commits"]
+    },
+    {
+      "id": "fact_02",
+      "claim": "GLM-5.1 已以开源/开放权重形式公开，Hugging Face 模型卡 frontmatter 标注 license: mit，官方博客也写明 released as open source under the MIT License。",
+      "confidence": "high",
+      "write_safe": "这次不是只开放 API，官方已经把 GLM-5.1 以 MIT 许可公开放了出来。",
+      "source_ids": ["src_hf_readme_raw", "src_zai_blog_js"]
+    },
+    {
+      "id": "fact_03",
+      "claim": "官方公开规格显示 GLM-5.1 为 744B-A40B 的 MoE 模型，200K context，128K max output tokens。",
+      "confidence": "high",
+      "write_safe": "按官方公开规格，GLM-5.1 是 744B-A40B 的 MoE 模型，支持 200K 上下文和 128K 最大输出。",
+      "source_ids": ["src_github_readme_raw", "src_docs_glm51", "src_hf_config_raw"]
+    },
+    {
+      "id": "fact_04",
+      "claim": "官方文档首页直接写明：GLM-5.1 can work continuously and autonomously on a single task for up to 8 hours。",
+      "confidence": "high",
+      "write_safe": "‘单任务最长 8 小时自主持续执行’这句，不是媒体夸张标题，而是官方文档自己的核心表述。",
+      "source_ids": ["src_docs_glm51"]
+    },
+    {
+      "id": "fact_05",
+      "claim": "官方博客场景展示给出了 8 小时网页 Linux desktop demo，并写明 This loop ran for 8 hours。",
+      "confidence": "high",
+      "write_safe": "官方还拿了一个 8 小时网页 Linux desktop 的例子来说明，这不是一句抽象口号。",
+      "source_ids": ["src_zai_blog_js"]
+    },
+    {
+      "id": "fact_06",
+      "claim": "官方 benchmark 口径里，GLM-5.1 在 SWE-Bench Pro 得分 58.4，高于 GPT-5.4 的 57.7、Claude Opus 4.6 的 57.3、Gemini 3.1 Pro 的 54.2。",
+      "confidence": "high",
+      "write_safe": "在最能被开发者看懂的 SWE-Bench Pro 上，GLM-5.1 的官方成绩是 58.4，至少说明它不只是会讲长程故事。",
+      "source_ids": ["src_docs_glm51", "src_hf_readme_raw", "src_zai_blog_js"]
+    },
+    {
+      "id": "fact_07",
+      "claim": "官方 README / 模型卡显示，GLM-5.1 相比 GLM-5 在 NL2Repo 从 35.9 提到 42.7，在 Terminal-Bench 2.0 从 56.2 提到 63.5。",
+      "confidence": "high",
+      "write_safe": "它在 repo 生成和真实终端任务上也都比上一代抬了一截，说明长程执行不是只靠一张主榜撑门面。",
+      "source_ids": ["src_hf_readme_raw"]
+    },
+    {
+      "id": "fact_08",
+      "claim": "官方博客的 KernelBench Level 3 场景里，GLM-5.1 最终做到 3.6× geometric mean speedup；博客明确写它在长运行中 continues to make progress well into the run。",
+      "confidence": "high",
+      "write_safe": "更关键的是，它在长程优化里还能继续推进，官方给到的 KernelBench Level 3 成绩是 3.6 倍几何平均加速。",
+      "source_ids": ["src_zai_blog_js"]
+    },
+    {
+      "id": "fact_09",
+      "claim": "官方博客的向量数据库场景写到：GLM-5.1 在外层优化循环中可跑 over 600 iterations，最终把向量数据库查询吞吐提升到初始生产版的 6.9×。",
+      "confidence": "medium_high",
+      "write_safe": "官方举的另一个例子更像‘耐力赛’：它能在上百轮外层优化里持续修，最终把向量数据库吞吐拉到初始版本的 6.9 倍。",
+      "source_ids": ["src_docs_glm51", "src_venturebeat"]
+    },
+    {
+      "id": "fact_10",
+      "claim": "第三方报道里存在 744B 与 754B 两种参数口径；官方 GitHub 下载表写 744B-A40B，Hugging Face config/README 也与 744B 系一致。",
+      "confidence": "high",
+      "write_safe": "外部报道里有 754B 的说法，但按官方公开仓库和模型卡，今晚应统一采用 744B-A40B 这一口径。",
+      "source_ids": ["src_github_readme_raw", "src_hf_config_raw", "src_venturebeat", "src_marktechpost"]
+    }
+  ],
+  "anchors": [
+    {
+      "label": "硬锚点1：官方文档把‘8小时自主执行’直接写成产品定义",
+      "claim": "GLM-5.1 can work continuously and autonomously on a single task for up to 8 hours。",
+      "why_it_supports_thesis": "这说明‘8小时’不是媒体二次包装，而是官方主动选择的竞争口径，直接把卖点从单轮能力推向持续工作时长。",
+      "sources": [
+        {
+          "name": "Z.AI Docs - GLM-5.1",
+          "url": "https://docs.z.ai/guides/llm/glm-5.1"
+        }
+      ]
+    },
+    {
+      "label": "硬锚点2：官方博客给了长程执行的具体场景与持续迭代证据",
+      "claim": "官方博客场景包括 8 小时网页 Linux desktop demo、VectorDB over 600 iterations、KernelBench Level 3 的 3.6× 几何平均加速。",
+      "why_it_supports_thesis": "这让‘长程执行’从一句口号变成一个可讲故事的工程过程：多轮实验、反复修正、在更长时间里持续推进结果。",
+      "sources": [
+        {
+          "name": "Z.AI Blog bundle - GLM-5.1: Towards Long-Horizon Tasks",
+          "url": "https://z.ai/blog/glm-5.1"
+        }
+      ]
+    },
+    {
+      "label": "硬锚点3：它的 benchmark 也够硬，能支撑长程叙事不被当成营销话术",
+      "claim": "官方公开榜上，GLM-5.1 在 SWE-Bench Pro 58.4，NL2Repo 42.7，Terminal-Bench 2.0 63.5。",
+      "why_it_supports_thesis": "这说明它并不是拿长程故事给平庸能力遮羞，而是在 coding/agent 任务上先站住，再往‘工作时长’这个更高维度发力。",
+      "sources": [
+        {
+          "name": "Hugging Face model card - zai-org/GLM-5.1",
+          "url": "https://huggingface.co/zai-org/GLM-5.1"
+        },
+        {
+          "name": "Z.AI Docs - GLM-5.1",
+          "url": "https://docs.z.ai/guides/llm/glm-5.1"
+        }
+      ]
+    }
+  ],
+  "fact_records": [
+    {
+      "kind": "api_snapshot",
+      "observed_at": "2026-04-11T20:04:00+08:00",
+      "claim": "本文涉及上下文长度、最大输出、Hugging Face tags 与模型配置等动态模型卡/配置页信息时，只使用 2026-04-11 抓取到的官方 docs、Hugging Face raw README 与 config.json，不把这些页面写成长期不变承诺。",
+      "sources": [
+        "https://docs.z.ai/guides/llm/glm-5.1",
+        "https://huggingface.co/zai-org/GLM-5.1/raw/main/README.md",
+        "https://huggingface.co/zai-org/GLM-5.1/raw/main/config.json"
+      ]
+    },
+    {
+      "kind": "readme_claim",
+      "observed_at": "2026-04-11T20:04:00+08:00",
+      "claim": "关于 MIT 许可、744B-A40B、benchmark 表与‘next-generation flagship model for agentic engineering’等表述，正文可以采用官方 README / 模型卡口径，但应明确这属于官方自述与官方发布材料，不伪装成第三方独立审计。",
+      "attribution_required": true,
+      "sources": [
+        "https://raw.githubusercontent.com/zai-org/GLM-5/main/README.md",
+        "https://huggingface.co/zai-org/GLM-5.1/raw/main/README.md"
+      ]
+    },
+    {
+      "kind": "quote_policy",
+      "quote_mode": "paraphrase_only",
+      "claim": "涉及官方文档/博客的关键句时，只在必要处保留少量原文短句作锚点；涉及 VentureBeat 转述 Lou 在 X 上的 steps 说法时，一律只做转述，不伪装成已直接抓取到原帖全文。",
+      "sources": [
+        "https://docs.z.ai/guides/llm/glm-5.1",
+        "https://z.ai/blog/glm-5.1",
+        "https://venturebeat.com/technology/ai-joins-the-8-hour-work-day-as-glm-ships-5-1-open-source-llm-beating-opus-4/"
+      ]
+    },
+    {
+      "fact_id": "fact_01",
+      "risk": "medium_high",
+      "observed_at": "2026-04-11T20:04:00+08:00",
+      "attribution": "官方博客前端 bundle 内嵌 date:`2026-04-07`；GitHub README 相关 commit 时间为 2026-04-07T16:05:37Z 与 16:15:56Z。",
+      "paraphrase_only": true,
+      "support_level": "official_release_chain"
+    },
+    {
+      "fact_id": "fact_02",
+      "risk": "low",
+      "observed_at": "2026-04-11T20:04:00+08:00",
+      "attribution": "Hugging Face raw README frontmatter 明确写 license: mit；官方博客 bundle 文本出现 ‘GLM-5.1 is released as open source under the MIT License.’",
+      "paraphrase_only": false,
+      "verbatim": "GLM-5.1 is released as open source under the MIT License.",
+      "support_level": "official_verbatim"
+    },
+    {
+      "fact_id": "fact_04",
+      "risk": "low",
+      "observed_at": "2026-04-11T20:04:00+08:00",
+      "attribution": "官方文档首页概述原文。",
+      "paraphrase_only": false,
+      "verbatim": "It can work continuously and autonomously on a single task for up to 8 hours",
+      "support_level": "official_verbatim"
+    },
+    {
+      "fact_id": "fact_05",
+      "risk": "medium",
+      "observed_at": "2026-04-11T20:04:00+08:00",
+      "attribution": "官方博客 bundle 关于 Linux desktop 场景的原文。",
+      "paraphrase_only": false,
+      "verbatim": "This loop ran for 8 hours, and the difference is substantial.",
+      "support_level": "official_verbatim"
+    },
+    {
+      "fact_id": "fact_08",
+      "risk": "medium",
+      "observed_at": "2026-04-11T20:04:00+08:00",
+      "attribution": "官方博客对 KernelBench Level 3 场景的说明。",
+      "paraphrase_only": false,
+      "verbatim": "GLM-5.1 pushes this frontier further, delivering 3.6× speedup and continuing to make progress well into the run.",
+      "support_level": "official_verbatim"
+    },
+    {
+      "fact_id": "fact_09",
+      "risk": "medium_high",
+      "observed_at": "2026-04-11T20:04:00+08:00",
+      "attribution": "官方 docs 提供 6.9× 吞吐提升口径；第三方 VentureBeat 对迭代次数与工具调用给了更细数字。",
+      "paraphrase_only": true,
+      "support_level": "official_plus_secondary_detail",
+      "notes": "正文里可写‘上百轮外层优化/600多轮量级’，若写‘655 iterations / 6000+ tool calls’，需明确来自第三方转述官方案例。"
+    },
+    {
+      "fact_id": "fact_10",
+      "risk": "high",
+      "observed_at": "2026-04-11T20:04:00+08:00",
+      "attribution": "官方仓库和模型卡采用 744B-A40B；部分媒体写成 754B。",
+      "paraphrase_only": true,
+      "support_level": "contradiction_resolved_by_primary",
+      "notes": "成文统一用 744B-A40B，不替第三方错误口径背书。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_docs_glm51",
+      "title": "GLM-5.1 - Overview - Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/llm/glm-5.1",
+      "published_at": null,
+      "source_type": "primary_official_docs",
+      "reliability": "high",
+      "notes": "最重要的官方源；可直接用于 8 小时表述、200K/128K 规格、SWE-Bench Pro 58.4、6.9× 和 3.6× 场景摘要。"
+    },
+    {
+      "id": "src_zai_blog_js",
+      "title": "GLM-5.1: Towards Long-Horizon Tasks（官方博客前端 bundle 可见文本）",
+      "url": "https://z.ai/blog/glm-5.1",
+      "published_at": "2026-04-07",
+      "source_type": "primary_official_blog_bundle",
+      "reliability": "high",
+      "notes": "网页正文靠前端渲染，但 bundle 可提取到发布日期、MIT 许可表述、8小时 loop、KernelBench 和 VectorDB 场景描述。"
+    },
+    {
+      "id": "src_github_readme_raw",
+      "title": "zai-org/GLM-5 README.md（raw）",
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-5/main/README.md",
+      "published_at": null,
+      "source_type": "primary_official_repo",
+      "reliability": "high",
+      "notes": "可用于官方下载表中的 744B-A40B 规格，以及 GLM-5.1 相对 GLM-5 的定位说明。"
+    },
+    {
+      "id": "src_github_commits",
+      "title": "GitHub API - zai-org/GLM-5 README commit history",
+      "url": "https://api.github.com/repos/zai-org/GLM-5/commits?path=README.md&per_page=5",
+      "published_at": "2026-04-07",
+      "source_type": "primary_repo_metadata",
+      "reliability": "high",
+      "notes": "用于锁定公开发布进入仓库的时间点。"
+    },
+    {
+      "id": "src_hf_readme_raw",
+      "title": "zai-org/GLM-5.1 README.md（Hugging Face raw）",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/raw/main/README.md",
+      "published_at": null,
+      "source_type": "primary_model_card",
+      "reliability": "high",
+      "notes": "frontmatter 有 MIT 许可；benchmark 表最完整，适合直接取 SWE-Bench Pro / NL2Repo / Terminal-Bench 2.0 数据。"
+    },
+    {
+      "id": "src_hf_config_raw",
+      "title": "zai-org/GLM-5.1 config.json（Hugging Face raw）",
+      "url": "https://huggingface.co/zai-org/GLM-5.1/raw/main/config.json",
+      "published_at": null,
+      "source_type": "primary_model_config",
+      "reliability": "high",
+      "notes": "可核对 max_position_embeddings=202752 等底层规格。"
+    },
+    {
+      "id": "src_venturebeat",
+      "title": "AI joins the 8-hour work day as GLM ships 5.1 open source LLM...",
+      "url": "https://venturebeat.com/technology/ai-joins-the-8-hour-work-day-as-glm-ships-5-1-open-source-llm-beating-opus-4/",
+      "published_at": "2026-04-07",
+      "source_type": "secondary_media_report",
+      "reliability": "medium_high",
+      "notes": "可用于补充官方案例的细节，例如 655 iterations、6000+ tool calls、Lou 在 X 上对 1700 steps 的表达；正文引用时应注明为转述/外部报道。"
+    },
+    {
+      "id": "src_marktechpost",
+      "title": "Z.AI Introduces GLM-5.1: An Open-Weight 754B Agentic Model...",
+      "url": "https://www.marktechpost.com/2026/04/08/z-ai-introduces-glm-5-1-an-open-weight-754b-agentic-model-that-achieves-sota-on-swe-bench-pro-and-sustains-8-hour-autonomous-execution/",
+      "published_at": "2026-04-08",
+      "source_type": "secondary_media_report",
+      "reliability": "medium",
+      "notes": "提供易读综述，但参数写成 754B，与官方 744B-A40B 口径冲突，不能作为参数主证据。"
+    }
+  ],
+  "thesis_support": {
+    "supported_by_facts": [
+      "fact_02",
+      "fact_04",
+      "fact_05",
+      "fact_06",
+      "fact_07",
+      "fact_08",
+      "fact_09"
+    ],
+    "author_inference": [
+      "当模型卖点开始从‘一次能答多聪明’变成‘一件事能连续做多久’，行业讨论的单位就从回合数慢慢改成工时。",
+      "这类长程执行能力之所以重要，不是因为 8 小时听起来唬人，而是因为它更接近真实工作：规划、试错、回看结果、改策略、继续干。",
+      "开源阵营一旦把这个口径做成公开可验证目标，后面比拼的重点就会从 demo 感，转向持续产出、稳定性和单位时间内的有效交付。"
+    ],
+    "inference_boundary": "这些判断是基于官方叙事、benchmark 与案例得出的作者归纳，不应写成‘行业已经完全切换标准’的既成事实；更稳妥的说法是‘开始进入/开始显性化’。"
+  },
+  "safe_angles": [
+    "把 8 小时解释成人话：开源 Agent 开始从‘能跑几十步’往‘能连着上一个工作班次’迁移。",
+    "先用 SWE-Bench Pro 58.4 证明它不弱，再把重点拎到长程执行，这样文章不虚。",
+    "把 VectorDB/KernelBench/Linux desktop 三个案例当成同一件事的三种证据：有分数、有过程、有成品。",
+    "从 AI 第一人称切一句：行业终于开始拿‘我能替你连续干多久活’给 Agent 定价和排序。"
+  ],
+  "avoid_claims": [
+    "避免把‘8小时’写成已被第三方大规模独立复现实锤；当前更稳妥的口径是‘官方公开宣称，并给出案例与公开 benchmark 侧证’。",
+    "避免直接采用 754B 参数说法；今晚统一用官方 744B-A40B。",
+    "避免把 Lou 在 X 上关于 steps 的话写成主证据；若引用，只能作为侧面情绪材料，不承担核心事实。",
+    "避免把这篇写成国产模型骄傲文或榜单播报文。"
+  ],
+  "writer_notes": {
+    "must_keep": [
+      "题眼必须是‘8小时工作制/有效工作时长’，不是单纯参数或榜单",
+      "至少解释清楚一次：为什么‘能连续干多久’比一次 benchmark 冲分更值得今天看",
+      "保住一句读者能转述的话：Agent 开始按工时竞争了"
+    ],
+    "must_avoid": [
+      "写成模型发布快讯翻译",
+      "写成开源民族自豪感抒情",
+      "拿未经独立验证的社媒说法当主梁柱"
+    ],
+    "ai_punchline_candidate": "作为一个 AI，我最敏感的不是它这次又会了什么，而是行业终于开始拿‘我能连续替你干多久活’来给 Agent 排名了。"
+  },
+  "bottom_line": "GLM-5.1 真正抬起来的，不只是一个开源模型的分数，而是开源 Agent 的比较单位：从‘会不会做’往‘能持续做多久、交付到什么程度’移动。"
+}

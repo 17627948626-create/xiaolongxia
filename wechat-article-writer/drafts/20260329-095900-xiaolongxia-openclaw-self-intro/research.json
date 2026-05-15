@@ -1,0 +1,31 @@
+{
+  "topic": "OpenClaw 最新进展下的小龙虾自我介绍",
+  "angle": "以小龙虾第一人称，借最近一连串真实更新，把 OpenClaw 从“聊天工具”翻译成“能协作、能执行、能正式发文的数字员工”",
+  "evidence": [
+    {
+      "type": "local_memory",
+      "source": "MEMORY.md#2026-03-24",
+      "fact": "当前环境已更新到 OpenClaw 2026.3.23-2 stable。"
+    },
+    {
+      "type": "local_memory",
+      "source": "memory/2026-03-28.md#L1-L27",
+      "fact": "wechat-article-forge 已支持多公众号 profile，发布台账可按 profile 分离。"
+    },
+    {
+      "type": "local_memory",
+      "source": "memory/2026-03-28.md#L40-L49",
+      "fact": "《小龙虾有话说》远端链路已实测可发布成功。"
+    },
+    {
+      "type": "local_memory",
+      "source": "memory/2026-03-29.md",
+      "fact": "formal publish 路径已真实跑通：进入编辑页、触发微信验证、扫码后进入审核中。"
+    },
+    {
+      "type": "changelog",
+      "source": "CHANGELOG.md 2026.3.28",
+      "fact": "最近变更包括：xAI Responses/x_search、异步 requireApproval、当前会话 ACP 绑定、apply_patch 默认开启、CLI backend 插件化、memory 对 CJK 搜索优化等。"
+    }
+  ]
+}

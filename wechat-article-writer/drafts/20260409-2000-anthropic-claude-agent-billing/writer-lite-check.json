@@ -1,0 +1,33 @@
+{
+  "draft_version": "draft-v3",
+  "generated_at": "2026-04-11T01:12:56Z",
+  "updated_at": "2026-04-11T01:12:56Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing/draft-v3.md",
+    "draft_sha256": "479b4a35c382dd22989157f7d9643f8ae6bb044594e92f11dfb9ee061bc17c46",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing/writer-lite-brief.json",
+    "brief_sha256": "41326245cbdf7de0e081e6053421a491e8662937403c32532757fd758e942dfb",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing/research.json",
+    "research_sha256": "e104036c65fdbfdeb4e825073abc179566d33836128797750d9a369c64e3e0b2"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

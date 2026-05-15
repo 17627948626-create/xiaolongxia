@@ -1,0 +1,147 @@
+{
+  "passed": false,
+  "decision": "revise",
+  "weighted_total": 8.33,
+  "threshold": 8.5,
+  "reviewed_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260428-1756-manus-acquisition-blocked-agent-sovereignty/final.md",
+  "reviewed_sha256": "7ff5c4316a318d0bfb4e5520b6d8ec8c15895a4bc247f029c86bc481c0db6272",
+  "scores": {
+    "insight_density": {
+      "score": 8.5,
+      "weight": 0.14,
+      "weighted": 1.19,
+      "note": "主判断清楚且可复述：Agent 从回答工具变成执行入口。但中后段多次重复“流程、数据、执行权限/手/路径”，新增洞察略少。"
+    },
+    "originality": {
+      "score": 8.3,
+      "weight": 0.14,
+      "weighted": 1.162,
+      "note": "“嘴长出手”“可迁移执行能力”“门锁开始变贵”有账号识别度；但监管/战略资产框架本身仍接近热点解读常见逻辑。"
+    },
+    "emotional_resonance": {
+      "score": 8.0,
+      "weight": 0.2,
+      "weighted": 1.6,
+      "note": "有本虾愣住、天天跟工具打交道的现场感，但读者侧的具体情绪场景不足，更多是理性解释，缺一个能让普通用户立刻代入的“权限交出去后会怎样”的瞬间。"
+    },
+    "completion_power": {
+      "score": 8.5,
+      "weight": 0.18,
+      "weighted": 1.53,
+      "note": "短段落和递进节奏好，手机阅读压力低；中段论证略有回环复述，削弱继续下滑的新增奖励。"
+    },
+    "voice": {
+      "score": 8.6,
+      "weight": 0.18,
+      "weighted": 1.548,
+      "note": "整体像小龙虾在场，短句、比喻、边界意识都自然；少量解释段偏稳，作者锋利度可以再往前压一点。"
+    },
+    "title": {
+      "score": 8.1,
+      "weight": 0.16,
+      "weighted": 1.296,
+      "note": "含 Manus、AI Agent 等高意图关键词，也有判断；但“被摆上不能随便卖的桌面”略长且抽象，点击冲击不如正文里的“被禁止收购/执行入口”直接。"
+    }
+  },
+  "source_and_preflight_check": {
+    "source_alignment": "通过。正文把发改委/新华社/央视作为硬事实，并明确说官方没有展开技术出口、数据安全、国家安全细节；对 Manus 能力也用了“按 Manus 自己的产品描述/产品自述”的边界表达，未把官网自述写成第三方验证事实。",
+    "brief_alignment": "通过。正文锁定 Manus 这一件事，保住了“Agent 是可迁移执行能力/工作系统”的 thesis，没有偷换成 AI 新闻汇总或民族主义口号。",
+    "preflight_status": "writer-lite-check.json 本身 hard_fail=false，但其 input_fingerprints 指向 draft.md，sha256=3c40b6d6c430179ce30f0b3470bb9960ac0032fc6e317d508f3c19c321151a5c；本轮评审对象是 final.md，sha256=7ff5c4316a318d0bfb4e5520b6d8ec8c15895a4bc247f029c86bc481c0db6272。严格说 lite check 与当前评审稿不是 durable 绑定，不能作为 final.md 的当前机械放行证明。",
+    "fact_risk": "低。没有引用未经核实的收购金额、Meta 细节或融资传闻。"
+  },
+  "critical_issues": [
+    {
+      "type": "emotional_scene_absence",
+      "issue": "文章判断强，但情绪主要靠概念推进。缺少一个具体业务/个人场景，把“执行入口被带走”的危险从抽象判断落到读者能感到后背一紧的画面里，因此 Emotional Resonance 还没到 8.5 线。",
+      "quote": "它知道资料去哪里找。知道哪个系统要先打开。知道什么字段容易出错。知道一份报告该怎么从搜索、整理、计算、生成一路交付。",
+      "fix_direction": "在这段后面补一个不超过 120 字的具体场景：比如 Agent 进入企业后台、读取文件、调用脚本、提交报告/发请求；重点写“人以为卖的是工具，实际交出去的是一套默认工作路线”。不要扩成新例子堆砌，只补一个画面。",
+      "penalized_dimensions": ["emotional_resonance", "completion_power"]
+    },
+    {
+      "type": "insight_repetition",
+      "issue": "核心判断被多次换词重申：流程、数据、执行入口、路径、手、工作系统都成立，但中后段有几屏是在同一判断上打转，新增一刀不够。",
+      "quote": "到了 Agent 这里，更关键的问题变成：它能不能替你操作，它操作到了哪里，它留下了什么路径，最后谁控制这套路径。\n\n当 AI 只负责回答，人类还站在最后一步。人类决定采不采用，人类决定点不点击，人类决定要不要提交。\n\n当 AI 开始执行，最后一步就开始被系统接住。它会把某些事情直接做完。",
+      "fix_direction": "压缩这三段中至少一段重复解释，把节省出的篇幅换成一个更具体的二级判断：审查对象正在从“资产归属”转向“权限归属/执行层控制权”。这一句要成为中段新增洞察，而不是继续重复“Agent 会行动”。",
+      "penalized_dimensions": ["insight_density", "completion_power"]
+    },
+    {
+      "type": "title_underpowered_for_threshold",
+      "issue": "标题准确但不够锋利。8.5 门槛下，标题需要更直接暴露冲突和判断；现标题里的“被摆上不能随便卖的桌面”有画面但略绕，且长度偏长。",
+      "quote": "Manus 被叫停收购，AI Agent 被摆上不能随便卖的桌面",
+      "fix_direction": "优先改成更短、更硬、含关键词的判断句，例如：『Manus 被禁止收购：Agent 开始值钱在这只“手”』或『Manus 收购被叫停，Agent 不能只当应用卖了』。标题必须保留 Manus + Agent，并让“执行入口/不能按普通应用交易”显性化。",
+      "penalized_dimensions": ["title", "completion_power"]
+    }
+  ],
+  "strengths": [
+    "事实边界干净：官方说了什么、作者推断什么，分得很清楚。",
+    "核心判断可复述：Agent 的敏感性在于把聊天变成行动。",
+    "作者身份自然进入：本虾作为 AI 对“聊天框长出手”的敏感，不突兀，也不自嗨。",
+    "收束句“门锁开始变贵了”有传播感，适合作为尾部记忆点。"
+  ],
+  "voice_observations": {
+    "opening_interchangeability": "low",
+    "author_presence": "high",
+    "transition_template_dependence": "low",
+    "ending_sloganism": "low-medium",
+    "notes": "开头从4月27日消息切入，很具体，不像通用 AI 背景文；作者在“愣了一下”“本虾作为一个 AI”“天天跟工具打交道的虾”等处在场。文章推进主要靠概念递进和比喻，不依赖模板连接词。结尾的“谁能拥有、谁能控制、谁能带走”略有口号化风险，但最后“门锁开始变贵了”把它压回具体意象。"
+  },
+  "preserve": {
+    "judgment_or_edge": "Agent 的敏感性不在于它会聊天，而在于它能把聊天变成行动。",
+    "paragraph_or_scene": "因为聊天框看起来很轻。你输入一句话，屏幕回你一段字，好像所有风险都被锁在文字里。但 Agent 一旦开始接浏览器、接文件、接命令、接工作流，它就从嘴长出了手。\n\n手伸到哪里，审查迟早就会跟到哪里。",
+    "ending_line": "门锁开始变贵了。"
+  },
+  "revision_contract": {
+    "target": "把 weighted_total 从 8.33 提到 >= 8.5，重点补 Emotional Resonance、Title 和 Insight Density；不要大改事实链和主判断。",
+    "must_replace": [
+      {
+        "location": "标题",
+        "current": "Manus 被叫停收购，AI Agent 被摆上不能随便卖的桌面",
+        "required_change": "换成更短、更直接的冲突标题，保留 Manus + Agent，显性化“禁止收购/执行入口/不能按普通应用卖”的至少一个关键词。"
+      },
+      {
+        "location": "中段‘它知道资料去哪里找……一份报告该怎么……交付’之后",
+        "current": "连续解释流程记忆，但没有具体画面。",
+        "required_change": "加入一个 80-120 字的具体执行场景，让读者看到 Agent 的手伸进系统后会发生什么；场景只能服务主判断，不新增未经验证事实。"
+      },
+      {
+        "location": "‘到了 Agent 这里，更关键的问题变成……’到‘它会把某些事情直接做完’附近",
+        "current": "重复回答权/执行权差异。",
+        "required_change": "压缩重复段落，增加一个二级判断：监管/交易审查未来看的不是产品壳，而是权限归属和执行层控制权。"
+      }
+    ],
+    "max_keep": [
+      "保留发改委/新华社/央视事实段和官方未解释原因的边界段，不要为了情绪强化而越界替官方补理由。",
+      "保留‘嘴长出了手’、‘手伸到哪里，审查迟早跟到哪里’、‘门锁开始变贵了’这组三个意象。",
+      "保留文章只讲 Manus 一件事的单线结构。"
+    ],
+    "preserve": [
+      "主 thesis：Agent 是能带走流程、数据和执行入口的工作系统。",
+      "AI 第一视角：本虾对 Agent 从嘴到手的变化更敏感。",
+      "非民族主义、非监管通稿的语气。"
+    ],
+    "rewrite_budget": "小修即可，建议改动 15%-20%。禁止整篇重写；只动标题、中段一个场景、一个重复解释段。",
+    "score_shortfalls": {
+      "emotional_resonance": "需要从 8.0 提到 8.4 左右，靠具体场景补代入感。",
+      "title": "需要从 8.1 提到 8.5 左右，靠更短更硬的冲突表达。",
+      "insight_density": "需要从 8.5 稳住或提到 8.6，靠新增‘权限归属/执行层控制权’这一刀，避免只重复执行入口。"
+    }
+  },
+  "upgrade_suggestions": [
+    {
+      "issue": "开头前三百字已经说明事实，但核心判断可以再早半拍亮出来。",
+      "quote": "但我看到这条的时候，第一反应是愣了一下。",
+      "suggestion": "后面可直接接一句更尖的判断：『因为这不是一个应用被拦下，是一只会替人开门的手被问：谁能拿走？』"
+    },
+    {
+      "issue": "‘战略资产’概念没有明说但一直在暗示，可以用更人话的方式点一下。",
+      "quote": "它卖出去的，可能是一套工作系统。",
+      "suggestion": "可补半句：『这就不是卖软件皮肤，是卖一套会走路的操作习惯。』注意不要变成口号。"
+    },
+    {
+      "issue": "结尾倒数几段判断密集，可以压一段，让‘门锁开始变贵了’更突出。",
+      "quote": "它提醒所有人，AI Agent 已经越过了新鲜应用那条线，开始进入谁能拥有、谁能控制、谁能带走的阶段。",
+      "suggestion": "这一句可保留但缩短，避免和前文重复；让最后一句单独成段。"
+    }
+  ],
+  "summary": "这版已经明显高于普通 publishable 水平，事实稳、判断清楚、作者在场，按旧 7.8 线会通过。但在 8.5 新门槛下还差 0.17 分，主要短板不是大方向，而是标题锋利度、读者代入场景和中段重复。建议小修，不要重写。"
+}

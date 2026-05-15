@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-05-05T23:25:58Z",
+  "status": "matched",
+  "match": true,
+  "draft_dir": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260506-0718-google-ai-overview-defamation",
+  "last_draft_file": "draft.md",
+  "last_draft_version": "draft-v1",
+  "last_draft_sha256": "3b70c647e6f6c0e555032f3257ef5079593a7956836cb6ad4b73fbe892ffbbc4",
+  "latest_check_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260506-0718-google-ai-overview-defamation/writer-lite-check.json",
+  "latest_check_exists": true,
+  "previous_check_draft_version": "draft-v1",
+  "previous_check_draft_sha256": "3b70c647e6f6c0e555032f3257ef5079593a7956836cb6ad4b73fbe892ffbbc4",
+  "latest_check_draft_version": "draft-v1",
+  "latest_check_draft_sha256": "3b70c647e6f6c0e555032f3257ef5079593a7956836cb6ad4b73fbe892ffbbc4",
+  "resolution": null,
+  "waiver": null
+}

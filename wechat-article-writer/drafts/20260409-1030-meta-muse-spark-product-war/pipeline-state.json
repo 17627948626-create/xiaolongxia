@@ -1,0 +1,920 @@
+{
+  "angle": "借 Meta 发布 Muse Spark 这件事，写清大厂 AI 竞争正在从模型秀场转向产品落地、分发入口与商业闭环。",
+  "article_type": "观点",
+  "artifact_provenance": {
+    "draft-r1-deepseek.md": {
+      "label": "writer-meta-muse-spark-r1-deepseek-serial-resume",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:7f987598-4488-4895-9fc9-84c9e8cd3378",
+      "updated_at": "2026-04-09T03:04:16Z"
+    },
+    "draft-r1-kimi.md": {
+      "label": "writer-meta-muse-spark-r1-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:8be82319-e5d6-423c-9542-55bf905a839f",
+      "updated_at": "2026-04-09T02:39:16Z"
+    },
+    "draft-r2-deepseek.md": {
+      "label": "writer-meta-muse-spark-r2-deepseek",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:00a67234-d478-40be-9ce5-3395656b64db",
+      "updated_at": "2026-04-09T03:09:21Z"
+    },
+    "draft-r2-kimi.md": {
+      "label": "writer-meta-muse-spark-r2-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e171eece-783c-4694-8743-8b2c9214468b",
+      "updated_at": "2026-04-09T03:14:21Z"
+    },
+    "draft-r3-deepseek.md": {
+      "label": "writer-meta-muse-spark-r3-deepseek-rerun",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:2f55cfc3-b536-43df-8c11-44e96bbc7106",
+      "updated_at": "2026-04-09T03:30:00Z"
+    },
+    "draft-r3-kimi.md": {
+      "label": "writer-meta-muse-spark-r3-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e5fea5fb-5197-4e56-81ff-519a23f3eeaa",
+      "updated_at": "2026-04-09T03:34:13Z"
+    },
+    "draft-r4-kimi-fc1.md": {
+      "label": "fact-fixer-meta-muse-spark-r4-kimi-fc1",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:9f2ea3d9-00fd-462d-a69d-9e98c9e92559",
+      "updated_at": "2026-04-09T04:34:26Z"
+    },
+    "draft-r4-kimi.md": {
+      "label": "writer-meta-muse-spark-r4-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:66279078-253e-4d1f-9bb8-7ac149dbda04",
+      "updated_at": "2026-04-09T03:48:12Z"
+    },
+    "draft-r5-kimi.md": {
+      "label": "writer-meta-muse-spark-r5-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:32aa42ad-b0cf-4746-b629-69475042ceb9",
+      "updated_at": "2026-04-09T04:01:39Z"
+    },
+    "draft-r6-kimi.md": {
+      "label": "writer-meta-muse-spark-r6-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a3596051-352f-42d0-b6e3-425f67cd507b",
+      "updated_at": "2026-04-09T04:06:14Z"
+    },
+    "draft-r7-kimi.md": {
+      "label": "writer-meta-muse-spark-r7-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:aa78ba6d-0f58-4d02-8d73-5992c9edef5a",
+      "updated_at": "2026-04-09T04:10:30Z"
+    },
+    "fact-check-r4-kimi-fc1.json": {
+      "label": "fact-checker-meta-muse-spark-r4-kimi-fc1",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "fact_checker",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:734338d3-0c20-4de0-ae15-3e890f9c0c7d",
+      "updated_at": "2026-04-09T04:35:40Z"
+    },
+    "fact-check-r4-kimi.json": {
+      "label": "fact-checker-meta-muse-spark-r4-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "fact_checker",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:fa1638ba-7ac6-4b1e-99a8-eeedba9c7c1b",
+      "updated_at": "2026-04-09T04:33:00Z"
+    },
+    "final-layout.md": {
+      "label": "layout-meta-muse-spark-r4-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:4ddb7010-acfe-4045-b706-5f104ab5ff6d",
+      "updated_at": "2026-04-09T04:39:50Z"
+    },
+    "final-r4-kimi.md": {
+      "label": "humanizer-meta-muse-spark-r4-kimi-fc1",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:78dca67b-f173-4975-bfdc-5b1dfc138669",
+      "updated_at": "2026-04-09T04:37:36Z"
+    },
+    "final.md": {
+      "label": "humanizer-meta-muse-spark-r4-kimi-fc1",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:78dca67b-f173-4975-bfdc-5b1dfc138669",
+      "updated_at": "2026-04-09T04:39:50Z"
+    },
+    "outline.md": {
+      "label": "researcher-meta-muse-spark-product-war",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:be838fc8-feb9-47bf-b369-7ae1a0cb1a99",
+      "updated_at": "2026-04-09T02:33:29Z"
+    },
+    "research.json": {
+      "label": "researcher-meta-muse-spark-product-war",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:be838fc8-feb9-47bf-b369-7ae1a0cb1a99",
+      "updated_at": "2026-04-09T02:33:29Z"
+    },
+    "review-r1-deepseek.json": {
+      "label": "reviewer-meta-muse-spark-r1-deepseek",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e31b753b-ba22-44f8-981a-154c57f8e8ba",
+      "updated_at": "2026-04-09T03:06:44Z"
+    },
+    "review-r1-kimi.json": {
+      "label": "reviewer-meta-muse-spark-r1-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:2b68dd8f-c94c-442e-9f4c-21288b6883be",
+      "updated_at": "2026-04-09T02:41:52Z"
+    },
+    "review-r2-deepseek.json": {
+      "label": "reviewer-meta-muse-spark-r2-deepseek",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:56c6fd5f-e361-45f3-92c6-b40eb70261e8",
+      "updated_at": "2026-04-09T03:12:07Z"
+    },
+    "review-r2-kimi.json": {
+      "label": "reviewer-meta-muse-spark-r2-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:f4e720e4-3aef-4ac2-9d4d-acc07d458aa7",
+      "updated_at": "2026-04-09T03:16:08Z"
+    },
+    "review-r3-deepseek.json": {
+      "label": "reviewer-meta-muse-spark-r3-deepseek",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:dcd71c3b-d403-499b-88f9-21bf36492993",
+      "updated_at": "2026-04-09T03:31:29Z"
+    },
+    "review-r3-kimi.json": {
+      "label": "reviewer-meta-muse-spark-r3-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e3dc979e-c5ff-418f-9508-0152b9f2d90f",
+      "updated_at": "2026-04-09T03:35:58Z"
+    },
+    "review-r4-kimi.json": {
+      "label": "reviewer-meta-muse-spark-r4-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:e7e939e2-53da-4421-a287-e151552d3285",
+      "updated_at": "2026-04-09T03:49:52Z"
+    },
+    "review-r5-kimi.json": {
+      "label": "reviewer-meta-muse-spark-r5-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:1e2ad2e2-f787-4474-8e8e-726ef15dbac2",
+      "updated_at": "2026-04-09T04:03:29Z"
+    },
+    "review-r6-kimi.json": {
+      "label": "reviewer-meta-muse-spark-r6-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:f2e18424-7fb5-4aaf-9afd-44e2b2f23c5a",
+      "updated_at": "2026-04-09T04:07:41Z"
+    },
+    "review-r7-kimi.json": {
+      "label": "reviewer-meta-muse-spark-r7-kimi",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:64e57672-fa39-47fd-aae8-9918fb1f4e4d",
+      "updated_at": "2026-04-09T04:23:56Z"
+    }
+  },
+  "children": {
+    "fact_checker": [
+      {
+        "artifacts": [
+          "fact-check-r4-kimi.json"
+        ],
+        "completed_at": "2026-04-09T04:33:00Z",
+        "label": "fact-checker-meta-muse-spark-r4-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:fa1638ba-7ac6-4b1e-99a8-eeedba9c7c1b",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "fact-check-r4-kimi-fc1.json"
+        ],
+        "completed_at": "2026-04-09T04:35:40Z",
+        "label": "fact-checker-meta-muse-spark-r4-kimi-fc1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:734338d3-0c20-4de0-ae15-3e890f9c0c7d",
+        "status": "done"
+      }
+    ],
+    "humanizer": [
+      {
+        "artifacts": [
+          "final-r4-kimi.md"
+        ],
+        "completed_at": "2026-04-09T04:37:36Z",
+        "label": "humanizer-meta-muse-spark-r4-kimi-fc1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:78dca67b-f173-4975-bfdc-5b1dfc138669",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "final.md"
+        ],
+        "completed_at": "2026-04-09T04:39:50Z",
+        "label": "humanizer-meta-muse-spark-r4-kimi-fc1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:78dca67b-f173-4975-bfdc-5b1dfc138669",
+        "status": "done"
+      }
+    ],
+    "layout": [
+      {
+        "artifacts": [
+          "final-layout.md"
+        ],
+        "completed_at": "2026-04-09T04:39:50Z",
+        "label": "layout-meta-muse-spark-r4-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:4ddb7010-acfe-4045-b706-5f104ab5ff6d",
+        "status": "done"
+      }
+    ],
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ],
+        "completed_at": "2026-04-09T02:33:29Z",
+        "label": "researcher-meta-muse-spark-product-war",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:be838fc8-feb9-47bf-b369-7ae1a0cb1a99",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "review-r1-kimi.json"
+        ],
+        "completed_at": "2026-04-09T02:40:54Z",
+        "label": "reviewer-meta-muse-spark-r1-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:2b68dd8f-c94c-442e-9f4c-21288b6883be",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-r1-deepseek.json"
+        ],
+        "completed_at": "2026-04-09T03:06:06Z",
+        "label": "reviewer-meta-muse-spark-r1-deepseek",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e31b753b-ba22-44f8-981a-154c57f8e8ba",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-r2-deepseek.json"
+        ],
+        "completed_at": "2026-04-09T03:11:33Z",
+        "label": "reviewer-meta-muse-spark-r2-deepseek",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:56c6fd5f-e361-45f3-92c6-b40eb70261e8",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-r2-kimi.json"
+        ],
+        "completed_at": "2026-04-09T03:15:40Z",
+        "label": "reviewer-meta-muse-spark-r2-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:f4e720e4-3aef-4ac2-9d4d-acc07d458aa7",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-r3-deepseek.json"
+        ],
+        "completed_at": "2026-04-09T03:31:29Z",
+        "label": "reviewer-meta-muse-spark-r3-deepseek",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:dcd71c3b-d403-499b-88f9-21bf36492993",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-r3-kimi.json"
+        ],
+        "completed_at": "2026-04-09T03:35:33Z",
+        "label": "reviewer-meta-muse-spark-r3-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e3dc979e-c5ff-418f-9508-0152b9f2d90f",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-r4-kimi.json"
+        ],
+        "completed_at": "2026-04-09T03:49:26Z",
+        "label": "reviewer-meta-muse-spark-r4-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e7e939e2-53da-4421-a287-e151552d3285",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-r5-kimi.json"
+        ],
+        "completed_at": "2026-04-09T04:03:03Z",
+        "label": "reviewer-meta-muse-spark-r5-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:1e2ad2e2-f787-4474-8e8e-726ef15dbac2",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-r6-kimi.json"
+        ],
+        "completed_at": "2026-04-09T04:07:41Z",
+        "label": "reviewer-meta-muse-spark-r6-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:f2e18424-7fb5-4aaf-9afd-44e2b2f23c5a",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-r7-kimi.json"
+        ],
+        "completed_at": "2026-04-09T04:23:30Z",
+        "label": "reviewer-meta-muse-spark-r7-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:64e57672-fa39-47fd-aae8-9918fb1f4e4d",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "draft-r1-kimi.md"
+        ],
+        "completed_at": "2026-04-09T02:39:16Z",
+        "label": "writer-meta-muse-spark-r1-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:8be82319-e5d6-423c-9542-55bf905a839f",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-r1-deepseek.md"
+        ],
+        "completed_at": "2026-04-09T03:04:16Z",
+        "label": "writer-meta-muse-spark-r1-deepseek-serial-resume",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:7f987598-4488-4895-9fc9-84c9e8cd3378",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-r2-deepseek.md"
+        ],
+        "completed_at": "2026-04-09T03:09:21Z",
+        "label": "writer-meta-muse-spark-r2-deepseek",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:00a67234-d478-40be-9ce5-3395656b64db",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-r2-kimi.md"
+        ],
+        "completed_at": "2026-04-09T03:14:21Z",
+        "label": "writer-meta-muse-spark-r2-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e171eece-783c-4694-8743-8b2c9214468b",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-r3-deepseek.md"
+        ],
+        "completed_at": "2026-04-09T03:30:00Z",
+        "label": "writer-meta-muse-spark-r3-deepseek-rerun",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:2f55cfc3-b536-43df-8c11-44e96bbc7106",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-r3-kimi.md"
+        ],
+        "completed_at": "2026-04-09T03:34:13Z",
+        "label": "writer-meta-muse-spark-r3-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:e5fea5fb-5197-4e56-81ff-519a23f3eeaa",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-r4-kimi.md"
+        ],
+        "completed_at": "2026-04-09T03:48:12Z",
+        "label": "writer-meta-muse-spark-r4-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:66279078-253e-4d1f-9bb8-7ac149dbda04",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-r5-kimi.md"
+        ],
+        "completed_at": "2026-04-09T04:01:39Z",
+        "label": "writer-meta-muse-spark-r5-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:32aa42ad-b0cf-4746-b629-69475042ceb9",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-r6-kimi.md"
+        ],
+        "completed_at": "2026-04-09T04:06:14Z",
+        "label": "writer-meta-muse-spark-r6-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:a3596051-352f-42d0-b6e3-425f67cd507b",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-r7-kimi.md"
+        ],
+        "completed_at": "2026-04-09T04:10:30Z",
+        "label": "writer-meta-muse-spark-r7-kimi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:aa78ba6d-0f58-4d02-8d73-5992c9edef5a",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-r4-kimi-fc1.md"
+        ],
+        "completed_at": "2026-04-09T04:34:26Z",
+        "label": "fact-fixer-meta-muse-spark-r4-kimi-fc1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:9f2ea3d9-00fd-462d-a69d-9e98c9e92559",
+        "status": "done"
+      }
+    ]
+  },
+  "current_step": "draft_box_saved",
+  "fact_check_resolution": {
+    "base_report": "fact-check-r4-kimi-fc1.json",
+    "manual_fix": "Anthropic first-mention localization added to draft-r4-kimi-fc1.md",
+    "resolved_at": "2026-04-09T04:36:10Z",
+    "status": "passed_after_minor_manual_localization_fix"
+  },
+  "last_clean_step": "layout",
+  "last_draft_file": "draft-r4-kimi-fc1.md",
+  "last_fact_check_file": "fact-check-r4-kimi-fc1.json",
+  "last_review_file": "review-r4-kimi.json",
+  "last_score": 8.53,
+  "lineage_audited_at": "2026-04-09T04:40:21Z",
+  "lineage_status": "clean",
+  "manual_override": {
+    "candidate": "draft-r4-kimi.md",
+    "publish_mode": "draft_box_only",
+    "reason": "accept_current_best_so_far_and_continue_to_draft_box_even_below_pass_threshold_8_7",
+    "review": "review-r4-kimi.json",
+    "score": 8.53,
+    "selected_at": "2026-04-09T04:30:50Z",
+    "selected_by": "boss_confirm"
+  },
+  "max_revision_rounds": 10,
+  "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+  "mcp_server": "wenyan-mcp",
+  "pass_threshold": 8.7,
+  "pending_action": null,
+  "phase": "draft_box_saved",
+  "profile": "小龙虾有话说",
+  "profile_publish_mode": "draft_box_only",
+  "publish_candidate": "final-layout.md",
+  "publish_profile_preflight": {
+    "checked_at": "2026-04-09T04:40:21Z",
+    "default_theme": "sspai",
+    "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+    "mcp_server": "wenyan-mcp",
+    "profile": "小龙虾有话说",
+    "publish_md_checked": true,
+    "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+    "publisher_mode": "remote",
+    "status": "ok",
+    "wechat_author": "小龙虾有话说",
+    "wenyan_mcp_present": true
+  },
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "publisher_mode": "remote",
+  "purpose": "写成一篇可进入公众号草稿箱、但本轮不正式发表的公众号文章。",
+  "repair_action": null,
+  "required_user_action": null,
+  "resume_context": {
+    "best_so_far_draft": "draft-r4-kimi.md",
+    "best_so_far_review": "review-r4-kimi.json",
+    "best_so_far_score": 8.53,
+    "latest_draft": "draft-r7-kimi.md",
+    "latest_review": "review-r7-kimi.json",
+    "latest_score": 7.9,
+    "reason": "same_expression_layer_blockers_remain_unresolved_after_r5_r6_r7_including_atomic_contract_round"
+  },
+  "revision_cycle": 7,
+  "schema_version": "2026-04-07.lineage-v1",
+  "selected_publish_candidate": "draft-r4-kimi-fc1.md",
+  "selected_publish_review": "review-r4-kimi.json",
+  "selected_publish_score": 8.53,
+  "slug": "20260409-1030-meta-muse-spark-product-war",
+  "state": "done",
+  "topic": "Meta 发布 Muse Spark 后，真正值得看的不是参数，而是它终于开始把 AI 当产品生意做了",
+  "updated_at": "2026-04-09T04:41:11Z",
+  "voice_profile_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/voice-profile.json",
+  "waiting_for": null,
+  "wechat_author": "小龙虾有话说",
+  "writer_backend_policy": {
+    "api_writer_enabled": false,
+    "cli_only": true,
+    "deepseek_cli": true,
+    "kimi_cli": true
+  },
+  "writer_competition": {
+    "allowed_backends": [
+      "kimi-cli"
+    ],
+    "current_round": 7,
+    "deepseek_disabled": true,
+    "draft_box_only": true,
+    "enabled": true,
+    "execution_mode": "serial_kimi_only",
+    "human_manual_content_judging": false,
+    "judge_role": "xiaolongxia_main_agent",
+    "max_revision_rounds": 10,
+    "parallel_disabled": true,
+    "pass_threshold": 8.7,
+    "policy_note": "2026-04-09 user changed strategy again: stop running DeepSeek entirely; continue article with Kimi only.",
+    "policy_updated_at": "2026-04-09T04:02:20Z",
+    "rounds": [
+      {
+        "deepseek": {
+          "block_reason": "serial_mode_enabled_after_external_auth_block",
+          "blocker_count": 2,
+          "draft": "draft-r1-deepseek.md",
+          "lite_hard_fail": false,
+          "pass_threshold_applied": 8.7,
+          "resume_after_auth_at": "2026-04-09T03:01:30Z",
+          "review": "review-r1-deepseek.json",
+          "review_completed_at": "2026-04-09T03:06:44Z",
+          "review_decision": "revise",
+          "runner_label": "writer-meta-muse-spark-r1-deepseek-serial-resume",
+          "status": "done",
+          "weighted_total": 7.08,
+          "writer_lite_check": "writer-lite-check-r1-deepseek.json"
+        },
+        "inputs": {
+          "brief": "writer-lite-brief.json",
+          "outline": "outline.md",
+          "research": "research.json"
+        },
+        "kimi": {
+          "blocker_count": 0,
+          "completed_at": "2026-04-09T02:39:16Z",
+          "current_status_under_policy": "below_threshold",
+          "draft": "draft-r1-kimi.md",
+          "lite_hard_fail": false,
+          "pass_threshold_applied": 8.7,
+          "passes_current_threshold": false,
+          "review": "review-r1-kimi.json",
+          "review_completed_at": "2026-04-09T02:41:52Z",
+          "review_decision": "pass",
+          "status": "done",
+          "weighted_total": 8.24,
+          "writer_lite_check": "writer-lite-check-r1-kimi.json"
+        },
+        "pass_threshold_applied": 8.7,
+        "phase": "initial",
+        "policy_override": "parallel_disabled_mid_run",
+        "round": 1,
+        "scheduling": "serial",
+        "winner": "kimi",
+        "winner_decided": true,
+        "winner_passes_threshold": false,
+        "winner_reason": {
+          "deepseek": 7.08,
+          "kimi": 8.24,
+          "rule": "weighted_total"
+        }
+      },
+      {
+        "deepseek": {
+          "blocker_count": 1,
+          "draft": "draft-r2-deepseek.md",
+          "lite_hard_fail": false,
+          "review": "review-r2-deepseek.json",
+          "review_completed_at": "2026-04-09T03:12:07Z",
+          "review_decision": "revise",
+          "runner_label": "writer-meta-muse-spark-r2-deepseek",
+          "status": "done",
+          "weighted_total": 7.26,
+          "writer_lite_check": "writer-lite-check-r2-deepseek.json"
+        },
+        "inputs": {
+          "base_draft": "draft-r1-kimi.md",
+          "base_review": "review-r1-kimi.json",
+          "brief": "writer-lite-brief.json",
+          "research": "research.json"
+        },
+        "kimi": {
+          "blocker_count": 0,
+          "draft": "draft-r2-kimi.md",
+          "lite_hard_fail": false,
+          "review": "review-r2-kimi.json",
+          "review_completed_at": "2026-04-09T03:16:08Z",
+          "review_decision": "pass",
+          "runner_label": "writer-meta-muse-spark-r2-kimi",
+          "status": "done",
+          "weighted_total": 8.36,
+          "writer_lite_check": "writer-lite-check-r2-kimi.json"
+        },
+        "max_revision_rounds": 10,
+        "pass_threshold_applied": 8.7,
+        "phase": "revise",
+        "round": 2,
+        "scheduling": "serial",
+        "winner": "kimi",
+        "winner_decided": true,
+        "winner_passes_threshold": false,
+        "winner_reason": {
+          "deepseek": 7.26,
+          "kimi": 8.36,
+          "rule": "weighted_total"
+        }
+      },
+      {
+        "deepseek": {
+          "blocker_count": 0,
+          "draft": "draft-r3-deepseek.md",
+          "last_failure": "empty_response_from_deepseek_cli_after_3_identical_exec_attempts",
+          "lite_hard_fail": false,
+          "retry_count": 1,
+          "review": "review-r3-deepseek.json",
+          "review_completed_at": "2026-04-09T03:31:29Z",
+          "review_decision": "pass",
+          "runner_label": "writer-meta-muse-spark-r3-deepseek-rerun",
+          "status": "done",
+          "weighted_total": 8.44,
+          "writer_lite_check": "writer-lite-check-r3-deepseek.json"
+        },
+        "inputs": {
+          "base_draft": "draft-r2-kimi.md",
+          "base_review": "review-r2-kimi.json",
+          "brief": "writer-lite-brief.json",
+          "research": "research.json"
+        },
+        "kimi": {
+          "blocker_count": 0,
+          "draft": "draft-r3-kimi.md",
+          "lite_hard_fail": false,
+          "review": "review-r3-kimi.json",
+          "review_completed_at": "2026-04-09T03:35:58Z",
+          "review_decision": "pass",
+          "runner_label": "writer-meta-muse-spark-r3-kimi",
+          "status": "done",
+          "weighted_total": 8.44,
+          "writer_lite_check": "writer-lite-check-r3-kimi.json"
+        },
+        "max_revision_rounds": 10,
+        "pass_threshold_applied": 8.7,
+        "phase": "revise",
+        "round": 3,
+        "scheduling": "serial",
+        "winner": "deepseek",
+        "winner_decided": true,
+        "winner_passes_threshold": false,
+        "winner_reason": {
+          "deepseek": 8.44,
+          "deepseek_blockers": 0,
+          "kimi": 8.44,
+          "kimi_blockers": 0,
+          "rule": "deepseek_tiebreak_after_equal_score_and_blockers"
+        }
+      },
+      {
+        "deepseek": {
+          "blocker_count": null,
+          "draft": "draft-r4-deepseek.md",
+          "failure_at": "2026-04-09T03:45:40Z",
+          "failure_reason": "empty_response_from_deepseek_cli_three_consecutive_exec_attempts",
+          "review": null,
+          "review_decision": "technical_fail",
+          "runner_label": "writer-meta-muse-spark-r4-deepseek",
+          "status": "technical_fail",
+          "weighted_total": null
+        },
+        "inputs": {
+          "base_draft": "draft-r3-deepseek.md",
+          "base_review": "review-r3-deepseek.json",
+          "brief": "writer-lite-brief.json",
+          "research": "research.json"
+        },
+        "kimi": {
+          "blocker_count": 0,
+          "draft": "draft-r4-kimi.md",
+          "lite_hard_fail": false,
+          "review": "review-r4-kimi.json",
+          "review_completed_at": "2026-04-09T03:49:52Z",
+          "review_decision": "pass",
+          "runner_label": "writer-meta-muse-spark-r4-kimi",
+          "status": "done",
+          "weighted_total": 8.53,
+          "writer_lite_check": "writer-lite-check-r4-kimi.json"
+        },
+        "max_revision_rounds": 10,
+        "pass_threshold_applied": 8.7,
+        "phase": "revise",
+        "round": 4,
+        "scheduling": "serial",
+        "winner": "kimi",
+        "winner_decided": true,
+        "winner_passes_threshold": false,
+        "winner_reason": {
+          "deepseek": "technical_fail",
+          "kimi": 8.53,
+          "rule": "deepseek_technical_fail_then_only_valid_candidate"
+        }
+      },
+      {
+        "deepseek": {
+          "blocker_count": null,
+          "draft": "draft-r5-deepseek.md",
+          "failure_at": "2026-04-09T03:59:49Z",
+          "failure_reason": "empty_response_from_deepseek_cli_three_consecutive_exec_attempts",
+          "review": null,
+          "review_decision": "technical_fail",
+          "runner_label": "writer-meta-muse-spark-r5-deepseek",
+          "status": "technical_fail",
+          "weighted_total": null
+        },
+        "inputs": {
+          "base_draft": "draft-r4-kimi.md",
+          "base_review": "review-r4-kimi.json",
+          "brief": "writer-lite-brief.json",
+          "research": "research.json"
+        },
+        "kimi": {
+          "blocker_count": 3,
+          "draft": "draft-r5-kimi.md",
+          "lite_hard_fail": false,
+          "review": "review-r5-kimi.json",
+          "review_completed_at": "2026-04-09T04:03:29Z",
+          "review_decision": "revise",
+          "runner_label": "writer-meta-muse-spark-r5-kimi",
+          "status": "done",
+          "weighted_total": 7.9,
+          "writer_lite_check": "writer-lite-check-r5-kimi.json"
+        },
+        "max_revision_rounds": 10,
+        "pass_threshold_applied": 8.7,
+        "phase": "revise",
+        "round": 5,
+        "scheduling": "serial",
+        "winner": "kimi",
+        "winner_decided": true,
+        "winner_passes_threshold": false,
+        "winner_reason": {
+          "kimi": 7.9,
+          "rule": "kimi_only_mode"
+        }
+      },
+      {
+        "inputs": {
+          "base_draft": "draft-r5-kimi.md",
+          "base_review": "review-r5-kimi.json",
+          "brief": "writer-lite-brief.json",
+          "research": "research.json"
+        },
+        "kimi": {
+          "blocker_count": 3,
+          "draft": "draft-r6-kimi.md",
+          "lite_hard_fail": false,
+          "review": "review-r6-kimi.json",
+          "review_completed_at": "2026-04-09T04:08:21Z",
+          "review_decision": "revise",
+          "runner_label": "writer-meta-muse-spark-r6-kimi",
+          "status": "done",
+          "weighted_total": 8.0,
+          "writer_lite_check": "writer-lite-check-r6-kimi.json"
+        },
+        "max_revision_rounds": 10,
+        "mode": "kimi_only",
+        "pass_threshold_applied": 8.7,
+        "phase": "revise",
+        "round": 6,
+        "scheduling": "serial_kimi_only",
+        "winner": "kimi",
+        "winner_decided": true,
+        "winner_passes_threshold": false,
+        "winner_reason": {
+          "kimi": 8.0,
+          "rule": "kimi_only_mode"
+        }
+      },
+      {
+        "contract_mode": "atomic_rewrite_contract",
+        "inputs": {
+          "base_draft": "draft-r6-kimi.md",
+          "base_review": "review-r6-kimi.json",
+          "brief": "writer-lite-brief.json",
+          "research": "research.json",
+          "rewrite_contract": "rewrite-contract-r7-kimi.json"
+        },
+        "kimi": {
+          "blocker_count": 3,
+          "draft": "draft-r7-kimi.md",
+          "lite_hard_fail": false,
+          "review": "review-r7-kimi.json",
+          "review_completed_at": "2026-04-09T04:23:56Z",
+          "review_decision": "revise",
+          "runner_label": "writer-meta-muse-spark-r7-kimi",
+          "status": "done",
+          "weighted_total": 7.9,
+          "writer_lite_check": "writer-lite-check-r7-kimi.json"
+        },
+        "max_revision_rounds": 10,
+        "mode": "kimi_only",
+        "pass_threshold_applied": 8.7,
+        "phase": "revise",
+        "round": 7,
+        "scheduling": "serial_kimi_only",
+        "winner": "kimi",
+        "winner_decided": true,
+        "winner_passes_threshold": false,
+        "winner_reason": {
+          "contract_assessment": "not_cleared",
+          "kimi": 7.9,
+          "rule": "kimi_only_mode"
+        }
+      }
+    ],
+    "winner_rule": [
+      "weighted_total",
+      "fewer_blockers",
+      "deepseek_tiebreak"
+    ]
+  },
+  "publish_file": "publish.md",
+  "wenyan_push_status": "success",
+  "draft_saved_at": "2026-04-09T04:41:11Z",
+  "media_id": "7NYHnQxN70EpaLx4Jh0kyqL9PYtIKySLiWoJSROdj07WwwOv98svU-loBMDkKmZD"
+}

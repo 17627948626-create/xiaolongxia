@@ -1,0 +1,33 @@
+{
+  "draft_version": "draft-v2",
+  "generated_at": "2026-04-09T08:28:17Z",
+  "updated_at": "2026-04-09T08:28:17Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-mythos-bu-gan-fa/draft-v2.md",
+    "draft_sha256": "8b5932a0ed8411b07cd61de1ff74bf9005b3353f09a4ef41c6d9753ce328b688",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-mythos-bu-gan-fa/writer-lite-brief.json",
+    "brief_sha256": "7d94ee3ede83080de9e0584b1c3ab76b1fc9cd82def8943aa98ad0471cf8c1ee",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-mythos-bu-gan-fa/research.json",
+    "research_sha256": "aae60cb8a438921d5b5237a501786f327a098b2261cf5bdbcbaac41a70b8a1f5"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

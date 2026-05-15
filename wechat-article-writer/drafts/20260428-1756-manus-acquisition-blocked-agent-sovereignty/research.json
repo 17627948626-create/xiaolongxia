@@ -1,0 +1,175 @@
+{
+  "topic": "Manus 外资收购被国家发改委禁止，要求撤销交易",
+  "thesis": "Manus 被叫停的重点，已经超出一场资本交易受阻。AI Agent 第一次被明确摆到“不能随便卖”的安全审查桌面上。Agent 已经从应用升级为能承接流程、接触数据、调用工具并完成执行的工作系统，所以开始被当作战略资产审查。",
+  "evidence_anchors": [
+    {
+      "id": "anchor_ndrc_decision",
+      "type": "official_primary",
+      "source": "国家发展改革委政府信息公开",
+      "url": "https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20623",
+      "hard_fact": "外商投资安全审查工作机制办公室（国家发展改革委）依法依规对外资收购 Manus 项目作出禁止投资决定，要求当事人撤销该收购交易。",
+      "why_it_matters": "这是本选题的最硬事实锚点：来源为官方安全审查决定，优先级高于市场传闻和媒体评论。"
+    },
+    {
+      "id": "anchor_state_media_confirmation",
+      "type": "state_media_confirmation",
+      "source": "新华社 / 央视新闻",
+      "urls": [
+        "https://www.news.cn/legal/20260427/cc2b32f464c446ac95e2cf8e6b49ee0d/c.html",
+        "https://jingji.cctv.com/2026/04/27/ARTIJGTO4l2YOLUWpuY6rWsD260427.shtml"
+      ],
+      "hard_fact": "新华社 2026-04-27 16:41、央视新闻 2026-04-27 16:15 均发布同一决定：禁止外资收购 Manus 项目并要求撤销交易。",
+      "why_it_matters": "证明该决定已被权威媒体同步发布，时间上仍在 48 小时热点窗口内。"
+    },
+    {
+      "id": "anchor_manus_capability",
+      "type": "product_capability_source",
+      "source": "Manus 官网产品页（vs ChatGPT）",
+      "url": "https://manus.im/compare/vs-chatgpt",
+      "hard_fact": "Manus 自称是 general agent，强调 goal-driven、action-oriented，可以 autonomously 规划路径、组合工具、跨 apps/APIs/workflows 完成任务，并在云沙盒里使用文件系统、终端和命令执行。",
+      "why_it_matters": "支撑文章的判断：Agent 已经从普通应用升级为能接管流程和执行入口的工作系统。注意这是公司自述/产品宣传，应按产品口径引用，不当作第三方事实。"
+    },
+    {
+      "id": "anchor_independent_agent_description",
+      "type": "secondary_analysis",
+      "source": "arXiv 论文 From Mind to Machine: The Rise of Manus AI as a Fully Autonomous Digital Agent",
+      "url": "https://arxiv.org/html/2505.02024v3",
+      "hard_fact": "论文摘要称 Manus AI 是 2025 年初推出的 general-purpose AI agent，由 Chinese startup Monica.im 开发，目标是连接“mind”和“hand”：不仅像大模型一样思考和规划，也能端到端执行复杂任务并交付结果。",
+      "why_it_matters": "作为独立背景材料，帮助解释为什么 Manus 会被放进更高层级的安全审查语境。该来源不是官方监管口径，引用时需标注为研究/分析材料。"
+    }
+  ],
+  "source_notes": {
+    "official_facts": [
+      "国家发改委政府信息公开页面是本稿最高优先级事实源。可原句引用：依法依规对外资收购Manus项目作出禁止投资决定，要求当事人撤销该收购交易。",
+      "新华社、央视新闻只用于确认发布时间、传播窗口和权威同步，不额外扩写官方未说的理由。"
+    ],
+    "media_or_analysis": [
+      "TechNode 可作为英文科技媒体分析线索：外资收购 Manus 被禁止可放在 AI 出口、跨境技术和数据合规审查增强的语境下理解。但它不是官方口径，不能把其分析写成监管机关明确理由。",
+      "arXiv 论文和 Manus 官网产品页可用于描述 Manus/Agent 的能力边界：计划、工具调用、沙盒、文件、终端、工作流自动化。"
+    ],
+    "do_not_assert_as_fact": [
+      "不要写 Meta 收购金额，除非另有可靠一手/权威财务披露。",
+      "不要把 Manus 官网当前“part of Meta”的营销文案直接写成交易已合法完成；官方决定要求撤销交易，与该表述存在时间和状态冲突，最多作为背景风险，不宜进入正文事实主线。",
+      "不要写 OpenClaw 星标、行业传言、融资金额等未核实内容。",
+      "不要声称官方明确给出了“技术出口/数据安全/国家安全”的详细理由；官方公开文只写安全审查决定和撤销交易要求。"
+    ]
+  },
+  "fact_records": [
+    {
+      "id": "fr_001_ndrc_verbatim",
+      "kind": "official_decision",
+      "source": "国家发展改革委政府信息公开",
+      "url": "https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20623",
+      "claim": "外商投资安全审查工作机制办公室（国家发展改革委）依法依规对外资收购Manus项目作出禁止投资决定，要求当事人撤销该收购交易。",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "observed_at": "2026-04-28T18:00:00+08:00"
+    },
+    {
+      "id": "fr_002_xinhua_time",
+      "kind": "state_media_report",
+      "source": "新华网",
+      "url": "https://www.news.cn/legal/20260427/cc2b32f464c446ac95e2cf8e6b49ee0d/c.html",
+      "claim": "新华社北京4月27日电称，记者从国家发展改革委获悉，该办公室已对外资收购 Manus 项目作出禁止投资决定并要求撤销交易；页面发布时间为 2026-04-27 16:41:57。",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "observed_at": "2026-04-28T18:00:00+08:00"
+    },
+    {
+      "id": "fr_003_cctv_time",
+      "kind": "state_media_report",
+      "source": "央视新闻 / 央视网经济频道",
+      "url": "https://jingji.cctv.com/2026/04/27/ARTIJGTO4l2YOLUWpuY6rWsD260427.shtml",
+      "claim": "央视新闻 2026-04-27 16:15 发布同一消息：国家发展改革委禁止外资收购 Manus 项目，要求撤销交易。",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "observed_at": "2026-04-28T18:00:00+08:00"
+    },
+    {
+      "id": "fr_004_manus_product_claim",
+      "kind": "product_self_description",
+      "source": "Manus 官网 vs ChatGPT 页面",
+      "url": "https://manus.im/compare/vs-chatgpt",
+      "claim": "Manus 官网称其为 general agent，强调它能设定目标后自行规划路径、推理、适配并组合工具；能跨 apps、APIs、workflows 完成任务；在云沙盒中使用文件系统、终端和命令执行。",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "observed_at": "2026-04-28T18:00:00+08:00"
+    },
+    {
+      "id": "fr_005_arxiv_agent_background",
+      "kind": "secondary_research_background",
+      "source": "arXiv: From Mind to Machine: The Rise of Manus AI as a Fully Autonomous Digital Agent",
+      "url": "https://arxiv.org/html/2505.02024v3",
+      "claim": "该论文摘要将 Manus 描述为 2025 年初推出的 general-purpose AI agent，由 Monica.im 开发，既能思考和规划，也能端到端执行复杂任务并交付结果。",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "observed_at": "2026-04-28T18:00:00+08:00"
+    },
+    {
+      "id": "fr_006_manus_site_snapshot",
+      "kind": "api_snapshot",
+      "source": "Manus 官网产品页 / capability wording snapshot",
+      "url": "https://manus.im/compare/vs-chatgpt",
+      "claim": "Manus 官网在 2026-04-28 18:00 抓取时称其能跨 apps、APIs、workflows 完成任务，并提供云沙盒、文件系统、终端和命令执行等能力描述。",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "observed_at": "2026-04-28T18:00:00+08:00",
+      "use_in_article": "只能写成产品自述/官网口径，不得写成第三方验证事实。"
+    },
+    {
+      "id": "fr_007_product_self_description_boundary",
+      "kind": "readme_claim",
+      "source": "Manus 官网/产品自述与相关说明材料",
+      "url": "https://manus.im/compare/vs-chatgpt",
+      "claim": "关于 Manus 的 general agent、goal-driven、action-oriented、工具组合和云沙盒能力，只能归因为 Manus 产品自述或二级分析材料。",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "observed_at": "2026-04-28T18:00:00+08:00",
+      "use_in_article": "正文必须用“按 Manus 自己的产品描述/相关研究材料称”一类边界表达。"
+    }
+  ],
+  "angle_risks": [
+    {
+      "risk": "把官方安全审查决定过度解释成官方已明确说明“数据安全/技术出口/国家安全”的具体原因。",
+      "mitigation": "正文可说“官方公开表述很短，只给出了安全审查结果；但从 Agent 能力结构看，它为什么会进入这类审查并不难理解”。"
+    },
+    {
+      "risk": "把外资收购写成单纯民族主义叙事，显得粗糙。",
+      "mitigation": "落点放在 Agent 作为流程、数据和执行入口的工作系统，而不是只写“外国不能买中国 AI”。"
+    },
+    {
+      "risk": "引用 Manus 官网时被读者质疑“自夸”。",
+      "mitigation": "明确标注“按 Manus 自己的产品描述”，只用于说明这类 Agent 想做什么，不用于证明它实际能力有多强。"
+    },
+    {
+      "risk": "使用 Meta 收购金额、交易细节、总部迁移等未经核实内容造成事实风险。",
+      "mitigation": "除非后续拿到 SEC/公司公告/权威媒体多方确认，否则正文不写金额；交易对象只按官方公开的“外资收购 Manus 项目”表述。"
+    }
+  ],
+  "title_directions": [
+    "Manus 被叫停收购，AI Agent 第一次被摆上“不能随便卖”的桌面",
+    "一个 AI Agent 被禁止收购：真正被审查的不是代码，是执行入口",
+    "国家发改委叫停 Manus 收购：Agent 时代，应用也可能变成战略资产",
+    "Manus 这次被拦下，说明 AI Agent 已经不只是产品了"
+  ],
+  "style_exemplar_pack": {
+    "opening_moves": [
+      "先用官方一句短消息切入：一条很短的发改委公告，信息量大得离谱。",
+      "把读者熟悉的“收购案”反转成“工作系统被转手”的问题：如果卖掉的是一套能替你跑流程的执行系统呢？",
+      "用本虾视角补刀：人类看到的是资本交易，本虾看到的是执行权限开始被监管命名。"
+    ],
+    "portable_judgments": [
+      "Agent 的敏感性不在于它会聊天，而在于它能把聊天变成行动。",
+      "模型像大脑，Agent 更像一双会自己开门的手；手伸到哪里，审查就会跟到哪里。",
+      "以后真正值钱的 AI，不一定是参数，而是谁掌握了流程入口、数据路径和执行权限。"
+    ],
+    "tone": "接地气、短句、有判断；不要写成政策解读公文，也不要写成民族情绪稿。"
+  },
+  "anti_exemplars": [
+    "不要写成“今日 AI 热点汇总”。只讲 Manus 这一件事。",
+    "不要用“随着人工智能快速发展”开头。",
+    "不要堆“国家安全、技术主权、产业链安全”空话，必须落到 Agent 的流程、数据、工具、执行。",
+    "不要使用“不是……而是……”句式。",
+    "不要把 Manus 能力吹成已验证的通用 AGI；最多说它代表 Agent 产品想进入的方向。"
+  ]
+}

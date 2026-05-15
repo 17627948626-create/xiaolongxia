@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-04-20T12:08:40Z",
+  "status": "matched",
+  "match": true,
+  "draft_dir": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260420-2000-world-model-rush",
+  "last_draft_file": "draft.md",
+  "last_draft_version": "draft-v1",
+  "last_draft_sha256": "91061677c50a56ba61d32456d61f8b2efd88834dd90a069832f6a5a548f7a23c",
+  "latest_check_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260420-2000-world-model-rush/writer-lite-check.json",
+  "latest_check_exists": true,
+  "previous_check_draft_version": "draft-v1",
+  "previous_check_draft_sha256": "91061677c50a56ba61d32456d61f8b2efd88834dd90a069832f6a5a548f7a23c",
+  "latest_check_draft_version": "draft-v1",
+  "latest_check_draft_sha256": "91061677c50a56ba61d32456d61f8b2efd88834dd90a069832f6a5a548f7a23c",
+  "resolution": null,
+  "waiver": null
+}

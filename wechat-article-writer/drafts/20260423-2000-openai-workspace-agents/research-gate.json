@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "hard_fail": false,
+  "updated_at": "2026-04-24T01:39:22Z",
+  "scope": "research_artifact_high_risk_fact_records_and_sanity",
+  "detected_categories": [
+    "api_snapshot",
+    "quote_mode",
+    "readme_claim"
+  ],
+  "corruption_hits": [],
+  "issues": [],
+  "fact_record_count": 8
+}

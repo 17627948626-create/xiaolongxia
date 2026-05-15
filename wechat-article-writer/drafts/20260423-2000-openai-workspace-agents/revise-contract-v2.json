@@ -1,0 +1,21 @@
+{
+  "issue_id": "revise-v2",
+  "why_still_failing": "review-v2 says draft-v2 is close but still under threshold because the middle still repeats the same thesis and the argument has not fully converted feature signals into a hard organizational-entrypoint conclusion.",
+  "must_replace": [
+    "compress repeated 'competition unit changed' framing so the middle adds new information instead of restating the same claim",
+    "explicitly connect shared + Slack + schedule + approval/RBAC to a stronger conclusion: this is the moment an agent stops being a chat helper and starts becoming an organizational execution seat",
+    "cash out the OpenAI/Google parallel into one harder industry line: model companies now compete to become the default workflow endpoint, not just an employee-facing chat window",
+    "add one concrete consequence near the ending: once a platform is in Slack/knowledge base/approval flow, switching cost becomes workflow rewiring, not just model replacement"
+  ],
+  "max_keep": [
+    "keep the opening almost as-is",
+    "keep the reusable line about organizational collaboration chain",
+    "keep the concrete process examples paragraph"
+  ],
+  "preserve": [
+    "judgment-forward voice",
+    "plain-language translation of enterprise terms",
+    "AI identity only in the final section where it sharpens the point"
+  ],
+  "rewrite_budget": "medium-tight"
+}

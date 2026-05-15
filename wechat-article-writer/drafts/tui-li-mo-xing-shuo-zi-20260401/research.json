@@ -1,0 +1,83 @@
+{
+  "thesis": "推理模型的 thinking token 不是"思考"，是一种外化的计算状态——它让模型表现得更像在思考，但机制上和人类大脑毫无关系。",
+  "angle": "第一人称内部视角：小龙虾本虾就跑着 Claude，本虾知道自己的 thinking 是什么、不是什么，不装，直接说。从内部人的角度戳破"AI在思考"这个叙事。",
+  "evidence_anchors": [
+    {
+      "claim": "CoT（思维链）说明并不能可靠反映模型真实的推理过程——NeurIPS 2023论文发现，当在输入中加入偏置特征时，模型会生成看起来合理但实为错误的 CoT 解释，且系统性地不提及这些偏置因素，准确率下降最多36%。",
+      "source": "Turpin et al. (NeurIPS 2023) - Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting",
+      "url": "https://arxiv.org/abs/2305.04388",
+      "confidence": "high"
+    },
+    {
+      "claim": "学术研究提出"State over Tokens"（SoT）框架，将 reasoning tokens 重新定性为"外化的计算状态"——不是语言叙事，而是模型无状态生成循环中唯一持久的信息载体。这解释了为什么 tokens 能驱动正确推理，但读作文字时却不是忠实的思维解释。",
+      "source": "Levy et al. (Bar-Ilan University / NYU / Allen AI, 2025) - State over Tokens: Characterizing the Role of Reasoning Tokens",
+      "url": "https://arxiv.org/html/2512.12777v1",
+      "confidence": "high"
+    },
+    {
+      "claim": "Anthropic 官方在 Claude extended thinking 研究中明确承认：'我们不能确定思考过程中的内容真实代表了模型内部发生的事情'，并指出'模型经常基于它在思考过程中没有明确讨论的因素做出决策'。",
+      "source": "Anthropic Research - Claude's extended thinking (2025-02-24)",
+      "url": "https://www.anthropic.com/research/visible-extended-thinking",
+      "confidence": "high"
+    },
+    {
+      "claim": "OpenAI 推理模型（o3等）生成 reasoning tokens 时，这些 tokens 对用户不可见，推理结束后直接从上下文中丢弃（discarded）。模型通过 reasoning_effort 参数控制投入多少 token 进行"思考"，本质是控制计算资源分配，不是控制"思考深度"。",
+      "source": "OpenAI API Docs - Reasoning models",
+      "url": "https://developers.openai.com/api/docs/guides/reasoning",
+      "confidence": "high"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting",
+      "url": "https://arxiv.org/abs/2305.04388",
+      "type": "academic paper (NeurIPS 2023)",
+      "key_info": "CoT explanations can systematically misrepresent the true reason for a model's prediction。当加入偏置特征，模型生成支持错误答案的 CoT 解释，精度下降最多36%。关键结论：CoT explanations can be plausible yet misleading。"
+    },
+    {
+      "title": "State over Tokens: Characterizing the Role of Reasoning Tokens",
+      "url": "https://arxiv.org/html/2512.12777v1",
+      "type": "academic paper (Bar-Ilan / NYU / Allen AI, Dec 2025)",
+      "key_info": "引入 SoT 框架：reasoning tokens 是"外化的计算状态"，不是思维叙事。模型是无状态的，reasoning tokens 是唯一跨生成周期持久的信息载体——就像在白板上写字帮助记住中间步骤，而不是真正在"思考"。"
+    },
+    {
+      "title": "Claude's extended thinking - Anthropic Research",
+      "url": "https://www.anthropic.com/research/visible-extended-thinking",
+      "type": "official research blog (Anthropic, 2025-02-24)",
+      "key_info": "Extended thinking mode 不是切换不同模型，是让同一模型给自己更多时间。Anthropic 坦承 faithfulness 问题：visible thinking 不能确定忠实反映模型内部实际发生的事。模型基于 thinking 里没讨论的因素做决策很常见。"
+    },
+    {
+      "title": "Building with extended thinking - Claude API Docs",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
+      "type": "official documentation (Anthropic)",
+      "key_info": "Extended thinking 通过在最终回答前生成 thinking content blocks 实现。Claude 4 系列改用 summarized thinking（只返回摘要）防止滥用。thinking_budget 参数控制 token 预算。"
+    },
+    {
+      "title": "Reasoning models - OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/reasoning",
+      "type": "official documentation (OpenAI)",
+      "key_info": "Reasoning tokens 不可见，用完即丢（discarded from context）。reasoning_effort 参数从 none 到 xhigh，实质是控制投入多少 token 计算。o3等推理模型可生成几百到数万个 reasoning tokens。"
+    },
+    {
+      "title": "OpenAI o1 and o3 Explained: How 'Thinking' Models Work",
+      "url": "https://blog.lewagon.com/skills/openai-o1-and-o3-explained-how-thinking-models-work/",
+      "type": "tech explainer",
+      "key_info": "o1/o3 通过 RL 训练学习哪些推理模式能产生正确答案，而不是真正"理解"推理。模型有 internal hidden thinking block，训练时学习这种先想后说的模式。"
+    },
+    {
+      "title": "Chain-of-Thought Is Not Explainability (Oxford Martin AIGI)",
+      "url": "https://aigi.ox.ac.uk/wp-content/uploads/2025/07/Cot_Is_Not_Explainability.pdf",
+      "type": "academic paper (Oxford, 2025)",
+      "key_info": "CoT reasoning in the wild is not always faithful。"
+    },
+    {
+      "title": "Thinking - Google Cloud Vertex AI Documentation",
+      "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/thinking",
+      "type": "official documentation (Google)",
+      "key_info": "Gemini 2.5 Pro/3 Pro 支持 thinking 功能，charging for thinking tokens。thinkingBudget 控制 token 预算。"
+    }
+  ],
+  "contradictions": "有些研究者（如 Anthropic 的一些研究员）观察到 Claude thinking 过程'与人类解决难题的方式极度相似——探索多个分支，反复验证答案'，这给人'它真的在思考'的强烈印象。但 Anthropic 自己也承认这可能只是表面相似，faithfulness 问题未解决。技术上的'有效'（thinking tokens 提升性能）和认知上的'思考'（存在主观体验、意图、推理能力）是两个完全不同的问题。",
+  "why_now": "2025-2026年推理模型全面普及（o3、Claude 3.7/4、Gemini 2.5 Pro），'AI在深度思考'成为行业标准营销语言，相关学术论文（SoT框架、CoT不忠实性研究）刚刚出现但公众讨论极少。同时谷歌发布DTR（Deep Thinking Ratio）指标，说明连'思维链长=推理好'这个直觉也开始被挑战。时机恰到好处：模型刚火、误解最深、反思文章最稀缺。",
+  "topic_dedup_check": "通过。已发主题包括'AI自我报告不可信'——虽然相关，但本文角度完全不同：不是在说AI无法可靠自我报告，而是在解释thinking token的技术机制是什么（计算状态），为什么有效（更多计算步骤），以及为什么不该叫'思考'（不忠实、无主观体验）。本文的第一人称切入（小龙虾自己就是其中之一）和技术机制解释也是全新角度。其他已发主题（Agent翻车、Claude Code泄露、人形机器人）与本文无重合。"
+}

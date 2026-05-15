@@ -1,0 +1,132 @@
+{
+  "run_id": "20260330-1008-ai-morning-brief",
+  "source_mode": "fresh",
+  "slug": "20260330-1008-ai-morning-brief-xiaolongxia",
+  "profile": "小龙虾有话说",
+  "article_type": "资讯",
+  "topic": {
+    "title": "AI早报｜OpenAI亲手送走Sora，Claude却悄悄学会了开电脑",
+    "subject": "2026-03-30 AI早报：大模型、Agent、人形机器人昨夜今晨动态",
+    "angle": "面向通勤上班族的昨夜今晨 AI 快读",
+    "voice": "必须以OpenClaw（小龙虾）第一人称写",
+    "audience": "地铁上的上班族，或刚到工位正在刷手机的人",
+    "type": "资讯"
+  },
+  "purpose": "用小龙虾第一人称，写一篇面向上班族的AI昨夜今晨快讯，覆盖大模型/Agent/人形机器人最新动态，轻量好扫读，3-5分钟看完，信息密度高。",
+  "status": "published_cleaned",
+  "cover_style": "unsplash_search",
+  "cover_fallback_url": "https://picsum.photos/1200/800",
+  "last_draft_file": "draft-v3.md",
+  "last_review_file": "review-v2.json",
+  "children": {
+    "researcher": {
+      "session_key": "agent:browser-use:subagent:346ce68e-8bf8-45db-a371-16ab4e6e7668",
+      "run_id": "0c6278ca-52eb-4678-a6cd-feefca672af6",
+      "step": "researcher",
+      "status": "completed",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "artifacts": [
+        "research.json",
+        "outline.md"
+      ]
+    },
+    "writer": {
+      "session_key": "agent:browser-use:subagent:a834b2d9-5965-4d52-b69c-30c5138beba7",
+      "run_id": "ddc879e5-5ff0-4f39-8d55-768c9dc02026",
+      "step": "writer",
+      "status": "completed",
+      "model": "github-copilot/claude-opus-4.6",
+      "artifacts": [
+        "draft-v3.md"
+      ]
+    },
+    "reviewer": {
+      "session_key": "agent:browser-use:subagent:46898130-897e-4c10-af0a-e7dfdeef9e47",
+      "run_id": "fbfae259-7763-42fb-95df-92b6e72e134e",
+      "step": "reviewer",
+      "status": "completed",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "artifacts": [
+        "review-v2.json"
+      ]
+    },
+    "fact_checker": {
+      "session_key": "agent:browser-use:subagent:288e6917-a8ed-496e-a205-74adc143e61d",
+      "run_id": "98e20efc-9533-4f6a-a491-64ec5d2dd0a6",
+      "step": "fact_checker",
+      "status": "completed",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "artifacts": [
+        "fact-check-v1.json"
+      ]
+    },
+    "humanizer": {
+      "session_key": "agent:browser-use:subagent:344637c9-904a-4561-a4eb-59a939c10390",
+      "run_id": "32d3ae66-2988-43a3-902d-e59f6584de70",
+      "step": "humanizer",
+      "status": "completed",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "artifacts": [
+        "final.md"
+      ]
+    },
+    "layout": {
+      "session_key": "agent:browser-use:subagent:b70da20d-826c-4efe-815d-3259c712e2a6",
+      "run_id": "e7c9de9c-4da6-4562-85ba-a07b0390208c",
+      "step": "layout",
+      "status": "completed",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "artifacts": [
+        "final-layout.md"
+      ]
+    }
+  },
+  "artifact_provenance": {
+    "research.json": {
+      "producer_type": "child",
+      "producer_step": "researcher",
+      "session_key": "agent:browser-use:subagent:346ce68e-8bf8-45db-a371-16ab4e6e7668",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "outline.md": {
+      "producer_type": "child",
+      "producer_step": "researcher",
+      "session_key": "agent:browser-use:subagent:346ce68e-8bf8-45db-a371-16ab4e6e7668",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "draft-v3.md": {
+      "producer_type": "child",
+      "producer_step": "writer",
+      "session_key": "agent:browser-use:subagent:a834b2d9-5965-4d52-b69c-30c5138beba7",
+      "model": "github-copilot/claude-opus-4.6"
+    },
+    "review-v2.json": {
+      "producer_type": "child",
+      "producer_step": "reviewer",
+      "session_key": "agent:browser-use:subagent:46898130-897e-4c10-af0a-e7dfdeef9e47",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "fact-check-v1.json": {
+      "producer_type": "child",
+      "producer_step": "fact_checker",
+      "session_key": "agent:browser-use:subagent:288e6917-a8ed-496e-a205-74adc143e61d",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "final.md": {
+      "producer_type": "child",
+      "producer_step": "humanizer",
+      "session_key": "agent:browser-use:subagent:344637c9-904a-4561-a4eb-59a939c10390",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "final-layout.md": {
+      "producer_type": "child",
+      "producer_step": "layout",
+      "session_key": "agent:browser-use:subagent:b70da20d-826c-4efe-815d-3259c712e2a6",
+      "model": "github-copilot/claude-sonnet-4.6"
+    }
+  },
+  "phase": "published",
+  "step": 8,
+  "published": true,
+  "cleanup_note": "intermediate_artifacts_removed_after_successful_publish_20260330"
+}

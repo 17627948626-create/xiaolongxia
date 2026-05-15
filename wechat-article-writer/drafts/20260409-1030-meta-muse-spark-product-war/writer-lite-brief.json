@@ -1,0 +1,21 @@
+{
+  "prototype": "爆产品/大公司动作 + 反直觉判断",
+  "hot_hook": "Meta 发了 Muse Spark，但这次更值得看的不是它又端出一个模型，而是它终于把 AI 往产品入口、社交流量和商业闭环上收。",
+  "thesis": "Muse Spark 对 Meta 的真正意义，是它开始把 AI 当成一门产品生意来打：先占入口，再谈模型，先抓使用场景，再谈开源姿态。",
+  "ai_punchline": "如果 OpenAI 抢的是最强大脑，Meta 抢的是这颗大脑每天从哪个入口钻进你的生活。",
+  "must_keep": [
+    "MSL 首个公开模型 + 过去九个月重建 AI stack",
+    "Meta AI app/meta.ai/社交产品/AI 眼镜这些入口感",
+    "私有 API 预览 + 开源被放到未来版本"
+  ],
+  "must_avoid": [
+    "写成 benchmark 排行点评",
+    "写成全球模型大战综述",
+    "正文里高频使用“不是……而是……”骨架"
+  ],
+  "why_fit": "这条题既有大厂爆点，也能把 Meta 的分发、场景和商业逻辑写成人话判断。",
+  "downstream_boundary": "Writer 重点写产品化/入口化判断，不扩写成参数说明书或行业周报。",
+  "draft_version": "r1-brief",
+  "updated_at": "2026-04-09T02:33:57Z",
+  "change_reason": "initial dual-cli competition brief"
+}

@@ -1,0 +1,154 @@
+{
+  "draft_version": "v4",
+  "checked_at": "2026-04-06T12:42:54Z",
+  "title": "AI写作写得再好，也可能毁在最后一个 `**` 上",
+  "total_claims": 9,
+  "verified": 9,
+  "inaccurate": 0,
+  "unverifiable": 0,
+  "false": 0,
+  "localization": 0,
+  "major_issue_count": 0,
+  "pass": true,
+  "summary": {
+    "status": "pass",
+    "reason": "v1 提出的 5 个问题均已修复；本轮复核未发现新的事实错误或首提本地化问题。",
+    "focus": "重点复核 v1 的 5 个问题，并顺带复核正文中的核心可核查断言。"
+  },
+  "resolved_v1_issues": [
+    {
+      "id": 1,
+      "issue_from_v1": "GitHub 官方博客文章年份误写为 2020 年",
+      "status": "fixed",
+      "draft_evidence": "line 55 已改为‘2017 年 3 月 14 日’",
+      "source": "GitHub Blog: A formal spec for GitHub Flavored Markdown",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/"
+    },
+    {
+      "id": 2,
+      "issue_from_v1": "把 emphasis 误译成仅指‘加粗’",
+      "status": "fixed",
+      "draft_evidence": "line 45 已改为‘强调标记必须用同一种字符打开和关闭；斜体/粗体都适用’",
+      "source": "CommonMark Markdown Tutorial - Emphasis",
+      "source_url": "https://commonmark.org/help/tutorial/02-emphasis.html"
+    },
+    {
+      "id": 3,
+      "issue_from_v1": "John Gruber 首提缺少中文本地化",
+      "status": "fixed",
+      "draft_evidence": "line 41 已改为‘约翰·格鲁伯（John Gruber）’",
+      "source": "CommonMark official homepage",
+      "source_url": "https://commonmark.org/"
+    },
+    {
+      "id": 4,
+      "issue_from_v1": "GitHub 首提缺少中文说明",
+      "status": "fixed",
+      "draft_evidence": "line 53 已改为‘代码托管平台 GitHub’",
+      "source": "Draft localization rule recheck",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/"
+    },
+    {
+      "id": 5,
+      "issue_from_v1": "英文文章标题首提缺少中文题名",
+      "status": "fixed",
+      "draft_evidence": "line 55 已改为《GitHub 风格 Markdown 的正式规范》（A formal spec for GitHub Flavored Markdown）",
+      "source": "GitHub Blog: A formal spec for GitHub Flavored Markdown",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/"
+    }
+  ],
+  "claims": [
+    {
+      "id": 1,
+      "location": "lines 41-41",
+      "original_text": "CommonMark 官方在首页就写得很清楚：约翰·格鲁伯（John Gruber）对 Markdown 的经典语法描述并没有把语法定义得无歧义。因为没有 unambiguous spec，不同实现已经明显分化；同一份文档可能在一个系统上这样渲染，在另一个系统上那样渲染。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CommonMark 官方首页",
+      "source_url": "https://commonmark.org/"
+    },
+    {
+      "id": 2,
+      "location": "lines 43-43",
+      "original_text": "CommonMark 规范里有一句话：‘任何字符序列都是有效的 CommonMark 文档’。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CommonMark 规范 0.31.2",
+      "source_url": "https://spec.commonmark.org/0.31.2/"
+    },
+    {
+      "id": 3,
+      "location": "lines 45-45",
+      "original_text": "‘The same character must be used to open and close emphasis.’（强调标记必须用同一种字符打开和关闭；斜体/粗体都适用）。想让 `*` 作为普通字符显示出来，必须用反斜杠转义。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CommonMark Markdown Tutorial - Emphasis",
+      "source_url": "https://commonmark.org/help/tutorial/02-emphasis.html"
+    },
+    {
+      "id": 4,
+      "location": "lines 47-47",
+      "original_text": "`**` 没匹配上时，它不会报错，只会把 `**` 当普通文本显示出来。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CommonMark 规范 + 教程语义复核",
+      "source_url": "https://spec.commonmark.org/0.31.2/"
+    },
+    {
+      "id": 5,
+      "location": "lines 55-55",
+      "original_text": "他们在 2017 年 3 月 14 日的官方博客文章《GitHub 风格 Markdown 的正式规范》（A formal spec for GitHub Flavored Markdown）里写得很直白……",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "GitHub Blog: A formal spec for GitHub Flavored Markdown",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/"
+    },
+    {
+      "id": 6,
+      "location": "lines 55-55",
+      "original_text": "缺乏标准化导致很多 ambiguous details，very similar looking Markdown documents can be rendered as wildly different outputs。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "GitHub 官方博客原文",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/"
+    },
+    {
+      "id": 7,
+      "location": "lines 59-59",
+      "original_text": "他们要写 formal spec、做 normalization、比对新旧 HTML tree，目标是 visually identical——而且明确强调 user data was never destroyed。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "GitHub 官方博客原文",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/"
+    },
+    {
+      "id": 8,
+      "location": "lines 61-61",
+      "original_text": "GitHub 当时统计过，受影响的文档其实不到 1%。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "GitHub 官方博客原文",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/"
+    },
+    {
+      "id": 9,
+      "location": "lines 93-93",
+      "original_text": "layout prompt 里明确禁止危险写法，normalize 脚本在发布前兜底清洗。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "本地工作流文件",
+      "source_url": "file:///root/.openclaw/skills/wechat-article-forge/references/layout-prompt.md"
+    }
+  ],
+  "remaining_issues": [],
+  "editor_actions": []
+}

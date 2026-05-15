@@ -1,0 +1,96 @@
+{
+  "draft_version": "draft.md",
+  "checked_at": "2026-03-30T11:37:00+08:00",
+  "total_claims": 7,
+  "verified": 3,
+  "inaccurate": 2,
+  "unverifiable": 2,
+  "false": 0,
+  "pass": false,
+  "summary": "3项确认，2项不可验证（含适当修饰词），2项需修正。Pass=false。",
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "Figure AI的Helix 02系统……分三层：S0层，频率1kHz，每1ms执行一次……S1层，频率200Hz，每5ms一次……S2层，慢速。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Figure AI 官方博客 Introducing Helix 02: Full-Body Autonomy",
+      "source_url": "https://www.figure.ai/news/helix-02",
+      "notes": "官方原文：'System 0 (S0) executes at 1 kHz … System 1 (S1) thinks fast … at 200 Hz. System 2 (S2) reasons slowly about goals.' 三层架构与频率完全吻合。"
+    },
+    {
+      "id": 2,
+      "original_text": "Figure自己的技术文档里写得很清楚：\"Each system operates at its natural timescale\"",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Figure AI 官方博客 Introducing Helix 02: Full-Body Autonomy",
+      "source_url": "https://www.figure.ai/news/helix-02",
+      "notes": "官方原文逐字一致：'Each system operates at its natural timescale.'"
+    },
+    {
+      "id": 3,
+      "original_text": "视觉处理大约50ms，路径规划100ms，把指令发给电机10ms。全链路加起来，典型延迟160ms。",
+      "verdict": "❌ UNVERIFIABLE",
+      "issues": [
+        "数字来源为教学材料（Physical AI Foundations），非厂商一级文档",
+        "'路径规划100ms'和'发指令10ms'两个分项未加'大约/典型'修饰词，只有首项和合计有修饰"
+      ],
+      "correction": "建议将'路径规划100ms'改为'路径规划约100ms'，'把指令发给电机10ms'改为'把指令发给电机约10ms'，保持全文一致的不确定性表述。或在括号内注明数字来自教学资料参考值。",
+      "source": "Physical AI Foundations 教学材料（教育性参考）",
+      "source_url": null,
+      "notes": "文章对50ms用了'大约'、对总延迟用了'典型'，但中间两个分项（100ms/10ms）缺乏修饰词，建议统一加'约'字以保持一致性。数量级上合理，不影响核心论点。"
+    },
+    {
+      "id": 4,
+      "original_text": "Helix 02做了一件非常激进的事：用1000小时的人类运动捕捉数据训练出的神经网络，直接替换掉了原来109,504行手写C++控制代码。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Figure AI 官方博客 Introducing Helix 02: Full-Body Autonomy",
+      "source_url": "https://www.figure.ai/news/helix-02",
+      "notes": "官方原文：'System 0 replaces 109,504 lines of hand-engineered C++ with a single neural prior for stable, natural motion.' 并注明 'Over 1,000 hours of joint-level retargeted human motion data.' 数字完全吻合。"
+    },
+    {
+      "id": 5,
+      "original_text": "VLA（视觉-语言-动作模型）推理：通常0.5到3Hz，也就是每次推理要330ms到2000ms。",
+      "verdict": "❌ UNVERIFIABLE",
+      "issues": [
+        "0.5-3Hz是较保守/偏低的估计。现有文献显示：Figure Helix S2（7B-param VLM）运行在7-9Hz；π0等采用Flow Matching的VLA可达50Hz",
+        "文章用了'通常'修饰，但0.5-3Hz区间对当前主流VLA（尤其Helix架构）偏低"
+      ],
+      "correction": "建议将'通常0.5到3Hz'改为'通常1-10Hz（未经优化的大型VLM可达秒级延迟）'，或具体说明这是指运行云端大型VLM时的估计值。若要保留简化说法，加注'（以未优化的大型VLM为例）'以规避失准风险。",
+      "source": "Foundation Models For Robotics YouTube deep dive (Dec 2025); Figure AI官方资料",
+      "source_url": "https://www.youtube.com/watch?v=o78yp8ZBTYw",
+      "notes": "文章'通常'修饰词存在，但区间偏保守。该声明支撑文章核心论点（延迟比控制层慢100倍），即便修正后论点仍成立。"
+    },
+    {
+      "id": 6,
+      "original_text": "百度沈抖今天在一次公开发言里说了句大实话：现在的人形机器人'更没达到实时感知反馈和快速决策的水准'",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "新华网一级报道原文为'没达到实时感知反馈和快速决策的水准'，无'更'字",
+        "原文主语为'具身智能'而非'人形机器人'（博鳌论坛语境下两者相近，但表述有差异）",
+        "草稿使用单引号直接引用，但引用文本与原话不完全一致"
+      ],
+      "correction": "将引用改为：'没达到实时感知反馈和快速决策的水准'（去掉'更'字）；或改为间接引用：沈抖直言，具身智能还没达到实时感知反馈和快速决策的水准。",
+      "source": "新华网 博鳌亚洲论坛2026年报道（2026-03-27）",
+      "source_url": "https://www.news.cn/tech/20260327/cfa9b3c9032c4a1ab4c9a26875f6f6fd/c.html",
+      "notes": "沈抖确实在博鳌论坛作出该公开发言，事实基础成立；问题仅在于直引加了'更'字，偏向夸大原话语气。"
+    },
+    {
+      "id": 7,
+      "original_text": "这是波士顿动力（Boston Dynamics）花了20年在液压系统、电驱方案、传感器融合上一点一点积累出来的东西",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "Boston Dynamics于1992年由MIT分拆成立（Wikipedia来源），截至2026年已有约34年历史，远超'20年'",
+        "'20年'低估了其实际积累时间"
+      ],
+      "correction": "将'20年'改为'30多年'或'三十余年'。示例：'这是波士顿动力（Boston Dynamics）三十余年在液压系统、电驱方案、传感器融合上一点一点积累出来的东西。'",
+      "source": "Wikipedia: Boston Dynamics",
+      "source_url": "https://en.wikipedia.org/wiki/Boston_Dynamics",
+      "notes": "Boston Dynamics 1992年从MIT分拆成立，2026年恰好约34年。'20年'说法系低估，方向是保守而非夸大，但仍不准确。"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schema_version": "2026-04-07.lineage-v1",
+  "slug": "20260407-2303-anthropic-300yi-tpu",
+  "run_id": "manual:xiaolongxia:20260407-2303-anthropic-300yi-tpu",
+  "source_mode": "fresh",
+  "profile": "小龙虾有话说",
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "step": 1,
+  "phase": "done",
+  "state": "done",
+  "purpose": "借 Anthropic 年化收入冲到 300 亿美元、并锁定超大 TPU 算力这件事，写清 AI 公司的下一阶段竞争，已经不是谁更会讲模型故事，而是谁先把收入和算力同时锁死。",
+  "revision_cycle": 0,
+  "max_revisions": 3,
+  "pass_threshold": 8.2,
+  "min_dimension": 6,
+  "current_step": "cancelled_by_user_after_score_gate",
+  "pending_action": null,
+  "subagent_label": null,
+  "subagent_status": null,
+  "lineage_status": "clean",
+  "repair_attempts": 0,
+  "children": {
+    "researcher": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:3f1e0881-041d-4139-a05c-ee158793a8e4",
+        "label": "researcher-anthropic-300yi-tpu",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ]
+      }
+    ],
+    "writer": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:42732090-f42d-402e-9c1f-538e3980e077",
+        "label": "writer-anthropic-300yi-tpu-v1",
+        "model": "deepseek/deepseek-chat",
+        "status": "done",
+        "artifacts": [
+          "draft.md"
+        ]
+      },
+      {
+        "session_key": "agent:xiaolongxia:subagent:2053cbca-06bf-45e8-832d-a0f003a31574",
+        "label": "writer-anthropic-300yi-tpu-v2-preflight-fix",
+        "model": "deepseek/deepseek-chat",
+        "status": "done",
+        "artifacts": [
+          "draft-v2.md"
+        ]
+      },
+      {
+        "session_key": "agent:xiaolongxia:subagent:7edea41f-6136-4cc9-8507-3b6c467cda05",
+        "label": "writer-anthropic-300yi-tpu-v3-revise",
+        "model": "deepseek/deepseek-chat",
+        "status": "done",
+        "artifacts": [
+          "draft-v3.md"
+        ]
+      },
+      {
+        "session_key": "agent:xiaolongxia:subagent:7386b225-cd38-4d18-884d-b8215558e4a3",
+        "label": "writer-anthropic-300yi-tpu-v4-revise",
+        "model": "deepseek/deepseek-chat",
+        "status": "done",
+        "artifacts": [
+          "draft-v4.md"
+        ]
+      },
+      {
+        "session_key": "agent:xiaolongxia:subagent:a843a990-7223-4f92-92d1-72d521389152",
+        "label": "writer-anthropic-300yi-tpu-v5-final-score-lift",
+        "model": "deepseek/deepseek-chat",
+        "status": "done",
+        "artifacts": [
+          "draft-v5.md"
+        ]
+      }
+    ],
+    "reviewer": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:06177100-c459-4336-96d2-475a8bcf6538",
+        "label": "reviewer-anthropic-300yi-tpu-v1",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "review-v1.json"
+        ]
+      },
+      {
+        "session_key": "agent:xiaolongxia:subagent:61135ccf-cf0c-4912-a002-0e132e5fbb4d",
+        "label": "reviewer-anthropic-300yi-tpu-v2",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "review-v2.json"
+        ]
+      },
+      {
+        "session_key": "agent:xiaolongxia:subagent:6123839d-3c58-4cdc-9dde-b124a1885b67",
+        "label": "reviewer-anthropic-300yi-tpu-v3",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "review-v3.json"
+        ]
+      },
+      {
+        "session_key": "agent:xiaolongxia:subagent:f5a653fa-4690-40e9-aafb-906c4400792b",
+        "label": "reviewer-anthropic-300yi-tpu-v4-final",
+        "model": "openai-codex/gpt-5.4",
+        "status": "done",
+        "artifacts": [
+          "review-v4.json"
+        ]
+      }
+    ]
+  },
+  "article_type": "观点",
+  "topic": "Anthropic 年化收入冲到 300 亿美元，同时锁定超大 TPU 算力",
+  "angle": "从 Anthropic 收入与算力一起暴涨切入，讲 AI 公司下一阶段拼的已不是单点模型能力，而是收入锁定 + 算力锁定的双重军备竞赛。",
+  "hot_hook": {
+    "event": "Anthropic 披露 run-rate revenue 超过 300 亿美元，并与 Google/Broadcom 扩大战略合作，锁定约 3.5GW TPU 算力",
+    "window": "最近24小时",
+    "ranking_basis": "最爆优先",
+    "keywords": [
+      "Anthropic",
+      "Claude",
+      "300亿美元",
+      "TPU",
+      "Broadcom",
+      "Google"
+    ]
+  },
+  "last_draft_file": "draft-v5.md",
+  "last_progress_at": "2026-04-07T16:05:30Z",
+  "last_transition_at": "2026-04-07T16:05:30Z",
+  "updated_at": "2026-04-07T16:05:30Z",
+  "lite_preflight": {
+    "binding_status": "matched",
+    "binding_checked_at": "2026-04-07T16:01:34Z",
+    "binding_artifact": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-2303-anthropic-300yi-tpu/writer-lite-binding.json",
+    "last_draft_file": "draft-v5.md",
+    "last_draft_version": "draft-v5",
+    "last_draft_sha256": "7b5c44a3361828ff4e7a223e7fc0a62d1716dc6a6dd52c8ab5db54f83798048f",
+    "latest_check_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-2303-anthropic-300yi-tpu/writer-lite-check.json",
+    "previous_check_draft_version": "draft-v5",
+    "previous_check_draft_sha256": "7b5c44a3361828ff4e7a223e7fc0a62d1716dc6a6dd52c8ab5db54f83798048f",
+    "latest_check_draft_version": "draft-v5",
+    "latest_check_draft_sha256": "7b5c44a3361828ff4e7a223e7fc0a62d1716dc6a6dd52c8ab5db54f83798048f",
+    "match": true,
+    "waiver": null,
+    "resolution": null
+  },
+  "last_review_file": "review-v4.json",
+  "status": "cancelled_by_user",
+  "required_user_action": null,
+  "waiting_for": null,
+  "note": "Boss chose option 3 after final automated review: do not publish tonight."
+}

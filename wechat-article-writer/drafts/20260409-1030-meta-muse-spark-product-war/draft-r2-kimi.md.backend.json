@@ -1,0 +1,19 @@
+{
+  "backend": "kimi-cli",
+  "phase": "revise",
+  "output_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-1030-meta-muse-spark-product-war/draft-r2-kimi.md",
+  "mode": "thinking",
+  "session_policy": "new",
+  "prompt_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-1030-meta-muse-spark-product-war/draft-r2-kimi.md.prompt.txt",
+  "prompt_sha256": "25637155923151c2a350d90445bd3c3c9819fd59a15029c48af8c1de2d7994ea",
+  "output_sha256": "537a2a0b85fe9095e3e90185c4dd201d9d490b864ecd0de8874c2c078cd8945c",
+  "generated_at": "2026-04-09T03:14:01.173084+00:00",
+  "command": [
+    "kimi-cli",
+    "--new",
+    "--mode",
+    "thinking",
+    "--prompt-file",
+    "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-1030-meta-muse-spark-product-war/draft-r2-kimi.md.prompt.txt"
+  ]
+}

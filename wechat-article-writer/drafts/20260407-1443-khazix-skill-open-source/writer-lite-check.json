@@ -1,0 +1,33 @@
+{
+  "draft_version": "draft-v4",
+  "generated_at": "2026-04-07T12:32:27Z",
+  "updated_at": "2026-04-07T12:32:27Z",
+  "change_reason": "latest draft changed after earlier lite check; refresh binding for current latest draft",
+  "check_mode": "advisory",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-1443-khazix-skill-open-source/draft-v4.md",
+    "draft_sha256": "9f7bf292f69651382c68d64fbf0297f9a5b4da669b13e8ec27f374499d1691a2",
+    "brief_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-1443-khazix-skill-open-source/writer-lite-brief.json",
+    "brief_sha256": "31c5a8c184cc781dd5eb066cacd750a066b0050d1340e26d1391976c21b182f5",
+    "research_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-1443-khazix-skill-open-source/research.json",
+    "research_sha256": "bff5cc2a304fcb173e87c781c4aa4248036e7867a3a9b274d983c3c4f3d4d4e3"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

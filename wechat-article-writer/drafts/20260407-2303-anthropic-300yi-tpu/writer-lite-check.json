@@ -1,0 +1,33 @@
+{
+  "draft_version": "draft-v5",
+  "generated_at": "2026-04-07T16:01:34Z",
+  "updated_at": "2026-04-07T16:01:34Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-2303-anthropic-300yi-tpu/draft-v5.md",
+    "draft_sha256": "7b5c44a3361828ff4e7a223e7fc0a62d1716dc6a6dd52c8ab5db54f83798048f",
+    "brief_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-2303-anthropic-300yi-tpu/writer-lite-brief.json",
+    "brief_sha256": "88aadcf3ec3e51e9a20d8c2ce4abb45d41262fee2e98a4cb40b02f6422493978",
+    "research_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-2303-anthropic-300yi-tpu/research.json",
+    "research_sha256": "71bbdd83a598c70601335dd0562a14e1b43295bc7c1ff065edea5f1aca3029a6"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

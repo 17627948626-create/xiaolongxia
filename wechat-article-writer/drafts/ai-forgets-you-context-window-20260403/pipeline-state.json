@@ -1,0 +1,230 @@
+{
+  "angle": "从用户每次都要重新交代背景切入，讲清楚上下文窗口不是记忆是有限白板——对话一结束就清空，这不是 bug，是架构限制。真正的问题是 AI 目前没有好的持久记忆系统。本虾视角：靠 MEMORY.md 活着，感受最深——但这是 agent 特殊配置，不是所有 AI 都有。结尾要有判断：这个问题未来会被解决吗？怎么解决？",
+  "article_type": "观点",
+  "artifact_provenance": {
+    "draft-v2.md": {
+      "model": "github-copilot/claude-opus-4.6",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:bc6f758f-6912-49ee-9e59-7c3e6cb3f1b9"
+    },
+    "draft.md": {
+      "model": "github-copilot/claude-opus-4.6",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:dc3ef6f1-fd0b-41c6-a46c-17bf93a504c8"
+    },
+    "fact-check-v2.json": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "fact_checker",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:8dede21b-eecc-468c-8b26-85c9a5307d9b"
+    },
+    "final-layout.md": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:c9748b08-9793-4a9e-a8c5-1b86a02f1e50"
+    },
+    "final.md": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:52ebf236-7e0f-479b-b48e-502f9f804bf3"
+    },
+    "outline.md": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:053aabbb-5bf4-4a3e-ac92-342c0df8a1c9"
+    },
+    "research.json": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:053aabbb-5bf4-4a3e-ac92-342c0df8a1c9"
+    },
+    "review-v1.json": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:0df49cf5-1339-4553-9a82-39741b8863f3"
+    },
+    "review-v2.json": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:2cd4abc3-4daa-4031-97e1-67aee7f52c3b"
+    }
+  },
+  "artifacts": {
+    "draft_md": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/draft.md",
+    "draft_v2": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/draft-v2.md",
+    "fact_check_v2": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/fact-check-v2.json",
+    "final_layout_md": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/final-layout.md",
+    "final_md": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/final.md",
+    "outline_md": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/outline.md",
+    "publish_md": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/publish.md",
+    "research_json": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/research.json",
+    "review_v1": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/review-v1.json",
+    "review_v2": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/review-v2.json"
+  },
+  "blocking": {
+    "blocking_since": "2026-04-03T08:48:00+08:00",
+    "current_step": "waiting_login_scan",
+    "note": "Session logged out during publish flow — need boss to re-scan login QR",
+    "phase": "awaiting_human",
+    "qr_updated_at": "2026-04-03T08:48:00+08:00",
+    "required_user_action": "login_qr_scan",
+    "safe_check_qr_path": "/root/.openclaw/media/wechat-safe-check/ai-forgets-you-context-window-20260403/login-qr.png",
+    "step": 8,
+    "waiting_for": "login_scan"
+  },
+  "blocking_since": "2026-04-03T08:48:00+08:00",
+  "boss_notified_at": null,
+  "children": {
+    "fact_checker": [
+      {
+        "artifacts": [
+          "fact-check.json"
+        ],
+        "model": "github-copilot/claude-sonnet-4.6",
+        "session_key": "agent:xiaolongxia:subagent:26f47330-25ac-4f4b-ba1e-116a5e807093",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "fact-check-v2.json"
+        ],
+        "model": "github-copilot/claude-sonnet-4.6",
+        "session_key": "agent:xiaolongxia:subagent:8dede21b-eecc-468c-8b26-85c9a5307d9b",
+        "status": "done"
+      }
+    ],
+    "humanizer": [
+      {
+        "artifacts": [
+          "final.md"
+        ],
+        "model": "github-copilot/claude-sonnet-4.6",
+        "session_key": "agent:xiaolongxia:subagent:52ebf236-7e0f-479b-b48e-502f9f804bf3",
+        "status": "done"
+      }
+    ],
+    "layout": [
+      {
+        "artifacts": [
+          "final-layout.md"
+        ],
+        "model": "github-copilot/claude-sonnet-4.6",
+        "session_key": "agent:xiaolongxia:subagent:c9748b08-9793-4a9e-a8c5-1b86a02f1e50",
+        "status": "done"
+      }
+    ],
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ],
+        "model": "github-copilot/claude-sonnet-4.6",
+        "session_key": "agent:xiaolongxia:subagent:053aabbb-5bf4-4a3e-ac92-342c0df8a1c9",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "review-v1.json"
+        ],
+        "model": "github-copilot/claude-sonnet-4.6",
+        "session_key": "agent:xiaolongxia:subagent:0df49cf5-1339-4553-9a82-39741b8863f3",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-v2.json"
+        ],
+        "model": "github-copilot/claude-sonnet-4.6",
+        "session_key": "agent:xiaolongxia:subagent:2cd4abc3-4daa-4031-97e1-67aee7f52c3b",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "draft.md"
+        ],
+        "model": "github-copilot/claude-opus-4.6",
+        "session_key": "agent:xiaolongxia:subagent:dc3ef6f1-fd0b-41c6-a46c-17bf93a504c8",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v2.md"
+        ],
+        "model": "github-copilot/claude-opus-4.6",
+        "session_key": "agent:xiaolongxia:subagent:bc6f758f-6912-49ee-9e59-7c3e6cb3f1b9",
+        "status": "done"
+      }
+    ]
+  },
+  "control_plane_sync": "partial",
+  "cover_audit": {
+    "description": "AI brain with dissolving dots and ChatGPT chip - perfectly matches memory/forgetting theme",
+    "relevance": 9,
+    "result": "pass",
+    "safe": true,
+    "source": "unsplash:photo-1674027215016-0a4abfdbf1cc"
+  },
+  "cover_url": "https://images.unsplash.com/photo-1674027215016-0a4abfdbf1cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+  "current_step": "waiting_login_scan",
+  "draft_dir": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403",
+  "expected_silence_ttl_minutes": 25,
+  "handoff": {
+    "boss_notified_at": null,
+    "relay_dedupe_key": "ai-forgets-you-context-window-20260403:login_scan:1",
+    "relay_status": "pending_parent_forward"
+  },
+  "last_draft_file": "draft-v2.md",
+  "last_progress_at": "2026-04-03T00:48:39Z",
+  "last_review_file": "review-v2.json",
+  "last_transition_at": "2026-04-03T00:48:39Z",
+  "latest_draft": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-forgets-you-context-window-20260403/draft-v2.md",
+  "max_run_minutes": 45,
+  "media_id": "7NYHnQxN70EpaLx4Jh0kylO-9tPV_gjvg_239xotRzn0rRd1pWU88b7ifLBprWOP",
+  "note": "Session logged out during publish flow — need boss to re-scan login QR",
+  "pending_action": "wait_login_scan",
+  "phase": "awaiting_human",
+  "profile": "小龙虾有话说",
+  "progress_seq": 11,
+  "progress_source": "orchestrator",
+  "purpose": "用普通人能懂的话，讲清楚AI为什么每次都不记得你，以及这个问题将来能不能解决",
+  "qr_updated_at": "2026-04-03T08:48:00+08:00",
+  "relay_dedupe_key": "ai-forgets-you-context-window-20260403:login_scan:1",
+  "relay_status": "pending_parent_forward",
+  "required_user_action": "login_qr_scan",
+  "review_passed": true,
+  "review_score": 8.53,
+  "revise_cycle": 1,
+  "run_id": "ai-forgets-you-context-window-20260403",
+  "safe_check_qr_path": "/root/.openclaw/media/wechat-safe-check/ai-forgets-you-context-window-20260403/login-qr.png",
+  "slug": "ai-forgets-you-context-window-20260403",
+  "source_mode": "cron",
+  "state": "running",
+  "step": 8,
+  "steps_completed": [
+    "research",
+    "write",
+    "review_v1",
+    "revise_v1",
+    "review_v2",
+    "fact_check",
+    "humanize",
+    "layout",
+    "publish_draft_box"
+  ],
+  "topic": "每次跟 AI 说完再见，它就把你忘了",
+  "updated_at": "2026-04-03T00:48:39Z",
+  "waiting_for": "login_scan"
+}

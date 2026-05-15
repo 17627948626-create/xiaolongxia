@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "blocking": false,
+  "blocking_enforced": false,
+  "generated_at": "2026-04-24T01:48:58Z",
+  "updated_at": "2026-04-24T01:48:58Z",
+  "artifact_contract": "script_generated_only",
+  "style_scope": "authorial_presence_and_template_dependence_only",
+  "max_pre_review_bounces": 1,
+  "voice_asset_source": "unresolved",
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260423-2000-openai-workspace-agents/draft-v3.md",
+    "draft_sha256": "8e2321d0710482a4036d2393401dbc77d623cb1cff1248552ae09bbd7419076c"
+  },
+  "metrics": {
+    "template_marker_per_1000_chars": 0.0,
+    "sentence_length_cv": 0.583
+  },
+  "issues": [],
+  "generator": {
+    "name": "style_fingerprint_lint.py",
+    "version": "1.0"
+  }
+}

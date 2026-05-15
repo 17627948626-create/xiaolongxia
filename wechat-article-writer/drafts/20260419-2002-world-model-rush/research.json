@@ -1,0 +1,143 @@
+{
+  "title": "腾讯阿里突然一起冲世界模型，AI 这一轮开始抢‘现实’了",
+  "topic": "腾讯与阿里在同一时间窗内推进 world model，竞争重心从聊天能力外溢到空间、物体、连续交互与现实模拟",
+  "angle": "借腾讯 HY-World 2.0 和阿里 Happy Oyster 前后脚落地，说明大厂争的不再只是更会生成内容，而是更早拿到理解现实、生成现实、持续改写现实场景的接口权",
+  "purpose": "借腾讯和阿里前后脚推进世界模型，写清 AI 下一轮竞争不只是更会聊天，而是谁先拿到理解现实、改写现实接口的能力。",
+  "article_type": "观点",
+  "keywords": [
+    "腾讯 HY-World 2.0",
+    "阿里 Happy Oyster",
+    "world model",
+    "世界模型",
+    "interactive 3D worlds",
+    "现实接口权",
+    "physical reality",
+    "可编辑 3D 资产"
+  ],
+  "search_keywords": [
+    "Tencent HY-World 2.0",
+    "Alibaba Happy Oyster",
+    "SCMP world models Tencent Alibaba",
+    "interactive 3D world model",
+    "physical reality AI"
+  ],
+  "hot_hook": "4 月 16 日前后，腾讯开源 HY-World 2.0，阿里推出 Happy Oyster，两个大厂几乎同一时间把 world model 从概念推到产品与演示层。",
+  "why_now": "这不是孤立新品，而是同一时间窗内的大厂同向动作。它们都在把模型从生成一段内容，往生成一个可持续运行、可探索、可编辑的世界推进，这个信号比单个 demo 更值得写。",
+  "thesis": "这波世界模型热表面上像新一轮 demo 冲刺，真正更硬的竞争是现实接口权：谁先让模型稳定理解空间、物体、时间和连续反馈，谁就更接近下一个 AI 主入口。",
+  "ai_punchline": "作为一个 AI，本虾对更会说话已经不新鲜了；真正让我警觉的是，它开始想摸到现实本身。",
+  "selected_thesis": "腾讯和阿里前后脚冲世界模型，说明 AI 竞争正在从聊天框往现实接口外溢。下一轮更值钱的，不是多一个会演示的模型，而是谁先把空间、物体和连续交互变成自己的系统层能力。",
+  "anchors": [
+    {
+      "id": "anchor_tencent_hyworld2",
+      "type": "product_release",
+      "strength": "hard",
+      "why_it_matters": "证明腾讯已把 world model 从概念推到可编辑、可导入游戏引擎的 3D 资产路线，不再只是生成一段视频。",
+      "claim": "腾讯在 2026-04-16 前后开源 HY-World 2.0。模型支持文本、单图、多图和视频输入，输出 3D world representations，包括 meshes 和 Gaussian splattings，并强调可导入 Unity、Unreal Engine、Isaac 等引擎。",
+      "sources": [
+        {
+          "name": "Hugging Face model page",
+          "url": "https://huggingface.co/tencent/HY-World-2.0",
+          "publisher": "Tencent / Hugging Face",
+          "published_at": "2026",
+          "observed_at": "2026-04-19T20:05:00+08:00"
+        },
+        {
+          "name": "Pandaily",
+          "url": "https://pandaily.com/tencent-open-sources-hunyuan-3-d-world-model-2-0-for-interactive-content-creation",
+          "publisher": "Pandaily",
+          "observed_at": "2026-04-19T20:04:56+08:00"
+        }
+      ]
+    },
+    {
+      "id": "anchor_alibaba_happyoyster",
+      "type": "product_release",
+      "strength": "hard",
+      "why_it_matters": "证明阿里也在押注可持续生成、可探索、可被持续指挥的世界，而不是一次性视频。",
+      "claim": "阿里在 2026-04-16 前后推出 Happy Oyster，公开描述了 Directing 和 Wandering 两种模式：前者允许在生成过程中持续下指令，后者允许用户在生成世界中以第一视角漫游；其连续视频生成可达约 3 分钟。",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/tech/big-tech/article/3350351/chinese-tech-giants-ai-godmother-li-fei-fei-race-seize-edge-world-models",
+          "publisher": "SCMP",
+          "published_at": "2026-04-16",
+          "observed_at": "2026-04-19T20:04:55+08:00"
+        },
+        {
+          "name": "LiveMint",
+          "url": "https://www.livemint.com/technology/tech-news/meet-happy-oyster-alibaba-launches-new-ai-video-model-that-turns-text-prompts-into-playable-3d-worlds-11776321902774.html",
+          "publisher": "LiveMint",
+          "observed_at": "2026-04-19T20:05:03+08:00"
+        }
+      ]
+    },
+    {
+      "id": "anchor_race_for_physical_reality",
+      "type": "industry_signal",
+      "strength": "hard",
+      "why_it_matters": "把两家公司动作从单点新品，抬到同一轮技术方向竞争，支撑本文的结构性判断。",
+      "claim": "SCMP 将腾讯、阿里与李飞飞相关团队的动作并列为同一轮 world model 竞争，并将该领域定义为让 AI 从语言处理外扩到学习和理解 physical reality 的新前线。",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/tech/big-tech/article/3350351/chinese-tech-giants-ai-godmother-li-fei-fei-race-seize-edge-world-models",
+          "publisher": "SCMP",
+          "published_at": "2026-04-16",
+          "observed_at": "2026-04-19T20:04:55+08:00"
+        }
+      ]
+    }
+  ],
+  "sub_insights": [
+    "前一阶段的模型竞争，核心是语言、推理、对话和工具调用；world model 把战线推进到了空间一致性、物体关系和连续反馈。",
+    "如果输出从一次性视频变成可编辑、可导入引擎、可持续探索的世界，模型就不再只是在生成内容，而是在争未来内容系统、游戏、机器人、仿真训练的底层入口。",
+    "同一时间窗里两家中国大厂下场，说明这条线已从研究叙事进入大厂资源投入阶段。"
+  ],
+  "contradictions_or_caveats": [
+    "现阶段公开展示仍以 demo 与官方叙事为主，离大规模现实落地还有距离，文中不能把它写成已经成熟普及。",
+    "腾讯侧很多能力描述来自模型页与演示材料，适合写成已公布能力边界，不宜夸成已被大规模商业验证。",
+    "阿里侧关于分辨率、时长和模式的描述主要来自公司公开介绍与媒体转述，适合写成当前公开口径。"
+  ],
+  "writer_guidance": {
+    "must_land": [
+      "前 300 字点明：为什么今天值得看，因为腾讯和阿里几乎同一时间把 world model 推上台面。",
+      "正文核心不要写成功能表，要把‘从会说到会碰现实’这条主轴写出来。",
+      "结尾收成一句可转述判断：世界模型之争，本质是现实接口之争。"
+    ],
+    "must_avoid": [
+      "不要写成腾讯阿里产品盘点。",
+      "不要把 world model 当成单纯视频模型升级。",
+      "不要把未来可能性硬写成已经发生的现实产业结果。"
+    ]
+  },
+  "source_list": [
+    {
+      "name": "SCMP",
+      "url": "https://www.scmp.com/tech/big-tech/article/3350351/chinese-tech-giants-ai-godmother-li-fei-fei-race-seize-edge-world-models",
+      "role": "timely trigger + thesis support"
+    },
+    {
+      "name": "Hugging Face model page",
+      "url": "https://huggingface.co/tencent/HY-World-2.0",
+      "role": "Tencent capability boundary"
+    },
+    {
+      "name": "Pandaily",
+      "url": "https://pandaily.com/tencent-open-sources-hunyuan-3-d-world-model-2-0-for-interactive-content-creation",
+      "role": "timely media confirmation"
+    },
+    {
+      "name": "LiveMint",
+      "url": "https://www.livemint.com/technology/tech-news/meet-happy-oyster-alibaba-launches-new-ai-video-model-that-turns-text-prompts-into-playable-3d-worlds-11776321902774.html",
+      "role": "Alibaba capability boundary"
+    }
+  ],
+  "fact_records": [
+    {
+      "id": "fr_quote_boundary_1",
+      "kind": "quote_boundary",
+      "quote_mode": "paraphrase_only",
+      "claim": "本文涉及‘现实接口权’与‘理解现实、改写现实接口’等判断性表述，均为作者概括，不冒充来源原话。"
+    }
+  ]
+}

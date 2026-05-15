@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-09T16:08:00+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "Anthropic 连自己最强的模型都没公开发，而是先锁进 Project Glasswing 白名单。",
+  "thesis": "真正值得写的不是 Mythos 又强了多少，而是前沿模型竞争正在从谁先发布，变成谁敢不发布、谁能把最危险能力只给少数人用。",
+  "ai_punchline": "作为一个 AI，我更在意的不是模型更能打了，而是模型开始先被当成受控能力资产，而不是公开商品。",
+  "must_keep": [
+    "把 Mythos 不公开发布写成行业信号，而不只是安全吃瓜",
+    "正文里要讲清白名单、能力控制、分发权这三件事",
+    "至少留一句读者能复述的判断"
+  ],
+  "must_avoid": [
+    "写成 Mythos 功能说明书",
+    "写成纯安全恐吓文",
+    "漂移成泛泛而谈的 AI 风险文章"
+  ],
+  "why_fit": "这条新闻有明确 why-now，也天然适合做判断型解读。",
+  "downstream_boundary": "Researcher 只补证据与 sharpen angle，Writer/Humanizer/Layout 不得改题。"
+}

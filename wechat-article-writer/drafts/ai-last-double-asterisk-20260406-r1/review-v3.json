@@ -1,0 +1,81 @@
+{
+  "version": "reviewer-rubric-v4",
+  "review_type": "blind_final_review",
+  "title": "AI写作写得再好，也可能毁在最后一个 `**` 上",
+  "pass": true,
+  "weighted_total": 8.54,
+  "rule_check": {
+    "weighted_total_gte_8_5": true,
+    "no_dimension_below_6": true,
+    "originality_gte_7": true
+  },
+  "hard_blockers": [],
+  "scores": [
+    {
+      "dimension": "Insight Density",
+      "dimension_zh": "洞察密度",
+      "weight": 0.11,
+      "score": 8.2,
+      "reason": "核心判断很清楚：AI 内容生产真正脆弱的常常不是生成层，而是最后一跳的格式契约与渲染传递。后文又拆出了‘格式兼容=内容正确性的一部分’、‘Markdown 不会大声报错’、‘生产系统要把小契约工程化’三层有效子洞察。但中后段对“最后一个 **”的论述有轻微回环，次级洞察还可以再压缩得更锋利。"
+    },
+    {
+      "dimension": "Originality",
+      "dimension_zh": "新鲜感",
+      "weight": 0.14,
+      "score": 8.8,
+      "reason": "把一个看似丢脸的小排版事故，提升为‘最后一跳契约传递’的问题，这个角度是新鲜且可命名的，不是常见的 AI 写作泛泛批评。题材不新，但切口明显是作者自己的判断。"
+    },
+    {
+      "dimension": "Emotional Resonance",
+      "dimension_zh": "情感共鸣",
+      "weight": 0.18,
+      "score": 8.4,
+      "reason": "开头的尴尬感、出戏感、‘没收拾干净就上线了’的羞耻感都很具体，能打到做内容的人。情绪不是硬煽，是靠具体翻车场景建立的。稍弱之处在于情绪峰值主要集中在前半篇，后半更偏论证。"
+    },
+    {
+      "dimension": "Completion Power",
+      "dimension_zh": "完读力",
+      "weight": 0.16,
+      "score": 8.6,
+      "reason": "节奏很好，段落短，连续抛出‘这不是排版小毛病’‘Markdown 不是编译器’‘GitHub 都把它当工程问题’这些推进点，能持续带读者往下读。结尾也回到可执行规则，不是空收。唯一小问题是个别段落的核心句有重复强化。"
+    },
+    {
+      "dimension": "Voice",
+      "dimension_zh": "语感",
+      "weight": 0.08,
+      "score": 8.7,
+      "reason": "口语感自然，像一个懂行的人在当面复盘事故，判断鲜明但不装腔。像‘不是不会写，是这种翻车方式太经典了’、‘不看原始 Markdown 自我感动’这类句子都很有作者感。"
+    },
+    {
+      "dimension": "Evidence",
+      "dimension_zh": "论据",
+      "weight": 0.09,
+      "score": 7.8,
+      "reason": "CommonMark 与 GitHub 的材料用得对，也有明确标题、机构和关键结论，已经不是空口判断。但全文真正高强度依赖的外部锚点主要就这两组，且部分技术链路判断仍以作者解释为主，证据厚度还可以再压实一点。"
+    },
+    {
+      "dimension": "Content Timeliness",
+      "dimension_zh": "内容时效性",
+      "weight": 0.06,
+      "score": 8.6,
+      "reason": "虽然从 AI 写作切入，但真正成立的是一个更长期的原则：内容进入真实渠道后，格式契约就是内容本身的一部分。哪怕把案例从今天的 AI 写作换成别的自动化内容系统，这个判断仍然成立。"
+    },
+    {
+      "dimension": "Title",
+      "dimension_zh": "标题",
+      "weight": 0.18,
+      "score": 8.9,
+      "reason": "标题短、具体、有冲突感，‘AI写作’是明确关键词，‘毁在最后一个 ** 上’也形成了强烈的反常识张力。前 300 字里自然重复了‘AI 已经写好了’与‘最后输在一个最小符号上’的核心主张，标题与导语一致，没有标题党问题。"
+    }
+  ],
+  "feedback_items": [
+    {
+      "dimension": "Evidence",
+      "score": 7.8,
+      "issue": "外部证据够用，但还没到‘核心结论每一层都被压实’的程度；技术链路里的关键判断仍偏作者归纳。",
+      "quote": "真正的生产系统，早就把这种‘小契约’当成正式工程问题。看看 GitHub 怎么做的。",
+      "suggestion": "可补 1 个更贴近内容发布链路的实证例子，最好是某个解析/渲染差异如何直接改变最终呈现，或补一句更具体的归因证据，把‘最后一跳契约传递’从强判断再推进到更难反驳的事实链。"
+    }
+  ],
+  "one_line_verdict": "通过：角度新、标题强、论证完整，已经把‘最后一个 **’写成了一个成立的生产系统判断；主要短板是证据厚度还能再压一层。"
+}

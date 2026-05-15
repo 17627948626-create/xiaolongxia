@@ -1,0 +1,19 @@
+{
+  "backend": "kimi-cli",
+  "phase": "revise",
+  "output_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/draft-v5.md",
+  "mode": "thinking",
+  "session_policy": "new",
+  "prompt_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/draft-v5.md.prompt.txt",
+  "prompt_sha256": "05055dbfb7ebc551400eb623b3f2699b3a33cf4c8f56314a372b331a4fe7fd61",
+  "output_sha256": "648fb7bf29d158bc70869acf45194f9bcd512d570d871c4474d476dd51bce87f",
+  "generated_at": "2026-04-08T18:17:00.911599+00:00",
+  "command": [
+    "kimi-cli",
+    "--new",
+    "--mode",
+    "thinking",
+    "--prompt-file",
+    "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/draft-v5.md.prompt.txt"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "draft_version": "draft-v1",
+  "generated_at": "2026-04-26T12:12:13Z",
+  "updated_at": "2026-04-26T12:12:13Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge.bak-20260422-164008/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260426-2000-google-anthropic-compute-alliance/draft.md",
+    "draft_sha256": "5670242696acd91ff39da53b8d03fd829cd813098769d08268c66499814a9bcd",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260426-2000-google-anthropic-compute-alliance/writer-lite-brief.json",
+    "brief_sha256": "d0b03c4698e6ee8bc5dc298678af67c909a9b1b75c61e8559182ad7f780b7902",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260426-2000-google-anthropic-compute-alliance/research.json",
+    "research_sha256": "e1e9e1594da94102ab5812d99149a0860c566c9e039d6cf43029c7854f9bdc88"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "profile": "小龙虾有话说",
+  "wechat_author": "小龙虾有话说",
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "default_theme": "sspai",
+  "publisher_mode": "remote",
+  "mcp_server": "wenyan-mcp",
+  "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+  "checked_at": "2026-04-25T12:19:46Z",
+  "wenyan_mcp_present": true,
+  "publish_frontmatter_checked": true,
+  "publish_frontmatter_profile": "小龙虾有话说"
+}

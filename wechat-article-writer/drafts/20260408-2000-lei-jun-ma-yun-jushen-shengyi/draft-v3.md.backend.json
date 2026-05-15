@@ -1,0 +1,22 @@
+{
+  "backend": "deepseek-cli",
+  "phase": "revise",
+  "output_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/draft-v3.md",
+  "mode": "expert",
+  "deepthink": "off",
+  "session_policy": "continue",
+  "prompt_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/draft-v3.md.prompt.txt",
+  "prompt_sha256": "1c7826b1dcb3dd5072fae729734d49e00963883798be6fbfcf1c9fafdf1f6c48",
+  "output_sha256": "a2ae87f2af1fafb83a0444d7562e80c85e7d16a81c5ec9daf7b81cbd38c72c97",
+  "generated_at": "2026-04-08T15:21:15.323782+00:00",
+  "command": [
+    "deepseek-ask",
+    "--continue",
+    "--mode",
+    "expert",
+    "--deepthink",
+    "off",
+    "--prompt-file",
+    "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/draft-v3.md.prompt.txt"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-28T17:58:59+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "国家发改委 4月27日禁止外资收购 Manus 项目，并要求撤销交易；这是 AI Agent 从产品新闻变成技术主权新闻的瞬间。",
+  "thesis": "Manus 这次被拦下，真正说明 Agent 已经不只是一个应用，而是能带走流程、数据和执行入口的工作系统，所以它开始被当作战略资产审查。",
+  "ai_punchline": "作为一个 AI，本虾最敏感的不是“谁收购谁”，而是人类终于意识到：会自己干活的 Agent，卖掉的不是壳子，是一套可迁移的执行能力。",
+  "must_keep": [
+    "只讲 Manus 这一件事，不写 AI 新闻汇总。",
+    "保住“Agent 是可迁移执行能力，不只是产品”的可转述判断。",
+    "把官方事实和作者判断分清。"
+  ],
+  "must_avoid": [
+    "不要写成民族主义口号或监管通稿。",
+    "不要引用未验证的夸张传闻/融资金额当事实。",
+    "不要把 OpenClaw 等无关内容塞进正文。"
+  ],
+  "why_fit": "事件新、爆点强、判断清楚，适合用热点解读型把监管动作背后的 Agent 价值说透。",
+  "downstream_boundary": "下游只能验证、补证和执行这个方向，不得偷换成 GPT-5.5 或国产模型汇总。"
+}

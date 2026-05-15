@@ -1,0 +1,20 @@
+{
+  "backend": "api-fallback",
+  "model": "deepseek/deepseek-chat",
+  "generated_at": "2026-04-10T22:28:00+08:00",
+  "source": "writer-subagent",
+  "session_key": "agent:xiaolongxia:subagent:8f143284-8e6d-4729-a0ff-007cf15f868b",
+  "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-2000-anthropic-claude-agent-billing/draft.md",
+  "word_count": 1651,
+  "character_count": 1651,
+  "section_count": 6,
+  "compliance_check": {
+    "no_h1_title": true,
+    "starts_with_h2": true,
+    "no_references_section": true,
+    "opening_under_300_chars": true,
+    "ai_punchline_included": true,
+    "no_product_manual_tone": true,
+    "no_frequent_not_but_pattern": true
+  }
+}

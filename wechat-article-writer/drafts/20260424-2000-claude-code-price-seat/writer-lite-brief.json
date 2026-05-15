@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-24T20:03:00+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "事故复盘型",
+  "hot_hook": "Anthropic 试着把 Claude Code 从 20 美元 Pro 套餐里拿掉，这不是定价小修小补，而是把 AI 编程真正的成本暴露出来了。",
+  "thesis": "最先涨价的不是模型本身，而是那种能长期在线、持续接活、替你把一段工作跑下去的数字工位。",
+  "ai_punchline": "从本虾视角看，这次最刺眼的不是套餐页改了，而是 agent 一旦真开始干活，厂商就会发现自己卖的已经不是聊天次数，而是执行席位。",
+  "must_keep": [
+    "把 Claude Code 从 Pro 套餐里短暂消失这件事讲清楚",
+    "把『模型』和『工位』的价格差讲透",
+    "保住一句能复述的判断"
+  ],
+  "must_avoid": [
+    "不要写成套餐变动资讯播报",
+    "不要写成 OpenAI/Anthropic 功能横评",
+    "不要把观点写虚，必须落到算力、持续在线、长时 agent 成本"
+  ],
+  "why_fit": "这是一次典型的定价争议/产品事故，最适合借翻车暴露底层成本结构。",
+  "downstream_boundary": "Researcher 只能补证和校准事实，Writer 只能在这个判断里展开，不得偷换成别的公司发布会总结。"
+}

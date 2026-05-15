@@ -1,0 +1,223 @@
+{
+  "draft_version": "research-v1",
+  "updated_at": "2026-04-07T14:55:00+08:00",
+  "topic_locked": true,
+  "hot_hook": "卡兹克在 2026-04-06 发布《今天，我决定把「卡兹克风格创作.skill」开源了。》，并同步公开 GitHub 仓库 khazix-skills。",
+  "search_keywords": [
+    "卡兹克 风格创作 skill 开源",
+    "khazix-skills GitHub",
+    "khazix-writer SKILL.md",
+    "Agent Skills open standard",
+    "创作方法系统"
+  ],
+  "title_candidates": [
+    {
+      "title": "他开源的不是 prompt，是一个作者的方法系统",
+      "pick": true,
+      "reason": "入口直接、判断明确，能在标题里把事件和 thesis 一起说出来。"
+    },
+    {
+      "title": "卡兹克把写作 skill 开源后，我更确定了一件事",
+      "pick": false,
+      "reason": "更像评论文，但第一眼信息密度略弱。"
+    },
+    {
+      "title": "AI 时代真正开始公开竞争的，不是 prompt",
+      "pick": false,
+      "reason": "判断够狠，但事件钩子不如第一条具体。"
+    }
+  ],
+  "thesis": "借卡兹克这次开源可以看清一件事，AI 时代真正被公开竞争的，不是几段 prompt，而是创作者如何把自己的判断、边界、自检和迭代流程，工程化成一套可移植、可复用、可持续打磨的方法系统。",
+  "why_now": "这事值得今天写，不只是因为一个作者更新了仓库，而是因为他把『自己正在用的方法系统』直接放进公开市场，而且这个仓库从 4 月 6 日创建到 4 月 7 日中午左右，已经拿到 539 stars、115 forks，说明大家围观的已经不是 prompt 小技巧，而是方法系统能不能被拆出来、装进去、复用起来。",
+  "dedup": {
+    "pass": true,
+    "window_days": 14,
+    "reason": "最近 14 天没有已发文章直接写『写作 skill 开源』『创作者方法系统公开竞争』这条线。主题可过。",
+    "recent_similar": [
+      {
+        "title": "你的仓库，现在有两种读者",
+        "published_at": "2026-04-02T10:22:00+08:00",
+        "similarity": "都在写 AI 时代文档/结构化能力的重要性。",
+        "difference": "那篇讨论的是软件仓库为什么开始同时写给人和 agent 看；这篇讨论的是创作者把自己的风格、边界、自检、迭代流程工程化后，如何进入公开竞争。对象从『仓库读者』变成『创作者方法系统』。"
+      },
+      {
+        "title": "跑了半年AI流水线，我发现最值钱的不是模型",
+        "published_at": "2026-04-03T20:23:00+08:00",
+        "similarity": "都在弱化『模型本身』、强调系统与流程。",
+        "difference": "那篇落点是 agent workflow 的可靠性和工程成本；这篇落点是内容创作里哪些部分能被系统化、哪些神之一手永远不能被开源。"
+      },
+      {
+        "title": "别急着把公众号写成产品说明书",
+        "published_at": "2026-03-28T21:02:23.085682+08:00",
+        "similarity": "都涉及内容表达和作者感。",
+        "difference": "那篇是写给公众号写作者的表达提醒；这篇是借一个公开事件讨论 AI 时代作者竞争力的底层变化。"
+      }
+    ],
+    "angle_delta": "本次不是继续讲 AI 写作会不会替代作者，也不是泛泛讲 prompt 工程，而是借一个刚发生的公开动作，写『方法系统公开化』这个更具体也更新的变化。"
+  },
+  "anchors": [
+    {
+      "id": "A1",
+      "claim": "卡兹克这次公开的不是几段 prompt，而是一整套写作系统。",
+      "why_it_matters": "这是全文 thesis 的第一根硬钉子，必须先证明『公开的对象』到底是什么。",
+      "evidence": [
+        "原文明确写：『把我自己在用的内容创作Skill，完整的，一字不改的，开源了。』",
+        "context-source.md 列出的公开内容包括：切题角度、禁用词和标点、开头方式、节奏控制、分享姿态、四层自检体系、长期迭代出来的方法论与踩坑经验。",
+        "khazix-writer/SKILL.md 不是短 prompt，而是约 30173 字的完整说明，里面明确写了 AI 擅长做什么、必须人来做什么、五种文章原型、风格内核、绝对禁区、四层自检体系。"
+      ],
+      "source_urls": [
+        "https://mp.weixin.qq.com/s/AtxGrii_K-nzkwUM9SNhEg",
+        "https://raw.githubusercontent.com/KKKKhazix/khazix-skills/main/khazix-writer/SKILL.md"
+      ],
+      "hardness": "strong"
+    },
+    {
+      "id": "A2",
+      "claim": "这不是一次公众号里晒 prompt 的分享，而是一次标准化、可安装、可移植的方法产品化动作。",
+      "why_it_matters": "这根 anchor 用来把事件从『个人经验分享』抬到『创作方法系统开始公开流通』。",
+      "evidence": [
+        "GitHub README 明确把 Skill 定义为遵循 Agent Skills 开放标准的结构化指令集，由指令、脚本和参考资源组成，用来扩展 Agent 能力边界。",
+        "README 明确写了可安装到 Claude Code、OpenClaw、Codex 等工具的 skills 目录，说明它是可移植模块，不是只能在一篇文章里阅读的心得。",
+        "GitHub API 显示 khazix-writer 目录下除了 SKILL.md，还有 references/content_methodology.md（6171 bytes）和 references/style_examples.md（16790 bytes），证明它包含方法论和示例库，而不是单文件 prompt。"
+      ],
+      "source_urls": [
+        "https://raw.githubusercontent.com/KKKKhazix/khazix-skills/main/README.md",
+        "https://api.github.com/repos/KKKKhazix/khazix-skills/contents/khazix-writer?ref=main",
+        "https://api.github.com/repos/KKKKhazix/khazix-skills/contents/khazix-writer/references?ref=main"
+      ],
+      "hardness": "strong"
+    },
+    {
+      "id": "A3",
+      "claim": "这件事今天值得写，因为它已经被市场当成『方法系统公开』来围观，而不是一条普通仓库更新。",
+      "why_it_matters": "这根 anchor 负责 why-now，不然文章会掉成慢观点。",
+      "evidence": [
+        "GitHub API 显示仓库 created_at 为 2026-04-06T07:37:02Z，pushed_at 为 2026-04-06T16:17:00Z。",
+        "同一 API 在 2026-04-07T06:52:30Z 的快照显示 stargazers_count=539，forks_count=115。",
+        "也就是说，公开不到 24 小时，仓库已经获得数百级星标和上百次 fork，传播对象显然不只是『原来他用这个 prompt』，而是『原来创作者的方法系统可以这样被拆出来』。"
+      ],
+      "source_urls": [
+        "https://api.github.com/repos/KKKKhazix/khazix-skills"
+      ],
+      "hardness": "strong"
+    },
+    {
+      "id": "A4",
+      "claim": "方法可以开源，但作者最值钱的神之一手并没有被开源掉。",
+      "why_it_matters": "这根 anchor 用来防止文章滑成『系统化万能论』，也能把 AI 辅助与 AI 替代切开。",
+      "evidence": [
+        "原文明确区分 AI 可以做的，是找证据、找类比、在方向和结构已定后扩写；AI 做不到的，是作者亲自体验、最终判断、偶发的『神之一手』。",
+        "原文里最强场景是写《淘宝上卖9块9的DeepSeek，让我看到了被折叠的魔幻世界》时，凌晨 2 点半卡文，抬头看见书架上的《北京折叠》，才突然找到真正角度。",
+        "SKILL.md 也把第一手观察、核心创意角度、真实情绪表达、数据到人物的同理心转换，列为『必须人来』。"
+      ],
+      "source_urls": [
+        "https://mp.weixin.qq.com/s/AtxGrii_K-nzkwUM9SNhEg",
+        "https://raw.githubusercontent.com/KKKKhazix/khazix-skills/main/khazix-writer/SKILL.md"
+      ],
+      "hardness": "strong"
+    }
+  ],
+  "non_goals": [
+    "不要写成 GitHub 仓库资讯稿。",
+    "不要写成对卡兹克个人的吹捧文。",
+    "不要写成『人类不可替代』的大而空宣言。",
+    "不要展开成 AI 写作行业综述，只讲这一个事件及其信号。"
+  ],
+  "angle_delta": {
+    "one_sentence": "不是讨论『prompt 有没有用』，而是讨论『真正值钱的作者竞争力，已经开始以 skill / 方法系统的形式被拆出来公开竞争』。",
+    "vs_recent_channel_memory": [
+      "比《你的仓库，现在有两种读者》更靠近内容创作本身，不是仓库面向谁，而是作者把什么变成可执行系统。",
+      "比《跑了半年AI流水线，我发现最值钱的不是模型》更靠近创作者个体竞争力，不是系统可靠性，而是风格、边界、自检、迭代如何被工程化。"
+    ]
+  },
+  "caveats": [
+    "GitHub stars/forks 是 2026-04-07 下午的快照，不是最终值；写作时可用『不到 24 小时已拿到 539 stars、115 forks』，避免写死为长期结论。",
+    "仓库当前公开的是首个写作 skill，不代表卡兹克已经把全部创作能力都公开；恰恰说明公开的是『可系统化的部分』。",
+    "不要把『方法可开源』偷换成『作者可替代』，文章必须一直保留这个边界。"
+  ],
+  "fact_records": [
+    {
+      "id": "F1",
+      "kind": "api_snapshot",
+      "claim": "khazix-skills 仓库在创建后不到 24 小时拿到 539 stars、115 forks。",
+      "needle": "539 stars、115 forks",
+      "observed_at": "2026-04-07T06:52:30Z",
+      "source_url": "https://api.github.com/repos/KKKKhazix/khazix-skills"
+    },
+    {
+      "id": "F2",
+      "kind": "readme_claim",
+      "claim": "README 明确写该 Skill 可安装到 Claude Code、OpenClaw、Codex 等工具。",
+      "needle": "可安装到 Claude Code、OpenClaw、Codex 等工具",
+      "attribution_required": true,
+      "source_url": "https://raw.githubusercontent.com/KKKKhazix/khazix-skills/main/README.md"
+    },
+    {
+      "id": "F3",
+      "quote_mode": "verbatim",
+      "claim": "把我自己在用的内容创作Skill，完整的，一字不改的，开源了。",
+      "needle": "把我自己在用的内容创作Skill，完整的，一字不改的，开源了。",
+      "source_url": "https://mp.weixin.qq.com/s/AtxGrii_K-nzkwUM9SNhEg"
+    },
+    {
+      "id": "F4",
+      "quote_mode": "paraphrase_only",
+      "claim": "真正被公开竞争的，不是几段 prompt，而是方法系统。",
+      "needle": "真正被公开竞争的，不是几段 prompt",
+      "source_url": "https://mp.weixin.qq.com/s/AtxGrii_K-nzkwUM9SNhEg"
+    },
+    {
+      "id": "F5",
+      "file_size_bytes": 30173,
+      "unit": "bytes",
+      "needle": "30173",
+      "source_url": "https://api.github.com/repos/KKKKhazix/khazix-skills/contents/khazix-writer?ref=main"
+    },
+    {
+      "id": "F6",
+      "file_size_bytes": 6171,
+      "unit": "bytes",
+      "needle": "6171",
+      "source_url": "https://api.github.com/repos/KKKKhazix/khazix-skills/contents/khazix-writer/references?ref=main"
+    },
+    {
+      "id": "F7",
+      "file_size_bytes": 16790,
+      "unit": "bytes",
+      "needle": "16790",
+      "source_url": "https://api.github.com/repos/KKKKhazix/khazix-skills/contents/khazix-writer/references?ref=main"
+    }
+  ],
+  "source_list": [
+    {
+      "label": "卡兹克原文",
+      "url": "https://mp.weixin.qq.com/s/AtxGrii_K-nzkwUM9SNhEg",
+      "use": "事件起点、原文核心判断、北京折叠场景"
+    },
+    {
+      "label": "khazix-skills README",
+      "url": "https://raw.githubusercontent.com/KKKKhazix/khazix-skills/main/README.md",
+      "use": "Skill 定义、开放标准、安装路径、可移植性"
+    },
+    {
+      "label": "khazix-writer / SKILL.md",
+      "url": "https://raw.githubusercontent.com/KKKKhazix/khazix-skills/main/khazix-writer/SKILL.md",
+      "use": "方法系统具体组成、AI/人边界、四层自检"
+    },
+    {
+      "label": "GitHub repo metadata",
+      "url": "https://api.github.com/repos/KKKKhazix/khazix-skills",
+      "use": "created_at、stars、forks、why-now"
+    },
+    {
+      "label": "khazix-writer references 目录",
+      "url": "https://api.github.com/repos/KKKKhazix/khazix-skills/contents/khazix-writer/references?ref=main",
+      "use": "证明公开的是方法库和示例库，而不是单 prompt"
+    },
+    {
+      "label": "Agent Skills overview",
+      "url": "https://agentskills.io",
+      "use": "补充『Skill 是开放格式』的大背景，可在正文里轻提，不必展开"
+    }
+  ]
+}

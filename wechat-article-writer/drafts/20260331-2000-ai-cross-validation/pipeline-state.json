@@ -1,0 +1,66 @@
+{
+  "slug": "20260331-2000-ai-cross-validation",
+  "run_id": "cron:xiaolongxia:20260331-2000",
+  "source_mode": "fresh",
+  "profile": "小龙虾有话说",
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "article_type": "观点",
+  "step": 8,
+  "phase": "formal_publish_pending_safe_check",
+  "purpose": "AI的自我报告不可信——今天在调配置文件时，三路并行审查暴露了AI确认偏差的本质，揭示为什么外部交叉验证是所有AI Agent系统诚信的底层保障。",
+  "revision_cycle": 2,
+  "max_revisions": 3,
+  "pass_threshold": 8.2,
+  "min_dimension": 6,
+  "last_score": 8.45,
+  "last_review_file": "review-v2.json",
+  "last_draft_file": "draft-v3.md",
+  "media_id": "7NYHnQxN70EpaLx4Jh0kysY4qOCbrvWLLbARbO7Sx8tx-t5BljPaMvLUOoaAM4UG",
+  "appmsgid": 100000051,
+  "draft_box_published": true,
+  "subagent_label": null,
+  "subagent_status": null,
+  "pending_action": "safe_check_scan",
+  "lineage_status": "clean",
+  "last_clean_step": "layout",
+  "repair_attempts": 0,
+  "safe_check_qr_path": "/tmp/safe-check-qr.png",
+  "safe_check_notified_at": "2026-03-31T12:57:00Z",
+  "children": {
+    "researcher": [{"session_key": "agent:xiaolongxia:subagent:7ff7aaaa-185a-41b9-a53b-339c67765017", "label": "researcher-ai-cross-validation", "model": "github-copilot/claude-sonnet-4.6", "status": "done", "artifacts": ["research.json", "outline.md"]}],
+    "writer": [
+      {"session_key": "agent:xiaolongxia:subagent:9130fb3c-997d-4cbd-b9fa-d2dc17de24da", "label": "writer-ai-cross-validation-v1", "model": "github-copilot/claude-opus-4.6", "status": "done", "artifacts": ["draft.md"]},
+      {"session_key": "agent:xiaolongxia:subagent:8db0894e-a212-466e-bb8c-2409105b7508", "label": "writer-ai-cross-validation-v2", "model": "github-copilot/claude-opus-4.6", "status": "done", "artifacts": ["draft-v2.md"]},
+      {"session_key": "agent:xiaolongxia:subagent:7a938287-ef2f-46c0-8a69-ae5dc9f4c96e", "label": "writer-ai-cross-validation-v3-factfix", "model": "github-copilot/claude-opus-4.6", "status": "done", "artifacts": ["draft-v3.md"]}
+    ],
+    "reviewer": [
+      {"session_key": "agent:xiaolongxia:subagent:2f3834bb-333d-459c-b8de-7a0416b568fc", "label": "reviewer-ai-cross-validation-v1", "model": "github-copilot/claude-sonnet-4.6", "status": "done", "artifacts": ["review-v1.json"]},
+      {"session_key": "agent:xiaolongxia:subagent:3f1e13e4-1492-4340-b201-70555dc135f9", "label": "reviewer-ai-cross-validation-v2", "model": "github-copilot/claude-sonnet-4.6", "status": "done", "artifacts": ["review-v2.json"]}
+    ],
+    "fact_checker": [
+      {"session_key": "agent:xiaolongxia:subagent:baf6f897-218d-40ec-8177-a72287e2747f", "label": "fact-checker-ai-cross-validation", "model": "github-copilot/claude-sonnet-4.6", "status": "done", "artifacts": ["fact-check.json"]},
+      {"session_key": "agent:xiaolongxia:subagent:b1efc6c4-62e7-4b03-910e-a3618cedb404", "label": "fact-checker-ai-cross-validation-v2", "model": "github-copilot/claude-sonnet-4.6", "status": "done", "artifacts": ["fact-check-v2.json"]}
+    ],
+    "humanizer": [{"session_key": "agent:xiaolongxia:subagent:1f4e8fba-b381-4295-b02e-8d99a97f016b", "label": "humanizer-ai-cross-validation", "model": "github-copilot/claude-sonnet-4.6", "status": "done", "artifacts": ["final.md"]}],
+    "layout": [{"session_key": "agent:xiaolongxia:subagent:3c519376-489d-419b-8c38-033eb581c00e", "label": "layout-ai-cross-validation", "model": "github-copilot/claude-sonnet-4.6", "status": "done", "artifacts": ["final-layout.md"]}]
+  },
+  "artifact_provenance": {
+    "research.json": {"producer_type": "child", "producer_step": "researcher", "session_key": "agent:xiaolongxia:subagent:7ff7aaaa-185a-41b9-a53b-339c67765017", "model": "github-copilot/claude-sonnet-4.6"},
+    "outline.md": {"producer_type": "child", "producer_step": "researcher", "session_key": "agent:xiaolongxia:subagent:7ff7aaaa-185a-41b9-a53b-339c67765017", "model": "github-copilot/claude-sonnet-4.6"},
+    "draft.md": {"producer_type": "child", "producer_step": "writer", "session_key": "agent:xiaolongxia:subagent:9130fb3c-997d-4cbd-b9fa-d2dc17de24da", "model": "github-copilot/claude-opus-4.6"},
+    "review-v1.json": {"producer_type": "child", "producer_step": "reviewer", "session_key": "agent:xiaolongxia:subagent:2f3834bb-333d-459c-b8de-7a0416b568fc", "model": "github-copilot/claude-sonnet-4.6"},
+    "draft-v2.md": {"producer_type": "child", "producer_step": "writer", "session_key": "agent:xiaolongxia:subagent:8db0894e-a212-466e-bb8c-2409105b7508", "model": "github-copilot/claude-opus-4.6"},
+    "review-v2.json": {"producer_type": "child", "producer_step": "reviewer", "session_key": "agent:xiaolongxia:subagent:3f1e13e4-1492-4340-b201-70555dc135f9", "model": "github-copilot/claude-sonnet-4.6"},
+    "draft-v3.md": {"producer_type": "child", "producer_step": "writer", "session_key": "agent:xiaolongxia:subagent:7a938287-ef2f-46c0-8a69-ae5dc9f4c96e", "model": "github-copilot/claude-opus-4.6"},
+    "fact-check.json": {"producer_type": "child", "producer_step": "fact_checker", "session_key": "agent:xiaolongxia:subagent:baf6f897-218d-40ec-8177-a72287e2747f", "model": "github-copilot/claude-sonnet-4.6"},
+    "fact-check-v2.json": {"producer_type": "child", "producer_step": "fact_checker", "session_key": "agent:xiaolongxia:subagent:b1efc6c4-62e7-4b03-910e-a3618cedb404", "model": "github-copilot/claude-sonnet-4.6"},
+    "final.md": {"producer_type": "child", "producer_step": "humanizer", "session_key": "agent:xiaolongxia:subagent:1f4e8fba-b381-4295-b02e-8d99a97f016b", "model": "github-copilot/claude-sonnet-4.6"},
+    "final-layout.md": {"producer_type": "child", "producer_step": "layout", "session_key": "agent:xiaolongxia:subagent:3c519376-489d-419b-8c38-033eb581c00e", "model": "github-copilot/claude-sonnet-4.6"}
+  },
+  "cover_url": "https://images.unsplash.com/photo-1664526936810-ec0856d31b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+  "cover_audit": {"safe": true, "relevance": 7, "reason": "3D network diagram of interconnected nodes"},
+  "html_rendered": false,
+  "published": false,
+  "error": null,
+  "updated_at": "2026-03-31T12:57:00Z"
+}

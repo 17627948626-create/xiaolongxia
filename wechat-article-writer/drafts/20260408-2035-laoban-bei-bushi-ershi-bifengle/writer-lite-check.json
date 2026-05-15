@@ -1,0 +1,33 @@
+{
+  "draft_version": "draft-v1",
+  "generated_at": "2026-04-08T07:48:36Z",
+  "updated_at": "2026-04-08T07:48:36Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2035-laoban-bei-bushi-ershi-bifengle/draft.md",
+    "draft_sha256": "b84899fce96f1cb0a9d4eb37db206ca0e6ad37eb0e9345b539d7136e79a2ae14",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2035-laoban-bei-bushi-ershi-bifengle/writer-lite-brief.json",
+    "brief_sha256": "d347bc064dd0dc01d0757671253d6848d15e9160a77ddccab315d67945d456a1",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2035-laoban-bei-bushi-ershi-bifengle/research.json",
+    "research_sha256": "70c16fbcd691816f95c79d60b417b14586bd7158bdea3543fd05659e8d94de28"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "scope": "round-2 targeted recheck of the 5 issues flagged in fact-check-v1",
+  "draft_version": "draft-v4",
+  "checked_at": "2026-04-07T07:28:30Z",
+  "total_claims": 5,
+  "verified": 5,
+  "inaccurate": 0,
+  "unverifiable": 0,
+  "false": 0,
+  "localization": 0,
+  "pass": true,
+  "remaining_issues": 0,
+  "claims": [
+    {
+      "id": 2,
+      "previous_verdict": "❌ UNVERIFIABLE",
+      "current_text": "这事真正值得看的，不是又多了一个 prompt 仓库，而是一个创作者把自己的方法系统，作为公开竞争品摆上桌面。",
+      "verdict": "✅ VERIFIED AS REPAIRED",
+      "issues": [],
+      "correction": null,
+      "note": "上一版不可证实的‘第一次’已删除，现表述收敛为可成立的行业判断性描述。"
+    },
+    {
+      "id": 3,
+      "previous_verdict": "⚠️ INACCURATE",
+      "current_text": "从 4 月 6 日创建到 4 月 7 日中午，这个叫 khazix-skills 的 repo 在当时的快照里显示为 539 颗星、115 次 fork。",
+      "verdict": "✅ VERIFIED AS REPAIRED",
+      "issues": [],
+      "correction": null,
+      "note": "已从无时间戳的现在时改为‘快照’口径，修复了动态数字被写成实时事实的问题。后续如再改数字，仍须保留时间快照属性。"
+    },
+    {
+      "id": 4,
+      "previous_verdict": "⚠️ INACCURATE",
+      "current_text": "卡兹克在原文里写得很清楚，他开源的不只是几段 prompt。",
+      "verdict": "✅ VERIFIED AS REPAIRED",
+      "issues": [],
+      "correction": null,
+      "note": "已去掉会被误读为原文直引的引号口气，现为安全转述。"
+    },
+    {
+      "id": 5,
+      "previous_verdict": "⚠️ INACCURATE",
+      "current_text": "是一个大小 30173 字节的 SKILL.md 文件，外加 content_methodology.md 和 style_examples.md 两份 references 文件。",
+      "verdict": "✅ VERIFIED AS REPAIRED",
+      "issues": [],
+      "correction": null,
+      "note": "已把‘30173字’修正为‘30173字节’，并把 references 文件表述写准确。"
+    },
+    {
+      "id": 7,
+      "previous_verdict": "⚠️ INACCURATE",
+      "current_text": "这不是随手写的笔记，而是按照 Agent Skills 开放标准组织的可安装模块，README 写明可安装到 Claude Code、OpenClaw、Codex 等支持 Skill 的 Agent 中。",
+      "verdict": "✅ VERIFIED AS REPAIRED",
+      "issues": [],
+      "correction": null,
+      "note": "已从‘已独立证实一定可直接装进去并可用’收敛为‘README 写明可安装’，口径安全。"
+    }
+  ],
+  "new_issues": [],
+  "fact_boundary_note": "若继续改稿，最该保留的事实边界有两条：1）星标/fork 必须始终写成某一时点的快照，不能再写成实时定值；2）凌晨两点半与《北京折叠》的段落属于作者自述/回忆口径，不宜扩写成可独立外证的客观事实。"
+}

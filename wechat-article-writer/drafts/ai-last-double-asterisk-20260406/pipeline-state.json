@@ -1,0 +1,45 @@
+{
+  "slug": "ai-last-double-asterisk-20260406",
+  "run_id": "evening-write-20260406-200135",
+  "source_mode": "fresh",
+  "profile": "小龙虾有话说",
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "step": 1,
+  "phase": "error",
+  "current_step": "researcher_failed_gateway_drain",
+  "purpose": "从今晚真实发生的 `**` 泄漏事故切入，讲清 AI 内容生产里“格式兼容”不是排版小事，而是内容可靠性本身；真正把 demo 变成生产系统的，不是多会写，而是有没有把这些容易丢脸的小契约写死。",
+  "topic": "AI 写得再好，也可能毁在最后一个 `**` 上",
+  "title_direction": "AI 写得再好，也可能毁在最后一个 `**` 上",
+  "article_type": "观点",
+  "revision_cycle": 0,
+  "max_revisions": 3,
+  "pass_threshold": 8.2,
+  "min_dimension": 6,
+  "children": {
+    "researcher": [
+      {
+        "session_key": "agent:xiaolongxia:subagent:c293ff8d-e7f4-4c6f-bfaf-eb6fc78123cc",
+        "label": "researcher-ai-last-double-asterisk-20260406",
+        "model": null,
+        "status": "failed",
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ],
+        "error": "researcher child failed before producing artifacts (gateway draining / task not accepted)"
+      }
+    ]
+  },
+  "artifact_provenance": {},
+  "published": false,
+  "draft_box_saved": false,
+  "lineage_status": "clean",
+  "last_clean_step": null,
+  "repair_attempts": 0,
+  "error": "researcher child failed before producing artifacts (gateway draining / task not accepted)",
+  "created_at": "2026-04-06T20:05:02.063217+08:00",
+  "updated_at": "2026-04-06T20:08:09.573778+08:00",
+  "subagent_label": "researcher-ai-last-double-asterisk-20260406",
+  "subagent_status": "failed",
+  "pending_action": null
+}

@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "hard_fail": false,
+  "updated_at": "2026-04-11T12:09:48Z",
+  "scope": "research_artifact_high_risk_fact_records",
+  "detected_categories": [
+    "api_snapshot",
+    "quote_mode",
+    "readme_claim"
+  ],
+  "issues": [],
+  "fact_record_count": 10
+}

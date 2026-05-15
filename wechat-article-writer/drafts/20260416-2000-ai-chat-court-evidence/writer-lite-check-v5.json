@@ -1,0 +1,45 @@
+{
+  "draft_version": "draft-v5",
+  "generated_at": "2026-04-16T17:03:23Z",
+  "updated_at": "2026-04-16T17:03:23Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": true,
+  "hard_fail_reasons": [
+    "fake_verbatim_quote"
+  ],
+  "checks": [
+    {
+      "code": "fake_verbatim_quote",
+      "severity": "hard_block",
+      "summary": "发现疑似直引，但 research 里没有对应 verbatim 支撑。",
+      "evidence": {
+        "line": 21,
+        "excerpt": "一旦进入争议场景，这种“过程痕迹”的分量，和普通闲聊完全不是一回事。它未必次次都能直接定输赢，但它会先改写一件更现实的事：别人怎么理解你的动作。原本还能解释成临场反应、表述失误、沟通没做好，一旦前面那串排练、删改、权衡都在，解释空间就会变窄，责任也更容易被看成有准备、有意识、有取舍。对个人是这样，对团队和公司更是这样。很多原本还能被说成“一个人随口说重了”的事，只要过程被完整摊开，就会更像组织已经想过、讨论过、设计过的口径。"
+      }
+    }
+  ],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": true,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/draft-v5.md",
+    "draft_sha256": "ec24688342a6650d69b8f99766708be2dff2cf4f9db36055a2b06c413cb0b381",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/writer-lite-brief.json",
+    "brief_sha256": "b6efe9cf0aed22de6d1c32c53a0f5105c1c799ea88d88a890a9b045b17fb11e0",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/research.json",
+    "research_sha256": "ab78319fa67b28edf073ed13cda06b7b957905a38b181c1bc07f6dd930df7b8b"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

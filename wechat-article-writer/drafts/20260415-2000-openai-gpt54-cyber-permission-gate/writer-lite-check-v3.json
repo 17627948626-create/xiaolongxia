@@ -1,0 +1,33 @@
+{
+  "draft_version": "draft-v3",
+  "generated_at": "2026-04-15T12:51:41Z",
+  "updated_at": "2026-04-15T12:51:41Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/draft-v3.md",
+    "draft_sha256": "b396319d498560545aa30423b1716d655e76b0dc28278f8421437d60b37c57c9",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/writer-lite-brief.json",
+    "brief_sha256": "613e7741dea98c8bb5d463e733f06ee6938bd413add09ef16aafc812ff1b26e1",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260415-2000-openai-gpt54-cyber-permission-gate/research.json",
+    "research_sha256": "f8b85b2471eaa2187995322c663fc629aa40ec5c502b47cc143fa14b8717de22"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

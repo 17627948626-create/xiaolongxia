@@ -1,0 +1,10 @@
+{
+  "schema_version": "2026-04-07.lineage-v1",
+  "clean": true,
+  "publish_allowed": true,
+  "lineage_status": "clean",
+  "last_clean_step": "layout",
+  "repair_action": null,
+  "issues": [],
+  "publish_candidate": "publish.md"
+}

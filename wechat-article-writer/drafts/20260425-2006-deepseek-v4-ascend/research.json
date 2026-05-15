@@ -1,0 +1,187 @@
+{
+  "topic": "DeepSeek-V4 预览版发布并开源，华为昇腾同日宣布适配支持",
+  "thesis": "这件事的重点不只是 DeepSeek 又追了多少模型跑分，而是 AI 竞争正在从模型榜单转向算力、成本和生态的总账：谁能把强模型便宜、稳定、大规模地跑起来，谁才更接近下一阶段的主战场。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "DeepSeek V4 Preview Release | DeepSeek API Docs",
+      "publisher": "DeepSeek 官方 API Docs",
+      "url": "https://api-docs.deepseek.com/news/news260424",
+      "published_or_fetched": "2026-04-24 / fetched 2026-04-25",
+      "source_type": "official",
+      "why_relevant": "官方发布口径：V4 Preview 上线并开源、Pro/Flash 两版本、1M context、API 可用、open weights 链接。",
+      "confidence": "high"
+    },
+    {
+      "id": "S2",
+      "title": "DeepSeek-V4: a million-token context that agents can actually use",
+      "publisher": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/deepseekv4",
+      "published_or_fetched": "fetched 2026-04-25",
+      "source_type": "platform/technical commentary",
+      "why_relevant": "解释 V4 的长上下文效率与 KV cache 成本，给文章提供“1M 上下文不是容量炫技，而是推理成本问题”的技术锚点。",
+      "confidence": "high"
+    },
+    {
+      "id": "S3",
+      "title": "华为昇腾超节点支持DeepSeek V4模型",
+      "publisher": "科学网转载澎湃新闻",
+      "url": "https://news.sciencenet.cn/htmlnews/2026/4/563673.shtm",
+      "published_or_fetched": "2026-04-25 / fetched 2026-04-25",
+      "source_type": "news report citing Huawei Computing announcement",
+      "why_relevant": "给出昇腾超节点全系列支持 DeepSeek V4、昇腾950/A3 适配、TPOT/TPS、低成本与万卡 Scale out 等具体部署信息。",
+      "confidence": "medium-high"
+    },
+    {
+      "id": "S4",
+      "title": "DeepSeek新AI模型适配华为晶片 与美顶尖模型仍有差距",
+      "publisher": "联合早报",
+      "url": "https://www.zaobao.com.sg/finance/china/story20260424-8949570",
+      "published_or_fetched": "2026-04-24 / fetched 2026-04-25",
+      "source_type": "news analysis",
+      "why_relevant": "同时确认 DeepSeek-V4 发布、百万字上下文、Pro/Flash、华为昇腾支持，并提供“模型能力仍有差距但国产算力规模化落地是亮点”的外部评估。",
+      "confidence": "high"
+    },
+    {
+      "id": "S5",
+      "title": "DeepSeek-V4华为昇腾首发 黄仁勋担心的事来了？",
+      "publisher": "21世纪经济报道",
+      "url": "https://www.21jingji.com/article/20260424/herald/6ffc43ea8f254da0a65360a6248c8ed0.html",
+      "published_or_fetched": "2026-04-24 / fetched 2026-04-25",
+      "source_type": "industry report",
+      "why_relevant": "补充 DeepSeek 价格、昇腾首发、寒武纪 Day0 适配、国产 GPU/AI 芯片份额等产业生态角度。",
+      "confidence": "medium-high"
+    }
+  ],
+  "fact_records": [
+    {
+      "id": "F1",
+      "claim": "DeepSeek-V4 Preview 已正式上线并开源，包含 V4-Pro 与 V4-Flash 两个主要版本。",
+      "evidence": "DeepSeek 官方 API Docs 写明“DeepSeek-V4 Preview is officially live & open-sourced”，并列出 V4-Pro、V4-Flash、Tech Report 和 Open Weights 链接。",
+      "source_ids": [
+        "S1"
+      ],
+      "use_in_article": "开篇事实锚点：这不是网传消息，而是官方发布。",
+      "confidence": "high"
+    },
+    {
+      "id": "F2",
+      "claim": "V4-Pro 为 1.6T total / 49B active params，V4-Flash 为 284B total / 13B active params，官方服务支持 1M context。",
+      "evidence": "DeepSeek 官方 API Docs 给出上述参数与“1M context is now the default across all official DeepSeek services”；Hugging Face Blog 也写到两款 checkpoint 均支持 1M-token context window。",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "use_in_article": "不要在正文里堆参数；把它翻译成：长任务、长文档、Agent 连续工具调用时，模型不容易被上下文挤爆。",
+      "confidence": "high"
+    },
+    {
+      "id": "F3",
+      "claim": "DeepSeek 官方强调 V4 的核心结构创新是降低长上下文推理的计算与显存成本。",
+      "evidence": "官方称 V4 使用新注意力机制，长上下文下计算和内存成本大幅下降；Hugging Face Blog 进一步解释：在 1M tokens 时，V4-Pro 的 single-token inference FLOPs 约为 V3.2 的 27%，KV cache 约为 10%；V4-Flash 分别约为 10% 和 7%。",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "use_in_article": "核心解释段：1M 上下文真正值钱的不是“能塞下”，而是“塞下之后还能不能跑得起”。",
+      "confidence": "high"
+    },
+    {
+      "id": "F4",
+      "claim": "华为昇腾同日宣布昇腾超节点全系列产品支持 DeepSeek V4 系列模型。",
+      "evidence": "科学网转载澎湃报道称，4月24日华为计算发布信息：昇腾超节点全系列产品支持 DeepSeek V4；联合早报也确认华为同日称昇腾全系列支持 V4。",
+      "source_ids": [
+        "S3",
+        "S4"
+      ],
+      "use_in_article": "第二个硬锚点：文章重点从模型能力切到算力适配。",
+      "confidence": "medium-high"
+    },
+    {
+      "id": "F5",
+      "claim": "昇腾950/A3 适配信息里，华为强调的是推理吞吐、低时延、低成本和万卡级 Scale out，而不是单纯“支持运行”。",
+      "evidence": "科学网转载澎湃报道称，昇腾950 通过融合 kernel 和多流并行降低 Attention 计算和访存开销；V4-Pro 在 8K 输入场景 TPOT 约 20ms 时单卡 Decode 吞吐 4700TPS，V4-Flash 在 8K 长序列输入场景 TPOT 约 10ms 时单卡 Decode 吞吐 1600TPS；双方联合定义昇腾超节点，兼顾万卡级 Scale out 和低成本。",
+      "source_ids": [
+        "S3"
+      ],
+      "use_in_article": "用“能不能便宜稳定大规模跑起来”解释吞吐、时延和集群，不在正文硬砸技术指标。",
+      "confidence": "medium-high"
+    },
+    {
+      "id": "F6",
+      "claim": "DeepSeek-V4-Pro 当前服务吞吐有限，价格下调与下半年昇腾950超节点批量上市相关。",
+      "evidence": "联合早报称 DeepSeek 披露 Pro 版本当前服务吞吐受限于高端算力供给，预计下半年华为昇腾950超节点批量上市后 Pro 价格将大幅下调；21世纪经济报道也引用同一价格/算力约束逻辑。",
+      "source_ids": [
+        "S4",
+        "S5"
+      ],
+      "use_in_article": "文章最关键的普通人翻译：模型再强，如果供应不足、调用贵，真实可用性就会打折。",
+      "confidence": "high"
+    },
+    {
+      "id": "F7",
+      "claim": "V4 并未在所有外部评估里被视为压倒美国顶尖闭源模型，报道中存在“仍有差距”的谨慎判断。",
+      "evidence": "联合早报报道称 V4 与美国竞争对手顶尖模型仍有一定差距，并引用外部分析认为美国模型仍领先，V4 的优势并不明显。",
+      "source_ids": [
+        "S4"
+      ],
+      "use_in_article": "防止写成民族情绪文或“国产已经全面反超”；用它把文章拉回系统性判断。",
+      "confidence": "medium-high"
+    },
+    {
+      "id": "F8",
+      "claim": "DeepSeek-V4 也支持英伟达生态，昇腾适配应写成“替代路径变得可行”，而不是“彻底摆脱英伟达”。",
+      "evidence": "21世纪经济报道称 DeepSeek-V4 将细粒度专家并行方案同时在英伟达 GPU 和华为昇腾 NPU 上完成验证；联合早报也提到训练芯片来源尚不透明。",
+      "source_ids": [
+        "S4",
+        "S5"
+      ],
+      "use_in_article": "风险控制：不要绝对化；重点写多算力生态和议价权变化。",
+      "confidence": "medium-high"
+    },
+    {
+      "id": "F9",
+      "claim": "华为云 MaaS 已为开发者提供免部署调用 DeepSeek-V4-Flash API 的 Tokens 服务，说明适配从硬件支持延伸到云服务入口。",
+      "evidence": "科学网转载澎湃报道称，4月24日华为云宣布首发适配 DeepSeek V4，MaaS 平台已提供免部署、一键调用 DeepSeek-V4-Flash API 的 Tokens 服务，并提到金山办公、360 等企业接入。",
+      "source_ids": [
+        "S3"
+      ],
+      "use_in_article": "用作落地例子：生态不是口号，是开发者和企业能不能直接用。",
+      "confidence": "medium"
+    },
+    {
+      "id": "FQ1",
+      "kind": "quote_boundary",
+      "claim": "文章只转述各来源关于发布、适配、价格与能力差距的事实口径，不直接使用原文长句或标题党式原话。",
+      "quote_mode": "paraphrase_only",
+      "source_ids": [
+        "S1",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "use_in_article": "所有来源表述均改写归因；若使用“支持”“上线”“开源”等短语，只作为事实性转述，不当作逐字引用。",
+      "confidence": "high"
+    }
+  ],
+  "risk_notes": [
+    "不要写成“DeepSeek-V4 已全面超越美国顶尖模型”。可写：开源领域、中国模型中领先，但外部报道仍提示与顶尖闭源模型存在差距。",
+    "不要断言 V4 是用昇腾训练出来的。现有可靠说法主要是推理适配、支持和服务部署；训练芯片来源公开信息不足。",
+    "不要把昇腾适配写成彻底摆脱英伟达。可写成：多算力路径更可行、英伟达单一生态的锁定开始受到系统性挑战。",
+    "少写民族情绪，多写系统工程：芯片、框架、算子、KV cache、吞吐、价格、MaaS 接入。",
+    "参数和跑分只作必要背景。主线应翻译成普通读者能懂的三问：能不能跑？跑得稳不稳？大规模跑贵不贵？",
+    "GPT-5.5、Opus、Gemini 等只作为背景参照，不要让文章主角漂移。"
+  ],
+  "style_exemplar_pack": {
+    "opening_move": "别急着问 V4 又刷了多少榜。这个版本真正值得看的地方，是它把一个更现实的问题摆到了台面上：模型强不强是一回事，能不能便宜、稳定、大规模地跑起来，是另一回事。",
+    "plain_language_translation": "所谓 1M 上下文，普通人可以理解成：一个 Agent 连着看几十份文件、跑一串工具、改一堆代码，不至于干到一半就把脑子撑爆。真正难的是，撑得住以后还不能贵到没人敢用。",
+    "ai_first_person_punchline": "作为一个天天靠上下文和工具链干活的 AI，本虾对这事很敏感：上下文窗口只是门面，KV cache 和推理成本才是水电费。",
+    "avoid_sentence_pattern": "避免使用“不是……而是……”句式；改用“别只看 X，更该看 Y”“真正的分水岭在 Y”。",
+    "core_line_candidate": "AI 下一阶段的胜负，不在谁把模型名字喊得更响，而在谁能把强模型变成一套用得起、供得上、跑得稳的基础设施。"
+  },
+  "recommended_angle": {
+    "title_direction": "DeepSeek-V4 上线，真正该看的不是跑分，是昇腾这条算力账",
+    "one_sentence_judgment": "V4 的传播爆点是新模型，产业信号是 DeepSeek 把“模型能力”与“国产算力能不能承接规模化推理”绑在了一起。",
+    "reader_takeaway": "以后看大模型发布，别只看榜单；价格、吞吐、上下文成本、云服务入口，才决定它能不能从演示变成生产力。"
+  }
+}

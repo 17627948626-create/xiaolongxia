@@ -1,0 +1,84 @@
+{
+  "draft_version": "v2",
+  "checked_at": "2026-03-29T03:07:11Z",
+  "total_claims": 6,
+  "verified": 4,
+  "inaccurate": 1,
+  "unverifiable": 1,
+  "false": 0,
+  "pass": false,
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "上个月我见过一个真实的案例：有人让 AI 帮忙改一份合作协议里的付款条款……第二天对方法务打电话来——你们这个违约责任条款跟付款周期是矛盾的，签了等于白签。",
+      "verdict": "❌ UNVERIFIABLE",
+      "issues": [
+        "这是第一人称亲历案例，外部无法独立核实，不能作为可验证外部事实证据使用。"
+      ],
+      "correction": "若保留，建议明确为作者亲历/听闻案例，不把它写成可外部核验的公共事实：‘上个月我自己就碰到过一个案例：……’",
+      "source": null,
+      "source_url": null
+    },
+    {
+      "id": 2,
+      "original_text": "我自己跑 OpenClaw 公众号自动化流程也踩过类似的坑，后来专门加了一层叫 lineage audit 的机制：每次发布前，系统必须核查研究、写作、审稿、事实核查这几道工序是不是各自由对应的子任务独立完成的，每个产物的来源能不能对上号。如果某个环节被跳过，或者产物来路对不上——直接阻断发布。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "wechat-article-forge/scripts/lineage_audit.py + SKILL.md + memory/2026-03-29.md",
+      "source_url": "file:///root/.openclaw/skills/wechat-article-forge/scripts/lineage_audit.py"
+    },
+    {
+      "id": 3,
+      "original_text": "OpenAI 2025 年发的那篇研究文章《Why language models hallucinate》里有一组数据特别能说明问题：gpt-5-thinking-mini 的错误率是 26%，o4-mini 高达 75%。两者准确率其实差不多，分别是 22% 和 24%。关键区别在哪？前者有 52% 的问题选择明确说‘我不确定，不答’，后者只有 1% 愿意这么做。",
+      "verdict": "✅ VERIFIED",
+      "issues": [
+        "数字本身全部核对无误。",
+        "但‘研究文章’更精确地说应为 OpenAI 发布的文章/博文；该页面另行链接了一篇研究论文。"
+      ],
+      "correction": "OpenAI 在 2025 年发布的文章《Why language models hallucinate》里有一组数据特别能说明问题：gpt-5-thinking-mini 的错误率是 26%，OpenAI o4-mini 高达 75%。两者准确率其实差不多，分别是 22% 和 24%。关键区别在于，前者有 52% 的问题选择弃答，后者只有 1%。",
+      "source": "Why language models hallucinate | OpenAI",
+      "source_url": "https://openai.com/index/why-language-models-hallucinate/"
+    },
+    {
+      "id": 4,
+      "original_text": "你品品这个数字——一个模型几乎从不承认自己不知道，结果四分之三的回答都是错的。",
+      "verdict": "✅ VERIFIED",
+      "issues": [
+        "这句话是对同一组表格数据的口语化转述，和 o4-mini 75% error rate 一致。"
+      ],
+      "correction": null,
+      "source": "Why language models hallucinate | OpenAI",
+      "source_url": "https://openai.com/index/why-language-models-hallucinate/"
+    },
+    {
+      "id": 5,
+      "original_text": "Anthropic 在 2025 年 6 月 Claude 4 发布博文里披露过一组数据：Claude Opus 4 和 Sonnet 4 在 SWE-bench Verified（用真实开源软件任务评测 AI 的基准）上基础分是 72.5% 和 72.7%。但把系统改成多次并行尝试、用回归测试筛掉不合格补丁、再从候选里选最优方案之后，分数直接涨到 79.4% 和 80.2%。",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "Claude 4 发布博文日期不是 2025 年 6 月，而是 2025 年 5 月 22 日。",
+        "其余核心数字与方法描述基本准确：SWE-bench 72.5% / 72.7%，高算力设置下 79.4% / 80.2%；方法包括多次并行尝试、丢弃未通过可见回归测试的补丁、再用内部评分模型选最佳候选。"
+      ],
+      "correction": "Anthropic 在 2025 年 5 月 22 日发布的 Claude 4 博文里披露过一组数据：Claude Opus 4 和 Sonnet 4 在 SWE-bench Verified（评测真实软件工程任务的基准）上的基础成绩分别是 72.5% 和 72.7%。但把系统改成多次并行尝试、用可见回归测试筛掉不合格补丁、再从候选里选最优方案之后，分数提升到 79.4% 和 80.2%。",
+      "source": "Claude 4 | Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "id": 6,
+      "original_text": "翻译成人话：让成绩上去的不是模型变聪明了，而是它学会了交卷前先检查、发现不对就重做。",
+      "verdict": "✅ VERIFIED",
+      "issues": [
+        "这是对 Anthropic appendix 方法学的合理总结，不是逐字原文，但与‘parallel attempts + visible regression tests + candidate selection’一致。"
+      ],
+      "correction": null,
+      "source": "Claude 4 | Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-4"
+    }
+  ],
+  "wording_risk_notes": [
+    "‘研究文章’建议改成‘文章’或‘博文’；若要称为‘研究论文’，应直接指向该页链接的 paper，而不是页面本身。",
+    "第一段合同案例属于作者亲历叙述，外部无法核验；可保留，但最好明确成个人经历，不要把它包装成公共可验证事实。",
+    "lineage audit 建议首次出现时加一个中文解释，例如‘lineage audit（来源链审计）’，读者更容易理解。"
+  ],
+  "mechanical_priority_fix": "将‘Anthropic 在 2025 年 6 月 Claude 4 发布博文里披露过一组数据’替换为‘Anthropic 在 2025 年 5 月 22 日发布的 Claude 4 博文里披露过一组数据’。"
+}

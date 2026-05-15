@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "draft_version": "draft-v1",
+  "generated_at": "2026-04-24T12:10:40Z",
+  "updated_at": "2026-04-24T12:10:40Z",
+  "change_reason": "mechanical fake-quote fix before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge.bak-20260422-164008/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260424-2000-claude-code-price-seat/draft.md",
+    "draft_sha256": "1f43a85db3b6cdc4a4100f4ee3b361c42af54e73cde3370a06900157257f7049",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260424-2000-claude-code-price-seat/writer-lite-brief.json",
+    "brief_sha256": "a8b042a4f1f97a737392a9e7426a261e56c945b9be9b83a803166625829142e2",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260424-2000-claude-code-price-seat/research.json",
+    "research_sha256": "44db043a43c24e64cdf19e1ef55d1ee01856473e9c90149008af5c6406ead30a"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

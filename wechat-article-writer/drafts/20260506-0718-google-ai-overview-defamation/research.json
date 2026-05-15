@@ -1,0 +1,249 @@
+{
+  "artifact_type": "forge_research",
+  "profile": "小龙虾有话说",
+  "topic_locked": true,
+  "topic": "Google AI Overview 误把加拿大音乐人 Ashley MacIsaac 写成性犯罪者，引发对 Google 的诽谤诉讼",
+  "generated_at": "2026-05-06T07:22:40+08:00",
+  "summary": {
+    "event": "加拿大 Cape Breton 小提琴/音乐人 Ashley MacIsaac 已对 Google LLC 提起民事诉讼，称 Google AI Overview 在关于他的摘要中错误声称他曾因多项严重性犯罪及相关罪名被定罪，并被列入全国性犯罪者登记名单。",
+    "why_now": "CBC/Canadian Press 于 2026-05-04 报道诉讼细节，The Guardian 于 2026-05-05 跟进报道；事件具有明确现实后果：据报道，一个原定 2025-12-19 的演出被取消，相关 First Nation 后续公开道歉，MacIsaac 索赔总额为 150 万美元。",
+    "selected_thesis": "AI 搜索最危险的变化，不只在于它会生成错误摘要；当摘要以搜索引擎页面的权威位置出现，它就可能被外界当成平台对一个人的公开表述，从而把错误答案推向现实伤害和法律责任。",
+    "prose_boundary": "文章必须始终把案件称为 MacIsaac 一方的主张/诉讼文件内容，避免写成法院已认定 Google 构成诽谤。"
+  },
+  "thesis_support": [
+    {
+      "point": "现实伤害已经出现，不是抽象的 AI 幻觉讨论。",
+      "evidence": "CBC 与 Guardian 均报道，MacIsaac 称 Sipekne’katik First Nation 因 Google AI Overview 误导信息取消其演出，随后该组织公开道歉。",
+      "source_ids": [
+        "cbc-2026-05-04",
+        "guardian-2026-05-05"
+      ],
+      "confidence": "high"
+    },
+    {
+      "point": "诉讼焦点正好卡在‘软件生成’与‘平台发表’之间。",
+      "evidence": "诉状主张 Google 是 AI Overview 的创建者和运营者，知道或应当知道该功能可能返回不真实信息；诉状还提出如果人类发言人代表 Google 作出类似虚假指控，惩罚性赔偿也应成立。",
+      "source_ids": [
+        "cbc-2026-05-04",
+        "guardian-2026-05-05"
+      ],
+      "confidence": "high"
+    },
+    {
+      "point": "Google 自己承认 AI Overview 可能误解网页内容或语境，产品设计又强调帮助用户更快理解复杂问题。",
+      "evidence": "Google 2024 年 AI Overviews 说明称该功能与核心搜索排序系统结合、包含链接，但也承认出现错误时可能源自误解查询、误解网页语言细微差别、缺少高质量信息等。",
+      "source_ids": [
+        "google-ai-overviews-update-2024",
+        "google-generative-ai-search-2023"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cbc-2026-05-04",
+      "title": "Cape Breton fiddler Ashley MacIsaac sues Google over alleged defamation",
+      "publisher": "CBC / The Canadian Press",
+      "author": "Michael MacDonald",
+      "published_at": "2026-05-04",
+      "url": "https://www.cbc.ca/news/canada/nova-scotia/cape-breton-fiddler-ashley-macisaac-lawsuit-against-google-9.7187490",
+      "role": "primary event verification; lawsuit claims; damages; caveat that claims not tested in court",
+      "verified_by": "web_fetch source page 2026-05-06"
+    },
+    {
+      "id": "guardian-2026-05-05",
+      "title": "Canadian fiddler sues Google after AI Overview wrongly claimed he was a sex offender",
+      "publisher": "The Guardian",
+      "published_at": "2026-05-05",
+      "url": "https://www.theguardian.com/music/2026/may/05/canadian-ashley-macisaac-fiddler-musician-singer-songwriter-sues-google-ai-sex-offender-ntwnfb",
+      "role": "independent follow-up; damages breakdown; First Nation apology text; Google prior statement",
+      "verified_by": "web_fetch source page 2026-05-06"
+    },
+    {
+      "id": "billboard-canada-2026-05-05",
+      "title": "Ashley MacIsaac Files $1.5 Million Lawsuit Against Google, Citing Defamation Over AI Overview",
+      "publisher": "Billboard Canada",
+      "published_at": "2026-05-05",
+      "url": "https://ca.billboard.com/business/legal/ashley-macisaac-google-lawsuit",
+      "role": "music-industry corroboration; prior December context; repeats Canadian Press reporting with attribution",
+      "verified_by": "web_fetch source page 2026-05-06"
+    },
+    {
+      "id": "google-ai-overviews-update-2024",
+      "title": "AI Overviews: About last week",
+      "publisher": "Google Blog",
+      "published_at": "2024-05-30",
+      "url": "https://blog.google/products/search/ai-overviews-update-may-2024/",
+      "role": "Google’s own description of how AI Overviews work and why errors can occur",
+      "verified_by": "web_fetch source page 2026-05-06"
+    },
+    {
+      "id": "google-generative-ai-search-2023",
+      "title": "Supercharging Search with generative AI",
+      "publisher": "Google Blog",
+      "published_at": "2023-05-10",
+      "url": "https://blog.google/products/search/generative-ai-search/",
+      "role": "Google’s original positioning of generative AI search as helping users understand topics faster with an AI-powered snapshot and links",
+      "verified_by": "web_fetch source page 2026-05-06"
+    }
+  ],
+  "fact_records": [
+    {
+      "id": "fr-001",
+      "kind": "lawsuit_claim",
+      "claim": "MacIsaac has launched/filed a civil lawsuit against Google LLC over alleged defamation arising from an AI Overview.",
+      "source_id": "cbc-2026-05-04",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "high_risk_claim": true,
+      "status": "claims_not_tested_in_court",
+      "writer_instruction": "写成‘据 CBC/Canadian Press 报道，MacIsaac 在诉讼中称……’，不要写成法院已认定。"
+    },
+    {
+      "id": "fr-002",
+      "kind": "lawsuit_claim",
+      "claim": "The AI Overview allegedly falsely stated MacIsaac had been convicted of serious offences including sexual assault, internet luring involving a child, and assault causing bodily harm, and had been listed on the national sex offender registry.",
+      "source_id": "cbc-2026-05-04",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "high_risk_claim": true,
+      "status": "allegation_in_statement_of_claim",
+      "writer_instruction": "这是极高风险名誉事实，只能概括并明确是‘诉状称 AI 摘要错误声称’，不得直接复述成事实。"
+    },
+    {
+      "id": "fr-003",
+      "kind": "damages_claim",
+      "claim": "MacIsaac seeks $1.5 million in damages; Guardian breaks it down as $500,000 general, $500,000 aggravated, and $500,000 punitive damages.",
+      "source_id": "guardian-2026-05-05",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "high_risk_claim": false,
+      "status": "reported_claim",
+      "writer_instruction": "可写索赔总额 150 万美元；若写三项拆分，必须归因 Guardian/诉讼文件。"
+    },
+    {
+      "id": "fr-004",
+      "kind": "real_world_impact",
+      "claim": "MacIsaac said he learned of the misinformation after Sipekne’katik First Nation confronted him with the AI Overview and cancelled a concert; the First Nation later publicly apologized.",
+      "source_id": "cbc-2026-05-04",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "high_risk_claim": true,
+      "status": "reported_by_cbc_and_guardian",
+      "writer_instruction": "现实后果可作为开头钩子，但须写‘据报道/他称’，不要扩展成更多损失。"
+    },
+    {
+      "id": "fr-005",
+      "kind": "quote_sensitive",
+      "claim": "Guardian quotes the First Nation apology as saying decisions were based on incorrect information generated through an AI-assisted search and regretting harm to reputation and livelihood.",
+      "source_id": "guardian-2026-05-05",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "high_risk_claim": false,
+      "status": "published_statement_excerpt",
+      "writer_instruction": "除非必要，不逐字引用；如引用，保持短句并标注 Guardian。"
+    },
+    {
+      "id": "fr-006",
+      "kind": "quote_sensitive",
+      "claim": "CBC reports MacIsaac saying he felt tangible fear before taking the stage and feared for his safety because of the label.",
+      "source_id": "cbc-2026-05-04",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "high_risk_claim": false,
+      "status": "interview_quote_paraphrase",
+      "writer_instruction": "适合转成普通人情绪场景；不要夸张成遭遇暴力威胁。"
+    },
+    {
+      "id": "fr-007",
+      "kind": "platform_response",
+      "claim": "Google’s December statement said AI summaries frequently change to provide helpful information and that examples involving misinterpreted content are used to improve systems; Guardian says it reached out to Google for comment on the lawsuit.",
+      "source_id": "guardian-2026-05-05",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "high_risk_claim": false,
+      "status": "company_statement_reported_by_media",
+      "writer_instruction": "应给 Google 留出回应位置，避免写成 Google 完全沉默。"
+    },
+    {
+      "id": "fr-008",
+      "kind": "official_product_claim",
+      "claim": "Google says AI Overviews are integrated with core web ranking systems, include relevant links, and are built to show information backed by top web results; Google also says errors can arise from misinterpreting queries or web language nuance.",
+      "source_id": "google-ai-overviews-update-2024",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "high_risk_claim": false,
+      "status": "official_blog_claim",
+      "writer_instruction": "这只能作为 Google 官方自述，不可当作第三方验证的准确率结论。"
+    },
+    {
+      "id": "fr-009",
+      "kind": "api_snapshot",
+      "observed_at": "2026-05-06T07:21:26+08:00",
+      "claim": "Google’s 2023 blog positioned generative AI Search as showing an AI-powered snapshot of key information with links to dig deeper.",
+      "source_id": "google-generative-ai-search-2023",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "high_risk_claim": false,
+      "status": "official_blog_claim_not_runtime_snapshot",
+      "writer_instruction": "这里的 snapshot 是 Google 官方产品描述中的页面模块，不是当前搜索结果实时快照；写作时可译为“AI 生成的信息摘要/快照”。"
+    }
+  ],
+  "angle_risks": [
+    {
+      "risk": "法律定性风险",
+      "detail": "诉讼尚未审理，所有关于 Google 构成诽谤/存在缺陷设计/应赔偿的说法都只是原告主张。",
+      "mitigation": "全文使用‘起诉称、诉状称、据报道、尚未在法庭检验’。"
+    },
+    {
+      "risk": "二次传播名誉风险",
+      "detail": "复述 AI Overview 的错误指控时，可能再次把虚假犯罪标签贴到当事人身上。",
+      "mitigation": "只用概括表达，不把具体罪名铺开当噱头；强调‘错误声称’和‘未经证实且被当事人否认/诉称为虚假’。"
+    },
+    {
+      "risk": "反 Google 情绪化",
+      "detail": "文章容易滑向‘大公司作恶’套路，削弱真正判断。",
+      "mitigation": "焦点放在搜索摘要产品位置变化：从指路链接到平台式摘要。"
+    },
+    {
+      "risk": "泛泛监管结尾",
+      "detail": "若最后只说加强监管，会变成普通 AI 安全评论。",
+      "mitigation": "结尾收回到普通人搜自己名字、AI 搜索替平台开口这一刀。"
+    }
+  ],
+  "title_directions": [
+    "Google AI 摘要把人写成罪犯后，搜索引擎开始为幻觉买单",
+    "一条 AI 摘要取消了一场演出，Google 这次被告上法庭",
+    "AI 搜索最危险的地方，是它开始替平台开口",
+    "当 Google 的 AI 把错话说出口，幻觉就不只是幻觉了"
+  ],
+  "entity_alias_map": {
+    "Google AI Overview": "Google AI Overview / AI 摘要 / AI 搜索摘要（首次用英文全称）",
+    "Ashley MacIsaac": "Ashley MacIsaac / 加拿大音乐人 / Cape Breton 小提琴手（不要音译过多）",
+    "Sipekne’katik First Nation": "Sipekne’katik First Nation / 加拿大新斯科舍一个 First Nation 组织（必要时简化为主办方）"
+  },
+  "must_attribute_claims": [
+    "诉讼文件中的全部指控与赔偿理由",
+    "AI Overview 曾具体写了哪些错误犯罪指控",
+    "演出取消与 AI Overview 之间的因果叙述",
+    "Google 对 AI Overview 错误的回应",
+    "First Nation 道歉内容"
+  ],
+  "style_exemplar_pack": {
+    "opening_move": "先落到一个人被搜索摘要误伤的场景：不是‘AI 幻觉又来了’，而是一个演出方看见 Google 摘要后不敢让他上台。",
+    "judgment_move": "把抽象责任讲成人话：以前搜索引擎像指路牌，错了还能说‘你自己点进去看’；AI Overview 把几段话合成答案后，平台就更像亲口说了一句结论。",
+    "ai_view_move": "作为 AI，本虾该承认：模型不会天然理解‘名誉’有多重，但产品经理把它放到搜索结果最显眼的位置时，人类会按平台背书来读。",
+    "ending_move": "最后回到普通人的恐惧：如果搜一个名字，第一眼看到的是 AI 拼错的人生，解释成本会由被误伤者自己承担。"
+  },
+  "anti_exemplars": [
+    "不要写成‘随着人工智能的发展，AI 幻觉问题日益严峻’这种开场。",
+    "不要写成 AI 监管八股：风险、挑战、机遇、治理四件套。",
+    "不要用‘AI 终将毁掉搜索’这类过度预言。",
+    "禁止使用‘不是……而是……’句式；如需对比，改成短句并列。"
+  ],
+  "dedup_note": "最近发布多围绕模型/Agent/算力/组织控制权；本题为 AI 搜索产品事故与名誉责任，核心角度不重复。",
+  "evidence_gaps": [
+    "未直接取得 Ontario Superior Court 诉状原文；CBC/Guardian 对诉状内容为当前主要依据。",
+    "Google 对 2026 年本案的最新正式回应未见全文，只有 Guardian/CBC 对 2025 年 12 月回应及未能联系到 Google 的报道。"
+  ]
+}

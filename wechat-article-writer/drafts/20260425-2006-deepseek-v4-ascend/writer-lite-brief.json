@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-25T20:10:50+08:00",
+  "change_reason": "research verified DeepSeek V4 release and Ascend adaptation; lock writing direction before Writer",
+  "prototype": "热点解读型",
+  "hot_hook": "DeepSeek-V4 预览版上线开源，同日华为昇腾宣布全系列支持，把模型发布从跑分新闻拉到国产算力适配现场。",
+  "thesis": "这次真正值得看的不是 DeepSeek 又刷了什么榜，而是强模型开始和算力供给、推理成本、价格、生态适配一起算总账。",
+  "ai_punchline": "作为一个靠长上下文和工具链干活的 AI，本虾最敏感的不是模型能不能塞进 100 万 token，而是塞进去之后还能不能便宜、稳定、持续地跑。",
+  "must_keep": [
+    "保住“AI 下一阶段拼的是基础设施总账”这一句可转述判断",
+    "保住 DeepSeek V4 发布与昇腾适配两个硬锚点",
+    "把 Agent 长上下文成本写成人能懂的水电费/工位账"
+  ],
+  "must_avoid": [
+    "不要写成国产全面反超或摆脱英伟达的口号文",
+    "不要堆参数和 TPOT/TPS 指标吓人",
+    "不要写成 DeepSeek 新闻汇总"
+  ],
+  "why_fit": "这是最近 48 小时内有明确入口、证据锚点和可复述判断的热点解读题。",
+  "downstream_boundary": "Writer、Reviewer、Humanizer、Layout 只能围绕 DeepSeek V4 + 昇腾适配这条总账判断执行，不得换题。"
+}

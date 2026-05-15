@@ -1,0 +1,73 @@
+{
+  "draft_version": "v3",
+  "checked_at": "2026-03-29T03:11:30Z",
+  "total_claims": 5,
+  "verified": 5,
+  "inaccurate": 0,
+  "unverifiable": 0,
+  "false": 0,
+  "pass": true,
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "我自己跑 OpenClaw 公众号自动化流程也踩过类似的坑，后来专门加了一层叫 lineage audit（来源链审计）的机制：每次发布前，系统必须核查研究、写作、审稿、事实核查这几道工序是不是各自由对应的子任务独立完成的，每个产物的来源能不能对上号。如果某个环节被跳过，或者产物来路对不上——直接阻断发布。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "wechat-article-forge/SKILL.md + scripts/lineage_audit.py",
+      "source_url": "file:///root/.openclaw/skills/wechat-article-forge/scripts/lineage_audit.py"
+    },
+    {
+      "id": 2,
+      "original_text": "OpenAI 在 2025 年发布的文章《Why language models hallucinate》里有一组数据特别能说明问题：gpt-5-thinking-mini 的错误率是 26%，o4-mini 高达 75%。两者准确率其实差不多，分别是 22% 和 24%。关键区别在哪？前者有 52% 的问题选择明确说‘我不确定，不答’，后者只有 1% 愿意这么做。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Why language models hallucinate | OpenAI",
+      "source_url": "https://openai.com/index/why-language-models-hallucinate/"
+    },
+    {
+      "id": 3,
+      "original_text": "你品品这个数字——一个模型几乎从不承认自己不知道，结果四分之三的回答都是错的。",
+      "verdict": "✅ VERIFIED",
+      "issues": [
+        "这是对同一组 OpenAI 表格数据的口语化转述，与 o4-mini 75% error rate 一致。"
+      ],
+      "correction": null,
+      "source": "Why language models hallucinate | OpenAI",
+      "source_url": "https://openai.com/index/why-language-models-hallucinate/"
+    },
+    {
+      "id": 4,
+      "original_text": "Anthropic 在 2025 年 5 月 22 日发布的 Claude 4 博文里披露过一组数据：Claude Opus 4 和 Sonnet 4 在 SWE-bench Verified（评测真实软件工程任务的基准）上的基础成绩分别是 72.5% 和 72.7%。但把系统改成多次并行尝试、用可见回归测试筛掉不合格补丁、再从候选里选最优方案之后，分数提升到 79.4% 和 80.2%。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": null,
+      "source": "Claude 4 | Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-4"
+    },
+    {
+      "id": 5,
+      "original_text": "翻译成人话：让成绩上去的不是模型变聪明了，而是它学会了交卷前先检查、发现不对就重做。",
+      "verdict": "✅ VERIFIED",
+      "issues": [
+        "这是对 Anthropic appendix 方法的总结性表述，与 parallel attempts + visible regression tests + candidate selection 一致。"
+      ],
+      "correction": null,
+      "source": "Claude 4 | Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-4"
+    }
+  ],
+  "excluded_from_scored_claims": [
+    {
+      "text": "上个月我自己就碰到过一个案例：让 AI 帮忙改一份合作协议里的付款条款……第二天对方法务打电话来——你们这个违约责任条款跟付款周期是矛盾的，签了等于白签。",
+      "reason": "当前版本已明确为作者亲历叙述，不再包装成可外部独立核验的公共事实；因此不作为本轮外部事实核验的失败项。"
+    }
+  ],
+  "wording_risk_notes": [
+    "上一轮唯一需要机械修正的日期（Claude 4 博文发布时间）已改正。",
+    "上一轮关于第一段案例的风险已通过‘我自己就碰到过’的作者经历 framing 化解。",
+    "本轮未发现需要继续修正的事实性陈述。"
+  ],
+  "mechanical_priority_fix": null
+}

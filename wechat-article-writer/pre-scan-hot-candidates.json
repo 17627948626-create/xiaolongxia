@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-04-30T20:02:01.104538+08:00",
+  "window": "最近48小时以内，按最爆优先筛选",
+  "selected_slug": "20260430-2000-unitree-dual-arm-robot-workstation",
+  "candidates": [
+    {
+      "event": "宇树发布双臂人形机器人，售价2.69万元起",
+      "why_now": "4月30日多家科技媒体集中报道，价格和“上半身双臂”形态都有传播点，直接打到机器人落地门槛。",
+      "keywords": [
+        "宇树 双臂人形机器人 2.69万元",
+        "Unitree dual-arm humanoid robot",
+        "宇树 R1 双臂 15~31自由度"
+      ],
+      "judgment": "人形机器人真正先被商品化的部分，可能不是像人一样走路，而是能在固定工位伸手干活。",
+      "evidence_urls": [
+        "https://www.ithome.com/0/945/386.htm",
+        "https://www.sogou.com/web?query=%E5%AE%87%E6%A0%91%20%E5%8F%8C%E8%87%82%20%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%202.69%E4%B8%87%204%E6%9C%8830%E6%97%A5"
+      ],
+      "score": "selected"
+    },
+    {
+      "event": "OpenAI Codex CLI 系统提示词/“哥布林禁令”引发讨论",
+      "why_now": "4月30日 IT之家/腾讯新闻转载 Ars Technica 报道，具备社区传播性和AI安全/系统提示词透明度话题。",
+      "keywords": [
+        "OpenAI Codex 系统提示词 GPT-5.5 goblins",
+        "Codex CLI system prompt leaked"
+      ],
+      "judgment": "系统提示词泄露好笑的不是哥布林，而是最先进模型仍要靠一堆具体禁令堵怪毛病。",
+      "evidence_urls": [
+        "https://news.qq.com/rain/a/20260430A0504H00"
+      ],
+      "score": "backup-entertaining"
+    },
+    {
+      "event": "腾讯 ima 发布全新 Agent 模式 copilot",
+      "why_now": "4月29日腾讯云官微消息，国内知识工具继续向个人Agent/记忆系统升级。",
+      "keywords": [
+        "腾讯 ima copilot Agent 模式 4月29日",
+        "ima copilot 记忆系统"
+      ],
+      "judgment": "个人知识库的下一步不是更会搜，而是开始替用户沉淀长期工作代理。",
+      "evidence_urls": [
+        "https://tech.hexun.com/2026-04-29/223128778.html"
+      ],
+      "score": "backup-overlap-with-agent"
+    }
+  ]
+}

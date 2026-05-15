@@ -1,0 +1,97 @@
+{
+  "thesis": "OpenClaw 2026.3.31 最重要的升级，不是又多了多少能力，而是它开始像操作系统了——调度、约束、恢复能力在这一版里被系统性补齐。",
+  "angle": "从 changelog 细节切入，拉出系统层判断",
+  "main_insight": "这次更新的重心已经从「功能扩展」转向「运行时基础设施」——一个 Agent 平台能不能真正用于生产，取决于它能不能管好后台任务、守住安全边界、在出错后可靠恢复，这三件事 OpenClaw 在 3.31 里同时在补。",
+  "sub_insights": [
+    "后台任务从 ACP 专属账本升级为全局共享 control plane，所有类型的后台工作（ACP、subagent、cron、CLI）都被统一进一个 SQLite 账本，并且有了第一套线性流控命令 flows list/show/cancel——这是调度层从无到有的关键一步。",
+    "安全边界全面收紧并转为 fail-closed 默认：dangerous-code 安装失败、trusted-proxy 拒绝混合配置、node commands 必须配对才能启用、heartbeat 不再继承 owner 权限——边界被系统性地从「默认宽松」改为「默认拒绝」。",
+    "运行时稳定性被认真对待了：idle-stream timeout 让卡住的模型流能正常中止、duplicate replies 修复、ACP 任务被 blocked 时诚实标记而非假报成功、routing isolation 修复——这些修复本身就是项目重心改变的证据。"
+  ],
+  "evidence_anchors": [
+    {
+      "feature_name": "Background tasks unified ledger",
+      "changelog_excerpt": "turn tasks into a real shared background-run control plane instead of ACP-only bookkeeping by unifying ACP, subagent, cron, and background CLI execution under one SQLite-backed ledger, routing detached lifecycle updates through the executor seam, adding audit/maintenance/status visibility, tightening auto-cleanup and lost-run recovery",
+      "supports": "支撑一：后台任务从 ACP 专属账本变成共享 control plane"
+    },
+    {
+      "feature_name": "flows list/show/cancel + blocked state persistence",
+      "changelog_excerpt": "add the first linear task flow control surface with `openclaw flows list|show|cancel`, keep manual multi-task flows separate from one-task auto-sync flows; persist blocked state on one-task task flows and let the same flow reopen cleanly on retry, so blocked detached work can carry a parent-level reason and continue without fragmenting into a new job",
+      "supports": "支撑一：后台任务从 ACP 专属账本变成共享 control plane"
+    },
+    {
+      "feature_name": "dangerous-code install fail-closed",
+      "changelog_excerpt": "built-in dangerous-code critical findings and install-time scan failures now fail closed by default, so plugin installs and gateway-backed skill dependency installs that previously succeeded may now require an explicit dangerous override such as `--dangerously-force-unsafe-install` to proceed",
+      "supports": "支撑二：安全边界明显变硬，fail-closed 到处在收紧"
+    },
+    {
+      "feature_name": "trusted-proxy 严格化 + node pairing 才能启用 node commands",
+      "changelog_excerpt": "trusted-proxy now rejects mixed shared-token configs, and local-direct fallback requires the configured token instead of implicitly authenticating same-host callers; node commands now stay disabled until node pairing is approved, so device pairing alone is no longer enough to expose declared node commands",
+      "supports": "支撑二：安全边界明显变硬，fail-closed 到处在收紧"
+    },
+    {
+      "feature_name": "node events 减小 trusted surface",
+      "changelog_excerpt": "node-originated runs now stay on a reduced trusted surface, so notification-driven or node-triggered flows that previously relied on broader host/session tool access may need adjustment",
+      "supports": "支撑二：安全边界明显变硬，fail-closed 到处在收紧"
+    },
+    {
+      "feature_name": "idle-stream timeout",
+      "changelog_excerpt": "add a configurable idle-stream timeout for embedded runner requests so stalled model streams abort cleanly instead of hanging until the broader run timeout fires",
+      "supports": "支撑三：运行时工程质量在补"
+    },
+    {
+      "feature_name": "duplicate replies 修复",
+      "changelog_excerpt": "Slack: stop retry-driven duplicate replies when draft-finalization edits fail ambiguously",
+      "supports": "支撑三：运行时工程质量在补"
+    },
+    {
+      "feature_name": "ACP tasks 正确标记 blocked 而非假成功",
+      "changelog_excerpt": "ACP/tasks: mark cleanly exited ACP runs as blocked when they end on deterministic write or authorization blockers, and wake the parent session with a follow-up instead of falsely reporting success",
+      "supports": "支撑三：运行时工程质量在补"
+    },
+    {
+      "feature_name": "heartbeat auth 修复（不继承 owner 权限）",
+      "changelog_excerpt": "Heartbeat/auth: prevent exec-event heartbeat runs from inheriting owner-only tool access from the session delivery target, so node exec output stays on the non-owner tool surface even when the target session belongs to the owner",
+      "supports": "支撑二：安全边界明显变硬，fail-closed 到处在收紧"
+    },
+    {
+      "feature_name": "routing isolation（hook-triggered session rebind）",
+      "changelog_excerpt": "Hooks/session routing: rebind hook-triggered agent: session keys to the actual target agent before isolated dispatch so dedicated hook agents keep their own session-scoped tool and plugin identity",
+      "supports": "支撑三：运行时工程质量在补"
+    },
+    {
+      "feature_name": "MCP schema normalize",
+      "changelog_excerpt": "Agents/OpenAI Responses: normalize raw bundled MCP tool schemas on the WebSocket/Responses path so bare-object, object-ish, and top-level union MCP tools no longer get rejected by OpenAI during tool registration",
+      "supports": "支撑三：运行时工程质量在补"
+    }
+  ],
+  "sources": [
+    {
+      "name": "OpenClaw CHANGELOG.md",
+      "type": "local_file",
+      "url_or_path": "/root/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/CHANGELOG.md",
+      "note": "最权威信息源，直接从 2026.3.31 一节提取所有技术证据"
+    },
+    {
+      "name": "DuckDuckGo search: AI agent runtime vs features",
+      "type": "web_search",
+      "url_or_path": "https://duckduckgo.com/html/?q=agent+operating+system+AI+runtime+vs+features",
+      "note": "背景概念补充，搜索结果质量有限，仅作参考，未作为核心论据"
+    }
+  ],
+  "contradictions_or_caveats": [
+    "这个版本同时也加了大量新功能（QQ Bot、LINE outbound media、WhatsApp reactions、Matrix streaming、Slack exec approvals 等），如果从功能数量上看，依然是「功能大版本」。文章的判断是结构性转变而非功能空白，这个视角需要在文章里明确交代，否则容易被反驳。",
+    "unified ledger 是「第一套」，flows list/show/cancel 也是「第一个线性流控界面」——这些都是起点，不是成熟产品。文章需要讲清楚：判断的是方向和重心，不是宣告 OpenClaw 已经是完整 Agent OS。",
+    "支撑一、二、三的部分改动是 Breaking Changes，这对生产用户有短期影响。文章可以用这一点反向佐证：「愿意引入 breaking changes 来硬化边界，本身就是信号。」"
+  ],
+  "why_write_now": "Agent OS 这个概念最近一年在 AI 圈反复被提起，但真正在做的工具很少被认真解读内部架构变化。OpenClaw 3.31 是一个罕见的时机：你可以用 changelog 里的具体技术细节，来解释为什么「调度+约束+恢复」三件事同时推进意味着什么——这是从一手资料出发做判断，不是在复读别人的观点。",
+  "topic_dedup_check": {
+    "recent_topics": [
+      "推理模型说自己在「思考」——这是真的吗？",
+      "AI 自我报告不可信",
+      "Claude Code 宠物泄露吃瓜文",
+      "Agent 最后一步翻车"
+    ],
+    "overlap_assessment": "none",
+    "verdict": "proceed"
+  }
+}

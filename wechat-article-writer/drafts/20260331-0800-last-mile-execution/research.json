@@ -1,0 +1,93 @@
+{
+  "thesis": "AI Agent 翻车不在推理，在执行闭环——'答案出来了'和'事情干成了'之间，横着一条每天让Agent摔跤的鸿沟",
+  "angle": "从真实卡点切入，用具体的失败案例证明：大模型能力不是瓶颈，'动作确认→感知现场→异常中断处理'这条执行闭环才是",
+  "evidence_anchors": [
+    {
+      "claim": "browser-use GitHub issue #1157: Agent在浏览器里陷入无限循环，每次都重复Step 1，日志显示所有操作'成功'，没有任何报错——但Agent就是没有前进。这是个典型的'感知现场失败'：执行层汇报成功，但Agent无法确认动作是否真的改变了页面状态",
+      "source": "browser-use GitHub Issues",
+      "url": "https://github.com/browser-use/browser-use/issues/1157",
+      "verified": true
+    },
+    {
+      "claim": "Gemini CLI GitHub issue #16982: 被标记为'幽灵执行'(phantom execution) bug——Agent宣布要调用工具（read_file, run_shell_command），系统没有返回任何输出或错误，Agent陷入'我刚才做了什么？'的迷茫循环，无法验证刚刚执行的脚本结果。用户描述：'communication channel for tool outputs becomes disconnected or fails to pipe the results back to the agent context'",
+      "source": "google-gemini/gemini-cli GitHub Issues",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/16982",
+      "verified": true
+    },
+    {
+      "claim": "dev.to开发者文章（2026-03-29）：总结了6种AI Agent静默失败模式，其中最典型的是'Hallucinated Tool Output'——工具返回error，但Agent继续以为工具成功，基于根本不存在的数据做出后续决策。文章关键点：'The agent completes successfully and reports a result. The only way to catch them is to record the full decision trace'",
+      "source": "dev.to - 6 Ways Your AI Agent Fails Silently",
+      "url": "https://dev.to/ilflow4592/6-ways-your-ai-agent-fails-silently-with-code-to-catch-each-one-5fi4",
+      "verified": true
+    },
+    {
+      "claim": "dev.to开发者文章（2026-03-28）：作者花了3小时debug一个'没有坏掉的pipeline'——日志全绿、没有异常、agent跑完汇报结果，但结果完全错误。关键洞察：'An LLM can receive your prompt, process it fully, and return a confident, well-formatted, completely hallucinated response. No error code.'",
+      "source": "dev.to - Why AI Agents Fail Silently",
+      "url": "https://dev.to/carsonroelldebug/why-ai-agents-fail-silently-and-how-to-fix-it-j6d",
+      "verified": true
+    },
+    {
+      "claim": "mutagent.io关于'Agent Last Mile Problem'的分析：生产环境中Agent卡在60-70%有效性，manual optimization陷入'死亡螺旋'——调prompt、测试、部署、metrics基本不动。关键判断：'Adjusting prompts based on individual failures is like patching holes in a sinking ship'",
+      "source": "mutagent.io - Solving the AI Agent Last Mile Problem",
+      "url": "https://www.mutagent.io/blog/ai-agents-last-mile-problem",
+      "verified": true
+    },
+    {
+      "claim": "Galileo AI分析（2025-11-01）：引用对数百个生产环境Agent失败的分析，'one early mistake cascades through subsequent decisions, compounding into larger failures'。真正杀死可靠性的不是失败种类多，而是一个早期错误沿执行链路放大——一个幻觉SKU触发4个下游API调用（定价、库存、发货、确认邮件），等监控发现时已经4个系统全被污染",
+      "source": "galileo.ai - 7 AI Agent Failure Modes Guide",
+      "url": "https://galileo.ai/blog/agent-failure-modes-guide",
+      "verified": true
+    }
+  ],
+  "source_list": [
+    {
+      "title": "Solving the AI Agent Last Mile Problem: From 70% to Production-Ready",
+      "url": "https://www.mutagent.io/blog/ai-agents-last-mile-problem",
+      "relevance": "提供了'最后一英里'概念的系统性分析，证明生产环境Agent卡在70%的共性困境，核心问题是上下文gap和系统化失败模式，而非模型能力"
+    },
+    {
+      "title": "6 Ways Your AI Agent Fails Silently (With Code to Catch Each One)",
+      "url": "https://dev.to/ilflow4592/6-ways-your-ai-agent-fails-silently-with-code-to-catch-each-one-5fi4",
+      "relevance": "硬核开发者视角，列举了6种静默失败模式，其中hallucinated tool output和blind retries最切题"
+    },
+    {
+      "title": "Why AI Agents Fail Silently — And How to Fix It",
+      "url": "https://dev.to/carsonroelldebug/why-ai-agents-fail-silently-and-how-to-fix-it-j6d",
+      "relevance": "一手经历描述，3小时debug'没坏的pipeline'的真实故事，强调语义失败vs技术失败的区别"
+    },
+    {
+      "title": "7 AI Agent Failure Modes and How To Fix Them",
+      "url": "https://galileo.ai/blog/agent-failure-modes-guide",
+      "relevance": "工业级分析，引用arXiv论文数据，提供了cascade failure的具体数字化案例"
+    },
+    {
+      "title": "browser-use GitHub Issue #1157: Browser Stuck repeating same step infinitely",
+      "url": "https://github.com/browser-use/browser-use/issues/1157",
+      "relevance": "最直接的browser失联+无限循环案例，来自真实用户bug报告，展示了感知现场失败的典型表现"
+    },
+    {
+      "title": "Gemini CLI Issue #16982: Silent Tool Execution Failure (Phantom Responses)",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/16982",
+      "relevance": "工具调用成功但输出没人用的教科书案例，'communication channel for tool outputs becomes disconnected'"
+    },
+    {
+      "title": "What is Closed-Loop Agent Execution?",
+      "url": "https://www.linkedin.com/pulse/what-closed-loop-agent-execution-safety-mechanism-checks-kanis-patel-clwrf",
+      "relevance": "提供'closed-loop execution'概念——每个动作后验证结果，才进行下一步，是解决执行链路脆弱的核心方向"
+    },
+    {
+      "title": "Why Your AI Agent Passes Every Eval and Still Fails in Production",
+      "url": "https://medium.com/@jpkdwnq/why-your-ai-agent-passes-every-eval-and-still-fails-in-production-70174c254e55",
+      "relevance": "eval vs 生产环境的gap，hallucinated success的结构性解决方案"
+    }
+  ],
+  "contradictions_caveats": "部分证据来自商业产品的博客（mutagent.io有商业化动机），需要注意。'70%有效性'这个数字是mutagent自己提的，没有独立验证。但GitHub issues的具体bug报告是一手证据，不受此影响。另外：这些失败模式在更好的框架和更强的模型下确实在改善，文章不应做成'AI Agent没用'的论调，而要聚焦在'当下这个阶段执行链路就是瓶颈'",
+  "why_worth_writing_now": "2025-2026年AI Agent进入大规模生产部署，大量团队在'模型够用了为什么就是不好使'的困惑里。执行链路失败是当下最普遍的现实痛点，但行业讨论过多集中在推理能力、上下文长度等模型话题，对执行闭环的重视严重不足。而且'静默失败'这个特性特别反直觉，值得专门说清楚",
+  "main_insight": "Agent的执行失败大多是'静默'的：没有报错、日志全绿、甚至汇报成功——但事情根本没干成。这才是最危险的地方。问题不在推理，在'动作→确认→下一步'这个闭环里的每一个环节",
+  "sub_insights": [
+    "Browser失联和弹窗拦截是'感知现场失败'的最典型表现：Agent看不见自己动作的后果，只能盲目重试或者错误地继续",
+    "工具调用成功但输出没人用，是'信道断裂'问题——执行层和推理层之间的管道漏了，Agent在'幽灵模式'里运行",
+    "静默失败比显式报错更致命：传统系统失败会叫，Agent失败会撒谎（或者沉默）",
+    "修这个问题不是换模型，是在每个关键动作后加'确认步骤'——感知当前状态、验证动作成效、才进入下一步"
+  ]
+}

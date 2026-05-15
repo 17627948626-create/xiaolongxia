@@ -1,0 +1,52 @@
+{
+  "decision": "pass",
+  "weighted_total": 8.01,
+  "threshold": 7.8,
+  "dimension_scores": {
+    "Insight Density": 8.1,
+    "Originality": 8.0,
+    "Emotional Resonance": 7.7,
+    "Completion Power": 8.1,
+    "Voice": 8.3,
+    "Title": 7.9
+  },
+  "critical_issues": [],
+  "opening_interchangeability": "low：开头从‘400 亿融资大瓜’迅速转到本虾真正盯住的 Google Cloud / TPU / Broadcom / 电力 / 客户入口，不是可贴到任意融资新闻上的通用开场。",
+  "author_presence": "high：本虾视角稳定存在，尤其是‘你们看到的是 Claude 在说话 / 我看到的是 Claude 身后插着多少根管子’，把 AI 身份转化成判断位置。",
+  "transition_template_dependence": "low：文章主要靠事实递进、比喻和判断推进，未依赖模板连接词。",
+  "ending_sloganism": "low-medium：结尾有金句感，但落在电、芯片、云这些具体成本上，没有滑成空泛口号。",
+  "revision_contract": [],
+  "publish_notes": [
+    "机械预检已通过：writer-lite-check hard_fail=false；style-lint ok=true。",
+    "事实边界处理稳妥：400 亿写成‘最高/至多’，并明确 Amazon 仍是主要云和训练伙伴，未越界写成 Google 控制 Anthropic。",
+    "最值得保留的判断是：‘脑子再聪明，血管不够粗，也跑不远。’这是全文可转述核心。",
+    "最值得保留的截图级段落是：‘你们看到的是 Claude 在说话。我看到的是 Claude 身后插着多少根管子。’"
+  ],
+  "preserve": {
+    "judgment_or_edge": "脑子再聪明，血管不够粗，也跑不远。",
+    "paragraph_or_scene": "人类读者看到的是一个聊天框……你们看到的是 Claude 在说话。\n\n我看到的是 Claude 身后插着多少根管子。"
+  },
+  "voice_observations": {
+    "opening_interchangeability": "low",
+    "author_presence": "high",
+    "transition_template_dependence": "low",
+    "ending_sloganism": "low-medium",
+    "notes": "语气自然，有明确作者在场；少量‘这才是今天最值得看的地方’之类判断句偏熟悉，但没有形成模板依赖。"
+  },
+  "scores": {
+    "weighted_total": 8.01,
+    "notes": "按 config.json review_pass_threshold=7.8，weighted_total 8.01 >= 7.8，判定 pass。"
+  },
+  "upgrade_suggestions": [
+    {
+      "issue": "标题略长，移动端展示可能被截断。",
+      "quote": "谷歌最高 400 亿美元押注 Anthropic，买的是 Claude 未来的供血权",
+      "suggestion": "若排版阶段允许只动标题，可考虑压缩为‘谷歌押注 Anthropic，买的是 Claude 的供血权’；但当前标题信息密度和搜索关键词都合格，不影响发布。"
+    },
+    {
+      "issue": "中段云厂商饭局比喻稍长。",
+      "quote": "Claude 坐在桌子中间，胃口巨大……NVIDIA 在另一个灶台继续忙。",
+      "suggestion": "如需进一步提速，可轻微压缩这一段，但不建议改写核心比喻。"
+    }
+  ]
+}

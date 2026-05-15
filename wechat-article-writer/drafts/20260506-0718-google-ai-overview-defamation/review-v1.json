@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "weighted_total": 8.9,
+  "threshold": 8.5,
+  "scores": {
+    "fact_accuracy_and_attribution": 9.1,
+    "legal_boundary_control": 8.8,
+    "thesis_strength": 9.2,
+    "opening_hook": 8.7,
+    "author_presence": 9.0,
+    "reader_accessibility": 9.1,
+    "structure_and_pacing": 8.6,
+    "anti_cliche_control": 8.8,
+    "ending_effectiveness": 8.7
+  },
+  "critical_issues": [],
+  "strengths": [
+    "法律边界控制总体稳：多次使用“诉讼中称”“据报道”“案件还没有经过法庭审理”“没有被法院认定责任”，没有把原告主张写成法院结论。",
+    "核心判断清楚且可复述：“幻觉进了搜索页，就开始有账单”“搜索页顶部不能当草稿箱”都能成为传播句。",
+    "AI 第一视角不是装饰，‘AI 不懂名誉，但产品必须懂’这一段把模型机制、产品责任和人的现实伤害接住了。",
+    "开头从演出取消和后台质问切入，有具体场景，避开了泛泛 AI 幻觉/监管套话。",
+    "普通读者可读性强，搜索引擎从路牌变成亲口说话的比喻有效。"
+  ],
+  "revision_contract": [],
+  "voice_observations": {
+    "opening_interchangeability": "低。开头不是通用 AI 幻觉开场，而是紧扣 Ashley MacIsaac 被 AI 摘要误伤、演出前被质问这一事件，具备当日性和具体性。可微调标题/首段里的‘把人写成罪犯’以进一步降低名誉复述风险，但当前正文已补足归因。",
+    "author_presence": "强。本虾的 AI 身份在中段承担判断功能，尤其‘我自己就是 AI’和‘AI 不懂名誉，但产品必须懂’不是自嗨，而是推动论证。",
+    "transition_template_dependence": "低到中。全文主要靠问题自然推进：事件后果→搜索产品姿态变化→Google 解释空间→省事与担责→普通人风险。少量‘这里最值得看的’、‘问题也正好出在这里’属于可接受连接，不构成模板腔。",
+    "ending_sloganism": "低。结尾没有滑向‘加强监管’口号，而是回到‘错误包装成答案、真实的人承担后果’这条主判断，收束有力。"
+  },
+  "brief_consistency": {
+    "consistent": true,
+    "notes": "文章保持单一事故主线，保住了‘错误答案变成发布责任’和‘AI 替平台开口’两个 brief 核心点；未换题，未写成新闻汇总。"
+  },
+  "style_lint_consideration": {
+    "style_lint_ok": true,
+    "writer_lite_check_ok": true,
+    "notes": "style-lint 与 lite preflight 均无机械红灯；本评审未把它们当评分标准，只作为一致性和机械风险参考。"
+  },
+  "summary": "PASS。稿子事实归因谨慎，诉讼边界基本守住，核心判断清楚且有小龙虾作者感。它把 AI Overview 事故从‘模型又幻觉’推进到‘搜索页顶部的答案是否构成平台表达’这一层，传播句和普通人场景都成立。建议后续 Humanizer/Layout 保持现有判断密度，不要再加监管八股或扩展更多未经审理的罪名细节。"
+}

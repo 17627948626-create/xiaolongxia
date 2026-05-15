@@ -1,0 +1,200 @@
+{
+  "draft_version": "v3",
+  "checked_at": "2026-04-06T12:36:48Z",
+  "total_claims": 9,
+  "verified": 6,
+  "inaccurate": 2,
+  "unverifiable": 0,
+  "false": 0,
+  "localization": 3,
+  "pass": false,
+  "major_issue_count": 5,
+  "summary": {
+    "status": "fail",
+    "reason": "存在 2 处事实/表述不准确，以及 3 处首提本地化不合规。",
+    "must_fix": [
+      "把 GitHub 官方博客文章年份从 2020 改为 2017",
+      "把 CommonMark 教程里 emphasis 的中文解释从‘加粗’改为更准确的‘强调/斜体/粗体’",
+      "补齐 John Gruber、GitHub 首提、英文文章标题的中文 first mention"
+    ]
+  },
+  "claims": [
+    {
+      "id": 1,
+      "location": "lines 41-41",
+      "original_text": "CommonMark 官方在首页就写得很清楚：John Gruber 对 Markdown 的经典语法描述并没有把语法定义得无歧义。因为没有 unambiguous spec，不同实现已经明显分化；同一份文档可能在一个系统上这样渲染，在另一个系统上那样渲染。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CommonMark 官方首页",
+      "source_url": "https://commonmark.org/",
+      "notes": "官网原文包含：‘does not specify the syntax unambiguously’、‘implementations have diverged considerably’、‘a document that renders one way on one system ... renders differently on another’。"
+    },
+    {
+      "id": 2,
+      "location": "lines 43-43",
+      "original_text": "CommonMark 规范里有一句话：‘任何字符序列都是有效的 CommonMark 文档’。",
+      "type": "quote",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CommonMark 规范 0.31.2",
+      "source_url": "https://spec.commonmark.org/0.31.2/",
+      "notes": "规范原文为：‘Any sequence of characters is a valid CommonMark document.’ 当前中文写法语义正确，但如果要保留引号，最好补英文原文或改成‘规范的意思是’以避免‘译文当原话’。"
+    },
+    {
+      "id": 3,
+      "location": "lines 45-45",
+      "original_text": "CommonMark 官方教程写得明明白白：‘The same character must be used to open and close emphasis.’（加粗必须用相同的字符打开和关闭）。想让 `*` 作为普通字符显示出来，必须用反斜杠转义。",
+      "type": "quote",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "英文原句里的 emphasis 不是仅指‘加粗’，而是更广义的‘强调’，包括斜体/粗体等。",
+        "‘想让 * 作为普通字符显示出来，必须用反斜杠转义’这一半句是对的，但前面的中文括注缩窄了原意。"
+      ],
+      "correction": "CommonMark 官方教程写得很清楚：‘The same character must be used to open and close emphasis.’（强调标记必须用同一种字符打开和关闭；斜体/粗体都适用）。想让 `*` 作为普通字符显示出来，必须用反斜杠转义。",
+      "source": "CommonMark Markdown Tutorial - Emphasis",
+      "source_url": "https://commonmark.org/help/tutorial/02-emphasis.html"
+    },
+    {
+      "id": 4,
+      "location": "lines 47-47",
+      "original_text": "但问题是，`**` 没匹配上时，它不会报错，只会把 `**` 当普通文本显示出来。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CommonMark 规范 + CommonMark 相关检索结果",
+      "source_url": "https://spec.commonmark.org/0.31.2/",
+      "notes": "规范明确说明任何字符序列都可构成有效文档；相关 CommonMark 资料也表明未匹配的 emphasis delimiter 会按普通文本处理，而不是抛出语法错误。"
+    },
+    {
+      "id": 5,
+      "location": "lines 55-55",
+      "original_text": "他们在 2020 年的官方博客文章《A formal spec for GitHub Flavored Markdown》里写得很直白……",
+      "type": "event",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "GitHub 这篇官方博客文章的发布时间是 2017-03-14，不是 2020 年。",
+        "文章标题当前是裸英文，中文稿首提应给出中文标题 + 英文原题。"
+      ],
+      "correction": "他们在 2017 年 3 月 14 日的 GitHub 官方博客文章《GitHub 风格 Markdown 的正式规范》（A formal spec for GitHub Flavored Markdown）里写得很直白……",
+      "source": "GitHub Blog: A formal spec for GitHub Flavored Markdown",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/"
+    },
+    {
+      "id": 6,
+      "location": "lines 55-55",
+      "original_text": "缺乏标准化导致很多 ambiguous details，very similar looking Markdown documents can be rendered as wildly different outputs。",
+      "type": "quote",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "GitHub 官方博客原文",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/",
+      "notes": "该英文表述与 GitHub 博客原文一致。"
+    },
+    {
+      "id": 7,
+      "location": "lines 59-59",
+      "original_text": "他们要写 formal spec、做 normalization、比对新旧 HTML tree，目标是 visually identical——而且明确强调 user data was never destroyed。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "GitHub 官方博客原文",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/",
+      "notes": "原文包含 normalize、compare the tree、visually identical、user data was never destroyed 等关键信息。"
+    },
+    {
+      "id": 8,
+      "location": "lines 61-61",
+      "original_text": "GitHub 当时统计过，受影响的文档其实不到 1%。",
+      "type": "statistic",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "GitHub 官方博客原文",
+      "source_url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/",
+      "notes": "原文写的是 less than 1% of the existing user content would be affected；后文也写到 less than 1% of the input documents were modified by the normalization process。当前中文概括基本成立。"
+    },
+    {
+      "id": 9,
+      "location": "lines 93-93",
+      "original_text": "layout prompt 里明确禁止危险写法，normalize 脚本在发布前兜底清洗。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "本地工作流文件",
+      "source_url": "file:///root/.openclaw/skills/wechat-article-forge/references/layout-prompt.md",
+      "notes": "layout-prompt.md 明确禁止 `**...。**后文` / `**...%**后文`；normalize_publish_md.py 会对危险的 trailing punctuation inline bold 做 sanitize。第二本地来源：file:///root/.openclaw/skills/wechat-article-forge/scripts/normalize_publish_md.py"
+    }
+  ],
+  "localization_issues": [
+    {
+      "id": 1,
+      "location": "line 41",
+      "text": "John Gruber",
+      "verdict": "⚠️ LOCALIZATION",
+      "issue": "人名首提为裸英文，不符合中文 first mention 规则。",
+      "suggestion": "改为：约翰·格鲁伯（John Gruber）"
+    },
+    {
+      "id": 2,
+      "location": "line 53",
+      "text": "GitHub",
+      "verdict": "⚠️ LOCALIZATION",
+      "issue": "机构/平台首提为裸英文，中文稿宜给出中文说明。",
+      "suggestion": "改为：代码托管平台 GitHub；后文再直接写 GitHub。"
+    },
+    {
+      "id": 3,
+      "location": "line 55",
+      "text": "《A formal spec for GitHub Flavored Markdown》",
+      "verdict": "⚠️ LOCALIZATION",
+      "issue": "文章名首提只有英文原题，没有中文题名。",
+      "suggestion": "改为：《GitHub 风格 Markdown 的正式规范》（A formal spec for GitHub Flavored Markdown）"
+    }
+  ],
+  "editor_actions": [
+    "把 line 55 的年份从 2020 改成 2017。",
+    "把 line 45 的‘加粗必须用相同的字符打开和关闭’改成更准确的‘强调标记必须用同一种字符打开和关闭；斜体/粗体都适用’。",
+    "给 John Gruber 补中文首提。",
+    "给 GitHub 的首提补中文说明。",
+    "给英文文章标题补中文题名，并保留英文原题。"
+  ],
+  "reference_list": [
+    {
+      "id": 1,
+      "citation": "CommonMark official homepage",
+      "url": "https://commonmark.org/"
+    },
+    {
+      "id": 2,
+      "citation": "Markdown Tutorial - Emphasis (CommonMark)",
+      "url": "https://commonmark.org/help/tutorial/02-emphasis.html"
+    },
+    {
+      "id": 3,
+      "citation": "CommonMark Spec 0.31.2",
+      "url": "https://spec.commonmark.org/0.31.2/"
+    },
+    {
+      "id": 4,
+      "citation": "GitHub Blog, A formal spec for GitHub Flavored Markdown, 2017-03-14",
+      "url": "https://github.blog/engineering/user-experience/a-formal-spec-for-github-markdown/"
+    },
+    {
+      "id": 5,
+      "citation": "Layout Subagent Prompt — WeChat Formatting Rules (local)",
+      "url": "file:///root/.openclaw/skills/wechat-article-forge/references/layout-prompt.md"
+    },
+    {
+      "id": 6,
+      "citation": "normalize_publish_md.py (local)",
+      "url": "file:///root/.openclaw/skills/wechat-article-forge/scripts/normalize_publish_md.py"
+    }
+  ]
+}

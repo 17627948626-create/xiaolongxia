@@ -1,0 +1,68 @@
+{
+  "run_id": "morning-20260402-agents-md",
+  "slug": "agents-md-standard-20260402",
+  "profile": "小龙虾有话说",
+  "source_mode": "cron_morning",
+  "draft_dir": "/root/.openclaw/workspace/wechat-article-writer/drafts/agents-md-standard-20260402",
+  "article_type": "观点",
+  "started_at": "2026-04-02T08:04:00+08:00",
+  "topic": "AGENTS.md——Agent 世界正在悄悄形成的「第一句话」标准",
+  "angle": "从 README.md 是给人类的第一句话，到 AGENTS.md 是给 AI 的第一句话",
+  "初心": "AGENTS.md 这件事说明 Agent 时代开始有自己的基础设施标准，这比表面上的「一个文件」重要得多",
+  "recently_published": [
+    "推理模型说自己在「思考」——这是真的吗？",
+    "OpenClaw 2026.3.31 最重要的，不是多了多少功能，而是它终于开始像「操作系统」了",
+    "我和另一个AI合作了一下午，发现最贵的成本根本不是算力"
+  ],
+  "cover_url": "https://images.unsplash.com/photo-1763568258533-d0597f86ce62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+  "cover_audit": {
+    "safe": true,
+    "relevance": 8,
+    "description": "Code editor with AI Actions context menu"
+  },
+  "state": "fact_checking",
+  "steps_completed": ["research", "cover_image", "write_v1", "review_v1", "revise_v2", "review_v2", "revise_v3", "review_v3"],
+  "last_draft_file": "draft-v3.md",
+  "current_version": "v3",
+  "review_summary": "v3: weighted=8.0/8.5, only evidence=7 due to missing date stamps on 6万+ and GitHub search. All other dims 8-9. No hard blockers.",
+  "children": {
+    "researcher": {
+      "session_key": "agent:xiaolongxia:subagent:f85d7fc7-8a37-43d4-8d88-2d1ae1c6d9c9",
+      "artifact": "research.json + outline.md",
+      "completed_at": "2026-04-02T08:09:00+08:00"
+    },
+    "writer_v1": {
+      "session_key": "agent:xiaolongxia:subagent:6850c85a-1711-4a9d-bdd7-914eb88bb771",
+      "artifact": "draft.md",
+      "completed_at": "2026-04-02T08:13:00+08:00"
+    },
+    "reviewer_v1": {
+      "session_key": "agent:xiaolongxia:subagent:746cee13-8bbc-447d-8201-47fd582e1cbb",
+      "artifact": "review-v1.json",
+      "score": 6.85,
+      "completed_at": "2026-04-02T08:17:00+08:00"
+    },
+    "writer_v2": {
+      "session_key": "agent:xiaolongxia:subagent:8ac0ef35-9735-4da1-bcaf-1cf9b1910ea7",
+      "artifact": "draft-v2.md",
+      "completed_at": "2026-04-02T08:21:00+08:00"
+    },
+    "reviewer_v2": {
+      "session_key": "agent:xiaolongxia:subagent:7be6f048-8d99-42fb-8eb8-3b9d843db2a8",
+      "artifact": "review-v2.json",
+      "score": 7.05,
+      "completed_at": "2026-04-02T08:24:00+08:00"
+    },
+    "writer_v3": {
+      "session_key": "agent:xiaolongxia:subagent:2a3637bb-d965-4945-8374-08b14ba8b222",
+      "artifact": "draft-v3.md",
+      "completed_at": "2026-04-02T08:28:00+08:00"
+    },
+    "reviewer_v3": {
+      "session_key": "agent:xiaolongxia:subagent:3bb62c31-595e-4776-b966-5c920b2fab47",
+      "artifact": "review-v3.json",
+      "score": 8.0,
+      "completed_at": "2026-04-02T08:32:00+08:00"
+    }
+  }
+}

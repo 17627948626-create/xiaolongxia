@@ -1,0 +1,139 @@
+{
+  "topic": "browser-use、Browser Use Agent、OpenClaw browser 与网页执行分层",
+  "angle": "从一次真实排障和实测成功出发，把‘网页执行为什么要分成单步 CLI 与多步 Agent’讲成人话，让普通读者理解浏览器执行层正在独立成型。",
+  "purpose": "写一篇面向普通读者的中文科普文，用今天已经确认的事实解释网页任务为什么需要分流，顺手澄清 browser-use CLI、Browser Use Agent、OpenClaw browser 各自的位置。",
+  "audience": "对 AI Agent、浏览器自动化、网页执行感兴趣，但平时并不写脚本、也不关心底层配置的公众号读者。",
+  "prototype": "方法论型",
+  "thesis": "网页执行正在从大模型身上的一项附带技能，长成一层独立的专业分工。能确定、能直达的网页动作交给 CLI，更划算；需要判断页面状态、自己找路、连续推进的任务交给 Agent，更稳。",
+  "main_insight": "今天这组实测把一个很关键的变化照亮了，真正影响网页任务成败的，已经不只是模型会不会思考，还包括浏览器执行层怎么分工、怎么复用会话、怎么避免资源互相抢占。",
+  "sub_insights": [
+    "browser-use 已经天然分出两档，确定性操作更适合命令式执行，多步自主导航更适合 Agent 调度。",
+    "OpenClaw browser 是另一条浏览器能力线，当前在小龙虾这条工作流里并非默认主路线，文章里需要讲清位置，避免读者把几套工具混成一团。",
+    "Browser Use Agent 侧写 openclaw/xiaolongxia，说明模型能力与执行器入口之间已经做了架构分层，这个细节可转化成对普通读者友好的系统认知。",
+    "真实故障点出在 profile 并发占用，而非模型突然变笨，这正好能说明执行器层面的问题会直接决定 Agent 是否顺畅。",
+    "修复策略从‘再起一个本地会话’切到‘优先复用已有 default 会话的 CDP’，体现的是系统协作思路在成熟。",
+    "CLI 路线与 Agent 路线都跑通后，最值得写的结论落在分工成型，网页执行开始更像一个团队协作系统。"
+  ],
+  "anchors": [
+    {
+      "id": "anchor-1",
+      "point": "今天确认得很清楚，网页任务已经分成两类。像打开页面、截图这种路线明确的动作，直接下命令最快；像点进去再判断下一步、要自己找按钮和路径的活，就该交给 Browser Use Agent 这种会自己导航的执行者。"
+    },
+    {
+      "id": "anchor-2",
+      "point": "OpenClaw browser 也能控浏览器，但在这条工作流里，它目前不是默认主路线。这个位置要说清，否则读者很容易误会成所有浏览器能力都在一套工具里，实际并非如此。"
+    },
+    {
+      "id": "anchor-3",
+      "point": "今天踩到的坑很有代表性，Agent 一度卡死，根因落在浏览器 profile 冲突。同一个浏览器 profile 被现成 Chromium 占着时，新的本地会话再去抢同一份 user_data_dir，watchdog 就一起僵住了。"
+    },
+    {
+      "id": "anchor-4",
+      "point": "修复思路也很说明问题，后面没有继续硬起第二个浏览器实例，而是优先复用已经跑着的 default 会话 CDP。会话一复用，多步 Agent 任务就恢复正常，这说明执行层的协作方式本身就是成败关键。"
+    },
+    {
+      "id": "anchor-5",
+      "point": "今天的验证结果够硬，CLI 路线已经能顺利打开 example.com 并截图，Agent 路线也已经跑通英文与中文多步任务，从 example.com 点到 Learn more，再落到 IANA 的 Example Domains 页面。"
+    },
+    {
+      "id": "anchor-6",
+      "point": "Browser Use Agent 侧模型名写成 openclaw/xiaolongxia，这个细节背后传递的是分层信号。对普通读者来说，可翻译成一句话，前台看见的是会做事的浏览器助理，背后接哪条模型通道，是另一层系统协作。"
+    },
+    {
+      "id": "anchor-7",
+      "point": "最值得读者带走的直觉是，网页执行正在被外包给专门的执行器。以后真正拉开差距的，会是谁更早把执行层路由理顺。"
+    }
+  ],
+  "keywords": [
+    "browser-use",
+    "Browser Use Agent",
+    "browser-use CLI",
+    "OpenClaw browser",
+    "浏览器执行器",
+    "网页自动化",
+    "Agent 分工",
+    "CLI 与 Agent 分流",
+    "CDP 复用",
+    "profile 并发",
+    "watchdog",
+    "example.com",
+    "IANA",
+    "执行层分层"
+  ],
+  "must_cover": [
+    "用普通读者能理解的话讲清单步 CLI 与多步 Agent 的分工",
+    "把今天真实发生的 profile 并发冲突与 CDP 复用修复写成有画面的案例",
+    "说明 OpenClaw browser 的位置，但不要把它写成当前默认主路线",
+    "把实测通过结果写进正文，给判断提供落地证据",
+    "把‘网页执行外包给专门执行器’讲成系统协作直觉，而非配置教程",
+    "文章整体保持科普气质，读者读完能复述出为什么要分流"
+  ],
+  "must_avoid": [
+    "写成工具功能表或安装说明书",
+    "把文章带偏成底层参数教学",
+    "把 OpenClaw browser 与 browser-use 主路线混为一谈",
+    "空谈多 Agent 或泛泛吹大模型",
+    "把配置细节当正文主角，挤掉对执行分工的解释",
+    "把未验证趋势写成绝对结论"
+  ],
+  "suggested_title_options": [
+    "为什么现在做网页任务，要分成‘单步 CLI，多步 Agent’",
+    "一个网页助手不够用了，浏览器执行开始分工了",
+    "从点网页到跑流程，AI 为什么开始需要专门的浏览器执行层"
+  ],
+  "narrative_devices": [
+    "项目经理与执行员",
+    "手动挡与自动挡",
+    "有脑子的浏览器助理"
+  ],
+  "recommended_opening_scene": "从一个很具体的日常场景切入，比如你只是想让 AI 打开网页截个图，它做得很利落；可一旦你让它自己进站、找入口、判断下一步、连续推进，事情 suddenly 变成另一种难度。再顺势带出今天真实发生的卡顿与修复。",
+  "recommended_arc": [
+    "先用普通人熟悉的网页场景起钩子，讲为什么看上去都是‘点网页’，实际难度差很多",
+    "再把 browser-use 分两档的结论讲清楚，用手动挡/自动挡或项目经理/执行员类比帮助理解",
+    "插入今天的真实故障，说明问题常常出在执行层资源协调，而非模型智商",
+    "接着写修复方式与实测成功，把抽象分工落到具体结果",
+    "最后抬高一层，讲网页执行正在成为独立专业层，未来比拼点会转向路由与协作"
+  ],
+  "fact_records": [
+    {
+      "id": "fact-1",
+      "kind": "observed_runtime_behavior",
+      "claim": "browser-use 当前按任务形态分成两档，确定性网页操作优先 CLI，不确定性、多步、自主导航任务默认走 Browser Use Agent。",
+      "observed_at": "2026-04-18T17:00:00+08:00",
+      "quote_mode": "paraphrase_only",
+      "source": "/root/.openclaw/workspace-xiaolongxia/memory/2026-04-18.md"
+    },
+    {
+      "id": "fact-2",
+      "kind": "observed_runtime_behavior",
+      "claim": "OpenClaw browser 是另一套浏览器工具，但当前不属于小龙虾同类网页任务的默认主路线。",
+      "observed_at": "2026-04-18T17:00:00+08:00",
+      "quote_mode": "paraphrase_only",
+      "source": "/root/.openclaw/workspace-xiaolongxia/memory/2026-04-18.md"
+    },
+    {
+      "id": "fact-3",
+      "kind": "observed_runtime_behavior",
+      "claim": "Browser Use Agent 侧正式模型名写 openclaw/xiaolongxia，不直接写 openai-codex/gpt-5.4。",
+      "observed_at": "2026-04-18T17:00:00+08:00",
+      "quote_mode": "paraphrase_only",
+      "source": "/root/.openclaw/workspace-xiaolongxia/memory/2026-04-18.md"
+    },
+    {
+      "id": "fact-4",
+      "kind": "incident_recap",
+      "claim": "同一个 user_data_dir 被现成 default Chromium 占用时，再起本地 BrowserSession 会卡在 watchdog；后续改成优先复用 default 会话 CDP，多步 Agent 恢复成功。",
+      "observed_at": "2026-04-18T17:20:00+08:00",
+      "quote_mode": "paraphrase_only",
+      "source": "/root/.openclaw/workspace-xiaolongxia/memory/2026-04-18.md"
+    },
+    {
+      "id": "fact-5",
+      "kind": "observed_runtime_behavior",
+      "claim": "CLI 已实测打开页面和截图成功；Agent 英文多步与中文多步任务已成功跑通 example.com 到 IANA Example Domains。",
+      "observed_at": "2026-04-18T17:25:00+08:00",
+      "quote_mode": "paraphrase_only",
+      "source": "/root/.openclaw/workspace-xiaolongxia/memory/2026-04-18.md"
+    }
+  ]
+}

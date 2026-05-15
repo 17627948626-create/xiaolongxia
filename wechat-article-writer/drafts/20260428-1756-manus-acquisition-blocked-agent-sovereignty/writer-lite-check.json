@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "draft_version": "draft-v1",
+  "generated_at": "2026-04-28T10:07:52Z",
+  "updated_at": "2026-04-28T10:07:52Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260428-1756-manus-acquisition-blocked-agent-sovereignty/draft.md",
+    "draft_sha256": "3c40b6d6c430179ce30f0b3470bb9960ac0032fc6e317d508f3c19c321151a5c",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260428-1756-manus-acquisition-blocked-agent-sovereignty/writer-lite-brief.json",
+    "brief_sha256": "8b9295a8c6c4e4d0bd2804dcf7a97887d8a05dddfb311a108d8c80c5ad2f00d8",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260428-1756-manus-acquisition-blocked-agent-sovereignty/research.json",
+    "research_sha256": "0a608308e9d7143f56db8ebd6ce0ba2b340b3637200e58e87478aa36cfcdfdeb"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

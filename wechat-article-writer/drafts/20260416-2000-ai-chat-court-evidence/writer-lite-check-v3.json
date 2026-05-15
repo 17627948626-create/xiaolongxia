@@ -1,0 +1,56 @@
+{
+  "draft_version": "draft-v3",
+  "generated_at": "2026-04-16T15:33:14Z",
+  "updated_at": "2026-04-16T15:33:14Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": true,
+  "hard_fail_reasons": [
+    "fake_verbatim_quote",
+    "paraphrase_only_rendered_as_quote"
+  ],
+  "checks": [
+    {
+      "code": "fake_verbatim_quote",
+      "severity": "hard_block",
+      "summary": "发现疑似直引，但 research 里没有对应 verbatim 支撑。",
+      "evidence": {
+        "line": 25,
+        "excerpt": "OpenAI 自己的 Data Controls FAQ，其实是在提醒用户别把几件事混成一件。关掉“Improve the model for everyone”，意思只是内容不再拿去训练，聊天历史还在；Temporary Chat 才对应另一套处理方式，它不进历史、不启用 memory，系统说明里写的是 30 天后删除。同一页还额外提醒过，部分服务的数据留存会受到近期法律进展影响。"
+      }
+    },
+    {
+      "code": "paraphrase_only_rendered_as_quote",
+      "severity": "hard_block",
+      "summary": "只允许转述的材料被写成了直引。",
+      "evidence": {
+        "line": 25,
+        "excerpt": "OpenAI 自己的 Data Controls FAQ，其实是在提醒用户别把几件事混成一件。关掉“Improve the model for everyone”，意思只是内容不再拿去训练，聊天历史还在；Temporary Chat 才对应另一套处理方式，它不进历史、不启用 memory，系统说明里写的是 30 天后删除。同一页还额外提醒过，部分服务的数据留存会受到近期法律进展影响。",
+        "record": "fr_openai_data_controls"
+      }
+    }
+  ],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": true,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/draft-v3.md",
+    "draft_sha256": "78231cf60979d2cd082dff0d00111c62e5635ec9702711a5717194a9030800d5",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/writer-lite-brief.json",
+    "brief_sha256": "b6efe9cf0aed22de6d1c32c53a0f5105c1c799ea88d88a890a9b045b17fb11e0",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/research.json",
+    "research_sha256": "ab78319fa67b28edf073ed13cda06b7b957905a38b181c1bc07f6dd930df7b8b"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

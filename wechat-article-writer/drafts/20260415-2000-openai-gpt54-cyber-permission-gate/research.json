@@ -1,0 +1,201 @@
+{
+  "title": "OpenAI GPT-5.4-Cyber 受限放出，前沿模型开始按资格发牌",
+  "topic": "OpenAI GPT-5.4-Cyber 受限放出，前沿模型开始按资格发牌",
+  "purpose": "借 OpenAI 把 GPT-5.4-Cyber 放进 Trusted Access for Cyber 分级体系这件事，写清前沿模型竞争正在从拼能力，转向拼分发权与权限控制。",
+  "keywords": [
+    "OpenAI GPT-5.4-Cyber",
+    "Trusted Access for Cyber",
+    "cyber-permissive",
+    "binary reverse engineering",
+    "identity verification",
+    "OpenAI TAC",
+    "Project Glasswing",
+    "Claude Mythos Preview"
+  ],
+  "thesis": "最危险的模型开始按资格发牌，模型竞争正在从能力竞赛变成权限竞赛。",
+  "angle": "这篇不把重心放在安全技术细节，而是抓住一个更适合传播的变化：OpenAI 这次把强身份验证、分层访问、受限放出写进了发布正文，等于公开承认未来最强能力不会默认平权开放，真正的护城河开始落在谁能决定谁配用。",
+  "why_now": "时间点就在 4 月 14 日至 15 日，属于最近 24 小时内的强入口；而且这不是一次普通模型更新，而是 OpenAI 首次把权限制度本身做成产品叙事中心。前脚 Anthropic 还在用 Project Glasswing 做受限防御预览，后脚 OpenAI 就把 trusted access 扩到更大范围并推出更 permissive 的 GPT-5.4-Cyber，行业信号非常密。",
+  "anchors": [
+    {
+      "id": "anchor_openai_primary_release",
+      "priority": "primary",
+      "claim": "OpenAI 正在把 Trusted Access for Cyber 扩到数千名已验证个人防御者与数百个团队，并同步推出更 permissive 的 GPT-5.4-Cyber。",
+      "why_it_matters": "这说明权限控制不是附属风控，而是和模型发布绑在一起的主产品逻辑。",
+      "evidence": [
+        "官方发布说明 TAC 正扩展到数千名已验证个人防御者和数百个负责关键软件防御的团队。",
+        "官方明确写到 GPT-5.4-Cyber 是一个为防御性网络安全用例微调、更加 cyber-permissive 的 GPT-5.4 变体。"
+      ],
+      "source_ids": [
+        "src_openai_scaling_tac"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "anchor_openai_gating_mechanism",
+      "priority": "primary",
+      "claim": "OpenAI 把强身份验证、客观信任信号、分层访问写成获取高风险能力的门槛，并强调不靠主观拍脑袋决定谁能拿到更强能力。",
+      "why_it_matters": "这让文章可以从模型性能转向访问制度，直接落到 谁配用 这个传播点。",
+      "evidence": [
+        "官方把 democratized access 的实现方式写成 clear objective criteria、strong KYC、identity verification。",
+        "官方还写到高 tiers 用户才能拿到 GPT-5.4-Cyber，现阶段先向 vetted security vendors、organizations、researchers 做 limited iterative deployment。"
+      ],
+      "source_ids": [
+        "src_openai_scaling_tac",
+        "src_openai_tac_intro"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "anchor_binary_re_and_lower_refusal",
+      "priority": "primary",
+      "claim": "GPT-5.4-Cyber 的差异不只是更强，而是更敢放行合法防御工作，包括更低拒绝边界和二进制逆向工程等高级工作流。",
+      "why_it_matters": "这能把 权限竞赛 讲具体：以后不是所有人都能摸到最危险那层能力。",
+      "evidence": [
+        "官方说明 GPT-5.4-Cyber lowers the refusal boundary for legitimate cybersecurity work，并支持 binary reverse engineering。",
+        "腾讯新闻转述也强调该模型允许安全专业人员分析编译软件中的恶意软件和漏洞，并因更开放而仅向经过审查的安全供应商与研究人员开放。"
+      ],
+      "source_ids": [
+        "src_openai_scaling_tac",
+        "src_tencent_ithome_recap"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "anchor_competitive_context_glasswing",
+      "priority": "secondary",
+      "claim": "Anthropic 也在用 Project Glasswing 把 Mythos Preview 先给关键基础设施防御方，说明行业已经出现 防御优先加资格门 的共同方向。",
+      "why_it_matters": "这让文章不至于写成 OpenAI 单点新闻，而能上升到前沿模型分发逻辑的行业变化。",
+      "evidence": [
+        "Anthropic 官方页面写明 Glasswing 是给关键软件防御方的早期访问计划，模型是 gated research preview。",
+        "CNBC 报道也指出 Anthropic 限制 Mythos Preview 的 rollout，避免坏人利用其找漏洞能力。"
+      ],
+      "source_ids": [
+        "src_anthropic_glasswing",
+        "src_cnbc_mythos"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_openai_scaling_tac",
+      "title": "OpenAI 官方发布：Trusted access for the next era of cyber defense",
+      "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense/",
+      "source_type": "official",
+      "role": "primary_evidence",
+      "verified": true,
+      "notes": "核心证据源，包含 TAC 扩容、GPT-5.4-Cyber、identity verification、binary reverse engineering、limited iterative deployment。"
+    },
+    {
+      "id": "src_openai_tac_intro",
+      "title": "OpenAI 官方发布：Introducing Trusted Access for Cyber",
+      "url": "https://openai.com/index/trusted-access-for-cyber/",
+      "source_type": "official",
+      "role": "primary_context",
+      "verified": true,
+      "notes": "补充 TAC 在二月就已启动，核心机制是 identity and trust-based framework。"
+    },
+    {
+      "id": "src_openai_codex_cyber_safety",
+      "title": "OpenAI Developers：Codex Cyber Safety",
+      "url": "https://developers.openai.com/codex/concepts/cyber-safety",
+      "source_type": "official",
+      "role": "supporting_context",
+      "verified": true,
+      "notes": "补充高风险网络安全流量会被 reroute，加入 Trusted Access 可恢复更高能力访问。"
+    },
+    {
+      "id": "src_tencent_ithome_recap",
+      "title": "腾讯新闻转 IT之家：OpenAI 推出网络安全专用模型 GPT-5.4-Cyber",
+      "url": "https://news.qq.com/rain/a/20260415A01V8D00",
+      "source_type": "media",
+      "role": "secondary_confirmation",
+      "verified": true,
+      "notes": "中文传播层可用，转述了 binary reverse engineering、身份验证、受限放出。"
+    },
+    {
+      "id": "src_simon_summary",
+      "title": "Simon Willison 链接博客：Trusted access for the next era of cyber defense",
+      "url": "https://simonwillison.net/2026/Apr/14/trusted-access-openai/",
+      "source_type": "industry_commentary",
+      "role": "interpretation",
+      "verified": true,
+      "notes": "帮助提炼为 OpenAI 对 Anthropic Mythos 的回应，并点出 photo ID verification 与额外申请流程。"
+    },
+    {
+      "id": "src_anthropic_glasswing",
+      "title": "Anthropic 官方页面：Project Glasswing",
+      "url": "https://www.anthropic.com/project/glasswing",
+      "source_type": "official",
+      "role": "comparison",
+      "verified": true,
+      "notes": "只作为对照，证明另一家前沿模型公司也在先给防御方 gated preview。"
+    },
+    {
+      "id": "src_cnbc_mythos",
+      "title": "CNBC：Anthropic limits Mythos AI rollout over fears hackers could use model for cyberattacks",
+      "url": "https://www.cnbc.com/2026/04/07/anthropic-claude-mythos-ai-hackers-cyberattacks.html",
+      "source_type": "media",
+      "role": "comparison_confirmation",
+      "verified": true,
+      "notes": "补充媒体口径：Anthropic 限制 rollout 的理由是担心攻击者也会利用同类能力。"
+    }
+  ],
+  "fact_records": [
+    {
+      "id": "fact_tac_scale_and_model",
+      "kind": "release_fact",
+      "claim": "OpenAI 在 2026-04-14 宣布扩展 Trusted Access for Cyber，并推出 GPT-5.4-Cyber。",
+      "status": "verified",
+      "source_id": "src_openai_scaling_tac",
+      "observed_at": "2026-04-15T20:03:44+08:00",
+      "risk_level": "high",
+      "usage_boundary": "可直接用于核心叙事，不要扩写成全面向公众开放。"
+    },
+    {
+      "id": "fact_identity_gating",
+      "kind": "policy_fact",
+      "claim": "OpenAI 将 stronger KYC、identity verification、trust signals 作为获取更高网络安全能力访问权的客观门槛。",
+      "status": "verified",
+      "source_id": "src_openai_scaling_tac",
+      "observed_at": "2026-04-15T20:03:44+08:00",
+      "risk_level": "high",
+      "usage_boundary": "可表述为按资格发牌、按验证分层，不要夸大成只允许大公司。"
+    },
+    {
+      "id": "fact_binary_re",
+      "kind": "capability_fact",
+      "claim": "GPT-5.4-Cyber 降低合法网络安全工作的拒绝边界，并支持 binary reverse engineering 这类高级防御工作流。",
+      "status": "verified",
+      "source_id": "src_openai_scaling_tac",
+      "observed_at": "2026-04-15T20:03:44+08:00",
+      "risk_level": "high",
+      "usage_boundary": "可作为 有些危险能力只给验证用户 的具体例子，不要延展成所有逆向都无限制。"
+    },
+    {
+      "id": "fact_limited_deployment",
+      "kind": "deployment_fact",
+      "claim": "因为模型更 permissive，OpenAI 当前仅向经过审查的安全厂商、组织和研究者做 limited iterative deployment。",
+      "status": "verified",
+      "source_id": "src_openai_scaling_tac",
+      "observed_at": "2026-04-15T20:03:44+08:00",
+      "risk_level": "high",
+      "usage_boundary": "可用于说明资格门真实存在，不要写成永不开放。"
+    },
+    {
+      "id": "fact_comparison_glasswing",
+      "kind": "comparison_fact",
+      "claim": "Anthropic 的 Project Glasswing 也是给关键软件防御方的 gated research preview。",
+      "status": "verified",
+      "source_id": "src_anthropic_glasswing",
+      "observed_at": "2026-04-15T20:03:55+08:00",
+      "risk_level": "medium",
+      "usage_boundary": "仅作行业对照，不抢主叙事。"
+    }
+  ],
+  "suggested_title_directions": [
+    "OpenAI 把最危险的模型先发给安全圈，前沿 AI 开始按资格发牌",
+    "GPT-5.4-Cyber 这次最狠的不是更强，是 OpenAI 开始决定谁配用",
+    "当前沿模型不再默认平权开放，AI 公司已经打到权限战了"
+  ]
+}

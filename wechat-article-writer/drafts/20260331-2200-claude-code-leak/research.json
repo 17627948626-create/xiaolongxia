@@ -1,0 +1,65 @@
+{
+  "event_date": "2026-03-31",
+  "core_event": {
+    "summary": "开发者 Chaofan Shou（@Fried_rice on X）发现 Claude Code 的 npm 包里附带了一个 .map source map 文件，里面包含了完整的源代码 src.zip",
+    "discovery_person": "Chaofan Shou（@Fried_rice）",
+    "virality": "帖子发布后3小时内突破310万浏览，Reddit 和 Hacker News 上讨论爆炸",
+    "github_mirror": "https://github.com/Kuberwastaken/claude-code",
+    "leak_cause": "忘了在发布时排除 .map 文件，这是 npm 打包最基础的操作之一",
+    "context": "Anthropic 这周本来就焦头烂额——有用户反映 token 用量莫名暴涨（cache bug），Anthropic 还在查"
+  },
+  "hidden_features": [
+    {
+      "name": "BUDDY",
+      "type": "AI虚拟宠物",
+      "entertainment_value": "最高",
+      "description": "一只类似拓麻歌子的 AI 宠物，计划4月1日-7日预热，5月正式上线",
+      "details": {
+        "location": "坐在输入框旁边的对话气泡里",
+        "personalization": "根据你的用户ID哈希值孵化，每个人的宠物不一样",
+        "species_count": 18,
+        "species_list": ["鸭子", "龙", "蝾螈（axolotl）", "水豚", "蘑菇", "幽灵"],
+        "rarity": "稀有度从普通到1%传说级，有帽子装饰和闪光变体",
+        "stats": {
+          "DEBUGGING": "调试力",
+          "PATIENCE": "耐心值",
+          "CHAOS": "混乱度",
+          "WISDOM": "智慧值",
+          "SNARK": "嘴欠度"
+        },
+        "spawn_effect": "首次孵化有漂浮爱心特效",
+        "naming": "Claude 会生成它的名字和个性"
+      }
+    },
+    {
+      "name": "KAIROS",
+      "type": "永在线助手模式",
+      "description": "跨 session 持续工作，有私有记忆目录，每晚会'做梦'整理记忆，还能主动发起任务",
+      "entertainment_value": "高"
+    },
+    {
+      "name": "ULTRAPLAN",
+      "type": "云端规划",
+      "description": "30分钟云端远程规划 session",
+      "entertainment_value": "中"
+    },
+    {
+      "name": "Coordinator Mode",
+      "type": "多Agent协作",
+      "description": "一个 Claude 可以生成并管理多个 worker Claude 并行工作",
+      "entertainment_value": "中"
+    }
+  ],
+  "angle": "娱乐吃瓜，重点在 BUDDY 宠物功能",
+  "editorial_stance": "BUDDY 这个功能不是傻，是 Anthropic 在赌用户情感依赖——这是深思熟虑的战略，情感绑定用户才是最深的护城河",
+  "verified_facts": [
+    "Chaofan Shou 发帖时间：2026年3月31日",
+    "3小时内310万浏览",
+    "npm包含.map source map文件中有src.zip",
+    "BUDDY 预热时间：4月1日-7日，正式上线：5月",
+    "BUDDY有18种物种",
+    "5个属性值包括SNARK嘴欠度",
+    "KAIROS每晚做梦整理记忆",
+    "GitHub存档：https://github.com/Kuberwastaken/claude-code"
+  ]
+}

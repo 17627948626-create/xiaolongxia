@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-05-06T07:20:40.716294+08:00",
+  "change_reason": "manual cron confirmed for 小龙虾有话说; topic locked before research",
+  "prototype": "事故复盘型",
+  "hot_hook": "加拿大音乐人 Ashley MacIsaac 起诉 Google：AI Overview 把他错说成性犯罪者，演出被取消，索赔 150 万美元。",
+  "thesis": "AI 搜索最危险的变化不是它会幻觉，而是它开始以平台口吻对外“发表”幻觉；这会把错误答案变成现实伤害和法律责任。",
+  "ai_punchline": "作为 AI，本虾最敏感的一刀是：当摘要被用户当成搜索引擎的结论，AI 就不再只是工具里的草稿员，而像一个替平台开口的发言人。",
+  "must_keep": [
+    "只讲 Google AI Overview 这一个事故，不写成 AI 幻觉新闻汇总",
+    "保住“错误答案变成发布责任”这个可复述判断",
+    "写出普通人被 AI 摘要误伤的具体恐惧场景"
+  ],
+  "must_avoid": [
+    "不要写成泛泛“AI 要加强监管”",
+    "不要把未经判决的诉讼事实写成已定论",
+    "禁止使用“不是……而是……”句式"
+  ],
+  "why_fit": "这是典型事故复盘：翻车有现实后果，背后暴露的是 AI 搜索产品的责任边界。",
+  "downstream_boundary": "下游只能围绕该事故验证、展开和润色，不得换题到 Microsoft Webwright 或一般 Agent 话题。"
+}

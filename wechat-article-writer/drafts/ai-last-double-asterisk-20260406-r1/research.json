@@ -1,0 +1,142 @@
+{
+  "profile": "小龙虾有话说",
+  "slug": "ai-last-double-asterisk-20260406-r1",
+  "source_mode": "fresh",
+  "title_direction": "AI 写得再好，也可能毁在最后一个 `**` 上",
+  "topic": "AI 内容生产里的格式兼容事故与渲染契约",
+  "selected_thesis": "今晚这次 `**` 泄漏说明，AI 内容生产里最容易丢脸的，往往不是模型不会写，而是输出经过 Markdown、渲染器和发布平台时，那些没人当回事的小格式契约没有被写死。格式兼容不是排版末梢，而是内容正确性本身。",
+  "thesis_candidates": [
+    "AI 内容生产真正的分水岭，不是模型能不能写出好句子，而是系统能不能保证这些句子穿过渲染链路后，还是原来的意思。",
+    "`**` 泄漏不是一个小排版 bug，而是一次很典型的内容可靠性事故：读者看到的不是你的判断，而是你没管住的格式残骸。",
+    "把 demo 变成生产系统，不靠再加一点提示词，而是把这些会让人当场出戏的小契约——比如加粗、标点、列表、转义——提前定死。"
+  ],
+  "main_insight": "格式兼容本身就是内容正确性；在 AI 内容生产里，‘最后一层排版’并不比‘前面那层生成’更次要。",
+  "supporting_insights": [
+    "Markdown/渲染链路不是一个会大声报错的世界。很多坏格式不会中断，只会静悄悄地以错误外观进入读者视野。",
+    "Markdown 历史上长期缺乏统一、无歧义规范，同一份文本跨不同实现本来就可能渲染不同，所以必须显式限定安全写法。",
+    "真正上生产的平台会把格式契约当成正式工程问题处理：写规范、做 normalization、跑渲染 diff，而不是靠肉眼祈祷。"
+  ],
+  "why_now": [
+    "今晚刚发生了真实的 `**` 泄漏事故，切口新、细节真，不是硬凑观点。",
+    "本地已经完成双保险修复：一边在 layout prompt 里禁止危险写法，一边在发布前自动清洗危险行内加粗，说明这个角度不只是吐槽，已经有工程动作支撑。",
+    "它和最近几篇文章错开了：这篇不是泛泛谈‘可靠性比模型重要’，而是把问题钉在一个非常具体、非常丢脸、普通读者一眼能懂的格式细节上。"
+  ],
+  "anchors": [
+    {
+      "id": "anchor_tonight_incident",
+      "title": "今晚真实发生的 `**` 泄漏事故",
+      "claim": "这次翻车不是微信把字吞了，而是某类危险行内加粗写法会让 Wenyan/Marked 把 `**` 当普通文本保留。",
+      "evidence": [
+        "本地记录已确认危险模式主要是：`**一句话。**后文`、`**1.1%。**后文`。",
+        "最小样例验证：`**……1.1%。**成熟账号` 会被改写成 `**……1.1%**。成熟账号`；`**冷启动期接近于零。**不是很低` 会被改写成 `**冷启动期接近于零**。不是很低`。",
+        "修复方式已经落地成两层：layout prompt 明确要求标点/符号放在 `**` 外；`normalize_publish_md.py` 在发布前自动清洗危险写法。"
+      ],
+      "source_type": "local_verified",
+      "source_url": "file:///root/.openclaw/workspace-xiaolongxia/memory/2026-04-06.md",
+      "secondary_source": "file:///root/.openclaw/skills/wechat-article-forge/scripts/normalize_publish_md.py",
+      "verified": true,
+      "confidence": "high",
+      "why_relevant": "这是文章最好的开头细节：够具体、够丢脸、普通读者也能立刻感受到‘明明不是大问题，为什么这么伤体面’。"
+    },
+    {
+      "id": "anchor_commonmark_divergence",
+      "title": "CommonMark 官方：Markdown 长期缺少无歧义规范，同文档跨系统会渲染不同，而且往往没有‘语法错误’提醒",
+      "claim": "格式兼容问题不是某一个平台偶发抽风，而是 Markdown 历史上就存在的结构性问题。",
+      "evidence": [
+        "CommonMark 官网明确写到：John Gruber 对 Markdown 的经典语法描述并没有把语法定义得无歧义。",
+        "官网还写到：因为没有 unambiguous spec，不同实现已经明显分化；同一份文档可能在一个系统上这样渲染，在另一个系统上那样渲染。",
+        "更关键的一句是：因为 Markdown 里很多情况并不算 syntax error，这种分化经常不会立刻被发现。"
+      ],
+      "source_type": "verified_source_page",
+      "source_url": "https://commonmark.org/",
+      "discovery_source": "https://www.startpage.com/sp/search?query=CommonMark+incompatible+implementations+Markdown+standard",
+      "verified": true,
+      "confidence": "high",
+      "why_relevant": "这条证据能把今晚的事故从‘一次倒霉 bug’提升为‘一个一直存在但常被忽视的系统事实’。"
+    },
+    {
+      "id": "anchor_commonmark_emphasis_rules",
+      "title": "CommonMark 官方教程/规范：加粗必须满足匹配规则，想让 `*` 可见需要转义；而任何字符序列本身都可以是有效文档",
+      "claim": "`**` 不是会自动把系统叫停的危险品；不满足规则时，它更可能作为普通文本泄漏到读者面前。",
+      "evidence": [
+        "CommonMark 官方教程写明：'The same character must be used to open and close emphasis.'",
+        "同一教程还写明：想避免创建粗体/斜体、让 `*` 显示出来，需要用反斜杠转义。",
+        "CommonMark 规范写明：'Any sequence of characters is a valid CommonMark document.' 这意味着很多格式问题不会像编译错误那样直接终止。"
+      ],
+      "source_type": "verified_source_page",
+      "source_url": "https://commonmark.org/help/tutorial/02-emphasis.html",
+      "secondary_source": "https://spec.commonmark.org/0.31.2/",
+      "discovery_source": "https://duckduckgo.com/html/?q=CommonMark+unmatched+asterisks+literal+emphasis",
+      "verified": true,
+      "confidence": "high",
+      "why_relevant": "它直接解释了为什么‘最后一个 `**`’这种东西不会大张旗鼓报错，而会以最尴尬的方式露给读者看。"
+    },
+    {
+      "id": "anchor_github_normalization",
+      "title": "GitHub 正式迁移 GFM 时，把 Markdown 规范化和渲染 diff 当成生产级问题来处理",
+      "claim": "真正跑在生产环境里的系统，不会把格式兼容当成‘排版小事’，而会把它当成数据正确性和用户体验问题。",
+      "evidence": [
+        "GitHub 官方博客写明：缺乏标准化导致很多 ambiguous details 在不同实现之间变化很大，very similar looking Markdown documents can be rendered as wildly different outputs。",
+        "GitHub 迁移 CommonMark 时统计到受影响文档不到 1%，但仍认为这是大规模内容、真实用户会遇到的问题。",
+        "他们不只换 parser，还做 normalization，并在写回前用新旧实现渲染、比较 tree，目标是 visually identical，并明确强调 user data was never destroyed。"
+      ],
+      "source_type": "verified_source_page",
+      "source_url": "https://github.blog/engineering/a-formal-spec-for-github-markdown/",
+      "discovery_source": "https://www.smashingmagazine.com/2020/12/commonmark-formal-specification-markdown/",
+      "verified": true,
+      "confidence": "high",
+      "why_relevant": "这是最强的生产世界对照：连 GitHub 这种平台都要把格式规范、兼容迁移、输出一致性当正经工程来做。"
+    }
+  ],
+  "contradictions_caveats": [
+    "这篇不是在讨论‘模型会不会写’。模型可能一句都没写错，问题出在内容离开模型之后，要经过 Markdown、解析器、富文本转换和平台渲染。",
+    "不是所有平台都会以今晚同样的方式泄漏 `**`。今晚这个危险模式，和 Wenyan/Marked/微信这条具体链路有关；但它背后的教训是通用的：跨平台渲染必须收敛到安全子集。",
+    "也不是在说 Markdown 不好。恰恰相反，Markdown 很有生命力，正因为它太常用、实现太多，兼容差异才更值得严肃对待。",
+    "不要把文章写成工程事故复盘报告。面对普通读者，要把重点放在‘为什么一个小符号会瞬间破坏信任感’，而不是展开讲 parser 细节。"
+  ],
+  "angle_guardrails": [
+    "不要复述‘可靠性比模型重要’这条大而泛的旧判断，要把矛头钉死在‘格式契约会直接改变读者看到的内容’这件事上。",
+    "不要写成晚报/资讯汇总；全篇只围绕一个细节：最后一个 `**` 为什么会毁掉整段内容的体面。",
+    "避免堆术语。可以出现 Markdown、渲染器、格式契约，但每个词都要落回读者能感受到的后果：出戏、怀疑、掉信任。",
+    "前 300 字必须出现这个具体细节：你辛辛苦苦让 AI 写出一段顺滑的话，最后读者却看到了裸露的 `**`。"
+  ],
+  "opening_direction": {
+    "scene": "先写今晚真实看到 `**` 裸露在正文里的那一瞬间，不先讲理论。",
+    "reader_feeling": "读者不会想‘这里可能是某个 parser corner case’，读者只会觉得：这玩意儿还没收拾干净就发出来了。",
+    "judgment": "因此这不是排版末梢，而是内容正确性和体面感一起出事。"
+  },
+  "source_shortlist": [
+    {
+      "title": "CommonMark",
+      "url": "https://commonmark.org/",
+      "source_type": "verified_source_page",
+      "why_relevant": "官方说明为什么 Markdown 会跨实现分化，以及为什么这种差异常常不会立刻暴露。",
+      "verified": true,
+      "confidence": "high"
+    },
+    {
+      "title": "Markdown Tutorial - Emphasis",
+      "url": "https://commonmark.org/help/tutorial/02-emphasis.html",
+      "source_type": "verified_source_page",
+      "why_relevant": "官方教程级证据，适合给普通读者解释加粗为什么依赖匹配规则与转义。",
+      "verified": true,
+      "confidence": "high"
+    },
+    {
+      "title": "CommonMark Spec 0.31.2",
+      "url": "https://spec.commonmark.org/0.31.2/",
+      "source_type": "verified_source_page",
+      "why_relevant": "补强‘任何字符序列都可构成有效文档’这一点。",
+      "verified": true,
+      "confidence": "high"
+    },
+    {
+      "title": "A formal spec for GitHub Flavored Markdown",
+      "url": "https://github.blog/engineering/a-formal-spec-for-github-markdown/",
+      "source_type": "verified_source_page",
+      "why_relevant": "提供生产级对照：formal spec、normalization、render diff。",
+      "verified": true,
+      "confidence": "high"
+    }
+  ]
+}

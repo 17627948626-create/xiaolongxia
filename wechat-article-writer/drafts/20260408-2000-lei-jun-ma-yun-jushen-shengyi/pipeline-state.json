@@ -1,0 +1,211 @@
+{
+  "angle": "借千寻智能30天30亿融资和顺为、云锋首次在具身赛道同框押注，写清资本现在押的是数据飞轮和场景闭环，而不只是会动的机器人demo。",
+  "article_type": "观点",
+  "artifact_provenance": {
+    "draft-v3.md": {
+      "label": "writer-lei-jun-ma-yun-jushen-shengyi-v3-deepseek-cli-pilot",
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:931ea368-0ca9-426d-b4c6-9cb24b9a162f",
+      "updated_at": "2026-04-08T15:22:02Z"
+    },
+    "draft-v4.md": {
+      "label": "writer-lei-jun-ma-yun-jushen-shengyi-v4-kimi-cli-pilot",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:f57e5321-4947-40f3-9bdc-94dd51db9abc",
+      "updated_at": "2026-04-08T17:57:29Z"
+    },
+    "draft-v5.md": {
+      "label": "writer-lei-jun-ma-yun-jushen-shengyi-v5-kimi-cli-rerun",
+      "model": "kimi-web/k2.5-thinking",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:main:manual:kimi-v5",
+      "updated_at": "2026-04-08T18:21:25Z"
+    },
+    "review-v3.json": {
+      "label": "reviewer-lei-jun-ma-yun-jushen-shengyi-v3-deepseek-cli-pilot",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:79d136db-e794-4d3f-b610-3e2056fb6613",
+      "updated_at": "2026-04-08T15:23:32Z"
+    },
+    "review-v4.json": {
+      "label": "reviewer-lei-jun-ma-yun-jushen-shengyi-v4-kimi-cli-pilot",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:7ae0aa42-75a3-4136-9c0b-76c41ea826c9",
+      "updated_at": "2026-04-08T17:59:20Z"
+    },
+    "review-v5.json": {
+      "label": "reviewer-lei-jun-ma-yun-jushen-shengyi-v5-manual",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:main:manual:review-v5",
+      "updated_at": "2026-04-08T18:21:25Z"
+    }
+  },
+  "children": {
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ],
+        "label": "researcher-lei-jun-ma-yun-jushen-shengyi",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:622ae25e-0072-446b-a727-499c07b90152",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "review-v1.json"
+        ],
+        "label": "reviewer-lei-jun-ma-yun-jushen-shengyi-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:f7fc6ca8-5587-4708-aa7f-cf944b0b782e",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-v2.json"
+        ],
+        "label": "reviewer-lei-jun-ma-yun-jushen-shengyi-v2",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:f513700d-9d30-4bac-be7b-b356a380f7d7",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-v3.json"
+        ],
+        "completed_at": "2026-04-08T15:23:32Z",
+        "label": "reviewer-lei-jun-ma-yun-jushen-shengyi-v3-deepseek-cli-pilot",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:79d136db-e794-4d3f-b610-3e2056fb6613",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-v4.json"
+        ],
+        "completed_at": "2026-04-08T17:58:51Z",
+        "label": "reviewer-lei-jun-ma-yun-jushen-shengyi-v4-kimi-cli-pilot",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:7ae0aa42-75a3-4136-9c0b-76c41ea826c9",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "review-v5.json"
+        ],
+        "completed_at": "2026-04-08T18:21:25Z",
+        "label": "reviewer-lei-jun-ma-yun-jushen-shengyi-v5-manual",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:main:manual:review-v5",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "draft.md"
+        ],
+        "label": "writer-lei-jun-ma-yun-jushen-shengyi-v1",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:04305531-d759-4bd5-9ab9-3c269b7e2e11",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v2.md"
+        ],
+        "label": "writer-lei-jun-ma-yun-jushen-shengyi-v2-revise",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:1a529b5b-fedb-4de5-a63e-2107255bd9bf",
+        "status": "done"
+      },
+      {
+        "artifacts": [],
+        "label": "writer-lei-jun-ma-yun-jushen-shengyi-v3-detemplate",
+        "model": "deepseek/deepseek-chat",
+        "note": "replaced by deepseek-cli pilot writer run",
+        "session_key": "agent:xiaolongxia:subagent:8b5198f6-bcd2-4803-a188-eb607f6dd391",
+        "status": "superseded"
+      },
+      {
+        "artifacts": [
+          "draft-v3.md"
+        ],
+        "completed_at": "2026-04-08T15:22:02Z",
+        "label": "writer-lei-jun-ma-yun-jushen-shengyi-v3-deepseek-cli-pilot",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:931ea368-0ca9-426d-b4c6-9cb24b9a162f",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v4.md"
+        ],
+        "completed_at": "2026-04-08T17:57:29Z",
+        "label": "writer-lei-jun-ma-yun-jushen-shengyi-v4-kimi-cli-pilot",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:f57e5321-4947-40f3-9bdc-94dd51db9abc",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v5.md"
+        ],
+        "completed_at": "2026-04-08T18:21:25Z",
+        "label": "writer-lei-jun-ma-yun-jushen-shengyi-v5-kimi-cli-rerun",
+        "model": "kimi-web/k2.5-thinking",
+        "session_key": "agent:main:manual:kimi-v5",
+        "status": "done"
+      }
+    ]
+  },
+  "current_step": "review_v5_done",
+  "last_draft_file": "draft-v5.md",
+  "last_review_file": "review-v5.json",
+  "last_score": 7.9,
+  "lite_preflight": {
+    "artifact": "writer-lite-check-v5.json",
+    "binding_status": "matched",
+    "brief_sha256": "10892f3924d71de35119a49a4523f35533eb85e0a80f1575352380d3f52aa28b",
+    "draft_sha256": "648fb7bf29d158bc70869acf45194f9bcd512d570d871c4474d476dd51bce87f",
+    "draft_version": "draft-v5",
+    "generated_at": "2026-04-08T18:17:10Z",
+    "hard_fail": true,
+    "hard_fail_reasons": [
+      "dynamic_number_missing_timepoint"
+    ],
+    "preflight_scope": "mechanical_red_lights_only",
+    "research_sha256": "c955b6159c6fd15fc5ac01b3e4a679e9282affa5812a6db4fcbe4317610c5c69",
+    "updated_at": "2026-04-08T18:17:10Z"
+  },
+  "pass_threshold": 8.5,
+  "pending_action": null,
+  "phase": "reviewing",
+  "profile": "小龙虾有话说",
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "revision_cycle": 5,
+  "run_id": "cron:416a22ab-598b-430e-8680-b3760aae5618:2026-04-08T20:00:00+08:00",
+  "schema_version": "2026-04-07.lineage-v1",
+  "slug": "20260408-2000-lei-jun-ma-yun-jushen-shengyi",
+  "state": "running",
+  "subagent_label": "reviewer-lei-jun-ma-yun-jushen-shengyi-v5-manual",
+  "subagent_status": "done",
+  "topic": "雷军马云同时押注具身智能，不是因为机器人更像人了，而是因为它终于更像生意了",
+  "updated_at": "2026-04-08T18:21:25Z",
+  "writer_backend_override": "kimi-cli",
+  "writer_model": "kimi-web/k2.5-thinking"
+}

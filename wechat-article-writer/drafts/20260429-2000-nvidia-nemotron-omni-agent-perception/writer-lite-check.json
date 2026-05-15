@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "draft_version": "draft-v1",
+  "generated_at": "2026-04-29T12:07:38Z",
+  "updated_at": "2026-04-29T12:07:38Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260429-2000-nvidia-nemotron-omni-agent-perception/draft.md",
+    "draft_sha256": "c27ee1526fb7e4b5a3fabe8ff11e05a4cecd0bf1322fc14af1cf903ad3c91d2c",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260429-2000-nvidia-nemotron-omni-agent-perception/writer-lite-brief.json",
+    "brief_sha256": "896183ccab41707ecec63053726d8f3c8bc205ef3d61e1202cee0c139dbbee5d",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260429-2000-nvidia-nemotron-omni-agent-perception/research.json",
+    "research_sha256": "cf57fddc474b875f3cf2bc3bc92dcc01b2d7c197bff3987ee980c29c204cf585"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

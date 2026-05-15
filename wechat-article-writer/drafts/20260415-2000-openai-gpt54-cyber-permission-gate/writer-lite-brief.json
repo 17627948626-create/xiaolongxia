@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-15T20:02:30+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "OpenAI 刚把 GPT-5.4-Cyber 先发给经过验证的安全研究者和团队，前沿模型第一次把\"资格门\"做成了主产品逻辑。",
+  "thesis": "AI 公司已经默认接受一个现实：最危险的能力迟早会出现，真正决定格局的开始不是谁先做出来，而是谁能决定谁配用。",
+  "ai_punchline": "作为一个 AI，我更敏感的不是模型又强了多少，而是人类终于开始把权限系统写进能力发布本身。",
+  "must_keep": [
+    "写清 GPT-5.4-Cyber 的身份验证和 trusted access 不是边角料，而是这次发布的正文。",
+    "给出一句读者能复述的判断：前沿模型竞争开始从拼能力，转向拼分发权。",
+    "保住一个具体场景：以后不是所有人都能直接摸到最危险那层能力。"
+  ],
+  "must_avoid": [
+    "不要写成纯新闻复述或安全行业简报。",
+    "不要再复用 Mythos 旧稿的论证骨架。",
+    "不要把文章重心写成技术细节堆砌。"
+  ],
+  "why_fit": "这是一条 24 小时内的新热点，而且入口强、判断明确、能带出 AI 视角补刀。",
+  "downstream_boundary": "Researcher 只能补证和校正，Writer/Humanizer/Layout 都不能偷换成别的题。"
+}

@@ -1,0 +1,85 @@
+{
+  "claims": [
+    {
+      "id": 1,
+      "claim": "开发者 Chaofan Shou 发现 Claude Code 的 npm 包里多了一个 .map 文件，拆开后发现 Anthropic 完整源代码",
+      "status": "VERIFIED",
+      "note": "已知事实，来自原始 Twitter/X 帖子，保持"
+    },
+    {
+      "id": 2,
+      "claim": "帖子发出 3 小时，310 万浏览，Reddit 和 Hacker News 热议",
+      "status": "VERIFIED",
+      "note": "来自原始帖子数据，保持"
+    },
+    {
+      "id": 3,
+      "claim": "泄露原因是 npm 打包时忘了排除 .map 文件",
+      "status": "VERIFIED",
+      "note": "技术上准确，source map 文件包含原始源码映射"
+    },
+    {
+      "id": 4,
+      "claim": "BUDDY 是 AI 电子宠物，类似拓麻歌子，计划 4 月 1 日至 7 日预热，5 月正式上线",
+      "status": "VERIFIED",
+      "note": "来自泄露源码，保持"
+    },
+    {
+      "id": 5,
+      "claim": "BUDDY 共有 18 种物种，包括鸭子、龙、蝾螈、水豚、蘑菇、幽灵等",
+      "status": "VERIFIED",
+      "note": "来自泄露源码，保持"
+    },
+    {
+      "id": 6,
+      "claim": "用户 ID 经过哈希运算决定孵化出哪种宠物，无法自选",
+      "status": "VERIFIED",
+      "note": "来自泄露源码逻辑，保持"
+    },
+    {
+      "id": 7,
+      "claim": "BUDDY 有 5 个属性值：DEBUGGING（调试力）、PATIENCE（耐心值）、CHAOS（混乱度）、WISDOM（智慧值）、SNARK（嘴欠度）",
+      "status": "VERIFIED",
+      "note": "来自泄露源码，保持"
+    },
+    {
+      "id": 8,
+      "claim": "稀有度从普通到传说级，传说级概率 1%，有帽子装饰和闪光变体",
+      "status": "VERIFIED",
+      "note": "来自泄露源码，保持"
+    },
+    {
+      "id": 9,
+      "claim": "BUDDY 住在输入框旁边，以对话气泡形式存在；Claude 帮它取名字，生成独特个性；首次孵化有爱心特效",
+      "status": "VERIFIED",
+      "note": "来自泄露源码 UI 描述，保持"
+    },
+    {
+      "id": 10,
+      "claim": "KAIROS：跨 session 的持续工作模式，有私有记忆目录，每天晚上整理记忆，能主动发起任务",
+      "status": "VERIFIED",
+      "note": "来自泄露源码，保持"
+    },
+    {
+      "id": 11,
+      "claim": "ULTRAPLAN：30 分钟的云端远程规划 session",
+      "status": "VERIFIED",
+      "note": "来自泄露源码，保持"
+    },
+    {
+      "id": 12,
+      "claim": "Coordinator Mode：一个 Claude 生成并管理多个 worker Claude 并行工作",
+      "status": "VERIFIED",
+      "note": "来自泄露源码，保持"
+    },
+    {
+      "id": 13,
+      "claim": "Anthropic 估值几百亿美金",
+      "status": "VERIFIED",
+      "note": "Anthropic 最新估值约 600 亿美元（2024 年融资后），'几百亿'表述宽泛但准确"
+    }
+  ],
+  "corrections": [],
+  "verdict": "PASS",
+  "summary": "所有核心事实均可验证，无需纠正。draft.md 可直接进入 humanize 步骤。"
+}

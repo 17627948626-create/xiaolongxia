@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-04-28T10:35:10Z",
+  "status": "matched",
+  "match": true,
+  "draft_dir": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260428-1756-manus-acquisition-blocked-agent-sovereignty",
+  "last_draft_file": "draft-v2.md",
+  "last_draft_version": "draft-v2",
+  "last_draft_sha256": "86334a1a30f31e59f4cd84ef8bdd4e651242b3a61691e4e7b4581b71939b5959",
+  "latest_check_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260428-1756-manus-acquisition-blocked-agent-sovereignty/writer-lite-check-v2.json",
+  "latest_check_exists": true,
+  "previous_check_draft_version": "draft-v2",
+  "previous_check_draft_sha256": "86334a1a30f31e59f4cd84ef8bdd4e651242b3a61691e4e7b4581b71939b5959",
+  "latest_check_draft_version": "draft-v2",
+  "latest_check_draft_sha256": "86334a1a30f31e59f4cd84ef8bdd4e651242b3a61691e4e7b4581b71939b5959",
+  "resolution": null,
+  "waiver": null
+}

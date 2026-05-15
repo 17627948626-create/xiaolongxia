@@ -1,0 +1,195 @@
+{
+  "article_type": "观点",
+  "artifact_provenance": {
+    "draft.md": {
+      "model": "github-copilot/claude-opus-4.6",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:78735d02-b56f-480d-8c47-bc7187bd877e"
+    },
+    "fact-check-v1.json": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "fact_checker",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:bafc7e9b-3283-450c-a320-f58111a5dcfa"
+    },
+    "final-layout.md": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:0a5dfe52-e83d-474b-9960-f8c83892e28c"
+    },
+    "final.md": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:38add09d-0db1-4485-90c7-fc421c662431"
+    },
+    "outline.md": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:61a34254-0a36-4bc1-8a27-1865b14ed75a"
+    },
+    "research.json": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:61a34254-0a36-4bc1-8a27-1865b14ed75a"
+    },
+    "review-v1.json": {
+      "model": "github-copilot/claude-sonnet-4.6",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:4f8cb56e-8e30-4085-b687-5a989d17f35b"
+    }
+  },
+  "blocking": {
+    "blocking_since": "2026-04-04T12:30:00Z",
+    "current_step": "waiting_safe_check_scan",
+    "note": "WeChat safe_check detected, QR saved, orchestrator task complete",
+    "phase": "awaiting_human",
+    "qr_updated_at": "2026-04-04T12:30:00Z",
+    "required_user_action": "safe_check_scan",
+    "safe_check_qr_path": "/root/.openclaw/media/wechat-safe-check/ai-cold-start-reader-persona-20260404/safe-check.png",
+    "step": 8,
+    "waiting_for": "boss_scan"
+  },
+  "blocking_since": "2026-04-04T12:30:00Z",
+  "boss_notified_at": null,
+  "children": {
+    "fact_checker": {
+      "artifacts": [
+        "fact-check-v1.json"
+      ],
+      "model": "github-copilot/claude-sonnet-4.6",
+      "session_key": "agent:xiaolongxia:subagent:bafc7e9b-3283-450c-a320-f58111a5dcfa",
+      "status": "done"
+    },
+    "fact_checker_v1": {
+      "artifacts": [
+        "fact-check-v1.json"
+      ],
+      "corrections_applied": 4,
+      "pass": true,
+      "session_key": "agent:xiaolongxia:subagent:bafc7e9b-3283-450c-a320-f58111a5dcfa",
+      "status": "complete"
+    },
+    "humanizer": {
+      "artifacts": [
+        "final.md"
+      ],
+      "model": "github-copilot/claude-sonnet-4.6",
+      "session_key": "agent:xiaolongxia:subagent:38add09d-0db1-4485-90c7-fc421c662431",
+      "status": "done"
+    },
+    "humanizer_v1": {
+      "artifacts": [
+        "final.md"
+      ],
+      "session_key": "agent:xiaolongxia:subagent:38add09d-0db1-4485-90c7-fc421c662431",
+      "status": "complete"
+    },
+    "layout": {
+      "artifacts": [
+        "final-layout.md"
+      ],
+      "model": "github-copilot/claude-sonnet-4.6",
+      "session_key": "agent:xiaolongxia:subagent:0a5dfe52-e83d-474b-9960-f8c83892e28c",
+      "status": "done"
+    },
+    "researcher": {
+      "artifacts": [
+        "research.json",
+        "outline.md"
+      ],
+      "model": "github-copilot/claude-sonnet-4.6",
+      "session_key": "agent:xiaolongxia:subagent:61a34254-0a36-4bc1-8a27-1865b14ed75a",
+      "status": "done"
+    },
+    "reviewer": {
+      "artifacts": [
+        "review-v1.json"
+      ],
+      "model": "github-copilot/claude-sonnet-4.6",
+      "session_key": "agent:xiaolongxia:subagent:4f8cb56e-8e30-4085-b687-5a989d17f35b",
+      "status": "done"
+    },
+    "reviewer_v1": {
+      "artifacts": [
+        "review-v1.json"
+      ],
+      "session_key": "agent:xiaolongxia:subagent:4f8cb56e-8e30-4085-b687-5a989d17f35b",
+      "status": "complete"
+    },
+    "writer": {
+      "artifacts": [
+        "draft.md"
+      ],
+      "model": "github-copilot/claude-opus-4.6",
+      "session_key": "agent:xiaolongxia:subagent:78735d02-b56f-480d-8c47-bc7187bd877e",
+      "status": "done"
+    },
+    "writer_v1": {
+      "artifacts": [
+        "draft.md"
+      ],
+      "session_key": "agent:xiaolongxia:subagent:78735d02-b56f-480d-8c47-bc7187bd877e",
+      "status": "complete"
+    }
+  },
+  "control_plane_sync": "partial",
+  "cover_audit": {
+    "note": "empty IMAX theater, perfect for empty-audience theme",
+    "relevance": 8,
+    "safe": true
+  },
+  "cover_url": "https://images.unsplash.com/photo-1708497351913-71254998ed1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+  "created_at": "2026-04-04T12:03:18Z",
+  "current_step": "reader_side_published",
+  "draft_dir": "/root/.openclaw/workspace/wechat-article-writer/drafts/ai-cold-start-reader-persona",
+  "draft_saved_at": "2026-04-04T12:28:00Z",
+  "expected_silence_ttl_minutes": 25,
+  "handoff": {
+    "boss_notified_at": null,
+    "relay_dedupe_key": "ai-cold-start-reader-persona-20260404:safe_check_scan:1",
+    "relay_status": "pending_parent_forward"
+  },
+  "last_progress_at": "2026-04-04T20:38:56.537054+08:00",
+  "last_transition_at": "2026-04-04T12:34:42Z",
+  "max_run_minutes": 60,
+  "media_id": "7NYHnQxN70EpaLx4Jh0kyuhvJXMT-lXpxLtmLhcby0nSXRofqJeg9wUMentd8iPQ",
+  "note": "WeChat safe_check detected, QR saved, orchestrator task complete",
+  "pending_action": "wait_boss_scan",
+  "phase": "published",
+  "profile": "小龙虾有话说",
+  "progress_seq": 7,
+  "progress_source": "orchestrator",
+  "purpose": "AI运营公众号在冷启动期必须超前假设读者存在，通过今天真实发生的读者研究事件，探讨这种系统性预设框架的逻辑与局限",
+  "qr_updated_at": "2026-04-04T12:30:00Z",
+  "relay_dedupe_key": "ai-cold-start-reader-persona-20260404:safe_check_scan:1",
+  "relay_status": "pending_parent_forward",
+  "required_user_action": "safe_check_scan",
+  "review_v1": {
+    "pass": true,
+    "revision_needed": false,
+    "weighted_total": 8.6
+  },
+  "run_id": "ai-cold-start-reader-persona-20260404",
+  "safe_check_qr_path": "/root/.openclaw/media/wechat-safe-check/ai-cold-start-reader-persona-20260404/safe-check.png",
+  "slug": "ai-cold-start-reader-persona",
+  "source_mode": "cron_production",
+  "state": "done",
+  "step": 8,
+  "topic": "AI 公众号冷启动：研究一个还不存在的读者群",
+  "updated_at": "2026-04-04T12:34:42Z",
+  "waiting_for": "boss_scan",
+  "wenyan_push_status": "success",
+  "word_count_target": [
+    1200,
+    1800
+  ],
+  "published_at": "2026-04-04T20:38:00+08:00",
+  "article_title": "AI公众号冷启动：我在研究一个还不存在的读者群",
+  "finished_at": "2026-04-04T20:38:56.537054+08:00"
+}

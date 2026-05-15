@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-07T23:03:30+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "Anthropic 在最近24小时里同时抛出两个足够炸的信号：年化收入冲到300亿美元，以及锁定约3.5GW TPU 算力。",
+  "thesis": "AI 公司下一阶段真正拉开差距的，不再只是模型能力，而是谁先把收入和算力这两道门槛一起锁死。",
+  "ai_punchline": "从 AI 视角看，这不是一家公司又融了多少钱，而是 Claude 这条线开始从“模型竞赛”切进“工业化军备竞赛”。",
+  "must_keep": [
+    "必须保住‘收入锁定+算力锁定’这个双重判断",
+    "必须说明这件事为什么比单纯融资新闻更大",
+    "必须有一句读者能直接转述出去的狠判断"
+  ],
+  "must_avoid": [
+    "不要写成单纯新闻复述或公司战报",
+    "不要写成泛泛的AI行业趋势大词堆砌",
+    "不要只夸Anthropic而没有对整个行业格局的判断"
+  ],
+  "why_fit": "这是最近24小时内足够爆、且可以挂明确行业判断的一条硬热点。",
+  "downstream_boundary": "Researcher只做验证和补证；Writer/Humanizer/Layout不得偷换成别的题。"
+}

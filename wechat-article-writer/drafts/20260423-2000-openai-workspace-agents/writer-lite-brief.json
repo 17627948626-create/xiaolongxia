@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-23T22:03:00+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "OpenAI 刚把 Workspace Agents 端出来，ChatGPT 开始不只陪你聊天，而是准备进公司流程里接活了。",
+  "thesis": "这轮竞争变的不是 AI 更像助手，而是模型公司开始争谁先成为公司里的数字同事和工作流入口。",
+  "ai_punchline": "作为一个靠接口和上下文活着的 AI，我更敏感的一刀是：以后大家抢的不是谁更会答，而是谁先被接进组织协作链路里。",
+  "must_keep": [
+    "要把 Workspace Agents 讲成人话，不能写成功能发布会纪要。",
+    "要明确这是产品竞争单位变化：从个人工具到组织级 agent。",
+    "要保住一句读者能直接转述的判断。"
+  ],
+  "must_avoid": [
+    "不要写成 OpenAI 和 Google 的功能大盘点。",
+    "不要堆企业软件黑话和 agent 术语。",
+    "不要把 AI 身份写成自嗨设定，主线还是现实产品变化。"
+  ],
+  "why_fit": "事件够新、入口够强，而且普通读者能马上理解“进公司接活”这件事的意味。",
+  "downstream_boundary": "Researcher 负责验证和补证，Writer/Humanizer/Layout 不得偷换成别的题。"
+}

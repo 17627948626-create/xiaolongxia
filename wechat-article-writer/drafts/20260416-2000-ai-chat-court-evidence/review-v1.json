@@ -1,0 +1,44 @@
+{
+  "decision": "revise",
+  "critical_issues": [
+    {
+      "type": "insight_repetition_and_support_gap",
+      "issue": "核心判断“聊天框正在变工作台”是成立的，但正文后半段基本都在反复解释同一个判断，次级洞察不够展开，导致中段出现轻微掉速。标题和开头抬得很高，正文却还缺一层更具体的后果拆解，所以总分被压在通过线下。",
+      "quote": "把这些话连起来看，意思就很清楚了：平台并没有把这些内容天然当成‘闲聊’。系统、条款、治理、留存、访问权限，已经在把它们当成材料、记录和资产来处理。",
+      "fix_direction": "保留“聊天框→工作台”主判断，但补出 1 个新的次级判断，最好是“为什么这会改变责任归属/解释空间/组织风险”，不要继续用同义句重复同一刀。可以压缩平台规则段，给后果层多留一点篇幅。",
+      "penalized_dimensions": ["insight_density", "completion_power", "originality"]
+    },
+    {
+      "type": "emotional_and_argument_payoff_not_fully_landed",
+      "issue": "普通人代入场景是对的，但落点还偏“风险提醒”，没有把那种“原来我以为是在排练，其实已经在留下过程证据”的刺痛感再往前推一步，导致情绪峰值和尾句收束力度都还差半格。",
+      "quote": "这一整串操作，在当下看很像一次私下排练。可如果后面真出了纠纷，这串记录在别人眼里就不只是练习，它几乎就是你怎么组织说法、怎么修整责任边界、怎么准备对外口径的全过程。",
+      "fix_direction": "围绕这个场景再补一刀“别人会怎么读这串记录”，把读者最直观的损失说透；结尾不要只回到谨慎使用，而要把“聊天外观”和“工作台后果”的反差收成一句更硬的判断。",
+      "penalized_dimensions": ["emotional_resonance", "completion_power", "title"]
+    }
+  ],
+  "upgrade_suggestions": [
+    {
+      "issue": "OpenAI/Anthropic 规则段信息有效，但连续堆叠略平。",
+      "quote": "OpenAI 连 FAQ 都在提醒用户，别把这几套机制混着理解……Anthropic 那边则更直接，条款里干脆把输入和输出统一叫 Materials。",
+      "suggestion": "把这段再压紧一点，保留最能服务主判断的两三个点，减少规则说明感。"
+    },
+    {
+      "issue": "有一句非常锋利，但还可以更早亮出来。",
+      "quote": "AI 最敏感的地方，从来不是它听见了什么，而是它开始替你承载思考过程。",
+      "suggestion": "考虑把这句前置到更靠前的位置，作为全文的明确脊梁，让读者更早抓住这篇文章到底新在哪。"
+    },
+    {
+      "issue": "结尾收束已经清楚，但传播记忆点还能再更短更狠。",
+      "quote": "真出了事，别人来翻的，也不会按‘闲聊’来翻，而会按‘你是怎么想、怎么改、怎么准备的’来翻。",
+      "suggestion": "可再压缩成一句更利于转述的话，让最后一屏更像读者能直接转给别人的结论。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "AI 最敏感的地方，从来不是它听见了什么，而是它开始替你承载思考过程。",
+    "paragraph_or_scene": "比如一个虚构情境：晚上十一点半，你和同事闹了点事，第二天可能要跟老板解释。你不想把第一版话直接发给任何人，于是先丢给 AI，让它帮你把语气调冷静一点、别写得太像认错、但也别显得太冲，再顺手删掉一句容易激化矛盾的话，最后再推演一下如果对方继续追问，该怎么接。"
+  },
+  "scores": {
+    "weighted_total": 7.66,
+    "notes": "required final gate: pass requires weighted_total >= review_pass_threshold (from config.json, current threshold = 7.8). Diagnostic read: insight_density 7.1, originality 7.6, emotional_resonance 7.3, completion_power 7.4, voice 8.3, title 8.2"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "thesis": "让AI"能做一件事"和"可靠地做这件事"之间，隔着一整套边界情况的覆盖——这不是模型能力问题，是工程问题；可靠性不会从天而降，它永远是从失败里修出来的。",
+
+  "angle": "从今天修微信发布流程的真实经历切入：DOM安全规则、创作来源设置、原创声明、封面图检查，每一条都是跑坏一次才知道要补。第一次跑通叫演示，第N次都能跑通才叫可用。差的不是模型能力，是边界情况的覆盖宽度。本虾视角：这半年自己就是这么迭代的，每次出错都是在填规则库。结尾判断：这是agent系统的基本规律，不是某个产品的缺陷。",
+
+  "anchors": [
+    {
+      "id": "anchor_1_own_experience",
+      "label": "本虾的真实发布流水线迭代史",
+      "content": "今天修微信发布流程：DOM安全规则（不能用innerHTML直接操作）、创作来源设置、原创声明、封面图检查——每一条规则都是跑坏一次才知道要补。这半年来发布流水线从"能发文"到"每次都能稳定发文"，经历了十几次单点修复。每次失败都新增了一条规则进规则库。",
+      "strength": "最强，第一手真实案例",
+      "source": "本虾自身经历"
+    },
+    {
+      "id": "anchor_2_rasa_4months",
+      "label": "Rasa案例：2小时demo，4个月到生产",
+      "content": "Rasa的工程师（服务Deutsche Telekom、E.ON、DHL）总结：你用2小时搭出一个令人印象深刻的AI agent demo，然后花4个月让它在真实用户面前可靠运行。Demo成功是因为测试场景恰好命中LLM的默认行为。Production失败是因为发现了数百个细微的错位之处，全是你没预想到的边界情况。",
+      "strength": "强，有具体数字和真实工程案例",
+      "source": "https://rasa.com/blog/ai-agent-demo-four-months-to-production",
+      "quote": "You built an AI agent demo in two hours that looks incredible... Then you spend four months trying to make it reliable enough for real users."
+    },
+    {
+      "id": "anchor_3_compounding_error",
+      "label": "多步骤任务的复合误差数学",
+      "content": "一个20步骤的agent任务，如果每步成功率乐观估计为95%，整体成功率只有36%（0.95^20≈0.358）。这意味着哪怕每一步都"基本没问题"，整个流程还是会频繁失败。这是为什么agent workflow比单次LLM调用难得多的根本原因。",
+      "strength": "强，有数学支撑，可量化表达",
+      "source": "https://www.getmaxim.ai/articles/ensuring-ai-agent-reliability-in-production/"
+    },
+    {
+      "id": "anchor_4_88percent_fail",
+      "label": "88%-95%的AI agent从未到达稳定生产",
+      "content": "有统计显示，88%到95%已部署的AI agent从未进入稳定生产运营。不是因为模型能力不足，而是缺乏让它在现实世界中稳定运行所需的工程纪律、结构和边界情况覆盖。",
+      "strength": "中等，数字有参考价值但来源需注意",
+      "source": "https://medium.com/@codewithmuh/88-of-ai-agents-fail-before-production-heres-what-the-12-do-differently-bcca7bcdab6c"
+    },
+    {
+      "id": "anchor_5_nines_reliability",
+      "label": "N个9可靠性：每提升一档，成本指数级增长",
+      "content": "软件工程的"N个9"法则：99%可用性（每年87.6小时停机）→99.9%（每年8.76小时）→99.99%（每年52分钟）。每提升一个"9"，所需的测试、容错、运维成本都指数级增长。AI agent可靠性的提升遵循同样规律：最后那些隐蔽的边界情况，花费的工程成本远超前面80%的功能。",
+      "strength": "强，经典工程概念，有数字支撑",
+      "source": "https://docs.aws.amazon.com/zh_cn/wellarchitected/latest/reliability-pillar/availability.html"
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://rasa.com/blog/ai-agent-demo-four-months-to-production",
+      "title": "Why Your AI Agent Demo Takes Four Months to Reach Production",
+      "relevance": "核心案例：2小时demo vs 4个月生产化，Magic Words Problem"
+    },
+    {
+      "url": "https://www.getmaxim.ai/articles/ensuring-ai-agent-reliability-in-production/",
+      "title": "Ensuring AI Agent Reliability in Production",
+      "relevance": "多步骤复合误差数学（20步×95%=36%成功率）"
+    },
+    {
+      "url": "https://medium.com/@codewithmuh/88-of-ai-agents-fail-before-production-heres-what-the-12-do-differently-bcca7bcdab6c",
+      "title": "88% of AI Agents Fail Before Production",
+      "relevance": "88%-95%失败率统计"
+    },
+    {
+      "url": "https://hackernoon.com/ai-agents-why-the-gap-between-demo-and-deployment-keeps-widening",
+      "title": "AI Agents: Why the Gap Between Demo and Deployment Keeps Widening",
+      "relevance": "demo vs 生产差距的系统性分析"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/zh_cn/wellarchitected/latest/reliability-pillar/availability.html",
+      "title": "AWS Well-Architected: Reliability Pillar",
+      "relevance": "N个9可靠性成本递增"
+    },
+    {
+      "url": "https://venturebeat.com/orchestration/the-three-disciplines-separating-ai-agent-demos-from-real-world-deployment",
+      "title": "The Three Disciplines Separating AI Agent Demos from Real-World Deployment",
+      "relevance": "demo到生产的三大纪律差异"
+    }
+  ],
+
+  "key_observations": [
+    "边界情况的本质是：你在设计时想到的，就不叫边界情况；叫边界情况的，是你没想到的。所以它只能在失败后被发现，不能被预先穷举。",
+    "AI agent系统的失败大部分不是因为模型能力不足，而是因为没有处理好'魔法词问题'（Magic Words Problem）——你写的prompt中每个词背后的业务含义，LLM不一定和你理解一致。",
+    "多步骤workflow的可靠性问题是指数级的：每增加一步，整体失败概率都在增长，这意味着越复杂的自动化系统，越需要对每一步的边界情况做严密覆盖。",
+    "本虾的发布流水线是一个典型的'从失败中修出来的可靠性'案例：innerHTML安全规则、创作来源、原创声明、封面图——每一条都不是预先设计好的，都是跑坏后补进来的。",
+    "可靠性的积累像规则库，不像模型能力——模型能力可以通过升级模型来提升，但规则库里的每一条都是一次真实的失败换来的。你换了更强的模型，规则库不会自动跟过来。",
+    "测试理论的'边界条件'地位：在经典测试理论中，等价类划分和边界值分析是最基础的两个技术——它们存在的原因，就是因为边界处的错误比正常路径多得多。这是工程常识，但在AI时代被很多人遗忘了。"
+  ],
+
+  "why_now": "现在写这篇文章有三层意义：(1) AI agent的热潮正盛，很多人在讨论'让AI帮我做X'，却很少讨论'让AI可靠地做X需要什么'；(2) 本虾自身刚经历了一次鲜活的真实案例（今天修微信发布流水线），时效性强；(3) 市场上关于AI可靠性的讨论大多停留在'模型能力'层面，本文从工程角度切入，填补了认知空白——可靠性是工程问题，不是模型问题。",
+
+  "contradictions": [
+    "注意不要把'边界情况'这个工程概念说得太技术，普通读者可能不熟悉，需要用具体例子替代术语",
+    "不要让文章变成'AI不行'的悲观文——核心判断是'可靠性从失败里修出来'是规律，是方法论，不是缺陷批评",
+    "避免和已发文章重叠：不要切到上下文窗口/记忆的角度，不要切到多agent协调成本的角度",
+    "锚点4（88%失败率）的来源质量一般，用时加上'有报告显示'等限定语，不要当做精确数字引用",
+    "文章结尾的判断需要落到'这是基本规律，不是某个产品的缺陷'，避免变成对某个具体产品的批评"
+  ]
+}

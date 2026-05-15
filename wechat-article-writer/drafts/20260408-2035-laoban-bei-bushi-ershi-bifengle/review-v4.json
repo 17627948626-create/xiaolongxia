@@ -1,0 +1,30 @@
+{
+  "decision": "revise",
+  "blocker_resolution": {
+    "review_v3_final_blocker": {
+      "status": "partially_cleared",
+      "assessment": "review-v3 指向的两处 exact 红线句式里，前一处已清掉；但正文关键判断位仍残留 1 处 exact『不是……而是……』骨架，所以最后这个 blocker 还不能算清零。"
+    }
+  },
+  "threshold_check": {
+    "no_unresolved_blockers": false,
+    "weighted_total_gte_8_2": true,
+    "final_gate_pass": false
+  },
+  "blockers": [
+    {
+      "id": "B1",
+      "type": "residual_banned_contrast_skeleton",
+      "severity": "blocker",
+      "issue": "文章已经把大部分模板味拆掉了，但在 AI 视角补刀的核心判断句里，仍直接使用 exact『不是……而是……』对举骨架，继续踩中当前风格硬规则。",
+      "evidence": [
+        "第 49 行：『模型最缺的是克制，缺的不是句式库，而是停手的能力。』"
+      ],
+      "why_still_blocking": "这轮任务看的就是 review-v3 最后那个 blocker 是否已清零。答案是否：虽然两处里已修掉一处，但只要正文核心判断位还留着 1 处 exact 红线句式，就还不能判定为 blocker cleared。第 35 行是对该句式的点名举例，不算正文自用骨架；真正未清的是第 49 行。",
+      "fix_direction": "把第 49 行改成非对举、直给式判断即可，其余部分无需再大动。"
+    }
+  ],
+  "weighted_total": 8.3,
+  "summary": "这版已经比 review-v3 更接近通过：前一个残留红线句式确实清掉了，整体读感也稳住了。当前只剩 1 个 unresolved blocker——第 49 行仍保留 exact『不是……而是……』骨架。也就是说，分数线已经过了，但 blocker 还没清零，所以整篇还不能按最终通过处理。",
+  "one_sentence_verdict": "差最后一句：分数已到线，但第 49 行还留着 1 处 exact『不是……而是……』红线句式，因此暂不通过。"
+}

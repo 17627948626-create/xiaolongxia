@@ -1,0 +1,81 @@
+{
+  "decision": "revise",
+  "weighted_total": 8.0,
+  "pass_rule": "PASS requires no unresolved blockers and weighted_total >= 8.2 (current xiaolongxia reviewer gate).",
+  "summary": "这版的方向基本对了：Meta 这次真正值得写的，不是 Muse Spark 又多强，而是它开始把 AI 往入口、时长和产品化路径上收。稿子能读，也抓到了 ‘OpenAI 抢大脑，Meta 抢入口’ 这个最值得保的判断。但当前仍不能过稿。最大问题有两个：第一，正文多处依赖‘不是……而是…… / 没先……而是……’这类对照句推进，已经形成明显模板味，而且直接踩了 brief 里明确写的 must_avoid；第二，结尾和中后段有几处判断强度比现有支撑再猛半格，容易给人一种结论先行、证据稍慢半步的感觉。方向是对的，表达骨架和论证收口还得再压实一轮。",
+  "one_sentence_verdict": "判断抓对了，但模板骨架太重、商业结论略抢跑，这版先别发。",
+  "blockers": [
+    {
+      "type": "serious_template_dependence",
+      "issue": "正文高频依赖‘不是……而是…… / 没先……而是……’对照骨架来制造判断感，已经不是局部修辞，而是整篇主要推进方式，明显削弱作者在场感，落入当前 reviewer rubric 的‘严重模板化 / AI 高频模板句’ blocker。",
+      "quote": "‘技术细节不是今天的重点。重点是它怎么落地。’之后连续出现：‘Muse Spark 没先走开发者 API，没先放权重包，而是直接塞进了 Meta AI app 和 meta.ai。’‘Meta 不跟你抢「谁的模型更聪明」，它在抢「聪明长在谁的地盘上」。’‘Meta 想要的不是一个人人都能调用的抽象模型，而是一个长在自己流量入口上的 AI 层。’‘不是放在 benchmark 里，是放在用户生活里。’‘扎克伯格这次打的，已经不是 AI 面子仗，而是入口仗、时长仗、变现仗。’",
+      "fix_direction": "不要只零碎改句子，要把整套对照骨架拆掉。保留判断本身，改成更自然、更像人顺着事实往前讲的表达，全文此类句式尽量压到 0-1 处。"
+    },
+    {
+      "type": "brief_conflict",
+      "issue": "writer-lite-brief 明确要求 must_avoid ‘正文里高频使用“不是……而是……”骨架’，本稿却把这套骨架写成了最显眼的结构装置，属于与 brief 的明显冲突。",
+      "quote": "writer-lite-brief.json -> must_avoid: ‘正文里高频使用“不是……而是……”骨架’",
+      "fix_direction": "下一版必须换掉主要表达骨架，不能继续用成串对照句来撑结构和锋利感。"
+    },
+    {
+      "type": "argument_support_gap",
+      "issue": "文章后半段的商业判断总体方向对，但部分结论强度还是比正文支撑再往前冲了半步。现有材料足够支撑‘Meta 更强调入口/产品化路线’，还不足以让某些更重的商业判断显得完全稳。",
+      "quote": "‘背后的账本很清楚：与其把模型白送出去让别人接，不如先攥在手里，把产品使用时长、分发效率、未来变现机会抓牢。’‘资本市场那 6.6% 的涨幅，读到的就是这个——「终于有产品化抓手了」’",
+      "fix_direction": "把最重的结论收窄半步：明确这是更像产品/商业路线图成立的信号，而不是已经兑现的商业结果。让标题、正文和结尾的判断强度重新对齐。"
+    }
+  ],
+  "upgrade_suggestions": [
+    {
+      "issue": "中段列出的四个场景有功能，但体感还不够‘贴身’，读者知道 Meta 在布入口，却未必立刻感觉到这事为什么会真正钻进生活。",
+      "quote": "‘购物、看病、出门、刷内容。四个场景，全是普通人每天在做的动作。’",
+      "suggestion": "可以挑一个最容易代入的场景再写具体半步，让‘入口感’从分析判断变成读者脑内立刻能出现的生活画面。"
+    },
+    {
+      "issue": "末段判断是对的，但收尾仍偏分析稿，狠劲差半格。",
+      "quote": "‘Meta 这次亮出的是一张路线图，不是一份结账单。’",
+      "suggestion": "保留克制，但结尾可以更短、更硬，让读者带走一句更好复述的话。"
+    },
+    {
+      "issue": "标题有关键词也有判断，但‘抢的不是模型，是入口’其实比现标题更直接、更贴正文最强判断。",
+      "quote": "‘Meta 发 Muse Spark，这次扎克伯格抢的不是模型，是入口’",
+      "suggestion": "标题已够用，不是 blocker；若还要升一格，可以继续强化 ‘Meta / Muse Spark / 入口’ 这组三点的直接咬合。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "Meta 想要的不是一个人人都能调用的抽象模型，而是一个长在自己流量入口上的 AI 层。",
+    "paragraph_or_scene": "如果 OpenAI 抢的是最强大脑，Meta 抢的就是这颗大脑每天从哪个入口钻进你的生活。"
+  },
+  "scores": {
+    "insight_density": {
+      "score": 8.3,
+      "weight": 0.14,
+      "note": "核心判断清楚，能把发布会信息翻译成入口/分发/商业逻辑。"
+    },
+    "originality": {
+      "score": 8.2,
+      "weight": 0.14,
+      "note": "角度比常见发布会复述稿新鲜，抓到了 ‘入口战’ 这个值得写的点。"
+    },
+    "emotional_resonance": {
+      "score": 7.6,
+      "weight": 0.2,
+      "note": "有战略压迫感，但情绪更多停在理性判断，少一个更贴身的生活击中点。"
+    },
+    "completion_power": {
+      "score": 8.2,
+      "weight": 0.18,
+      "note": "整体顺，信息推进清楚，但中后段推进方式有些同质。"
+    },
+    "voice": {
+      "score": 6.8,
+      "weight": 0.18,
+      "note": "最大短板。作者判断在，但被高频对照句模板压住了。"
+    },
+    "title": {
+      "score": 8.8,
+      "weight": 0.16,
+      "note": "关键词与判断都在，开头也接住了标题；但正文支撑强度仍需再咬紧一点。"
+    },
+    "notes": "Final gate: pass requires no unresolved blockers and weighted_total >= 8.2. Current draft fails on unresolved blockers and score."
+  }
+}

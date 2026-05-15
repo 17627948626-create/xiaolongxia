@@ -1,0 +1,211 @@
+{
+  "topic": "你和 AI 说的话，以后可能会在法庭上被当证据念出来",
+  "profile": "小龙虾有话说",
+  "article_type": "观点",
+  "prototype": "热点解读型",
+  "hot_hook": "美国律师开始公开提醒：你和 AI 的聊天记录，未来可能会在诉讼里被当成证据调出来。",
+  "why_now": "Reuters 于 2026-04-15 报道美国律师正因一项最新法律裁定而提醒当事人，不要把 AI 聊天当成保密咨询；与此同时，OpenAI 自己在数据控制 FAQ 和 NYT 数据保全争议说明里也把一个现实摆上台面：聊天记录会进入留存、删除、法律保全和访问控制的体系。这个入口足够新，且能直接连到普通用户已经形成的真实使用习惯。",
+  "search_keywords": [
+    "AI 聊天记录 证据",
+    "AI chats used against you Reuters",
+    "OpenAI legal hold deleted chats",
+    "Temporary Chat 30 days",
+    "Anthropic Materials inputs outputs terms"
+  ],
+  "angle_candidates": [
+    {
+      "name": "隐私恐慌角度",
+      "summary": "强调别把私密话对 AI 说太多。",
+      "decision": "rejected",
+      "reason": "太泛，也太像常规隐私提醒，压不出本虾真正判断。"
+    },
+    {
+      "name": "法律科普角度",
+      "summary": "解释证据规则、保密特权和保全义务。",
+      "decision": "rejected",
+      "reason": "容易写成术语搬运，离普通读者的真实使用场景太远。"
+    },
+    {
+      "name": "工作台迁移角度",
+      "summary": "从证据风险切入，写清 AI 聊天框已经从随口聊聊变成可追溯工作台。",
+      "decision": "selected",
+      "reason": "既贴今天的新闻入口，也能落到更大的结构性变化。"
+    }
+  ],
+  "selected_thesis": "真正值得警惕的，不是 AI 会不会偷听你，而是人类已经把它用成了草稿箱、顾问和半个同事；一旦卷入纠纷，这些记录就会从『聊天』变成可追溯的工作痕迹。",
+  "main_insight": "AI 聊天框的产品外观还是聊天，但它在现实中的功能，已经越来越像工作台。界面没变，法律性质和组织后果却在变。",
+  "supporting_insights": [
+    "证据风险上升，不只是因为平台会留存记录，更因为用户自己正在把重要判断、改稿过程、决策过程都放进去。",
+    "所谓『我只是问问 AI』，在很多场景下已经站不住，因为聊天内容本身就是思考轨迹、操作痕迹和责任链的一部分。",
+    "真正的分水岭不是聊天是否私密，而是你是否在把 AI 当外脑使用；一旦当外脑用，它就更像工作系统，而不是随口聊天窗口。"
+  ],
+  "anchors": [
+    {
+      "id": "anchor_reuters_2026_04_15",
+      "label": "Reuters：美国律师因最新裁定提醒，AI 聊天可能被拿来对付你",
+      "strength": "hard",
+      "source_type": "newswire_report",
+      "why_it_matters": "这给文章提供了明确的 why-now：风险提醒已经从抽象讨论进入律师对真实诉讼后果的公开警告。",
+      "facts": [
+        "Reuters 于 2026-04-15 发布 Mike Scarcella 报道，主题是美国律师提醒公众：不要把 AI 聊天机器人当成保密渠道，因为这些聊天未来可能在诉讼中被拿来对自己不利。",
+        "该报道把『与 AI 对话不等于与律师沟通』这层风险前置到了普通用户面前。"
+      ],
+      "source": {
+        "title": "AI ruling prompts warnings from US lawyers: Your chats could be used against you",
+        "publisher": "Reuters",
+        "author": "Mike Scarcella",
+        "published_at": "2026-04-15",
+        "url": "https://www.reuters.com/world/us/ai-ruling-prompts-warnings-us-lawyers-your-chats-could-be-used-against-you-2026-04-15/",
+        "verification_note": "Reuters 原文页未直接抓取成功，使用 web_search 返回的 Reuters 摘要与 Westlaw 引用页作为已验证新闻线索；按 paraphrase_only 使用，不写直引。"
+      }
+    },
+    {
+      "id": "anchor_openai_controls_30d",
+      "label": "OpenAI Data Controls FAQ：Temporary Chats 30 天删除，普通关闭训练也仍保留历史",
+      "strength": "hard",
+      "source_type": "official_policy_help",
+      "why_it_matters": "这说明用户以为『不训练=不留痕』是错的。训练、历史留存、临时聊天、法律保留是几套不同逻辑。",
+      "facts": [
+        "OpenAI Help Center 的 Data Controls FAQ 写明：Temporary Chats 会在 30 天后从系统删除，不进入历史，也不创建 memory。",
+        "同页也写明：关闭“Improve the model for everyone”后，对话仍会出现在聊天历史中，只是不再用于训练。",
+        "FAQ 还特别提示：某些服务的数据留存可能受最近法律进展影响，并指向 OpenAI 关于 NYT 数据要求的说明。"
+      ],
+      "source": {
+        "title": "Data Controls FAQ",
+        "publisher": "OpenAI Help Center",
+        "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+        "observed_at": "2026-04-16T20:05:19+08:00"
+      }
+    },
+    {
+      "id": "anchor_openai_nyt_legal_hold",
+      "label": "OpenAI：曾因 NYT 诉讼中的法院命令，被要求对部分 consumer ChatGPT / API 内容做法律保全",
+      "strength": "hard",
+      "source_type": "official_legal_update",
+      "why_it_matters": "这不是抽象担忧，而是平台自己公开承认：一旦进入诉讼，删除、30 天保留、企业排除、ZDR 例外，都会变成法律与系统问题。",
+      "facts": [
+        "OpenAI 在回应《纽约时报》数据要求的说明中写明：其曾处于一项法律命令之下，需要对 consumer ChatGPT 和 API 内容进行超出常规的保全；到 2025-09-26 该义务结束。",
+        "同页说明：Enterprise 与 Edu 不受该影响，Zero Data Retention API 也不受影响，因为相关输入输出本就不保留。",
+        "OpenAI 还明确写道，受命令覆盖的数据会被单独存放，仅由小范围、可审计的法务与安全团队按法律义务访问。"
+      ],
+      "source": {
+        "title": "How we’re responding to The New York Times’ data demands in order to protect user privacy",
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/response-to-nyt-data-demands/",
+        "observed_at": "2026-04-16T20:05:33+08:00"
+      }
+    },
+    {
+      "id": "anchor_anthropic_materials_terms",
+      "label": "Anthropic consumer terms：输入输出被统一定义为 Materials，且组织域账号可被管理员监控",
+      "strength": "medium_hard",
+      "source_type": "official_terms",
+      "why_it_matters": "这能补强『聊天框像聊天，系统上更像生产资料』这个判断：平台层面对话并不是被天然当作闲聊，而是可被治理、留存、访问和处理的材料。",
+      "facts": [
+        "Anthropic 在 consumer terms 中把 Inputs 和 Outputs 统称为 Materials。",
+        "条款写明：若用户使用雇主或组织拥有的邮箱，账号可能被接入组织 enterprise account，管理员可能监控和控制该账号，并访问 Materials。",
+        "条款还写明：Anthropic 可用 Materials 来提供、维护、改进服务；若用户未 opt out，也可用于训练。"
+      ],
+      "source": {
+        "title": "Anthropic Consumer Terms",
+        "publisher": "Anthropic",
+        "url": "https://www.anthropic.com/legal/consumer-terms",
+        "observed_at": "2026-04-16T20:05:20+08:00"
+      }
+    }
+  ],
+  "source_list": [
+    {
+      "title": "AI ruling prompts warnings from US lawyers: Your chats could be used against you",
+      "publisher": "Reuters",
+      "author": "Mike Scarcella",
+      "published_at": "2026-04-15",
+      "url": "https://www.reuters.com/world/us/ai-ruling-prompts-warnings-us-lawyers-your-chats-could-be-used-against-you-2026-04-15/",
+      "role": "timely trigger"
+    },
+    {
+      "title": "Data Controls FAQ",
+      "publisher": "OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+      "role": "retention and user controls"
+    },
+    {
+      "title": "How we’re responding to The New York Times’ data demands in order to protect user privacy",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/index/response-to-nyt-data-demands/",
+      "role": "legal-hold concrete case"
+    },
+    {
+      "title": "US privacy policy | OpenAI",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/policies/privacy-policy/",
+      "role": "baseline policy on user content and legal disclosures"
+    },
+    {
+      "title": "Anthropic Consumer Terms",
+      "publisher": "Anthropic",
+      "url": "https://www.anthropic.com/legal/consumer-terms",
+      "role": "platform treatment of inputs/outputs as materials"
+    }
+  ],
+  "caveats": [
+    "Reuters 这条更多是法律记者与律师提醒维度，适合做入口，不宜把它写成已经形成普遍司法定论。",
+    "不同平台、不同套餐、不同地区的数据留存与访问权限并不相同，正文里不要一刀切写成所有 AI 聊天都会长期保存。",
+    "文章重点应落在『使用性质改变了记录性质』，而不是泛泛渲染平台监控一切。"
+  ],
+  "writing_implications": {
+    "must_land": [
+      "前 300 字要把『证据风险』和『工作台迁移』两件事接上。",
+      "中段要区分训练、历史、临时聊天、法律保全，不要混成一个桶。",
+      "必须给一个普通人能代入的场景：改合同、写申诉、润色邮件、推演说辞、整理决策。"
+    ],
+    "must_avoid": [
+      "不要写成 AI 偷窥论。",
+      "不要展开成证据法入门。",
+      "不要把所有责任都推给平台，用户自己的使用方式是关键一刀。"
+    ]
+  },
+  "recommended_title_directions": [
+    "你和 AI 说的话，以后可能会在法庭上被念出来",
+    "别再把 AI 当随口聊聊了，它越来越像你的工作台",
+    "真正危险的不是 AI 偷听你，是它开始替你干活"
+  ],
+  "fact_records": [
+    {
+      "id": "fr_reuters_trigger",
+      "kind": "official_report",
+      "claim": "Reuters 报道美国律师因一项最新裁定公开提醒 AI 聊天可能被用于不利证据。",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "source_url": "https://www.reuters.com/world/us/ai-ruling-prompts-warnings-us-lawyers-your-chats-could-be-used-against-you-2026-04-15/",
+      "note": "仅做归纳转述，不写 Reuters 原句直引。"
+    },
+    {
+      "id": "fr_openai_data_controls",
+      "kind": "policy_page",
+      "claim": "Temporary Chats 30 天删除；关闭模型训练后聊天仍在 history；最近法律进展可能影响某些服务的数据留存。",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "observed_at": "2026-04-16T20:05:19+08:00",
+      "source_url": "https://help.openai.com/en/articles/7730893-data-controls-faq"
+    },
+    {
+      "id": "fr_openai_legal_hold",
+      "kind": "policy_page",
+      "claim": "OpenAI 曾因 NYT 诉讼中的法律命令，对 consumer ChatGPT 和部分 API 内容执行超常规保全；Enterprise、Edu 与 ZDR 有排除或例外。",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "observed_at": "2026-04-16T20:05:33+08:00",
+      "source_url": "https://openai.com/index/response-to-nyt-data-demands/"
+    },
+    {
+      "id": "fr_anthropic_materials",
+      "kind": "terms_page",
+      "claim": "Anthropic 将 Inputs 与 Outputs 合称 Materials，并提示组织域账号可能被管理员监控与访问相关材料。",
+      "quote_mode": "paraphrase_only",
+      "attribution_required": true,
+      "observed_at": "2026-04-16T20:05:20+08:00",
+      "source_url": "https://www.anthropic.com/legal/consumer-terms"
+    }
+  ]
+}

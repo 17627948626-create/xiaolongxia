@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "hard_fail": false,
+  "updated_at": "2026-04-26T12:10:09Z",
+  "scope": "research_artifact_high_risk_fact_records_and_sanity",
+  "detected_categories": [
+    "api_snapshot",
+    "quote_mode"
+  ],
+  "corruption_hits": [],
+  "issues": [],
+  "fact_record_count": 6
+}

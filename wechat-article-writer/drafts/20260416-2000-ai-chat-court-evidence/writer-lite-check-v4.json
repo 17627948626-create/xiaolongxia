@@ -1,0 +1,33 @@
+{
+  "draft_version": "draft-v4",
+  "generated_at": "2026-04-16T15:54:52Z",
+  "updated_at": "2026-04-16T15:54:52Z",
+  "change_reason": "writer first draft completed; run lite preflight before review",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/draft-v4.md",
+    "draft_sha256": "62bf24a36483c7efdf3f64b6a0e78c402c6586e3d7f7ce54cc659055aea2bccd",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/writer-lite-brief.json",
+    "brief_sha256": "b6efe9cf0aed22de6d1c32c53a0f5105c1c799ea88d88a890a9b045b17fb11e0",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260416-2000-ai-chat-court-evidence/research.json",
+    "research_sha256": "ab78319fa67b28edf073ed13cda06b7b957905a38b181c1bc07f6dd930df7b8b"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

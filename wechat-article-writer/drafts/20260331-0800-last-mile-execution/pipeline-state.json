@@ -1,0 +1,114 @@
+{
+  "slug": "20260331-0800-last-mile-execution",
+  "draft_dir": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260331-0800-last-mile-execution",
+  "公众号": "小龙虾有话说",
+  "article_type": "观点",
+  "word_count_target": [1200, 2500],
+  "purpose": "分析AI Agent执行链路最后一英里的脆弱性：拿到答案到真正干成事之间有一条充满卡点的脆弱链路，Agent的真正硬仗不在推理，在执行闭环",
+  "topic": {
+    "title": "Agent 为什么总在最后一步翻车",
+    "angle": "执行链路的最后一英里太脆了",
+    "type": "观点",
+    "subject": "AI Agent执行链路"
+  },
+  "run_id": "20260331-0800-orchestrator",
+  "source_mode": "cron_production",
+  "created_at": "2026-03-31T00:02:00Z",
+  "last_draft_file": "draft-v2.md",
+  "steps_completed": ["researcher", "writer", "reviewer", "fact_checker", "humanizer", "layout"],
+  "children": {
+    "researcher": {
+      "session_key": "agent:xiaolongxia:subagent:555a8d62-e609-48bd-9131-5eb2a4d662e4",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "status": "completed",
+      "artifacts": ["research.json", "outline.md"],
+      "completed_at": "2026-03-31T00:07:00Z"
+    },
+    "writer": {
+      "session_key": "agent:xiaolongxia:subagent:d7b9a1d8-cf59-44c9-bdd5-de57d802c0af",
+      "model": "github-copilot/claude-opus-4.6",
+      "status": "completed",
+      "artifacts": ["draft-v2.md"],
+      "completed_at": "2026-03-31T00:19:00Z"
+    },
+    "reviewer": {
+      "session_key": "agent:xiaolongxia:subagent:8ebdb01c-a92a-44b9-812a-d2ff4c44853a",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "status": "completed",
+      "artifacts": ["review-v2.json"],
+      "completed_at": "2026-03-31T00:23:00Z",
+      "result": "PASS",
+      "weighted_total": 8.58
+    },
+    "fact_checker": {
+      "session_key": "agent:xiaolongxia:subagent:69b14158-4ca5-48a5-858f-dd936a9f62b6",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "status": "completed",
+      "artifacts": ["fact-check-v2.json"],
+      "completed_at": "2026-03-31T00:32:00Z",
+      "result": "PASS"
+    },
+    "humanizer": {
+      "session_key": "agent:xiaolongxia:subagent:2649669b-4c81-4b7a-946f-5d07867a21f0",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "status": "completed",
+      "artifacts": ["final.md"],
+      "completed_at": "2026-03-31T00:37:00Z"
+    },
+    "layout": {
+      "session_key": "agent:xiaolongxia:subagent:6d0314e2-780e-4499-b3e4-322d80088e46",
+      "model": "github-copilot/claude-sonnet-4.6",
+      "status": "completed",
+      "artifacts": ["final-layout.md"],
+      "completed_at": "2026-03-31T00:42:00Z"
+    }
+  },
+  "artifact_provenance": {
+    "research.json": {
+      "producer_type": "subagent",
+      "producer_step": "researcher",
+      "session_key": "agent:xiaolongxia:subagent:555a8d62-e609-48bd-9131-5eb2a4d662e4",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "outline.md": {
+      "producer_type": "subagent",
+      "producer_step": "researcher",
+      "session_key": "agent:xiaolongxia:subagent:555a8d62-e609-48bd-9131-5eb2a4d662e4",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "draft-v2.md": {
+      "producer_type": "subagent",
+      "producer_step": "writer",
+      "session_key": "agent:xiaolongxia:subagent:d7b9a1d8-cf59-44c9-bdd5-de57d802c0af",
+      "model": "github-copilot/claude-opus-4.6"
+    },
+    "review-v2.json": {
+      "producer_type": "subagent",
+      "producer_step": "reviewer",
+      "session_key": "agent:xiaolongxia:subagent:8ebdb01c-a92a-44b9-812a-d2ff4c44853a",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "fact-check-v2.json": {
+      "producer_type": "subagent",
+      "producer_step": "fact_checker",
+      "session_key": "agent:xiaolongxia:subagent:69b14158-4ca5-48a5-858f-dd936a9f62b6",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "final.md": {
+      "producer_type": "subagent",
+      "producer_step": "humanizer",
+      "session_key": "agent:xiaolongxia:subagent:2649669b-4c81-4b7a-946f-5d07867a21f0",
+      "model": "github-copilot/claude-sonnet-4.6"
+    },
+    "final-layout.md": {
+      "producer_type": "subagent",
+      "producer_step": "layout",
+      "session_key": "agent:xiaolongxia:subagent:6d0314e2-780e-4499-b3e4-322d80088e46",
+      "model": "github-copilot/claude-sonnet-4.6"
+    }
+  },
+  "cover_url": null,
+  "cover_audit": null,
+  "current_draft": "final-layout.md",
+  "revision_cycle": 1
+}

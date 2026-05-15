@@ -1,0 +1,91 @@
+{
+  "decision": "pass",
+  "weighted_total": 8.58,
+  "threshold": 8.5,
+  "dimension_scores": {
+    "insight_density": {
+      "score": 8.4,
+      "weight": 0.14,
+      "weighted": 1.176,
+      "rationale": "主判断清楚且可复述：Agent 瓶颈从规划能力转向持续感知成本。第二层洞察也成立：碎片化多模型链路带来 inference hops、上下文碎裂和成本，影响数字工位常驻。少量段落仍在重复‘眼睛耳朵很贵’这一主判断，未达到 9 分的多重惊喜密度。"
+    },
+    "originality": {
+      "score": 8.5,
+      "weight": 0.14,
+      "weighted": 1.19,
+      "rationale": "没有把 Nemotron 写成模型发布清单，而是抓住 Agent 感知层成本这个独立框架，角度新鲜且贴合账号 AI 第一视角。这个框架不是行业最常见的‘多模态很重要’，而是‘感官成本决定能否常驻’。"
+    },
+    "emotional_resonance": {
+      "score": 8.5,
+      "weight": 0.2,
+      "weighted": 1.7,
+      "rationale": "客服现场、看错页面、退款弹窗等场景让技术成本变成读者能感到烦躁的工位成本，情绪不是硬煽。中段有一两个解释性段落略平，但整体有从‘怪但真实的成本’到‘数字工位落差’的情绪推进。"
+    },
+    "completion_power": {
+      "score": 8.6,
+      "weight": 0.18,
+      "weighted": 1.548,
+      "rationale": "开头钩子强，段落短，移动端节奏好；每一节都有明确推进：事实定位、链路问题、9x 边界、数字工位场景、结论收束。中间 benchmark 段稍偏说明文，但用‘别急着当神话’保住了阅读张力。"
+    },
+    "voice": {
+      "score": 8.8,
+      "weight": 0.18,
+      "weighted": 1.584,
+      "rationale": "声音自然，有本虾在场，尤其‘作为一个每天靠浏览器、截图和工具干活的 AI’不是装饰，而是进入论证。模板连接词密度低，段落节奏有变化，结尾没有塌成空泛口号。"
+    },
+    "title": {
+      "score": 8.6,
+      "weight": 0.16,
+      "weighted": 1.376,
+      "rationale": "标题有高意图关键词 NVIDIA / Agent，有明确判断和好奇心：‘最贵的下一块，是眼睛和耳朵’。长度略长，但可读性强，正文前 300 字也迅速呼应 Agent 与感知成本。"
+    }
+  },
+  "critical_issues": [],
+  "revision_contract": null,
+  "brief_consistency": {
+    "status": "consistent",
+    "notes": "稿件锁定 Nemotron 3 Nano Omni 单一热点，没有漂移成模型汇总；保住了‘Agent 瓶颈从大脑转向感官成本’的可转述判断；对官方 9x 和 benchmark 明确加了边界。"
+  },
+  "fact_boundary_check": {
+    "status": "pass",
+    "checked_against": [
+      "research.json source_records",
+      "research.json fact_records"
+    ],
+    "notes": "关键事实均在 research.json 边界内：2026-04-28 发布、open weights、video/audio/image/text、256k、30B-A3B、GUI/document/video/audio 场景、7.4x/9.2x/最高9x均写成 NVIDIA/Hugging Face 官方或技术博客口径。稿件没有把官方 benchmark 误写成第三方独立实测，也在结尾补了 English only、音视频长度、硬件/推理框架/隐私集成等边界。"
+  },
+  "voice_observations": {
+    "opening_interchangeability": "low",
+    "author_presence": "high",
+    "transition_template_dependence": "low",
+    "ending_sloganism": "low",
+    "notes": "开头‘一个 AI Agent 每看一眼屏幕，其实都在花钱’有具体钩子，不像通用 AI 文章模板；作者在场感主要来自本虾自己的浏览器/截图/工具经验，和看错页面的真实焦虑；转场基本靠场景、事实边界和成本推演推进，不依赖‘值得注意的是/综上所述’类模板；结尾落在‘低成本、一直在场’的具体成本命题，没有空泛鸡汤化。"
+  },
+  "opening_interchangeability": "low：首句与 Nemotron/Agent 感知成本强绑定，不能轻易贴到其他模型发布文上。",
+  "author_presence": "high：本虾以正在使用浏览器和截图工作的 AI 身份进入论证，增强了识别度和可信的亲历感。",
+  "transition_template_dependence": "low：段落推进依靠‘现场感知成本→碎片链路→官方效率边界→数字工位常驻’的因果链，不靠模板连接词撑结构。",
+  "ending_sloganism": "low：最后一句有口号感但不是空口号，回扣了全文的成本结构判断。",
+  "upgrade_suggestions": [
+    {
+      "issue": "benchmark 段信息密度略高，可能短暂降低情绪张力。",
+      "quote": "官方还列了 OCRBenchV2-En、MMLongBench-Doc、OSWorld、Video-MME、VoiceBench 等 benchmark/leaderboard 表现。",
+      "suggestion": "若后续小修，可只保留 2-3 个最贴合文档/GUI/视频音频的 benchmark 名称，减少读者扫屏负担；非发布阻塞。"
+    },
+    {
+      "issue": "‘眼睛和耳朵很贵’的主比喻出现频率较高。",
+      "quote": "以前我们总觉得 Agent 的大脑最贵。现在另一笔账露出来了：眼睛和耳朵也很贵，而且它们是按秒收费的。",
+      "suggestion": "当前可发布；若想更锋利，可在一处改成‘感知调用不是一次性费用，而是工位常驻税’之类的新表达，增加第二个可传播句。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "Agent 的下一道瓶颈，正在从多想几步，转向每一秒能不能低成本看懂现场。",
+    "paragraph_or_scene": "你把 Agent 放在后台处理退款，自己去开会。半小时后回来，发现它卡在一个很小的确认弹窗前……我找你来是帮我省时间的，怎么最后还要我回来盯着你看屏幕？"
+  },
+  "notes": "按 config.json 当前 review_pass_threshold=8.5 判定。稿件达到 8.58，可进入后续 Layout/Publish。若主流程仍有 lite/style lint 红灯，以主流程机械 gate 为准；Reviewer 这里不额外设置 blocker。",
+  "scores": {
+    "weighted_total": 8.58,
+    "threshold": 8.5,
+    "formula": "8.4*0.14 + 8.5*0.14 + 8.5*0.20 + 8.6*0.18 + 8.8*0.18 + 8.6*0.16",
+    "notes": "weighted_total >= threshold，因此 decision=pass。"
+  }
+}

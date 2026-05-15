@@ -1,0 +1,60 @@
+{
+  "decision": "revise",
+  "summary": "这一版比上一轮更稳，标题方向、开头判断和整体语感都已经立住了，‘ChatGPT 开始进公司接活’这个入口也抓得住人。但当前稿子仍然偏像一篇判断清楚的短评：核心结论基本成立，却还没有被足够多的具体支撑和层层推进压到真正过线。中段围绕‘竞争单位变了’反复换说法，新增信息不够多，导致洞察密度和完读力在后半段下滑；同时，OpenAI 与 Google 的并行信号被提到，但还没有完全榨出‘组织入口争夺战已经成型’这层更硬的行业判断。整体方向对、完成度高于上一轮，但按 7.8 的活阈值看，仍差小半步。",
+  "one_sentence_verdict": "方向是对的，开头和语感也够强，但中段推进与论证支撑还差一口气，draft-v2 仍需 revise。",
+  "critical_issues": [
+    {
+      "type": "evidence_chain_underpowered",
+      "issue": "标题方向《ChatGPT 开始进公司“接活”了，OpenAI 要卖的不只是助手，而是数字同事》把判断抬到了组织级产品迁移，但正文更多是在做概念翻译，真正把 shared、Slack、schedule、approval、RBAC 压成‘数字同事开始上岗’的论证还不够厚，导致标题承诺只兑现了七八成。",
+      "quote": "shared，说明这个 agent 不是你私藏的小工具，而是团队共用资产；Slack，说明它能接在大家本来就在用的协作入口上；schedule，说明它不必等人每次手动召唤，可以按周期主动跑；approval 和 RBAC，说明它做的已经不是无后果的小试验，公司要提前规定谁能让它动手、谁能改它、谁来拍板放行。",
+      "fix_direction": "保留这段人话翻译，但后面必须再补一刀更具体的结论：为什么这些设计一旦同时出现，竞争单位就从‘聊天助手’切到‘组织执行位’。最好明确写出：能接活只是第一层，更值钱的是能被多人共用、能接进协作链、还能被治理和追责。",
+      "penalized_dimensions": ["insight_density", "completion_power", "title"]
+    },
+    {
+      "type": "middle_section_repetition",
+      "issue": "中段多处都在重复‘从个人入口变成组织入口’这一主判断，但新增信息和推进力度不足，读者会感到是在换句式重申同一个观点，后半程的阅读驱动力被稀释。",
+      "quote": "前一阶段，大家抢的是个人入口：谁回答更顺，谁写得更像人，谁更适合你一个人提效。那时候 AI 更像私人助理，服务对象是“我”。\n\n现在问题抬到了组织层：谁能先接进团队日常，谁能被多人共用，谁能挂上权限、审批、监控这些现实世界的门卡。服务对象也跟着变成了“我们”。",
+      "fix_direction": "压缩 1—2 段同义复述，把省出来的位置换成真正新增的一层：比如‘一旦接进 Slack、知识库、审批流，替换成本为什么不再只是换模型账号’，或‘企业为什么愿意为治理能力而不是聊天能力付钱’。让每一节都推进一格，而不是再说一遍主论点。",
+      "penalized_dimensions": ["insight_density", "completion_power"]
+    },
+    {
+      "type": "comparison_not_fully_cashed_out",
+      "issue": "OpenAI 和 Google 同时抬高企业 agent 叙事，这本来是文章最有潜力的第二刀，但目前只是点到为止，还没有彻底落成一个更能被读者复述的行业判断，所以新鲜感和洞察力度还没被榨干。",
+      "quote": "这也是为什么我觉得这事别写成功能横评。\n\n重点不在 OpenAI 多几个按钮，Google 多几个平台名；重点在两家几乎同一时间把主卖点抬到了同一层。OpenAI 在讲 shared agent、Slack、approval、集中管理；Google 也在讲 every employee、every workflow、build、scale、govern、optimize。",
+      "fix_direction": "不用扩写成功能横评，但建议把这组并行信号再压实成一句更不可替换的判断：两家同一时间把共享、治理、流程入口抬成主卖点，说明模型公司现在争的已经不是‘员工会不会偶尔打开你’，而是‘公司会不会把默认流程接到你这里’。",
+      "penalized_dimensions": ["originality", "insight_density"]
+    }
+  ],
+  "upgrade_suggestions": [
+    {
+      "issue": "标题方向强，但略长，后半句还有一点解释腔。",
+      "quote": "《ChatGPT 开始进公司“接活”了，OpenAI 要卖的不只是助手，而是数字同事》",
+      "suggestion": "保留‘进公司接活’这个爆点入口，后半句可以再收紧一点，让判断更硬、更短、更像一句能被复述的结论。"
+    },
+    {
+      "issue": "结尾判断已经对了，但最后一脚还可以更具体。",
+      "quote": "真正的大变化，常常不是模型又答对了一道题，而是它终于被允许进门接活了。",
+      "suggestion": "在末段前再补一个现实后果，例如‘一旦进门，替换成本会从换模型变成换流程’，再落最后一句，冲击力会更高。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "以后大家抢的不是谁更会答，而是谁先被接进组织协作链路里。",
+    "paragraph_or_scene": "‘比如销售线索来了，它先分类；客户反馈进来，它先分流；周会前，它先把几个人的更新揉成一版简报；一个流程每周都要跑三遍，它先把前半段做完，再把需要人拍板的地方交出来。到这一步，AI 就已经站在流程里面了。’ 这一段最值得保，既有人话画面，也把企业黑话翻译成了真实场景。"
+  },
+  "voice_observations": {
+    "opening_interchangeability": "low",
+    "author_presence": "high",
+    "transition_template_dependence": "medium",
+    "ending_sloganism": "medium",
+    "notes": "开头落判断很快，作者在场感明确，没有明显平台腔；主要问题是中段开始更依赖‘前一阶段/现在’‘重点不在……而在……’这种结构性推进，节奏有点同构。结尾句子本身好记，但在落地代价还没完全写透的情况下，略微先于论证收束。"
+  },
+  "scores": {
+    "insight_density": 7.6,
+    "originality": 7.5,
+    "emotional_resonance": 7.4,
+    "completion_power": 7.4,
+    "voice": 8.2,
+    "title": 8.0
+  },
+  "weighted_total": 7.67
+}

@@ -1,0 +1,296 @@
+{
+  "artifact_provenance": {
+    "draft-v2.md": {
+      "label": "writer-20260416-2000-ai-chat-court-evidence-v2-pre-review-repair",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:9641250a-4b11-4c17-b54d-600376c0d58f",
+      "updated_at": "2026-04-16T15:31:38Z"
+    },
+    "draft-v3.md": {
+      "label": "writer-20260416-2000-ai-chat-court-evidence-v3-quote-fix",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:eec3100c-051e-4b47-8c1e-bc514917e115",
+      "updated_at": "2026-04-16T15:33:14Z"
+    },
+    "draft-v4.md": {
+      "label": "writer-20260416-2000-ai-chat-court-evidence-v4-faq-fix",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:58ef1b33-0a57-4e23-906b-087e6b96d2cb",
+      "updated_at": "2026-04-16T15:54:52Z"
+    },
+    "draft-v5.md": {
+      "label": "writer-20260416-2000-ai-chat-court-evidence-v5-revise-v2",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:49a10a93-96e7-45e5-bda6-c9c328627bee",
+      "updated_at": "2026-04-16T17:03:23Z"
+    },
+    "draft-v6.md": {
+      "label": "writer-20260416-2000-ai-chat-court-evidence-v6-quote-mark-fix",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:257e7e73-55e0-4cfe-b224-ba0ce231d12c",
+      "updated_at": "2026-04-16T17:05:04Z"
+    },
+    "draft-v7.md": {
+      "label": "writer-20260416-2000-ai-chat-court-evidence-v7-last-line-fix",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:a3bc77c9-ec4f-4998-9548-911980b79b94",
+      "updated_at": "2026-04-16T17:24:37Z"
+    },
+    "draft.md": {
+      "label": "writer-20260416-2000-ai-chat-court-evidence-v1",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:3d0ab532-5706-4062-90ba-04d1d1796153",
+      "updated_at": "2026-04-16T15:29:38Z"
+    },
+    "final-layout.md": {
+      "label": "layout-20260416-2000-ai-chat-court-evidence-v1",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:247f69b6-2c17-496b-9d3b-710d6bdc1494",
+      "updated_at": "2026-04-16T17:34:14Z"
+    },
+    "final.md": {
+      "label": "humanizer-20260416-2000-ai-chat-court-evidence-v1",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:bea7dcb2-5619-41ee-82aa-c24ea20d468e",
+      "updated_at": "2026-04-16T17:34:14Z"
+    },
+    "outline-gate.json": {
+      "label": "researcher-20260416-2000-ai-chat-court-evidence",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:05cd3bd0-111a-4b70-aaaa-b2af5c5d2e64",
+      "updated_at": "2026-04-16T13:37:20Z"
+    },
+    "outline.md": {
+      "label": "researcher-20260416-2000-ai-chat-court-evidence",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:05cd3bd0-111a-4b70-aaaa-b2af5c5d2e64",
+      "updated_at": "2026-04-16T13:37:20Z"
+    },
+    "research-gate.json": {
+      "label": "researcher-20260416-2000-ai-chat-court-evidence",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:05cd3bd0-111a-4b70-aaaa-b2af5c5d2e64",
+      "updated_at": "2026-04-16T13:37:20Z"
+    },
+    "research.json": {
+      "label": "researcher-20260416-2000-ai-chat-court-evidence",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:05cd3bd0-111a-4b70-aaaa-b2af5c5d2e64",
+      "updated_at": "2026-04-16T13:37:20Z"
+    },
+    "review-v2.json": {
+      "label": "reviewer-20260416-2000-ai-chat-court-evidence-v2",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:80363c2a-883a-47cb-92f2-9387c83d4c3b",
+      "updated_at": "2026-04-16T17:34:32Z"
+    }
+  },
+  "children": {
+    "humanizer": [
+      {
+        "artifacts": [
+          "final.md"
+        ],
+        "completed_at": "2026-04-16T17:34:14Z",
+        "label": "humanizer-20260416-2000-ai-chat-court-evidence-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:bea7dcb2-5619-41ee-82aa-c24ea20d468e",
+        "status": "done"
+      }
+    ],
+    "layout": [
+      {
+        "artifacts": [
+          "final-layout.md"
+        ],
+        "completed_at": "2026-04-16T17:34:14Z",
+        "label": "layout-20260416-2000-ai-chat-court-evidence-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:247f69b6-2c17-496b-9d3b-710d6bdc1494",
+        "status": "done"
+      }
+    ],
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md",
+          "outline-gate.json",
+          "research-gate.json"
+        ],
+        "completed_at": "2026-04-16T13:37:20Z",
+        "label": "researcher-20260416-2000-ai-chat-court-evidence",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:05cd3bd0-111a-4b70-aaaa-b2af5c5d2e64",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "review-v2.json"
+        ],
+        "completed_at": "2026-04-16T17:34:32Z",
+        "label": "reviewer-20260416-2000-ai-chat-court-evidence-v2",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:80363c2a-883a-47cb-92f2-9387c83d4c3b",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "draft.md"
+        ],
+        "completed_at": "2026-04-16T15:29:38Z",
+        "label": "writer-20260416-2000-ai-chat-court-evidence-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:3d0ab532-5706-4062-90ba-04d1d1796153",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v2.md"
+        ],
+        "completed_at": "2026-04-16T15:31:38Z",
+        "label": "writer-20260416-2000-ai-chat-court-evidence-v2-pre-review-repair",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:9641250a-4b11-4c17-b54d-600376c0d58f",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v3.md"
+        ],
+        "completed_at": "2026-04-16T15:33:14Z",
+        "label": "writer-20260416-2000-ai-chat-court-evidence-v3-quote-fix",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:eec3100c-051e-4b47-8c1e-bc514917e115",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v4.md"
+        ],
+        "completed_at": "2026-04-16T15:54:52Z",
+        "label": "writer-20260416-2000-ai-chat-court-evidence-v4-faq-fix",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:58ef1b33-0a57-4e23-906b-087e6b96d2cb",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v5.md"
+        ],
+        "completed_at": "2026-04-16T17:03:23Z",
+        "label": "writer-20260416-2000-ai-chat-court-evidence-v5-revise-v2",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:49a10a93-96e7-45e5-bda6-c9c328627bee",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v6.md"
+        ],
+        "completed_at": "2026-04-16T17:05:04Z",
+        "label": "writer-20260416-2000-ai-chat-court-evidence-v6-quote-mark-fix",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:257e7e73-55e0-4cfe-b224-ba0ce231d12c",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v7.md"
+        ],
+        "completed_at": "2026-04-16T17:24:37Z",
+        "label": "writer-20260416-2000-ai-chat-court-evidence-v7-last-line-fix",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:a3bc77c9-ec4f-4998-9548-911980b79b94",
+        "status": "done"
+      }
+    ]
+  },
+  "cover_audit": null,
+  "cover_url": null,
+  "current_step": "waiting_login_scan",
+  "draft_version": "draft-v7",
+  "error": null,
+  "html_rendered": false,
+  "last_clean_step": "layout",
+  "last_draft_file": "draft-v7.md",
+  "last_final_file": "final.md",
+  "last_layout_file": "final-layout.md",
+  "last_review_file": "review-v2.json",
+  "last_score": 7.9,
+  "lineage_audited_at": "2026-04-16T17:34:57Z",
+  "lineage_status": "clean",
+  "max_revisions": 2,
+  "pass_threshold": 7.8,
+  "pending_action": "formal_publish",
+  "phase": "awaiting_human",
+  "profile": "小龙虾有话说",
+  "publish_candidate": "final-layout.md",
+  "published": false,
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "purpose": "借美国律师对 AI 聊天记录证据风险的警告，写清人们把 AI 当聊天框时最容易忽略的代价：它正在从私人草稿纸变成可追溯工作台。",
+  "repair_action": null,
+  "repair_attempts": 0,
+  "revision_cycle": 1,
+  "run_id": "cron-2026-04-16-evening-1",
+  "schema_version": "2026-04-09.lineage-v2",
+  "slug": "20260416-2000-ai-chat-court-evidence",
+  "source_mode": "fresh",
+  "step": 3,
+  "subagent_label": "writer-20260416-2000-ai-chat-court-evidence-v2-pre-review-repair",
+  "subagent_status": "done",
+  "topic": "你和 AI 说的话，以后可能会在法庭上被当证据念出来",
+  "updated_at": "2026-04-17T20:26:40+08:00",
+  "writer_lite_waiver": {
+    "approved_by": "boss_runtime_instruction_continue_without_prompting",
+    "draft_file": "draft-v7.md",
+    "draft_version": "draft-v7",
+    "evidence_line": 21,
+    "kind": "lite_preflight_false_positive",
+    "reason": "writer_lite_preflight repeatedly flags a non-quoted authorial judgment sentence as fake_verbatim_quote after multiple de-quotation rewrites; waive and continue to reviewer.",
+    "updated_at": "2026-04-17T01:29:10+08:00"
+  },
+  "state": "blocked",
+  "state_node": "waiting_login_scan",
+  "waiting_for": "boss_scan",
+  "required_user_action": "login_scan",
+  "resume_point": "edit_ready",
+  "authoritative_signal_kind": "login_page",
+  "authoritative_signal_summary": "reuse current qr without page refresh",
+  "safe_check_qr_path": "/root/.openclaw/media/screenshots/wechat-login-current-noswitch-20260417-2026.png",
+  "last_progress_at": "2026-04-17T20:03:00+08:00",
+  "last_transition_at": "2026-04-17T20:03:00+08:00",
+  "note": "微信后台仍是登录页，二维码已刷新，等待老板扫码后从 edit_ready 恢复。"
+}

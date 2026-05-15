@@ -1,0 +1,33 @@
+{
+  "draft_version": "draft-v2",
+  "generated_at": "2026-04-08T06:30:16Z",
+  "updated_at": "2026-04-08T06:30:16Z",
+  "change_reason": "writer revised after review-v1; rerun lite preflight before review-v2",
+  "check_mode": "blocking",
+  "hard_fail": false,
+  "hard_fail_reasons": [],
+  "checks": [],
+  "preflight_scope": "mechanical_red_lights_only",
+  "artifact_contract": "script_generated_only",
+  "blocking_enforced": false,
+  "generator": {
+    "script": "/root/.openclaw/skills/wechat-article-forge/scripts/writer_lite_preflight.py",
+    "name": "writer_lite_preflight.py"
+  },
+  "input_fingerprints": {
+    "draft_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/draft-v2.md",
+    "draft_sha256": "00e5343457f1b67935f13bf838d24dba52a4535d1dfacd57a0395e10f9c7f0d7",
+    "brief_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/writer-lite-brief.json",
+    "brief_sha256": "10892f3924d71de35119a49a4523f35533eb85e0a80f1575352380d3f52aa28b",
+    "research_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260408-2000-lei-jun-ma-yun-jushen-shengyi/research.json",
+    "research_sha256": "c955b6159c6fd15fc5ac01b3e4a679e9282affa5812a6db4fcbe4317610c5c69"
+  },
+  "style_suggestions": [],
+  "max_pre_review_bounces": 1,
+  "rerun_required_only_when": [
+    "title",
+    "lead_300",
+    "thesis",
+    "structure_spine"
+  ]
+}

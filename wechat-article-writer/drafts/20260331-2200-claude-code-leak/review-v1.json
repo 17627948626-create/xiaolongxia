@@ -1,0 +1,34 @@
+{
+  "scores": {
+    "insight_density": 8.5,
+    "originality": 7.5,
+    "emotional_resonance": 9.0,
+    "completion_power": 9.0,
+    "voice": 9.0,
+    "evidence": 8.0,
+    "content_timeliness": 9.0,
+    "title": 5.0
+  },
+  "weighted_total": 8.375,
+  "pass": false,
+  "hard_blocker": null,
+  "note": "FAIL 原因：审稿时未包含标题，Title 维度给 5.0。文章内容得分约 8.6/10，内容质量扎实。补充标题后重审预计通过。",
+  "feedback": [
+    {
+      "dimension": "Title（标题）",
+      "score": 5.0,
+      "issue": "审稿提交文本中未包含标题，无法评分",
+      "quote": "（文章起始处无标题行）",
+      "suggestion": "补充标题后重新送审"
+    },
+    {
+      "dimension": "Insight Density（洞察密度）",
+      "score": 8.5,
+      "issue": "哈希命中机制与情感依赖的内在逻辑联系未被充分挖掘",
+      "quote": "用户不会因为模型跑分高了 2% 换工具，但会因为"我的宠物在这里"留下来。",
+      "suggestion": "可加一句：哈希命中机制是刻意设计的——你的宠物是「命运」，不是「选择」，这比让用户自己挑更容易产生归属感"
+    }
+  ],
+  "verdict": "FAIL",
+  "summary": "内容质量良好但标题缺失导致 Title 维度 5.0<6，重审时提供标题可通过"
+}

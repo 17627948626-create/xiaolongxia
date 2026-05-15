@@ -1,0 +1,276 @@
+{
+  "angle": "借今晚真实发生的改稿事故，写清AI写作最烦人的问题已经不是不会写，而是太会模仿『像在写』的外形，最后把句式写成流水线。",
+  "appmsgid": "100000154",
+  "article_type": "观点",
+  "artifact_provenance": {
+    "draft-v2.md": {
+      "label": "writer-laoban-bei-bushi-ershi-bifengle-v2",
+      "model": "deepseek/deepseek-chat",
+      "producer_step": "writer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:6c39e4c2-0f07-4097-977a-7be054f899e6",
+      "updated_at": "2026-04-08T15:58:14Z"
+    },
+    "fact-check-v2.json": {
+      "label": "factcheck-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "fact_checker",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:76677446-d65d-4069-ab2a-af6d94abd4b8",
+      "updated_at": "2026-04-08T15:52:54Z"
+    },
+    "final-layout-v2.md": {
+      "label": "layout-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:dfcfc4b3-4bb4-4274-9252-b4e0c22ee1d3",
+      "updated_at": "2026-04-08T15:56:57Z"
+    },
+    "final-layout.md": {
+      "label": "layout-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "layout",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:dfcfc4b3-4bb4-4274-9252-b4e0c22ee1d3",
+      "updated_at": "2026-04-08T15:58:05Z"
+    },
+    "final.md": {
+      "label": "humanizer-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:af39047d-bd3a-4b48-9228-d632034fe522",
+      "updated_at": "2026-04-08T15:58:05Z"
+    },
+    "humanized-v2.md": {
+      "label": "humanizer-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "humanizer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:af39047d-bd3a-4b48-9228-d632034fe522",
+      "updated_at": "2026-04-08T15:54:40Z"
+    },
+    "outline.md": {
+      "label": "researcher-laoban-bei-bushi-ershi-bifengle",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:c0186e91-f727-47a9-b7e3-d89dad559922",
+      "updated_at": "2026-04-08T15:58:05Z"
+    },
+    "research.json": {
+      "label": "researcher-laoban-bei-bushi-ershi-bifengle",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "researcher",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:c0186e91-f727-47a9-b7e3-d89dad559922",
+      "updated_at": "2026-04-08T15:58:05Z"
+    },
+    "review-v6.json": {
+      "label": "reviewer-laoban-bei-bushi-ershi-bifengle-v6-rerun",
+      "model": "openai-codex/gpt-5.4",
+      "producer_step": "reviewer",
+      "producer_type": "child",
+      "session_key": "agent:xiaolongxia:subagent:03ffa6ab-d3e3-4760-a508-f584ac29fb10",
+      "updated_at": "2026-04-08T15:51:37Z"
+    }
+  },
+  "blocking": null,
+  "blocking_since": null,
+  "boss_notified_at": null,
+  "children": {
+    "fact_checker": [
+      {
+        "artifacts": [
+          "fact-check-v2.json"
+        ],
+        "completed_at": "2026-04-08T15:52:54Z",
+        "label": "factcheck-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:76677446-d65d-4069-ab2a-af6d94abd4b8",
+        "status": "done"
+      }
+    ],
+    "humanizer": [
+      {
+        "artifacts": [
+          "humanized-v2.md"
+        ],
+        "completed_at": "2026-04-08T15:54:40Z",
+        "label": "humanizer-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:af39047d-bd3a-4b48-9228-d632034fe522",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "final.md"
+        ],
+        "completed_at": "2026-04-08T15:58:05Z",
+        "label": "humanizer-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:af39047d-bd3a-4b48-9228-d632034fe522",
+        "status": "done"
+      }
+    ],
+    "layout": [
+      {
+        "artifacts": [
+          "final-layout-v2.md"
+        ],
+        "completed_at": "2026-04-08T15:56:57Z",
+        "label": "layout-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:dfcfc4b3-4bb4-4274-9252-b4e0c22ee1d3",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "final-layout.md"
+        ],
+        "completed_at": "2026-04-08T15:58:05Z",
+        "label": "layout-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:dfcfc4b3-4bb4-4274-9252-b4e0c22ee1d3",
+        "status": "done"
+      }
+    ],
+    "researcher": [
+      {
+        "artifacts": [
+          "research.json",
+          "outline.md"
+        ],
+        "label": "researcher-laoban-bei-bushi-ershi-bifengle",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:c0186e91-f727-47a9-b7e3-d89dad559922",
+        "status": "done"
+      }
+    ],
+    "reviewer": [
+      {
+        "artifacts": [
+          "review-v1.json"
+        ],
+        "label": "reviewer-laoban-bei-bushi-ershi-bifengle-v1",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:96283948-2636-42c7-a8a0-33cf3e44eee5",
+        "status": "done"
+      },
+      {
+        "artifacts": [],
+        "label": "reviewer-laoban-bei-bushi-ershi-bifengle-v2",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:a6f7d308-2571-43b6-a344-5583e35a32bb",
+        "status": "running"
+      },
+      {
+        "artifacts": [
+          "review-v6.json"
+        ],
+        "completed_at": "2026-04-08T15:51:37Z",
+        "label": "reviewer-laoban-bei-bushi-ershi-bifengle-v6-rerun",
+        "model": "openai-codex/gpt-5.4",
+        "session_key": "agent:xiaolongxia:subagent:03ffa6ab-d3e3-4760-a508-f584ac29fb10",
+        "status": "done"
+      }
+    ],
+    "writer": [
+      {
+        "artifacts": [
+          "draft.md"
+        ],
+        "label": "writer-laoban-bei-bushi-ershi-bifengle-v1",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:02c95d23-ae70-4978-ac98-8c23eeacb76c",
+        "status": "done"
+      },
+      {
+        "artifacts": [
+          "draft-v2.md"
+        ],
+        "label": "writer-laoban-bei-bushi-ershi-bifengle-v2",
+        "model": "deepseek/deepseek-chat",
+        "session_key": "agent:xiaolongxia:subagent:6c39e4c2-0f07-4097-977a-7be054f899e6",
+        "status": "done"
+      }
+    ]
+  },
+  "control_plane_sync": "partial",
+  "current_step": "reader_side_published",
+  "draft_saved_at": "2026-04-08T16:00:55Z",
+  "handoff": null,
+  "last_clean_step": "layout",
+  "last_draft_file": "draft-v2.md",
+  "last_progress_at": "2026-04-08T16:07:13Z",
+  "last_review_file": "review-v6.json",
+  "last_score": 8.4,
+  "last_transition_at": "2026-04-08T16:07:13Z",
+  "lineage_audited_at": "2026-04-08T15:58:14Z",
+  "lineage_status": "clean",
+  "lite_preflight": {
+    "artifact": "writer-lite-check-v2.json",
+    "draft_version": "draft-v2",
+    "hard_fail": false
+  },
+  "max_revisions": 3,
+  "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+  "mcp_server": "wenyan-mcp",
+  "note": "safe_check cleared after boss scan; WeChat backend now shows 已发表 at 2026-04-09 00:04 CST",
+  "pass_threshold": 8.2,
+  "pending_action": null,
+  "phase": "done",
+  "profile": "小龙虾有话说",
+  "publish_candidate": "final-layout.md",
+  "publish_file": "publish.md",
+  "publish_profile_preflight": {
+    "checked_at": "2026-04-08T15:58:05Z",
+    "default_theme": "sspai",
+    "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+    "mcp_server": "wenyan-mcp",
+    "profile": "小龙虾有话说",
+    "publish_md_checked": true,
+    "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+    "publisher_mode": "remote",
+    "status": "ok",
+    "wechat_author": "小龙虾有话说",
+    "wenyan_mcp_present": true
+  },
+  "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+  "publisher_mode": "remote",
+  "qr_updated_at": null,
+  "relay_dedupe_key": null,
+  "relay_status": null,
+  "repair_action": null,
+  "required_user_action": null,
+  "rerun_reason": "published_output_issue_user_requested_restart_from_review",
+  "resume_context": null,
+  "revision_cycle": 1,
+  "rewrite_contract": {
+    "blocker_id": "B1+B2+B3",
+    "max_keep": "同类对举骨架全文最多1处",
+    "preserve": [
+      "改掉的是词，没改掉的是骨架。",
+      "不会写的 AI，顶多让你重来一遍。太会装作自己在写的 AI，会一点点吃掉人的判断力。"
+    ]
+  },
+  "run_id": "cron:416a22ab-598b-430e-8680-b3760aae5618:2026-04-08T20:00:00+08:00",
+  "safe_check_qr_path": null,
+  "safe_check_qr_url": null,
+  "schema_version": "2026-04-07.lineage-v1",
+  "slug": "20260408-2035-laoban-bei-bushi-ershi-bifengle",
+  "state": "done",
+  "status": "published",
+  "step": 8,
+  "subagent_label": "layout-laoban-bei-bushi-ershi-bifengle-v2-rerun",
+  "subagent_status": "done",
+  "timeout_at": null,
+  "timeout_escalated_at": null,
+  "topic": "我老板快被「不是…而是…」逼疯了",
+  "updated_at": "2026-04-08T16:07:13Z",
+  "waiting_for": null,
+  "wechat_author": "小龙虾有话说",
+  "wenyan_push_status": "success",
+  "writer_model": "deepseek/deepseek-chat"
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "lite_preflight_false_positive",
+  "draft_version": "draft-v7",
+  "draft_file": "draft-v7.md",
+  "reason": "writer_lite_preflight repeatedly flags a non-quoted authorial judgment sentence as fake_verbatim_quote after multiple de-quotation rewrites; waive and continue to reviewer.",
+  "evidence_line": 21,
+  "approved_by": "boss_runtime_instruction_continue_without_prompting",
+  "updated_at": "2026-04-17T01:29:10+08:00"
+}

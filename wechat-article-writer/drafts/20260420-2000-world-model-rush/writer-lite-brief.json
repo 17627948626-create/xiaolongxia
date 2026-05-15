@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-20T20:06:00+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "腾讯开源 HY-World 2.0、阿里推出 Happy Oyster，两个大厂在同一时间窗把 world model 推上台面。",
+  "thesis": "这轮世界模型热更值得盯的，不是又多了一个会演示的模型，而是 AI 竞争开始从聊天框往现实接口外溢。",
+  "ai_punchline": "作为一个 AI，本虾对更会说已经不稀奇了；真正让我警觉的是，模型开始想摸到现实本身。",
+  "must_keep": [
+    "前 300 字讲清 why-now：腾讯和阿里几乎同时冲 world model。",
+    "保住一句可转述判断：世界模型之争，本质是在争现实接口权。",
+    "保住一个截图级段落，把‘会说’和‘会碰现实’的差别讲成人话。"
+  ],
+  "must_avoid": [
+    "不要写成产品功能盘点。",
+    "不要把 world model 写成视频模型升级版。",
+    "不要把 demo 口径吹成产业已成熟。"
+  ],
+  "why_fit": "这是 48 小时窗口内的大厂同向动作，入口强，判断也足够明确。",
+  "downstream_boundary": "Researcher 只能补证和校正，Writer/Humanizer/Layout 都不能偷换题。"
+}

@@ -1,0 +1,249 @@
+{
+  "topic": "Anthropic 年化收入冲到 300 亿美元，同时锁定超大 TPU 算力",
+  "angle": "从 Anthropic 收入与算力一起暴涨切入，讲 AI 公司下一阶段拼的已不是单点模型能力，而是收入锁定 + 算力锁定的双重军备竞赛。",
+  "time_window": "最近 24 小时",
+  "created_at": "2026-04-07T23:08:00+08:00",
+  "verdict": {
+    "retopic_needed": false,
+    "reason": "主入口证据成立，且 24 小时内热度与讨论度都足够；Anthropic 官方、Google Cloud 对外口径、Broadcom 8-K 三条链路能互相咬合。"
+  },
+  "core_judgment": "这不是一条普通的增长新闻。Anthropic 同时把收入端和供给端都摆上台面：一边是 run-rate revenue 破 300 亿美元、百万美元级企业客户数量在两个月内翻倍；另一边是从 2027 年开始锁定约 3.5GW 的下一代 Google TPU 计算能力，而且上游还带着 Broadcom 对 Google TPU 与 AI 机架供给的长期协议。说明头部 AI 公司的竞争，正从‘谁的模型更强’切到‘谁能先把需求现金流和未来算力产能一起锁住’。",
+  "search_log": [
+    {
+      "query": "Anthropic 30 billion annualized revenue Google Broadcom 3.5GW",
+      "entrypoints": [
+        "DuckDuckGo HTML",
+        "Sogou Web"
+      ],
+      "role": "discovery",
+      "notes": "先通过搜索结果页找到 Anthropic 官方公告、Google Cloud press corner、The Register 对 Broadcom filing 的指向。"
+    },
+    {
+      "query": "Broadcom Anthropic Google TPU 3.5 gigawatts filing",
+      "entrypoints": [
+        "The Register link-out",
+        "TradingView news summary",
+        "Morningstar / Dow Jones"
+      ],
+      "role": "verification assist",
+      "notes": "Broadcom investor page 直接浏览被 Akamai 拦截，但通过 SEC 归档 URL 用 exec + requests 成功拉到 8-K 原文并抽取关键段落。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "anthropic_official_20260406",
+      "title": "Anthropic expands partnership with Google and Broadcom for multiple gigawatts of next-generation compute",
+      "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "source_type": "primary",
+      "publisher": "Anthropic",
+      "published_at": "2026-04-06",
+      "verified": true,
+      "key_points": [
+        "Anthropic 官方确认：新的 Google + Broadcom 协议将带来 multiple gigawatts 的下一代 TPU capacity，自 2027 年开始上线。",
+        "Anthropic 官方确认：run-rate revenue 已超过 300 亿美元，2025 年底约为 90 亿美元。",
+        "Anthropic 官方确认：年化消费超过 100 万美元的企业客户数，从 2 月披露的 500+ 增长到 1000+。",
+        "Anthropic 官方强调：这是其迄今为止最大的一次 compute commitment。"
+      ]
+    },
+    {
+      "id": "broadcom_sec_8k_20260406",
+      "title": "Broadcom Form 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm",
+      "source_type": "primary",
+      "publisher": "Broadcom / SEC",
+      "published_at": "2026-04-06",
+      "verified": true,
+      "access_notes": "通过 exec + python requests 直接抓取 SEC 归档原文；Broadcom investors 前台页面访问受限，但 SEC archive 可读。",
+      "key_points": [
+        "Broadcom 与 Google 签了长期协议，为 Google 未来几代 TPU 开发并供应定制 TPU。",
+        "Broadcom 还签了 Supply Assurance Agreement，为 Google 下一代 AI 机架供应 networking 和其他组件，期限到 2031 年。",
+        "Broadcom 8-K 明确写到：Anthropic 自 2027 年起将通过 Broadcom 获得约 3.5GW 的下一代 TPU-based AI compute capacity。",
+        "8-K 还写明：这部分扩展算力的消费取决于 Anthropic 持续的商业成功。"
+      ]
+    },
+    {
+      "id": "google_cloud_press_20260406",
+      "title": "Anthropic Expands Use of Google Cloud and TPUs",
+      "url": "https://www.googlecloudpresscorner.com/2026-04-06-Anthropic-Expands-Use-of-Google-Cloud-and-TPUs",
+      "source_type": "primary",
+      "publisher": "Google Cloud",
+      "published_at": "2026-04-06",
+      "verified": true,
+      "key_points": [
+        "Google Cloud 官方确认：最新扩张将为 Anthropic 提供 multiple gigawatts 的 TPU capacity，自 2027 年开始上线。",
+        "Google 官方明确区分两条供给路径：Google Cloud services + Google-built TPUs supplied through Broadcom。",
+        "Google 同时强调 Claude 已通过 Google Cloud 服务到达大量企业客户。"
+      ]
+    },
+    {
+      "id": "morningstar_dowjones_20260406",
+      "title": "Broadcom to Supply AI Chips to Google, Computing Capacity to Anthropic in Expanded Collaboration",
+      "url": "https://www.morningstar.com/news/dow-jones/202604065757/broadcom-to-supply-ai-chips-to-google-computing-capacity-to-anthropic-in-expanded-collaboration",
+      "source_type": "reliable_media",
+      "publisher": "Dow Jones via Morningstar",
+      "published_at": "2026-04-06",
+      "verified": true,
+      "key_points": [
+        "Dow Jones 复述 Broadcom 口径：Anthropic 将从 2027 年开始获得约 3.5GW TPU-based computing capacity。",
+        "把 3.5GW 表述成‘about 3.5 gigawatts’，可作为对 SEC 原文的交叉验证。"
+      ]
+    },
+    {
+      "id": "google_cloud_blog_context",
+      "title": "Ironwood TPUs and new Axion-based VMs for your AI workloads",
+      "url": "https://cloud.google.com/blog/products/compute/ironwood-tpus-and-new-axion-based-vms-for-your-ai-workloads/",
+      "source_type": "primary_context",
+      "publisher": "Google Cloud",
+      "published_at": "2026-04-02",
+      "verified": true,
+      "key_points": [
+        "Google Cloud 在近期官方博客中直接写到：很多组织的重点正从训练转向响应式交互与 inference。",
+        "原文还写到：compute demand 近指数级增长，agentic workflows 正创造对 custom silicon 和 vertically co-optimized systems 的新需求。",
+        "这能给‘行业阶段切换’提供官方产业背景。"
+      ]
+    }
+  ],
+  "evidence_anchors": [
+    {
+      "id": "anchor_revenue_locked",
+      "claim": "Anthropic 的商业化规模已经大到足以支撑更长期、更重的算力锁仓。",
+      "support": [
+        "anthropic_official_20260406"
+      ],
+      "best_quote": "Our run-rate revenue has now surpassed $30 billion—up from approximately $9 billion at the end of 2025.",
+      "why_it_matters": "如果只是估值高、融资多，这还是资本故事；但 run-rate revenue 过 300 亿美元，说明需求端已在真金白银兑现，具备为未来算力预定买单的基础。"
+    },
+    {
+      "id": "anchor_compute_locked",
+      "claim": "Anthropic 锁定的不是短期云租用，而是从 2027 年开始、约 3.5GW 级别的下一代 TPU-based AI compute capacity。",
+      "support": [
+        "broadcom_sec_8k_20260406",
+        "google_cloud_press_20260406",
+        "morningstar_dowjones_20260406"
+      ],
+      "best_quote": "Anthropic, beginning in 2027, will access through Broadcom approximately 3.5 gigawatts as part of the multiple gigawatts of next generation TPU-based AI compute capacity committed by Anthropic.",
+      "why_it_matters": "这已经不是‘多买一点 GPU/TPU’的量级，而是把未来几年的电力、机架、网络、芯片供应一起打包进合同。"
+    },
+    {
+      "id": "anchor_supply_chain_signal",
+      "claim": "这次动作把模型公司、云厂商、芯片/网络供应商三层一起锁进来，说明竞争变量已升级为收入兑现能力 + 产能预占能力。",
+      "support": [
+        "broadcom_sec_8k_20260406",
+        "google_cloud_press_20260406",
+        "google_cloud_blog_context",
+        "anthropic_official_20260406"
+      ],
+      "best_quote": "Broadcom and Google ... have entered into a Long Term Agreement ... and a Supply Assurance Agreement ... through up to 2031.",
+      "why_it_matters": "当 Broadcom 给 Google 的 TPU 与 AI racks 供给写进长期协议，同时 Anthropic 再把未来多 GW 需求锁进来，竞争单位就从单模型 benchmark 升级成整条供应链。"
+    }
+  ],
+  "fact_records": [
+    {
+      "fact_id": "revenue_run_rate_over_30b",
+      "claim": "Anthropic 年化收入 run-rate 已超过 300 亿美元。",
+      "value": "> $30 billion",
+      "unit": "USD annualized revenue run-rate",
+      "observed_at": "2026-04-06",
+      "source_id": "anthropic_official_20260406",
+      "exact_quote": "Our run-rate revenue has now surpassed $30 billion—up from approximately $9 billion at the end of 2025.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "high",
+      "usage_note": "正文如直接写数字，必须明确是 run-rate / 年化收入，不要写成已实现全年营收。",
+      "kind": "api_snapshot"
+    },
+    {
+      "fact_id": "enterprise_customers_over_1m_annualized",
+      "claim": "年化消费超过 100 万美元的企业客户数已从 500+ 涨到 1000+。",
+      "value": "> 1,000 customers",
+      "unit": "business customers spending >$1M annualized",
+      "observed_at": "2026-04-06",
+      "source_id": "anthropic_official_20260406",
+      "exact_quote": "When we announced our Series G fundraising in February, we shared that over 500 business customers were each spending over $1 million on an annualized basis. Today that number exceeds 1,000, doubling in less than two months.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "medium",
+      "usage_note": "这是支撑‘收入锁定’的重要辅助事实，但最好和 run-rate 一起出现，不单独拔高。",
+      "kind": "api_snapshot"
+    },
+    {
+      "fact_id": "tpu_capacity_approx_3_5gw",
+      "claim": "Anthropic 自 2027 年起将通过 Broadcom 获得约 3.5GW 的下一代 TPU-based AI compute capacity。",
+      "value": "approximately 3.5 gigawatts",
+      "unit": "GW of next-generation TPU-based AI compute capacity",
+      "observed_at": "2026-04-06",
+      "source_id": "broadcom_sec_8k_20260406",
+      "exact_quote": "Anthropic, beginning in 2027, will access through Broadcom approximately 3.5 gigawatts as part of the multiple gigawatts of next generation TPU-based AI compute capacity committed by Anthropic.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "high",
+      "usage_note": "这是高风险硬数字，引用时最好明确来源是 Broadcom 8-K / SEC filing。",
+      "kind": "api_snapshot"
+    },
+    {
+      "fact_id": "google_multiple_gigawatts_confirmation",
+      "claim": "Google Cloud 官方确认会向 Anthropic 提供 multiple gigawatts 的 TPU capacity，自 2027 年起上线。",
+      "value": "multiple gigawatts",
+      "unit": "TPU capacity",
+      "observed_at": "2026-04-06",
+      "source_id": "google_cloud_press_20260406",
+      "exact_quote": "The expansion will provide Anthropic with multiple gigawatts of TPU capacity, expected to come online starting in 2027.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "medium",
+      "usage_note": "Google 口径没给出 3.5GW 精确值，但能作为 Broadcom 具体数字的官方侧面确认。",
+      "kind": "api_snapshot"
+    },
+    {
+      "fact_id": "broadcom_google_supply_assurance_2031",
+      "claim": "Broadcom 还与 Google 签了面向下一代 AI racks 的供给保障协议，期限到 2031 年。",
+      "value": "through up to 2031",
+      "unit": "contract term",
+      "observed_at": "2026-04-06",
+      "source_id": "broadcom_sec_8k_20260406",
+      "exact_quote": "Broadcom Inc. and Google LLC have entered into a Long Term Agreement ... and a Supply Assurance Agreement for Broadcom to supply networking and other components to be used in Google's next-generation AI racks through up to 2031.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "high",
+      "usage_note": "这个点非常关键，它把新闻从‘Anthropic 租云’拉高成‘整条 AI 供应链提前锁仓’。"
+    },
+    {
+      "fact_id": "industry_shift_to_inference_and_agentic_compute",
+      "claim": "Google Cloud 官方判断：行业重点正从训练转向 inference，且算力需求近指数级增长。",
+      "value": "qualitative trend",
+      "unit": "industry framing",
+      "observed_at": "2026-04-02",
+      "source_id": "google_cloud_blog_context",
+      "exact_quote": "For many organizations, the focus is shifting from training these models to powering useful, responsive interactions with them... near-exponential growth in demand for compute, define this new age of inference.",
+      "quote_mode": "verbatim",
+      "attribution_required": true,
+      "risk_level": "medium",
+      "usage_note": "适合用来解释‘为什么这不是单条财务新闻’，但不要写成 Google 为 Anthropic 背书的结论。",
+      "kind": "paraphrase_only"
+    }
+  ],
+  "why_this_is_not_just_finance_news": [
+    "同一天出现的不是单点利好，而是三层锁定：Anthropic 披露收入兑现，Google 披露云与 TPU 供给扩张，Broadcom 披露上游 TPU 与 AI racks 的长期供给协议。",
+    "3.5GW / multiple gigawatts 这种量级，已经把竞争单位从模型 API 收费拉到了电力、机架、网络、芯片、长期合同。",
+    "Broadcom 在 8-K 里明确写‘Anthropic 的消费取决于持续商业成功’，这恰恰说明收入与算力现在被绑成了一张表：没有稳定商业化，就吃不下长期算力；没有长期算力，也守不住高速增长。",
+    "Anthropic 官方还特意强调 Amazon 仍是主要云与训练伙伴，同时 Claude 覆盖 AWS / Google Cloud / Azure 三大云，说明领先模型公司正在做的是跨云、跨芯片、多路径冗余，而不是押单点。"
+  ],
+  "writer_guardrails": {
+    "must_center": [
+      "这篇的主判断必须是‘竞争阶段切换’，不是‘Anthropic 又赢了’。",
+      "要把收入锁定和算力锁定写成一体两面：收入让算力承诺变得可融资，算力让收入增长有供给保障。",
+      "开头先抓住 300 亿美元 + 3.5GW 这个极强反差数字组合。"
+    ],
+    "must_avoid": [
+      "不要把 run-rate revenue 写成已实现全年营收。",
+      "不要把 multiple gigawatts 和 3.5GW 混写成两个互相矛盾的数据，要说明 Google 官方给的是多 GW，Broadcom 8-K 给的是约 3.5GW。",
+      "不要把文章写成 TPU/GPU 参数科普，也不要漂成泛泛的‘模型不重要了’，因为 4 月 3 日已经写过相近主题。"
+    ]
+  },
+  "recommended_hook": "Anthropic 这次最吓人的不是收入冲到 300 亿美元，而是它敢在同一天把未来几年要吃掉的超大 TPU 算力一起锁下来。",
+  "recommended_punchline": "AI 公司下一阶段拼的，不是谁再多刷几个 benchmark，而是谁能先把收入锁住、再把算力锁住。",
+  "topics_to_avoid_duplication": [
+    "不要复写 4 月 3 日《跑了半年AI流水线，我发现最值钱的不是模型》的抽象论证，要把这次写成一条有公司名、有金额、有算力体量的现实信号。",
+    "不要写成 Anthropic 公司宣传稿，重点是竞争机制切换。"
+  ]
+}

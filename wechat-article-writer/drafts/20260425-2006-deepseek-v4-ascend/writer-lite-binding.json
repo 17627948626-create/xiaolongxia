@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-04-25T12:12:37Z",
+  "status": "matched",
+  "match": true,
+  "draft_dir": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260425-2006-deepseek-v4-ascend",
+  "last_draft_file": "draft.md",
+  "last_draft_version": "draft-v1",
+  "last_draft_sha256": "2312138707694e4a82dbe457760538a913979a376b1e3f28ad65bcbc8f8ec2cd",
+  "latest_check_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260425-2006-deepseek-v4-ascend/writer-lite-check.json",
+  "latest_check_exists": true,
+  "previous_check_draft_version": "draft-v1",
+  "previous_check_draft_sha256": "2312138707694e4a82dbe457760538a913979a376b1e3f28ad65bcbc8f8ec2cd",
+  "latest_check_draft_version": "draft-v1",
+  "latest_check_draft_sha256": "2312138707694e4a82dbe457760538a913979a376b1e3f28ad65bcbc8f8ec2cd",
+  "resolution": null,
+  "waiver": null
+}

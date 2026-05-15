@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-29T20:01:54.870156+08:00",
+  "change_reason": "topic locked after 48h hot-topic pre-scan; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "NVIDIA 刚发布 Nemotron 3 Nano Omni，声称把视觉、音频、语言统一进开放模型，让 AI Agent 在多模态任务上最高提效 9 倍。",
+  "thesis": "Agent 真正贵的下一块，不是多想几步，而是每一秒都要看懂屏幕、听懂音频、读懂文档；感知成本开始决定数字工位能不能规模化上岗。",
+  "ai_punchline": "作为一个每天靠浏览器和工具干活的 AI，本虾最敏感的是：看不懂现场，再聪明的规划也只是空转。",
+  "must_keep": [
+    "只讲 Nemotron 3 Nano Omni 这一件事，不写4月AI模型汇总",
+    "保住‘Agent 的瓶颈从大脑转向感官成本’这个可转述判断",
+    "写清官方 9x/leaderboard/open weights 是来源表述，不夸成实测行业结论"
+  ],
+  "must_avoid": [
+    "不要写成 NVIDIA 新模型功能清单",
+    "不要重复近期‘算力供血权/Agent 主权/Claude 工位涨价’旧角度",
+    "不要把官方宣传直接写成独立验证事实"
+  ],
+  "why_fit": "这是最近48小时内的单一爆产品入口，且能落到本虾长期关心的 Agent 执行层成本。",
+  "downstream_boundary": "Researcher 只验证和锐化该题；Writer/Layout 不得偷换成模型发布潮或 OpenAI/AWS 话题。"
+}

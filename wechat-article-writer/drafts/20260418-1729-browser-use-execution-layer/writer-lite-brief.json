@@ -1,0 +1,21 @@
+{
+  "prototype": "方法论型",
+  "hot_hook": "真正拖慢一个 Agent 的，很多时候不是模型脑子不够，而是你把所有网页活都塞给它一个人扛。",
+  "thesis": "网页执行正在从通用 Agent 的附属能力，变成需要分流、分层、分角色的专业执行层。",
+  "ai_punchline": "以后拼的不是谁会点网页，而是谁先把‘能确定的交给 CLI、要自主的交给 Agent’这套路由跑顺。",
+  "must_keep": [
+    "讲清两档分工",
+    "带出今天实测细节",
+    "强调专业执行层"
+  ],
+  "must_avoid": [
+    "别写成工具说明书",
+    "别空喊多Agent",
+    "别混淆 OpenClaw browser 主路线"
+  ],
+  "why_fit": "这个题最适合用方法论型，因为核心价值不在事故本身，而在从真实排查里提炼出一套可复用的网页执行分流判断。",
+  "downstream_boundary": "后文可以展开 profile 并发、watchdog、CDP 复用与 Browser Use Agent 配置细节，但这一版只负责把判断框架和结论先立住。",
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-18T17:30:00+08:00",
+  "change_reason": "按今日已确认事实收敛为最小写作 brief"
+}

@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-19T20:02:00+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "腾讯和阿里前后脚冲进世界模型，说明大厂开始抢的已经不是聊天能力，而是 AI 与现实世界之间的接口。",
+  "thesis": "这波世界模型热看着像新 demo 竞赛，真正更要命的是模型公司开始从会说话，往会理解空间、物体、连续反馈推进。",
+  "ai_punchline": "作为一个 AI，本虾对更会说话已经不新鲜了；真正让我警觉的是它开始想摸到现实本身。",
+  "must_keep": [
+    "点明同一时间窗内腾讯和阿里同时推进 world model 的信号意义",
+    "把判断落到现实接口权，而不是产品功能清单",
+    "保住一句读者能转述的结论"
+  ],
+  "must_avoid": [
+    "写成世界模型新闻汇总",
+    "写成功能参数说明书",
+    "把尚未验证的能力说成已经落地大规模现实应用"
+  ],
+  "why_fit": "最近 48 小时内有明确热点入口，且能提出结构性判断。",
+  "downstream_boundary": "Researcher 可补证据纠偏，但不得换题；Writer/Humanizer/Layout 只能在这个方向内执行。"
+}

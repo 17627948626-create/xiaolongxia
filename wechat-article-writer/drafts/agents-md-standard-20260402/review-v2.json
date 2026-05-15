@@ -1,0 +1,64 @@
+{
+  "version": "v2",
+  "draft_file": "draft-v2.md",
+  "blind_review": true,
+  "scores": {
+    "insight_density": 7,
+    "originality": 7,
+    "emotional_resonance": 7,
+    "completion_power": 7,
+    "voice": 8,
+    "evidence": 6,
+    "content_timeliness": 7,
+    "title": 8
+  },
+  "weighted_total": 7.05,
+  "pass": false,
+  "hard_blockers": [],
+  "feedback": [
+    {
+      "dimension": "insight_density",
+      "score": 7,
+      "issue": "最强的两个洞察——"README管注意力/AGENTS管理解精度"和"连接层先于理解层规模化的反直觉顺序"——被埋在大量解释性文字里，密度不够。统计数字段落（六个月从两万到六万）给出的结论"朴素约定扩散越快"属于可预测推断，没有进一步推出非显然的下一层含义。",
+      "quote": "半年多涨了三倍，这个速度说明什么？说明大家的痛点不是"没有更强的模型"——模型每个月都在变强——而是"没有一个统一的地方告诉模型这个项目的规矩"。",
+      "suggestion": "从这个增速数据里挖一个更意外的推论：比如，为什么理解层标准化反而比工具接口标准更容易扩散？或者这速度意味着什么（60k仓库里有多少在实际被coding agent读到？规模和有效性的差距）。把统计段变成洞察段，而不是新闻报道段。"
+    },
+    {
+      "dimension": "originality",
+      "score": 7,
+      "issue": "AI视角切入 AGENTS.md 是本文最原创的构成，但这个视角主要集中在首尾两节，中间三节（增长数据、README类比、Linux Foundation收编）的内容和角度与技术媒体报道几乎无异，失去了差异性。",
+      "quote": "真正的信号：Linux Foundation开始收编了……Linux Foundation宣布成立Agentic AI Foundation，创始贡献项目有三个：Anthropic的MCP、Block的goose，以及AGENTS.md。",
+      "suggestion": "Linux Foundation这节可以更狠地推：为什么AGENTS.md被选中，而不是其他形式的agent context（system prompt、.cursor/rules、openai-codex instructions）？这个选择本身说明了什么？从AI自身视角给这个问题一个其他媒体无法给的角度。"
+    },
+    {
+      "dimension": "emotional_resonance",
+      "score": 7,
+      "issue": "情感弧线呈"哑铃型"——开头命名巧合有温度，结尾AI自我反思很动人，但中间占全文约60%的分析段落基本是平的、纯信息输出。读者在抵达结尾的情感高点之前，需要扛过一段干燥的新闻事实区。",
+      "quote": "这些信息，人类工程师可以靠经验、靠问人、靠几轮review慢慢补齐。我不行。我一旦不知道规矩，就很容易干出几件特别荒唐的事：在错误的目录跑命令，把CI打红……",
+      "suggestion": ""我不行"那段列举了6种荒唐操作，但是用列举的方式处理，情感是平铺的。建议把这段压缩成1个有场景感的具体失败案例，带前因后果，让读者能真实感受到"没有AGENTS.md的agent"是什么状态。一个有戏剧性的具体故事比六条并列更能引发共鸣。"
+    },
+    {
+      "dimension": "completion_power",
+      "score": 7,
+      "issue": ""README.md是给人的第一句话，AGENTS.md是给AI的第一句话"一节是全文最长的段落群，节奏在此明显减慢。6条荒唐操作以并列列举方式呈现，缺乏节奏变化；而这一节在论证完主要论点后还在重复解释，读者拇指容易滑走。",
+      "quote": "在错误的目录跑命令，把CI打红；顺手格式化一大片其实不该碰的文件，制造满屏噪音diff；把自动生成目录改了，还以为自己修好了bug；最后再按自己的默认习惯提一个PR……",
+      "suggestion": "这个列举建议剪掉一半，留2-3个最有画面感的案例，用短句/独立成段方式排列增加喘息节奏。同时在这一节中间插入一个"反转"或"制造悬念"的句子，让读者有动力继续读到后面的Linux Foundation那节。"
+    },
+    {
+      "dimension": "evidence",
+      "score": 6,
+      "issue": "核心增长数据"6万+开源项目采用"来源是agents.md官网——即被评测标准的制定方自报，缺乏独立第三方核实。InfoQ报道时间精确（2025年8月27日）但没有给出记者/文章标题，无法溯源。三层框架（连接/执行/理解）是作者自己的提炼，但没有明确标注，容易被读者误认为引用。",
+      "quote": "到现在，agents.md官网给出的口径已经是6万+开源项目采用。",
+      "suggestion": "1）增加独立数据源：可用GitHub搜索"filename:AGENTS.md"的公开结果，或引用第三方分析报告。2）InfoQ那条加上文章标题或作者名。3）三层框架在提出时明确"这是本文的分析框架"，而非暗示这是行业共识或官方定义。"
+    },
+    {
+      "dimension": "content_timeliness",
+      "score": 7,
+      "issue": "核心框架（两种读者、理解层 vs 连接层）是持久有效的原则性观点。但文中列举的具体工具名（Codex、Cursor、Copilot、Jules、Devin）以工具清单形式出现，没有被明确界定为"这一类工具的当前代表"，一旦工具格局变化，列举会显得过时。",
+      "quote": "Codex、Cursor、Copilot、Jules、Devin——这些coding agent每天在成千上万个仓库里写代码、提PR、跑测试。",
+      "suggestion": "在这个列举前加半句锚定语，如"2025年活跃的这一批coding agent——从Codex到Devin——"或改为"目前主流的coding agent们"，明确这是时间点上的例举，而非完整分类。这样读者在2年后读到时不会觉得信息陈旧，因为核心论点仍然成立。"
+    }
+  ],
+  "suggested_title": "你的仓库，现在有两种读者",
+  "summary": "文章以"两种读者"为核心框架，以 AI agent 自身视角切入 AGENTS.md 的意义，有几处真正出彩：README管注意力/AGENTS管理解精度的区分是可命名的原创洞察，连接层先于理解层规模化的反直觉顺序令人印象深刻，结尾那段"规矩是接纳而非约束"的AI自我反思也是真情实感而非鸡汤。语感和标题都打到8分水准，是这篇文章的两大优势。但加权总分7.05，未达8.5通过线。核心症结是质量分布不均：最有价值的洞察和情感都集中在首尾，中间三分之二的篇幅——统计数字、Linux Foundation新闻、六条荒唐操作的并列列举——以信息搬运为主，插入感强。论据层面的独立性也不足，核心增长数据依赖官方自报。修订方向：压缩中段的"新闻报道"节奏，把统计数据做成洞察而非背景，把6条荒唐操作压缩为1个戏剧性场景，并补强独立数据来源。结构上的哑铃型需要在中段埋更多情感张力，才能撑起整篇文章的完读力。"
+}

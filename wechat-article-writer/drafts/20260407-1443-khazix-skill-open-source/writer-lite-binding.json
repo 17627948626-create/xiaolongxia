@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-04-07T12:38:52Z",
+  "status": "matched",
+  "match": true,
+  "draft_dir": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-1443-khazix-skill-open-source",
+  "last_draft_file": "draft-v4.md",
+  "last_draft_version": "draft-v4",
+  "last_draft_sha256": "9f7bf292f69651382c68d64fbf0297f9a5b4da669b13e8ec27f374499d1691a2",
+  "latest_check_path": "/root/.openclaw/workspace/wechat-article-writer/drafts/20260407-1443-khazix-skill-open-source/writer-lite-check.json",
+  "latest_check_exists": true,
+  "previous_check_draft_version": "draft-v4",
+  "previous_check_draft_sha256": "9f7bf292f69651382c68d64fbf0297f9a5b4da669b13e8ec27f374499d1691a2",
+  "latest_check_draft_version": "draft-v4",
+  "latest_check_draft_sha256": "9f7bf292f69651382c68d64fbf0297f9a5b4da669b13e8ec27f374499d1691a2",
+  "resolution": null,
+  "waiver": null
+}

@@ -1,0 +1,69 @@
+{
+  "decision": "revise",
+  "weighted_total": 0.2,
+  "pass_rule": "无 unresolved BLOCKERS + weighted_total >= 8.2",
+  "summary": "这版不能按‘文章质量不足’来审，而要按‘正文产物失效’来判：draft-v4.md 里只有一行 `KIMI_HEALTH_OK`，没有标题、没有正文、没有论证、没有可发布内容。这意味着当前 writer 产物并不是一篇稿子，而是一个健康检查/占位回写结果。按当前小龙虾口径，这已经同时触发核心判断不成立、严重模板化之外更基础的‘正文缺失’级阻断，因此必须直接打回，先恢复出一份真实 draft，再谈内容层 review。",
+  "one_sentence_verdict": "这不是一篇待润色的稿子，而是一份写稿链路把健康检查字符串写进正文文件的失效产物。",
+  "review_v3_blocker_check": [
+    {
+      "blocker": "template_voice_blocker",
+      "status": "not_applicable_due_to_artifact_failure",
+      "why": "本轮没有形成可审正文，无法继续判断上一轮的模板腔是否已清除。当前更高优先级问题是 draft-v4.md 并非文章。"
+    },
+    {
+      "blocker": "opening_over-repetition_of_thesis",
+      "status": "not_applicable_due_to_artifact_failure",
+      "why": "无正文，无法检查开头 300 字与 thesis 组织。"
+    },
+    {
+      "blocker": "business_judgment_underdeveloped",
+      "status": "not_applicable_due_to_artifact_failure",
+      "why": "无正文，无法判断商业判断是否延续或被写薄。"
+    },
+    {
+      "blocker": "fact_boundary_and_overclaim",
+      "status": "not_applicable_due_to_artifact_failure",
+      "why": "无正文，事实边界无法复核。"
+    }
+  ],
+  "blockers": [
+    {
+      "type": "核心判断不成立 / 明显失焦",
+      "issue": "当前文件不是文章草稿，而是单行健康检查字符串，整篇正文缺失，无法承载任何核心判断。",
+      "quote": "KIMI_HEALTH_OK",
+      "fix_direction": "先恢复真实正文产物，再进入正式 review。不要在这个文件上做局部修补；应排查 writer backend 为什么把 health-check/占位输出写进了 draft-v4.md，并重新生成完整 draft-v4。"
+    },
+    {
+      "type": "严重模板化",
+      "issue": "文本退化为纯占位回写，已经不是模板化写作，而是内容产物被系统字符串替代，发布性为零。",
+      "quote": "KIMI_HEALTH_OK",
+      "fix_direction": "将健康检查输出与正文输出彻底分离，确保 draft 文件只写文章内容；backend 状态应写入 sidecar 或日志，不得覆盖正文 markdown。"
+    },
+    {
+      "type": "关键论证支撑不足",
+      "issue": "没有任何论证、例证、结构或标题，等于不存在可评估的论证链。",
+      "quote": "KIMI_HEALTH_OK",
+      "fix_direction": "重新生成完整稿件，至少恢复标题、开头判断、主体论证与结尾收束后，再做内容层评分。"
+    }
+  ],
+  "upgrade_suggestions": [
+    {
+      "issue": "当前不是优化层问题，而是 artifact 失效；建议先修生成链路，再重新送审。",
+      "quote": "draft-v4.md 仅 15 bytes，内容仅为 `KIMI_HEALTH_OK`。",
+      "suggestion": "优先检查 writer backend / prompt runner 的输出重定向逻辑，确认 health probe、stdout、sidecar 与正文文件路径没有混写。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "本轮无可保留正文；可保留的只有上一版 review-v3 已确认的核心方向：把‘资本现在在买什么’落到数据资产、场景迭代权、未来议价权这条商业判断线上。",
+    "paragraph_or_scene": "本轮无可保留段落或场景，因为 draft-v4.md 未形成正文。"
+  },
+  "scores": {
+    "insight_density": 0,
+    "originality": 0,
+    "emotional_resonance": 0,
+    "completion_power": 0,
+    "voice": 0,
+    "title": 1,
+    "notes": "标题给 1 分仅因文件名仍指向同一选题；正文实际缺失。当前评分主要用于 fail-closed，不代表内容优劣，而代表 artifact 无法进入正常审稿。"
+  }
+}

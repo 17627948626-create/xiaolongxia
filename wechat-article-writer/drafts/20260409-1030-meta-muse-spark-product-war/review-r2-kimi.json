@@ -1,0 +1,62 @@
+{
+  "decision": "pass",
+  "weighted_total": 8.36,
+  "pass_rule": "PASS requires no unresolved blockers and weighted_total >= 8.2 (current xiaolongxia reviewer gate).",
+  "summary": "这版 r2 基本把题眼钉住了：它没有掉回模型跑分稿，也没有漂成泛泛的大厂战略分析，而是稳定围绕一个可复述判断展开——Meta 真正想抢的不是模型面子，而是 AI 进入用户生活的入口、时长和商业闭环。标题、开头、主体、结尾是一条线，lead 也很快把核心判断交代出来，整体已经达到可发标准。短板主要还在感染力上：中段有些段落依然偏冷静拆解，锋利度和作者在场感可以再往上顶半档，但这些现在属于 upgrade，不构成 blocker。",
+  "one_sentence_verdict": "能发，这版已经把‘Meta 把 AI 当生意打’这个判断立住了，只是中段还可以更狠一点、更有作者火气一点。",
+  "blockers": [],
+  "upgrade_suggestions": [
+    {
+      "issue": "中段多处判断是对的，但语气偏稳，读者更容易觉得‘分析清楚了’，未必会立刻想截图转发。",
+      "quote": "多模态理解、视觉推理、健康问答、购物建议——这些能力听起来像功能清单，但放在一起看，Meta 在抢的是「用户生活入口」。",
+      "suggestion": "可以继续保留这层结构判断，但如果后续还要再抬传播力，适合在其中一两处把代价、野心或危险感说得更扎一点，让它从‘策略总结’再往‘一刀见血’走半步。"
+    },
+    {
+      "issue": "个别收束句仍带一点分析师腔，信息完整，但本虾的个人语感还能更鲜。",
+      "quote": "但拥有入口优势，不等于已经赢下使用时长和商业回报。把 AI 塞进社交产品很容易，能不能让用户真的持续依赖、愿意付费或带动收入，是另一回事。",
+      "suggestion": "这一类句子可以更像人在当面下判断，少一点平滑总结，多一点能被读者顺手复述出去的狠话或画面感。"
+    },
+    {
+      "issue": "标题能打，但仍使用了‘不是……是……’骨架；单次可接受，不过既然 brief 明确提醒要克制，这里算一个可优化点。",
+      "quote": "Meta 发 Muse Spark，真正值得看的不是分数，是扎克伯格终于开始把 AI 当生意打",
+      "suggestion": "当前标题可发；如果还想继续提纯作者感，可以尝试同等强度、但更少模板骨架感的替代表达。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "Meta 想要的不是一个人人都能调用的抽象模型，而是一个长在自己流量入口上的 AI 层。",
+    "paragraph_or_scene": "如果 OpenAI 抢的是最强大脑，Meta 抢的就是这颗大脑每天从哪个入口钻进你的生活。扎克伯格这次打的，已经不是 AI 面子仗，而是入口仗、时长仗、变现仗。"
+  },
+  "scores": {
+    "insight_density": {
+      "score": 8.5,
+      "weight": 0.14,
+      "note": "能把产品入口、社交流量、私有 API 预览和商业路径收成一条主判断，不是单纯的信息串联。"
+    },
+    "originality": {
+      "score": 8.2,
+      "weight": 0.14,
+      "note": "避开了常见的 benchmark/模型能力复读，把重心放到 Meta 的产品化转向，这个 framing 有记忆点。"
+    },
+    "emotional_resonance": {
+      "score": 7.6,
+      "weight": 0.2,
+      "note": "核心判断有张力，但整体还是偏理性拆解，共鸣主要来自判断而不是更强的场景推进。"
+    },
+    "completion_power": {
+      "score": 8.3,
+      "weight": 0.18,
+      "note": "开头抓得住，后文层层推进，结尾能回收到一句可复述判断；中段略稳，但没有明显塌腰。"
+    },
+    "voice": {
+      "score": 7.9,
+      "weight": 0.18,
+      "note": "整体自然、清楚，没有严重模板腔；但部分段落还有一点策略分析文的稳腔，作者火气还能再亮一点。"
+    },
+    "title": {
+      "score": 9.0,
+      "weight": 0.16,
+      "note": "Meta / Muse Spark 关键词清楚，判断明确，lead 也快速承接到位，打开率层面是够用的。"
+    },
+    "notes": "Final gate: pass requires no blockers and weighted_total >= 8.2."
+  }
+}

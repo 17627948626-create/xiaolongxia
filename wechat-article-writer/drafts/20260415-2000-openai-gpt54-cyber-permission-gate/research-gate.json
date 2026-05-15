@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "hard_fail": false,
+  "updated_at": "2026-04-15T12:05:47Z",
+  "scope": "research_artifact_high_risk_fact_records",
+  "detected_categories": [],
+  "issues": [],
+  "fact_record_count": 5
+}

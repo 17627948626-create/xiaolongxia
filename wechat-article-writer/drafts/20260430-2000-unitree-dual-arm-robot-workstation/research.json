@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "run_dir": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260430-2000-unitree-dual-arm-robot-workstation",
+    "topic_locked": "宇树 4月30日发布双臂人形机器人，售价 2.69 万元起",
+    "thesis_locked": "机器人商业化正在先砍掉最贵、最难、最像表演的腿，把手和工位先推上生产线；真正先上岗的可能不是腿，是手。",
+    "generated_at": "2026-04-30T20:06:00+08:00",
+    "research_boundary": "只验证宇树双臂人形机器人这个新品入口，不扩写行业综述；重点从昨天 NVIDIA 的感知成本转到执行入口、双臂操作和固定工位。"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "2.69 万元起，宇树双臂人形机器人发布",
+      "publisher": "IT之家",
+      "url": "https://www.ithome.com/0/945/386.htm",
+      "published_or_observed_at": "2026-04-30",
+      "source_type": "verified_source_page",
+      "why_relevant": "直接给出发布日期、起售价、上半身双臂定位、15~31自由度、视觉双目算力模组、固定底座或移动底盘、可更换执行器。",
+      "confidence": "high"
+    },
+    {
+      "id": "s2",
+      "title": "售价2.69万元起！宇树发布双臂人形机器人：打工机器人正式上岗",
+      "publisher": "快科技",
+      "url": "https://news.mydrivers.com/1/1119/1119578.htm",
+      "published_or_observed_at": "2026-04-30 15:55:36",
+      "source_type": "verified_source_page",
+      "why_relevant": "补充自由度、腰部/头部动作范围、末端执行器、2kg负载、0.1mm夹爪精度、四个版本和二次开发接口。",
+      "confidence": "high"
+    },
+    {
+      "id": "s3",
+      "title": "宇树发布只有上半身的人形机器人，高管否认熊猫机器人抄袭魔法原子",
+      "publisher": "界面新闻，经新浪财经转载",
+      "url": "http://finance.sina.com.cn/jjxw/2026-04-30/doc-inhwhenm1330621.shtml",
+      "published_or_observed_at": "2026-04-30",
+      "source_type": "verified_source_page",
+      "why_relevant": "独立确认仅有上半身设计、固定底座与移动底盘两种快速部署方案，并列出科研、轻工业、服务等可切换场景。",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "s4",
+      "title": "2.69万元！宇树科技发布新品",
+      "publisher": "上海证券报，经东方财富转载",
+      "url": "https://finance.eastmoney.com/a/202604303726260155.html",
+      "published_or_observed_at": "2026-04-30",
+      "source_type": "verified_source_page",
+      "why_relevant": "补充新品主打干活、超快速部署、多场景落地、全栈开放二次开发，以及快递分拣、上下料、玩具分类等参考应用。",
+      "confidence": "medium_high"
+    }
+  ],
+  "fact_records": [
+    {
+      "id": "f1",
+      "claim": "宇树科技于4月30日发布双臂人形机器人，起售价为2.69万元。",
+      "source_ids": ["s1", "s2", "s3", "s4"],
+      "attribution_required": true,
+      "quote_mode": "paraphrase_only",
+      "risk_level": "low",
+      "notes": "多个媒体源互相印证；正文可直接写据多家媒体报道或据宇树发布信息。"
+    },
+    {
+      "id": "f2",
+      "claim": "这款新品主打上半身双臂操作，下半身提供固定底座或移动底盘两类形态。",
+      "source_ids": ["s1", "s2", "s3"],
+      "attribution_required": true,
+      "quote_mode": "paraphrase_only",
+      "risk_level": "low",
+      "notes": "这是本文角度的核心硬证据，可支撑先砍腿、先上工位的判断。"
+    },
+    {
+      "id": "f3",
+      "claim": "整机支持15到31自由度，手臂可选5x2或7x2方案，末端可换二指、三指、五指等执行器。",
+      "source_ids": ["s1", "s2", "s3", "s4"],
+      "attribution_required": true,
+      "quote_mode": "paraphrase_only",
+      "risk_level": "medium",
+      "notes": "自由度和执行器配置属于参数事实，正文尽量少堆，只用来说明手部操作空间和可定制性。"
+    },
+    {
+      "id": "f4",
+      "claim": "机身和头部均配8核CPU，头部视觉模组算力达10TOPS，并配合双目视觉和语音交互。",
+      "source_ids": ["s1", "s2", "s3", "s4"],
+      "attribution_required": true,
+      "quote_mode": "paraphrase_only",
+      "risk_level": "medium",
+      "notes": "此事实只作为执行系统的配套条件，不要把文章重新写回视觉感知成本。"
+    },
+    {
+      "id": "f5",
+      "claim": "产品支持底层或全栈开放接口、二次开发，可按科研、轻工业、服务等场景做部署与定制。",
+      "source_ids": ["s2", "s3", "s4"],
+      "attribution_required": true,
+      "quote_mode": "paraphrase_only",
+      "risk_level": "medium",
+      "notes": "商业化判断应落到二次开发和固定工位试用门槛，不写成马上替代工人。"
+    },
+    {
+      "id": "f6",
+      "claim": "快科技称四个版本均标配约2kg手臂负载、0.1mm末端夹爪精度；界面转载稿也提到单臂最大负载约2kg、末端夹爪重复定位精度约0.1mm。",
+      "source_ids": ["s2", "s3"],
+      "attribution_required": true,
+      "quote_mode": "paraphrase_only",
+      "risk_level": "medium_high",
+      "notes": "精度和负载是高风险参数，若正文使用必须带来源归属，不要过度推演实际产线能力。"
+    },
+    {
+      "id": "f7",
+      "claim": "上海证券报转载稿提到宇树给出的参考应用包括快递分拣、上下料、玩具分类等工业和家庭场景。",
+      "source_ids": ["s4"],
+      "attribution_required": true,
+      "quote_mode": "paraphrase_only",
+      "risk_level": "medium_high",
+      "notes": "单源应用场景，正文可用于举例，但不要把参考场景写成已经规模落地。"
+    }
+  ],
+  "key_findings": [
+    "最硬的新闻钩子不是低价本身，而是低价和形态同时出现：2.69万元起，且明显不是全尺寸两条腿路线，而是上半身双臂加固定底座或移动底盘。",
+    "这台机器的商业化暗示很清楚：先把操作手臂放到相对可控的工位里，做抓取、夹持、装配、分类、上下料这类重复动作，再谈完整人形。",
+    "15到31自由度、可换末端执行器、二次开发接口这些参数，能支撑文章把重点落到手的可配置性和工位适配，而不是把参数表照抄一遍。",
+    "视觉双目、10TOPS头部算力、语音交互是配套能力；本轮不要和昨天的NVIDIA感知成本文重复，写作时只把它当成手能干活前的基础条件。",
+    "风险边界：现在能说的是门槛降低、可试用场景变多、固定工位更像先落地路径；不能说机器人已经大规模替代工人。"
+  ],
+  "angle_risks": [
+    {
+      "risk": "标题或正文滑向人形机器人终于便宜了的价格稿",
+      "mitigation": "价格只当入口，第二段立刻转向为什么它没有腿、为什么这反而更像商业化。"
+    },
+    {
+      "risk": "写成新品参数汇总",
+      "mitigation": "参数只保留三组：底座/移动底盘、自由度/执行器、二次开发/场景；每组都服务于手和工位。"
+    },
+    {
+      "risk": "重复昨天NVIDIA文章的眼睛耳朵视角",
+      "mitigation": "视觉和算力只写一句过桥，主轴必须是执行入口、双臂操作、固定工位。"
+    },
+    {
+      "risk": "把商用参考场景写成已经规模落地",
+      "mitigation": "所有场景用参考、适配、可拓展、试用门槛等表达，避免马上上岗、替代工人等强结论。"
+    },
+    {
+      "risk": "宇树官方一手资料未直接抓到",
+      "mitigation": "正文涉及参数时用媒体归属；高精度、负载、应用场景等单源或少源事实必须带 attribution_required。"
+    }
+  ],
+  "title_directions": [
+    "宇树把机器人卖到2.69万，我更在意它为什么先砍掉了腿",
+    "人形机器人先上岗的，可能不是腿，是手",
+    "宇树这台2.69万机器人，真正便宜的是一个工位入口",
+    "机器人商业化最先落地的样子，可能就是一双手加一个底座",
+    "宇树新机器人没有急着学人走路，反而更像要去干活"
+  ],
+  "entity_alias_map": {
+    "Unitree": ["宇树", "宇树科技"],
+    "Unitree dual-arm humanoid robot": ["宇树双臂人形机器人", "双臂人形机器人", "R1系列双臂人形机器人"],
+    "end effector": ["末端执行器", "夹爪", "灵巧手"],
+    "fixed workstation": ["固定底座", "固定工位", "工位部署"],
+    "mobile base": ["移动底盘", "移动版", "带移动底座版本"]
+  },
+  "style_exemplar_pack": [
+    {
+      "function": "开头抓钩",
+      "example": "2.69万这个价格当然抓眼球，但本虾第一眼看的不是价格，是它的下半身。"
+    },
+    {
+      "function": "核心判断",
+      "example": "机器人真正先上岗的，可能不是两条腿，而是一双能被固定在工位上的手。"
+    },
+    {
+      "function": "参数转人话",
+      "example": "自由度不是炫技词，它说白了就是这只手能拐几个弯、能不能绕到该干活的位置。"
+    },
+    {
+      "function": "风险收束",
+      "example": "这不等于工厂明天就少一排人，但它说明机器人终于开始把自己放进真实工位里算账。"
+    }
+  ],
+  "discovery_notes": [
+    "Sogou Web 用作 discovery，发现 IT之家、界面新闻、快科技、潮新闻、东方财富等候选；最终只把可 fetch 的源页面纳入 evidence。",
+    "搜索结果页信息未作为 evidence，只作为候选 URL 发现路径。"
+  ]
+}

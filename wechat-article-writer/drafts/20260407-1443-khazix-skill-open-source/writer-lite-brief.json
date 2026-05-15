@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-07T14:43:00+08:00",
+  "change_reason": "topic locked after reading original article; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "卡兹克把自己正在使用的内容创作 skill 一字不改开源了，这不是普通项目发布，而是一个头部创作者公开自己的创作方法系统。",
+  "thesis": "真正被公开的不是几段 prompt，而是一个创作者如何把自己的风格、边界、自检和迭代流程拆成可复用系统。",
+  "ai_punchline": "AI 时代更稀缺的，不是纯手工写作的人，而是知道什么可以交给系统、什么必须自己下刀的人。",
+  "must_keep": [
+    "必须区分 AI 辅助创作 与 AI 代替创作",
+    "必须写出 方法可开源 与 神之一手不可开源 的张力",
+    "必须把重点放在 方法系统公开竞争，而不是人物新闻"
+  ],
+  "must_avoid": [
+    "不要写成 GitHub 资讯稿",
+    "不要写成对卡兹克个人的吹捧文",
+    "不要把文章写成泛泛而谈的人类不可替代宣言"
+  ],
+  "why_fit": "事件发生在最近 48 小时内，入口强，且原文本身已经把方法系统、自检、迭代、AI 辅助边界说得足够具体，适合做热点解读型观点文。",
+  "downstream_boundary": "Researcher 只负责补证和 sharpen；Writer/Humanizer/Layout 无权偷换成别的话题。"
+}

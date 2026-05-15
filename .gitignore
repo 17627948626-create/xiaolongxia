@@ -1,0 +1,36 @@
+# Secrets and credentials
+secrets.json
+*.pem
+*.key
+*.p12
+*.pfx
+*cookie*
+*token*
+*credential*
+auth-*
+
+# Runtime and cache state
+tmp/
+tmp-*/
+out/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-wal
+*.db-shm
+*.log
+
+# Browser and raw session state
+browser-profile/
+browser-use-profile/
+sessions/
+*.trajectory.jsonl
+*.codex-app-server.json
+
+# Local archives
+*.tar
+*.tar.gz
+*.tar.zst
+*.age
+*.zip

@@ -1,0 +1,22 @@
+{
+  "backend": "deepseek-cli",
+  "phase": "revise",
+  "output_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-1030-meta-muse-spark-product-war/draft-r3-deepseek.md",
+  "mode": "expert",
+  "deepthink": "off",
+  "session_policy": "continue",
+  "prompt_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-1030-meta-muse-spark-product-war/draft-r3-deepseek.md.prompt.txt",
+  "prompt_sha256": "2f16f7f70357d6ae0b8f636225b498b0221ecb7f5102a581b75b2b91a51e83e2",
+  "output_sha256": "ee7a0b5eebf0215c4be3fa62fd5c157a72495d02ec091c53e99a3ca30000e57b",
+  "generated_at": "2026-04-09T03:29:26.048694+00:00",
+  "command": [
+    "deepseek-cli",
+    "--continue",
+    "--mode",
+    "expert",
+    "--deepthink",
+    "off",
+    "--prompt-file",
+    "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/drafts/20260409-1030-meta-muse-spark-product-war/draft-r3-deepseek.md.prompt.txt"
+  ]
+}

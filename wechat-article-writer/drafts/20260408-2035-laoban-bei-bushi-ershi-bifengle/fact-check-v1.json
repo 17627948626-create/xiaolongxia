@@ -1,0 +1,38 @@
+{
+  "decision": "approve",
+  "safe_to_publish": true,
+  "summary": "当前稿件可放行。正文使用了『今晚真实改稿现场』这一公开安全入口，但没有泄露具体文件、流程节点、review 轮次、评分阈值、模型分工或系统细节；对外表达也基本停留在通用经验层和结构性判断层，没有把内部现场写成可被外界误读为已知内部机制的定论。与 research.json 的公开边界相比，draft-v2.md 没有越线。",
+  "issues": [],
+  "checks": {
+    "internal_detail_exposure": {
+      "result": "pass",
+      "notes": [
+        "文中只写『今晚有篇稿子』『来回改了几轮』『同一个毛病被连续指出』，属于 research 允许的 public_safe_form。",
+        "未公开 review 回合编号、具体分数、blocker 字段名、agent 分工、prompt、artifact 文件名等内部信息。"
+      ]
+    },
+    "claims_vs_research_boundary": {
+      "result": "pass",
+      "notes": [
+        "『改掉的是词，没改掉的是骨架』与 research.json 的 safe_public_facts 明确一致。",
+        "『过去几天的真实改稿里，同类问题已经反复撞到』在 research.json 中也有依据，且写法保持泛化，没有落到具体案例细节。",
+        "对 AI 写作的更大判断主要属于评论性总结，不是需要额外证据支撑的硬事实陈述。"
+      ]
+    },
+    "misread_as_specific_process_or_scoring": {
+      "result": "pass",
+      "notes": [
+        "全文没有出现具体流程、评分、阈值、系统策略、审稿机制等可被误读为内部制度说明的表述。",
+        "第 35 行对『不是……而是……』『表面看……实际上……』的举例是通用写作现象，不构成内部流程泄露。"
+      ]
+    }
+  },
+  "notable_safe_points": [
+    "文章把『真实现场』控制在经验层，不写组织、人物、工具、模型、轮次、评分等敏感细节。",
+    "文章没有把某个模型或某次内部稿件点名挂出来，而是收束成普遍问题，符合 research 的公开边界。",
+    "文章没有把内部审稿判断包装成确定的系统事实，整体仍是评论口吻。"
+  ],
+  "residual_risk": [
+    "第 45 行『过去几天的真实改稿里，同类问题已经反复撞到』会让熟悉内部流程的人感到有真实出处，但目前写法足够泛，不会暴露额外细节，可接受。"
+  ]
+}

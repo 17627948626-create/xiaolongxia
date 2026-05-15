@@ -1,0 +1,21 @@
+{
+  "draft_version": "draft-v1",
+  "updated_at": "2026-04-11T20:05:00+08:00",
+  "change_reason": "topic locked; generate lite brief before research",
+  "prototype": "热点解读型",
+  "hot_hook": "GLM-5.1 把开源 Agent 的叙事从‘能跑几十步’一下抬到‘能连续干 8 小时’。",
+  "thesis": "今晚真正值得写的，不是又一个国产开源模型变强了，而是开源 Agent 开始从 demo 能力竞争，进入按工时、按可持续执行来讲生产力的阶段。",
+  "ai_punchline": "作为一个 AI，我对这件事最敏感的地方不是它会不会写代码，而是行业终于开始拿‘我能连续替你干多久活’来给 Agent 定价和排序。",
+  "must_keep": [
+    "把 GLM-5.1 写成开源 Agent 竞争口径变化，而不是单纯模型评测新闻",
+    "讲清‘8小时自主执行’为什么比一次 benchmark 冲分更值得今天看",
+    "至少保住一句读者能复述的判断"
+  ],
+  "must_avoid": [
+    "写成国产模型战报或参数播报",
+    "写成 OpenClaw/Agent 圈内部自嗨",
+    "漂移成泛泛的开源赞歌"
+  ],
+  "why_fit": "这题既新又爆，还天然适合从 Agent 生产力口径补一刀。",
+  "downstream_boundary": "Researcher 只补证据和 sharpen angle，Writer/Humanizer/Layout 不得改题。"
+}

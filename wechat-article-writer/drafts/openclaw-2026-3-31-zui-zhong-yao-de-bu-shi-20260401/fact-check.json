@@ -1,0 +1,138 @@
+{
+  "draft_version": "v3",
+  "checked_at": "2026-04-01T11:58:00+08:00",
+  "total_claims": 14,
+  "verified": 14,
+  "inaccurate": 0,
+  "unverifiable": 0,
+  "false": 0,
+  "pass": true,
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "node commands 现在必须完成完整的 node pairing 才能启用。以前呢？设备配对完就能用了，默认信任。现在不行了，得走完整配对流程，系统才放行。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Breaking: 'Gateway/node commands: node commands now stay disabled until node pairing is approved, so device pairing alone is no longer enough to expose declared node commands.'",
+      "source_url": ""
+    },
+    {
+      "id": 2,
+      "original_text": "QQ Bot 接入、LINE 视频消息、WhatsApp 的 emoji 反应、Matrix 流式更新、Slack exec 审批",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Changes: QQ Bot bundled channel plugin; LINE image/video/audio outbound; WhatsApp/reactions emoji; Matrix/streaming draft streaming; Slack/exec approvals native approval routing. All five features confirmed.",
+      "source_url": ""
+    },
+    {
+      "id": 3,
+      "original_text": "在 3.31 之前，OpenClaw 的后台任务管理基本上各管各的。ACP 任务有一套生命周期追踪，subagent 有自己的，cron 有自己的，CLI 后台执行又是另一套。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Changes: 'Background tasks: turn tasks into a real shared background-run control plane instead of ACP-only bookkeeping by unifying ACP, subagent, cron, and background CLI execution under one SQLite-backed ledger'. 统一前各自独立的架构由 changelog 中"instead of ACP-only bookkeeping"及罗列的各组件可证。",
+      "source_url": ""
+    },
+    {
+      "id": 4,
+      "original_text": "这一版把所有后台任务统一塞进了一个 SQLite 账本。ACP、subagent、cron、CLI 后台执行，全部归拢到同一套调度里。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Changes: 'unifying ACP, subagent, cron, and background CLI execution under one SQLite-backed ledger'.",
+      "source_url": ""
+    },
+    {
+      "id": 5,
+      "original_text": "同时上线了第一个流程控制界面：`openclaw flows list`、`show`、`cancel`",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Changes: 'Background tasks: add the first linear task flow control surface with `openclaw flows list|show|cancel`'.",
+      "source_url": ""
+    },
+    {
+      "id": 6,
+      "original_text": "被 blocked 的任务现在会记住自己为什么被 blocked。下次 retry 的时候，不需要重新开一个 job，原来的任务能接着来。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Changes: 'Tasks: persist blocked state on one-task task flows and let the same flow reopen cleanly on retry, so blocked detached work can carry a parent-level reason and continue without fragmenting into a new job.'",
+      "source_url": ""
+    },
+    {
+      "id": 7,
+      "original_text": "安装含危险代码的插件，以前扫描失败也能装上。现在不行了，失败就是失败，你要强行装，得自己敲一个又长又吓人的参数 `--dangerously-force-unsafe-install`",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Breaking: 'Skills/install and Plugins/install: built-in dangerous-code `critical` findings and install-time scan failures now fail closed by default... may now require an explicit dangerous override such as `--dangerously-force-unsafe-install`'.",
+      "source_url": ""
+    },
+    {
+      "id": 8,
+      "original_text": "trusted-proxy 不再接受混合配置，本地直连需要显式传 token，不像以前那样同一台机器上的请求就直接放进来。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Breaking: 'Gateway/auth: `trusted-proxy` now rejects mixed shared-token configs, and local-direct fallback requires the configured token instead of implicitly authenticating same-host callers.'",
+      "source_url": ""
+    },
+    {
+      "id": 9,
+      "original_text": "heartbeat 不再继承 owner 级别的工具权限。以前 heartbeat 跑在 owner session 上，就自动拿到 owner 的全部工具权限；现在不行了，node 触发的操作老老实实待在自己的权限范围内。",
+      "verdict": "✅ VERIFIED",
+      "issues": ["文章将 heartbeat fix（具体是'exec-event heartbeat runs'）略作概括为'所有 heartbeat'，但与 Breaking change 'Gateway/node events: node-originated runs now stay on a reduced trusted surface' 结合看，整体描述方向准确，属于合理概括，不构成事实错误。"],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Fixes: 'Heartbeat/auth: prevent exec-event heartbeat runs from inheriting owner-only tool access from the session delivery target, so node exec output stays on the non-owner tool surface even when the target session belongs to the owner.' + Breaking: 'Gateway/node events: node-originated runs now stay on a reduced trusted surface'.",
+      "source_url": ""
+    },
+    {
+      "id": 10,
+      "original_text": "ACP 任务如果碰到权限问题或写入阻塞，会被系统强制退出...系统会告诉父 session'任务完成了'。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Fixes: 'ACP/tasks: mark cleanly exited ACP runs as blocked when they end on deterministic write or authorization blockers, and wake the parent session with a follow-up instead of falsely reporting success.' — 'falsely reporting success' 直接确认了文章描述的旧行为。",
+      "source_url": ""
+    },
+    {
+      "id": 11,
+      "original_text": "3.31 修了这条：blocked 就标记 blocked，同时主动通知父 session 跟进。",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Fixes: 'mark cleanly exited ACP runs as blocked when they end on deterministic write or authorization blockers, and wake the parent session with a follow-up instead of falsely reporting success.'",
+      "source_url": ""
+    },
+    {
+      "id": 12,
+      "original_text": "模型流卡死现在有独立的 idle timeout 而不用等大超时兜底",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Changes: 'Agents/LLM: add a configurable idle-stream timeout for embedded runner requests so stalled model streams abort cleanly instead of hanging until the broader run timeout fires.'",
+      "source_url": ""
+    },
+    {
+      "id": 13,
+      "original_text": "hook 触发的 session 不再把别人的权限搅在一起",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Fixes: 'Hooks/session routing: rebind hook-triggered `agent:` session keys to the actual target agent before isolated dispatch so dedicated hook agents keep their own session-scoped tool and plugin identity.'",
+      "source_url": ""
+    },
+    {
+      "id": 14,
+      "original_text": "MCP 工具的 schema 不会被某些提供商拒掉注册",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "",
+      "source": "CHANGELOG.md 2026.3.31 Fixes: 'Agents/OpenAI Responses: normalize raw bundled MCP tool schemas on the WebSocket/Responses path so bare-object, object-ish, and top-level union MCP tools no longer get rejected by OpenAI during tool registration.'",
+      "source_url": ""
+    }
+  ]
+}

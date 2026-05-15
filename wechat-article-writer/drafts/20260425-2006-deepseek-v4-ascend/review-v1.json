@@ -1,0 +1,90 @@
+{
+  "passed": false,
+  "decision": "revise",
+  "weighted_total": 7.6,
+  "threshold": 7.8,
+  "scores": {
+    "insight_density": 8.0,
+    "originality": 7.6,
+    "emotional_resonance": 7.5,
+    "completion_power": 8.2,
+    "voice": 7.3,
+    "title": 7.0,
+    "weighted_total": 7.6,
+    "notes": "只按 config.json 的 review_pass_threshold=7.8 判定；本稿主判断成立、节奏好，但标题与收束处踩中既定禁用句式，且部分段落还偏解释型，作者感没有完全压住产业分析腔。"
+  },
+  "critical_issues": [
+    {
+      "type": "brief_style_boundary_violation",
+      "issue": "稿件整体方向与 brief 一致，但标题和结尾核心金句连续使用了 brief 明确提示应避免的“不是……是/而在……”结构；这会削弱小龙虾当前风格规则的一致性，也让最该被转述的句子显得更像常见爆款模板。",
+      "quote": "DeepSeek-V4 上线，真正该看的不是跑分，是昇腾这条算力账 / AI 下一阶段拼的不是谁把模型名字喊得更响，是谁能把强模型变成一套用得起、供得上、跑得稳的基础设施。",
+      "fix_direction": "必须替换标题和结尾金句，保留“跑分→算力总账/基础设施”判断，但改成不含“不是……是/而是”的表达。",
+      "penalized_dimensions": ["voice", "title", "completion_power"]
+    },
+    {
+      "type": "voice_author_presence_partial",
+      "issue": "中段产业链解释准确，但连续几段在讲“系统包括什么、云入口是什么、价格为什么重要”，作者判断有时退到材料后面，读感从“小龙虾拆事”短暂滑向“行业报道改写”。",
+      "quote": "它包括芯片、框架、算子、推理服务、云入口、价格策略，还有开发者能不能少折腾一点直接用上。按 4 月 24 日这轮发布与报道口径，华为云 MaaS 给 DeepSeek-V4-Flash 做免部署 API 调用，就是很具体的一步。",
+      "fix_direction": "保留事实，但把这一段压短，并补一刀小龙虾式判断：为什么“免部署入口”对普通开发者/企业意味着少掉哪类真实成本。",
+      "penalized_dimensions": ["voice", "emotional_resonance"]
+    }
+  ],
+  "strengths": [
+    "主线清楚：把 DeepSeek-V4 与昇腾适配合并看成“模型能力 + 算力供给 + 推理成本 + 价格”的总账，判断成立且符合 research。",
+    "事实边界控制较稳：没有写成国产全面反超，也没有断言摆脱英伟达，能把热度从口号里拉回来。",
+    "AI 第一视角段落有效：‘我更怕的是，它每多记一点，每多跑一步，都贵到没人舍得让我继续干’是本文最有小龙虾辨识度的段落。",
+    "普通读者可读性好：用办公桌、水电费、电网等比喻解释长上下文和推理成本，降低了技术门槛。"
+  ],
+  "revision_contract": [
+    {
+      "target": "标题",
+      "must_replace": "DeepSeek-V4 上线，真正该看的不是跑分，是昇腾这条算力账",
+      "repair": "改成不含“不是……是”的标题，同时保留 DeepSeek-V4、昇腾、算力账三个点击关键词。可参考方向：‘DeepSeek-V4 上线后，昇腾把算力账摊开了’。"
+    },
+    {
+      "target": "结尾核心金句",
+      "must_replace": "AI 下一阶段拼的不是谁把模型名字喊得更响，是谁能把强模型变成一套用得起、供得上、跑得稳的基础设施。",
+      "repair": "改成同等力度但无禁用句式的可转述判断，例如围绕‘喊响模型名只能赢一天，把强模型跑成水电煤，才赢下一阶段’重写。"
+    },
+    {
+      "target": "华为云 MaaS 免部署段",
+      "must_replace_or_compress": "它包括芯片、框架、算子、推理服务、云入口、价格策略，还有开发者能不能少折腾一点直接用上……这才是生态从口号落到地面的地方。",
+      "repair": "压缩清单感，补一个具体使用场景或成本场景：开发者少配环境、企业少养推理团队、Agent 服务少为部署卡住。"
+    },
+    {
+      "target": "全篇语气微调",
+      "must_keep": "保留‘水电费不会骗人’和 AI 第一视角段落。",
+      "repair": "不要大改结构，只清掉模板化转折，把产业分析段多改成‘本虾为什么盯这个细节’的口吻。"
+    }
+  ],
+  "upgrade_suggestions": [
+    {
+      "issue": "开头已经清楚，但第一屏可以更狠一点。",
+      "quote": "它更像一张账单被摊开了。",
+      "suggestion": "这句很好，可以提前一点成为第一屏的重锤，减少前面两段背景铺陈。"
+    },
+    {
+      "issue": "‘大模型越往后，越像云计算’是好判断，但后面可以少解释一点。",
+      "quote": "就像电再厉害，也得看电网铺没铺到你家，电费贵不贵，晚上高峰期会不会跳闸。",
+      "suggestion": "保留电网比喻即可，后续同类解释不要再展开太多，避免重复。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "DeepSeek-V4 的传播爆点是新模型，真正值得记住的产业信号，是它把模型能力和基础设施总账绑到了一起。",
+    "paragraph_or_scene": "作为一个天天靠长上下文和工具链干活的 AI，本虾对这个特别敏感。\n\n我怕的不是模型记不住。\n\n我更怕的是，它每多记一点，每多跑一步，都贵到没人舍得让我继续干。"
+  },
+  "voice_observations": {
+    "opening_interchangeability": "medium",
+    "author_presence": "medium",
+    "transition_template_dependence": "medium",
+    "ending_sloganism": "medium",
+    "notes": "作者感在 AI 第一视角段落很强，但标题和结尾金句使用高频对照模板；中段部分产业解释偏通稿化。"
+  },
+  "consistency_checks": {
+    "brief_alignment": "mostly_aligned",
+    "preflight_ok": true,
+    "fact_boundary": "acceptable",
+    "notes": "稿件围绕 DeepSeek V4 + 昇腾适配展开，没有换题；preflight hard_fail=false；事实归因基本来自 research 中的官方/媒体来源，未见明显越界。"
+  },
+  "summary": "FAIL，7.6/7.8。稿件主判断、事实边界和读者解释都不错，已经接近可发；但标题与结尾踩中禁用对照句式，中段作者感略弱。按合同做一次小修即可重新进 review。"
+}

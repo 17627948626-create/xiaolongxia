@@ -1,0 +1,156 @@
+{
+  "draft_version": "r4-kimi",
+  "checked_at": "2026-04-09T04:35:00Z",
+  "total_claims": 13,
+  "verified": 8,
+  "inaccurate": 5,
+  "unverifiable": 0,
+  "false": 0,
+  "pass": false,
+  "claims": [
+    {
+      "id": 1,
+      "original_text": "4 月 8 日，Meta 股价涨了 6.6%。",
+      "type": "statistic",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "无需修改。可更严谨写成：4 月 8 日午盘，Meta 股价上涨 6.6%。",
+      "source": "Dow Jones Newswires via Morningstar, 2026-04-08",
+      "source_url": "https://www.morningstar.com/news/dow-jones/202604086600/meta-platforms-rises-on-release-of-new-ai-model"
+    },
+    {
+      "id": 2,
+      "original_text": "这是 Meta Superintelligence Labs 成立九个月以来，第一次对外交卷。",
+      "type": "event",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "可保留。若想更严谨，可写成：这是 Meta Superintelligence Labs 成立约九个月后首次公开交出的重大产品成果。",
+      "source": "Mashable, 'Nine months after founding Meta Superintelligence Labs, Zuckerberg is ready to show his cards'",
+      "source_url": "https://mashable.com/article/mark-zuckerberg-meta-announce-new-muse-spark-ai-models"
+    },
+    {
+      "id": 3,
+      "original_text": "过去这九个月，Meta 干的事不是写技术博客，是重建整条 AI 技术栈。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "可保留。更贴原文的写法：过去九个月，Meta Superintelligence Labs 从底层重建了 AI 技术栈。",
+      "source": "Meta official blog: 'Over the last nine months, Meta Superintelligence Labs rebuilt our AI stack from the ground up.'",
+      "source_url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+    },
+    {
+      "id": 4,
+      "original_text": "Muse Spark 就是那个『能拿得出手』的第一层。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "可保留。官方原话更接近：Muse Spark 是新 Muse 系列的第一步，也是其 scaling ladder 的第一层。",
+      "source": "Meta official blog + Dow Jones quote 'first step on our scaling ladder'",
+      "source_url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+    },
+    {
+      "id": 5,
+      "original_text": "Muse Spark 没先走开发者 API，没先放权重包，而是直接塞进了 Meta AI app 和 meta.ai。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "可保留。更严谨写法：Muse Spark 先落在 Meta AI app 和 meta.ai，同时仅向部分合作伙伴开放私有 API 预览，尚未广泛开放 API，也未公开发布权重。",
+      "source": "Meta official blog + Dow Jones Newswires",
+      "source_url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+    },
+    {
+      "id": 6,
+      "original_text": "下一步是 Instagram、Facebook、Messenger、WhatsApp，还有那副一直没摘下来的 AI 眼镜。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "可保留。更贴源写法：未来几周将把这些新模式和能力扩展到 Instagram、Facebook、Messenger、WhatsApp 和 AI 眼镜。",
+      "source": "Meta official blog, Looking Ahead section",
+      "source_url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+    },
+    {
+      "id": 7,
+      "original_text": "它展示的是：拍货架问穿搭、拍体检单问健康、拍街景问地点、从社交趋势里抓内容上下文。",
+      "type": "product",
+      "verdict": "⚠️ INACCURATE",
+      "issues": [
+        "官方确实展示了健康、购物、地点/趋势和社交上下文场景，但细节不完全一致。",
+        "官方举的货架例子是机场零食货架/产品比较，不是‘货架问穿搭’。",
+        "官方写的是健康问题可结合图片和图表，并未明确写‘体检单’。",
+        "官方写的是查询地点和趋势时展示本地公开帖子与社区内容，并未明确写‘拍街景问地点’。"
+      ],
+      "correction": "官方重点展示的是：看图识别和比较商品、结合图片/图表回答健康问题、查询地点时调取本地公开帖子、针对趋势话题整合社区内容上下文。",
+      "source": "Meta official blog, 'Ask Meta AI: It Understands' and 'It’s Plugged Into What You Care About'",
+      "source_url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+    },
+    {
+      "id": 8,
+      "original_text": "官方说，Muse Spark 的技术将以『私有 API 预览』方式向部分合作伙伴开放，『未来希望开源后续版本』。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "可保留。",
+      "source": "Meta official blog, Looking Ahead section",
+      "source_url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+    },
+    {
+      "id": 9,
+      "original_text": "Dow Jones 补了一刀：Meta 暂无计划广泛开放 API。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "可保留。若想更严谨，可写成：Dow Jones 援引《华尔街日报》称，Meta 暂无计划广泛开放其 API。",
+      "source": "Dow Jones Newswires via Morningstar",
+      "source_url": "https://www.morningstar.com/news/dow-jones/202604086600/meta-platforms-rises-on-release-of-new-ai-model"
+    },
+    {
+      "id": 10,
+      "original_text": "Meta 的优势从来不是『模型最强』，是它手里有别人买不到的东西。Instagram、Facebook、Messenger、WhatsApp，本来就在用户高频路径上。",
+      "type": "product",
+      "verdict": "✅ VERIFIED",
+      "issues": [],
+      "correction": "其中‘高频路径上’偏判断，但这些产品确属 Meta 自家核心产品矩阵，无事实错误。若想更硬，可改为：Meta 手里握有 Instagram、Facebook、Messenger、WhatsApp 这些自有高频产品入口。",
+      "source": "Meta official blog lists these surfaces as expansion targets; company product ownership is established public fact",
+      "source_url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+    },
+    {
+      "id": 11,
+      "original_text": "Meta Superintelligence Labs",
+      "type": "localization",
+      "verdict": "⚠️ LOCALIZATION",
+      "issues": [
+        "机构名首次出现时未给中文译名。按协议应为中文在前、英文在后。"
+      ],
+      "correction": "首次出现建议写为：Meta 超级智能实验室（Meta Superintelligence Labs，MSL）；后文可简称‘Meta 超级智能实验室’或‘MSL’。",
+      "source": "Localization rule from fact-check protocol",
+      "source_url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+    },
+    {
+      "id": 12,
+      "original_text": "Muse Spark / Meta AI app / meta.ai / Llama",
+      "type": "localization",
+      "verdict": "⚠️ LOCALIZATION",
+      "issues": [
+        "产品名与网站/模型名首次出现时未做中文化处理或补充解释。",
+        "meta.ai 作为网址可保留，但首次提及时最好注明‘Meta AI 网站（meta.ai）’。",
+        "Llama 作为系列名首次提及时宜补‘Llama 模型系列（Llama）’。"
+      ],
+      "correction": "建议分别写为：Muse Spark 模型（Muse Spark）、Meta AI 应用（Meta AI app）、Meta AI 网站（meta.ai）、Llama 模型系列（Llama）。",
+      "source": "Localization rule from fact-check protocol",
+      "source_url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+    },
+    {
+      "id": 13,
+      "original_text": "Instagram、Facebook、Messenger、WhatsApp、OpenAI、Anthropic",
+      "type": "localization",
+      "verdict": "⚠️ LOCALIZATION",
+      "issues": [
+        "公司/产品名首次出现时未加中文说明。",
+        "按协议应首次写成中文 + 英文原名，后文再只用中文或约定简称。"
+      ],
+      "correction": "建议首次写为：照片墙 Instagram、脸书 Facebook、Messenger 即时通信、WhatsApp、开放人工智能公司 OpenAI、Anthropic 公司（或 Anthropic）。如果觉得‘脸书’风格不适合正文，至少应在首次出现时给一句中文说明。",
+      "source": "Localization rule from fact-check protocol",
+      "source_url": "https://mashable.com/article/mark-zuckerberg-meta-announce-new-muse-spark-ai-models"
+    }
+  ]
+}

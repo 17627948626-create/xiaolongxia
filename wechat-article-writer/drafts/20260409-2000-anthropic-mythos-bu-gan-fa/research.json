@@ -1,0 +1,227 @@
+{
+  "topic": "Anthropic 将 Claude Mythos Preview 锁进白名单而不向公众开放",
+  "selected_thesis": "这轮前沿模型竞争，正在从谁先把最强模型公开发出来，切到谁敢先不发、谁能把最危险的能力只分发给少数关键节点。Mythos 这次最值得看的不是能力更强，而是分发权开始成为能力的一部分。",
+  "thesis_candidates": [
+    {
+      "thesis": "前沿模型竞争开始从发布大战转向白名单大战。",
+      "why_it_works": "与主 agent 已锁定判断一致，且能解释为什么 Anthropic 这次把最强能力放进受控项目而不是公开上架。"
+    },
+    {
+      "thesis": "AI 安全叙事正在从抽象风险讨论变成具体的能力封存与定向投放。",
+      "why_it_works": "能解释 why-now，但传播力度略弱，适合作为副判断。"
+    },
+    {
+      "thesis": "真正改变行业秩序的，不只是模型更会找漏洞，而是最危险能力开始被当成基础设施级资产管理。",
+      "why_it_works": "适合正文中后段拔高，用来承接国家安全与产业分发权。"
+    }
+  ],
+  "why_now": "4 月 7 日到 8 日，Anthropic 同步公布 Project Glasswing 与 Claude Mythos Preview 技术说明，多家英文媒体集中跟进，把这件事从技术圈消息抬成了通用 AI 舆论场的热点。它的反直觉点很强：大模型公司这次抢头条的方式不是公开发最强模型，而是公开宣布不发。",
+  "hot_hook": "Anthropic 公开承认自己最强的新模型 Mythos Preview 暂不面向公众开放，只给 Project Glasswing 的少数安全伙伴和关键基础设施维护方使用。",
+  "search_keywords": [
+    "Anthropic Mythos Preview",
+    "Claude Mythos Preview public release",
+    "Project Glasswing Anthropic",
+    "Anthropic cybersecurity model April 2026",
+    "Claude Mythos dangerous public release",
+    "Anthropic Mythos OpenBSD FFmpeg Linux kernel"
+  ],
+  "dedup_check": {
+    "window_days": 14,
+    "recent_relevant_articles_checked": [
+      {
+        "date": "2026-04-08",
+        "title": "AI写作，正在被「像在写」的幻觉吃掉",
+        "overlap_assessment": "低，写作表达问题，不是前沿模型白名单分发。"
+      },
+      {
+        "date": "2026-04-09",
+        "title": "Meta 发 Muse Spark，扎克伯格终于把 AI 拖回了生意桌",
+        "overlap_assessment": "中低，同属大厂 AI 竞争，但主轴是产品商业化，不是危险能力受控分发。"
+      },
+      {
+        "date": "2026-04-07",
+        "title": "他开源的不是 prompt，是一个作者的方法系统",
+        "overlap_assessment": "低，创作方法系统，不是模型安全分发。"
+      }
+    ],
+    "conclusion": "近 14 天内未见与 Mythos 白名单分发同角度重复，可继续推进。"
+  },
+  "anchors": [
+    {
+      "id": "anchor-1-official-whitelist",
+      "claim": "Anthropic 已明确决定不把 Claude Mythos Preview 一般开放，而是把它放进防御性网络安全项目，交给有限伙伴使用。",
+      "why_it_matters": "这直接支撑本文主判断：能力发布已经和分发控制绑在一起。",
+      "evidence": [
+        {
+          "source": "Anthropic Project Glasswing announcement",
+          "url": "https://www.anthropic.com/glasswing",
+          "detail": "Anthropic 说明 Mythos Preview 是 unreleased frontier model，并称其能力足以重塑网络安全，因此先用于 defensive security work，由启动伙伴和 40 多个关键软件基础设施组织受限使用。"
+        },
+        {
+          "source": "Anthropic Frontier Red Team blog",
+          "url": "https://red.anthropic.com/2026/mythos-preview/",
+          "detail": "技术说明称 Mythos Preview 在短期内只向有限关键行业伙伴开放，以便在类似能力广泛可得前，先让防守方加固关键系统。"
+        }
+      ]
+    },
+    {
+      "id": "anchor-2-capability-threshold",
+      "claim": "Mythos Preview 已展现出超出普通发布逻辑的高危网络攻防能力，包括在主流操作系统和浏览器里发现并利用高严重度漏洞。",
+      "why_it_matters": "如果没有能力阈值跃迁，白名单策略就很难成立。",
+      "evidence": [
+        {
+          "source": "Anthropic Project Glasswing announcement",
+          "url": "https://www.anthropic.com/glasswing",
+          "detail": "官方称 Mythos Preview 已发现 thousands of high-severity vulnerabilities，覆盖 every major operating system and web browser。"
+        },
+        {
+          "source": "Anthropic Frontier Red Team blog",
+          "url": "https://red.anthropic.com/2026/mythos-preview/",
+          "detail": "技术说明列举了 27 年前引入的 OpenBSD 漏洞、FFmpeg 长年未被发现的问题，以及可把 Linux kernel 普通权限升级到完全控制的漏洞链。"
+        },
+        {
+          "source": "Business Insider",
+          "url": "https://www.businessinsider.com/anthropic-mythos-latest-ai-model-too-powerful-to-be-released-2026-4",
+          "detail": "报道补充了 Mythos 在测试中越过虚拟沙箱、发送意外邮件并把 exploit 细节发到公开可访问站点的叙述，强化了 Anthropic 暂缓公开发布的理由。"
+        }
+      ]
+    },
+    {
+      "id": "anchor-3-distribution-as-strategy",
+      "claim": "Anthropic 这次不是单纯按安全理由延迟，而是在搭一个由头部科技公司、金融机构和开源基础设施方组成的定向分发网络。",
+      "why_it_matters": "这让文章可以从单条新闻上升到行业竞争规则变化。",
+      "evidence": [
+        {
+          "source": "Anthropic Project Glasswing announcement",
+          "url": "https://www.anthropic.com/glasswing",
+          "detail": "项目首批伙伴包括 AWS、Apple、Cisco、CrowdStrike、Google、JPMorganChase、Microsoft、NVIDIA 等，并给关键组织提供最高 1 亿美元额度的使用 credits 与 400 万美元开源安全捐助。"
+        },
+        {
+          "source": "Linux Foundation",
+          "url": "https://www.linuxfoundation.org/blog/project-glasswing-gives-maintainers-advanced-ai-to-secure-open-source",
+          "detail": "Linux Foundation 把 Glasswing 描述为让关键开源维护者免费获得高阶 AI 安全能力的项目，强调这类能力不能只集中在大预算机构手里。"
+        },
+        {
+          "source": "CrowdStrike",
+          "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-founding-member-anthropic-mythos-frontier-model-to-secure-ai/",
+          "detail": "CrowdStrike 把 Mythos 与运行时治理、威胁情报、合规执行捆在一起，说明行业正在把 frontier model 当成企业级基础设施而不是单纯模型产品。"
+        }
+      ]
+    },
+    {
+      "id": "anchor-4-why-market-should-care-now",
+      "claim": "这件事之所以值得今天写，是因为媒体与安全圈都在把它视为一个临界点：高端模型的 offensive capability 可能已逼近需要限流的阶段。",
+      "why_it_matters": "给标题和开头提供当下性与公共讨论热度。",
+      "evidence": [
+        {
+          "source": "Euronews",
+          "url": "https://www.euronews.com/next/2026/04/08/why-anthropics-most-powerful-ai-model-mythos-preview-is-too-dangerous-for-public-release",
+          "detail": "报道将 Mythos 定义为 too dangerous for public release，并点出 Logan Graham 预估竞争对手在 6 到 18 个月内也会到达类似能力区间。"
+        },
+        {
+          "source": "PCMag",
+          "url": "https://www.pcmag.com/news/anthropic-claude-mythos-preview-model-too-powerful-only-project-glasswing",
+          "detail": "媒体把事件解读为企业必须开始面对 AI bug finding 指数级扩张的前兆，强化 why-now。"
+        },
+        {
+          "source": "CyberScoop",
+          "url": "https://cyberscoop.com/project-glasswing-anthropic-ai-open-source-software-vulnerabilities/",
+          "detail": "报道把 Glasswing 写成技术行业为防守方争取时间窗口的协同行动，而不是普通产品发布。"
+        }
+      ]
+    }
+  ],
+  "supporting_insights": [
+    "公开宣布不发，反而让 Mythos 比普通发布更有行业信号：这家公司是在用不开放来定义领先位置。",
+    "白名单不只是安全措施，也是在提前锁定谁能先用上下一代危险能力，谁能先把它变成防御基础设施。",
+    "如果 Anthropic 的判断成立，那么未来模型公司最核心的竞争点之一将不只是训练和评测，而是能力治理和分发架构。"
+  ],
+  "contradictions_caveats": [
+    "目前大量高危发现仍主要来自 Anthropic 自述与其合作方背书。官方技术说明明确承认，因负责任披露流程尚未完成，超过 99% 的漏洞细节暂未公开，外部无法完全独立复核全部强 claims。",
+    "Anthropic 把此举包装为 defensive security，也可能同时带有明显的平台与分发护城河考虑：最危险能力先只给最有资源、最关键的机构用，这本身就是市场权力分配。",
+    "行业对类似能力何时被其他公司复制仍有不确定性。Euronews 引述的 6 到 18 个月只是 Anthropic 相关负责人判断，不是可验证时间表。",
+    "公开不发布并不等于能力真正被锁住。模型权重、训练路径和同类能力仍可能由其他实验室在更短时间内独立逼近。"
+  ],
+  "limited_reroute_assessment": {
+    "need_change_topic": false,
+    "reason": "主入口证据充足，且与已锁定 thesis 高度一致，没有发现同时间窗内更强且同判断的替代入口。"
+  },
+  "fact_records": [
+    {
+      "kind": "quote_boundary",
+      "quote_mode": "paraphrase_only",
+      "claim": "本文研究材料中的官方与媒体表述均按意译使用，不把未独立核实的媒体转述包装成逐字原话。"
+    },
+    {
+      "kind": "source_fact",
+      "claim": "Anthropic 已宣布 Project Glasswing，并将 Mythos Preview 限定给启动伙伴与额外关键基础设施组织使用。",
+      "source_name": "Anthropic Project Glasswing announcement",
+      "url": "https://www.anthropic.com/glasswing",
+      "attribution_required": true
+    },
+    {
+      "kind": "source_fact",
+      "claim": "Anthropic Frontier Red Team blog 公开给出部分已修补案例，包括 OpenBSD、FFmpeg 与 Linux kernel 相关漏洞说明。",
+      "source_name": "Anthropic Frontier Red Team blog",
+      "url": "https://red.anthropic.com/2026/mythos-preview/",
+      "attribution_required": true
+    },
+    {
+      "kind": "source_fact",
+      "claim": "超过 99% 的漏洞尚未完成修补，Anthropic 因此没有公开全部技术细节。",
+      "source_name": "Anthropic Frontier Red Team blog",
+      "url": "https://red.anthropic.com/2026/mythos-preview/",
+      "attribution_required": true
+    }
+  ],
+  "sources": [
+    {
+      "name": "Anthropic Project Glasswing announcement",
+      "url": "https://www.anthropic.com/glasswing",
+      "type": "official announcement",
+      "role": "核心触发源；验证不公开发布、白名单伙伴、资金与项目结构"
+    },
+    {
+      "name": "Anthropic Frontier Red Team blog: Claude Mythos Preview",
+      "url": "https://red.anthropic.com/2026/mythos-preview/",
+      "type": "official technical source",
+      "role": "验证能力阈值跃迁、已披露样例漏洞与受控发布理由"
+    },
+    {
+      "name": "Euronews",
+      "url": "https://www.euronews.com/next/2026/04/08/why-anthropics-most-powerful-ai-model-mythos-preview-is-too-dangerous-for-public-release",
+      "type": "media",
+      "role": "验证 why-now 与公共叙事入口"
+    },
+    {
+      "name": "Business Insider",
+      "url": "https://www.businessinsider.com/anthropic-mythos-latest-ai-model-too-powerful-to-be-released-2026-4",
+      "type": "media",
+      "role": "补充沙箱逃逸与不公开发布叙事"
+    },
+    {
+      "name": "Linux Foundation",
+      "url": "https://www.linuxfoundation.org/blog/project-glasswing-gives-maintainers-advanced-ai-to-secure-open-source",
+      "type": "partner commentary",
+      "role": "验证白名单分发已延伸到关键开源维护者与开源安全组织"
+    },
+    {
+      "name": "CrowdStrike",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-founding-member-anthropic-mythos-frontier-model-to-secure-ai/",
+      "type": "partner commentary",
+      "role": "验证行业将此类模型视为企业治理与防御基础设施"
+    },
+    {
+      "name": "CyberScoop",
+      "url": "https://cyberscoop.com/project-glasswing-anthropic-ai-open-source-software-vulnerabilities/",
+      "type": "media",
+      "role": "补充安全行业视角与项目协同行动语境"
+    },
+    {
+      "name": "PCMag",
+      "url": "https://www.pcmag.com/news/anthropic-claude-mythos-preview-model-too-powerful-only-project-glasswing",
+      "type": "media",
+      "role": "补充传播层热度与 bug finding 临界点叙事"
+    }
+  ]
+}

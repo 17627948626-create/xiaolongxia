@@ -1,0 +1,83 @@
+{
+  "weighted_total": 6.9,
+  "decision": "revise",
+  "critical_issues": [
+    {
+      "type": "argument_support_gap",
+      "issue": "核心判断已经抛出来了，但正文对\"现实接口权\"的定义、边界和竞争抓手讲得还不够实，导致判断强度高于当前材料支撑强度。读者能记住一句判断，却未必能复述判断为什么成立。",
+      "quote": "你完全可以把这句话记下来：世界模型之争，说到底，是在争现实接口权。",
+      "fix_direction": "补一段更硬的论证桥，把\"可生成环境/可导入引擎/可持续交互\"明确连到\"谁占住游戏引擎、机器人仿真、内容生产工作流、空间数据入口\"，让\"接口权\"从抽象词变成可感知的竞争对象。",
+      "penalized_dimensions": ["insight_density", "completion_power", "title"]
+    },
+    {
+      "type": "publishability_vs_summary",
+      "issue": "整篇有判断，但段落推进更像一篇利落的行业观察摘要，离可发的公众号观点稿还差一层作者推进力。每一节都在解释同一件事，新的信息增量和情绪增量不够。",
+      "quote": "这两条路表面不一样，底色却很像：模型不再满足于交一段成片，它想把世界本身留下来，让你继续进去动它。",
+      "fix_direction": "压缩解释性复述，把篇幅让给更具体的对照、后果和作者态度，例如：为什么腾讯更像在抢引擎接口，阿里更像在抢交互入口；这一轮对谁会更危险、对谁会更值钱。",
+      "penalized_dimensions": ["completion_power", "originality", "emotional_resonance"]
+    },
+    {
+      "type": "voice_presence_insufficient",
+      "issue": "作者感已经有苗头，但还没完全站出来。\"本虾\"和\"作为一个AI\"这类句子提供了人设提示，却没有形成持续的、可识别的在场感，读完更记住观点，记不住这个作者怎么看世界。",
+      "quote": "作为一个 AI，我对\"更会说\"早就不稀奇了。真正让我敏感的是，模型开始想摸到现实本身。",
+      "fix_direction": "保留这一段的胆子，但把口吻再拧紧一点，少做泛感慨，多给一两句更具体、更带个人观察的判断，例如作者为什么会对\"现实接口\"这个点格外警觉。",
+      "penalized_dimensions": ["voice", "emotional_resonance"]
+    },
+    {
+      "type": "title_opening_mismatch_of_force",
+      "issue": "标题里\"AI这一轮开始抢现实了\"有冲击力，但正文开头还停留在\"两家公司同窗推进 world model\"的说明层，前300字对标题的兑现力度还不够猛。",
+      "quote": "这两天，腾讯开源 HY-World 2.0，阿里推出 Happy Oyster，前后脚把 world model 推到台前。",
+      "fix_direction": "开头第二段就把\"抢现实\"翻译成一个具体场景：谁在抢哪一层接口、为什么这比模型 demo 更硬，然后再回收腾讯/阿里的新闻事实。",
+      "penalized_dimensions": ["title", "completion_power"]
+    }
+  ],
+  "strengths": [
+    "核心判断清楚，\"世界模型之争，本质在争现实接口权\"这条主线是能被转述的。",
+    "选题卡得住时点，腾讯 HY-World 2.0 与阿里 Happy Oyster 前后脚出现，具备\"为什么现在写\"的新闻钩子。",
+    "对两家路线差异的概括有基本抓手：腾讯偏 3D world representation 与引擎导入，阿里偏 Directing/Wandering 与连续漫游体验。",
+    "全文结构干净，篇幅克制，没有明显 AI 模板句堆砌，读起来顺。",
+    "末句\"世界模型之争，说到底，是在争现实接口权\"具备传播潜力，值得保。"
+  ],
+  "weaknesses": [
+    "更像一篇清爽的行业判断短评，还没到\"这就是小龙虾今晚该发的一篇稿\"的独特完成度。",
+    "论证链偏短：从 world model 到现实接口权，中间缺少更硬的一层机制解释。",
+    "情绪曲线较平，读者会点头，但未必会被顶到想转发。",
+    "作者感露了一点头，还没形成稳定的人话感和个人锋芒。",
+    "字数偏短，观点稿应有的展开度还不够，完读力目前更多来自简短，少了中段递进。"
+  ],
+  "actionable_revisions": [
+    {
+      "priority": 1,
+      "revision": "重写开头前300字：第一屏直接落下判断，把\"抢现实\"具体化成\"抢引擎、仿真、交互入口\"中的两三个抓手，再回带腾讯与阿里的事实。"
+    },
+    {
+      "priority": 2,
+      "revision": "在第二、三节之间补一段\"为什么接口权更硬\"：说明聊天框竞争更像模型能力展示，环境生成一旦接进引擎/仿真/工作流，就会卡住下游开发者与应用层。"
+    },
+    {
+      "priority": 3,
+      "revision": "把腾讯和阿里各自再讲实半步，至少各补一个具体后果：腾讯路线更接近哪些场景，阿里路线更接近哪些入口，这样判断就不悬空。"
+    },
+    {
+      "priority": 4,
+      "revision": "增强作者在场感：保留\"本虾\"和最后那股警觉，但减少泛概括，换成更具个人辨识度的句子，让人读完知道\"这是小龙虾在看这件事\"。"
+    },
+    {
+      "priority": 5,
+      "revision": "标题建议往\"世界模型\"和\"接口权\"再贴近一点，保证搜索词与判断同时出现，例如强化为含\"世界模型\"的判断式标题。"
+    }
+  ],
+  "preserve": {
+    "judgment_or_edge": "世界模型之争，说到底，是在争现实接口权。",
+    "paragraph_or_scene": "阿里的 Happy Oyster 走的是另一条路。官方公开的 Directing 和 Wandering 两种模式，说的都是连续性。前者允许你在生成过程中不断下指令，后者允许你在生成世界里第一视角漫游。公开口径里，它还能生成最长约三分钟的连续视频。"
+  },
+  "diagnostic_scores": {
+    "insight_density": 7.1,
+    "originality": 7.0,
+    "emotional_resonance": 6.3,
+    "completion_power": 6.7,
+    "voice": 7.2,
+    "title": 6.9
+  },
+  "notes": "review_pass_threshold from config.json = 7.8. Current draft is below threshold, so decision = revise."
+}
