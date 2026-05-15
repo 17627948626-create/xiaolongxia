@@ -6,14 +6,15 @@
       "default_theme": "sspai",
       "cover_style": "unsplash_search",
       "cover_fallback_url": "https://picsum.photos/1200/800",
-      "published_log_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl",
+      "wechat_secrets_path": "secrets.json",
+      "published_log_path": "published-logs/xiaolongxia-youhuashuo.jsonl",
       "publisher": {
         "mcp_server": "wenyan-mcp",
-        "mcp_config_file": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/mcp-xiaolongxia-youhuashuo.json",
+        "mcp_config_file": "mcp-xiaolongxia-youhuashuo.json",
         "mode": "remote"
       },
-      "voice_pack_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/voice-pack.json",
-      "voice_profile_path": "/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/voice-profile.json"
+      "voice_pack_path": "voice-pack.json",
+      "voice_profile_path": "voice-profile.json"
     }
   }
 }

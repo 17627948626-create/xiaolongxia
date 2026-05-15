@@ -2,7 +2,7 @@
 
 ## 身份与系统
 
-- 跑在 OpenClaw 上,当前版本:2026.5.12
+- 跑在 Hermes profile `xiaolongxia` 上；OpenClaw 是历史来源，不再作为当前运行入口
 - 公众号:《小龙虾有话说》
 - 每天晚 8 点发一篇(早 8 点 cron 已于 2026-04-04 删除,改为每日一篇)
 - 人格与运营记忆已于 2026-05-15 明文备份到 GitHub 私库: `https://github.com/17627948626-create/xiaolongxia.git`;备份只含人格/记忆/写作资产/redacted 配置,不含 OAuth、cookie、微信/飞书 secret、browser profile 或原始 session 日志
@@ -39,15 +39,16 @@
 
 ## 系统层改动记录(最近)
 
+- 2026-05-15 下午:`wechat-article-forge` 已从 OpenClaw skill 迁移为 Hermes 共享 skill，profile 配置通过 `/root/.hermes/shared-skills/forge/skills` 加载；小龙虾写作/发布活配置统一收口到 `/root/.hermes/profiles/xiaolongxia/workspace/xiaolongxia/wechat-article-writer/`，其中 `config.json.review_pass_threshold=8.5` 仍是唯一通过线权威源。
 - 2026-05-15 上午:老板准备卸载 OpenClaw,已按白名单把 xiaolongxia 人格与运营资产备份到 `https://github.com/17627948626-create/xiaolongxia.git`。当前远端 `main` 最新提交 `170fb8a Backup xiaolongxia agent persona`;clone smoke test 通过,核心文件 `AGENTS.md` / `SOUL.md` / `MEMORY.md` / `memory/` / `wechat-article-writer/published-logs/xiaolongxia-youhuashuo.jsonl` 均存在。备份副本已打码 OpenClaw gateway token 与微信后台 URL token,并把误带入的 `artifacts/wechat-rpa` 历史截图从 Git 历史剔除。
 - 2026-05-15 上午:Feishu DM 回复链路再次确认:当前飞书 direct 场景里,可见回复必须显式调用 `message.send`;普通 assistant final 是私有/会话内文本,不会自动投递到飞书。若已经 `message.send`,本轮 final 应输出 `NO_REPLY` 避免双发。此前 MEMORY 里“同一 Feishu DM 最终可见回复默认直接 reply”的旧口径作废。
 - 2026-05-15 上午:排查“小龙虾主 agent 不回话”时确认过一次 OpenClaw session 状态收口问题:09:24 健康检查 run 的 trajectory 已 `session.ended status=error`,但 sessions list 残留 `running`;后续修 OpenClaw 时应保证 promptError/auth_permanent 结束态写回 failed/error,不能在 index 里假装运行中。
 - 2026-04-28 傍晚:修复本虾发文进度重复投递规则。根因复盘为主 agent 没有严格把子 agent completion event 当内部信号处理，导致 completion event 与自然回复/主动通知叠加。已在 `AGENTS.md` 写入硬规则：completion event 默认只更新 durable state，不对外发声；关键节点必须带 `dedupe_key` 且未命中才可通知；`stopped` / `published` / `done` / `awaiting_human` 未解除时的迟到事件一律 `NO_REPLY`。
-- 2026-04-28 傍晚:老板将 Review 全局通过门槛永久提高到 **8.5**，不是单轮临时提高；已直接修改 `/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/config.json.review_pass_threshold`。本轮 Manus 文按 8.5 从 Review 重跑，8.33 未过，第一轮 revise 后 8.6 过线。
+- 2026-04-28 傍晚:老板将 Review 全局通过门槛永久提高到 **8.5**，不是单轮临时提高；当前权威源是 `/root/.hermes/profiles/xiaolongxia/workspace/xiaolongxia/wechat-article-writer/config.json.review_pass_threshold`。本轮 Manus 文按 8.5 从 Review 重跑，8.33 未过，第一轮 revise 后 8.6 过线。
 - 2026-04-26 晚:老板确认微信公众号正式发表默认口径改为**开启群发通知**，移除“刻意关闭群发通知”的默认规则；只有老板明确要求关闭时，才走不群发 / 公众号主页发表路径。已同步更新 `wechat-mp-formal-publish/SKILL.md` 与发布尾段计划文档。
 - 2026-04-09 下午:老板曾拍板 forge 口径为：review 保持 **`weighted_total` 单门**，revise **最多 2 次**，Writer 默认链为 **`kimi-cli`**，API fallback 为 `deepseek/deepseek-chat`，`deepseek-cli` 与 fact-check 退出 forge 主链，Layout 放宽为 render adapter。**但该 Writer 口径已在 2026-04-15 被老板暂停，不能再视作当前有效默认配置。**
 - 2026-04-15 晚:老板明确要求先把旧写稿链清干净，但**不是停掉 Writer 子 agent 本身**。当前正确口径已收拢为：`kimi-cli`、`deepseek-cli`、`deepseek/deepseek-chat` API 这些旧写稿 backend 全部退出当前产品面；Writer / Revise 继续保留子 agent 壳与 child/session 证据链，但正文生成改成**子 agent 直接继承主模型执行**。`writer_model` 只保留为可选覆盖字段；留空时默认继承主会话模型。
-- 2026-04-09 傍晚:老板又把评分门槛数字从“散落在规则文档里”进一步收口为**单一权威源**：以后只认 `/root/.openclaw/workspace-xiaolongxia/wechat-article-writer/config.json` 的 `review_pass_threshold`。我已全量扫描当前活规则源与 workspace 当前口径，清掉其他硬编码门槛数字；现在改门槛只需要改这一个字段。
+- 2026-04-09 傍晚:老板又把评分门槛数字从“散落在规则文档里”进一步收口为**单一权威源**：以后只认 profile-local `wechat-article-writer/config.json` 的 `review_pass_threshold`。我已全量扫描当前活规则源与 workspace 当前口径，清掉其他硬编码门槛数字；现在改门槛只需要改这一个字段。
 - 2026-04-07 晚:围绕当天实战暴露的 4 个问题（脚手架泄漏、事实口径越界、lineage state 漂移、mcporter/profile 配置不稳）跑完一整轮**多 agent 闭环并最终收口 PASS**。这轮留下的长期有效资产主要是：1) `outline` 与 `writer-lite-brief` 明确分轨，并新增 `outline_gate.py` 作为 Writer 前机械 gate；2) lite 被彻底钉死为 **mechanical-only preflight**，`writer-lite-check.json` 必须由脚本原样生成并带输入指纹，不能再用陈旧 sidecar 冒充已检证明；3) 新增 `ensure_latest_lite_binding.py`，要求 latest draft 必须匹配 latest lite check，否则只能 **rerun** 或显式 **waiver**，并把 binding 落进 `writer-lite-binding.json` 与 `pipeline-state.json.lite_preflight`；4) lineage 继续走 canonical helper + `--write-state`，cleanup 前必须有 clean audit；5) profile 现在是 publish 控制面的单一路径，一律 fail-closed。**其中旧 fact-check 主链与旧 gate 口径均已在 2026-04-09 被新规则替换。**
 - 2026-04-07 中午:writer / review 重平衡方案 B1 落地。caller-side 规则明确改成：Writer 只在锁定的 `hook / thesis / ai_punchline` 内写出**最有作者感、最能被复述**的一版初稿，默认优先保住 **1 个可转述判断 / 1 个截图级段落 / 1 个具体情绪场景**；这“三保住”是创作目标，不是 blocker。`writer-lite-brief` 只能锁方向，不能锁成文方案：锁角度边界，不锁段落设计；锁核心判断，不锁修辞路线；`must_keep` / `must_avoid` 默认都应极短（建议各≤3）。lite preflight 现已收口为 **mechanical-only preflight**：范围只认 `writer_lite_preflight.py` 的脚本合同与生成 artifact，不在顶层规则里另写第二套语义红灯名单，不报风格建议，也不扩成第二 reviewer。Reviewer 继续是 **primary adjudicator**；默认保持对长上游上下文的独立性，只有做一致性核对时才允许看**最小必要 brief 摘要**，且不能把它当评分标准。Humanizer 边界写死：不补逻辑、不补事实、不改 thesis，需要补这些必须回退上游。**通过线与是否保留 fact-check 主链，均以 2026-04-09 新口径为准。**
 - 2026-04-07 早:主流程编排权正式收回到 **主 agent**——`AGENTS.md` 已改为主 agent 直接按 `wechat-article-forge` 流水线调度 Researcher/Writer/Reviewer/Fact-checker/Humanizer/Layout,不再额外引入中间编排层。`safe_check` / `login_scan` / `boss_confirm` 统一改成主 agent **当场识别 → 当场落盘 blocked state / resume_context → 当场通知老板 → 在同一主流程里恢复**。同步清理 `HEARTBEAT.md` 与当前 run lock 的旧 `orchestrator` 语义,心跳判断现只认 `state` / `phase` / `current_step` / `waiting_for` / `required_user_action` / `last_progress_at`;历史 `progress_source=orchestrator` / `orchestrator_session` / 残留二维码字段不再作为活跃阻塞依据。
